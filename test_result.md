@@ -312,10 +312,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Counter Tactics API"
-    - "Scout Tips API"
-    - "Auth endpoints"
-    - "AI Chat endpoint"
+    - "Favorites API"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
@@ -325,3 +322,5 @@ agent_communication:
     message: "MVP implementation complete. All frontend screens working. Backend APIs for formations, counters, scout-tips working. Auth and AI chat need testing with actual login."
   - agent: "main"
     message: "FEATURE ADDED: Added tactic_type and opponent_settings to all 14 formations. Users can now see recommended tactical settings based on opponent strength level (strong/equal/weak). Updated frontend formations modal to display: tactic type badge, opponent level selector (Strong/Equal/Weak tabs), and detailed tactical grid with mentality, passing, pressing, marking, tackling, counter-attack, and offside trap settings."
+  - agent: "testing"
+    message: "✅ FORMATIONS TACTICAL FEATURES TESTING COMPLETE: All tactical features verified working correctly. GET /api/formations returns 14 formations with complete tactical data including tactic_type fields and opponent_settings structure. All tactical fields properly implemented with correct data types. Single formation endpoint GET /api/formations/442 also working. No issues found."
