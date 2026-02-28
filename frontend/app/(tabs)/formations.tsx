@@ -227,6 +227,18 @@ export default function FormationsScreen() {
                   : selectedFormation?.description_en}
               </Text>
 
+              {/* Tactic Type Badge */}
+              {selectedFormation?.tactic_type_en && (
+                <View style={styles.tacticTypeBadge}>
+                  <Ionicons name="football" size={16} color="#fff" />
+                  <Text style={styles.tacticTypeText}>
+                    {language === 'it' 
+                      ? selectedFormation.tactic_type_it 
+                      : selectedFormation.tactic_type_en}
+                  </Text>
+                </View>
+              )}
+
               <View style={styles.modalSection}>
                 <View style={styles.sectionHeader}>
                   <Ionicons name="checkmark-circle" size={20} color="#10b981" />
@@ -272,6 +284,207 @@ export default function FormationsScreen() {
                   ))}
                 </View>
               </View>
+
+              {/* Opponent Level Selector */}
+              {selectedFormation?.opponent_settings && (
+                <View style={styles.modalSection}>
+                  <View style={styles.sectionHeader}>
+                    <Ionicons name="game-controller" size={20} color="#8b5cf6" />
+                    <Text style={styles.sectionTitle}>
+                      {language === 'it' ? 'Tattiche per Avversario' : 'Tactics by Opponent'}
+                    </Text>
+                  </View>
+                  
+                  {/* Opponent Level Tabs */}
+                  <View style={styles.opponentTabs}>
+                    <TouchableOpacity
+                      style={[
+                        styles.opponentTab,
+                        selectedOpponentLevel === 'strong' && styles.opponentTabActive,
+                        selectedOpponentLevel === 'strong' && styles.opponentTabStrong,
+                      ]}
+                      onPress={() => setSelectedOpponentLevel('strong')}
+                    >
+                      <Ionicons 
+                        name="arrow-up-circle" 
+                        size={18} 
+                        color={selectedOpponentLevel === 'strong' ? '#fff' : '#ef4444'} 
+                      />
+                      <Text style={[
+                        styles.opponentTabText,
+                        selectedOpponentLevel === 'strong' && styles.opponentTabTextActive,
+                      ]}>
+                        {language === 'it' ? 'Forte' : 'Strong'}
+                      </Text>
+                    </TouchableOpacity>
+                    
+                    <TouchableOpacity
+                      style={[
+                        styles.opponentTab,
+                        selectedOpponentLevel === 'equal' && styles.opponentTabActive,
+                        selectedOpponentLevel === 'equal' && styles.opponentTabEqual,
+                      ]}
+                      onPress={() => setSelectedOpponentLevel('equal')}
+                    >
+                      <Ionicons 
+                        name="remove-circle" 
+                        size={18} 
+                        color={selectedOpponentLevel === 'equal' ? '#fff' : '#f59e0b'} 
+                      />
+                      <Text style={[
+                        styles.opponentTabText,
+                        selectedOpponentLevel === 'equal' && styles.opponentTabTextActive,
+                      ]}>
+                        {language === 'it' ? 'Pari' : 'Equal'}
+                      </Text>
+                    </TouchableOpacity>
+                    
+                    <TouchableOpacity
+                      style={[
+                        styles.opponentTab,
+                        selectedOpponentLevel === 'weak' && styles.opponentTabActive,
+                        selectedOpponentLevel === 'weak' && styles.opponentTabWeak,
+                      ]}
+                      onPress={() => setSelectedOpponentLevel('weak')}
+                    >
+                      <Ionicons 
+                        name="arrow-down-circle" 
+                        size={18} 
+                        color={selectedOpponentLevel === 'weak' ? '#fff' : '#10b981'} 
+                      />
+                      <Text style={[
+                        styles.opponentTabText,
+                        selectedOpponentLevel === 'weak' && styles.opponentTabTextActive,
+                      ]}>
+                        {language === 'it' ? 'Debole' : 'Weak'}
+                      </Text>
+                    </TouchableOpacity>
+                  </View>
+
+                  {/* Tactical Settings for Selected Opponent Level */}
+                  {selectedFormation.opponent_settings[selectedOpponentLevel] && (
+                    <View style={styles.tacticsContainer}>
+                      {/* Tip */}
+                      <View style={styles.tipBox}>
+                        <Ionicons name="bulb" size={18} color="#f59e0b" />
+                        <Text style={styles.tipText}>
+                          {language === 'it' 
+                            ? selectedFormation.opponent_settings[selectedOpponentLevel].tip_it
+                            : selectedFormation.opponent_settings[selectedOpponentLevel].tip_en}
+                        </Text>
+                      </View>
+
+                      {/* Tactical Settings Grid */}
+                      <View style={styles.tacticsGrid}>
+                        <View style={styles.tacticItem}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Mentalità' : 'Mentality'}
+                          </Text>
+                          <Text style={styles.tacticValue}>
+                            {language === 'it' 
+                              ? selectedFormation.opponent_settings[selectedOpponentLevel].mentality_it
+                              : selectedFormation.opponent_settings[selectedOpponentLevel].mentality}
+                          </Text>
+                        </View>
+                        
+                        <View style={styles.tacticItem}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Focus Pass.' : 'Pass Focus'}
+                          </Text>
+                          <Text style={styles.tacticValue}>
+                            {language === 'it' 
+                              ? selectedFormation.opponent_settings[selectedOpponentLevel].focus_passing_it
+                              : selectedFormation.opponent_settings[selectedOpponentLevel].focus_passing}
+                          </Text>
+                        </View>
+                        
+                        <View style={styles.tacticItem}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Stile Pass.' : 'Pass Style'}
+                          </Text>
+                          <Text style={styles.tacticValue}>
+                            {language === 'it' 
+                              ? selectedFormation.opponent_settings[selectedOpponentLevel].passing_style_it
+                              : selectedFormation.opponent_settings[selectedOpponentLevel].passing_style}
+                          </Text>
+                        </View>
+                        
+                        <View style={styles.tacticItem}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Pressing' : 'Pressing'}
+                          </Text>
+                          <Text style={styles.tacticValue}>
+                            {language === 'it' 
+                              ? selectedFormation.opponent_settings[selectedOpponentLevel].pressing_it
+                              : selectedFormation.opponent_settings[selectedOpponentLevel].pressing}
+                          </Text>
+                        </View>
+                        
+                        <View style={styles.tacticItem}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Contrasti' : 'Tackling'}
+                          </Text>
+                          <Text style={styles.tacticValue}>
+                            {language === 'it' 
+                              ? selectedFormation.opponent_settings[selectedOpponentLevel].tackling_it
+                              : selectedFormation.opponent_settings[selectedOpponentLevel].tackling}
+                          </Text>
+                        </View>
+                        
+                        <View style={styles.tacticItem}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Marcatura' : 'Marking'}
+                          </Text>
+                          <Text style={styles.tacticValue}>
+                            {language === 'it' 
+                              ? selectedFormation.opponent_settings[selectedOpponentLevel].marking_it
+                              : selectedFormation.opponent_settings[selectedOpponentLevel].marking}
+                          </Text>
+                        </View>
+                      </View>
+
+                      {/* Toggle Settings */}
+                      <View style={styles.togglesContainer}>
+                        <View style={styles.toggleItem}>
+                          <Text style={styles.toggleLabel}>
+                            {language === 'it' ? 'Contropiede' : 'Counter-Attack'}
+                          </Text>
+                          <View style={[
+                            styles.toggleBadge,
+                            selectedFormation.opponent_settings[selectedOpponentLevel].counter_attack 
+                              ? styles.toggleOn 
+                              : styles.toggleOff
+                          ]}>
+                            <Text style={styles.toggleText}>
+                              {selectedFormation.opponent_settings[selectedOpponentLevel].counter_attack 
+                                ? (language === 'it' ? 'SÌ' : 'ON')
+                                : (language === 'it' ? 'NO' : 'OFF')}
+                            </Text>
+                          </View>
+                        </View>
+                        
+                        <View style={styles.toggleItem}>
+                          <Text style={styles.toggleLabel}>
+                            {language === 'it' ? 'Fuorigioco' : 'Offside Trap'}
+                          </Text>
+                          <View style={[
+                            styles.toggleBadge,
+                            selectedFormation.opponent_settings[selectedOpponentLevel].offside_trap 
+                              ? styles.toggleOn 
+                              : styles.toggleOff
+                          ]}>
+                            <Text style={styles.toggleText}>
+                              {selectedFormation.opponent_settings[selectedOpponentLevel].offside_trap 
+                                ? (language === 'it' ? 'SÌ' : 'ON')
+                                : (language === 'it' ? 'NO' : 'OFF')}
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  )}
+                </View>
+              )}
             </ScrollView>
           </View>
         </View>
