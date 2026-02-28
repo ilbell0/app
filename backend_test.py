@@ -97,34 +97,100 @@ class APITestSuite:
             self.log_test("Health Check", False, f"{details} - {expected_msg}")
     
     async def test_formations_endpoints(self):
-        """Test formations endpoints"""
-        print("\n🔍 Testing Formations Endpoints")
+        """Test formations endpoints with new tactical features"""
+        print("\n🔍 Testing Formations Endpoints (Updated with Tactical Features)")
         
         # Test GET /api/formations
         success, data, details = await self.test_endpoint("GET", "/formations")
         
-        if success and isinstance(data, list) and len(data) == 8:
-            # Check bilingual fields
+        if success and isinstance(data, list) and len(data) == 14:
+            # Check basic bilingual fields
             first_formation = data[0]
-            required_fields = ["id", "name", "description_en", "description_it", 
-                             "strengths_en", "strengths_it", "weaknesses_en", "weaknesses_it"]
+            basic_fields = ["id", "name", "description_en", "description_it", 
+                           "strengths_en", "strengths_it", "weaknesses_en", "weaknesses_it"]
             
-            has_bilingual = all(field in first_formation for field in required_fields)
+            has_basic = all(field in first_formation for field in basic_fields)
             
-            if has_bilingual:
-                self.log_test("Get All Formations", True, f"Returns {len(data)} formations with bilingual fields")
+            # Check new tactical fields
+            tactical_fields = ["tactic_type_en", "tactic_type_it", "opponent_settings"]
+            has_tactical = all(field in first_formation for field in tactical_fields)
+            
+            if has_basic and has_tactical:
+                self.log_test("Get All Formations (Count)", True, f"Returns {len(data)} formations with basic and tactical fields")
+                
+                # Test opponent_settings structure
+                opponent_settings = first_formation.get("opponent_settings", {})
+                levels = ["strong", "equal", "weak"]
+                
+                has_all_levels = all(level in opponent_settings for level in levels)
+                
+                if has_all_levels:
+                    # Test strong level structure
+                    strong_settings = opponent_settings.get("strong", {})
+                    required_tactical_fields = [
+                        "mentality", "mentality_it",
+                        "focus_passing", "focus_passing_it", 
+                        "passing_style", "passing_style_it",
+                        "pressing", "pressing_it",
+                        "tackling", "tackling_it",
+                        "marking", "marking_it",
+                        "counter_attack", "offside_trap",
+                        "tip_en", "tip_it"
+                    ]
+                    
+                    has_all_tactical = all(field in strong_settings for field in required_tactical_fields)
+                    
+                    if has_all_tactical:
+                        self.log_test("Formation Tactical Structure", True, "All tactical fields present in opponent_settings")
+                        
+                        # Verify boolean fields
+                        bool_fields = ["counter_attack", "offside_trap"]
+                        bool_valid = all(isinstance(strong_settings.get(field), bool) for field in bool_fields)
+                        
+                        if bool_valid:
+                            self.log_test("Formation Boolean Fields", True, "counter_attack and offside_trap are boolean")
+                        else:
+                            self.log_test("Formation Boolean Fields", False, "counter_attack or offside_trap not boolean")
+                    else:
+                        missing = [f for f in required_tactical_fields if f not in strong_settings]
+                        self.log_test("Formation Tactical Structure", False, f"Missing tactical fields: {missing}")
+                else:
+                    missing_levels = [level for level in levels if level not in opponent_settings]
+                    self.log_test("Formation Opponent Levels", False, f"Missing opponent levels: {missing_levels}")
             else:
-                missing = [f for f in required_fields if f not in first_formation]
-                self.log_test("Get All Formations", False, f"Missing bilingual fields: {missing}")
+                missing_basic = [f for f in basic_fields if f not in first_formation] if not has_basic else []
+                missing_tactical = [f for f in tactical_fields if f not in first_formation] if not has_tactical else []
+                all_missing = missing_basic + missing_tactical
+                self.log_test("Formation Required Fields", False, f"Missing fields: {all_missing}")
         else:
-            expected_msg = f"Expected array of 8 formations, got: {type(data)} with length {len(data) if isinstance(data, list) else 'N/A'}"
-            self.log_test("Get All Formations", False, f"{details} - {expected_msg}")
+            expected_msg = f"Expected array of 14 formations, got: {type(data)} with length {len(data) if isinstance(data, list) else 'N/A'}"
+            self.log_test("Get All Formations (Count)", False, f"{details} - {expected_msg}")
         
-        # Test GET /api/formations/442
+        # Test GET /api/formations/442 with tactical data
         success, data, details = await self.test_endpoint("GET", "/formations/442")
         
         if success and isinstance(data, dict) and data.get("id") == "442":
-            self.log_test("Get Single Formation (442)", True, "Returns 4-4-2 formation data")
+            # Verify tactical fields in single formation
+            has_tactic_type = "tactic_type_en" in data and "tactic_type_it" in data
+            has_opponent_settings = "opponent_settings" in data
+            
+            if has_tactic_type and has_opponent_settings:
+                # Check opponent_settings for all levels
+                opponent_settings = data.get("opponent_settings", {})
+                levels_present = all(level in opponent_settings for level in ["strong", "equal", "weak"])
+                
+                if levels_present:
+                    self.log_test("Get Single Formation (442)", True, "Returns 4-4-2 with complete tactical data")
+                else:
+                    missing_levels = [level for level in ["strong", "equal", "weak"] if level not in opponent_settings]
+                    self.log_test("Get Single Formation (442)", False, f"Missing opponent levels: {missing_levels}")
+            else:
+                missing_fields = []
+                if not has_tactic_type:
+                    missing_fields.extend(["tactic_type_en", "tactic_type_it"])
+                if not has_opponent_settings:
+                    missing_fields.append("opponent_settings")
+                self.log_test("Get Single Formation (442)", False, f"Missing tactical fields: {missing_fields}")
         else:
             expected_msg = f"Expected formation object with id '442', got: {data}"
             self.log_test("Get Single Formation (442)", False, f"{details} - {expected_msg}")
