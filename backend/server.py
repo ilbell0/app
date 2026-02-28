@@ -315,6 +315,8 @@ FORMATIONS = [
         "strengths_it": ["Pressing alto", "Ampiezza in attacco", "Centrocampo creativo", "Sovraccarica le fasce"],
         "weaknesses_en": ["Vulnerable to counters", "Midfield can be overrun", "Weak central defense"],
         "weaknesses_it": ["Vulnerabile ai contropiedi", "Centrocampo può essere sopraffatto", "Difesa centrale debole"],
+        "tactic_type_en": "High Press / Possession",
+        "tactic_type_it": "Pressing Alto / Possesso",
         "recommended_tactics": {
             "mentality": "Attacking",
             "focus_passing": "Down Both Flanks",
@@ -324,6 +326,62 @@ FORMATIONS = [
             "tackling": "Hard",
             "marking": "Man-to-Man",
             "offside_trap": False
+        },
+        "opponent_settings": {
+            "strong": {
+                "mentality": "Normal",
+                "mentality_it": "Normale",
+                "focus_passing": "Down Both Flanks",
+                "focus_passing_it": "Sulle Fasce",
+                "passing_style": "Long",
+                "passing_style_it": "Lungo",
+                "counter_attack": True,
+                "pressing": "Medium",
+                "pressing_it": "Medio",
+                "tackling": "Normal",
+                "tackling_it": "Normale",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": True,
+                "tip_en": "Don't overcommit. Use wingers to stretch their defense and exploit space on counters.",
+                "tip_it": "Non esporti troppo. Usa le ali per allargare la difesa e sfrutta gli spazi in contropiede."
+            },
+            "equal": {
+                "mentality": "Attacking",
+                "mentality_it": "Offensivo",
+                "focus_passing": "Down Both Flanks",
+                "focus_passing_it": "Sulle Fasce",
+                "passing_style": "Mixed",
+                "passing_style_it": "Misto",
+                "counter_attack": False,
+                "pressing": "High",
+                "pressing_it": "Alto",
+                "tackling": "Normal",
+                "tackling_it": "Normale",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": False,
+                "tip_en": "Press high and dominate flanks. Your wingers are the key to breaking them down.",
+                "tip_it": "Pressa alto e domina le fasce. Le tue ali sono la chiave per sfondare."
+            },
+            "weak": {
+                "mentality": "Hard Attacking",
+                "mentality_it": "Ultra Offensivo",
+                "focus_passing": "Down Both Flanks",
+                "focus_passing_it": "Sulle Fasce",
+                "passing_style": "Short",
+                "passing_style_it": "Corto",
+                "counter_attack": False,
+                "pressing": "High",
+                "pressing_it": "Alto",
+                "tackling": "Hard",
+                "tackling_it": "Duro",
+                "marking": "Man-to-Man",
+                "marking_it": "Uomo su Uomo",
+                "offside_trap": False,
+                "tip_en": "Full attack mode! Press relentlessly and overload their half. Goals will come.",
+                "tip_it": "Attacco totale! Pressa senza sosta e sovraccarica la loro metà campo. I gol arriveranno."
+            }
         }
     },
     {
