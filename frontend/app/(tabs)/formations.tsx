@@ -72,6 +72,7 @@ export default function FormationsScreen() {
   const [favorites, setFavorites] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedFormation, setSelectedFormation] = useState<Formation | null>(null);
+  const [selectedOpponentLevel, setSelectedOpponentLevel] = useState<'strong' | 'equal' | 'weak'>('equal');
 
   useEffect(() => {
     fetchData();
