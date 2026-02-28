@@ -236,6 +236,8 @@ FORMATIONS = [
         "strengths_it": ["Equilibrata", "Buona ampiezza", "Partnership in attacco", "Semplice da eseguire"],
         "weaknesses_en": ["Can be outnumbered in midfield", "Requires fit wingers"],
         "weaknesses_it": ["Può essere superata numericamente a centrocampo", "Richiede ali in forma"],
+        "tactic_type_en": "Balanced",
+        "tactic_type_it": "Bilanciato",
         "recommended_tactics": {
             "mentality": "Normal",
             "focus_passing": "Down Both Flanks",
@@ -245,6 +247,62 @@ FORMATIONS = [
             "tackling": "Normal",
             "marking": "Zonal",
             "offside_trap": True
+        },
+        "opponent_settings": {
+            "strong": {
+                "mentality": "Defensive",
+                "mentality_it": "Difensivo",
+                "focus_passing": "Down Both Flanks",
+                "focus_passing_it": "Sulle Fasce",
+                "passing_style": "Long",
+                "passing_style_it": "Lungo",
+                "counter_attack": True,
+                "pressing": "Low",
+                "pressing_it": "Basso",
+                "tackling": "Easy",
+                "tackling_it": "Facile",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": True,
+                "tip_en": "Stay compact and let them come. Use long balls to your strikers on counter.",
+                "tip_it": "Resta compatto e lasciali venire. Usa palle lunghe agli attaccanti in contropiede."
+            },
+            "equal": {
+                "mentality": "Normal",
+                "mentality_it": "Normale",
+                "focus_passing": "Down Both Flanks",
+                "focus_passing_it": "Sulle Fasce",
+                "passing_style": "Short",
+                "passing_style_it": "Corto",
+                "counter_attack": True,
+                "pressing": "Medium",
+                "pressing_it": "Medio",
+                "tackling": "Normal",
+                "tackling_it": "Normale",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": True,
+                "tip_en": "Play your natural game. Use width and crosses to find your two strikers.",
+                "tip_it": "Gioca il tuo gioco naturale. Usa l'ampiezza e i cross per trovare i due attaccanti."
+            },
+            "weak": {
+                "mentality": "Attacking",
+                "mentality_it": "Offensivo",
+                "focus_passing": "Down Both Flanks",
+                "focus_passing_it": "Sulle Fasce",
+                "passing_style": "Short",
+                "passing_style_it": "Corto",
+                "counter_attack": False,
+                "pressing": "High",
+                "pressing_it": "Alto",
+                "tackling": "Hard",
+                "tackling_it": "Duro",
+                "marking": "Man-to-Man",
+                "marking_it": "Uomo su Uomo",
+                "offside_trap": False,
+                "tip_en": "Dominate with high pressing and quick passing. Overwhelm their defense with numbers.",
+                "tip_it": "Domina con pressing alto e passaggi veloci. Travolgi la loro difesa con i numeri."
+            }
         }
     },
     {
