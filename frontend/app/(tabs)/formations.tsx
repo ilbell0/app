@@ -16,6 +16,25 @@ import axios from 'axios';
 
 const API_URL = process.env.EXPO_PUBLIC_BACKEND_URL || '';
 
+interface OpponentSettings {
+  mentality: string;
+  mentality_it: string;
+  focus_passing: string;
+  focus_passing_it: string;
+  passing_style: string;
+  passing_style_it: string;
+  counter_attack: boolean;
+  pressing: string;
+  pressing_it: string;
+  tackling: string;
+  tackling_it: string;
+  marking: string;
+  marking_it: string;
+  offside_trap: boolean;
+  tip_en: string;
+  tip_it: string;
+}
+
 interface Formation {
   id: string;
   name: string;
@@ -26,6 +45,23 @@ interface Formation {
   strengths_it: string[];
   weaknesses_en: string[];
   weaknesses_it: string[];
+  tactic_type_en?: string;
+  tactic_type_it?: string;
+  recommended_tactics?: {
+    mentality: string;
+    focus_passing: string;
+    passing_style: string;
+    counter_attack: boolean;
+    pressing: string;
+    tackling: string;
+    marking: string;
+    offside_trap: boolean;
+  };
+  opponent_settings?: {
+    strong: OpponentSettings;
+    equal: OpponentSettings;
+    weak: OpponentSettings;
+  };
 }
 
 export default function FormationsScreen() {
