@@ -150,11 +150,14 @@ backend:
     file: "server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: true
         agent: "main"
         comment: "GET /api/scout-tips returns all scout tips"
+      - working: true
+        agent: "testing"
+        comment: "✅ VERIFIED: GET /api/scout-tips returns 6 tips with bilingual content across categories: ['attack', 'defense', 'midfield', 'budget', 'tactics', 'training']. GET /api/scout-tips/defense returns 1 defense tip. All endpoints working correctly."
 
   - task: "Auth endpoints (session, me, logout)"
     implemented: true
