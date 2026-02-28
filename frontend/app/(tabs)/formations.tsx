@@ -190,6 +190,13 @@ export default function FormationsScreen() {
                   </TouchableOpacity>
                 )}
               </View>
+              {formation.tactic_type_en && (
+                <View style={styles.cardTacticBadge}>
+                  <Text style={styles.cardTacticText}>
+                    {language === 'it' ? formation.tactic_type_it : formation.tactic_type_en}
+                  </Text>
+                </View>
+              )}
               <Text style={styles.formationDescription} numberOfLines={2}>
                 {language === 'it' ? formation.description_it : formation.description_en}
               </Text>
