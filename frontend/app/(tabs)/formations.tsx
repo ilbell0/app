@@ -550,6 +550,19 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
   },
+  cardTacticBadge: {
+    backgroundColor: 'rgba(139,92,246,0.2)',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 6,
+    alignSelf: 'flex-start',
+    marginBottom: 8,
+  },
+  cardTacticText: {
+    color: '#a78bfa',
+    fontSize: 10,
+    fontWeight: '600',
+  },
   formationDescription: {
     color: 'rgba(255,255,255,0.6)',
     fontSize: 12,
