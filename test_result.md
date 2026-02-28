@@ -135,11 +135,14 @@ backend:
     file: "server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: true
         agent: "main"
         comment: "GET /api/counters returns counter tactics data"
+      - working: true
+        agent: "testing"
+        comment: "✅ VERIFIED: GET /api/counters returns 8 counter tactics with bilingual reasons. GET /api/counters/442 returns counters ['433', '4231']. All endpoints working correctly."
 
   - task: "Scout Tips API"
     implemented: true
