@@ -223,109 +223,551 @@ async def logout(request: Request, response: Response):
     
     return {"message": "Logged out successfully"}
 
-# ==================== FORMATIONS DATA ====================
+# ==================== FORMATIONS DATA (EXPANDED) ====================
 
 FORMATIONS = [
     {
         "id": "442",
-        "name": "4-4-2",
-        "description_en": "Classic balanced formation. Strong in both defense and attack with 4 defenders, 4 midfielders, and 2 strikers.",
-        "description_it": "Formazione classica ed equilibrata. Forte sia in difesa che in attacco con 4 difensori, 4 centrocampisti e 2 attaccanti.",
+        "name": "4-4-2 Classic",
+        "description_en": "Classic balanced formation. Strong in both defense and attack with 4 defenders, 4 midfielders, and 2 strikers. One of the oldest and most reliable formations in football.",
+        "description_it": "Formazione classica ed equilibrata. Forte sia in difesa che in attacco con 4 difensori, 4 centrocampisti e 2 attaccanti. Una delle formazioni più antiche e affidabili nel calcio.",
         "positions": ["GK", "DR", "DC", "DC", "DL", "MR", "MC", "MC", "ML", "ST", "ST"],
-        "strengths_en": ["Balanced", "Good width", "Partnership up front"],
-        "strengths_it": ["Equilibrata", "Buona ampiezza", "Partnership in attacco"],
+        "strengths_en": ["Balanced", "Good width", "Partnership up front", "Simple to execute"],
+        "strengths_it": ["Equilibrata", "Buona ampiezza", "Partnership in attacco", "Semplice da eseguire"],
         "weaknesses_en": ["Can be outnumbered in midfield", "Requires fit wingers"],
-        "weaknesses_it": ["Può essere superata numericamente a centrocampo", "Richiede ali in forma"]
+        "weaknesses_it": ["Può essere superata numericamente a centrocampo", "Richiede ali in forma"],
+        "recommended_tactics": {
+            "mentality": "Normal",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Short",
+            "counter_attack": True,
+            "pressing": "Low",
+            "tackling": "Normal",
+            "marking": "Zonal",
+            "offside_trap": True
+        }
     },
     {
         "id": "433",
         "name": "4-3-3",
-        "description_en": "Attacking formation with 3 forwards. Great for possession and pressing high up the pitch.",
-        "description_it": "Formazione offensiva con 3 attaccanti. Ottima per il possesso palla e il pressing alto.",
-        "positions": ["GK", "DR", "DC", "DC", "DL", "MC", "MC", "MC", "RW", "ST", "LW"],
-        "strengths_en": ["High pressing", "Width in attack", "Creative midfield"],
-        "strengths_it": ["Pressing alto", "Ampiezza in attacco", "Centrocampo creativo"],
-        "weaknesses_en": ["Vulnerable to counters", "Midfield can be overrun"],
-        "weaknesses_it": ["Vulnerabile ai contropiedi", "Centrocampo può essere sopraffatto"]
+        "description_en": "Attacking formation with 3 forwards. Great for possession and pressing high up the pitch. Dominates the flanks with wingers.",
+        "description_it": "Formazione offensiva con 3 attaccanti. Ottima per il possesso palla e il pressing alto. Domina le fasce con le ali.",
+        "positions": ["GK", "DR", "DC", "DC", "DL", "MC", "MC", "MC", "AML", "ST", "AMR"],
+        "strengths_en": ["High pressing", "Width in attack", "Creative midfield", "Overloads flanks"],
+        "strengths_it": ["Pressing alto", "Ampiezza in attacco", "Centrocampo creativo", "Sovraccarica le fasce"],
+        "weaknesses_en": ["Vulnerable to counters", "Midfield can be overrun", "Weak central defense"],
+        "weaknesses_it": ["Vulnerabile ai contropiedi", "Centrocampo può essere sopraffatto", "Difesa centrale debole"],
+        "recommended_tactics": {
+            "mentality": "Attacking",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Mixed",
+            "counter_attack": False,
+            "pressing": "High",
+            "tackling": "Hard",
+            "marking": "Man-to-Man",
+            "offside_trap": False
+        }
     },
     {
         "id": "352",
         "name": "3-5-2",
-        "description_en": "Midfield-dominant formation with wing-backs. Controls the center of the pitch.",
-        "description_it": "Formazione dominante a centrocampo con esterni. Controlla il centro del campo.",
-        "positions": ["GK", "DC", "DC", "DC", "DMC", "MC", "MC", "MC", "AMC", "ST", "ST"],
+        "description_en": "Midfield-dominant formation with wing-backs. Controls the center of the pitch with 5 midfielders.",
+        "description_it": "Formazione dominante a centrocampo con esterni. Controlla il centro del campo con 5 centrocampisti.",
+        "positions": ["GK", "DC", "DC", "DC", "ML", "MC", "MC", "MC", "MR", "ST", "ST"],
         "strengths_en": ["Midfield control", "Numerical advantage in center", "Partnership up front"],
         "strengths_it": ["Controllo del centrocampo", "Vantaggio numerico al centro", "Partnership in attacco"],
-        "weaknesses_en": ["Exposed flanks", "Requires versatile wing-backs"],
-        "weaknesses_it": ["Fianchi esposti", "Richiede esterni versatili"]
+        "weaknesses_en": ["Exposed flanks", "Requires versatile wing-backs", "Weak against wide formations"],
+        "weaknesses_it": ["Fianchi esposti", "Richiede esterni versatili", "Debole contro formazioni ampie"],
+        "recommended_tactics": {
+            "mentality": "Normal",
+            "focus_passing": "Through the Middle",
+            "passing_style": "Short",
+            "counter_attack": True,
+            "pressing": "High",
+            "tackling": "Normal",
+            "marking": "Zonal",
+            "offside_trap": True
+        }
     },
     {
         "id": "4231",
         "name": "4-2-3-1",
-        "description_en": "Modern defensive formation with attacking midfielder. Great balance between defense and attack.",
-        "description_it": "Formazione moderna difensiva con trequartista. Grande equilibrio tra difesa e attacco.",
-        "positions": ["GK", "DR", "DC", "DC", "DL", "DMC", "DMC", "MR", "AMC", "ML", "ST"],
-        "strengths_en": ["Defensive stability", "Creative playmaker", "Compact midfield"],
-        "strengths_it": ["Stabilità difensiva", "Regista creativo", "Centrocampo compatto"],
-        "weaknesses_en": ["Lone striker isolated", "Depends heavily on #10"],
-        "weaknesses_it": ["Attaccante solitario isolato", "Dipende molto dal trequartista"]
+        "description_en": "Modern tactical formation with double pivot and attacking midfielder. Great balance between defense and attack.",
+        "description_it": "Formazione tattica moderna con doppio pivot e trequartista. Grande equilibrio tra difesa e attacco.",
+        "positions": ["GK", "DR", "DC", "DC", "DL", "DMC", "DMC", "AML", "AMC", "AMR", "ST"],
+        "strengths_en": ["Defensive stability", "Creative playmaker", "Compact midfield", "Flexible"],
+        "strengths_it": ["Stabilità difensiva", "Regista creativo", "Centrocampo compatto", "Flessibile"],
+        "weaknesses_en": ["Lone striker isolated", "Depends heavily on #10", "Can lack width"],
+        "weaknesses_it": ["Attaccante solitario isolato", "Dipende molto dal trequartista", "Può mancare ampiezza"],
+        "recommended_tactics": {
+            "mentality": "Normal",
+            "focus_passing": "Through the Middle",
+            "passing_style": "Short",
+            "counter_attack": True,
+            "pressing": "High",
+            "tackling": "Normal",
+            "marking": "Zonal",
+            "offside_trap": False
+        }
     },
     {
-        "id": "451",
-        "name": "4-5-1",
-        "description_en": "Ultra-defensive formation. Great for absorbing pressure and counter-attacking.",
-        "description_it": "Formazione ultra-difensiva. Ottima per assorbire la pressione e ripartire in contropiede.",
-        "positions": ["GK", "DR", "DC", "DC", "DL", "MR", "MC", "MC", "MC", "ML", "ST"],
-        "strengths_en": ["Defensive solidity", "Midfield dominance", "Counter-attack potential"],
-        "strengths_it": ["Solidità difensiva", "Dominio a centrocampo", "Potenziale di contropiede"],
-        "weaknesses_en": ["Lone striker", "Limited attacking options"],
-        "weaknesses_it": ["Attaccante solitario", "Opzioni offensive limitate"]
+        "id": "451v",
+        "name": "4-5-1 V-Style",
+        "description_en": "Defensive V-shaped formation. DMC anchors the midfield with AMC providing creativity. Best for counter-attacking against stronger opponents.",
+        "description_it": "Formazione difensiva a V. Il DMC ancora il centrocampo con l'AMC che fornisce creatività. Ideale per contropiede contro avversari più forti.",
+        "positions": ["GK", "DR", "DC", "DC", "DL", "DMC", "MC", "MC", "AML", "AMR", "ST"],
+        "strengths_en": ["Defensive solidity", "Midfield dominance", "Counter-attack potential", "Flexible wings"],
+        "strengths_it": ["Solidità difensiva", "Dominio a centrocampo", "Potenziale di contropiede", "Ali flessibili"],
+        "weaknesses_en": ["Lone striker", "Limited attacking options", "Needs fast wingers"],
+        "weaknesses_it": ["Attaccante solitario", "Opzioni offensive limitate", "Richiede ali veloci"],
+        "recommended_tactics": {
+            "mentality": "Defensive",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Mixed",
+            "counter_attack": True,
+            "pressing": "Low",
+            "tackling": "Normal",
+            "marking": "Zonal",
+            "offside_trap": True
+        }
+    },
+    {
+        "id": "41212nd",
+        "name": "4-1-2-1-2 Narrow Diamond",
+        "description_en": "Diamond midfield formation. Strong through the center with DMC protecting defense and AMC linking play. Great for controlling possession.",
+        "description_it": "Formazione con diamante a centrocampo. Forte al centro con DMC che protegge la difesa e AMC che collega il gioco. Ottima per controllare il possesso.",
+        "positions": ["GK", "DR", "DC", "DC", "DL", "DMC", "MC", "MC", "AMC", "ST", "ST"],
+        "strengths_en": ["Central dominance", "Creative #10", "Two striker partnership", "Good passing lanes"],
+        "strengths_it": ["Dominio centrale", "Trequartista creativo", "Partnership di due attaccanti", "Buone linee di passaggio"],
+        "weaknesses_en": ["No natural wingers", "Exposed flanks", "Requires box-to-box midfielders"],
+        "weaknesses_it": ["Nessuna ala naturale", "Fianchi esposti", "Richiede centrocampisti box-to-box"],
+        "recommended_tactics": {
+            "mentality": "Attacking",
+            "focus_passing": "Through the Middle",
+            "passing_style": "Short",
+            "counter_attack": False,
+            "pressing": "High",
+            "tackling": "Normal",
+            "marking": "Zonal",
+            "offside_trap": False
+        }
     },
     {
         "id": "343",
         "name": "3-4-3",
-        "description_en": "Ultra-attacking formation. High risk, high reward with 3 defenders and 3 forwards.",
-        "description_it": "Formazione ultra-offensiva. Alto rischio, alta ricompensa con 3 difensori e 3 attaccanti.",
-        "positions": ["GK", "DC", "DC", "DC", "MR", "MC", "MC", "ML", "RW", "ST", "LW"],
-        "strengths_en": ["Attacking firepower", "Width", "Pressing intensity"],
-        "strengths_it": ["Potenza offensiva", "Ampiezza", "Intensità del pressing"],
-        "weaknesses_en": ["Defensively weak", "Exposed to counters"],
-        "weaknesses_it": ["Difensivamente debole", "Esposta ai contropiedi"]
+        "description_en": "Ultra-attacking formation. High risk, high reward with 3 defenders and 3 forwards. Best used when chasing a game.",
+        "description_it": "Formazione ultra-offensiva. Alto rischio, alta ricompensa con 3 difensori e 3 attaccanti. Da usare quando si insegue il risultato.",
+        "positions": ["GK", "DC", "DC", "DC", "MR", "MC", "MC", "ML", "AML", "ST", "AMR"],
+        "strengths_en": ["Attacking firepower", "Width", "Pressing intensity", "Overwhelming offense"],
+        "strengths_it": ["Potenza offensiva", "Ampiezza", "Intensità del pressing", "Attacco travolgente"],
+        "weaknesses_en": ["Defensively weak", "Exposed to counters", "Requires stamina"],
+        "weaknesses_it": ["Difensivamente debole", "Esposta ai contropiedi", "Richiede resistenza"],
+        "recommended_tactics": {
+            "mentality": "Hard Attacking",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Mixed",
+            "counter_attack": False,
+            "pressing": "High",
+            "tackling": "Hard",
+            "marking": "Man-to-Man",
+            "offside_trap": False
+        }
     },
     {
         "id": "541",
         "name": "5-4-1",
-        "description_en": "Parking the bus formation. Maximum defensive solidity with 5 at the back.",
-        "description_it": "Formazione catenaccio. Massima solidità difensiva con 5 in difesa.",
+        "description_en": "Parking the bus formation. Maximum defensive solidity with 5 at the back. Perfect for protecting a lead.",
+        "description_it": "Formazione catenaccio. Massima solidità difensiva con 5 in difesa. Perfetta per proteggere un vantaggio.",
         "positions": ["GK", "DR", "DC", "DC", "DC", "DL", "MR", "MC", "MC", "ML", "ST"],
-        "strengths_en": ["Maximum defense", "Hard to break down", "Ideal for protecting leads"],
-        "strengths_it": ["Massima difesa", "Difficile da penetrare", "Ideale per proteggere vantaggi"],
-        "weaknesses_en": ["Very limited attack", "Requires discipline"],
-        "weaknesses_it": ["Attacco molto limitato", "Richiede disciplina"]
+        "strengths_en": ["Maximum defense", "Hard to break down", "Ideal for protecting leads", "Counter-attack ready"],
+        "strengths_it": ["Massima difesa", "Difficile da penetrare", "Ideale per proteggere vantaggi", "Pronta al contropiede"],
+        "weaknesses_en": ["Very limited attack", "Requires discipline", "Can invite pressure"],
+        "weaknesses_it": ["Attacco molto limitato", "Richiede disciplina", "Può invitare la pressione"],
+        "recommended_tactics": {
+            "mentality": "Hard Defending",
+            "focus_passing": "Mixed",
+            "passing_style": "Long",
+            "counter_attack": True,
+            "pressing": "Low",
+            "tackling": "Easy",
+            "marking": "Zonal",
+            "offside_trap": True
+        }
     },
     {
         "id": "4141",
         "name": "4-1-4-1",
-        "description_en": "Defensive midfield anchor formation. Single pivot protects the back four.",
-        "description_it": "Formazione con ancoraggio difensivo a centrocampo. Singolo pivot protegge la difesa.",
+        "description_en": "Single pivot formation. DMC acts as shield for defense while 4 midfielders provide width and creativity.",
+        "description_it": "Formazione con singolo pivot. Il DMC funge da scudo per la difesa mentre 4 centrocampisti forniscono ampiezza e creatività.",
         "positions": ["GK", "DR", "DC", "DC", "DL", "DMC", "MR", "MC", "MC", "ML", "ST"],
-        "strengths_en": ["Defensive shield", "Wide midfield", "Balanced structure"],
-        "strengths_it": ["Scudo difensivo", "Centrocampo ampio", "Struttura equilibrata"],
-        "weaknesses_en": ["Lone striker", "Pivot can be overloaded"],
-        "weaknesses_it": ["Attaccante solitario", "Pivot può essere sovraccaricato"]
+        "strengths_en": ["Defensive shield", "Wide midfield", "Balanced structure", "Flexible"],
+        "strengths_it": ["Scudo difensivo", "Centrocampo ampio", "Struttura equilibrata", "Flessibile"],
+        "weaknesses_en": ["Lone striker", "Pivot can be overloaded", "Needs quality DMC"],
+        "weaknesses_it": ["Attaccante solitario", "Pivot può essere sovraccaricato", "Richiede DMC di qualità"],
+        "recommended_tactics": {
+            "mentality": "Normal",
+            "focus_passing": "Mixed",
+            "passing_style": "Short",
+            "counter_attack": True,
+            "pressing": "High",
+            "tackling": "Normal",
+            "marking": "Zonal",
+            "offside_trap": False
+        }
+    },
+    {
+        "id": "4222",
+        "name": "4-2-2-2 Hexagon",
+        "description_en": "Compact formation with two defensive mids and two attacking mids. Creates numerical advantage in the center.",
+        "description_it": "Formazione compatta con due centrocampisti difensivi e due offensivi. Crea vantaggio numerico al centro.",
+        "positions": ["GK", "DR", "DC", "DC", "DL", "MC", "MC", "AML", "AMR", "ST", "ST"],
+        "strengths_en": ["Central control", "Two partnerships", "Compact shape", "Transitions well"],
+        "strengths_it": ["Controllo centrale", "Due partnership", "Forma compatta", "Buone transizioni"],
+        "weaknesses_en": ["Lacks width", "No natural wingers", "Predictable"],
+        "weaknesses_it": ["Manca ampiezza", "Nessuna ala naturale", "Prevedibile"],
+        "recommended_tactics": {
+            "mentality": "Normal",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Mixed",
+            "counter_attack": True,
+            "pressing": "Low",
+            "tackling": "Normal",
+            "marking": "Zonal",
+            "offside_trap": False
+        }
+    },
+    {
+        "id": "3142",
+        "name": "3-1-4-2",
+        "description_en": "Midfield-heavy formation with DMC anchor. 4 midfielders dominate the center while 2 strikers wait for service.",
+        "description_it": "Formazione pesante a centrocampo con DMC come ancora. 4 centrocampisti dominano il centro mentre 2 attaccanti aspettano il servizio.",
+        "positions": ["GK", "DC", "DC", "DC", "DMC", "ML", "MC", "MC", "MR", "ST", "ST"],
+        "strengths_en": ["Midfield dominance", "Two strikers", "Flexible width", "Counter-attack ready"],
+        "strengths_it": ["Dominio a centrocampo", "Due attaccanti", "Ampiezza flessibile", "Pronta al contropiede"],
+        "weaknesses_en": ["Exposed defense", "Wing-backs must track back", "High stamina required"],
+        "weaknesses_it": ["Difesa esposta", "Esterni devono rientrare", "Richiede alta resistenza"],
+        "recommended_tactics": {
+            "mentality": "Defensive",
+            "focus_passing": "Mixed",
+            "passing_style": "Long",
+            "counter_attack": True,
+            "pressing": "High",
+            "tackling": "Normal",
+            "marking": "Man-to-Man",
+            "offside_trap": True
+        }
+    },
+    {
+        "id": "4312",
+        "name": "4-3-1-2",
+        "description_en": "Italian formation with trequartista behind two strikers. Strong through the center with creative playmaker.",
+        "description_it": "Formazione italiana con trequartista dietro due attaccanti. Forte al centro con regista creativo.",
+        "positions": ["GK", "DR", "DC", "DC", "DL", "MC", "MC", "MC", "AMC", "ST", "ST"],
+        "strengths_en": ["Creative #10", "Two striker partnership", "Midfield control", "Italian style"],
+        "strengths_it": ["Trequartista creativo", "Partnership di attaccanti", "Controllo centrocampo", "Stile italiano"],
+        "weaknesses_en": ["No width", "Relies on AMC", "Flanks exposed"],
+        "weaknesses_it": ["Nessuna ampiezza", "Dipende dall'AMC", "Fianchi esposti"],
+        "recommended_tactics": {
+            "mentality": "Attacking",
+            "focus_passing": "Through the Middle",
+            "passing_style": "Short",
+            "counter_attack": False,
+            "pressing": "High",
+            "tackling": "Normal",
+            "marking": "Zonal",
+            "offside_trap": False
+        }
+    },
+    {
+        "id": "532",
+        "name": "5-3-2",
+        "description_en": "Defensive formation with wing-backs providing width. 3 central defenders ensure solidity at the back.",
+        "description_it": "Formazione difensiva con esterni che forniscono ampiezza. 3 difensori centrali garantiscono solidità dietro.",
+        "positions": ["GK", "DR", "DC", "DC", "DC", "DL", "MC", "MC", "MC", "ST", "ST"],
+        "strengths_en": ["Defensive solidity", "Wing-back runs", "Two strikers", "Hard to break"],
+        "strengths_it": ["Solidità difensiva", "Sovrapposizioni degli esterni", "Due attaccanti", "Difficile da sfondare"],
+        "weaknesses_en": ["Can be too defensive", "Wing-backs tire easily", "Lacks midfield creativity"],
+        "weaknesses_it": ["Può essere troppo difensiva", "Esterni si stancano facilmente", "Manca creatività a centrocampo"],
+        "recommended_tactics": {
+            "mentality": "Defensive",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Long",
+            "counter_attack": True,
+            "pressing": "Low",
+            "tackling": "Normal",
+            "marking": "Zonal",
+            "offside_trap": True
+        }
+    },
+    {
+        "id": "31231",
+        "name": "3-1-2-3-1",
+        "description_en": "Modern attacking formation popular in 2025. DMC anchors defense while 3 attacking midfielders provide creativity.",
+        "description_it": "Formazione offensiva moderna popolare nel 2025. Il DMC ancora la difesa mentre 3 trequartisti forniscono creatività.",
+        "positions": ["GK", "DC", "DC", "DC", "DMC", "MC", "MC", "AML", "AMC", "AMR", "ST"],
+        "strengths_en": ["Creative front line", "Midfield dominance", "Flexible attack", "Pressing options"],
+        "strengths_it": ["Linea offensiva creativa", "Dominio a centrocampo", "Attacco flessibile", "Opzioni di pressing"],
+        "weaknesses_en": ["Three at the back risk", "Needs fast CBs", "Can concede counters"],
+        "weaknesses_it": ["Rischio con tre difensori", "Richiede DC veloci", "Può subire contropiedi"],
+        "recommended_tactics": {
+            "mentality": "Attacking",
+            "focus_passing": "Mixed",
+            "passing_style": "Short",
+            "counter_attack": False,
+            "pressing": "High",
+            "tackling": "Normal",
+            "marking": "Zonal",
+            "offside_trap": False
+        }
     }
 ]
 
+# ==================== COUNTER TACTICS DATA (EXPANDED) ====================
+
 COUNTER_TACTICS = [
-    {"formation": "442", "counters": ["433", "4231"], "reason_en": "4-3-3 and 4-2-3-1 overload the midfield against 4-4-2", "reason_it": "4-3-3 e 4-2-3-1 sovraccaricano il centrocampo contro il 4-4-2"},
-    {"formation": "433", "counters": ["451", "4141"], "reason_en": "Compact midfield formations neutralize 4-3-3's width", "reason_it": "Formazioni compatte a centrocampo neutralizzano l'ampiezza del 4-3-3"},
-    {"formation": "352", "counters": ["433", "343"], "reason_en": "Wide formations exploit 3-5-2's exposed flanks", "reason_it": "Formazioni ampie sfruttano i fianchi esposti del 3-5-2"},
-    {"formation": "4231", "counters": ["352", "433"], "reason_en": "Midfield-heavy formations can overrun the double pivot", "reason_it": "Formazioni pesanti a centrocampo possono sopraffare il doppio pivot"},
-    {"formation": "451", "counters": ["352", "343"], "reason_en": "Attacking formations can break down 4-5-1 with numbers", "reason_it": "Formazioni offensive possono sfondare il 4-5-1 con i numeri"},
-    {"formation": "343", "counters": ["541", "451"], "reason_en": "Defensive formations exploit 3-4-3's weak defense", "reason_it": "Formazioni difensive sfruttano la difesa debole del 3-4-3"},
-    {"formation": "541", "counters": ["433", "343"], "reason_en": "Attacking width stretches 5-4-1's defensive line", "reason_it": "L'ampiezza offensiva distende la linea difensiva del 5-4-1"},
-    {"formation": "4141", "counters": ["4231", "352"], "reason_en": "Creative formations can bypass the single pivot", "reason_it": "Formazioni creative possono aggirare il singolo pivot"}
+    {
+        "formation": "442", 
+        "counters": ["41212nd", "4231"],
+        "offensive_counter": "4-1-2-1-2 Narrow Diamond",
+        "defensive_counter": "4-5-1 V-Style",
+        "reason_en": "Diamond midfield overloads 4-4-2's flat four. Attack through the middle to exploit gaps between MC's.",
+        "reason_it": "Il diamante a centrocampo sovraccarica il centrocampo piatto del 4-4-2. Attacca al centro per sfruttare gli spazi tra i MC.",
+        "tactics_en": {
+            "mentality": "Attacking",
+            "focus_passing": "Through the Middle",
+            "passing_style": "Short",
+            "counter_attack": False,
+            "pressing": "High",
+            "marking": "Zonal"
+        },
+        "tactics_it": {
+            "mentality": "Offensivo",
+            "focus_passing": "Al Centro",
+            "passing_style": "Corto",
+            "counter_attack": False,
+            "pressing": "Alto",
+            "marking": "A Zona"
+        }
+    },
+    {
+        "formation": "433", 
+        "counters": ["451v", "4141"],
+        "offensive_counter": "4-5-1 V-Style",
+        "defensive_counter": "5-4-1",
+        "reason_en": "Compact 5-man midfield neutralizes 4-3-3's width. Hit them on the counter when they push forward.",
+        "reason_it": "Il centrocampo compatto a 5 neutralizza l'ampiezza del 4-3-3. Colpisci in contropiede quando avanzano.",
+        "tactics_en": {
+            "mentality": "Defensive",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Long",
+            "counter_attack": True,
+            "pressing": "Low",
+            "marking": "Zonal"
+        },
+        "tactics_it": {
+            "mentality": "Difensivo",
+            "focus_passing": "Sulle Fasce",
+            "passing_style": "Lungo",
+            "counter_attack": True,
+            "pressing": "Basso",
+            "marking": "A Zona"
+        }
+    },
+    {
+        "formation": "352", 
+        "counters": ["433", "343"],
+        "offensive_counter": "4-3-3",
+        "defensive_counter": "4-2-2-2 Hexagon",
+        "reason_en": "Wide formations exploit 3-5-2's exposed flanks. Your wingers will have space against their 3 CBs.",
+        "reason_it": "Le formazioni ampie sfruttano i fianchi esposti del 3-5-2. Le tue ali avranno spazio contro i loro 3 DC.",
+        "tactics_en": {
+            "mentality": "Attacking",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Mixed",
+            "counter_attack": False,
+            "pressing": "High",
+            "marking": "Man-to-Man"
+        },
+        "tactics_it": {
+            "mentality": "Offensivo",
+            "focus_passing": "Sulle Fasce",
+            "passing_style": "Misto",
+            "counter_attack": False,
+            "pressing": "Alto",
+            "marking": "Uomo su Uomo"
+        }
+    },
+    {
+        "formation": "4231", 
+        "counters": ["541", "3142"],
+        "offensive_counter": "3-2-3-2",
+        "defensive_counter": "6-4-1",
+        "reason_en": "Pack the midfield to nullify their AMC. Counter-attack when they commit players forward.",
+        "reason_it": "Riempi il centrocampo per annullare il loro AMC. Contropiede quando portano giocatori in avanti.",
+        "tactics_en": {
+            "mentality": "Hard Defending",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Long",
+            "counter_attack": True,
+            "pressing": "Low",
+            "marking": "Zonal"
+        },
+        "tactics_it": {
+            "mentality": "Ultra Difensivo",
+            "focus_passing": "Sulle Fasce",
+            "passing_style": "Lungo",
+            "counter_attack": True,
+            "pressing": "Basso",
+            "marking": "A Zona"
+        }
+    },
+    {
+        "formation": "451v", 
+        "counters": ["352", "41212nd"],
+        "offensive_counter": "3-5-2",
+        "defensive_counter": "4-2-2-2 Hexagon",
+        "reason_en": "Outnumber their midfield and attack through center. Their lone striker will be isolated.",
+        "reason_it": "Supera numericamente il loro centrocampo e attacca al centro. Il loro attaccante solitario sarà isolato.",
+        "tactics_en": {
+            "mentality": "Normal",
+            "focus_passing": "Through the Middle",
+            "passing_style": "Short",
+            "counter_attack": False,
+            "pressing": "High",
+            "marking": "Zonal"
+        },
+        "tactics_it": {
+            "mentality": "Normale",
+            "focus_passing": "Al Centro",
+            "passing_style": "Corto",
+            "counter_attack": False,
+            "pressing": "Alto",
+            "marking": "A Zona"
+        }
+    },
+    {
+        "formation": "41212nd", 
+        "counters": ["433", "31222"],
+        "offensive_counter": "3-1-2-2-2",
+        "defensive_counter": "4-5-1 V-Style",
+        "reason_en": "Attack through flanks - diamond has no natural wingers. Your wide players will dominate.",
+        "reason_it": "Attacca sulle fasce - il diamante non ha ali naturali. I tuoi esterni domineranno.",
+        "tactics_en": {
+            "mentality": "Attacking",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Mixed",
+            "counter_attack": False,
+            "pressing": "High",
+            "marking": "Man-to-Man"
+        },
+        "tactics_it": {
+            "mentality": "Offensivo",
+            "focus_passing": "Sulle Fasce",
+            "passing_style": "Misto",
+            "counter_attack": False,
+            "pressing": "Alto",
+            "marking": "Uomo su Uomo"
+        }
+    },
+    {
+        "formation": "343", 
+        "counters": ["541", "451v"],
+        "offensive_counter": "5-4-1",
+        "defensive_counter": "4-5-1",
+        "reason_en": "Defensive formations exploit 3-4-3's weak defense. Stay compact and hit them on counter.",
+        "reason_it": "Le formazioni difensive sfruttano la difesa debole del 3-4-3. Resta compatto e colpisci in contropiede.",
+        "tactics_en": {
+            "mentality": "Hard Defending",
+            "focus_passing": "Mixed",
+            "passing_style": "Long",
+            "counter_attack": True,
+            "pressing": "Low",
+            "marking": "Zonal"
+        },
+        "tactics_it": {
+            "mentality": "Ultra Difensivo",
+            "focus_passing": "Misto",
+            "passing_style": "Lungo",
+            "counter_attack": True,
+            "pressing": "Basso",
+            "marking": "A Zona"
+        }
+    },
+    {
+        "formation": "541", 
+        "counters": ["433", "343"],
+        "offensive_counter": "4-3-3",
+        "defensive_counter": "4-4-2 Classic",
+        "reason_en": "Attacking width stretches their 5-man defense. Patient passing will create openings.",
+        "reason_it": "L'ampiezza offensiva distende la loro difesa a 5. Passaggi pazienti creeranno aperture.",
+        "tactics_en": {
+            "mentality": "Attacking",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Short",
+            "counter_attack": False,
+            "pressing": "High",
+            "marking": "Zonal"
+        },
+        "tactics_it": {
+            "mentality": "Offensivo",
+            "focus_passing": "Sulle Fasce",
+            "passing_style": "Corto",
+            "counter_attack": False,
+            "pressing": "Alto",
+            "marking": "A Zona"
+        }
+    },
+    {
+        "formation": "4141", 
+        "counters": ["4231", "352"],
+        "offensive_counter": "4-3-2-1",
+        "defensive_counter": "4-5-1 V-Style",
+        "reason_en": "Creative formations can bypass the single DMC. Overload their pivot with multiple attackers.",
+        "reason_it": "Le formazioni creative possono aggirare il singolo DMC. Sovraccarica il loro pivot con più attaccanti.",
+        "tactics_en": {
+            "mentality": "Attacking",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Long",
+            "counter_attack": True,
+            "pressing": "High",
+            "marking": "Man-to-Man"
+        },
+        "tactics_it": {
+            "mentality": "Offensivo",
+            "focus_passing": "Sulle Fasce",
+            "passing_style": "Lungo",
+            "counter_attack": True,
+            "pressing": "Alto",
+            "marking": "Uomo su Uomo"
+        }
+    },
+    {
+        "formation": "4222",
+        "counters": ["4312", "433"],
+        "offensive_counter": "4-3-1-2",
+        "defensive_counter": "4-5-1 V-Style",
+        "reason_en": "Target their lack of width. Your ML/MR will have free runs against their narrow shape.",
+        "reason_it": "Colpisci la loro mancanza di ampiezza. I tuoi ML/MR avranno corse libere contro la loro forma stretta.",
+        "tactics_en": {
+            "mentality": "Normal",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Short",
+            "counter_attack": True,
+            "pressing": "High",
+            "marking": "Zonal"
+        },
+        "tactics_it": {
+            "mentality": "Normale",
+            "focus_passing": "Sulle Fasce",
+            "passing_style": "Corto",
+            "counter_attack": True,
+            "pressing": "Alto",
+            "marking": "A Zona"
+        }
+    }
 ]
+
+# ==================== SCOUT TIPS DATA (EXPANDED) ====================
 
 SCOUT_TIPS = [
     {
@@ -333,48 +775,128 @@ SCOUT_TIPS = [
         "category": "defense",
         "title_en": "Center Back Selection",
         "title_it": "Selezione Difensori Centrali",
-        "content_en": "Look for CBs with high Tackling, Heading, and Positioning. Speed is important to recover against fast strikers. Prioritize players with 4+ stars.",
-        "content_it": "Cerca DC con alto Contrasto, Colpo di Testa e Posizionamento. La velocità è importante per recuperare contro attaccanti veloci. Dai priorità a giocatori con 4+ stelle."
+        "content_en": "Look for CBs with high Tackling, Heading, and Positioning. Speed is important to recover against fast strikers. Prioritize players with 4+ stars. Use 2 DC vs 1 ST, 3 DC vs 2 ST, and DL-DC-DR vs ST-AML-AMR.",
+        "content_it": "Cerca DC con alto Contrasto, Colpo di Testa e Posizionamento. La velocità è importante per recuperare contro attaccanti veloci. Dai priorità a giocatori con 4+ stelle. Usa 2 DC vs 1 ST, 3 DC vs 2 ST, e DL-DC-DR vs ST-AML-AMR."
     },
     {
         "id": "2",
         "category": "midfield",
         "title_en": "Midfield Balance",
         "title_it": "Equilibrio a Centrocampo",
-        "content_en": "Have a mix of defensive (DMC) and attacking (AMC) midfielders. ML/MR should have good Crossing and Pace. Central midfielders need Passing and Stamina.",
-        "content_it": "Avere un mix di centrocampisti difensivi (CDC) e offensivi (CAC). ML/MR devono avere buon Cross e Velocità. I centrocampisti centrali necessitano Passaggio e Resistenza."
+        "content_en": "Have a mix of defensive (DMC) and attacking (AMC) midfielders. ML/MR should have good Crossing and Pace. Central midfielders need Passing and Stamina. Box-to-box midfielders are gold!",
+        "content_it": "Avere un mix di centrocampisti difensivi (DMC) e offensivi (AMC). ML/MR devono avere buon Cross e Velocità. I centrocampisti centrali necessitano Passaggio e Resistenza. I centrocampisti box-to-box sono oro!"
     },
     {
         "id": "3",
         "category": "attack",
         "title_en": "Striker Types",
         "title_it": "Tipi di Attaccante",
-        "content_en": "Choose strikers based on your tactics. Target men need Heading and Strength. Speedsters need Pace and Finishing. Complete forwards are rare but valuable.",
-        "content_it": "Scegli gli attaccanti in base alle tue tattiche. I pivot necessitano Colpo di Testa e Forza. I velocisti necessitano Velocità e Finalizzazione. Gli attaccanti completi sono rari ma preziosi."
+        "content_en": "Target men need Heading and Strength. Speedsters need Pace and Finishing. Complete forwards are rare but valuable. Use 2 ST to break 4 defenders, 3 ST (or ST-AML-AMR) to break 3 defenders.",
+        "content_it": "I pivot necessitano Colpo di Testa e Forza. I velocisti necessitano Velocità e Finalizzazione. Gli attaccanti completi sono rari ma preziosi. Usa 2 ST vs 4 difensori, 3 ST (o ST-AML-AMR) vs 3 difensori."
     },
     {
         "id": "4",
         "category": "training",
         "title_en": "Training Priority",
         "title_it": "Priorità Allenamento",
-        "content_en": "Focus training on your starting 11 first. Use Quick Training early in seasons. Save intensive drills for important matches. Maintain 80/80 teamplay before big games.",
-        "content_it": "Concentra l'allenamento prima sui titolari. Usa Allenamento Rapido all'inizio delle stagioni. Conserva gli esercizi intensivi per partite importanti. Mantieni 80/80 di affiatamento prima di grandi partite."
+        "content_en": "Focus training on your starting 11 first. Use Quick Training early in seasons. Save intensive drills for important matches. Maintain 80/80 teamplay before big games. Train GK: One-on-One, Aerial, Reflexes. Train DC: Tackling, Heading, Positioning.",
+        "content_it": "Concentra l'allenamento prima sui titolari. Usa Allenamento Rapido all'inizio delle stagioni. Conserva gli esercizi intensivi per partite importanti. Mantieni 80/80 di affiatamento prima di grandi partite. Allena GK: Uno contro Uno, Aereo, Riflessi. Allena DC: Contrasto, Colpo di Testa, Posizionamento."
     },
     {
         "id": "5",
         "category": "budget",
-        "title_en": "Budget Management",
-        "title_it": "Gestione Budget",
-        "content_en": "Don't spend all money on transfers. Keep reserves for player salaries and training. Scout list players cost more but can be signed immediately.",
-        "content_it": "Non spendere tutti i soldi in trasferimenti. Tieni riserve per stipendi e allenamento. I giocatori dalla lista scout costano di più ma possono essere ingaggiati subito."
+        "title_en": "Token Management",
+        "title_it": "Gestione Token",
+        "content_en": "Don't spend more than 30 tokens for a single auction player. Spend at least 15 tokens for youth academy per season. Never buy assistant players for more than 50 tokens. Sign TV rights for daily token bonus.",
+        "content_it": "Non spendere più di 30 token per un singolo giocatore all'asta. Spendi almeno 15 token per l'accademia giovanile per stagione. Mai comprare assistenti per più di 50 token. Firma i diritti TV per bonus token giornaliero."
     },
     {
         "id": "6",
         "category": "tactics",
-        "title_en": "In-Match Adjustments",
-        "title_it": "Aggiustamenti in Partita",
-        "content_en": "Change to defensive when leading. Switch to attacking when trailing. Use counters against possession-based opponents. Low pressing saves stamina for 2 daily games.",
-        "content_it": "Passa a difensivo quando sei in vantaggio. Passa a offensivo quando sei in svantaggio. Usa contropiedi contro avversari che giocano sul possesso. Pressing basso risparmia energia per 2 partite giornaliere."
+        "title_en": "Team Mentality Explained",
+        "title_it": "Mentalità di Squadra Spiegata",
+        "content_en": "Hard Defending: Deep position, counter-attacks. Defending: Slightly higher, counter from midfield. Normal: Balanced approach. Attacking: Higher line, fullbacks support. Hard Attacking: All-out attack from opponent's half.",
+        "content_it": "Ultra Difensivo: Posizione arretrata, contropiedi. Difensivo: Leggermente più alto, contropiede dal centrocampo. Normale: Approccio bilanciato. Offensivo: Linea più alta, terzini in attacco. Ultra Offensivo: Attacco totale dalla metà campo avversaria."
+    },
+    {
+        "id": "7",
+        "category": "tactics",
+        "title_en": "Focus Passing Guide",
+        "title_it": "Guida Focus Passaggio",
+        "content_en": "Mixed: Play everywhere on pitch. Down Both Flanks: Use wide players to create. Right/Left Flank: Focus one side. Through the Middle: Central penetration. Match your passing to your formation!",
+        "content_it": "Misto: Gioca ovunque sul campo. Sulle Fasce: Usa esterni per creare. Fascia Destra/Sinistra: Concentra su un lato. Al Centro: Penetrazione centrale. Adatta i passaggi alla tua formazione!"
+    },
+    {
+        "id": "8",
+        "category": "tactics",
+        "title_en": "Counter-Attack & Pressing",
+        "title_it": "Contropiede & Pressing",
+        "content_en": "Turn ON counter-attacks if opponent has more possession. Turn OFF if you dominate. High press wins ball high but tires players. Low press saves stamina for 2 daily games. Use high press against weaker teams!",
+        "content_it": "Attiva contropiede se l'avversario ha più possesso. Disattiva se domini. Pressing alto recupera palla in alto ma stanca. Pressing basso risparmia resistenza per 2 partite giornaliere. Usa pressing alto contro squadre più deboli!"
+    },
+    {
+        "id": "9",
+        "category": "tactics",
+        "title_en": "Marking & Tackling",
+        "title_it": "Marcatura & Contrasti",
+        "content_en": "Zonal marking: Players stay in formation positions. Man-to-man: Mark specific attackers (tires defenders faster). Easy tackle: Few fouls, less risky. Hard tackle: More fouls but wins more balls. Match opponent's playstyle!",
+        "content_it": "Marcatura a zona: Giocatori restano nelle posizioni. Uomo su uomo: Marca attaccanti specifici (stanca i difensori). Contrasto facile: Pochi falli, meno rischioso. Contrasto duro: Più falli ma recupera più palle. Adatta allo stile dell'avversario!"
+    },
+    {
+        "id": "10",
+        "category": "tactics",
+        "title_en": "Offside Trap",
+        "title_it": "Fuorigioco",
+        "content_en": "Turn ON offside trap if opponent plays long balls to strikers. Turn OFF if opponent plays short passes. Risky against fast strikers! Best used with high defensive line and coordinated back line.",
+        "content_it": "Attiva fuorigioco se l'avversario gioca palle lunghe agli attaccanti. Disattiva se gioca passaggi corti. Rischioso contro attaccanti veloci! Meglio con linea difensiva alta e difesa coordinata."
+    },
+    {
+        "id": "11",
+        "category": "defense",
+        "title_en": "Full-Back Selection",
+        "title_it": "Selezione Terzini",
+        "content_en": "DR/DL need pace and stamina for overlapping runs. Look for good crossing and tackling. Wing-backs (DML/DMR) need even more stamina. In 3-back systems, they are your only width!",
+        "content_it": "DR/DL necessitano velocità e resistenza per sovrapposizioni. Cerca buon cross e contrasto. I esterni (DML/DMR) necessitano ancora più resistenza. Nei sistemi a 3, sono la tua unica ampiezza!"
+    },
+    {
+        "id": "12",
+        "category": "attack",
+        "title_en": "Winger Selection",
+        "title_it": "Selezione Ali",
+        "content_en": "ML/MR need Pace, Crossing, and Dribbling. AML/AMR should have Finishing too. Inverted wingers (right-footed on left) can cut inside and shoot. Classic wingers provide crosses for headers.",
+        "content_it": "ML/MR necessitano Velocità, Cross e Dribbling. AML/AMR dovrebbero avere anche Finalizzazione. Ali invertite (destro a sinistra) possono rientrare e tirare. Ali classiche forniscono cross per colpi di testa."
+    },
+    {
+        "id": "13",
+        "category": "training",
+        "title_en": "Position Training Drills",
+        "title_it": "Esercizi per Posizione",
+        "content_en": "GK: One-on-One, Aerial, Reflexes. DC: Tackling, Heading, Positioning. DR/DL: Tackling, Pace, Crossing. MC: Passing, Tackling, Stamina. AMC: Passing, Finishing, Creativity. ST: Finishing, Heading, Pace.",
+        "content_it": "GK: Uno contro Uno, Aereo, Riflessi. DC: Contrasto, Colpo di Testa, Posizionamento. DR/DL: Contrasto, Velocità, Cross. MC: Passaggio, Contrasto, Resistenza. AMC: Passaggio, Finalizzazione, Creatività. ST: Finalizzazione, Colpo di Testa, Velocità."
+    },
+    {
+        "id": "14",
+        "category": "budget",
+        "title_en": "Youth Academy Tips",
+        "title_it": "Consigli Accademia Giovanile",
+        "content_en": "Try to get at least three 6-star players from youth academy every season. These young players will help your team win trophies in future seasons. Youth players develop faster with regular playing time.",
+        "content_it": "Cerca di ottenere almeno tre giocatori da 6 stelle dall'accademia ogni stagione. Questi giovani giocatori aiuteranno la squadra a vincere trofei nelle stagioni future. I giovani si sviluppano più velocemente con minuti regolari."
+    },
+    {
+        "id": "15",
+        "category": "general",
+        "title_en": "Beat Stronger Opponents",
+        "title_it": "Battere Avversari più Forti",
+        "content_en": "Play counter-attacking football. Be strong in numbers in defense. Mark all opponent's attackers. Play long balls for counter-attacks - don't try to out-pass stronger midfielders. Let them attack, then strike!",
+        "content_it": "Gioca calcio di contropiede. Sii forte numericamente in difesa. Marca tutti gli attaccanti avversari. Gioca palle lunghe per contropiedi - non provare a superare centrocampisti più forti. Lasciali attaccare, poi colpisci!"
+    },
+    {
+        "id": "16",
+        "category": "general",
+        "title_en": "Pre-Match Preparation",
+        "title_it": "Preparazione Pre-Partita",
+        "content_en": "Always provide full Morale Boost and Fitness Condition before important matches. Add friends in Top Eleven - they help you get more possession during matches! Review opponent's formation and adjust tactics.",
+        "content_it": "Fornisci sempre Morale e Condizione al massimo prima di partite importanti. Aggiungi amici in Top Eleven - ti aiutano ad avere più possesso! Rivedi la formazione avversaria e adatta le tattiche."
     }
 ]
 
