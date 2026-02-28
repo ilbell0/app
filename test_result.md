@@ -123,11 +123,14 @@ backend:
     file: "server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: true
         agent: "main"
         comment: "GET /api/formations returns all 8 formations with bilingual content"
+      - working: true
+        agent: "main"
+        comment: "UPDATED: Added tactic_type (en/it) and opponent_settings (strong/equal/weak) with tactical settings per opponent level for all 14 formations"
 
   - task: "Counter Tactics API"
     implemented: true
