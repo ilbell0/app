@@ -1026,6 +1026,8 @@ FORMATIONS = [
         "strengths_it": ["Dominio a centrocampo", "Due attaccanti", "Ampiezza flessibile", "Pronta al contropiede"],
         "weaknesses_en": ["Exposed defense", "Wing-backs must track back", "High stamina required"],
         "weaknesses_it": ["Difesa esposta", "Esterni devono rientrare", "Richiede alta resistenza"],
+        "tactic_type_en": "Counter-Attack / Midfield Control",
+        "tactic_type_it": "Contropiede / Controllo Centrocampo",
         "recommended_tactics": {
             "mentality": "Defensive",
             "focus_passing": "Mixed",
@@ -1035,6 +1037,62 @@ FORMATIONS = [
             "tackling": "Normal",
             "marking": "Man-to-Man",
             "offside_trap": True
+        },
+        "opponent_settings": {
+            "strong": {
+                "mentality": "Defensive",
+                "mentality_it": "Difensivo",
+                "focus_passing": "Down Both Flanks",
+                "focus_passing_it": "Sulle Fasce",
+                "passing_style": "Long",
+                "passing_style_it": "Lungo",
+                "counter_attack": True,
+                "pressing": "Low",
+                "pressing_it": "Basso",
+                "tackling": "Easy",
+                "tackling_it": "Facile",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": True,
+                "tip_en": "DMC protects the 3 CBs. Wing-mids stay back. Long balls to striker duo on counters.",
+                "tip_it": "Il DMC protegge i 3 DC. Gli esterni restano bassi. Palle lunghe alla coppia d'attacco in contropiede."
+            },
+            "equal": {
+                "mentality": "Normal",
+                "mentality_it": "Normale",
+                "focus_passing": "Mixed",
+                "focus_passing_it": "Misto",
+                "passing_style": "Mixed",
+                "passing_style_it": "Misto",
+                "counter_attack": True,
+                "pressing": "Medium",
+                "pressing_it": "Medio",
+                "tackling": "Normal",
+                "tackling_it": "Normale",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": True,
+                "tip_en": "Dominate midfield. Let ML/MR overlap to create for the strikers.",
+                "tip_it": "Domina il centrocampo. Lascia sovrapporre ML/MR per creare per gli attaccanti."
+            },
+            "weak": {
+                "mentality": "Attacking",
+                "mentality_it": "Offensivo",
+                "focus_passing": "Down Both Flanks",
+                "focus_passing_it": "Sulle Fasce",
+                "passing_style": "Short",
+                "passing_style_it": "Corto",
+                "counter_attack": False,
+                "pressing": "High",
+                "pressing_it": "Alto",
+                "tackling": "Hard",
+                "tackling_it": "Duro",
+                "marking": "Man-to-Man",
+                "marking_it": "Uomo su Uomo",
+                "offside_trap": False,
+                "tip_en": "Press high and overwhelm. Wing-mids become attacking wingers!",
+                "tip_it": "Pressa alto e travolgi. Gli esterni diventano ali d'attacco!"
+            }
         }
     },
     {
@@ -1047,6 +1105,8 @@ FORMATIONS = [
         "strengths_it": ["Trequartista creativo", "Partnership di attaccanti", "Controllo centrocampo", "Stile italiano"],
         "weaknesses_en": ["No width", "Relies on AMC", "Flanks exposed"],
         "weaknesses_it": ["Nessuna ampiezza", "Dipende dall'AMC", "Fianchi esposti"],
+        "tactic_type_en": "Possession / Creative Attack",
+        "tactic_type_it": "Possesso / Attacco Creativo",
         "recommended_tactics": {
             "mentality": "Attacking",
             "focus_passing": "Through the Middle",
@@ -1056,6 +1116,62 @@ FORMATIONS = [
             "tackling": "Normal",
             "marking": "Zonal",
             "offside_trap": False
+        },
+        "opponent_settings": {
+            "strong": {
+                "mentality": "Defensive",
+                "mentality_it": "Difensivo",
+                "focus_passing": "Through the Middle",
+                "focus_passing_it": "Al Centro",
+                "passing_style": "Long",
+                "passing_style_it": "Lungo",
+                "counter_attack": True,
+                "pressing": "Low",
+                "pressing_it": "Basso",
+                "tackling": "Easy",
+                "tackling_it": "Facile",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": True,
+                "tip_en": "Protect the 3 MCs. Use AMC to link play on counters to the 2 strikers.",
+                "tip_it": "Proteggi i 3 MC. Usa l'AMC per collegare in contropiede verso i 2 attaccanti."
+            },
+            "equal": {
+                "mentality": "Normal",
+                "mentality_it": "Normale",
+                "focus_passing": "Through the Middle",
+                "focus_passing_it": "Al Centro",
+                "passing_style": "Short",
+                "passing_style_it": "Corto",
+                "counter_attack": True,
+                "pressing": "Medium",
+                "pressing_it": "Medio",
+                "tackling": "Normal",
+                "tackling_it": "Normale",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": False,
+                "tip_en": "Let AMC orchestrate attacks. Patient buildup through center to the strikers.",
+                "tip_it": "Lascia l'AMC orchestrare gli attacchi. Costruzione paziente dal centro verso gli attaccanti."
+            },
+            "weak": {
+                "mentality": "Attacking",
+                "mentality_it": "Offensivo",
+                "focus_passing": "Through the Middle",
+                "focus_passing_it": "Al Centro",
+                "passing_style": "Short",
+                "passing_style_it": "Corto",
+                "counter_attack": False,
+                "pressing": "High",
+                "pressing_it": "Alto",
+                "tackling": "Hard",
+                "tackling_it": "Duro",
+                "marking": "Man-to-Man",
+                "marking_it": "Uomo su Uomo",
+                "offside_trap": False,
+                "tip_en": "AMC runs the show! Feed the 2 strikers constantly. They can't handle it.",
+                "tip_it": "L'AMC comanda il gioco! Servi costantemente i 2 attaccanti. Non potranno reggere."
+            }
         }
     },
     {
@@ -1068,6 +1184,8 @@ FORMATIONS = [
         "strengths_it": ["Solidità difensiva", "Sovrapposizioni degli esterni", "Due attaccanti", "Difficile da sfondare"],
         "weaknesses_en": ["Can be too defensive", "Wing-backs tire easily", "Lacks midfield creativity"],
         "weaknesses_it": ["Può essere troppo difensiva", "Esterni si stancano facilmente", "Manca creatività a centrocampo"],
+        "tactic_type_en": "Defensive / Counter-Attack",
+        "tactic_type_it": "Difensivo / Contropiede",
         "recommended_tactics": {
             "mentality": "Defensive",
             "focus_passing": "Down Both Flanks",
@@ -1077,6 +1195,62 @@ FORMATIONS = [
             "tackling": "Normal",
             "marking": "Zonal",
             "offside_trap": True
+        },
+        "opponent_settings": {
+            "strong": {
+                "mentality": "Hard Defending",
+                "mentality_it": "Ultra Difensivo",
+                "focus_passing": "Down Both Flanks",
+                "focus_passing_it": "Sulle Fasce",
+                "passing_style": "Long",
+                "passing_style_it": "Lungo",
+                "counter_attack": True,
+                "pressing": "Low",
+                "pressing_it": "Basso",
+                "tackling": "Easy",
+                "tackling_it": "Facile",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": True,
+                "tip_en": "5 defenders tight and compact. Wing-backs stay back. Counter through strikers.",
+                "tip_it": "5 difensori stretti e compatti. Gli esterni restano bassi. Contropiede tramite gli attaccanti."
+            },
+            "equal": {
+                "mentality": "Defensive",
+                "mentality_it": "Difensivo",
+                "focus_passing": "Down Both Flanks",
+                "focus_passing_it": "Sulle Fasce",
+                "passing_style": "Long",
+                "passing_style_it": "Lungo",
+                "counter_attack": True,
+                "pressing": "Low",
+                "pressing_it": "Basso",
+                "tackling": "Normal",
+                "tackling_it": "Normale",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": True,
+                "tip_en": "Solid defense first. Let wing-backs overlap when safe to create for strikers.",
+                "tip_it": "Prima difesa solida. Lascia sovrapporre gli esterni quando è sicuro per creare per gli attaccanti."
+            },
+            "weak": {
+                "mentality": "Normal",
+                "mentality_it": "Normale",
+                "focus_passing": "Down Both Flanks",
+                "focus_passing_it": "Sulle Fasce",
+                "passing_style": "Mixed",
+                "passing_style_it": "Misto",
+                "counter_attack": True,
+                "pressing": "Medium",
+                "pressing_it": "Medio",
+                "tackling": "Normal",
+                "tackling_it": "Normale",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": False,
+                "tip_en": "Wing-backs push high as extra attackers. Overwhelm with numbers on flanks.",
+                "tip_it": "Gli esterni spingono in alto come attaccanti extra. Travolgi con i numeri sulle fasce."
+            }
         }
     },
     {
@@ -1089,6 +1263,8 @@ FORMATIONS = [
         "strengths_it": ["Linea offensiva creativa", "Dominio a centrocampo", "Attacco flessibile", "Opzioni di pressing"],
         "weaknesses_en": ["Three at the back risk", "Needs fast CBs", "Can concede counters"],
         "weaknesses_it": ["Rischio con tre difensori", "Richiede DC veloci", "Può subire contropiedi"],
+        "tactic_type_en": "Attacking / High Press",
+        "tactic_type_it": "Offensivo / Pressing Alto",
         "recommended_tactics": {
             "mentality": "Attacking",
             "focus_passing": "Mixed",
@@ -1098,6 +1274,62 @@ FORMATIONS = [
             "tackling": "Normal",
             "marking": "Zonal",
             "offside_trap": False
+        },
+        "opponent_settings": {
+            "strong": {
+                "mentality": "Normal",
+                "mentality_it": "Normale",
+                "focus_passing": "Down Both Flanks",
+                "focus_passing_it": "Sulle Fasce",
+                "passing_style": "Long",
+                "passing_style_it": "Lungo",
+                "counter_attack": True,
+                "pressing": "Medium",
+                "pressing_it": "Medio",
+                "tackling": "Normal",
+                "tackling_it": "Normale",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": True,
+                "tip_en": "Be careful with 3 at back! DMC must protect well. Hit them on quick transitions.",
+                "tip_it": "Attento con 3 in difesa! Il DMC deve proteggere bene. Colpisci nelle transizioni veloci."
+            },
+            "equal": {
+                "mentality": "Attacking",
+                "mentality_it": "Offensivo",
+                "focus_passing": "Mixed",
+                "focus_passing_it": "Misto",
+                "passing_style": "Short",
+                "passing_style_it": "Corto",
+                "counter_attack": False,
+                "pressing": "High",
+                "pressing_it": "Alto",
+                "tackling": "Normal",
+                "tackling_it": "Normale",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": False,
+                "tip_en": "Use your 3 AMs to dominate. Press high and create overloads in attack.",
+                "tip_it": "Usa i 3 trequartisti per dominare. Pressa alto e crea superiorità numerica in attacco."
+            },
+            "weak": {
+                "mentality": "Hard Attacking",
+                "mentality_it": "Ultra Offensivo",
+                "focus_passing": "Mixed",
+                "focus_passing_it": "Misto",
+                "passing_style": "Short",
+                "passing_style_it": "Corto",
+                "counter_attack": False,
+                "pressing": "High",
+                "pressing_it": "Alto",
+                "tackling": "Hard",
+                "tackling_it": "Duro",
+                "marking": "Man-to-Man",
+                "marking_it": "Uomo su Uomo",
+                "offside_trap": False,
+                "tip_en": "Unleash all 3 AMs! Total dominance in their half. Score many goals!",
+                "tip_it": "Scatena tutti e 3 i trequartisti! Dominio totale nella loro metà campo. Segna tanti gol!"
+            }
         }
     }
 ]
