@@ -320,3 +320,5 @@ test_plan:
 agent_communication:
   - agent: "main"
     message: "MVP implementation complete. All frontend screens working. Backend APIs for formations, counters, scout-tips working. Auth and AI chat need testing with actual login."
+  - agent: "main"
+    message: "FEATURE ADDED: Added tactic_type and opponent_settings to all 14 formations. Users can now see recommended tactical settings based on opponent strength level (strong/equal/weak). Updated frontend formations modal to display: tactic type badge, opponent level selector (Strong/Equal/Weak tabs), and detailed tactical grid with mentality, passing, pressing, marking, tackling, counter-attack, and offside trap settings."
