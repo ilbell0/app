@@ -2051,6 +2051,196 @@ COUNTER_TACTICS = [
             "pressing": "Alto",
             "marking": "A Zona"
         }
+    },
+    # ==================== NEW 2025/2026 COUNTER TACTICS ====================
+    {
+        "formation": "31411",
+        "counters": ["433", "4123"],
+        "offensive_counter": "4-3-3",
+        "defensive_counter": "4-5-1 V-Style",
+        "meta_2026": True,
+        "reason_en": "Attack the flanks! 3-1-4-1-1 has only 3 CBs and no natural wing coverage. Your AML/AMR or ML/MR will overwhelm their vulnerable wings. Use width and crosses to exploit the 3-man defense.",
+        "reason_it": "Attacca le fasce! Il 3-1-4-1-1 ha solo 3 DC e nessuna copertura naturale sulle ali. I tuoi AML/AMR o ML/MR travolgeranno le loro fasce vulnerabili. Usa ampiezza e cross per sfruttare la difesa a 3.",
+        "tactics_en": {
+            "mentality": "Attacking",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Mixed",
+            "counter_attack": False,
+            "pressing": "High",
+            "marking": "Zonal",
+            "tip": "Focus AML/AMR with high crossing and pace. Their DMC can't cover everything."
+        },
+        "tactics_it": {
+            "mentality": "Offensivo",
+            "focus_passing": "Sulle Fasce",
+            "passing_style": "Misto",
+            "counter_attack": False,
+            "pressing": "Alto",
+            "marking": "A Zona",
+            "tip": "Concentrati su AML/AMR con alto cross e velocità. Il loro DMC non può coprire tutto."
+        }
+    },
+    {
+        "formation": "4123",
+        "counters": ["31411", "451v"],
+        "offensive_counter": "3-1-4-1-1",
+        "defensive_counter": "4-5-1 V-Style",
+        "meta_2026": True,
+        "reason_en": "Dominate midfield to nullify their 3 forwards. 3-1-4-1-1's 7-man midfield overwhelms 4-1-2-3's 2 MCs. DMC backward arrow essential to block their AMC/ST link.",
+        "reason_it": "Domina il centrocampo per annullare i loro 3 attaccanti. Il centrocampo a 7 del 3-1-4-1-1 travolge i 2 MC del 4-1-2-3. Freccia in basso sul DMC essenziale per bloccare il collegamento AMC/ST.",
+        "tactics_en": {
+            "mentality": "Normal",
+            "focus_passing": "Mixed",
+            "passing_style": "Mixed",
+            "counter_attack": True,
+            "pressing": "Low",
+            "marking": "Zonal",
+            "tip": "Your 7 midfielders vs their 3. Control the game and counter through AMC."
+        },
+        "tactics_it": {
+            "mentality": "Normale",
+            "focus_passing": "Misto",
+            "passing_style": "Misto",
+            "counter_attack": True,
+            "pressing": "Basso",
+            "marking": "A Zona",
+            "tip": "I tuoi 7 centrocampisti contro i loro 3. Controlla la partita e contropiede tramite AMC."
+        }
+    },
+    {
+        "formation": "41221",
+        "counters": ["433", "343"],
+        "offensive_counter": "4-3-3",
+        "defensive_counter": "3-4-3",
+        "meta_2026": True,
+        "reason_en": "Attack the wings aggressively. 4-1-2-2-1's strength is the protected center, so avoid it. Your wingers should target their exposed DL/DR with pace and crossing.",
+        "reason_it": "Attacca le fasce aggressivamente. La forza del 4-1-2-2-1 è il centro protetto, quindi evitalo. Le tue ali devono puntare i loro DL/DR esposti con velocità e cross.",
+        "tactics_en": {
+            "mentality": "Attacking",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Mixed",
+            "counter_attack": False,
+            "pressing": "High",
+            "marking": "Man-to-Man",
+            "tip": "Avoid the center! Their DMC + 2 DCs are a wall. Attack ONLY on flanks."
+        },
+        "tactics_it": {
+            "mentality": "Offensivo",
+            "focus_passing": "Sulle Fasce",
+            "passing_style": "Misto",
+            "counter_attack": False,
+            "pressing": "Alto",
+            "marking": "Uomo su Uomo",
+            "tip": "Evita il centro! Il loro DMC + 2 DC sono un muro. Attacca SOLO sulle fasce."
+        }
+    },
+    {
+        "formation": "3241",
+        "counters": ["433", "4123"],
+        "offensive_counter": "4-3-3",
+        "defensive_counter": "4-1-2-3",
+        "meta_2026": True,
+        "reason_en": "Target the 3 CBs with wide attackers. 3-2-4-1's double DMC protects center well, so attack flanks. Your AML/AMR will have space against their narrow shape.",
+        "reason_it": "Punta i 3 DC con attaccanti larghi. Il doppio DMC del 3-2-4-1 protegge bene il centro, quindi attacca le fasce. I tuoi AML/AMR avranno spazio contro la loro forma stretta.",
+        "tactics_en": {
+            "mentality": "Attacking",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Mixed",
+            "counter_attack": False,
+            "pressing": "High",
+            "marking": "Zonal",
+            "tip": "Width is key! Their 2 DMCs cover center. Use fast wingers to exploit the 3 CBs."
+        },
+        "tactics_it": {
+            "mentality": "Offensivo",
+            "focus_passing": "Sulle Fasce",
+            "passing_style": "Misto",
+            "counter_attack": False,
+            "pressing": "Alto",
+            "marking": "A Zona",
+            "tip": "L'ampiezza è la chiave! I loro 2 DMC coprono il centro. Usa ali veloci per sfruttare i 3 DC."
+        }
+    },
+    {
+        "formation": "5212",
+        "counters": ["433", "31411"],
+        "offensive_counter": "4-3-3",
+        "defensive_counter": "3-1-4-1-1",
+        "meta_2026": True,
+        "reason_en": "Patient possession to break down their 5-man defense. They have only 2 MCs, so dominate midfield with numerical advantage. Use through balls to exploit gaps behind wing-backs.",
+        "reason_it": "Possesso paziente per sfondare la loro difesa a 5. Hanno solo 2 MC, quindi domina il centrocampo con vantaggio numerico. Usa passaggi filtranti per sfruttare gli spazi dietro gli esterni.",
+        "tactics_en": {
+            "mentality": "Attacking",
+            "focus_passing": "Mixed",
+            "passing_style": "Short",
+            "counter_attack": False,
+            "pressing": "High",
+            "marking": "Man-to-Man",
+            "tip": "They will sit deep. Be patient with short passing. Target spaces when wing-backs push up."
+        },
+        "tactics_it": {
+            "mentality": "Offensivo",
+            "focus_passing": "Misto",
+            "passing_style": "Corto",
+            "counter_attack": False,
+            "pressing": "Alto",
+            "marking": "Uomo su Uomo",
+            "tip": "Si chiuderanno. Sii paziente con passaggi corti. Punta gli spazi quando gli esterni salgono."
+        }
+    },
+    {
+        "formation": "4321",
+        "counters": ["433", "31411"],
+        "offensive_counter": "4-3-3",
+        "defensive_counter": "3-1-4-1-1",
+        "meta_2026": True,
+        "reason_en": "Attack the flanks to exploit their narrow shape. Christmas Tree has no natural wingers - your ML/MR will dominate. Use width and pace to stretch their 3 MCs.",
+        "reason_it": "Attacca le fasce per sfruttare la loro forma stretta. L'Albero di Natale non ha ali naturali - i tuoi ML/MR domineranno. Usa ampiezza e velocità per allargare i loro 3 MC.",
+        "tactics_en": {
+            "mentality": "Attacking",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Mixed",
+            "counter_attack": False,
+            "pressing": "High",
+            "marking": "Zonal",
+            "tip": "They're narrow! Attack wide with pacey ML/MR. Their AML/AMR must track back, tiring them."
+        },
+        "tactics_it": {
+            "mentality": "Offensivo",
+            "focus_passing": "Sulle Fasce",
+            "passing_style": "Misto",
+            "counter_attack": False,
+            "pressing": "Alto",
+            "marking": "A Zona",
+            "tip": "Sono stretti! Attacca largo con ML/MR veloci. I loro AML/AMR devono rientrare, stancandosi."
+        }
+    },
+    {
+        "formation": "31231",
+        "counters": ["451v", "5212"],
+        "offensive_counter": "4-5-1 V-Style",
+        "defensive_counter": "5-2-1-2",
+        "meta_2026": True,
+        "reason_en": "Counter their 3-at-back with quick transitions. Pack the midfield to match their numbers, then hit on counters. Target the exposed flanks when their wing-players push forward.",
+        "reason_it": "Controbatti la loro difesa a 3 con transizioni veloci. Riempi il centrocampo per pareggiare i numeri, poi colpisci in contropiede. Punta le fasce esposte quando i loro esterni avanzano.",
+        "tactics_en": {
+            "mentality": "Defensive",
+            "focus_passing": "Down Both Flanks",
+            "passing_style": "Long",
+            "counter_attack": True,
+            "pressing": "Low",
+            "marking": "Zonal",
+            "tip": "Let them come to you. Their 3 CBs are vulnerable to fast counters on flanks."
+        },
+        "tactics_it": {
+            "mentality": "Difensivo",
+            "focus_passing": "Sulle Fasce",
+            "passing_style": "Lungo",
+            "counter_attack": True,
+            "pressing": "Basso",
+            "marking": "A Zona",
+            "tip": "Lasciali venire. I loro 3 DC sono vulnerabili a contropiedi veloci sulle fasce."
+        }
     }
 ]
 
