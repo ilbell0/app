@@ -1,368 +1,303 @@
 #!/usr/bin/env python3
 """
-Top Eleven Tactics API Backend Test Suite
-Tests all backend API endpoints for functionality and data integrity
+Backend API Testing for Top Eleven Tips App
+Testing META 2025/2026 formations and counter-tactics updates
 """
 
 import asyncio
-import aiohttp
-import json
+import httpx
 import sys
 from typing import Dict, List, Any
-import traceback
 
-# Backend URL from environment
+# Backend URL from environment configuration
 BASE_URL = "https://app-refresh-64.preview.emergentagent.com/api"
 
-class APITestSuite:
+class BackendTester:
     def __init__(self):
-        self.session = None
-        self.test_results = []
-        self.failed_tests = []
-        
-    async def __aenter__(self):
-        timeout = aiohttp.ClientTimeout(total=30)
-        self.session = aiohttp.ClientSession(timeout=timeout)
-        return self
-    
-    async def __aexit__(self, exc_type, exc_val, exc_tb):
-        if self.session:
-            await self.session.close()
-    
-    def log_test(self, test_name: str, success: bool, details: str = ""):
-        """Log test result"""
-        status = "✅ PASS" if success else "❌ FAIL"
-        print(f"{status} {test_name}")
-        if details:
-            print(f"   {details}")
-        
-        self.test_results.append({
-            "test": test_name,
-            "success": success,
-            "details": details
-        })
-        
-        if not success:
-            self.failed_tests.append(test_name)
-    
-    async def test_endpoint(self, method: str, endpoint: str, expected_status: int = 200, 
-                          headers: Dict = None, data: Dict = None) -> tuple[bool, Any, str]:
-        """Generic endpoint tester"""
-        url = f"{BASE_URL}{endpoint}"
-        
-        try:
-            if method.upper() == "GET":
-                async with self.session.get(url, headers=headers) as response:
-                    response_data = await response.text()
-                    try:
-                        json_data = json.loads(response_data)
-                    except:
-                        json_data = response_data
-                    
-                    success = response.status == expected_status
-                    details = f"Status: {response.status}, Expected: {expected_status}"
-                    if not success:
-                        details += f", Response: {response_data[:200]}"
-                    
-                    return success, json_data, details
-            
-            elif method.upper() == "POST":
-                async with self.session.post(url, json=data, headers=headers) as response:
-                    response_data = await response.text()
-                    try:
-                        json_data = json.loads(response_data)
-                    except:
-                        json_data = response_data
-                    
-                    success = response.status == expected_status
-                    details = f"Status: {response.status}, Expected: {expected_status}"
-                    if not success:
-                        details += f", Response: {response_data[:200]}"
-                    
-                    return success, json_data, details
-                    
-        except Exception as e:
-            return False, None, f"Request failed: {str(e)}"
-    
+        self.base_url = BASE_URL
+        self.results = {
+            "health_check": False,
+            "formations_count": 0,
+            "formations_total_expected": 20,
+            "counters_count": 0,
+            "counters_total_expected": 17,
+            "scout_tips_working": False,
+            "meta_formations_found": [],
+            "meta_counters_found": [],
+            "expected_meta_formations": [
+                {"id": "31411", "name": "3-1-4-1-1", "should_contain_meta": True},
+                {"id": "4123", "name": "4-1-2-3", "should_contain_meta": False},
+                {"id": "41221", "name": "4-1-2-2-1", "should_contain_meta": False},
+                {"id": "3241", "name": "3-2-4-1", "should_contain_meta": True},
+                {"id": "5212", "name": "5-2-1-2", "should_contain_meta": False},
+                {"id": "4321", "name": "4-3-2-1 Christmas Tree", "should_contain_meta": False}
+            ],
+            "expected_meta_counters": [
+                {"formation": "31411", "should_have_meta_flag": True},
+                {"formation": "4123", "should_have_meta_flag": True},
+                {"formation": "41221", "should_have_meta_flag": True},
+                {"formation": "3241", "should_have_meta_flag": True},
+                {"formation": "5212", "should_have_meta_flag": True},
+                {"formation": "4321", "should_have_meta_flag": True},
+                {"formation": "31231", "should_have_meta_flag": True}
+            ],
+            "errors": []
+        }
+
     async def test_health_endpoint(self):
-        """Test GET /api/health"""
-        print("\n🔍 Testing Health Check Endpoint")
-        
-        success, data, details = await self.test_endpoint("GET", "/health")
-        
-        if success and isinstance(data, dict) and data.get("status") == "healthy":
-            self.log_test("Health Check", True, "Returns healthy status")
-        else:
-            expected_msg = f"Expected {{'status': 'healthy'}}, got: {data}"
-            self.log_test("Health Check", False, f"{details} - {expected_msg}")
-    
-    async def test_formations_endpoints(self):
-        """Test formations endpoints with new tactical features"""
-        print("\n🔍 Testing Formations Endpoints (Updated with Tactical Features)")
-        
-        # Test GET /api/formations
-        success, data, details = await self.test_endpoint("GET", "/formations")
-        
-        if success and isinstance(data, list) and len(data) == 14:
-            # Check basic bilingual fields
-            first_formation = data[0]
-            basic_fields = ["id", "name", "description_en", "description_it", 
-                           "strengths_en", "strengths_it", "weaknesses_en", "weaknesses_it"]
-            
-            has_basic = all(field in first_formation for field in basic_fields)
-            
-            # Check new tactical fields
-            tactical_fields = ["tactic_type_en", "tactic_type_it", "opponent_settings"]
-            has_tactical = all(field in first_formation for field in tactical_fields)
-            
-            if has_basic and has_tactical:
-                self.log_test("Get All Formations (Count)", True, f"Returns {len(data)} formations with basic and tactical fields")
-                
-                # Test opponent_settings structure
-                opponent_settings = first_formation.get("opponent_settings", {})
-                levels = ["strong", "equal", "weak"]
-                
-                has_all_levels = all(level in opponent_settings for level in levels)
-                
-                if has_all_levels:
-                    # Test strong level structure
-                    strong_settings = opponent_settings.get("strong", {})
-                    required_tactical_fields = [
-                        "mentality", "mentality_it",
-                        "focus_passing", "focus_passing_it", 
-                        "passing_style", "passing_style_it",
-                        "pressing", "pressing_it",
-                        "tackling", "tackling_it",
-                        "marking", "marking_it",
-                        "counter_attack", "offside_trap",
-                        "tip_en", "tip_it"
-                    ]
-                    
-                    has_all_tactical = all(field in strong_settings for field in required_tactical_fields)
-                    
-                    if has_all_tactical:
-                        self.log_test("Formation Tactical Structure", True, "All tactical fields present in opponent_settings")
-                        
-                        # Verify boolean fields
-                        bool_fields = ["counter_attack", "offside_trap"]
-                        bool_valid = all(isinstance(strong_settings.get(field), bool) for field in bool_fields)
-                        
-                        if bool_valid:
-                            self.log_test("Formation Boolean Fields", True, "counter_attack and offside_trap are boolean")
-                        else:
-                            self.log_test("Formation Boolean Fields", False, "counter_attack or offside_trap not boolean")
-                    else:
-                        missing = [f for f in required_tactical_fields if f not in strong_settings]
-                        self.log_test("Formation Tactical Structure", False, f"Missing tactical fields: {missing}")
-                else:
-                    missing_levels = [level for level in levels if level not in opponent_settings]
-                    self.log_test("Formation Opponent Levels", False, f"Missing opponent levels: {missing_levels}")
-            else:
-                missing_basic = [f for f in basic_fields if f not in first_formation] if not has_basic else []
-                missing_tactical = [f for f in tactical_fields if f not in first_formation] if not has_tactical else []
-                all_missing = missing_basic + missing_tactical
-                self.log_test("Formation Required Fields", False, f"Missing fields: {all_missing}")
-        else:
-            expected_msg = f"Expected array of 14 formations, got: {type(data)} with length {len(data) if isinstance(data, list) else 'N/A'}"
-            self.log_test("Get All Formations (Count)", False, f"{details} - {expected_msg}")
-        
-        # Test GET /api/formations/442 with tactical data
-        success, data, details = await self.test_endpoint("GET", "/formations/442")
-        
-        if success and isinstance(data, dict) and data.get("id") == "442":
-            # Verify tactical fields in single formation
-            has_tactic_type = "tactic_type_en" in data and "tactic_type_it" in data
-            has_opponent_settings = "opponent_settings" in data
-            
-            if has_tactic_type and has_opponent_settings:
-                # Check opponent_settings for all levels
-                opponent_settings = data.get("opponent_settings", {})
-                levels_present = all(level in opponent_settings for level in ["strong", "equal", "weak"])
-                
-                if levels_present:
-                    self.log_test("Get Single Formation (442)", True, "Returns 4-4-2 with complete tactical data")
-                else:
-                    missing_levels = [level for level in ["strong", "equal", "weak"] if level not in opponent_settings]
-                    self.log_test("Get Single Formation (442)", False, f"Missing opponent levels: {missing_levels}")
-            else:
-                missing_fields = []
-                if not has_tactic_type:
-                    missing_fields.extend(["tactic_type_en", "tactic_type_it"])
-                if not has_opponent_settings:
-                    missing_fields.append("opponent_settings")
-                self.log_test("Get Single Formation (442)", False, f"Missing tactical fields: {missing_fields}")
-        else:
-            expected_msg = f"Expected formation object with id '442', got: {data}"
-            self.log_test("Get Single Formation (442)", False, f"{details} - {expected_msg}")
-    
-    async def test_counters_endpoints(self):
-        """Test counter tactics endpoints"""
-        print("\n🔍 Testing Counter Tactics Endpoints")
-        
-        # Test GET /api/counters
-        success, data, details = await self.test_endpoint("GET", "/counters")
-        
-        if success and isinstance(data, list) and len(data) > 0:
-            # Check structure
-            first_counter = data[0]
-            required_fields = ["formation", "counters", "reason_en", "reason_it"]
-            
-            has_required = all(field in first_counter for field in required_fields)
-            
-            if has_required:
-                self.log_test("Get All Counter Tactics", True, f"Returns {len(data)} counter tactics with bilingual reasons")
-            else:
-                missing = [f for f in required_fields if f not in first_counter]
-                self.log_test("Get All Counter Tactics", False, f"Missing required fields: {missing}")
-        else:
-            expected_msg = f"Expected array of counter tactics, got: {type(data)} with length {len(data) if isinstance(data, list) else 'N/A'}"
-            self.log_test("Get All Counter Tactics", False, f"{details} - {expected_msg}")
-        
-        # Test GET /api/counters/442
-        success, data, details = await self.test_endpoint("GET", "/counters/442")
-        
-        if success and isinstance(data, dict) and data.get("formation") == "442":
-            counters = data.get("counters", [])
-            if isinstance(counters, list) and len(counters) > 0:
-                self.log_test("Get Counter for Formation (442)", True, f"Returns counter tactics: {counters}")
-            else:
-                self.log_test("Get Counter for Formation (442)", False, "No counter formations returned")
-        else:
-            expected_msg = f"Expected counter object for formation '442', got: {data}"
-            self.log_test("Get Counter for Formation (442)", False, f"{details} - {expected_msg}")
-    
-    async def test_scout_tips_endpoints(self):
-        """Test scout tips endpoints"""
-        print("\n🔍 Testing Scout Tips Endpoints")
-        
-        # Test GET /api/scout-tips
-        success, data, details = await self.test_endpoint("GET", "/scout-tips")
-        
-        if success and isinstance(data, list) and len(data) > 0:
-            # Check structure
-            first_tip = data[0]
-            required_fields = ["id", "category", "title_en", "title_it", "content_en", "content_it"]
-            
-            has_bilingual = all(field in first_tip for field in required_fields)
-            
-            if has_bilingual:
-                categories = list(set(tip["category"] for tip in data))
-                self.log_test("Get All Scout Tips", True, f"Returns {len(data)} tips with categories: {categories}")
-            else:
-                missing = [f for f in required_fields if f not in first_tip]
-                self.log_test("Get All Scout Tips", False, f"Missing bilingual fields: {missing}")
-        else:
-            expected_msg = f"Expected array of scout tips, got: {type(data)} with length {len(data) if isinstance(data, list) else 'N/A'}"
-            self.log_test("Get All Scout Tips", False, f"{details} - {expected_msg}")
-        
-        # Test GET /api/scout-tips/defense
-        success, data, details = await self.test_endpoint("GET", "/scout-tips/defense")
-        
-        if success and isinstance(data, list) and len(data) > 0:
-            # Verify all tips are defense category
-            all_defense = all(tip.get("category") == "defense" for tip in data)
-            if all_defense:
-                self.log_test("Get Scout Tips by Category (defense)", True, f"Returns {len(data)} defense tips")
-            else:
-                categories_found = [tip.get("category") for tip in data]
-                self.log_test("Get Scout Tips by Category (defense)", False, f"Found non-defense categories: {categories_found}")
-        else:
-            expected_msg = f"Expected array of defense tips, got: {type(data)} with length {len(data) if isinstance(data, list) else 'N/A'}"
-            self.log_test("Get Scout Tips by Category (defense)", False, f"{details} - {expected_msg}")
-    
-    async def test_auth_endpoints_without_auth(self):
-        """Test auth endpoints behavior without authentication"""
-        print("\n🔍 Testing Auth Endpoints (No Authentication)")
-        
-        # Test GET /api/auth/me without auth (should fail)
-        success, data, details = await self.test_endpoint("GET", "/auth/me", expected_status=401)
-        
-        if success:
-            self.log_test("Auth Me (No Auth)", True, "Returns 401 Unauthorized as expected")
-        else:
-            self.log_test("Auth Me (No Auth)", False, f"Expected 401, {details}")
-        
-        # Test POST /api/auth/session without session_id (should fail)
-        success, data, details = await self.test_endpoint("POST", "/auth/session", 
-                                                        expected_status=422, 
-                                                        data={})
-        
-        if success or details.find("422") != -1:
-            self.log_test("Auth Session (No Data)", True, "Returns validation error as expected")
-        else:
-            self.log_test("Auth Session (No Data)", False, f"Expected validation error, {details}")
-    
-    async def test_authenticated_endpoints_without_auth(self):
-        """Test endpoints that require authentication without providing auth"""
-        print("\n🔍 Testing Protected Endpoints (No Authentication)")
-        
-        # Test AI Chat endpoint without auth
-        success, data, details = await self.test_endpoint("POST", "/ai/chat", 
-                                                        expected_status=401,
-                                                        data={"message": "test", "language": "en"})
-        
-        if success:
-            self.log_test("AI Chat (No Auth)", True, "Returns 401 Unauthorized as expected")
-        else:
-            self.log_test("AI Chat (No Auth)", False, f"Expected 401, {details}")
-        
-        # Test Favorites endpoint without auth
-        success, data, details = await self.test_endpoint("GET", "/favorites", expected_status=401)
-        
-        if success:
-            self.log_test("Favorites (No Auth)", True, "Returns 401 Unauthorized as expected")
-        else:
-            self.log_test("Favorites (No Auth)", False, f"Expected 401, {details}")
-    
-    async def run_all_tests(self):
-        """Run comprehensive test suite"""
-        print("🚀 Starting Top Eleven Tactics API Backend Tests")
-        print(f"📍 Testing against: {BASE_URL}")
-        
+        """Test the health check endpoint"""
+        print("🔍 Testing GET /api/health...")
         try:
-            # Public endpoint tests (main focus)
-            await self.test_health_endpoint()
-            await self.test_formations_endpoints()
-            await self.test_counters_endpoints()
-            await self.test_scout_tips_endpoints()
-            
-            # Auth behavior tests
-            await self.test_auth_endpoints_without_auth()
-            await self.test_authenticated_endpoints_without_auth()
-            
+            async with httpx.AsyncClient() as client:
+                response = await client.get(f"{self.base_url}/health")
+                
+                if response.status_code == 200:
+                    data = response.json()
+                    if data.get("status") == "healthy":
+                        self.results["health_check"] = True
+                        print("✅ Health check endpoint working correctly")
+                    else:
+                        self.results["errors"].append("Health endpoint returned unexpected data")
+                        print("❌ Health check endpoint returned unexpected data")
+                else:
+                    self.results["errors"].append(f"Health endpoint returned {response.status_code}")
+                    print(f"❌ Health endpoint returned {response.status_code}")
+                    
         except Exception as e:
-            print(f"\n❌ Test suite failed with error: {str(e)}")
-            traceback.print_exc()
+            self.results["errors"].append(f"Health check failed: {str(e)}")
+            print(f"❌ Health check failed: {str(e)}")
+
+    async def test_formations_endpoint(self):
+        """Test formations endpoint and verify META 2025/2026 formations"""
+        print("\n🔍 Testing GET /api/formations...")
+        try:
+            async with httpx.AsyncClient() as client:
+                response = await client.get(f"{self.base_url}/formations")
+                
+                if response.status_code == 200:
+                    formations = response.json()
+                    self.results["formations_count"] = len(formations)
+                    
+                    print(f"📊 Found {len(formations)} formations (expected: {self.results['formations_total_expected']})")
+                    
+                    if len(formations) == self.results["formations_total_expected"]:
+                        print("✅ Formations count matches expected (20 formations)")
+                    else:
+                        self.results["errors"].append(f"Expected {self.results['formations_total_expected']} formations, got {len(formations)}")
+                        print(f"❌ Expected {self.results['formations_total_expected']} formations, got {len(formations)}")
+                    
+                    # Check for specific META 2025/2026 formations
+                    formation_ids = [f["id"] for f in formations]
+                    formation_dict = {f["id"]: f for f in formations}
+                    
+                    print("\n🔍 Verifying META 2025/2026 formations...")
+                    for expected_formation in self.results["expected_meta_formations"]:
+                        formation_id = expected_formation["id"]
+                        expected_name = expected_formation["name"]
+                        should_contain_meta = expected_formation["should_contain_meta"]
+                        
+                        if formation_id in formation_ids:
+                            formation = formation_dict[formation_id]
+                            self.results["meta_formations_found"].append(formation_id)
+                            
+                            # Check name matches
+                            if formation["name"] == expected_name:
+                                print(f"✅ Found {formation_id}: {formation['name']}")
+                                
+                                # Check if it should contain META 2026 in tactic_type
+                                if should_contain_meta:
+                                    tactic_type_en = formation.get("tactic_type_en", "")
+                                    if "META 2026" in tactic_type_en:
+                                        print(f"   ✅ Contains 'META 2026' in tactic_type: {tactic_type_en}")
+                                    else:
+                                        self.results["errors"].append(f"Formation {formation_id} should contain 'META 2026' in tactic_type")
+                                        print(f"   ❌ Missing 'META 2026' in tactic_type: {tactic_type_en}")
+                                        
+                            else:
+                                self.results["errors"].append(f"Formation {formation_id} has wrong name: {formation['name']}, expected: {expected_name}")
+                                print(f"   ❌ Wrong name: {formation['name']}, expected: {expected_name}")
+                        else:
+                            self.results["errors"].append(f"Missing META formation: {formation_id} ({expected_name})")
+                            print(f"❌ Missing META formation: {formation_id} ({expected_name})")
+                    
+                    # Also verify that formations have proper structure
+                    print("\n🔍 Verifying formation data structure...")
+                    for formation in formations[:3]:  # Check first 3 formations for structure
+                        required_fields = ["id", "name", "description_en", "description_it", "positions", 
+                                         "strengths_en", "strengths_it", "weaknesses_en", "weaknesses_it",
+                                         "tactic_type_en", "tactic_type_it", "opponent_settings"]
+                        
+                        missing_fields = [field for field in required_fields if field not in formation]
+                        if missing_fields:
+                            self.results["errors"].append(f"Formation {formation['id']} missing fields: {missing_fields}")
+                            print(f"❌ Formation {formation['id']} missing fields: {missing_fields}")
+                        else:
+                            print(f"✅ Formation {formation['id']} has all required fields")
+                            
+                else:
+                    self.results["errors"].append(f"Formations endpoint returned {response.status_code}")
+                    print(f"❌ Formations endpoint returned {response.status_code}")
+                    
+        except Exception as e:
+            self.results["errors"].append(f"Formations test failed: {str(e)}")
+            print(f"❌ Formations test failed: {str(e)}")
+
+    async def test_counters_endpoint(self):
+        """Test counter tactics endpoint and verify META 2025/2026 counters"""
+        print("\n🔍 Testing GET /api/counters...")
+        try:
+            async with httpx.AsyncClient() as client:
+                response = await client.get(f"{self.base_url}/counters")
+                
+                if response.status_code == 200:
+                    counters = response.json()
+                    self.results["counters_count"] = len(counters)
+                    
+                    print(f"📊 Found {len(counters)} counter tactics (expected: {self.results['counters_total_expected']})")
+                    
+                    if len(counters) == self.results["counters_total_expected"]:
+                        print("✅ Counter tactics count matches expected (17 counters)")
+                    else:
+                        self.results["errors"].append(f"Expected {self.results['counters_total_expected']} counters, got {len(counters)}")
+                        print(f"❌ Expected {self.results['counters_total_expected']} counters, got {len(counters)}")
+                    
+                    # Check for specific META 2025/2026 counter tactics
+                    counter_dict = {c["formation"]: c for c in counters}
+                    
+                    print("\n🔍 Verifying META 2025/2026 counter tactics...")
+                    for expected_counter in self.results["expected_meta_counters"]:
+                        formation_id = expected_counter["formation"]
+                        should_have_meta_flag = expected_counter["should_have_meta_flag"]
+                        
+                        if formation_id in counter_dict:
+                            counter = counter_dict[formation_id]
+                            self.results["meta_counters_found"].append(formation_id)
+                            
+                            if should_have_meta_flag:
+                                if counter.get("meta_2026") == True:
+                                    print(f"✅ Found META 2026 counter for {formation_id} with meta_2026: true")
+                                else:
+                                    self.results["errors"].append(f"Counter for {formation_id} should have meta_2026: true")
+                                    print(f"❌ Counter for {formation_id} missing meta_2026: true flag")
+                            else:
+                                print(f"✅ Found counter for {formation_id}")
+                                
+                            # Verify counter has required structure
+                            required_fields = ["formation", "counters", "reason_en", "reason_it", "tactics_en", "tactics_it"]
+                            missing_fields = [field for field in required_fields if field not in counter]
+                            if missing_fields:
+                                self.results["errors"].append(f"Counter {formation_id} missing fields: {missing_fields}")
+                                print(f"   ❌ Missing fields: {missing_fields}")
+                            else:
+                                print(f"   ✅ Has all required fields")
+                                
+                        else:
+                            self.results["errors"].append(f"Missing META counter for formation: {formation_id}")
+                            print(f"❌ Missing META counter for formation: {formation_id}")
+                    
+                else:
+                    self.results["errors"].append(f"Counters endpoint returned {response.status_code}")
+                    print(f"❌ Counters endpoint returned {response.status_code}")
+                    
+        except Exception as e:
+            self.results["errors"].append(f"Counters test failed: {str(e)}")
+            print(f"❌ Counters test failed: {str(e)}")
+
+    async def test_scout_tips_endpoint(self):
+        """Test scout tips endpoint"""
+        print("\n🔍 Testing GET /api/scout-tips...")
+        try:
+            async with httpx.AsyncClient() as client:
+                response = await client.get(f"{self.base_url}/scout-tips")
+                
+                if response.status_code == 200:
+                    scout_tips = response.json()
+                    self.results["scout_tips_working"] = True
+                    print(f"✅ Scout tips endpoint working - found {len(scout_tips)} tips")
+                    
+                    # Verify structure of first tip
+                    if scout_tips:
+                        tip = scout_tips[0]
+                        required_fields = ["id", "category", "title_en", "title_it", "content_en", "content_it"]
+                        missing_fields = [field for field in required_fields if field not in tip]
+                        if missing_fields:
+                            self.results["errors"].append(f"Scout tip missing fields: {missing_fields}")
+                            print(f"❌ Scout tip missing fields: {missing_fields}")
+                        else:
+                            print("✅ Scout tips have proper structure")
+                            
+                else:
+                    self.results["errors"].append(f"Scout tips endpoint returned {response.status_code}")
+                    print(f"❌ Scout tips endpoint returned {response.status_code}")
+                    
+        except Exception as e:
+            self.results["errors"].append(f"Scout tips test failed: {str(e)}")
+            print(f"❌ Scout tips test failed: {str(e)}")
+
+    async def run_all_tests(self):
+        """Run all backend tests"""
+        print("🚀 Starting Backend API Tests for META 2025/2026 Updates...")
+        print(f"🌐 Testing against: {self.base_url}")
+        print("=" * 70)
         
-        # Summary
-        print(f"\n📊 Test Results Summary")
-        print("=" * 50)
+        await self.test_health_endpoint()
+        await self.test_formations_endpoint()
+        await self.test_counters_endpoint()
+        await self.test_scout_tips_endpoint()
         
-        total_tests = len(self.test_results)
-        passed_tests = sum(1 for result in self.test_results if result["success"])
-        failed_tests = total_tests - passed_tests
+        # Print summary
+        print("\n" + "=" * 70)
+        print("📋 TEST SUMMARY")
+        print("=" * 70)
         
-        print(f"Total Tests: {total_tests}")
-        print(f"✅ Passed: {passed_tests}")
-        print(f"❌ Failed: {failed_tests}")
+        print(f"🏥 Health Check: {'✅ PASS' if self.results['health_check'] else '❌ FAIL'}")
+        print(f"📊 Formations Count: {self.results['formations_count']}/{self.results['formations_total_expected']} {'✅ PASS' if self.results['formations_count'] == self.results['formations_total_expected'] else '❌ FAIL'}")
+        print(f"🛡️  Counter Tactics Count: {self.results['counters_count']}/{self.results['counters_total_expected']} {'✅ PASS' if self.results['counters_count'] == self.results['counters_total_expected'] else '❌ FAIL'}")
+        print(f"🔍 Scout Tips: {'✅ PASS' if self.results['scout_tips_working'] else '❌ FAIL'}")
         
-        if self.failed_tests:
-            print(f"\n🔍 Failed Tests:")
-            for test_name in self.failed_tests:
-                print(f"   • {test_name}")
+        print(f"\n📈 META Formations Found: {len(self.results['meta_formations_found'])}/{len(self.results['expected_meta_formations'])}")
+        for formation_id in self.results['meta_formations_found']:
+            print(f"   ✅ {formation_id}")
         
-        success_rate = (passed_tests / total_tests) * 100 if total_tests > 0 else 0
-        print(f"\n📈 Success Rate: {success_rate:.1f}%")
+        print(f"\n🎯 META Counters Found: {len(self.results['meta_counters_found'])}/{len(self.results['expected_meta_counters'])}")
+        for formation_id in self.results['meta_counters_found']:
+            print(f"   ✅ {formation_id}")
         
-        return passed_tests, failed_tests, self.test_results
+        if self.results['errors']:
+            print(f"\n❌ ERRORS FOUND ({len(self.results['errors'])}):")
+            for i, error in enumerate(self.results['errors'], 1):
+                print(f"   {i}. {error}")
+        else:
+            print("\n🎉 NO ERRORS FOUND - ALL TESTS PASSED!")
+        
+        # Determine overall success
+        success_criteria = [
+            self.results['health_check'],
+            self.results['formations_count'] == self.results['formations_total_expected'],
+            self.results['counters_count'] == self.results['counters_total_expected'],
+            self.results['scout_tips_working'],
+            len(self.results['errors']) == 0
+        ]
+        
+        overall_success = all(success_criteria)
+        print(f"\n🏆 OVERALL RESULT: {'✅ ALL TESTS PASSED' if overall_success else '❌ SOME TESTS FAILED'}")
+        
+        return overall_success
 
 async def main():
-    """Main test execution"""
-    async with APITestSuite() as test_suite:
-        passed, failed, results = await test_suite.run_all_tests()
-        
-        # Exit with error code if tests failed
-        sys.exit(0 if failed == 0 else 1)
+    """Main test runner"""
+    tester = BackendTester()
+    success = await tester.run_all_tests()
+    return success
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    # Run the tests
+    try:
+        success = asyncio.run(main())
+        sys.exit(0 if success else 1)
+    except KeyboardInterrupt:
+        print("\n🛑 Tests cancelled by user")
+        sys.exit(1)
+    except Exception as e:
+        print(f"\n💥 Test runner failed: {e}")
+        sys.exit(1)
