@@ -322,5 +322,7 @@ agent_communication:
     message: "MVP implementation complete. All frontend screens working. Backend APIs for formations, counters, scout-tips working. Auth and AI chat need testing with actual login."
   - agent: "main"
     message: "FEATURE ADDED: Added tactic_type and opponent_settings to all 14 formations. Users can now see recommended tactical settings based on opponent strength level (strong/equal/weak). Updated frontend formations modal to display: tactic type badge, opponent level selector (Strong/Equal/Weak tabs), and detailed tactical grid with mentality, passing, pressing, marking, tackling, counter-attack, and offside trap settings."
+  - agent: "main"
+    message: "MAJOR UPDATE 2025/2026 META: Added 6 new META formations (3-1-4-1-1, 4-1-2-3, 4-1-2-2-1, 3-2-4-1, 5-2-1-2, 4-3-2-1 Christmas Tree) and 7 new counter-tactics. Total: 20 formations, 17 counter-tactics. All sourced from YouTube and forum guides for 2025/2026 meta. Each new formation includes opponent_settings for strong/equal/weak scenarios."
   - agent: "testing"
     message: "✅ FORMATIONS TACTICAL FEATURES TESTING COMPLETE: All tactical features verified working correctly. GET /api/formations returns 14 formations with complete tactical data including tactic_type fields and opponent_settings structure. All tactical fields properly implemented with correct data types. Single formation endpoint GET /api/formations/442 also working. No issues found."
