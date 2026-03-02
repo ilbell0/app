@@ -134,6 +134,9 @@ backend:
       - working: true
         agent: "testing"
         comment: "✅ VERIFIED: All tactical features working correctly. GET /api/formations returns 14 formations with tactic_type_en/it fields and complete opponent_settings structure (strong/equal/weak levels). Each level contains all required tactical fields: mentality, focus_passing, passing_style, pressing, tackling, marking, counter_attack (boolean), offside_trap (boolean), and tactical tips (tip_en/it). GET /api/formations/442 single formation endpoint working. All data types correct and bilingual content present."
+      - working: true
+        agent: "testing"
+        comment: "✅ META 2025/2026 UPDATE VERIFIED: GET /api/formations now returns exactly 20 formations as expected. All 6 new META formations successfully added: 3-1-4-1-1 (id: 31411), 4-1-2-3 (id: 4123), 4-1-2-2-1 (id: 41221), 3-2-4-1 (id: 3241), 5-2-1-2 (id: 5212), and 4-3-2-1 Christmas Tree (id: 4321). Formations 31411 and 3241 correctly contain 'META 2026' in tactic_type field. All formations have proper bilingual content and opponent_settings structure."
 
   - task: "Counter Tactics API"
     implemented: true
