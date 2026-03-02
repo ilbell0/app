@@ -152,6 +152,9 @@ backend:
       - working: true
         agent: "testing"
         comment: "✅ VERIFIED: GET /api/counters returns 8 counter tactics with bilingual reasons. GET /api/counters/442 returns counters ['433', '4231']. All endpoints working correctly."
+      - working: true
+        agent: "testing"
+        comment: "✅ META 2025/2026 UPDATE VERIFIED: GET /api/counters now returns exactly 17 counter tactics as expected. All 7 new META counter-tactics successfully added with meta_2026: true flags: Counter for 31411 (vs 3-1-4-1-1), Counter for 4123 (vs 4-1-2-3), Counter for 41221 (vs 4-1-2-2-1), Counter for 3241 (vs 3-2-4-1), Counter for 5212 (vs 5-2-1-2), Counter for 4321 (vs 4-3-2-1 Christmas Tree), and Counter for 31231 (vs 3-1-2-3-1). All counters have proper structure with bilingual content and tactical recommendations."
 
   - task: "Scout Tips API"
     implemented: true
