@@ -16,6 +16,27 @@ import axios from 'axios';
 
 const API_URL = process.env.EXPO_PUBLIC_BACKEND_URL || '';
 
+interface Variant {
+  name_en: string;
+  name_it: string;
+  mentality: string;
+  mentality_it: string;
+  passing_focus: string;
+  passing_focus_it: string;
+  passing_style: string;
+  passing_style_it: string;
+  pressing: string;
+  pressing_it: string;
+  marking: string;
+  marking_it: string;
+  offside_trap: boolean;
+  counter_attack: boolean;
+  arrows: Record<string, string>;
+  best_against: string[];
+  tip_en: string;
+  tip_it: string;
+}
+
 interface OpponentSettings {
   mentality: string;
   mentality_it: string;
@@ -33,6 +54,7 @@ interface OpponentSettings {
   offside_trap: boolean;
   tip_en: string;
   tip_it: string;
+  variant?: string;
 }
 
 interface Formation {
@@ -47,6 +69,12 @@ interface Formation {
   weaknesses_it: string[];
   tactic_type_en?: string;
   tactic_type_it?: string;
+  arrows?: string;
+  variants?: {
+    A?: Variant;
+    B?: Variant;
+    C?: Variant;
+  };
   recommended_tactics?: {
     mentality: string;
     focus_passing: string;
@@ -73,6 +101,7 @@ export default function FormationsScreen() {
   const [loading, setLoading] = useState(true);
   const [selectedFormation, setSelectedFormation] = useState<Formation | null>(null);
   const [selectedOpponentLevel, setSelectedOpponentLevel] = useState<'strong' | 'equal' | 'weak'>('equal');
+  const [selectedVariant, setSelectedVariant] = useState<'A' | 'B' | 'C'>('A');
 
   useEffect(() => {
     fetchData();
@@ -243,6 +272,179 @@ export default function FormationsScreen() {
                       ? selectedFormation.tactic_type_it 
                       : selectedFormation.tactic_type_en}
                   </Text>
+                </View>
+              )}
+
+              {/* Variants Section (for 3-1-5-1 and similar) */}
+              {selectedFormation?.variants && (
+                <View style={styles.modalSection}>
+                  <View style={styles.sectionHeader}>
+                    <Ionicons name="layers" size={20} color="#8b5cf6" />
+                    <Text style={styles.sectionTitle}>
+                      {language === 'it' ? 'Varianti Tattiche' : 'Tactical Variants'}
+                    </Text>
+                  </View>
+                  
+                  {/* Variant Tabs */}
+                  <View style={styles.variantTabs}>
+                    {(['A', 'B', 'C'] as const).map((variant) => (
+                      selectedFormation.variants?.[variant] && (
+                        <TouchableOpacity
+                          key={variant}
+                          style={[
+                            styles.variantTab,
+                            selectedVariant === variant && styles.variantTabActive,
+                          ]}
+                          onPress={() => setSelectedVariant(variant)}
+                        >
+                          <Text style={[
+                            styles.variantTabLetter,
+                            selectedVariant === variant && styles.variantTabLetterActive,
+                          ]}>
+                            {variant}
+                          </Text>
+                          <Text style={[
+                            styles.variantTabName,
+                            selectedVariant === variant && styles.variantTabNameActive,
+                          ]}>
+                            {language === 'it' 
+                              ? selectedFormation.variants?.[variant]?.name_it 
+                              : selectedFormation.variants?.[variant]?.name_en}
+                          </Text>
+                        </TouchableOpacity>
+                      )
+                    ))}
+                  </View>
+
+                  {/* Selected Variant Details */}
+                  {selectedFormation.variants[selectedVariant] && (
+                    <View style={styles.variantDetails}>
+                      {/* Variant Tactics Grid */}
+                      <View style={styles.variantGrid}>
+                        <View style={styles.variantItem}>
+                          <Text style={styles.variantLabel}>
+                            {language === 'it' ? 'Mentalità' : 'Mentality'}
+                          </Text>
+                          <Text style={styles.variantValue}>
+                            {language === 'it' 
+                              ? selectedFormation.variants[selectedVariant]?.mentality_it 
+                              : selectedFormation.variants[selectedVariant]?.mentality}
+                          </Text>
+                        </View>
+                        <View style={styles.variantItem}>
+                          <Text style={styles.variantLabel}>
+                            {language === 'it' ? 'Passaggi' : 'Passing'}
+                          </Text>
+                          <Text style={styles.variantValue}>
+                            {language === 'it' 
+                              ? selectedFormation.variants[selectedVariant]?.passing_style_it 
+                              : selectedFormation.variants[selectedVariant]?.passing_style}
+                          </Text>
+                        </View>
+                        <View style={styles.variantItem}>
+                          <Text style={styles.variantLabel}>Pressing</Text>
+                          <Text style={styles.variantValue}>
+                            {language === 'it' 
+                              ? selectedFormation.variants[selectedVariant]?.pressing_it 
+                              : selectedFormation.variants[selectedVariant]?.pressing}
+                          </Text>
+                        </View>
+                        <View style={styles.variantItem}>
+                          <Text style={styles.variantLabel}>
+                            {language === 'it' ? 'Marcatura' : 'Marking'}
+                          </Text>
+                          <Text style={styles.variantValue}>
+                            {language === 'it' 
+                              ? selectedFormation.variants[selectedVariant]?.marking_it 
+                              : selectedFormation.variants[selectedVariant]?.marking}
+                          </Text>
+                        </View>
+                      </View>
+
+                      {/* Toggle Badges */}
+                      <View style={styles.variantToggles}>
+                        <View style={[
+                          styles.variantToggle,
+                          selectedFormation.variants[selectedVariant]?.counter_attack 
+                            ? styles.toggleOn 
+                            : styles.toggleOff
+                        ]}>
+                          <Ionicons 
+                            name={selectedFormation.variants[selectedVariant]?.counter_attack ? "checkmark" : "close"} 
+                            size={14} 
+                            color="#fff" 
+                          />
+                          <Text style={styles.variantToggleText}>
+                            {language === 'it' ? 'Contropiede' : 'Counter'}
+                          </Text>
+                        </View>
+                        <View style={[
+                          styles.variantToggle,
+                          selectedFormation.variants[selectedVariant]?.offside_trap 
+                            ? styles.toggleOn 
+                            : styles.toggleOff
+                        ]}>
+                          <Ionicons 
+                            name={selectedFormation.variants[selectedVariant]?.offside_trap ? "checkmark" : "close"} 
+                            size={14} 
+                            color="#fff" 
+                          />
+                          <Text style={styles.variantToggleText}>
+                            {language === 'it' ? 'Fuorigioco' : 'Offside'}
+                          </Text>
+                        </View>
+                      </View>
+
+                      {/* Position Arrows */}
+                      {selectedFormation.variants[selectedVariant]?.arrows && 
+                       Object.keys(selectedFormation.variants[selectedVariant]?.arrows || {}).length > 0 && (
+                        <View style={styles.arrowsContainer}>
+                          <Text style={styles.arrowsTitle}>
+                            {language === 'it' ? 'Frecce Posizioni:' : 'Position Arrows:'}
+                          </Text>
+                          <View style={styles.arrowsList}>
+                            {Object.entries(selectedFormation.variants[selectedVariant]?.arrows || {}).map(([pos, arrow]) => (
+                              <View key={pos} style={styles.arrowBadge}>
+                                <Text style={styles.arrowPos}>{pos}</Text>
+                                <Text style={[
+                                  styles.arrowIcon,
+                                  { color: arrow === '↑' ? '#10b981' : arrow === '↓' ? '#ef4444' : '#6b7280' }
+                                ]}>
+                                  {arrow}
+                                </Text>
+                              </View>
+                            ))}
+                          </View>
+                        </View>
+                      )}
+
+                      {/* Best Against */}
+                      {selectedFormation.variants[selectedVariant]?.best_against && (
+                        <View style={styles.bestAgainstContainer}>
+                          <Text style={styles.bestAgainstTitle}>
+                            {language === 'it' ? 'Efficace contro:' : 'Effective vs:'}
+                          </Text>
+                          <View style={styles.bestAgainstList}>
+                            {selectedFormation.variants[selectedVariant]?.best_against.map((formation, idx) => (
+                              <View key={idx} style={styles.bestAgainstBadge}>
+                                <Text style={styles.bestAgainstText}>{formation}</Text>
+                              </View>
+                            ))}
+                          </View>
+                        </View>
+                      )}
+
+                      {/* Variant Tip */}
+                      <View style={styles.variantTipBox}>
+                        <Ionicons name="bulb" size={16} color="#f59e0b" />
+                        <Text style={styles.variantTipText}>
+                          {language === 'it' 
+                            ? selectedFormation.variants[selectedVariant]?.tip_it 
+                            : selectedFormation.variants[selectedVariant]?.tip_en}
+                        </Text>
+                      </View>
+                    </View>
+                  )}
                 </View>
               )}
 
@@ -837,5 +1039,162 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 11,
     fontWeight: '700',
+  },
+  // Variant Styles
+  variantTabs: {
+    flexDirection: 'row',
+    gap: 8,
+    marginBottom: 16,
+  },
+  variantTab: {
+    flex: 1,
+    paddingVertical: 14,
+    paddingHorizontal: 12,
+    borderRadius: 12,
+    backgroundColor: 'rgba(255,255,255,0.05)',
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.1)',
+    alignItems: 'center',
+  },
+  variantTabActive: {
+    backgroundColor: 'rgba(139,92,246,0.2)',
+    borderColor: '#8b5cf6',
+  },
+  variantTabLetter: {
+    color: 'rgba(255,255,255,0.5)',
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginBottom: 4,
+  },
+  variantTabLetterActive: {
+    color: '#8b5cf6',
+  },
+  variantTabName: {
+    color: 'rgba(255,255,255,0.5)',
+    fontSize: 10,
+    textAlign: 'center',
+  },
+  variantTabNameActive: {
+    color: '#fff',
+  },
+  variantDetails: {
+    backgroundColor: 'rgba(139,92,246,0.05)',
+    borderRadius: 16,
+    padding: 16,
+    borderWidth: 1,
+    borderColor: 'rgba(139,92,246,0.2)',
+  },
+  variantGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 10,
+    marginBottom: 14,
+  },
+  variantItem: {
+    width: '48%',
+    backgroundColor: 'rgba(255,255,255,0.05)',
+    borderRadius: 10,
+    padding: 12,
+  },
+  variantLabel: {
+    color: 'rgba(255,255,255,0.5)',
+    fontSize: 10,
+    marginBottom: 4,
+    textTransform: 'uppercase',
+  },
+  variantValue: {
+    color: '#fff',
+    fontSize: 13,
+    fontWeight: '600',
+  },
+  variantToggles: {
+    flexDirection: 'row',
+    gap: 10,
+    marginBottom: 14,
+  },
+  variantToggle: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 10,
+    borderRadius: 10,
+    gap: 6,
+  },
+  variantToggleText: {
+    color: '#fff',
+    fontSize: 12,
+    fontWeight: '600',
+  },
+  arrowsContainer: {
+    marginBottom: 14,
+  },
+  arrowsTitle: {
+    color: 'rgba(255,255,255,0.6)',
+    fontSize: 11,
+    marginBottom: 8,
+    textTransform: 'uppercase',
+  },
+  arrowsList: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
+  },
+  arrowBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    borderRadius: 8,
+    gap: 4,
+  },
+  arrowPos: {
+    color: '#fff',
+    fontSize: 12,
+    fontWeight: '600',
+  },
+  arrowIcon: {
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  bestAgainstContainer: {
+    marginBottom: 14,
+  },
+  bestAgainstTitle: {
+    color: 'rgba(255,255,255,0.6)',
+    fontSize: 11,
+    marginBottom: 8,
+    textTransform: 'uppercase',
+  },
+  bestAgainstList: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
+  },
+  bestAgainstBadge: {
+    backgroundColor: 'rgba(16,185,129,0.2)',
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    borderRadius: 8,
+  },
+  bestAgainstText: {
+    color: '#10b981',
+    fontSize: 12,
+    fontWeight: '600',
+  },
+  variantTipBox: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    backgroundColor: 'rgba(245,158,11,0.1)',
+    borderRadius: 10,
+    padding: 12,
+    gap: 8,
+  },
+  variantTipText: {
+    color: 'rgba(255,255,255,0.8)',
+    fontSize: 12,
+    lineHeight: 18,
+    flex: 1,
   },
 });

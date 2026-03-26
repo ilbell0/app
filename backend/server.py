@@ -2263,6 +2263,153 @@ FORMATIONS = [
                 "tip_it": "Attacco totale! Spingi tutti i 6 attaccanti in avanti!"
             }
         }
+    },
+    {
+        "id": "3151amc",
+        "name": "3-1-5-1 AMC",
+        "description_en": "Highly tactical formation with DMC shield and 5-man midfield including AMC as playmaker. 3 variants: A (Central Dominance), B (Balanced Control), C (Quick Transition). Very effective with a quality AMC.",
+        "description_it": "Formazione altamente tattica con DMC scudo e centrocampo a 5 con AMC come regista. 3 varianti: A (Dominio Centrale), B (Bilanciata-Controllo), C (Transizione Rapida). Molto efficace con un AMC di qualità.",
+        "positions": ["GK", "DC", "DC", "DC", "DMC", "MR", "MC", "MC", "ML", "AMC", "ST"],
+        "category_en": "Balanced",
+        "category_it": "Bilanciata",
+        "strengths_en": ["5-man midfield dominance", "AMC as creative hub", "3 tactical variants", "Flexible against any formation"],
+        "strengths_it": ["Dominio centrocampo a 5", "AMC come perno creativo", "3 varianti tattiche", "Flessibile contro ogni formazione"],
+        "weaknesses_en": ["Requires quality AMC (135+)", "Only 3 defenders", "Wings can be exposed"],
+        "weaknesses_it": ["Richiede AMC di qualità (135+)", "Solo 3 difensori", "Fasce possono essere esposte"],
+        "tactic_type_en": "META 2025 / Multi-Variant",
+        "tactic_type_it": "META 2025 / Multi-Variante",
+        "arrows": "★ Variante A: MC↑ | Variante C: MR↓ ML↓",
+        "variants": {
+            "A": {
+                "name_en": "Central Dominance",
+                "name_it": "Dominio Centrale",
+                "mentality": "Attacking",
+                "mentality_it": "Offensiva",
+                "passing_focus": "Through the Middle",
+                "passing_focus_it": "Per il Centro",
+                "passing_style": "Short",
+                "passing_style_it": "Corti",
+                "pressing": "High",
+                "pressing_it": "Alto",
+                "marking": "Man-to-Man",
+                "marking_it": "Uomo a Uomo",
+                "offside_trap": False,
+                "counter_attack": False,
+                "arrows": {"MC": "↑"},
+                "best_against": ["4-4-2", "4-1-4-1", "4-3-1-2", "3-5-2"],
+                "tip_en": "Ideal with top AMC (135+). Crush weaker opponents. AMC is the creative hub.",
+                "tip_it": "Ideale con AMC top (135+). Schiaccia avversari più deboli. AMC è il perno creativo."
+            },
+            "B": {
+                "name_en": "Balanced Control",
+                "name_it": "Bilanciata-Controllo",
+                "mentality": "Normal",
+                "mentality_it": "Normale",
+                "passing_focus": "Mixed",
+                "passing_focus_it": "Misto",
+                "passing_style": "Mixed",
+                "passing_style_it": "Misto",
+                "pressing": "Normal",
+                "pressing_it": "Normale",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": True,
+                "counter_attack": True,
+                "arrows": {},
+                "best_against": ["3-4-3", "4-2-3-1", "4-5-1"],
+                "tip_en": "For balanced matches. Safer at the back, AMC and ST have freedom.",
+                "tip_it": "Per partite equilibrate. Più sicura dietro, AMC e ST con libertà."
+            },
+            "C": {
+                "name_en": "Quick Transition",
+                "name_it": "Transizione Rapida",
+                "mentality": "Defensive",
+                "mentality_it": "Difensiva",
+                "passing_focus": "Mixed",
+                "passing_focus_it": "Misto",
+                "passing_style": "Long",
+                "passing_style_it": "Lunghi",
+                "pressing": "Low",
+                "pressing_it": "Basso",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": True,
+                "counter_attack": True,
+                "arrows": {"MR": "↓", "ML": "↓"},
+                "best_against": ["4-3-3", "5-3-2", "4-2-2-2"],
+                "tip_en": "Perfect vs high-possession teams. Use AMC-ST-MR-ML speed on counters.",
+                "tip_it": "Perfetta vs squadre con alto possesso. Usa velocità AMC-ST-MR-ML nei contropiedi."
+            }
+        },
+        "recommended_tactics": {
+            "mentality": "Attacking",
+            "focus_passing": "Through the Middle",
+            "passing_style": "Short",
+            "counter_attack": False,
+            "pressing": "High",
+            "tackling": "Normal",
+            "marking": "Man-to-Man",
+            "offside_trap": False
+        },
+        "opponent_settings": {
+            "strong": {
+                "mentality": "Defensive",
+                "mentality_it": "Difensiva",
+                "focus_passing": "Mixed",
+                "focus_passing_it": "Misto",
+                "passing_style": "Long",
+                "passing_style_it": "Lunghi",
+                "counter_attack": True,
+                "pressing": "Low",
+                "pressing_it": "Basso",
+                "tackling": "Easy",
+                "tackling_it": "Facile",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": True,
+                "variant": "C",
+                "tip_en": "Use Variant C (Quick Transition). Stay compact, counter with AMC-ST speed. MR/ML with backward arrows.",
+                "tip_it": "Usa Variante C (Transizione Rapida). Resta compatto, contropiede con velocità AMC-ST. MR/ML con frecce indietro."
+            },
+            "equal": {
+                "mentality": "Normal",
+                "mentality_it": "Normale",
+                "focus_passing": "Mixed",
+                "focus_passing_it": "Misto",
+                "passing_style": "Mixed",
+                "passing_style_it": "Misto",
+                "counter_attack": True,
+                "pressing": "Normal",
+                "pressing_it": "Normale",
+                "tackling": "Normal",
+                "tackling_it": "Normale",
+                "marking": "Zonal",
+                "marking_it": "A Zona",
+                "offside_trap": True,
+                "variant": "B",
+                "tip_en": "Use Variant B (Balanced). Safer at the back, AMC and ST have freedom to create.",
+                "tip_it": "Usa Variante B (Bilanciata). Più sicura dietro, AMC e ST con libertà di creare."
+            },
+            "weak": {
+                "mentality": "Attacking",
+                "mentality_it": "Offensiva",
+                "focus_passing": "Through the Middle",
+                "focus_passing_it": "Per il Centro",
+                "passing_style": "Short",
+                "passing_style_it": "Corti",
+                "counter_attack": False,
+                "pressing": "High",
+                "pressing_it": "Alto",
+                "tackling": "Hard",
+                "tackling_it": "Duro",
+                "marking": "Man-to-Man",
+                "marking_it": "Uomo a Uomo",
+                "offside_trap": False,
+                "variant": "A",
+                "tip_en": "Use Variant A (Central Dominance). Crush them! High press, AMC as creative hub, MC forward arrows.",
+                "tip_it": "Usa Variante A (Dominio Centrale). Schiaccialo! Pressing alto, AMC come perno, MC con frecce avanti."
+            }
+        }
     }
 ]
 
@@ -3717,6 +3864,56 @@ COUNTER_ENGINE = [
             "fuo": "SI",
             "fr": {"DC": "↓", "DMC": "↑", "ML": "↑", "MC": "↑", "MR": "↑", "AML": "↑", "AMR": "↑", "ST": "—"},
             "w": "XT senza DMC: il centro è completamente aperto. Sfonda con tutto"
+        }
+    },
+    # ═══════════════════════════════════════════════════════════
+    # ⚡ VS 3-1-5-1 AMC (NUOVA META 2025 - Multi-Variante)
+    # ═══════════════════════════════════════════════════════════
+    {
+        "av": "3-1-5-1 AMC",
+        "cat": "neu",
+        "meta": True,
+        "forte": {
+            "mod": "4-3-3",
+            "alt": "4-2-3-1",
+            "men": "Difensiva",
+            "pass": "Fasce",
+            "stile": "Lunghi",
+            "ctrl": "SI",
+            "press": "Basso",
+            "cont": "Norm",
+            "marc": "Uomo",
+            "fuo": "SI",
+            "fr": {"DL": "↓", "DC": "↓", "DC2": "↓", "DR": "↓", "MC": "↓", "MC2": "—", "MC3": "—", "ST": "↑", "AML": "↑", "AMR": "↑"},
+            "w": "★ VS 3-1-5-1 FORTE: Marca a uomo l'AMC! Chiudi il centro, contropiede sulle fasce libere. MR-ML veloci per sfruttare 3 difensori"
+        },
+        "pari": {
+            "mod": "4-2-3-1",
+            "alt": "4-4-2 Flat",
+            "men": "Normale",
+            "pass": "Misto",
+            "stile": "Misto",
+            "ctrl": "NO",
+            "press": "Normale",
+            "cont": "Norm",
+            "marc": "Zona",
+            "fuo": "SI",
+            "fr": {"DL": "—", "DC": "↓", "DC2": "↓", "DR": "—", "DMC": "↓", "DMC2": "—", "AML": "↑", "AMC": "↑", "AMR": "↑", "ST": "—"},
+            "w": "VS 3-1-5-1 PARI: Il loro AMC è il perno - limita il suo spazio. Usa 2 DMC per schermarlo. Attacca le fasce: solo 3 difensori!"
+        },
+        "debole": {
+            "mod": "4-3-3",
+            "alt": "3-5-2",
+            "men": "Offensiva",
+            "pass": "Fasce",
+            "stile": "Corti",
+            "ctrl": "NO",
+            "press": "Alto",
+            "cont": "Duro",
+            "marc": "Uomo",
+            "fuo": "NO",
+            "fr": {"DL": "↑", "DC": "—", "DC2": "—", "DR": "↑", "MC": "↑", "MC2": "↑", "MC3": "↑", "ST": "↑", "AML": "↑", "AMR": "↑"},
+            "w": "★ VS 3-1-5-1 DEBOLE: Pressing totale! Solo 3 DC + 1 DMC. Superiorità numerica ovunque. Attacca le fasce con DL/DR avanti!"
         }
     }
 ]
