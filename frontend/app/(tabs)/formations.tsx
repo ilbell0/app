@@ -7,10 +7,12 @@ import {
   TouchableOpacity,
   ActivityIndicator,
   Modal,
+  Animated,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
+import { NothingTheme } from '@/src/theme/NothingTheme';
 import axios from 'axios';
 
 const API_URL = process.env.EXPO_PUBLIC_BACKEND_URL || '';
@@ -74,16 +76,6 @@ interface Formation {
     B?: Variant;
     C?: Variant;
   };
-  recommended_tactics?: {
-    mentality: string;
-    focus_passing: string;
-    passing_style: string;
-    counter_attack: boolean;
-    pressing: string;
-    tackling: string;
-    marking: string;
-    offside_trap: boolean;
-  };
   opponent_settings?: {
     strong: OpponentSettings;
     equal: OpponentSettings;
@@ -93,16 +85,29 @@ interface Formation {
 
 export default function FormationsScreen() {
   const insets = useSafeAreaInsets();
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
   const [formations, setFormations] = useState<Formation[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedFormation, setSelectedFormation] = useState<Formation | null>(null);
-  const [selectedOpponentLevel, setSelectedOpponentLevel] = useState<'strong' | 'equal' | 'weak'>('equal');
-  const [selectedVariant, setSelectedVariant] = useState<'A' | 'B' | 'C'>('A');
+  const [selectedLevel, setSelectedLevel] = useState<'strong' | 'equal' | 'weak'>('equal');
+  const [modalVisible, setModalVisible] = useState(false);
+  const [fadeAnim] = useState(new Animated.Value(0));
 
   useEffect(() => {
     fetchData();
   }, []);
+
+  useEffect(() => {
+    if (modalVisible) {
+      Animated.timing(fadeAnim, {
+        toValue: 1,
+        duration: 200,
+        useNativeDriver: true,
+      }).start();
+    } else {
+      fadeAnim.setValue(0);
+    }
+  }, [modalVisible]);
 
   const fetchData = async () => {
     try {
@@ -115,114 +120,97 @@ export default function FormationsScreen() {
     }
   };
 
-  const renderFormationPitch = (positions: string[]) => {
-    // Simplified pitch visualization
-    return (
-      <View style={styles.pitch}>
-        <View style={styles.pitchLines}>
-          <View style={styles.centerCircle} />
-          <View style={styles.centerLine} />
-        </View>
-        <View style={styles.positionsContainer}>
-          {positions.map((pos, index) => (
-            <View
-              key={index}
-              style={[
-                styles.positionDot,
-                getPositionStyle(pos, index, positions.length),
-              ]}
-            >
-              <Text style={styles.positionText}>{pos}</Text>
-            </View>
-          ))}
-        </View>
-      </View>
-    );
+  const getLevelLabel = (level: string) => {
+    const labels: Record<string, { en: string; it: string }> = {
+      strong: { en: 'STRONGER', it: 'FORTE' },
+      equal: { en: 'EQUAL', it: 'PARI' },
+      weak: { en: 'WEAKER', it: 'DEBOLE' },
+    };
+    return labels[level]?.[language] || level;
   };
 
-  const getPositionStyle = (position: string, index: number, total: number) => {
-    // Simplified positioning based on common patterns
-    const row = Math.floor(index / 4);
-    const col = index % 4;
-    return {
-      left: `${20 + col * 20}%`,
-      top: `${10 + row * 25}%`,
-    };
+  const openModal = (formation: Formation) => {
+    setSelectedFormation(formation);
+    setSelectedLevel('equal');
+    setModalVisible(true);
   };
+
+  const currentSettings = selectedFormation?.opponent_settings?.[selectedLevel];
 
   if (loading) {
     return (
       <View style={[styles.container, styles.centered]}>
-        <ActivityIndicator size="large" color="#10b981" />
+        <ActivityIndicator size="large" color={NothingTheme.colors.accent} />
       </View>
     );
   }
 
   return (
     <View style={[styles.container, { paddingTop: insets.top }]}>
+      {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>{t('allFormations')}</Text>
+        <Text style={styles.headerTitle}>FORMA</Text>
+        <Text style={styles.headerSubtitle}>TIONS</Text>
+        <Text style={styles.headerCount}>{formations.length}</Text>
       </View>
 
-      <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
-        <View style={styles.grid}>
-          {formations.map((formation) => (
-            <TouchableOpacity
-              key={formation.id}
-              style={styles.formationCard}
-              onPress={() => setSelectedFormation(formation)}
-            >
-              <View style={styles.cardHeader}>
+      <View style={styles.divider} />
+
+      <ScrollView 
+        style={styles.scrollView} 
+        contentContainerStyle={styles.scrollContent}
+        showsVerticalScrollIndicator={false}
+      >
+        {/* Formation List */}
+        {formations.map((formation, index) => (
+          <TouchableOpacity
+            key={formation.id || index}
+            style={styles.formationCard}
+            onPress={() => openModal(formation)}
+            activeOpacity={0.7}
+          >
+            <View style={styles.formationInfo}>
+              <View style={styles.formationHeader}>
                 <Text style={styles.formationName}>{formation.name}</Text>
+                {formation.tactic_type_en?.includes('META') && (
+                  <View style={styles.metaBadge}>
+                    <Text style={styles.metaBadgeText}>META</Text>
+                  </View>
+                )}
               </View>
-              {formation.tactic_type_en && (
-                <View style={styles.cardTacticBadge}>
-                  <Text style={styles.cardTacticText}>
-                    {language === 'it' ? formation.tactic_type_it : formation.tactic_type_en}
-                  </Text>
-                </View>
-              )}
-              <Text style={styles.formationDescription} numberOfLines={2}>
-                {language === 'it' ? formation.description_it : formation.description_en}
+              <Text style={styles.formationPositions}>
+                {formation.positions?.join(' · ')}
               </Text>
-              <View style={styles.cardFooter}>
-                <Ionicons name="eye-outline" size={16} color="#10b981" />
-                <Text style={styles.cardFooterText}>
-                  {language === 'it' ? 'Vedi dettagli' : 'View details'}
-                </Text>
-              </View>
-            </TouchableOpacity>
-          ))}
-        </View>
+            </View>
+            <Ionicons 
+              name="chevron-forward" 
+              size={18} 
+              color={NothingTheme.colors.textTertiary} 
+            />
+          </TouchableOpacity>
+        ))}
       </ScrollView>
 
-      {/* Formation Detail Modal */}
+      {/* Detail Modal */}
       <Modal
-        visible={!!selectedFormation}
         animationType="slide"
         transparent={true}
-        onRequestClose={() => setSelectedFormation(null)}
+        visible={modalVisible}
+        onRequestClose={() => setModalVisible(false)}
       >
-        <View style={styles.modalOverlay}>
-          <View style={[styles.modalContent, { paddingBottom: insets.bottom + 20 }]}>
+        <Animated.View style={[styles.modalOverlay, { opacity: fadeAnim }]}>
+          <View style={[styles.modalContent, { paddingTop: insets.top + 10 }]}>
+            {/* Modal Header */}
             <View style={styles.modalHeader}>
-              <Text style={styles.modalTitle}>{selectedFormation?.name}</Text>
-              <TouchableOpacity onPress={() => setSelectedFormation(null)}>
-                <Ionicons name="close" size={28} color="#fff" />
+              <TouchableOpacity
+                style={styles.closeButton}
+                onPress={() => setModalVisible(false)}
+              >
+                <Ionicons name="close" size={24} color={NothingTheme.colors.textPrimary} />
               </TouchableOpacity>
-            </View>
-
-            <ScrollView style={styles.modalScroll}>
-              <Text style={styles.modalDescription}>
-                {language === 'it'
-                  ? selectedFormation?.description_it
-                  : selectedFormation?.description_en}
-              </Text>
-
-              {/* Tactic Type Badge */}
+              <Text style={styles.modalTitle}>{selectedFormation?.name}</Text>
               {selectedFormation?.tactic_type_en && (
                 <View style={styles.tacticTypeBadge}>
-                  <Ionicons name="football" size={16} color="#fff" />
                   <Text style={styles.tacticTypeText}>
                     {language === 'it' 
                       ? selectedFormation.tactic_type_it 
@@ -230,429 +218,200 @@ export default function FormationsScreen() {
                   </Text>
                 </View>
               )}
+            </View>
 
-              {/* Variants Section (for 3-1-5-1 and similar) */}
-              {selectedFormation?.variants && (
-                <View style={styles.modalSection}>
-                  <View style={styles.sectionHeader}>
-                    <Ionicons name="layers" size={20} color="#8b5cf6" />
-                    <Text style={styles.sectionTitle}>
-                      {language === 'it' ? 'Varianti Tattiche' : 'Tactical Variants'}
-                    </Text>
+            <View style={styles.dividerModal} />
+
+            {/* Level Tabs */}
+            <View style={styles.levelTabs}>
+              {(['strong', 'equal', 'weak'] as const).map((level) => (
+                <TouchableOpacity
+                  key={level}
+                  style={[
+                    styles.levelTab,
+                    selectedLevel === level && styles.levelTabActive,
+                  ]}
+                  onPress={() => setSelectedLevel(level)}
+                >
+                  <Text style={[
+                    styles.levelTabText,
+                    selectedLevel === level && styles.levelTabTextActive,
+                  ]}>
+                    {getLevelLabel(level)}
+                  </Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+
+            <ScrollView style={styles.modalScroll} showsVerticalScrollIndicator={false}>
+              {/* Description */}
+              <View style={styles.descriptionSection}>
+                <Text style={styles.sectionLabel}>
+                  {language === 'it' ? 'DESCRIZIONE' : 'DESCRIPTION'}
+                </Text>
+                <Text style={styles.descriptionText}>
+                  {language === 'it' 
+                    ? selectedFormation?.description_it 
+                    : selectedFormation?.description_en}
+                </Text>
+              </View>
+
+              {/* Arrows Info */}
+              {selectedFormation?.arrows && (
+                <View style={styles.arrowsInfo}>
+                  <Text style={styles.sectionLabel}>
+                    {language === 'it' ? 'FRECCE' : 'ARROWS'}
+                  </Text>
+                  <View style={styles.arrowsBox}>
+                    <Text style={styles.arrowsText}>{selectedFormation.arrows}</Text>
                   </View>
-                  
-                  {/* Variant Tabs */}
-                  <View style={styles.variantTabs}>
-                    {(['A', 'B', 'C'] as const).map((variant) => (
-                      selectedFormation.variants?.[variant] && (
-                        <TouchableOpacity
-                          key={variant}
-                          style={[
-                            styles.variantTab,
-                            selectedVariant === variant && styles.variantTabActive,
-                          ]}
-                          onPress={() => setSelectedVariant(variant)}
-                        >
-                          <Text style={[
-                            styles.variantTabLetter,
-                            selectedVariant === variant && styles.variantTabLetterActive,
-                          ]}>
-                            {variant}
-                          </Text>
-                          <Text style={[
-                            styles.variantTabName,
-                            selectedVariant === variant && styles.variantTabNameActive,
-                          ]}>
-                            {language === 'it' 
-                              ? selectedFormation.variants?.[variant]?.name_it 
-                              : selectedFormation.variants?.[variant]?.name_en}
-                          </Text>
-                        </TouchableOpacity>
-                      )
-                    ))}
-                  </View>
-
-                  {/* Selected Variant Details */}
-                  {selectedFormation.variants[selectedVariant] && (
-                    <View style={styles.variantDetails}>
-                      {/* Variant Tactics Grid */}
-                      <View style={styles.variantGrid}>
-                        <View style={styles.variantItem}>
-                          <Text style={styles.variantLabel}>
-                            {language === 'it' ? 'Mentalità' : 'Mentality'}
-                          </Text>
-                          <Text style={styles.variantValue}>
-                            {language === 'it' 
-                              ? selectedFormation.variants[selectedVariant]?.mentality_it 
-                              : selectedFormation.variants[selectedVariant]?.mentality}
-                          </Text>
-                        </View>
-                        <View style={styles.variantItem}>
-                          <Text style={styles.variantLabel}>
-                            {language === 'it' ? 'Passaggi' : 'Passing'}
-                          </Text>
-                          <Text style={styles.variantValue}>
-                            {language === 'it' 
-                              ? selectedFormation.variants[selectedVariant]?.passing_style_it 
-                              : selectedFormation.variants[selectedVariant]?.passing_style}
-                          </Text>
-                        </View>
-                        <View style={styles.variantItem}>
-                          <Text style={styles.variantLabel}>Pressing</Text>
-                          <Text style={styles.variantValue}>
-                            {language === 'it' 
-                              ? selectedFormation.variants[selectedVariant]?.pressing_it 
-                              : selectedFormation.variants[selectedVariant]?.pressing}
-                          </Text>
-                        </View>
-                        <View style={styles.variantItem}>
-                          <Text style={styles.variantLabel}>
-                            {language === 'it' ? 'Marcatura' : 'Marking'}
-                          </Text>
-                          <Text style={styles.variantValue}>
-                            {language === 'it' 
-                              ? selectedFormation.variants[selectedVariant]?.marking_it 
-                              : selectedFormation.variants[selectedVariant]?.marking}
-                          </Text>
-                        </View>
-                      </View>
-
-                      {/* Toggle Badges */}
-                      <View style={styles.variantToggles}>
-                        <View style={[
-                          styles.variantToggle,
-                          selectedFormation.variants[selectedVariant]?.counter_attack 
-                            ? styles.toggleOn 
-                            : styles.toggleOff
-                        ]}>
-                          <Ionicons 
-                            name={selectedFormation.variants[selectedVariant]?.counter_attack ? "checkmark" : "close"} 
-                            size={14} 
-                            color="#fff" 
-                          />
-                          <Text style={styles.variantToggleText}>
-                            {language === 'it' ? 'Contropiede' : 'Counter'}
-                          </Text>
-                        </View>
-                        <View style={[
-                          styles.variantToggle,
-                          selectedFormation.variants[selectedVariant]?.offside_trap 
-                            ? styles.toggleOn 
-                            : styles.toggleOff
-                        ]}>
-                          <Ionicons 
-                            name={selectedFormation.variants[selectedVariant]?.offside_trap ? "checkmark" : "close"} 
-                            size={14} 
-                            color="#fff" 
-                          />
-                          <Text style={styles.variantToggleText}>
-                            {language === 'it' ? 'Fuorigioco' : 'Offside'}
-                          </Text>
-                        </View>
-                      </View>
-
-                      {/* Position Arrows */}
-                      {selectedFormation.variants[selectedVariant]?.arrows && 
-                       Object.keys(selectedFormation.variants[selectedVariant]?.arrows || {}).length > 0 && (
-                        <View style={styles.arrowsContainer}>
-                          <Text style={styles.arrowsTitle}>
-                            {language === 'it' ? 'Frecce Posizioni:' : 'Position Arrows:'}
-                          </Text>
-                          <View style={styles.arrowsList}>
-                            {Object.entries(selectedFormation.variants[selectedVariant]?.arrows || {}).map(([pos, arrow]) => (
-                              <View key={pos} style={styles.arrowBadge}>
-                                <Text style={styles.arrowPos}>{pos}</Text>
-                                <Text style={[
-                                  styles.arrowIcon,
-                                  { color: arrow === '↑' ? '#10b981' : arrow === '↓' ? '#ef4444' : '#6b7280' }
-                                ]}>
-                                  {arrow}
-                                </Text>
-                              </View>
-                            ))}
-                          </View>
-                        </View>
-                      )}
-
-                      {/* Best Against */}
-                      {selectedFormation.variants[selectedVariant]?.best_against && (
-                        <View style={styles.bestAgainstContainer}>
-                          <Text style={styles.bestAgainstTitle}>
-                            {language === 'it' ? 'Efficace contro:' : 'Effective vs:'}
-                          </Text>
-                          <View style={styles.bestAgainstList}>
-                            {selectedFormation.variants[selectedVariant]?.best_against.map((formation, idx) => (
-                              <View key={idx} style={styles.bestAgainstBadge}>
-                                <Text style={styles.bestAgainstText}>{formation}</Text>
-                              </View>
-                            ))}
-                          </View>
-                        </View>
-                      )}
-
-                      {/* Variant Tip */}
-                      <View style={styles.variantTipBox}>
-                        <Ionicons name="bulb" size={16} color="#f59e0b" />
-                        <Text style={styles.variantTipText}>
-                          {language === 'it' 
-                            ? selectedFormation.variants[selectedVariant]?.tip_it 
-                            : selectedFormation.variants[selectedVariant]?.tip_en}
-                        </Text>
-                      </View>
-                    </View>
-                  )}
                 </View>
               )}
 
-              <View style={styles.modalSection}>
-                <View style={styles.sectionHeader}>
-                  <Ionicons name="checkmark-circle" size={20} color="#10b981" />
-                  <Text style={styles.sectionTitle}>{t('strengths')}</Text>
-                </View>
-                {(language === 'it'
-                  ? selectedFormation?.strengths_it
-                  : selectedFormation?.strengths_en
-                )?.map((strength, index) => (
-                  <View key={index} style={styles.listItem}>
-                    <Text style={styles.bullet}>•</Text>
-                    <Text style={styles.listText}>{strength}</Text>
+              {/* Tactical Settings */}
+              {currentSettings && (
+                <View style={styles.tacticsSection}>
+                  <Text style={styles.sectionLabel}>
+                    {language === 'it' ? 'IMPOSTAZIONI' : 'SETTINGS'}
+                  </Text>
+                  <View style={styles.tacticsGrid}>
+                    <View style={styles.tacticRow}>
+                      <Text style={styles.tacticLabel}>
+                        {language === 'it' ? 'Mentalità' : 'Mentality'}
+                      </Text>
+                      <Text style={styles.tacticValue}>
+                        {language === 'it' ? currentSettings.mentality_it : currentSettings.mentality}
+                      </Text>
+                    </View>
+                    <View style={styles.tacticRow}>
+                      <Text style={styles.tacticLabel}>
+                        {language === 'it' ? 'Passaggi' : 'Passing'}
+                      </Text>
+                      <Text style={styles.tacticValue}>
+                        {language === 'it' ? currentSettings.focus_passing_it : currentSettings.focus_passing}
+                      </Text>
+                    </View>
+                    <View style={styles.tacticRow}>
+                      <Text style={styles.tacticLabel}>
+                        {language === 'it' ? 'Stile' : 'Style'}
+                      </Text>
+                      <Text style={styles.tacticValue}>
+                        {language === 'it' ? currentSettings.passing_style_it : currentSettings.passing_style}
+                      </Text>
+                    </View>
+                    <View style={styles.tacticRow}>
+                      <Text style={styles.tacticLabel}>Pressing</Text>
+                      <Text style={styles.tacticValue}>
+                        {language === 'it' ? currentSettings.pressing_it : currentSettings.pressing}
+                      </Text>
+                    </View>
+                    <View style={styles.tacticRow}>
+                      <Text style={styles.tacticLabel}>
+                        {language === 'it' ? 'Marcatura' : 'Marking'}
+                      </Text>
+                      <Text style={styles.tacticValue}>
+                        {language === 'it' ? currentSettings.marking_it : currentSettings.marking}
+                      </Text>
+                    </View>
+                    <View style={styles.tacticRow}>
+                      <Text style={styles.tacticLabel}>
+                        {language === 'it' ? 'Contrasti' : 'Tackling'}
+                      </Text>
+                      <Text style={styles.tacticValue}>
+                        {language === 'it' ? currentSettings.tackling_it : currentSettings.tackling}
+                      </Text>
+                    </View>
                   </View>
-                ))}
-              </View>
-
-              <View style={styles.modalSection}>
-                <View style={styles.sectionHeader}>
-                  <Ionicons name="warning" size={20} color="#f59e0b" />
-                  <Text style={styles.sectionTitle}>{t('weaknesses')}</Text>
                 </View>
-                {(language === 'it'
-                  ? selectedFormation?.weaknesses_it
-                  : selectedFormation?.weaknesses_en
-                )?.map((weakness, index) => (
-                  <View key={index} style={styles.listItem}>
-                    <Text style={styles.bullet}>•</Text>
-                    <Text style={styles.listText}>{weakness}</Text>
+              )}
+
+              {/* Toggles */}
+              {currentSettings && (
+                <View style={styles.togglesSection}>
+                  <View style={[
+                    styles.toggleBadge,
+                    currentSettings.counter_attack && styles.toggleBadgeActive,
+                  ]}>
+                    <Text style={[
+                      styles.toggleText,
+                      currentSettings.counter_attack && styles.toggleTextActive,
+                    ]}>
+                      {language === 'it' ? 'CONTROPIEDE' : 'COUNTER'}
+                    </Text>
+                    <Text style={[
+                      styles.toggleValue,
+                      currentSettings.counter_attack && styles.toggleValueActive,
+                    ]}>
+                      {currentSettings.counter_attack ? 'ON' : 'OFF'}
+                    </Text>
                   </View>
-                ))}
-              </View>
-
-              <View style={styles.modalSection}>
-                <View style={styles.sectionHeader}>
-                  <Ionicons name="people" size={20} color="#3b82f6" />
-                  <Text style={styles.sectionTitle}>{t('positions')}</Text>
+                  <View style={[
+                    styles.toggleBadge,
+                    currentSettings.offside_trap && styles.toggleBadgeActive,
+                  ]}>
+                    <Text style={[
+                      styles.toggleText,
+                      currentSettings.offside_trap && styles.toggleTextActive,
+                    ]}>
+                      {language === 'it' ? 'FUORIGIOCO' : 'OFFSIDE'}
+                    </Text>
+                    <Text style={[
+                      styles.toggleValue,
+                      currentSettings.offside_trap && styles.toggleValueActive,
+                    ]}>
+                      {currentSettings.offside_trap ? 'ON' : 'OFF'}
+                    </Text>
+                  </View>
                 </View>
-                <View style={styles.positionsList}>
-                  {selectedFormation?.positions.map((pos, index) => (
-                    <View key={index} style={styles.positionBadge}>
-                      <Text style={styles.positionBadgeText}>{pos}</Text>
+              )}
+
+              {/* Tip */}
+              {currentSettings && (
+                <View style={styles.tipSection}>
+                  <Text style={styles.sectionLabel}>TIP</Text>
+                  <View style={styles.tipBox}>
+                    <Text style={styles.tipText}>
+                      {language === 'it' ? currentSettings.tip_it : currentSettings.tip_en}
+                    </Text>
+                  </View>
+                </View>
+              )}
+
+              {/* Strengths & Weaknesses */}
+              <View style={styles.prosConsSection}>
+                <View style={styles.prosConColumn}>
+                  <Text style={styles.sectionLabel}>
+                    {language === 'it' ? 'PUNTI FORZA' : 'STRENGTHS'}
+                  </Text>
+                  {(language === 'it' 
+                    ? selectedFormation?.strengths_it 
+                    : selectedFormation?.strengths_en
+                  )?.map((item, idx) => (
+                    <View key={idx} style={styles.prosConItem}>
+                      <View style={styles.prosIndicator} />
+                      <Text style={styles.prosConText}>{item}</Text>
+                    </View>
+                  ))}
+                </View>
+
+                <View style={styles.prosConColumn}>
+                  <Text style={styles.sectionLabel}>
+                    {language === 'it' ? 'DEBOLEZZE' : 'WEAKNESSES'}
+                  </Text>
+                  {(language === 'it' 
+                    ? selectedFormation?.weaknesses_it 
+                    : selectedFormation?.weaknesses_en
+                  )?.map((item, idx) => (
+                    <View key={idx} style={styles.prosConItem}>
+                      <View style={styles.consIndicator} />
+                      <Text style={styles.prosConText}>{item}</Text>
                     </View>
                   ))}
                 </View>
               </View>
-
-              {/* Opponent Level Selector */}
-              {selectedFormation?.opponent_settings && (
-                <View style={styles.modalSection}>
-                  <View style={styles.sectionHeader}>
-                    <Ionicons name="game-controller" size={20} color="#8b5cf6" />
-                    <Text style={styles.sectionTitle}>
-                      {language === 'it' ? 'Tattiche per Avversario' : 'Tactics by Opponent'}
-                    </Text>
-                  </View>
-                  
-                  {/* Opponent Level Tabs */}
-                  <View style={styles.opponentTabs}>
-                    <TouchableOpacity
-                      style={[
-                        styles.opponentTab,
-                        selectedOpponentLevel === 'strong' && styles.opponentTabActive,
-                        selectedOpponentLevel === 'strong' && styles.opponentTabStrong,
-                      ]}
-                      onPress={() => setSelectedOpponentLevel('strong')}
-                    >
-                      <Ionicons 
-                        name="arrow-up-circle" 
-                        size={18} 
-                        color={selectedOpponentLevel === 'strong' ? '#fff' : '#ef4444'} 
-                      />
-                      <Text style={[
-                        styles.opponentTabText,
-                        selectedOpponentLevel === 'strong' && styles.opponentTabTextActive,
-                      ]}>
-                        {language === 'it' ? 'Forte' : 'Strong'}
-                      </Text>
-                    </TouchableOpacity>
-                    
-                    <TouchableOpacity
-                      style={[
-                        styles.opponentTab,
-                        selectedOpponentLevel === 'equal' && styles.opponentTabActive,
-                        selectedOpponentLevel === 'equal' && styles.opponentTabEqual,
-                      ]}
-                      onPress={() => setSelectedOpponentLevel('equal')}
-                    >
-                      <Ionicons 
-                        name="remove-circle" 
-                        size={18} 
-                        color={selectedOpponentLevel === 'equal' ? '#fff' : '#f59e0b'} 
-                      />
-                      <Text style={[
-                        styles.opponentTabText,
-                        selectedOpponentLevel === 'equal' && styles.opponentTabTextActive,
-                      ]}>
-                        {language === 'it' ? 'Pari' : 'Equal'}
-                      </Text>
-                    </TouchableOpacity>
-                    
-                    <TouchableOpacity
-                      style={[
-                        styles.opponentTab,
-                        selectedOpponentLevel === 'weak' && styles.opponentTabActive,
-                        selectedOpponentLevel === 'weak' && styles.opponentTabWeak,
-                      ]}
-                      onPress={() => setSelectedOpponentLevel('weak')}
-                    >
-                      <Ionicons 
-                        name="arrow-down-circle" 
-                        size={18} 
-                        color={selectedOpponentLevel === 'weak' ? '#fff' : '#10b981'} 
-                      />
-                      <Text style={[
-                        styles.opponentTabText,
-                        selectedOpponentLevel === 'weak' && styles.opponentTabTextActive,
-                      ]}>
-                        {language === 'it' ? 'Debole' : 'Weak'}
-                      </Text>
-                    </TouchableOpacity>
-                  </View>
-
-                  {/* Tactical Settings for Selected Opponent Level */}
-                  {selectedFormation.opponent_settings[selectedOpponentLevel] && (
-                    <View style={styles.tacticsContainer}>
-                      {/* Tip */}
-                      <View style={styles.tipBox}>
-                        <Ionicons name="bulb" size={18} color="#f59e0b" />
-                        <Text style={styles.tipText}>
-                          {language === 'it' 
-                            ? selectedFormation.opponent_settings[selectedOpponentLevel].tip_it
-                            : selectedFormation.opponent_settings[selectedOpponentLevel].tip_en}
-                        </Text>
-                      </View>
-
-                      {/* Tactical Settings Grid */}
-                      <View style={styles.tacticsGrid}>
-                        <View style={styles.tacticItem}>
-                          <Text style={styles.tacticLabel}>
-                            {language === 'it' ? 'Mentalità' : 'Mentality'}
-                          </Text>
-                          <Text style={styles.tacticValue}>
-                            {language === 'it' 
-                              ? selectedFormation.opponent_settings[selectedOpponentLevel].mentality_it
-                              : selectedFormation.opponent_settings[selectedOpponentLevel].mentality}
-                          </Text>
-                        </View>
-                        
-                        <View style={styles.tacticItem}>
-                          <Text style={styles.tacticLabel}>
-                            {language === 'it' ? 'Focus Pass.' : 'Pass Focus'}
-                          </Text>
-                          <Text style={styles.tacticValue}>
-                            {language === 'it' 
-                              ? selectedFormation.opponent_settings[selectedOpponentLevel].focus_passing_it
-                              : selectedFormation.opponent_settings[selectedOpponentLevel].focus_passing}
-                          </Text>
-                        </View>
-                        
-                        <View style={styles.tacticItem}>
-                          <Text style={styles.tacticLabel}>
-                            {language === 'it' ? 'Stile Pass.' : 'Pass Style'}
-                          </Text>
-                          <Text style={styles.tacticValue}>
-                            {language === 'it' 
-                              ? selectedFormation.opponent_settings[selectedOpponentLevel].passing_style_it
-                              : selectedFormation.opponent_settings[selectedOpponentLevel].passing_style}
-                          </Text>
-                        </View>
-                        
-                        <View style={styles.tacticItem}>
-                          <Text style={styles.tacticLabel}>
-                            {language === 'it' ? 'Pressing' : 'Pressing'}
-                          </Text>
-                          <Text style={styles.tacticValue}>
-                            {language === 'it' 
-                              ? selectedFormation.opponent_settings[selectedOpponentLevel].pressing_it
-                              : selectedFormation.opponent_settings[selectedOpponentLevel].pressing}
-                          </Text>
-                        </View>
-                        
-                        <View style={styles.tacticItem}>
-                          <Text style={styles.tacticLabel}>
-                            {language === 'it' ? 'Contrasti' : 'Tackling'}
-                          </Text>
-                          <Text style={styles.tacticValue}>
-                            {language === 'it' 
-                              ? selectedFormation.opponent_settings[selectedOpponentLevel].tackling_it
-                              : selectedFormation.opponent_settings[selectedOpponentLevel].tackling}
-                          </Text>
-                        </View>
-                        
-                        <View style={styles.tacticItem}>
-                          <Text style={styles.tacticLabel}>
-                            {language === 'it' ? 'Marcatura' : 'Marking'}
-                          </Text>
-                          <Text style={styles.tacticValue}>
-                            {language === 'it' 
-                              ? selectedFormation.opponent_settings[selectedOpponentLevel].marking_it
-                              : selectedFormation.opponent_settings[selectedOpponentLevel].marking}
-                          </Text>
-                        </View>
-                      </View>
-
-                      {/* Toggle Settings */}
-                      <View style={styles.togglesContainer}>
-                        <View style={styles.toggleItem}>
-                          <Text style={styles.toggleLabel}>
-                            {language === 'it' ? 'Contropiede' : 'Counter-Attack'}
-                          </Text>
-                          <View style={[
-                            styles.toggleBadge,
-                            selectedFormation.opponent_settings[selectedOpponentLevel].counter_attack 
-                              ? styles.toggleOn 
-                              : styles.toggleOff
-                          ]}>
-                            <Text style={styles.toggleText}>
-                              {selectedFormation.opponent_settings[selectedOpponentLevel].counter_attack 
-                                ? (language === 'it' ? 'SÌ' : 'ON')
-                                : (language === 'it' ? 'NO' : 'OFF')}
-                            </Text>
-                          </View>
-                        </View>
-                        
-                        <View style={styles.toggleItem}>
-                          <Text style={styles.toggleLabel}>
-                            {language === 'it' ? 'Fuorigioco' : 'Offside Trap'}
-                          </Text>
-                          <View style={[
-                            styles.toggleBadge,
-                            selectedFormation.opponent_settings[selectedOpponentLevel].offside_trap 
-                              ? styles.toggleOn 
-                              : styles.toggleOff
-                          ]}>
-                            <Text style={styles.toggleText}>
-                              {selectedFormation.opponent_settings[selectedOpponentLevel].offside_trap 
-                                ? (language === 'it' ? 'SÌ' : 'ON')
-                                : (language === 'it' ? 'NO' : 'OFF')}
-                            </Text>
-                          </View>
-                        </View>
-                      </View>
-                    </View>
-                  )}
-                </View>
-              )}
             </ScrollView>
           </View>
-        </View>
+        </Animated.View>
       </Modal>
     </View>
   );
@@ -661,496 +420,316 @@ export default function FormationsScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0a0f1a',
+    backgroundColor: NothingTheme.colors.background,
   },
   centered: {
     justifyContent: 'center',
     alignItems: 'center',
   },
   header: {
-    padding: 20,
+    padding: 24,
     paddingBottom: 16,
+    flexDirection: 'row',
+    alignItems: 'flex-end',
   },
   headerTitle: {
-    color: '#fff',
+    color: NothingTheme.colors.textPrimary,
     fontSize: 28,
-    fontWeight: 'bold',
+    fontWeight: '700',
+    letterSpacing: 2,
+  },
+  headerSubtitle: {
+    color: NothingTheme.colors.accent,
+    fontSize: 28,
+    fontWeight: '700',
+    letterSpacing: 2,
+  },
+  headerCount: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 14,
+    fontWeight: '600',
+    marginLeft: 'auto',
+    marginBottom: 4,
+  },
+  divider: {
+    height: 1,
+    backgroundColor: NothingTheme.colors.divider,
+    marginHorizontal: 24,
+  },
+  dividerModal: {
+    height: 1,
+    backgroundColor: NothingTheme.colors.divider,
   },
   scrollView: {
     flex: 1,
   },
   scrollContent: {
-    padding: 20,
-    paddingTop: 0,
+    padding: 24,
+    paddingTop: 16,
     paddingBottom: 100,
   },
-  grid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 12,
-  },
   formationCard: {
-    width: '48%',
-    backgroundColor: 'rgba(255,255,255,0.05)',
-    borderRadius: 16,
-    padding: 16,
-    borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.1)',
-  },
-  cardHeader: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
     alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    padding: 16,
     marginBottom: 8,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+  },
+  formationInfo: {
+    flex: 1,
+  },
+  formationHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginBottom: 4,
   },
   formationName: {
-    color: '#10b981',
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-  cardTacticBadge: {
-    backgroundColor: 'rgba(139,92,246,0.2)',
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 6,
-    alignSelf: 'flex-start',
-    marginBottom: 8,
-  },
-  cardTacticText: {
-    color: '#a78bfa',
-    fontSize: 10,
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 16,
     fontWeight: '600',
   },
-  formationDescription: {
-    color: 'rgba(255,255,255,0.6)',
-    fontSize: 12,
-    lineHeight: 18,
-    marginBottom: 12,
+  metaBadge: {
+    backgroundColor: NothingTheme.colors.accentMuted,
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 2,
   },
-  cardFooter: {
-    flexDirection: 'row',
+  metaBadgeText: {
+    color: NothingTheme.colors.accent,
+    fontSize: 9,
+    fontWeight: '700',
+    letterSpacing: 1,
+  },
+  formationPositions: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 11,
+    letterSpacing: 0.5,
+  },
+  // Modal Styles
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: NothingTheme.colors.background,
+  },
+  modalContent: {
+    flex: 1,
+  },
+  modalHeader: {
+    padding: 24,
     alignItems: 'center',
-    gap: 6,
   },
-  cardFooterText: {
-    color: '#10b981',
-    fontSize: 12,
-    fontWeight: '500',
-  },
-  pitch: {
-    height: 150,
-    backgroundColor: '#1a472a',
-    borderRadius: 8,
-    marginVertical: 12,
-    overflow: 'hidden',
-  },
-  pitchLines: {
-    ...StyleSheet.absoluteFillObject,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  centerCircle: {
+  closeButton: {
+    position: 'absolute',
+    right: 24,
+    top: 24,
     width: 40,
     height: 40,
     borderRadius: 20,
+    backgroundColor: NothingTheme.colors.surface,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.3)',
-  },
-  centerLine: {
-    position: 'absolute',
-    width: '100%',
-    height: 1,
-    backgroundColor: 'rgba(255,255,255,0.3)',
-  },
-  positionsContainer: {
-    flex: 1,
-    position: 'relative',
-  },
-  positionDot: {
-    position: 'absolute',
-    width: 28,
-    height: 28,
-    borderRadius: 14,
-    backgroundColor: '#10b981',
+    borderColor: NothingTheme.colors.border,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  positionText: {
-    color: '#fff',
-    fontSize: 8,
-    fontWeight: 'bold',
-  },
-  modalOverlay: {
-    flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.8)',
-    justifyContent: 'flex-end',
-  },
-  modalContent: {
-    backgroundColor: '#0a0f1a',
-    borderTopLeftRadius: 24,
-    borderTopRightRadius: 24,
-    maxHeight: '85%',
-  },
-  modalHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: 20,
-    borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255,255,255,0.1)',
   },
   modalTitle: {
-    color: '#10b981',
+    color: NothingTheme.colors.textPrimary,
     fontSize: 32,
-    fontWeight: 'bold',
-  },
-  modalScroll: {
-    padding: 20,
-  },
-  modalDescription: {
-    color: 'rgba(255,255,255,0.8)',
-    fontSize: 15,
-    lineHeight: 24,
-    marginBottom: 24,
-  },
-  modalSection: {
-    marginBottom: 24,
-  },
-  sectionHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-    marginBottom: 12,
-  },
-  sectionTitle: {
-    color: '#fff',
-    fontSize: 18,
-    fontWeight: '600',
-  },
-  listItem: {
-    flexDirection: 'row',
+    fontWeight: '700',
+    letterSpacing: 1,
     marginBottom: 8,
-    paddingLeft: 8,
-  },
-  bullet: {
-    color: '#10b981',
-    fontSize: 14,
-    marginRight: 8,
-  },
-  listText: {
-    color: 'rgba(255,255,255,0.7)',
-    fontSize: 14,
-    flex: 1,
-  },
-  positionsList: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 8,
-  },
-  positionBadge: {
-    backgroundColor: 'rgba(16,185,129,0.2)',
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 8,
-  },
-  positionBadgeText: {
-    color: '#10b981',
-    fontSize: 13,
-    fontWeight: '600',
   },
   tacticTypeBadge: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: 'rgba(139,92,246,0.2)',
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-    borderRadius: 12,
-    marginBottom: 20,
-    alignSelf: 'flex-start',
-    gap: 8,
+    backgroundColor: NothingTheme.colors.surface,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 4,
     borderWidth: 1,
-    borderColor: 'rgba(139,92,246,0.3)',
+    borderColor: NothingTheme.colors.border,
   },
   tacticTypeText: {
-    color: '#a78bfa',
-    fontSize: 14,
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 10,
     fontWeight: '600',
+    letterSpacing: 1,
   },
-  opponentTabs: {
+  levelTabs: {
     flexDirection: 'row',
+    padding: 24,
     gap: 8,
-    marginBottom: 16,
   },
-  opponentTab: {
+  levelTab: {
     flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
     paddingVertical: 12,
-    paddingHorizontal: 8,
-    borderRadius: 12,
-    backgroundColor: 'rgba(255,255,255,0.05)',
+    borderRadius: 4,
+    backgroundColor: NothingTheme.colors.surface,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.1)',
-    gap: 6,
+    borderColor: NothingTheme.colors.border,
+    alignItems: 'center',
   },
-  opponentTabActive: {
-    borderWidth: 0,
+  levelTabActive: {
+    backgroundColor: NothingTheme.colors.accentMuted,
+    borderColor: NothingTheme.colors.accent,
   },
-  opponentTabStrong: {
-    backgroundColor: '#ef4444',
-  },
-  opponentTabEqual: {
-    backgroundColor: '#f59e0b',
-  },
-  opponentTabWeak: {
-    backgroundColor: '#10b981',
-  },
-  opponentTabText: {
-    color: 'rgba(255,255,255,0.6)',
-    fontSize: 13,
+  levelTabText: {
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 11,
     fontWeight: '600',
+    letterSpacing: 1,
   },
-  opponentTabTextActive: {
-    color: '#fff',
+  levelTabTextActive: {
+    color: NothingTheme.colors.accent,
   },
-  tacticsContainer: {
-    backgroundColor: 'rgba(255,255,255,0.03)',
-    borderRadius: 16,
-    padding: 16,
-    borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.1)',
+  modalScroll: {
+    flex: 1,
+    paddingHorizontal: 24,
   },
-  tipBox: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    backgroundColor: 'rgba(245,158,11,0.1)',
-    borderRadius: 12,
-    padding: 14,
-    marginBottom: 16,
-    gap: 10,
-    borderWidth: 1,
-    borderColor: 'rgba(245,158,11,0.2)',
+  sectionLabel: {
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 10,
+    fontWeight: '600',
+    letterSpacing: 2,
+    marginBottom: 12,
   },
-  tipText: {
-    color: 'rgba(255,255,255,0.8)',
+  descriptionSection: {
+    marginBottom: 24,
+  },
+  descriptionText: {
+    color: NothingTheme.colors.textSecondary,
     fontSize: 13,
     lineHeight: 20,
-    flex: 1,
   },
-  tacticsGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 10,
-    marginBottom: 16,
+  arrowsInfo: {
+    marginBottom: 24,
   },
-  tacticItem: {
-    width: '48%',
-    backgroundColor: 'rgba(255,255,255,0.05)',
-    borderRadius: 10,
-    padding: 12,
+  arrowsBox: {
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    padding: 14,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
   },
-  tacticLabel: {
-    color: 'rgba(255,255,255,0.5)',
-    fontSize: 11,
-    marginBottom: 4,
-    textTransform: 'uppercase',
-    letterSpacing: 0.5,
-  },
-  tacticValue: {
-    color: '#fff',
+  arrowsText: {
+    color: NothingTheme.colors.textPrimary,
     fontSize: 14,
     fontWeight: '600',
+    textAlign: 'center',
+    letterSpacing: 1,
   },
-  togglesContainer: {
+  tacticsSection: {
+    marginBottom: 24,
+  },
+  tacticsGrid: {
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+    overflow: 'hidden',
+  },
+  tacticRow: {
     flexDirection: 'row',
-    gap: 12,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 14,
+    borderBottomWidth: 1,
+    borderBottomColor: NothingTheme.colors.border,
   },
-  toggleItem: {
+  tacticLabel: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 12,
+  },
+  tacticValue: {
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 12,
+    fontWeight: '600',
+  },
+  togglesSection: {
+    flexDirection: 'row',
+    gap: 8,
+    marginBottom: 24,
+  },
+  toggleBadge: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    backgroundColor: 'rgba(255,255,255,0.05)',
-    borderRadius: 10,
-    padding: 12,
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    padding: 14,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
   },
-  toggleLabel: {
-    color: 'rgba(255,255,255,0.7)',
-    fontSize: 12,
-    fontWeight: '500',
-  },
-  toggleBadge: {
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: 6,
-  },
-  toggleOn: {
-    backgroundColor: '#10b981',
-  },
-  toggleOff: {
-    backgroundColor: 'rgba(255,255,255,0.2)',
+  toggleBadgeActive: {
+    backgroundColor: NothingTheme.colors.accentMuted,
+    borderColor: NothingTheme.colors.accent,
   },
   toggleText: {
-    color: '#fff',
-    fontSize: 11,
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 10,
+    fontWeight: '600',
+    letterSpacing: 0.5,
+  },
+  toggleTextActive: {
+    color: NothingTheme.colors.textPrimary,
+  },
+  toggleValue: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 12,
     fontWeight: '700',
   },
-  // Variant Styles
-  variantTabs: {
-    flexDirection: 'row',
-    gap: 8,
-    marginBottom: 16,
+  toggleValueActive: {
+    color: NothingTheme.colors.accent,
   },
-  variantTab: {
-    flex: 1,
-    paddingVertical: 14,
-    paddingHorizontal: 12,
-    borderRadius: 12,
-    backgroundColor: 'rgba(255,255,255,0.05)',
-    borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.1)',
-    alignItems: 'center',
+  tipSection: {
+    marginBottom: 24,
   },
-  variantTabActive: {
-    backgroundColor: 'rgba(139,92,246,0.2)',
-    borderColor: '#8b5cf6',
-  },
-  variantTabLetter: {
-    color: 'rgba(255,255,255,0.5)',
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginBottom: 4,
-  },
-  variantTabLetterActive: {
-    color: '#8b5cf6',
-  },
-  variantTabName: {
-    color: 'rgba(255,255,255,0.5)',
-    fontSize: 10,
-    textAlign: 'center',
-  },
-  variantTabNameActive: {
-    color: '#fff',
-  },
-  variantDetails: {
-    backgroundColor: 'rgba(139,92,246,0.05)',
-    borderRadius: 16,
+  tipBox: {
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
     padding: 16,
     borderWidth: 1,
-    borderColor: 'rgba(139,92,246,0.2)',
+    borderColor: NothingTheme.colors.border,
+    borderLeftWidth: 3,
+    borderLeftColor: NothingTheme.colors.accent,
   },
-  variantGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 10,
-    marginBottom: 14,
-  },
-  variantItem: {
-    width: '48%',
-    backgroundColor: 'rgba(255,255,255,0.05)',
-    borderRadius: 10,
-    padding: 12,
-  },
-  variantLabel: {
-    color: 'rgba(255,255,255,0.5)',
-    fontSize: 10,
-    marginBottom: 4,
-    textTransform: 'uppercase',
-  },
-  variantValue: {
-    color: '#fff',
+  tipText: {
+    color: NothingTheme.colors.textSecondary,
     fontSize: 13,
-    fontWeight: '600',
+    lineHeight: 20,
   },
-  variantToggles: {
-    flexDirection: 'row',
-    gap: 10,
-    marginBottom: 14,
+  prosConsSection: {
+    marginBottom: 40,
   },
-  variantToggle: {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 10,
-    borderRadius: 10,
-    gap: 6,
+  prosConColumn: {
+    marginBottom: 20,
   },
-  variantToggleText: {
-    color: '#fff',
-    fontSize: 12,
-    fontWeight: '600',
-  },
-  arrowsContainer: {
-    marginBottom: 14,
-  },
-  arrowsTitle: {
-    color: 'rgba(255,255,255,0.6)',
-    fontSize: 11,
-    marginBottom: 8,
-    textTransform: 'uppercase',
-  },
-  arrowsList: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 8,
-  },
-  arrowBadge: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: 'rgba(255,255,255,0.1)',
-    paddingHorizontal: 10,
-    paddingVertical: 6,
-    borderRadius: 8,
-    gap: 4,
-  },
-  arrowPos: {
-    color: '#fff',
-    fontSize: 12,
-    fontWeight: '600',
-  },
-  arrowIcon: {
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-  bestAgainstContainer: {
-    marginBottom: 14,
-  },
-  bestAgainstTitle: {
-    color: 'rgba(255,255,255,0.6)',
-    fontSize: 11,
-    marginBottom: 8,
-    textTransform: 'uppercase',
-  },
-  bestAgainstList: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 8,
-  },
-  bestAgainstBadge: {
-    backgroundColor: 'rgba(16,185,129,0.2)',
-    paddingHorizontal: 10,
-    paddingVertical: 6,
-    borderRadius: 8,
-  },
-  bestAgainstText: {
-    color: '#10b981',
-    fontSize: 12,
-    fontWeight: '600',
-  },
-  variantTipBox: {
+  prosConItem: {
     flexDirection: 'row',
     alignItems: 'flex-start',
-    backgroundColor: 'rgba(245,158,11,0.1)',
-    borderRadius: 10,
-    padding: 12,
-    gap: 8,
+    marginBottom: 8,
+    gap: 10,
   },
-  variantTipText: {
-    color: 'rgba(255,255,255,0.8)',
-    fontSize: 12,
-    lineHeight: 18,
+  prosIndicator: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: NothingTheme.colors.textPrimary,
+    marginTop: 4,
+  },
+  consIndicator: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: NothingTheme.colors.accent,
+    marginTop: 4,
+  },
+  prosConText: {
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 13,
     flex: 1,
+    lineHeight: 18,
   },
 });

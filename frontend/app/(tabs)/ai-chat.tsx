@@ -9,10 +9,12 @@ import {
   KeyboardAvoidingView,
   Platform,
   ActivityIndicator,
+  Animated,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
+import { NothingTheme } from '@/src/theme/NothingTheme';
 import axios from 'axios';
 
 const API_URL = process.env.EXPO_PUBLIC_BACKEND_URL || '';
@@ -26,11 +28,30 @@ interface ChatMessage {
 
 export default function AIChatScreen() {
   const insets = useSafeAreaInsets();
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const scrollViewRef = useRef<ScrollView>(null);
+  const [pulseAnim] = useState(new Animated.Value(1));
+
+  // Pulse animation for loading
+  const startPulse = () => {
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(pulseAnim, {
+          toValue: 0.5,
+          duration: 500,
+          useNativeDriver: true,
+        }),
+        Animated.timing(pulseAnim, {
+          toValue: 1,
+          duration: 500,
+          useNativeDriver: true,
+        }),
+      ])
+    ).start();
+  };
 
   const sendMessage = async () => {
     if (!input.trim() || loading) return;
@@ -45,6 +66,7 @@ export default function AIChatScreen() {
     setMessages((prev) => [...prev, userMessage]);
     setInput('');
     setLoading(true);
+    startPulse();
 
     setTimeout(() => {
       scrollViewRef.current?.scrollToEnd({ animated: true });
@@ -70,13 +92,14 @@ export default function AIChatScreen() {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
         content: language === 'it' 
-          ? 'Mi dispiace, si è verificato un errore. Riprova più tardi.'
-          : 'Sorry, an error occurred. Please try again later.',
+          ? 'Errore di connessione. Riprova.'
+          : 'Connection error. Try again.',
         created_at: new Date().toISOString(),
       };
       setMessages((prev) => [...prev, errorMessage]);
     } finally {
       setLoading(false);
+      pulseAnim.setValue(1);
       setTimeout(() => {
         scrollViewRef.current?.scrollToEnd({ animated: true });
       }, 100);
@@ -87,6 +110,12 @@ export default function AIChatScreen() {
     setMessages([]);
   };
 
+  const suggestions = [
+    language === 'it' ? 'Come contrastare il 4-3-3?' : 'How to counter 4-3-3?',
+    language === 'it' ? 'Miglior formazione META 2026' : 'Best META formation 2026',
+    language === 'it' ? 'Tattica vs avversario forte' : 'Tactics vs stronger opponent',
+  ];
+
   return (
     <KeyboardAvoidingView
       style={[styles.container, { paddingTop: insets.top }]}
@@ -96,67 +125,84 @@ export default function AIChatScreen() {
       {/* Header */}
       <View style={styles.header}>
         <View style={styles.headerLeft}>
-          <View style={styles.aiIcon}>
-            <Ionicons name="sparkles" size={24} color="#10b981" />
+          <View style={styles.aiIconContainer}>
+            <View style={styles.dotGrid}>
+              {[...Array(4)].map((_, i) => (
+                <View 
+                  key={i} 
+                  style={[
+                    styles.dot,
+                    (i === 0 || i === 3) && styles.dotActive
+                  ]} 
+                />
+              ))}
+            </View>
           </View>
-          <Text style={styles.headerTitle}>
-            {language === 'it' ? 'AI Tattico' : 'Tactical AI'}
-          </Text>
+          <View>
+            <Text style={styles.headerTitle}>TACTICAL</Text>
+            <Text style={styles.headerSubtitle}>AI</Text>
+          </View>
         </View>
         {messages.length > 0 && (
-          <TouchableOpacity onPress={clearHistory}>
-            <Ionicons name="trash-outline" size={24} color="rgba(255,255,255,0.5)" />
+          <TouchableOpacity 
+            style={styles.clearButton}
+            onPress={clearHistory}
+          >
+            <Ionicons name="trash-outline" size={20} color={NothingTheme.colors.textTertiary} />
           </TouchableOpacity>
         )}
       </View>
+
+      <View style={styles.divider} />
 
       {/* Messages */}
       <ScrollView
         ref={scrollViewRef}
         style={styles.messagesContainer}
         contentContainerStyle={styles.messagesContent}
+        showsVerticalScrollIndicator={false}
         onContentSizeChange={() => scrollViewRef.current?.scrollToEnd({ animated: true })}
       >
         {messages.length === 0 ? (
           <View style={styles.emptyState}>
-            <View style={styles.emptyIcon}>
-              <Ionicons name="chatbubbles-outline" size={48} color="rgba(255,255,255,0.2)" />
+            <View style={styles.emptyIconContainer}>
+              <View style={styles.largeDotGrid}>
+                {[...Array(9)].map((_, i) => (
+                  <View 
+                    key={i} 
+                    style={[
+                      styles.largeDot,
+                      (i === 4) && styles.largeDotActive
+                    ]} 
+                  />
+                ))}
+              </View>
             </View>
             <Text style={styles.emptyTitle}>
-              {language === 'it' ? 'Ciao! Come posso aiutarti?' : 'Hi! How can I help you?'}
+              {language === 'it' ? 'Chiedi consiglio' : 'Ask for advice'}
             </Text>
             <Text style={styles.emptySubtitle}>
               {language === 'it'
-                ? 'Chiedimi di formazioni, tattiche, giocatori...'
-                : 'Ask me about formations, tactics, players...'}
+                ? 'Formazioni, tattiche, giocatori...'
+                : 'Formations, tactics, players...'}
             </Text>
             
-            {/* Quick suggestions */}
+            {/* Suggestions */}
             <View style={styles.suggestions}>
-              <TouchableOpacity 
-                style={styles.suggestionChip}
-                onPress={() => setInput(language === 'it' ? 'Come contrastare il 4-3-3?' : 'How to counter 4-3-3?')}
-              >
-                <Text style={styles.suggestionText}>
-                  {language === 'it' ? 'Come contrastare il 4-3-3?' : 'How to counter 4-3-3?'}
-                </Text>
-              </TouchableOpacity>
-              <TouchableOpacity 
-                style={styles.suggestionChip}
-                onPress={() => setInput(language === 'it' ? 'Miglior formazione META 2026' : 'Best META formation 2026')}
-              >
-                <Text style={styles.suggestionText}>
-                  {language === 'it' ? 'Miglior formazione META 2026' : 'Best META formation 2026'}
-                </Text>
-              </TouchableOpacity>
-              <TouchableOpacity 
-                style={styles.suggestionChip}
-                onPress={() => setInput(language === 'it' ? 'Tattica per avversario più forte' : 'Tactics for stronger opponent')}
-              >
-                <Text style={styles.suggestionText}>
-                  {language === 'it' ? 'Tattica per avversario più forte' : 'Tactics for stronger opponent'}
-                </Text>
-              </TouchableOpacity>
+              {suggestions.map((suggestion, index) => (
+                <TouchableOpacity 
+                  key={index}
+                  style={styles.suggestionChip}
+                  onPress={() => setInput(suggestion)}
+                >
+                  <Text style={styles.suggestionText}>{suggestion}</Text>
+                  <Ionicons 
+                    name="arrow-forward" 
+                    size={14} 
+                    color={NothingTheme.colors.textTertiary} 
+                  />
+                </TouchableOpacity>
+              ))}
             </View>
           </View>
         ) : (
@@ -169,8 +215,8 @@ export default function AIChatScreen() {
               ]}
             >
               {message.role === 'assistant' && (
-                <View style={styles.assistantIcon}>
-                  <Ionicons name="sparkles" size={16} color="#10b981" />
+                <View style={styles.assistantDot}>
+                  <View style={styles.miniDot} />
                 </View>
               )}
               <Text style={[
@@ -185,33 +231,49 @@ export default function AIChatScreen() {
         
         {loading && (
           <View style={[styles.messageBubble, styles.assistantBubble]}>
-            <View style={styles.assistantIcon}>
-              <Ionicons name="sparkles" size={16} color="#10b981" />
+            <Animated.View style={[styles.assistantDot, { opacity: pulseAnim }]}>
+              <View style={[styles.miniDot, styles.miniDotActive]} />
+            </Animated.View>
+            <View style={styles.loadingDots}>
+              <View style={styles.loadingDot} />
+              <View style={[styles.loadingDot, { marginLeft: 4 }]} />
+              <View style={[styles.loadingDot, { marginLeft: 4 }]} />
             </View>
-            <ActivityIndicator size="small" color="#10b981" />
           </View>
         )}
       </ScrollView>
 
       {/* Input */}
       <View style={[styles.inputContainer, { paddingBottom: insets.bottom + 10 }]}>
-        <TextInput
-          style={styles.input}
-          value={input}
-          onChangeText={setInput}
-          placeholder={language === 'it' ? 'Scrivi un messaggio...' : 'Type a message...'}
-          placeholderTextColor="rgba(255,255,255,0.4)"
-          multiline
-          maxLength={500}
-          onSubmitEditing={sendMessage}
-        />
-        <TouchableOpacity
-          style={[styles.sendButton, (!input.trim() || loading) && styles.sendButtonDisabled]}
-          onPress={sendMessage}
-          disabled={!input.trim() || loading}
-        >
-          <Ionicons name="send" size={20} color="#fff" />
-        </TouchableOpacity>
+        <View style={styles.inputWrapper}>
+          <TextInput
+            style={styles.input}
+            value={input}
+            onChangeText={setInput}
+            placeholder={language === 'it' ? 'Scrivi...' : 'Type...'}
+            placeholderTextColor={NothingTheme.colors.textTertiary}
+            multiline
+            maxLength={500}
+            onSubmitEditing={sendMessage}
+          />
+          <TouchableOpacity
+            style={[
+              styles.sendButton,
+              (!input.trim() || loading) && styles.sendButtonDisabled
+            ]}
+            onPress={sendMessage}
+            disabled={!input.trim() || loading}
+          >
+            <Ionicons 
+              name="arrow-up" 
+              size={20} 
+              color={(!input.trim() || loading) 
+                ? NothingTheme.colors.textTertiary 
+                : NothingTheme.colors.background
+              } 
+            />
+          </TouchableOpacity>
+        </View>
       </View>
     </KeyboardAvoidingView>
   );
@@ -220,153 +282,225 @@ export default function AIChatScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0a0f1a',
-  },
-  centered: {
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: NothingTheme.colors.background,
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: 20,
-    borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255,255,255,0.1)',
+    padding: 24,
+    paddingBottom: 16,
   },
   headerLeft: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 12,
+    gap: 14,
   },
-  aiIcon: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    backgroundColor: 'rgba(16,185,129,0.2)',
+  aiIconContainer: {
+    width: 44,
+    height: 44,
+    borderRadius: 8,
+    backgroundColor: NothingTheme.colors.surface,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
     alignItems: 'center',
     justifyContent: 'center',
   },
+  dotGrid: {
+    width: 20,
+    height: 20,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 4,
+  },
+  dot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: NothingTheme.colors.dotInactive,
+  },
+  dotActive: {
+    backgroundColor: NothingTheme.colors.dotActive,
+  },
   headerTitle: {
-    color: '#fff',
-    fontSize: 20,
-    fontWeight: 'bold',
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 18,
+    fontWeight: '700',
+    letterSpacing: 2,
+  },
+  headerSubtitle: {
+    color: NothingTheme.colors.accent,
+    fontSize: 18,
+    fontWeight: '700',
+    letterSpacing: 2,
+    marginTop: -2,
+  },
+  clearButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: NothingTheme.colors.surface,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  divider: {
+    height: 1,
+    backgroundColor: NothingTheme.colors.divider,
+    marginHorizontal: 24,
   },
   messagesContainer: {
     flex: 1,
   },
   messagesContent: {
-    padding: 20,
+    padding: 24,
     paddingBottom: 20,
   },
   emptyState: {
     alignItems: 'center',
     paddingVertical: 40,
   },
-  emptyIcon: {
+  emptyIconContainer: {
     width: 80,
     height: 80,
-    borderRadius: 40,
-    backgroundColor: 'rgba(255,255,255,0.05)',
+    borderRadius: 16,
+    backgroundColor: NothingTheme.colors.surface,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 20,
+    marginBottom: 24,
+  },
+  largeDotGrid: {
+    width: 40,
+    height: 40,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 4,
+  },
+  largeDot: {
+    width: 10,
+    height: 10,
+    borderRadius: 5,
+    backgroundColor: NothingTheme.colors.dotInactive,
+  },
+  largeDotActive: {
+    backgroundColor: NothingTheme.colors.dotActive,
   },
   emptyTitle: {
-    color: '#fff',
-    fontSize: 20,
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 18,
     fontWeight: '600',
     marginBottom: 8,
-    textAlign: 'center',
   },
   emptySubtitle: {
-    color: 'rgba(255,255,255,0.5)',
-    fontSize: 14,
-    textAlign: 'center',
-    marginBottom: 24,
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 13,
+    marginBottom: 32,
   },
   suggestions: {
     width: '100%',
-    gap: 10,
+    gap: 8,
   },
   suggestionChip: {
-    backgroundColor: 'rgba(16,185,129,0.1)',
-    borderRadius: 12,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
     padding: 14,
     borderWidth: 1,
-    borderColor: 'rgba(16,185,129,0.2)',
+    borderColor: NothingTheme.colors.border,
   },
   suggestionText: {
-    color: '#10b981',
-    fontSize: 14,
-    textAlign: 'center',
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 13,
   },
   messageBubble: {
     maxWidth: '85%',
     padding: 14,
-    borderRadius: 16,
+    borderRadius: 8,
     marginBottom: 12,
   },
   userBubble: {
-    backgroundColor: '#10b981',
+    backgroundColor: NothingTheme.colors.accent,
     alignSelf: 'flex-end',
-    borderBottomRightRadius: 4,
   },
   assistantBubble: {
-    backgroundColor: 'rgba(255,255,255,0.08)',
+    backgroundColor: NothingTheme.colors.surface,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
     alignSelf: 'flex-start',
-    borderBottomLeftRadius: 4,
     flexDirection: 'row',
     alignItems: 'flex-start',
     gap: 10,
   },
-  assistantIcon: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
-    backgroundColor: 'rgba(16,185,129,0.2)',
-    alignItems: 'center',
-    justifyContent: 'center',
+  assistantDot: {
+    width: 8,
+    height: 8,
+    marginTop: 6,
+  },
+  miniDot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: NothingTheme.colors.dotInactive,
+  },
+  miniDotActive: {
+    backgroundColor: NothingTheme.colors.dotActive,
   },
   messageText: {
-    color: 'rgba(255,255,255,0.9)',
-    fontSize: 15,
-    lineHeight: 22,
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 14,
+    lineHeight: 20,
     flex: 1,
   },
   userMessageText: {
-    color: '#fff',
+    color: NothingTheme.colors.textPrimary,
+  },
+  loadingDots: {
+    flexDirection: 'row',
+    paddingVertical: 4,
+  },
+  loadingDot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    backgroundColor: NothingTheme.colors.textTertiary,
   },
   inputContainer: {
+    padding: 16,
+    borderTopWidth: 1,
+    borderTopColor: NothingTheme.colors.border,
+  },
+  inputWrapper: {
     flexDirection: 'row',
     alignItems: 'flex-end',
-    padding: 16,
-    paddingTop: 12,
-    borderTopWidth: 1,
-    borderTopColor: 'rgba(255,255,255,0.1)',
-    gap: 12,
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+    paddingLeft: 16,
+    paddingRight: 6,
+    paddingVertical: 6,
   },
   input: {
     flex: 1,
-    backgroundColor: 'rgba(255,255,255,0.08)',
-    borderRadius: 20,
-    paddingHorizontal: 18,
-    paddingVertical: 12,
-    color: '#fff',
-    fontSize: 15,
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 14,
     maxHeight: 100,
-    borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.1)',
+    paddingVertical: 8,
   },
   sendButton: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
-    backgroundColor: '#10b981',
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    backgroundColor: NothingTheme.colors.accent,
     alignItems: 'center',
     justifyContent: 'center',
   },
   sendButtonDisabled: {
-    backgroundColor: 'rgba(16,185,129,0.3)',
+    backgroundColor: NothingTheme.colors.surface,
   },
 });

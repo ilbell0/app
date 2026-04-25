@@ -7,10 +7,12 @@ import {
   TouchableOpacity,
   ActivityIndicator,
   Modal,
+  Animated,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
+import { NothingTheme } from '@/src/theme/NothingTheme';
 import axios from 'axios';
 
 const API_URL = process.env.EXPO_PUBLIC_BACKEND_URL || '';
@@ -43,17 +45,30 @@ type ScenarioLevel = 'forte' | 'pari' | 'debole';
 
 export default function CountersScreen() {
   const insets = useSafeAreaInsets();
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
   const [counterEngine, setCounterEngine] = useState<CounterEngine[]>([]);
   const [selectedFormation, setSelectedFormation] = useState<CounterEngine | null>(null);
   const [selectedLevel, setSelectedLevel] = useState<ScenarioLevel>('pari');
   const [loading, setLoading] = useState(true);
   const [modalVisible, setModalVisible] = useState(false);
   const [searchCategory, setSearchCategory] = useState<string>('all');
+  const [fadeAnim] = useState(new Animated.Value(0));
 
   useEffect(() => {
     fetchData();
   }, []);
+
+  useEffect(() => {
+    if (modalVisible) {
+      Animated.timing(fadeAnim, {
+        toValue: 1,
+        duration: 200,
+        useNativeDriver: true,
+      }).start();
+    } else {
+      fadeAnim.setValue(0);
+    }
+  }, [modalVisible]);
 
   const fetchData = async () => {
     try {
@@ -68,44 +83,26 @@ export default function CountersScreen() {
 
   const getCategoryLabel = (cat: string) => {
     const labels: Record<string, { en: string; it: string }> = {
-      att: { en: 'Attacking', it: 'Attaccante' },
-      neu: { en: 'Balanced', it: 'Bilanciato' },
-      dif: { en: 'Defensive', it: 'Difensivo' },
+      att: { en: 'ATT', it: 'ATT' },
+      neu: { en: 'BAL', it: 'BIL' },
+      dif: { en: 'DEF', it: 'DIF' },
     };
-    return labels[cat]?.[language] || cat;
-  };
-
-  const getCategoryColor = (cat: string) => {
-    const colors: Record<string, string> = {
-      att: '#ef4444',
-      neu: '#f59e0b',
-      dif: '#10b981',
-    };
-    return colors[cat] || '#6b7280';
+    return labels[cat]?.[language] || cat.toUpperCase();
   };
 
   const getLevelLabel = (level: ScenarioLevel) => {
     const labels: Record<ScenarioLevel, { en: string; it: string }> = {
-      forte: { en: 'STRONGER', it: 'PIÙ FORTE' },
+      forte: { en: 'STRONGER', it: 'FORTE' },
       pari: { en: 'EQUAL', it: 'PARI' },
-      debole: { en: 'WEAKER', it: 'PIÙ DEBOLE' },
+      debole: { en: 'WEAKER', it: 'DEBOLE' },
     };
     return labels[level][language];
   };
 
-  const getLevelColor = (level: ScenarioLevel) => {
-    const colors: Record<ScenarioLevel, string> = {
-      forte: '#ef4444',
-      pari: '#f59e0b',
-      debole: '#10b981',
-    };
-    return colors[level];
-  };
-
   const getArrowColor = (arrow: string) => {
-    if (arrow === '↑') return '#10b981';
-    if (arrow === '↓') return '#ef4444';
-    return '#6b7280';
+    if (arrow === '↑') return '#FFFFFF';
+    if (arrow === '↓') return NothingTheme.colors.accent;
+    return NothingTheme.colors.textTertiary;
   };
 
   const filteredFormations = searchCategory === 'all'
@@ -123,23 +120,20 @@ export default function CountersScreen() {
   if (loading) {
     return (
       <View style={[styles.container, styles.centered]}>
-        <ActivityIndicator size="large" color="#10b981" />
+        <ActivityIndicator size="large" color={NothingTheme.colors.accent} />
       </View>
     );
   }
 
   return (
     <View style={[styles.container, { paddingTop: insets.top }]}>
+      {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>
-          {language === 'it' ? 'Counter Engine v6' : 'Counter Engine v6'}
-        </Text>
-        <Text style={styles.headerSubtitle}>
-          {language === 'it'
-            ? 'Seleziona la formazione avversaria'
-            : 'Select opponent formation'}
-        </Text>
+        <Text style={styles.headerTitle}>COUNTER</Text>
+        <Text style={styles.headerSubtitle}>ENGINE v6</Text>
       </View>
+
+      <View style={styles.divider} />
 
       {/* Category Filter */}
       <View style={styles.filterContainer}>
@@ -149,34 +143,36 @@ export default function CountersScreen() {
             style={[
               styles.filterButton,
               searchCategory === cat && styles.filterButtonActive,
-              searchCategory === cat && { borderColor: cat === 'all' ? '#6366f1' : getCategoryColor(cat) },
             ]}
             onPress={() => setSearchCategory(cat)}
           >
-            <Text
-              style={[
-                styles.filterButtonText,
-                searchCategory === cat && { color: cat === 'all' ? '#6366f1' : getCategoryColor(cat) },
-              ]}
-            >
-              {cat === 'all'
-                ? language === 'it' ? 'Tutti' : 'All'
-                : getCategoryLabel(cat)}
+            <Text style={[
+              styles.filterButtonText,
+              searchCategory === cat && styles.filterButtonTextActive,
+            ]}>
+              {cat === 'all' ? 'ALL' : getCategoryLabel(cat)}
             </Text>
           </TouchableOpacity>
         ))}
       </View>
 
-      <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
-        {/* Formation Grid */}
-        <View style={styles.formationGrid}>
-          {filteredFormations.map((ce, index) => (
-            <TouchableOpacity
-              key={index}
-              style={styles.formationCard}
-              onPress={() => openModal(ce)}
-            >
-              <View style={styles.formationCardHeader}>
+      <View style={styles.divider} />
+
+      <ScrollView 
+        style={styles.scrollView} 
+        contentContainerStyle={styles.scrollContent}
+        showsVerticalScrollIndicator={false}
+      >
+        {/* Formation List */}
+        {filteredFormations.map((ce, index) => (
+          <TouchableOpacity
+            key={index}
+            style={styles.formationCard}
+            onPress={() => openModal(ce)}
+            activeOpacity={0.7}
+          >
+            <View style={styles.formationInfo}>
+              <View style={styles.formationHeader}>
                 <Text style={styles.formationName}>{ce.av}</Text>
                 {ce.meta && (
                   <View style={styles.metaBadge}>
@@ -184,25 +180,20 @@ export default function CountersScreen() {
                   </View>
                 )}
               </View>
-              <View style={[styles.categoryBadge, { backgroundColor: getCategoryColor(ce.cat) + '20' }]}>
-                <Text style={[styles.categoryBadgeText, { color: getCategoryColor(ce.cat) }]}>
-                  {getCategoryLabel(ce.cat)}
-                </Text>
-              </View>
               <Text style={styles.counterPreview}>
-                {language === 'it' ? 'Contro: ' : 'Counter: '}{ce.pari.mod}
+                → {ce.pari.mod}
               </Text>
-            </TouchableOpacity>
-          ))}
-        </View>
+            </View>
+            <View style={styles.categoryBadge}>
+              <Text style={styles.categoryText}>{getCategoryLabel(ce.cat)}</Text>
+            </View>
+          </TouchableOpacity>
+        ))}
 
         {filteredFormations.length === 0 && (
           <View style={styles.emptyState}>
-            <Ionicons name="search-outline" size={64} color="rgba(255,255,255,0.2)" />
             <Text style={styles.emptyText}>
-              {language === 'it'
-                ? 'Nessuna formazione trovata'
-                : 'No formations found'}
+              {language === 'it' ? 'Nessun risultato' : 'No results'}
             </Text>
           </View>
         )}
@@ -215,7 +206,7 @@ export default function CountersScreen() {
         visible={modalVisible}
         onRequestClose={() => setModalVisible(false)}
       >
-        <View style={styles.modalOverlay}>
+        <Animated.View style={[styles.modalOverlay, { opacity: fadeAnim }]}>
           <View style={[styles.modalContent, { paddingTop: insets.top + 10 }]}>
             {/* Modal Header */}
             <View style={styles.modalHeader}>
@@ -223,20 +214,20 @@ export default function CountersScreen() {
                 style={styles.closeButton}
                 onPress={() => setModalVisible(false)}
               >
-                <Ionicons name="close" size={28} color="#fff" />
+                <Ionicons name="close" size={24} color={NothingTheme.colors.textPrimary} />
               </TouchableOpacity>
               <View style={styles.modalTitleContainer}>
-                <Text style={styles.modalSubtitle}>
-                  {language === 'it' ? 'VS Avversario' : 'VS Opponent'}
-                </Text>
+                <Text style={styles.modalLabel}>VS</Text>
                 <Text style={styles.modalTitle}>{selectedFormation?.av}</Text>
                 {selectedFormation?.meta && (
-                  <View style={[styles.metaBadge, { marginTop: 8 }]}>
-                    <Text style={styles.metaBadgeText}>★ META 2025</Text>
+                  <View style={styles.metaBadgeLarge}>
+                    <Text style={styles.metaBadgeText}>META 2026</Text>
                   </View>
                 )}
               </View>
             </View>
+
+            <View style={styles.dividerModal} />
 
             {/* Level Tabs */}
             <View style={styles.levelTabs}>
@@ -245,108 +236,113 @@ export default function CountersScreen() {
                   key={level}
                   style={[
                     styles.levelTab,
-                    selectedLevel === level && { backgroundColor: getLevelColor(level) + '30', borderColor: getLevelColor(level) },
+                    selectedLevel === level && styles.levelTabActive,
                   ]}
                   onPress={() => setSelectedLevel(level)}
                 >
-                  <Text
-                    style={[
-                      styles.levelTabText,
-                      selectedLevel === level && { color: getLevelColor(level), fontWeight: 'bold' },
-                    ]}
-                  >
+                  <Text style={[
+                    styles.levelTabText,
+                    selectedLevel === level && styles.levelTabTextActive,
+                  ]}>
                     {getLevelLabel(level)}
                   </Text>
                 </TouchableOpacity>
               ))}
             </View>
 
-            <ScrollView style={styles.modalScroll}>
+            <ScrollView style={styles.modalScroll} showsVerticalScrollIndicator={false}>
               {currentScenario && (
                 <>
                   {/* Recommended Formation */}
                   <View style={styles.recommendedSection}>
                     <Text style={styles.sectionLabel}>
-                      {language === 'it' ? 'FORMAZIONE CONSIGLIATA' : 'RECOMMENDED FORMATION'}
+                      {language === 'it' ? 'FORMAZIONE' : 'FORMATION'}
                     </Text>
                     <View style={styles.formationBox}>
                       <Text style={styles.recommendedFormation}>{currentScenario.mod}</Text>
                       <Text style={styles.alternativeFormation}>
-                        {language === 'it' ? 'Alternativa: ' : 'Alternative: '}{currentScenario.alt}
+                        ALT: {currentScenario.alt}
                       </Text>
                     </View>
                   </View>
 
                   {/* Tactical Settings Grid */}
-                  <View style={styles.tacticsGrid}>
-                    <View style={styles.tacticItem}>
-                      <Text style={styles.tacticLabel}>
-                        {language === 'it' ? 'Mentalità' : 'Mentality'}
-                      </Text>
-                      <Text style={styles.tacticValue}>{currentScenario.men}</Text>
-                    </View>
-                    <View style={styles.tacticItem}>
-                      <Text style={styles.tacticLabel}>
-                        {language === 'it' ? 'Passaggi' : 'Passing'}
-                      </Text>
-                      <Text style={styles.tacticValue}>{currentScenario.pass}</Text>
-                    </View>
-                    <View style={styles.tacticItem}>
-                      <Text style={styles.tacticLabel}>
-                        {language === 'it' ? 'Stile' : 'Style'}
-                      </Text>
-                      <Text style={styles.tacticValue}>{currentScenario.stile}</Text>
-                    </View>
-                    <View style={styles.tacticItem}>
-                      <Text style={styles.tacticLabel}>
-                        {language === 'it' ? 'Contrasti' : 'Tackling'}
-                      </Text>
-                      <Text style={styles.tacticValue}>{currentScenario.cont}</Text>
-                    </View>
-                    <View style={styles.tacticItem}>
-                      <Text style={styles.tacticLabel}>
-                        {language === 'it' ? 'Marcatura' : 'Marking'}
-                      </Text>
-                      <Text style={styles.tacticValue}>{currentScenario.marc}</Text>
-                    </View>
-                    <View style={styles.tacticItem}>
-                      <Text style={styles.tacticLabel}>Pressing</Text>
-                      <Text style={styles.tacticValue}>{currentScenario.press}</Text>
+                  <View style={styles.tacticsSection}>
+                    <Text style={styles.sectionLabel}>
+                      {language === 'it' ? 'IMPOSTAZIONI' : 'SETTINGS'}
+                    </Text>
+                    <View style={styles.tacticsGrid}>
+                      <View style={styles.tacticRow}>
+                        <Text style={styles.tacticLabel}>
+                          {language === 'it' ? 'Mentalità' : 'Mentality'}
+                        </Text>
+                        <Text style={styles.tacticValue}>{currentScenario.men}</Text>
+                      </View>
+                      <View style={styles.tacticRow}>
+                        <Text style={styles.tacticLabel}>
+                          {language === 'it' ? 'Passaggi' : 'Passing'}
+                        </Text>
+                        <Text style={styles.tacticValue}>{currentScenario.pass}</Text>
+                      </View>
+                      <View style={styles.tacticRow}>
+                        <Text style={styles.tacticLabel}>
+                          {language === 'it' ? 'Stile' : 'Style'}
+                        </Text>
+                        <Text style={styles.tacticValue}>{currentScenario.stile}</Text>
+                      </View>
+                      <View style={styles.tacticRow}>
+                        <Text style={styles.tacticLabel}>Pressing</Text>
+                        <Text style={styles.tacticValue}>{currentScenario.press}</Text>
+                      </View>
+                      <View style={styles.tacticRow}>
+                        <Text style={styles.tacticLabel}>
+                          {language === 'it' ? 'Marcatura' : 'Marking'}
+                        </Text>
+                        <Text style={styles.tacticValue}>{currentScenario.marc}</Text>
+                      </View>
+                      <View style={styles.tacticRow}>
+                        <Text style={styles.tacticLabel}>
+                          {language === 'it' ? 'Contrasti' : 'Tackling'}
+                        </Text>
+                        <Text style={styles.tacticValue}>{currentScenario.cont}</Text>
+                      </View>
                     </View>
                   </View>
 
-                  {/* Special Settings (Badges) */}
-                  <View style={styles.badgesRow}>
+                  {/* Toggle Badges */}
+                  <View style={styles.togglesSection}>
                     <View style={[
-                      styles.badge,
-                      currentScenario.ctrl === 'SI' ? styles.badgeActive : styles.badgeInactive,
+                      styles.toggleBadge,
+                      currentScenario.ctrl === 'SI' && styles.toggleBadgeActive,
                     ]}>
-                      <Ionicons
-                        name={currentScenario.ctrl === 'SI' ? 'checkmark-circle' : 'close-circle'}
-                        size={18}
-                        color={currentScenario.ctrl === 'SI' ? '#10b981' : '#6b7280'}
-                      />
                       <Text style={[
-                        styles.badgeText,
-                        { color: currentScenario.ctrl === 'SI' ? '#10b981' : '#6b7280' },
+                        styles.toggleText,
+                        currentScenario.ctrl === 'SI' && styles.toggleTextActive,
                       ]}>
-                        {language === 'it' ? 'Contropiede' : 'Counter'}
+                        {language === 'it' ? 'CONTROPIEDE' : 'COUNTER'}
+                      </Text>
+                      <Text style={[
+                        styles.toggleValue,
+                        currentScenario.ctrl === 'SI' && styles.toggleValueActive,
+                      ]}>
+                        {currentScenario.ctrl}
                       </Text>
                     </View>
                     <View style={[
-                      styles.badge,
-                      currentScenario.fuo === 'SI' ? styles.badgeActive : styles.badgeInactive,
+                      styles.toggleBadge,
+                      currentScenario.fuo === 'SI' && styles.toggleBadgeActive,
                     ]}>
-                      <Ionicons
-                        name={currentScenario.fuo === 'SI' ? 'checkmark-circle' : 'close-circle'}
-                        size={18}
-                        color={currentScenario.fuo === 'SI' ? '#10b981' : '#6b7280'}
-                      />
                       <Text style={[
-                        styles.badgeText,
-                        { color: currentScenario.fuo === 'SI' ? '#10b981' : '#6b7280' },
+                        styles.toggleText,
+                        currentScenario.fuo === 'SI' && styles.toggleTextActive,
                       ]}>
-                        {language === 'it' ? 'Fuorigioco' : 'Offside'}
+                        {language === 'it' ? 'FUORIGIOCO' : 'OFFSIDE'}
+                      </Text>
+                      <Text style={[
+                        styles.toggleValue,
+                        currentScenario.fuo === 'SI' && styles.toggleValueActive,
+                      ]}>
+                        {currentScenario.fuo}
                       </Text>
                     </View>
                   </View>
@@ -354,7 +350,7 @@ export default function CountersScreen() {
                   {/* Position Arrows */}
                   <View style={styles.arrowsSection}>
                     <Text style={styles.sectionLabel}>
-                      {language === 'it' ? 'FRECCE POSIZIONI' : 'POSITION ARROWS'}
+                      {language === 'it' ? 'FRECCE' : 'ARROWS'}
                     </Text>
                     <View style={styles.arrowsGrid}>
                       {Object.entries(currentScenario.fr).map(([position, arrow]) => (
@@ -366,37 +362,20 @@ export default function CountersScreen() {
                         </View>
                       ))}
                     </View>
-                    <View style={styles.arrowLegend}>
-                      <View style={styles.legendItem}>
-                        <Text style={[styles.arrowIcon, { color: '#10b981' }]}>↑</Text>
-                        <Text style={styles.legendText}>{language === 'it' ? 'Avanti' : 'Forward'}</Text>
-                      </View>
-                      <View style={styles.legendItem}>
-                        <Text style={[styles.arrowIcon, { color: '#ef4444' }]}>↓</Text>
-                        <Text style={styles.legendText}>{language === 'it' ? 'Indietro' : 'Backward'}</Text>
-                      </View>
-                      <View style={styles.legendItem}>
-                        <Text style={[styles.arrowIcon, { color: '#6b7280' }]}>—</Text>
-                        <Text style={styles.legendText}>{language === 'it' ? 'Neutro' : 'Neutral'}</Text>
-                      </View>
-                    </View>
                   </View>
 
                   {/* Tactical Tip */}
                   <View style={styles.tipSection}>
-                    <View style={styles.tipHeader}>
-                      <Ionicons name="bulb" size={20} color="#f59e0b" />
-                      <Text style={styles.tipLabel}>
-                        {language === 'it' ? 'CONSIGLIO TATTICO' : 'TACTICAL TIP'}
-                      </Text>
+                    <Text style={styles.sectionLabel}>TIP</Text>
+                    <View style={styles.tipBox}>
+                      <Text style={styles.tipText}>{currentScenario.w}</Text>
                     </View>
-                    <Text style={styles.tipText}>{currentScenario.w}</Text>
                   </View>
                 </>
               )}
             </ScrollView>
           </View>
-        </View>
+        </Animated.View>
       </Modal>
     </View>
   );
@@ -405,326 +384,350 @@ export default function CountersScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0a0f1a',
+    backgroundColor: NothingTheme.colors.background,
   },
   centered: {
     justifyContent: 'center',
     alignItems: 'center',
   },
   header: {
-    padding: 20,
-    paddingBottom: 8,
+    padding: 24,
+    paddingBottom: 16,
   },
   headerTitle: {
-    color: '#fff',
+    color: NothingTheme.colors.textPrimary,
     fontSize: 28,
-    fontWeight: 'bold',
-    marginBottom: 4,
+    fontWeight: '700',
+    letterSpacing: 2,
   },
   headerSubtitle: {
-    color: 'rgba(255,255,255,0.6)',
-    fontSize: 14,
+    color: NothingTheme.colors.accent,
+    fontSize: 28,
+    fontWeight: '700',
+    letterSpacing: 2,
+    marginTop: -4,
+  },
+  divider: {
+    height: 1,
+    backgroundColor: NothingTheme.colors.divider,
+    marginHorizontal: 24,
+  },
+  dividerModal: {
+    height: 1,
+    backgroundColor: NothingTheme.colors.divider,
   },
   filterContainer: {
     flexDirection: 'row',
-    paddingHorizontal: 20,
+    padding: 24,
     gap: 8,
-    marginBottom: 12,
   },
   filterButton: {
-    paddingHorizontal: 14,
+    paddingHorizontal: 16,
     paddingVertical: 8,
-    borderRadius: 20,
-    backgroundColor: 'rgba(255,255,255,0.05)',
+    borderRadius: 4,
+    backgroundColor: NothingTheme.colors.surface,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.1)',
+    borderColor: NothingTheme.colors.border,
   },
   filterButtonActive: {
-    backgroundColor: 'rgba(99,102,241,0.1)',
+    backgroundColor: NothingTheme.colors.accentMuted,
+    borderColor: NothingTheme.colors.accent,
   },
   filterButtonText: {
-    color: 'rgba(255,255,255,0.6)',
-    fontSize: 13,
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 11,
     fontWeight: '600',
+    letterSpacing: 1,
+  },
+  filterButtonTextActive: {
+    color: NothingTheme.colors.accent,
   },
   scrollView: {
     flex: 1,
   },
   scrollContent: {
-    padding: 20,
-    paddingTop: 8,
+    padding: 24,
+    paddingTop: 0,
     paddingBottom: 100,
   },
-  formationGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 12,
-  },
   formationCard: {
-    width: '47%',
-    backgroundColor: 'rgba(255,255,255,0.05)',
-    borderRadius: 16,
-    padding: 16,
-    borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.1)',
-  },
-  formationCardHeader: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    padding: 16,
     marginBottom: 8,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
   },
-  formationName: {
-    color: '#fff',
-    fontSize: 16,
-    fontWeight: 'bold',
+  formationInfo: {
     flex: 1,
   },
-  metaBadge: {
-    backgroundColor: 'rgba(239,68,68,0.2)',
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 8,
+  formationHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginBottom: 4,
   },
-  metaBadgeText: {
-    color: '#ef4444',
-    fontSize: 10,
-    fontWeight: 'bold',
-  },
-  categoryBadge: {
-    alignSelf: 'flex-start',
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: 8,
-    marginBottom: 8,
-  },
-  categoryBadgeText: {
-    fontSize: 11,
+  formationName: {
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 16,
     fontWeight: '600',
   },
+  metaBadge: {
+    backgroundColor: NothingTheme.colors.accentMuted,
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 2,
+  },
+  metaBadgeLarge: {
+    backgroundColor: NothingTheme.colors.accentMuted,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 4,
+    marginTop: 8,
+  },
+  metaBadgeText: {
+    color: NothingTheme.colors.accent,
+    fontSize: 9,
+    fontWeight: '700',
+    letterSpacing: 1,
+  },
   counterPreview: {
-    color: 'rgba(255,255,255,0.5)',
+    color: NothingTheme.colors.textTertiary,
     fontSize: 12,
+  },
+  categoryBadge: {
+    backgroundColor: NothingTheme.colors.background,
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+  },
+  categoryText: {
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 10,
+    fontWeight: '600',
+    letterSpacing: 1,
   },
   emptyState: {
     alignItems: 'center',
-    justifyContent: 'center',
     paddingVertical: 60,
   },
   emptyText: {
-    color: 'rgba(255,255,255,0.4)',
-    fontSize: 15,
-    textAlign: 'center',
-    marginTop: 16,
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 14,
   },
   // Modal Styles
   modalOverlay: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.9)',
+    backgroundColor: NothingTheme.colors.background,
   },
   modalContent: {
     flex: 1,
-    backgroundColor: '#0a0f1a',
   },
   modalHeader: {
-    padding: 20,
-    borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255,255,255,0.1)',
+    padding: 24,
+    alignItems: 'center',
   },
   closeButton: {
     position: 'absolute',
-    right: 16,
-    top: 16,
-    zIndex: 10,
+    right: 24,
+    top: 24,
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: 'rgba(255,255,255,0.1)',
+    backgroundColor: NothingTheme.colors.surface,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
     alignItems: 'center',
     justifyContent: 'center',
   },
   modalTitleContainer: {
     alignItems: 'center',
   },
-  modalSubtitle: {
-    color: 'rgba(255,255,255,0.5)',
-    fontSize: 12,
+  modalLabel: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 11,
+    fontWeight: '600',
+    letterSpacing: 2,
     marginBottom: 4,
   },
   modalTitle: {
-    color: '#ef4444',
+    color: NothingTheme.colors.accent,
     fontSize: 32,
-    fontWeight: 'bold',
+    fontWeight: '700',
+    letterSpacing: 1,
   },
   levelTabs: {
     flexDirection: 'row',
-    padding: 16,
+    padding: 24,
     gap: 8,
   },
   levelTab: {
     flex: 1,
     paddingVertical: 12,
-    borderRadius: 12,
-    backgroundColor: 'rgba(255,255,255,0.05)',
+    borderRadius: 4,
+    backgroundColor: NothingTheme.colors.surface,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.1)',
+    borderColor: NothingTheme.colors.border,
     alignItems: 'center',
   },
+  levelTabActive: {
+    backgroundColor: NothingTheme.colors.accentMuted,
+    borderColor: NothingTheme.colors.accent,
+  },
   levelTabText: {
-    color: 'rgba(255,255,255,0.6)',
-    fontSize: 12,
-    fontWeight: '600',
-  },
-  modalScroll: {
-    flex: 1,
-  },
-  recommendedSection: {
-    padding: 20,
-    paddingTop: 8,
-  },
-  sectionLabel: {
-    color: 'rgba(255,255,255,0.4)',
+    color: NothingTheme.colors.textSecondary,
     fontSize: 11,
     fontWeight: '600',
     letterSpacing: 1,
+  },
+  levelTabTextActive: {
+    color: NothingTheme.colors.accent,
+  },
+  modalScroll: {
+    flex: 1,
+    paddingHorizontal: 24,
+  },
+  sectionLabel: {
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 10,
+    fontWeight: '600',
+    letterSpacing: 2,
     marginBottom: 12,
   },
+  recommendedSection: {
+    marginBottom: 24,
+  },
   formationBox: {
-    backgroundColor: 'rgba(16,185,129,0.1)',
-    borderRadius: 16,
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
     padding: 20,
-    borderWidth: 1,
-    borderColor: 'rgba(16,185,129,0.3)',
     alignItems: 'center',
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
   },
   recommendedFormation: {
-    color: '#10b981',
+    color: NothingTheme.colors.textPrimary,
     fontSize: 28,
-    fontWeight: 'bold',
-    marginBottom: 8,
-  },
-  alternativeFormation: {
-    color: 'rgba(255,255,255,0.5)',
-    fontSize: 14,
-  },
-  tacticsGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    padding: 20,
-    paddingTop: 0,
-    gap: 10,
-  },
-  tacticItem: {
-    width: '31%',
-    backgroundColor: 'rgba(255,255,255,0.05)',
-    borderRadius: 12,
-    padding: 12,
-    alignItems: 'center',
-  },
-  tacticLabel: {
-    color: 'rgba(255,255,255,0.4)',
-    fontSize: 10,
+    fontWeight: '700',
+    letterSpacing: 1,
     marginBottom: 4,
   },
-  tacticValue: {
-    color: '#fff',
-    fontSize: 13,
-    fontWeight: '600',
-    textAlign: 'center',
+  alternativeFormation: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 12,
+    letterSpacing: 1,
   },
-  badgesRow: {
+  tacticsSection: {
+    marginBottom: 24,
+  },
+  tacticsGrid: {
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+    overflow: 'hidden',
+  },
+  tacticRow: {
     flexDirection: 'row',
-    paddingHorizontal: 20,
-    gap: 12,
-    marginBottom: 20,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 14,
+    borderBottomWidth: 1,
+    borderBottomColor: NothingTheme.colors.border,
   },
-  badge: {
+  tacticLabel: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 12,
+  },
+  tacticValue: {
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 12,
+    fontWeight: '600',
+  },
+  togglesSection: {
+    flexDirection: 'row',
+    gap: 8,
+    marginBottom: 24,
+  },
+  toggleBadge: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    gap: 8,
-    paddingVertical: 14,
-    borderRadius: 12,
+    justifyContent: 'space-between',
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    padding: 14,
     borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
   },
-  badgeActive: {
-    backgroundColor: 'rgba(16,185,129,0.1)',
-    borderColor: 'rgba(16,185,129,0.3)',
+  toggleBadgeActive: {
+    backgroundColor: NothingTheme.colors.accentMuted,
+    borderColor: NothingTheme.colors.accent,
   },
-  badgeInactive: {
-    backgroundColor: 'rgba(107,114,128,0.1)',
-    borderColor: 'rgba(107,114,128,0.2)',
-  },
-  badgeText: {
-    fontSize: 14,
+  toggleText: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 10,
     fontWeight: '600',
+    letterSpacing: 0.5,
+  },
+  toggleTextActive: {
+    color: NothingTheme.colors.textPrimary,
+  },
+  toggleValue: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 12,
+    fontWeight: '700',
+  },
+  toggleValueActive: {
+    color: NothingTheme.colors.accent,
   },
   arrowsSection: {
-    padding: 20,
-    paddingTop: 0,
+    marginBottom: 24,
   },
   arrowsGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    backgroundColor: 'rgba(255,255,255,0.05)',
-    borderRadius: 16,
-    padding: 16,
     gap: 8,
-    marginBottom: 12,
   },
   arrowItem: {
     alignItems: 'center',
-    width: '18%',
-    padding: 8,
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    padding: 12,
+    minWidth: 56,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
   },
   positionLabel: {
-    color: 'rgba(255,255,255,0.6)',
-    fontSize: 11,
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 10,
+    fontWeight: '600',
     marginBottom: 4,
   },
   arrowIcon: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-  arrowLegend: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    gap: 20,
-  },
-  legendItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 4,
-  },
-  legendText: {
-    color: 'rgba(255,255,255,0.5)',
-    fontSize: 12,
+    fontSize: 20,
+    fontWeight: '700',
   },
   tipSection: {
-    margin: 20,
-    marginTop: 0,
-    backgroundColor: 'rgba(245,158,11,0.1)',
-    borderRadius: 16,
+    marginBottom: 40,
+  },
+  tipBox: {
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
     padding: 16,
     borderWidth: 1,
-    borderColor: 'rgba(245,158,11,0.3)',
-  },
-  tipHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-    marginBottom: 12,
-  },
-  tipLabel: {
-    color: '#f59e0b',
-    fontSize: 12,
-    fontWeight: '600',
-    letterSpacing: 1,
+    borderColor: NothingTheme.colors.border,
+    borderLeftWidth: 3,
+    borderLeftColor: NothingTheme.colors.accent,
   },
   tipText: {
-    color: 'rgba(255,255,255,0.9)',
-    fontSize: 14,
-    lineHeight: 22,
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 13,
+    lineHeight: 20,
   },
 });

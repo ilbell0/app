@@ -6,10 +6,13 @@ import {
   ScrollView,
   TouchableOpacity,
   ActivityIndicator,
+  Modal,
+  Animated,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
+import { NothingTheme } from '@/src/theme/NothingTheme';
 import axios from 'axios';
 
 const API_URL = process.env.EXPO_PUBLIC_BACKEND_URL || '';
@@ -24,26 +27,38 @@ interface ScoutTip {
 }
 
 const CATEGORIES = [
-  { id: 'all', icon: 'apps', color: '#10b981' },
-  { id: 'defense', icon: 'shield', color: '#3b82f6' },
-  { id: 'midfield', icon: 'swap-horizontal', color: '#8b5cf6' },
-  { id: 'attack', icon: 'flash', color: '#ef4444' },
-  { id: 'training', icon: 'fitness', color: '#f59e0b' },
-  { id: 'budget', icon: 'cash', color: '#10b981' },
-  { id: 'tactics', icon: 'settings', color: '#6366f1' },
+  { id: 'all', icon: 'list-outline', label_en: 'All', label_it: 'Tutti' },
+  { id: 'goalkeeper', icon: 'hand-left-outline', label_en: 'GK', label_it: 'POR' },
+  { id: 'defense', icon: 'shield-outline', label_en: 'DEF', label_it: 'DIF' },
+  { id: 'midfield', icon: 'football-outline', label_en: 'MID', label_it: 'CEN' },
+  { id: 'attack', icon: 'flame-outline', label_en: 'ATT', label_it: 'ATT' },
 ];
 
 export default function ScoutScreen() {
   const insets = useSafeAreaInsets();
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
   const [tips, setTips] = useState<ScoutTip[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState('all');
   const [loading, setLoading] = useState(true);
-  const [expandedTip, setExpandedTip] = useState<string | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedTip, setSelectedTip] = useState<ScoutTip | null>(null);
+  const [modalVisible, setModalVisible] = useState(false);
+  const [fadeAnim] = useState(new Animated.Value(0));
 
   useEffect(() => {
     fetchTips();
   }, []);
+
+  useEffect(() => {
+    if (modalVisible) {
+      Animated.timing(fadeAnim, {
+        toValue: 1,
+        duration: 200,
+        useNativeDriver: true,
+      }).start();
+    } else {
+      fadeAnim.setValue(0);
+    }
+  }, [modalVisible]);
 
   const fetchTips = async () => {
     try {
@@ -60,131 +75,162 @@ export default function ScoutScreen() {
     ? tips
     : tips.filter((tip) => tip.category === selectedCategory);
 
-  const getCategoryLabel = (category: string) => {
-    const labels: { [key: string]: { en: string; it: string } } = {
-      all: { en: 'All', it: 'Tutti' },
-      defense: { en: 'Defense', it: 'Difesa' },
-      midfield: { en: 'Midfield', it: 'Centrocampo' },
-      attack: { en: 'Attack', it: 'Attacco' },
-      training: { en: 'Training', it: 'Allenamento' },
-      budget: { en: 'Budget', it: 'Budget' },
-      tactics: { en: 'Tactics', it: 'Tattiche' },
-    };
-    return labels[category]?.[language] || category;
-  };
-
-  const getCategoryColor = (category: string) => {
-    return CATEGORIES.find((c) => c.id === category)?.color || '#10b981';
+  const openTip = (tip: ScoutTip) => {
+    setSelectedTip(tip);
+    setModalVisible(true);
   };
 
   const getCategoryIcon = (category: string) => {
-    return CATEGORIES.find((c) => c.id === category)?.icon || 'help';
+    const cat = CATEGORIES.find(c => c.id === category);
+    return cat?.icon || 'document-outline';
   };
 
   if (loading) {
     return (
       <View style={[styles.container, styles.centered]}>
-        <ActivityIndicator size="large" color="#10b981" />
+        <ActivityIndicator size="large" color={NothingTheme.colors.accent} />
       </View>
     );
   }
 
   return (
     <View style={[styles.container, { paddingTop: insets.top }]}>
+      {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>{t('scoutTips')}</Text>
+        <Text style={styles.headerTitle}>SCOUT</Text>
+        <Text style={styles.headerSubtitle}>TIPS</Text>
       </View>
 
-      {/* Category Tabs */}
-      <ScrollView
-        horizontal
+      <View style={styles.divider} />
+
+      {/* Category Filter */}
+      <ScrollView 
+        horizontal 
         showsHorizontalScrollIndicator={false}
-        style={styles.categoryScroll}
-        contentContainerStyle={styles.categoryContent}
+        style={styles.filterScroll}
+        contentContainerStyle={styles.filterContainer}
       >
-        {CATEGORIES.map((category) => (
+        {CATEGORIES.map((cat) => (
           <TouchableOpacity
-            key={category.id}
+            key={cat.id}
             style={[
-              styles.categoryButton,
-              selectedCategory === category.id && {
-                backgroundColor: `${category.color}20`,
-                borderColor: category.color,
-              },
+              styles.filterButton,
+              selectedCategory === cat.id && styles.filterButtonActive,
             ]}
-            onPress={() => setSelectedCategory(category.id)}
+            onPress={() => setSelectedCategory(cat.id)}
           >
-            <Ionicons
-              name={category.icon as any}
-              size={18}
-              color={selectedCategory === category.id ? category.color : 'rgba(255,255,255,0.5)'}
-            />
-            <Text
-              style={[
-                styles.categoryText,
-                selectedCategory === category.id && { color: category.color },
-              ]}
-            >
-              {getCategoryLabel(category.id)}
+            <Text style={[
+              styles.filterButtonText,
+              selectedCategory === cat.id && styles.filterButtonTextActive,
+            ]}>
+              {language === 'it' ? cat.label_it : cat.label_en}
             </Text>
           </TouchableOpacity>
         ))}
       </ScrollView>
 
+      <View style={styles.divider} />
+
+      {/* Tips Count */}
+      <View style={styles.countRow}>
+        <Text style={styles.countText}>
+          {filteredTips.length} {language === 'it' ? 'CONSIGLI' : 'TIPS'}
+        </Text>
+      </View>
+
       {/* Tips List */}
-      <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
-        {filteredTips.map((tip) => (
+      <ScrollView 
+        style={styles.scrollView} 
+        contentContainerStyle={styles.scrollContent}
+        showsVerticalScrollIndicator={false}
+      >
+        {filteredTips.map((tip, index) => (
           <TouchableOpacity
-            key={tip.id}
+            key={tip.id || index}
             style={styles.tipCard}
-            onPress={() => setExpandedTip(expandedTip === tip.id ? null : tip.id)}
-            activeOpacity={0.8}
+            onPress={() => openTip(tip)}
+            activeOpacity={0.7}
           >
-            <View style={styles.tipHeader}>
-              <View
-                style={[
-                  styles.tipIcon,
-                  { backgroundColor: `${getCategoryColor(tip.category)}20` },
-                ]}
-              >
-                <Ionicons
-                  name={getCategoryIcon(tip.category) as any}
-                  size={24}
-                  color={getCategoryColor(tip.category)}
-                />
-              </View>
-              <View style={styles.tipTitleContainer}>
-                <Text style={styles.tipCategory}>
-                  {getCategoryLabel(tip.category)}
-                </Text>
-                <Text style={styles.tipTitle}>
-                  {language === 'it' ? tip.title_it : tip.title_en}
-                </Text>
-              </View>
-              <Ionicons
-                name={expandedTip === tip.id ? 'chevron-up' : 'chevron-down'}
-                size={24}
-                color="rgba(255,255,255,0.5)"
+            <View style={styles.tipIconContainer}>
+              <Ionicons 
+                name={getCategoryIcon(tip.category) as any} 
+                size={20} 
+                color={NothingTheme.colors.textPrimary} 
               />
             </View>
-
-            {expandedTip === tip.id && (
-              <View style={styles.tipContent}>
-                <Text style={styles.tipText}>
-                  {language === 'it' ? tip.content_it : tip.content_en}
-                </Text>
-              </View>
-            )}
+            <View style={styles.tipContent}>
+              <Text style={styles.tipTitle}>
+                {language === 'it' ? tip.title_it : tip.title_en}
+              </Text>
+              <Text style={styles.tipPreview} numberOfLines={1}>
+                {language === 'it' ? tip.content_it : tip.content_en}
+              </Text>
+            </View>
+            <Ionicons 
+              name="chevron-forward" 
+              size={18} 
+              color={NothingTheme.colors.textTertiary} 
+            />
           </TouchableOpacity>
         ))}
 
         {filteredTips.length === 0 && (
           <View style={styles.emptyState}>
-            <Ionicons name="search" size={48} color="rgba(255,255,255,0.2)" />
-            <Text style={styles.emptyText}>{t('noData')}</Text>
+            <Text style={styles.emptyText}>
+              {language === 'it' ? 'Nessun consiglio trovato' : 'No tips found'}
+            </Text>
           </View>
         )}
       </ScrollView>
+
+      {/* Detail Modal */}
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={() => setModalVisible(false)}
+      >
+        <Animated.View style={[styles.modalOverlay, { opacity: fadeAnim }]}>
+          <View style={[styles.modalContent, { paddingTop: insets.top + 10 }]}>
+            {/* Modal Header */}
+            <View style={styles.modalHeader}>
+              <TouchableOpacity
+                style={styles.closeButton}
+                onPress={() => setModalVisible(false)}
+              >
+                <Ionicons name="close" size={24} color={NothingTheme.colors.textPrimary} />
+              </TouchableOpacity>
+              <View style={styles.modalIconContainer}>
+                <Ionicons 
+                  name={getCategoryIcon(selectedTip?.category || '') as any} 
+                  size={32} 
+                  color={NothingTheme.colors.accent} 
+                />
+              </View>
+              <Text style={styles.modalTitle}>
+                {language === 'it' ? selectedTip?.title_it : selectedTip?.title_en}
+              </Text>
+              <View style={styles.categoryBadge}>
+                <Text style={styles.categoryBadgeText}>
+                  {selectedTip?.category.toUpperCase()}
+                </Text>
+              </View>
+            </View>
+
+            <View style={styles.dividerModal} />
+
+            {/* Content */}
+            <ScrollView 
+              style={styles.modalScroll}
+              showsVerticalScrollIndicator={false}
+            >
+              <Text style={styles.modalContentText}>
+                {language === 'it' ? selectedTip?.content_it : selectedTip?.content_en}
+              </Text>
+            </ScrollView>
+          </View>
+        </Animated.View>
+      </Modal>
     </View>
   );
 }
@@ -192,108 +238,192 @@ export default function ScoutScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0a0f1a',
+    backgroundColor: NothingTheme.colors.background,
   },
   centered: {
     justifyContent: 'center',
     alignItems: 'center',
   },
   header: {
-    padding: 20,
-    paddingBottom: 12,
+    padding: 24,
+    paddingBottom: 16,
   },
   headerTitle: {
-    color: '#fff',
+    color: NothingTheme.colors.textPrimary,
     fontSize: 28,
-    fontWeight: 'bold',
+    fontWeight: '700',
+    letterSpacing: 2,
   },
-  categoryScroll: {
-    maxHeight: 50,
+  headerSubtitle: {
+    color: NothingTheme.colors.accent,
+    fontSize: 28,
+    fontWeight: '700',
+    letterSpacing: 2,
+    marginTop: -4,
   },
-  categoryContent: {
-    paddingHorizontal: 20,
-    gap: 10,
+  divider: {
+    height: 1,
+    backgroundColor: NothingTheme.colors.divider,
+    marginHorizontal: 24,
   },
-  categoryButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-    paddingHorizontal: 14,
-    paddingVertical: 10,
-    borderRadius: 20,
-    backgroundColor: 'rgba(255,255,255,0.05)',
+  dividerModal: {
+    height: 1,
+    backgroundColor: NothingTheme.colors.divider,
+  },
+  filterScroll: {
+    flexGrow: 0,
+  },
+  filterContainer: {
+    paddingHorizontal: 24,
+    paddingVertical: 16,
+    gap: 8,
+  },
+  filterButton: {
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    borderRadius: 4,
+    backgroundColor: NothingTheme.colors.surface,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.1)',
+    borderColor: NothingTheme.colors.border,
+    marginRight: 8,
   },
-  categoryText: {
-    color: 'rgba(255,255,255,0.6)',
-    fontSize: 13,
+  filterButtonActive: {
+    backgroundColor: NothingTheme.colors.accentMuted,
+    borderColor: NothingTheme.colors.accent,
+  },
+  filterButtonText: {
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 11,
     fontWeight: '600',
+    letterSpacing: 1,
+  },
+  filterButtonTextActive: {
+    color: NothingTheme.colors.accent,
+  },
+  countRow: {
+    paddingHorizontal: 24,
+    paddingVertical: 12,
+  },
+  countText: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 10,
+    fontWeight: '600',
+    letterSpacing: 2,
   },
   scrollView: {
     flex: 1,
-    marginTop: 16,
   },
   scrollContent: {
-    padding: 20,
-    paddingTop: 4,
+    padding: 24,
+    paddingTop: 0,
     paddingBottom: 100,
   },
   tipCard: {
-    backgroundColor: 'rgba(255,255,255,0.05)',
-    borderRadius: 16,
-    padding: 16,
-    marginBottom: 12,
-    borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.1)',
-  },
-  tipHeader: {
     flexDirection: 'row',
     alignItems: 'center',
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    padding: 16,
+    marginBottom: 8,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
   },
-  tipIcon: {
-    width: 48,
-    height: 48,
-    borderRadius: 24,
+  tipIconContainer: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: NothingTheme.colors.background,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
     alignItems: 'center',
     justifyContent: 'center',
-    marginRight: 12,
-  },
-  tipTitleContainer: {
-    flex: 1,
-  },
-  tipCategory: {
-    color: 'rgba(255,255,255,0.5)',
-    fontSize: 11,
-    fontWeight: '600',
-    textTransform: 'uppercase',
-    letterSpacing: 0.5,
-    marginBottom: 2,
-  },
-  tipTitle: {
-    color: '#fff',
-    fontSize: 16,
-    fontWeight: '600',
+    marginRight: 14,
   },
   tipContent: {
-    marginTop: 16,
-    paddingTop: 16,
-    borderTopWidth: 1,
-    borderTopColor: 'rgba(255,255,255,0.1)',
+    flex: 1,
+    marginRight: 12,
   },
-  tipText: {
-    color: 'rgba(255,255,255,0.8)',
+  tipTitle: {
+    color: NothingTheme.colors.textPrimary,
     fontSize: 14,
-    lineHeight: 22,
+    fontWeight: '600',
+    marginBottom: 4,
+  },
+  tipPreview: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 12,
   },
   emptyState: {
     alignItems: 'center',
-    justifyContent: 'center',
     paddingVertical: 60,
   },
   emptyText: {
-    color: 'rgba(255,255,255,0.4)',
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 14,
+  },
+  // Modal Styles
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: NothingTheme.colors.background,
+  },
+  modalContent: {
+    flex: 1,
+  },
+  modalHeader: {
+    padding: 24,
+    alignItems: 'center',
+  },
+  closeButton: {
+    position: 'absolute',
+    right: 24,
+    top: 24,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: NothingTheme.colors.surface,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  modalIconContainer: {
+    width: 64,
+    height: 64,
+    borderRadius: 32,
+    backgroundColor: NothingTheme.colors.accentMuted,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 16,
+  },
+  modalTitle: {
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 20,
+    fontWeight: '700',
+    textAlign: 'center',
+    marginBottom: 12,
+    paddingHorizontal: 48,
+  },
+  categoryBadge: {
+    backgroundColor: NothingTheme.colors.surface,
+    paddingHorizontal: 12,
+    paddingVertical: 4,
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+  },
+  categoryBadgeText: {
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 10,
+    fontWeight: '600',
+    letterSpacing: 2,
+  },
+  modalScroll: {
+    flex: 1,
+    padding: 24,
+  },
+  modalContentText: {
+    color: NothingTheme.colors.textSecondary,
     fontSize: 15,
-    marginTop: 12,
+    lineHeight: 24,
   },
 });
