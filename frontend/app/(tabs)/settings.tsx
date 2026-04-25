@@ -9,139 +9,142 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
+import { NothingTheme } from '@/src/theme/NothingTheme';
 
 export default function SettingsScreen() {
   const insets = useSafeAreaInsets();
-  const { language, setLanguage, t } = useLanguage();
+  const { language, setLanguage } = useLanguage();
 
   return (
     <View style={[styles.container, { paddingTop: insets.top }]}>
-      <View style={styles.header}>
-        <Text style={styles.headerTitle}>
-          {language === 'it' ? 'Impostazioni' : 'Settings'}
-        </Text>
-      </View>
+      <ScrollView 
+        style={styles.scrollView} 
+        contentContainerStyle={styles.scrollContent}
+        showsVerticalScrollIndicator={false}
+      >
+        {/* Header */}
+        <View style={styles.header}>
+          <Text style={styles.headerTitle}>SETTINGS</Text>
+        </View>
 
-      <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
+        <View style={styles.divider} />
+
         {/* App Info */}
         <View style={styles.appInfoCard}>
-          <View style={styles.appIcon}>
-            <Ionicons name="football" size={40} color="#10b981" />
+          <View style={styles.dotGrid}>
+            {[...Array(9)].map((_, i) => (
+              <View 
+                key={i} 
+                style={[
+                  styles.dot,
+                  (i === 4 || i === 0 || i === 8) && styles.dotActive
+                ]} 
+              />
+            ))}
           </View>
-          <Text style={styles.appName}>Top Eleven Tactics Wiki</Text>
-          <Text style={styles.appVersion}>v2.0 - META 2026</Text>
-          <Text style={styles.appDescription}>
-            {language === 'it' 
-              ? 'Il manuale tattico definitivo per Top Eleven'
-              : 'The ultimate tactical manual for Top Eleven'}
-          </Text>
+          <Text style={styles.appName}>TOP ELEVEN</Text>
+          <Text style={styles.appSubname}>TACTICS</Text>
+          <View style={styles.versionBadge}>
+            <Text style={styles.versionText}>v2.0 · META 2026</Text>
+          </View>
         </View>
+
+        <View style={styles.divider} />
 
         {/* Language Section */}
         <View style={styles.section}>
-          <View style={styles.sectionHeader}>
-            <Ionicons name="language" size={20} color="#10b981" />
-            <Text style={styles.sectionTitle}>
-              {language === 'it' ? 'Lingua' : 'Language'}
-            </Text>
-          </View>
+          <Text style={styles.sectionTitle}>
+            {language === 'it' ? 'LINGUA' : 'LANGUAGE'}
+          </Text>
           
-          <View style={styles.languageOptions}>
-            <TouchableOpacity
-              style={[
-                styles.languageButton,
-                language === 'it' && styles.languageButtonActive,
-              ]}
-              onPress={() => setLanguage('it')}
-            >
-              <Text style={styles.flagEmoji}>🇮🇹</Text>
+          <TouchableOpacity
+            style={[
+              styles.languageOption,
+              language === 'it' && styles.languageOptionActive,
+            ]}
+            onPress={() => setLanguage('it')}
+          >
+            <View style={styles.languageInfo}>
+              <Text style={styles.flagText}>IT</Text>
               <Text style={[
                 styles.languageText,
                 language === 'it' && styles.languageTextActive,
               ]}>
                 Italiano
               </Text>
-              {language === 'it' && (
-                <Ionicons name="checkmark-circle" size={20} color="#10b981" />
-              )}
-            </TouchableOpacity>
-            
-            <TouchableOpacity
-              style={[
-                styles.languageButton,
-                language === 'en' && styles.languageButtonActive,
-              ]}
-              onPress={() => setLanguage('en')}
-            >
-              <Text style={styles.flagEmoji}>🇬🇧</Text>
+            </View>
+            {language === 'it' && (
+              <View style={styles.checkIcon}>
+                <Ionicons name="checkmark" size={16} color={NothingTheme.colors.accent} />
+              </View>
+            )}
+          </TouchableOpacity>
+          
+          <TouchableOpacity
+            style={[
+              styles.languageOption,
+              language === 'en' && styles.languageOptionActive,
+            ]}
+            onPress={() => setLanguage('en')}
+          >
+            <View style={styles.languageInfo}>
+              <Text style={styles.flagText}>EN</Text>
               <Text style={[
                 styles.languageText,
                 language === 'en' && styles.languageTextActive,
               ]}>
                 English
               </Text>
-              {language === 'en' && (
-                <Ionicons name="checkmark-circle" size={20} color="#10b981" />
-              )}
-            </TouchableOpacity>
+            </View>
+            {language === 'en' && (
+              <View style={styles.checkIcon}>
+                <Ionicons name="checkmark" size={16} color={NothingTheme.colors.accent} />
+              </View>
+            )}
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.divider} />
+
+        {/* Content Stats */}
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>
+            {language === 'it' ? 'CONTENUTI' : 'CONTENTS'}
+          </Text>
+          
+          <View style={styles.statsList}>
+            <View style={styles.statItem}>
+              <Text style={styles.statValue}>31</Text>
+              <Text style={styles.statLabel}>
+                {language === 'it' ? 'Formazioni' : 'Formations'}
+              </Text>
+            </View>
+            <View style={styles.statDivider} />
+            <View style={styles.statItem}>
+              <Text style={styles.statValue}>32</Text>
+              <Text style={styles.statLabel}>
+                {language === 'it' ? 'Counter' : 'Counters'}
+              </Text>
+            </View>
+            <View style={styles.statDivider} />
+            <View style={styles.statItem}>
+              <Text style={styles.statValue}>5</Text>
+              <Text style={styles.statLabel}>META</Text>
+            </View>
           </View>
         </View>
 
-        {/* Features Section */}
-        <View style={styles.section}>
-          <View style={styles.sectionHeader}>
-            <Ionicons name="list" size={20} color="#8b5cf6" />
-            <Text style={styles.sectionTitle}>
-              {language === 'it' ? 'Contenuti' : 'Contents'}
-            </Text>
-          </View>
-          
-          <View style={styles.featuresList}>
-            <View style={styles.featureItem}>
-              <Ionicons name="grid" size={18} color="#10b981" />
-              <Text style={styles.featureText}>
-                {language === 'it' ? '30+ Formazioni con varianti' : '30+ Formations with variants'}
-              </Text>
-            </View>
-            <View style={styles.featureItem}>
-              <Ionicons name="shield" size={18} color="#ef4444" />
-              <Text style={styles.featureText}>
-                {language === 'it' ? 'Counter Engine v6 completo' : 'Complete Counter Engine v6'}
-              </Text>
-            </View>
-            <View style={styles.featureItem}>
-              <Ionicons name="search" size={18} color="#f59e0b" />
-              <Text style={styles.featureText}>
-                {language === 'it' ? 'Consigli Scout dettagliati' : 'Detailed Scout tips'}
-              </Text>
-            </View>
-            <View style={styles.featureItem}>
-              <Ionicons name="sparkles" size={18} color="#8b5cf6" />
-              <Text style={styles.featureText}>
-                {language === 'it' ? 'AI Tattico (GPT-4)' : 'Tactical AI (GPT-4)'}
-              </Text>
-            </View>
-            <View style={styles.featureItem}>
-              <Ionicons name="trending-up" size={18} color="#3b82f6" />
-              <Text style={styles.featureText}>
-                {language === 'it' ? 'Tattiche META 2025/2026' : 'META 2025/2026 Tactics'}
-              </Text>
-            </View>
-          </View>
-        </View>
+        <View style={styles.divider} />
 
         {/* Credits */}
-        <View style={styles.creditsSection}>
-          <Text style={styles.creditsTitle}>
-            {language === 'it' ? 'Crediti' : 'Credits'}
-          </Text>
+        <View style={styles.credits}>
           <Text style={styles.creditsText}>
             {language === 'it' 
-              ? 'Dati tattici raccolti da YouTube, Forum ufficiali e community Top Eleven'
-              : 'Tactical data collected from YouTube, Official forums and Top Eleven community'}
+              ? 'Dati da YouTube, Forum e Community'
+              : 'Data from YouTube, Forums & Community'}
           </Text>
-          <Text style={styles.creditsText}>
-            © 2026 Top Eleven Tactics Wiki
+          <Text style={styles.copyright}>
+            © 2026 TOP ELEVEN TACTICS WIKI
           </Text>
         </View>
       </ScrollView>
@@ -152,136 +155,178 @@ export default function SettingsScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0a0f1a',
-  },
-  header: {
-    padding: 20,
-    paddingBottom: 16,
-  },
-  headerTitle: {
-    color: '#fff',
-    fontSize: 28,
-    fontWeight: 'bold',
+    backgroundColor: NothingTheme.colors.background,
   },
   scrollView: {
     flex: 1,
   },
   scrollContent: {
-    padding: 20,
-    paddingTop: 0,
     paddingBottom: 100,
   },
-  appInfoCard: {
-    backgroundColor: 'rgba(16,185,129,0.1)',
-    borderRadius: 20,
+  header: {
     padding: 24,
+    paddingBottom: 16,
+  },
+  headerTitle: {
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 28,
+    fontWeight: '700',
+    letterSpacing: 2,
+  },
+  divider: {
+    height: 1,
+    backgroundColor: NothingTheme.colors.divider,
+    marginHorizontal: 24,
+  },
+  appInfoCard: {
     alignItems: 'center',
-    borderWidth: 1,
-    borderColor: 'rgba(16,185,129,0.2)',
+    paddingVertical: 40,
+    paddingHorizontal: 24,
+  },
+  dotGrid: {
+    width: 56,
+    height: 56,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 6,
     marginBottom: 24,
   },
-  appIcon: {
-    width: 80,
-    height: 80,
-    borderRadius: 20,
-    backgroundColor: 'rgba(16,185,129,0.2)',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 16,
+  dot: {
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    backgroundColor: NothingTheme.colors.dotInactive,
+  },
+  dotActive: {
+    backgroundColor: NothingTheme.colors.dotActive,
   },
   appName: {
-    color: '#fff',
-    fontSize: 22,
-    fontWeight: 'bold',
-    marginBottom: 4,
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 28,
+    fontWeight: '700',
+    letterSpacing: 2,
   },
-  appVersion: {
-    color: '#10b981',
-    fontSize: 14,
-    fontWeight: '600',
-    marginBottom: 12,
+  appSubname: {
+    color: NothingTheme.colors.accent,
+    fontSize: 28,
+    fontWeight: '700',
+    letterSpacing: 2,
+    marginTop: -4,
   },
-  appDescription: {
-    color: 'rgba(255,255,255,0.6)',
-    fontSize: 14,
-    textAlign: 'center',
-  },
-  section: {
-    marginBottom: 24,
-  },
-  sectionHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-    marginBottom: 16,
-  },
-  sectionTitle: {
-    color: '#fff',
-    fontSize: 18,
-    fontWeight: '600',
-  },
-  languageOptions: {
-    gap: 12,
-  },
-  languageButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: 'rgba(255,255,255,0.05)',
-    borderRadius: 16,
-    padding: 16,
+  versionBadge: {
+    marginTop: 16,
+    backgroundColor: NothingTheme.colors.surface,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.1)',
-    gap: 12,
+    borderColor: NothingTheme.colors.border,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 4,
   },
-  languageButtonActive: {
-    backgroundColor: 'rgba(16,185,129,0.1)',
-    borderColor: 'rgba(16,185,129,0.3)',
-  },
-  flagEmoji: {
-    fontSize: 24,
-  },
-  languageText: {
-    color: 'rgba(255,255,255,0.6)',
-    fontSize: 16,
-    fontWeight: '500',
-    flex: 1,
-  },
-  languageTextActive: {
-    color: '#fff',
-  },
-  featuresList: {
-    backgroundColor: 'rgba(255,255,255,0.03)',
-    borderRadius: 16,
-    padding: 16,
-    gap: 14,
-  },
-  featureItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-  },
-  featureText: {
-    color: 'rgba(255,255,255,0.7)',
-    fontSize: 14,
-  },
-  creditsSection: {
-    alignItems: 'center',
-    paddingTop: 20,
-    borderTopWidth: 1,
-    borderTopColor: 'rgba(255,255,255,0.1)',
-  },
-  creditsTitle: {
-    color: 'rgba(255,255,255,0.4)',
-    fontSize: 12,
+  versionText: {
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 11,
     fontWeight: '600',
-    marginBottom: 8,
-    textTransform: 'uppercase',
     letterSpacing: 1,
   },
+  section: {
+    padding: 24,
+  },
+  sectionTitle: {
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 11,
+    fontWeight: '600',
+    letterSpacing: 2,
+    marginBottom: 16,
+  },
+  languageOption: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    padding: 16,
+    marginBottom: 8,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+  },
+  languageOptionActive: {
+    borderColor: NothingTheme.colors.accent,
+    backgroundColor: NothingTheme.colors.accentMuted,
+  },
+  languageInfo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+  flagText: {
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 14,
+    fontWeight: '700',
+    width: 24,
+  },
+  languageText: {
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 14,
+    fontWeight: '500',
+  },
+  languageTextActive: {
+    color: NothingTheme.colors.textPrimary,
+  },
+  checkIcon: {
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    backgroundColor: NothingTheme.colors.background,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  statsList: {
+    flexDirection: 'row',
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+    overflow: 'hidden',
+  },
+  statItem: {
+    flex: 1,
+    alignItems: 'center',
+    paddingVertical: 20,
+  },
+  statValue: {
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 28,
+    fontWeight: '700',
+  },
+  statLabel: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 10,
+    fontWeight: '600',
+    letterSpacing: 1,
+    marginTop: 4,
+    textTransform: 'uppercase',
+  },
+  statDivider: {
+    width: 1,
+    backgroundColor: NothingTheme.colors.border,
+  },
+  credits: {
+    alignItems: 'center',
+    paddingVertical: 40,
+    paddingHorizontal: 24,
+  },
   creditsText: {
-    color: 'rgba(255,255,255,0.3)',
-    fontSize: 12,
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 11,
     textAlign: 'center',
-    marginBottom: 4,
+    marginBottom: 8,
+  },
+  copyright: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 10,
+    fontWeight: '600',
+    letterSpacing: 1,
   },
 });

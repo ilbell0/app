@@ -11,6 +11,7 @@ import { useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
+import { NothingTheme } from '@/src/theme/NothingTheme';
 import axios from 'axios';
 
 const API_URL = process.env.EXPO_PUBLIC_BACKEND_URL || '';
@@ -38,7 +39,7 @@ export default function HomeScreen() {
   const fetchTips = async () => {
     try {
       const response = await axios.get(`${API_URL}/api/scout-tips`);
-      setTips(response.data.slice(0, 3)); // Show only 3 tips
+      setTips(response.data.slice(0, 3));
     } catch (error) {
       console.error('Error fetching tips:', error);
     }
@@ -51,10 +52,10 @@ export default function HomeScreen() {
   };
 
   const quickActions = [
-    { id: 'formations', icon: 'grid', label: t('viewFormations'), route: '/(tabs)/formations' },
-    { id: 'counters', icon: 'shield', label: t('counterTactics'), route: '/(tabs)/counters' },
-    { id: 'scout', icon: 'search', label: t('scoutTips'), route: '/(tabs)/scout' },
-    { id: 'ai', icon: 'sparkles', label: t('askAI'), route: '/(tabs)/ai-chat' },
+    { icon: 'grid-outline', label: language === 'it' ? 'Formazioni' : 'Formations', route: '/(tabs)/formations' },
+    { icon: 'shield-outline', label: language === 'it' ? 'Counter' : 'Counter', route: '/(tabs)/counters' },
+    { icon: 'search-outline', label: 'Scout', route: '/(tabs)/scout' },
+    { icon: 'sparkles-outline', label: 'AI', route: '/(tabs)/ai-chat' },
   ];
 
   return (
@@ -62,70 +63,123 @@ export default function HomeScreen() {
       <ScrollView
         style={styles.scrollView}
         contentContainerStyle={styles.scrollContent}
+        showsVerticalScrollIndicator={false}
         refreshControl={
-          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor="#10b981" />
+          <RefreshControl
+            refreshing={refreshing}
+            onRefresh={onRefresh}
+            tintColor={NothingTheme.colors.accent}
+          />
         }
       >
         {/* Header */}
         <View style={styles.header}>
-          <View>
-            <Text style={styles.welcomeText}>
-              {t('welcomeBack')}, {language === 'it' ? 'Manager' : 'Manager'}
-            </Text>
-            <Text style={styles.headerTitle}>{t('appName')}</Text>
+          <View style={styles.headerTop}>
+            <View>
+              <Text style={styles.welcomeText}>
+                {language === 'it' ? 'Benvenuto' : 'Welcome'}
+              </Text>
+              <Text style={styles.headerTitle}>TOP ELEVEN</Text>
+              <Text style={styles.headerSubtitle}>TACTICS</Text>
+            </View>
+            <View style={styles.logoContainer}>
+              <View style={styles.dotGrid}>
+                {[...Array(9)].map((_, i) => (
+                  <View 
+                    key={i} 
+                    style={[
+                      styles.dot,
+                      (i === 4 || i === 1 || i === 7) && styles.dotActive
+                    ]} 
+                  />
+                ))}
+              </View>
+            </View>
           </View>
-          <View style={styles.logoContainer}>
-            <Ionicons name="football" size={40} color="#10b981" />
+          
+          {/* Version Badge */}
+          <View style={styles.versionBadge}>
+            <Text style={styles.versionText}>META 2026</Text>
           </View>
         </View>
 
+        {/* Divider */}
+        <View style={styles.divider} />
+
         {/* Quick Access */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{t('quickAccess')}</Text>
+          <Text style={styles.sectionTitle}>
+            {language === 'it' ? 'ACCESSO RAPIDO' : 'QUICK ACCESS'}
+          </Text>
           <View style={styles.quickActions}>
-            {quickActions.map((action) => (
+            {quickActions.map((action, index) => (
               <TouchableOpacity
-                key={action.id}
-                style={styles.quickActionButton}
+                key={index}
+                style={styles.actionCard}
                 onPress={() => router.push(action.route as any)}
+                activeOpacity={0.7}
               >
-                <View style={styles.quickActionIcon}>
-                  <Ionicons name={action.icon as any} size={28} color="#10b981" />
+                <View style={styles.actionIconContainer}>
+                  <Ionicons 
+                    name={action.icon as any} 
+                    size={24} 
+                    color={NothingTheme.colors.textPrimary} 
+                  />
                 </View>
-                <Text style={styles.quickActionLabel}>{action.label}</Text>
+                <Text style={styles.actionLabel}>{action.label}</Text>
               </TouchableOpacity>
             ))}
           </View>
         </View>
 
+        {/* Divider */}
+        <View style={styles.divider} />
+
+        {/* Stats Row */}
+        <View style={styles.statsRow}>
+          <View style={styles.statItem}>
+            <Text style={styles.statNumber}>31</Text>
+            <Text style={styles.statLabel}>
+              {language === 'it' ? 'FORMAZIONI' : 'FORMATIONS'}
+            </Text>
+          </View>
+          <View style={styles.statDivider} />
+          <View style={styles.statItem}>
+            <Text style={styles.statNumber}>32</Text>
+            <Text style={styles.statLabel}>
+              {language === 'it' ? 'COUNTER' : 'COUNTERS'}
+            </Text>
+          </View>
+          <View style={styles.statDivider} />
+          <View style={styles.statItem}>
+            <Text style={styles.statNumber}>5</Text>
+            <Text style={styles.statLabel}>META</Text>
+          </View>
+        </View>
+
+        {/* Divider */}
+        <View style={styles.divider} />
+
         {/* Latest Tips */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{t('latestTips')}</Text>
-          {tips.map((tip) => (
+          <View style={styles.sectionHeader}>
+            <Text style={styles.sectionTitle}>
+              {language === 'it' ? 'CONSIGLI' : 'TIPS'}
+            </Text>
+            <TouchableOpacity onPress={() => router.push('/(tabs)/scout')}>
+              <Text style={styles.seeAllText}>
+                {language === 'it' ? 'VEDI TUTTI' : 'SEE ALL'}
+              </Text>
+            </TouchableOpacity>
+          </View>
+          
+          {tips.map((tip, index) => (
             <TouchableOpacity
-              key={tip.id}
+              key={tip.id || index}
               style={styles.tipCard}
               onPress={() => router.push('/(tabs)/scout')}
+              activeOpacity={0.7}
             >
-              <View style={styles.tipIcon}>
-                <Ionicons
-                  name={
-                    tip.category === 'defense'
-                      ? 'shield'
-                      : tip.category === 'midfield'
-                      ? 'swap-horizontal'
-                      : tip.category === 'attack'
-                      ? 'flash'
-                      : tip.category === 'training'
-                      ? 'fitness'
-                      : tip.category === 'budget'
-                      ? 'cash'
-                      : 'settings'
-                  }
-                  size={24}
-                  color="#10b981"
-                />
-              </View>
               <View style={styles.tipContent}>
                 <Text style={styles.tipTitle}>
                   {language === 'it' ? tip.title_it : tip.title_en}
@@ -134,29 +188,22 @@ export default function HomeScreen() {
                   {language === 'it' ? tip.content_it : tip.content_en}
                 </Text>
               </View>
-              <Ionicons name="chevron-forward" size={20} color="rgba(255,255,255,0.3)" />
+              <Ionicons 
+                name="chevron-forward" 
+                size={20} 
+                color={NothingTheme.colors.textTertiary} 
+              />
             </TouchableOpacity>
           ))}
         </View>
 
-        {/* AI Assistant Banner */}
-        <TouchableOpacity
-          style={styles.aiBanner}
-          onPress={() => router.push('/(tabs)/ai-chat')}
-        >
-          <View style={styles.aiBannerContent}>
-            <Ionicons name="sparkles" size={32} color="#10b981" />
-            <View style={styles.aiBannerText}>
-              <Text style={styles.aiBannerTitle}>{t('aiAssistant')}</Text>
-              <Text style={styles.aiBannerDescription}>
-                {language === 'it'
-                  ? 'Chiedi all\'AI qualsiasi domanda tattica!'
-                  : 'Ask AI any tactical question!'}
-              </Text>
-            </View>
-          </View>
-          <Ionicons name="arrow-forward" size={24} color="#10b981" />
-        </TouchableOpacity>
+        {/* Footer */}
+        <View style={styles.footer}>
+          <Text style={styles.footerText}>
+            TOP ELEVEN TACTICS WIKI
+          </Text>
+          <Text style={styles.footerVersion}>v2.0</Text>
+        </View>
       </ScrollView>
     </View>
   );
@@ -165,140 +212,208 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0a0f1a',
+    backgroundColor: NothingTheme.colors.background,
   },
   scrollView: {
     flex: 1,
   },
   scrollContent: {
-    padding: 20,
     paddingBottom: 100,
   },
   header: {
+    padding: 24,
+    paddingTop: 16,
+  },
+  headerTop: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 32,
+    alignItems: 'flex-start',
   },
   welcomeText: {
-    color: 'rgba(255,255,255,0.6)',
-    fontSize: 14,
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 12,
+    fontWeight: '500',
+    letterSpacing: 2,
+    textTransform: 'uppercase',
     marginBottom: 4,
   },
   headerTitle: {
-    color: '#fff',
-    fontSize: 28,
-    fontWeight: 'bold',
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 36,
+    fontWeight: '700',
+    letterSpacing: -1,
+  },
+  headerSubtitle: {
+    color: NothingTheme.colors.accent,
+    fontSize: 36,
+    fontWeight: '700',
+    letterSpacing: -1,
+    marginTop: -8,
   },
   logoContainer: {
-    width: 60,
-    height: 60,
-    borderRadius: 30,
-    backgroundColor: 'rgba(16,185,129,0.1)',
+    width: 56,
+    height: 56,
+    borderRadius: 12,
+    backgroundColor: NothingTheme.colors.surface,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
     alignItems: 'center',
     justifyContent: 'center',
-    borderWidth: 2,
-    borderColor: 'rgba(16,185,129,0.3)',
+  },
+  dotGrid: {
+    width: 32,
+    height: 32,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+  },
+  dot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: NothingTheme.colors.dotInactive,
+  },
+  dotActive: {
+    backgroundColor: NothingTheme.colors.dotActive,
+  },
+  versionBadge: {
+    alignSelf: 'flex-start',
+    backgroundColor: NothingTheme.colors.accentMuted,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 4,
+    marginTop: 16,
+  },
+  versionText: {
+    color: NothingTheme.colors.accent,
+    fontSize: 10,
+    fontWeight: '700',
+    letterSpacing: 2,
+  },
+  divider: {
+    height: 1,
+    backgroundColor: NothingTheme.colors.divider,
+    marginHorizontal: 24,
   },
   section: {
-    marginBottom: 28,
+    padding: 24,
+  },
+  sectionHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 16,
   },
   sectionTitle: {
-    color: '#fff',
-    fontSize: 20,
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 11,
     fontWeight: '600',
+    letterSpacing: 2,
     marginBottom: 16,
+  },
+  seeAllText: {
+    color: NothingTheme.colors.accent,
+    fontSize: 11,
+    fontWeight: '600',
+    letterSpacing: 1,
   },
   quickActions: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
     gap: 12,
   },
-  quickActionButton: {
+  actionCard: {
     flex: 1,
-    minWidth: '45%',
-    backgroundColor: 'rgba(255,255,255,0.05)',
-    borderRadius: 16,
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 12,
     padding: 16,
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.1)',
+    borderColor: NothingTheme.colors.border,
   },
-  quickActionIcon: {
-    width: 56,
-    height: 56,
-    borderRadius: 28,
-    backgroundColor: 'rgba(16,185,129,0.1)',
+  actionIconContainer: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    backgroundColor: NothingTheme.colors.background,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 12,
   },
-  quickActionLabel: {
-    color: '#fff',
-    fontSize: 13,
-    fontWeight: '500',
-    textAlign: 'center',
+  actionLabel: {
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 12,
+    fontWeight: '600',
+    letterSpacing: 0.5,
+  },
+  statsRow: {
+    flexDirection: 'row',
+    paddingVertical: 24,
+    paddingHorizontal: 24,
+  },
+  statItem: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  statNumber: {
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 32,
+    fontWeight: '700',
+    letterSpacing: -1,
+  },
+  statLabel: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 10,
+    fontWeight: '600',
+    letterSpacing: 1,
+    marginTop: 4,
+  },
+  statDivider: {
+    width: 1,
+    height: '100%',
+    backgroundColor: NothingTheme.colors.divider,
   },
   tipCard: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: 'rgba(255,255,255,0.05)',
+    backgroundColor: NothingTheme.colors.surface,
     borderRadius: 12,
     padding: 16,
-    marginBottom: 12,
+    marginBottom: 8,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.1)',
-  },
-  tipIcon: {
-    width: 48,
-    height: 48,
-    borderRadius: 24,
-    backgroundColor: 'rgba(16,185,129,0.1)',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginRight: 12,
+    borderColor: NothingTheme.colors.border,
   },
   tipContent: {
     flex: 1,
+    marginRight: 12,
   },
   tipTitle: {
-    color: '#fff',
-    fontSize: 15,
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 14,
     fontWeight: '600',
     marginBottom: 4,
   },
   tipDescription: {
-    color: 'rgba(255,255,255,0.6)',
-    fontSize: 13,
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 12,
     lineHeight: 18,
   },
-  aiBanner: {
-    flexDirection: 'row',
+  footer: {
     alignItems: 'center',
-    justifyContent: 'space-between',
-    backgroundColor: 'rgba(16,185,129,0.1)',
-    borderRadius: 16,
-    padding: 20,
-    borderWidth: 1,
-    borderColor: 'rgba(16,185,129,0.3)',
+    paddingVertical: 32,
   },
-  aiBannerContent: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    flex: 1,
-  },
-  aiBannerText: {
-    marginLeft: 16,
-    flex: 1,
-  },
-  aiBannerTitle: {
-    color: '#fff',
-    fontSize: 16,
+  footerText: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 10,
     fontWeight: '600',
-    marginBottom: 4,
+    letterSpacing: 2,
   },
-  aiBannerDescription: {
-    color: 'rgba(255,255,255,0.6)',
-    fontSize: 13,
+  footerVersion: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 10,
+    marginTop: 4,
   },
 });

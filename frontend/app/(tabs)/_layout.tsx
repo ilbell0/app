@@ -1,8 +1,10 @@
 import React from 'react';
 import { Tabs } from 'expo-router';
+import { View, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { Platform } from 'react-native';
+import { NothingTheme } from '@/src/theme/NothingTheme';
 
 export default function TabLayout() {
   const { t } = useLanguage();
@@ -12,72 +14,86 @@ export default function TabLayout() {
       screenOptions={{
         headerShown: false,
         tabBarStyle: {
-          backgroundColor: '#0a0f1a',
-          borderTopColor: 'rgba(255,255,255,0.1)',
+          backgroundColor: NothingTheme.colors.background,
+          borderTopColor: NothingTheme.colors.border,
           borderTopWidth: 1,
           height: Platform.OS === 'ios' ? 85 : 65,
           paddingBottom: Platform.OS === 'ios' ? 25 : 10,
           paddingTop: 10,
         },
-        tabBarActiveTintColor: '#10b981',
-        tabBarInactiveTintColor: 'rgba(255,255,255,0.5)',
+        tabBarActiveTintColor: NothingTheme.colors.accent,
+        tabBarInactiveTintColor: NothingTheme.colors.textTertiary,
         tabBarLabelStyle: {
-          fontSize: 10,
+          fontSize: 9,
           fontWeight: '600',
+          letterSpacing: 0.5,
+          textTransform: 'uppercase',
         },
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          title: t('home'),
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="home" size={size} color={color} />
+          title: 'HOME',
+          tabBarIcon: ({ color, focused }) => (
+            <View style={focused ? styles.activeIcon : undefined}>
+              <Ionicons name={focused ? "home" : "home-outline"} size={22} color={color} />
+            </View>
           ),
         }}
       />
       <Tabs.Screen
         name="formations"
         options={{
-          title: t('formations'),
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="grid" size={size} color={color} />
+          title: 'FORM',
+          tabBarIcon: ({ color, focused }) => (
+            <View style={focused ? styles.activeIcon : undefined}>
+              <Ionicons name={focused ? "grid" : "grid-outline"} size={22} color={color} />
+            </View>
           ),
         }}
       />
       <Tabs.Screen
         name="counters"
         options={{
-          title: t('counters'),
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="shield" size={size} color={color} />
+          title: 'COUNTER',
+          tabBarIcon: ({ color, focused }) => (
+            <View style={focused ? styles.activeIcon : undefined}>
+              <Ionicons name={focused ? "shield" : "shield-outline"} size={22} color={color} />
+            </View>
           ),
         }}
       />
       <Tabs.Screen
         name="scout"
         options={{
-          title: t('scout'),
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="search" size={size} color={color} />
+          title: 'SCOUT',
+          tabBarIcon: ({ color, focused }) => (
+            <View style={focused ? styles.activeIcon : undefined}>
+              <Ionicons name={focused ? "search" : "search-outline"} size={22} color={color} />
+            </View>
           ),
         }}
       />
       <Tabs.Screen
         name="ai-chat"
         options={{
-          title: "AI",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="sparkles" size={size} color={color} />
+          title: 'AI',
+          tabBarIcon: ({ color, focused }) => (
+            <View style={focused ? styles.activeIcon : undefined}>
+              <Ionicons name={focused ? "sparkles" : "sparkles-outline"} size={22} color={color} />
+            </View>
           ),
         }}
       />
       <Tabs.Screen
         name="settings"
         options={{
-          title: t('settings') || 'Settings',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="settings" size={size} color={color} />
+          title: 'SET',
+          tabBarIcon: ({ color, focused }) => (
+            <View style={focused ? styles.activeIcon : undefined}>
+              <Ionicons name={focused ? "settings" : "settings-outline"} size={22} color={color} />
+            </View>
           ),
         }}
       />
@@ -91,3 +107,9 @@ export default function TabLayout() {
     </Tabs>
   );
 }
+
+const styles = StyleSheet.create({
+  activeIcon: {
+    // Optional: subtle indicator
+  },
+});
