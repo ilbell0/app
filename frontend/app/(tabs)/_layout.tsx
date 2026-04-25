@@ -22,7 +22,7 @@ export default function TabLayout() {
         tabBarActiveTintColor: '#10b981',
         tabBarInactiveTintColor: 'rgba(255,255,255,0.5)',
         tabBarLabelStyle: {
-          fontSize: 11,
+          fontSize: 10,
           fontWeight: '600',
         },
       }}
@@ -66,19 +66,26 @@ export default function TabLayout() {
       <Tabs.Screen
         name="ai-chat"
         options={{
-          title: t('aiTactics'),
+          title: "AI",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="sparkles" size={size} color={color} />
           ),
         }}
       />
       <Tabs.Screen
+        name="settings"
+        options={{
+          title: t('settings') || 'Settings',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="settings" size={size} color={color} />
+          ),
+        }}
+      />
+      {/* Hide profile tab */}
+      <Tabs.Screen
         name="profile"
         options={{
-          title: t('profile'),
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person" size={size} color={color} />
-          ),
+          href: null,
         }}
       />
     </Tabs>

@@ -11,7 +11,6 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
-import { useAuth } from '@/src/context/AuthContext';
 import axios from 'axios';
 
 const API_URL = process.env.EXPO_PUBLIC_BACKEND_URL || '';
@@ -95,9 +94,7 @@ interface Formation {
 export default function FormationsScreen() {
   const insets = useSafeAreaInsets();
   const { t, language } = useLanguage();
-  const { sessionToken, isAuthenticated } = useAuth();
   const [formations, setFormations] = useState<Formation[]>([]);
-  const [favorites, setFavorites] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedFormation, setSelectedFormation] = useState<Formation | null>(null);
   const [selectedOpponentLevel, setSelectedOpponentLevel] = useState<'strong' | 'equal' | 'weak'>('equal');
@@ -109,41 +106,12 @@ export default function FormationsScreen() {
 
   const fetchData = async () => {
     try {
-      const [formationsRes, favoritesRes] = await Promise.all([
-        axios.get(`${API_URL}/api/formations`),
-        isAuthenticated
-          ? axios.get(`${API_URL}/api/favorites`, {
-              headers: { Authorization: `Bearer ${sessionToken}` },
-            })
-          : Promise.resolve({ data: [] }),
-      ]);
-
-      setFormations(formationsRes.data);
-      setFavorites(favoritesRes.data.map((f: any) => f.formation_id));
+      const response = await axios.get(`${API_URL}/api/formations`);
+      setFormations(response.data);
     } catch (error) {
       console.error('Error fetching data:', error);
     } finally {
       setLoading(false);
-    }
-  };
-
-  const toggleFavorite = async (formationId: string) => {
-    if (!isAuthenticated) return;
-
-    try {
-      if (favorites.includes(formationId)) {
-        await axios.delete(`${API_URL}/api/favorites/${formationId}`, {
-          headers: { Authorization: `Bearer ${sessionToken}` },
-        });
-        setFavorites(favorites.filter((f) => f !== formationId));
-      } else {
-        await axios.post(`${API_URL}/api/favorites?formation_id=${formationId}`, {}, {
-          headers: { Authorization: `Bearer ${sessionToken}` },
-        });
-        setFavorites([...favorites, formationId]);
-      }
-    } catch (error) {
-      console.error('Error toggling favorite:', error);
     }
   };
 
@@ -206,18 +174,6 @@ export default function FormationsScreen() {
             >
               <View style={styles.cardHeader}>
                 <Text style={styles.formationName}>{formation.name}</Text>
-                {isAuthenticated && (
-                  <TouchableOpacity
-                    onPress={() => toggleFavorite(formation.id)}
-                    hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
-                  >
-                    <Ionicons
-                      name={favorites.includes(formation.id) ? 'heart' : 'heart-outline'}
-                      size={24}
-                      color={favorites.includes(formation.id) ? '#ef4444' : 'rgba(255,255,255,0.5)'}
-                    />
-                  </TouchableOpacity>
-                )}
               </View>
               {formation.tactic_type_en && (
                 <View style={styles.cardTacticBadge}>
