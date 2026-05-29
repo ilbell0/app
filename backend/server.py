@@ -4590,9 +4590,8 @@ async def get_favorites(request: Request):
 # ==================== AI CHAT ENDPOINTS ====================
 
 @api_router.post("/ai/chat")
-async def ai_chat(request: Request, chat_request: ChatRequest):
-    """AI-powered tactics assistant"""
-    user = await get_current_user(request)
+async def ai_chat(chat_request: ChatRequest):
+    """AI-powered tactics assistant - No auth required for Wiki mode"""
     
     if not EMERGENT_LLM_KEY:
         raise HTTPException(status_code=500, detail="AI service not configured")
@@ -4601,29 +4600,32 @@ async def ai_chat(request: Request, chat_request: ChatRequest):
     if chat_request.language == 'it':
         system_message = """Sei un esperto assistente tattico per Top Eleven, il gioco di calcio manageriale. 
         Aiuti i giocatori con:
-        - Suggerimenti su formazioni e tattiche
-        - Contro-tattiche per battere avversari
+        - Suggerimenti su formazioni e tattiche META 2025/2026
+        - Contro-tattiche per battere avversari più forti
         - Consigli su acquisti e scout giocatori
         - Strategie di allenamento e gestione rosa
         - Tips per vincere campionati e coppe
         
-        Rispondi sempre in italiano in modo chiaro e conciso. Usa emoji per rendere le risposte più coinvolgenti."""
+        Rispondi sempre in italiano in modo chiaro e conciso. Mantieni le risposte brevi (max 3-4 paragrafi).
+        Usa formazioni specifiche (es. 3-1-4-1-1, 4-5-1 V-Style) quando possibile."""
     else:
         system_message = """You are an expert tactical assistant for Top Eleven, the football manager game.
         You help players with:
-        - Formation and tactics suggestions
-        - Counter-tactics to beat opponents
+        - META 2025/2026 formation and tactics suggestions
+        - Counter-tactics to beat stronger opponents
         - Player scouting and transfer advice
         - Training strategies and squad management
         - Tips for winning leagues and cups
         
-        Always respond in English, clearly and concisely. Use emojis to make responses engaging."""
+        Always respond in English, clearly and concisely. Keep responses short (max 3-4 paragraphs).
+        Use specific formations (e.g., 3-1-4-1-1, 4-5-1 V-Style) when possible."""
     
     try:
-        # Initialize chat
+        # Initialize chat with unique session
+        session_id = f"top11_wiki_{datetime.now().timestamp()}"
         chat = LlmChat(
             api_key=EMERGENT_LLM_KEY,
-            session_id=f"top11_{user.user_id}_{datetime.now().timestamp()}",
+            session_id=session_id,
             system_message=system_message
         )
         chat.with_model("openai", "gpt-4o")
@@ -4632,29 +4634,11 @@ async def ai_chat(request: Request, chat_request: ChatRequest):
         user_message = UserMessage(text=chat_request.message)
         response = await chat.send_message(user_message)
         
-        # Save to chat history
-        user_msg = {
-            "id": str(uuid.uuid4()),
-            "user_id": user.user_id,
-            "role": "user",
-            "content": chat_request.message,
-            "created_at": datetime.now(timezone.utc)
-        }
-        assistant_msg = {
-            "id": str(uuid.uuid4()),
-            "user_id": user.user_id,
-            "role": "assistant",
-            "content": response,
-            "created_at": datetime.now(timezone.utc)
-        }
-        
-        await db.chat_history.insert_many([user_msg, assistant_msg])
-        
         return {"response": response}
         
     except Exception as e:
         logger.error(f"AI chat error: {e}")
-        raise HTTPException(status_code=500, detail="AI service error")
+        raise HTTPException(status_code=500, detail=f"AI service error: {str(e)}")
 
 @api_router.get("/ai/history")
 async def get_chat_history(request: Request, limit: int = 50):
