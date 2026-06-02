@@ -5191,6 +5191,54 @@ SCOUT_TIPS = [
         "title_it": "DMC per i Clean Sheet",
         "content_en": "Adding a DMC is vital in almost any formation to increase your chance of a clean sheet. Acting as an 'advanced stopper', he screens the defense and intercepts the play of the opponent's most dangerous AMCs.",
         "content_it": "L'inserimento di un DMC è vitale in quasi ogni formazione per aumentare la probabilità di non subire gol. Agendo come uno 'stopper avanzato', scherma la difesa e intercetta le trame di gioco degli AMC avversari più pericolosi."
+    },
+    {
+        "id": "45",
+        "category": "arrows",
+        "title_en": "Red Arrow (Attack)",
+        "title_it": "Freccia Rossa (Attacco)",
+        "content_en": "The red arrow signals an attacking mentality and pushes the player forward to join the attack. It's useful for wingers or strikers who need to exploit empty spaces and create shooting chances.",
+        "content_it": "La freccia rossa indica una mentalità offensiva e spinge il giocatore ad avanzare per partecipare alla manovra d'attacco. È utile per le ali o gli attaccanti che devono sfruttare gli spazi vuoti e creare opportunità di tiro."
+    },
+    {
+        "id": "46",
+        "category": "arrows",
+        "title_en": "Blue Arrow (Defense)",
+        "title_it": "Freccia Blu (Difesa)",
+        "content_en": "The blue arrow gives defensive instructions, forcing the player to hold a deeper position. It's used to ensure unit solidity and stop defenders pushing up too far and leaving gaps.",
+        "content_it": "La freccia blu assegna istruzioni difensive, costringendo il giocatore a mantenere una posizione più arretrata. Garantisce la solidità del reparto e impedisce ai difensori di salire troppo lasciando varchi agli avversari."
+    },
+    {
+        "id": "47",
+        "category": "arrows",
+        "title_en": "Setting Arrows",
+        "title_it": "Selezione delle Frecce",
+        "content_en": "To set arrows, tap the player in the Team menu: one tap sets the red arrow, a second the blue arrow, a third removes it. This turns a standard formation into an asymmetric or more versatile shape.",
+        "content_it": "Per applicare le frecce clicca sul giocatore nel menu Squadra: un clic attiva la freccia rossa, un secondo la freccia blu e un terzo la rimuove. Così trasformi una formazione standard in un modulo asimmetrico o più versatile."
+    },
+    {
+        "id": "48",
+        "category": "arrows",
+        "title_en": "Impact on Condition",
+        "title_it": "Impatto sulla Condizione",
+        "content_en": "Activating too many attacking arrows, especially with high pressing, drastically drains fitness over time. Better to start with few arrows and activate them in the second half so you don't burn stamina before the finish.",
+        "content_it": "Attivare troppe frecce offensive, specialmente con pressing alto, riduce drasticamente la condizione fisica nel tempo. Meglio iniziare con poche frecce e attivarle nel secondo tempo per non esaurire la stamina prima del finale."
+    },
+    {
+        "id": "49",
+        "category": "arrows",
+        "title_en": "Arrows and Pace",
+        "title_it": "Frecce e Velocità",
+        "content_en": "Key rule: red arrow for fast players, blue arrow for slower ones. This lets pacey players burst into space while slow ones hold position so they aren't beaten on the counter.",
+        "content_it": "Regola fondamentale: freccia rossa ai giocatori veloci, freccia blu ai più lenti. Così i velocisti scattano negli spazi mentre i lenti restano in posizione per non farsi superare in contropiede."
+    },
+    {
+        "id": "50",
+        "category": "arrows",
+        "title_en": "Mistakes to Avoid",
+        "title_it": "Errori da Evitare",
+        "content_en": "Avoid red arrows on both full-backs if your CBs don't outnumber the strikers — a long ball could break your defense. And don't use aggressive arrows too early against strong opponents to avoid physical collapse.",
+        "content_it": "Evita la freccia rossa a entrambi i terzini se i DC non hanno superiorità numerica sulle punte: un lancio lungo distruggerebbe la difesa. E non usare frecce aggressive troppo presto contro avversari forti, per evitare crolli fisici."
     }
 ]
 
@@ -5740,6 +5788,120 @@ TRAINING_GUIDE = [
     }
 ]
 
+# ==================== ARROW TACTICS DATA ====================
+# Notation: up arrow = red arrow (forward/attacking), down arrow = blue arrow (back/defensive)
+
+ARROW_TACTICS = [
+    {
+        "formation_id": "442c",
+        "formation": "4-4-2",
+        "arrows": "ML↑ MR↑",
+        "key_movements_en": "The wide midfielders push up the flanks.",
+        "key_movements_it": "Gli esterni di centrocampo spingono sulle fasce.",
+        "explanation_en": "Uses wide pace to bypass central defenses and cross.",
+        "explanation_it": "Sfrutta la velocità laterale per aggirare le difese centrali e crossare."
+    },
+    {
+        "formation_id": "433",
+        "formation": "4-3-3",
+        "arrows": "DL↑ DR↑ AML↑ AMR↑",
+        "key_movements_en": "Full-backs and wingers push up to create overloads.",
+        "key_movements_it": "Terzini e ali salgono per creare superiorità numerica.",
+        "explanation_en": "Overloads the opponent's flanks, exploiting weak full-backs.",
+        "explanation_it": "Sovraccarica i fianchi dell'avversario sfruttando la debolezza dei difensori laterali."
+    },
+    {
+        "formation_id": "4231",
+        "formation": "4-2-3-1",
+        "arrows": "AMC↑ AML↑ AMR↑",
+        "key_movements_en": "The attacking trio constantly attacks the space.",
+        "key_movements_it": "Il trio sulla trequarti attacca costantemente lo spazio.",
+        "explanation_en": "Maximizes attacking output when the opponent fields no protective DMC.",
+        "explanation_it": "Massimizza la produzione offensiva se l'avversario non schiera un DMC protettivo."
+    },
+    {
+        "formation_id": "451v",
+        "formation": "4-5-1 V-Style",
+        "arrows": "AML↑ AMR↑ DMC↓",
+        "key_movements_en": "The wingers push up while the DMC screens the defense.",
+        "key_movements_it": "Le ali spingono, il DMC scherma la difesa.",
+        "explanation_en": "A versatile shape that attacks the flanks while keeping central cover against counters.",
+        "explanation_it": "Modulo versatile che attacca i fianchi garantendo copertura centrale contro i contropiedi."
+    },
+    {
+        "formation_id": "4222h",
+        "formation": "4-2-2-2 Hexagon",
+        "arrows": "DMC↓ DMC↓ AML↑ AMR↑",
+        "key_movements_en": "Double shield in front of the CBs, wingers pushing forward.",
+        "key_movements_it": "Doppia protezione davanti ai DC, ali in proiezione.",
+        "explanation_en": "Provides a solid defensive base while enabling lethal breaks down the wings.",
+        "explanation_it": "Fornisce una solida base difensiva permettendo ripartenze letali sulle corsie esterne."
+    },
+    {
+        "formation_id": "41212nd",
+        "formation": "4-1-2-1-2 ND",
+        "arrows": "DL↓ DC↓ DC↓ DR↓ AMC↑ ST↑",
+        "key_movements_en": "Back line held, the AMC and strikers pushed forward.",
+        "key_movements_it": "Difesa bloccata, trequartista e punte avanzati.",
+        "explanation_en": "Protects the center with a deep line while the diamond dominates the final third.",
+        "explanation_it": "Protegge il centro con una linea arretrata mentre il rombo domina la trequarti."
+    },
+    {
+        "formation_id": "352f",
+        "formation": "3-5-2",
+        "arrows": "ML↑ MR↑",
+        "key_movements_en": "The wide midfielders cover the whole flank.",
+        "key_movements_it": "I centrocampisti laterali coprono tutta la fascia.",
+        "explanation_en": "Adds width to the build-up and constant support for the two central strikers.",
+        "explanation_it": "Fornisce ampiezza alla manovra e supporto costante alle due punte centrali."
+    },
+    {
+        "formation_id": "541f",
+        "formation": "5-4-1",
+        "arrows": "ST↑",
+        "key_movements_en": "The lone striker chases depth on long balls.",
+        "key_movements_it": "L'unica punta cerca la profondità nei lanci lunghi.",
+        "explanation_en": "Ideal to park the bus, minimizing defensive risk with a single advanced outlet.",
+        "explanation_it": "Ideale per 'parcheggiare l'autobus', minimizzando i rischi difensivi con un solo riferimento avanzato."
+    },
+    {
+        "formation_id": "343",
+        "formation": "3-4-3",
+        "arrows": "AML↑ AMR↑ ST↑",
+        "key_movements_en": "The whole front three stays high.",
+        "key_movements_it": "L'intero tridente offensivo rimane alto.",
+        "explanation_en": "Applies suffocating pressure on the opponent's three- or four-man defense.",
+        "explanation_it": "Esercita una pressione asfissiante sulla difesa a tre o quattro avversaria."
+    },
+    {
+        "formation_id": "3151amc",
+        "formation": "3-1-5-1",
+        "arrows": "DMC↓ MC↑",
+        "key_movements_en": "The holding mid stays deep while the half-midfielders break forward.",
+        "key_movements_it": "Il mediano rimane basso, le mezzali si inseriscono.",
+        "explanation_en": "Smothers the opponent with a crowded midfield and runners between the lines.",
+        "explanation_it": "Soffoca il gioco avversario con un centrocampo folto e inserimenti tra le linee."
+    },
+    {
+        "formation_id": "4141",
+        "formation": "4-1-4-1",
+        "arrows": "DL↓ DC↓ DC↓ DR↓ DMC↓",
+        "key_movements_en": "The entire back line and the holding mid drop deeper.",
+        "key_movements_it": "L'intera retroguardia e il mediano si abbassano.",
+        "explanation_en": "Compresses defensive space to neutralize strong AMCs and win via counters.",
+        "explanation_it": "Soffoca lo spazio difensivo per neutralizzare AMC forti e vincere tramite contropiedi."
+    },
+    {
+        "formation_id": "41311",
+        "formation": "4-1-3-1-1",
+        "arrows": "DMC↓ MC↓ AMC↓ ST↓",
+        "key_movements_en": "The whole central spine sits deeper.",
+        "key_movements_it": "Tutta la colonna centrale arretrata.",
+        "explanation_en": "Cancels opposing playmakers by removing all space between the defensive and midfield lines.",
+        "explanation_it": "Annulla i trequartisti avversari togliendo loro ogni spazio tra le linee di difesa e centrocampo."
+    }
+]
+
 # ==================== FORMATIONS ENDPOINTS ====================
 
 @api_router.get("/formations")
@@ -5867,6 +6029,21 @@ async def get_training_guide_for_position(position: str):
         if pos in slots:
             return entry
     raise HTTPException(status_code=404, detail="Training guide not found for this position")
+
+# ==================== ARROW TACTICS ENDPOINTS ====================
+
+@api_router.get("/arrow-tactics")
+async def get_arrow_tactics():
+    """Get recommended tactical arrow setups per formation"""
+    return ARROW_TACTICS
+
+@api_router.get("/arrow-tactics/{formation_id}")
+async def get_arrow_tactics_for_formation(formation_id: str):
+    """Get the recommended arrow setup for a specific formation id"""
+    for entry in ARROW_TACTICS:
+        if entry["formation_id"] == formation_id:
+            return entry
+    raise HTTPException(status_code=404, detail="Arrow tactics not found for this formation")
 
 # ==================== FAVORITES ENDPOINTS ====================
 

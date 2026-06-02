@@ -17,7 +17,7 @@ import axios from 'axios';
 
 const API_URL = process.env.EXPO_PUBLIC_BACKEND_URL || '';
 
-type SectionId = 'roles' | 'meta' | 'skills' | 'training';
+type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows';
 
 interface SectionDef {
   id: SectionId;
@@ -32,6 +32,7 @@ const SECTIONS: SectionDef[] = [
   { id: 'meta', endpoint: '/api/meta-tactics', label_en: 'Meta', label_it: 'Meta', icon: 'trophy-outline' },
   { id: 'skills', endpoint: '/api/special-abilities', label_en: 'Skills', label_it: 'Abilità', icon: 'flash-outline' },
   { id: 'training', endpoint: '/api/training-guide', label_en: 'Training', label_it: 'Allenam.', icon: 'barbell-outline' },
+  { id: 'arrows', endpoint: '/api/arrow-tactics', label_en: 'Arrows', label_it: 'Frecce', icon: 'swap-vertical-outline' },
 ];
 
 const TIER_COLORS: Record<string, string> = {
@@ -47,10 +48,10 @@ export default function AcademyScreen() {
 
   const [section, setSection] = useState<SectionId>('roles');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], meta: [], skills: [], training: [],
+    roles: [], meta: [], skills: [], training: [], arrows: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, meta: false, skills: false, training: false,
+    roles: false, meta: false, skills: false, training: false, arrows: false,
   });
   const [loading, setLoading] = useState(false);
   const [selected, setSelected] = useState<any | null>(null);
@@ -97,6 +98,7 @@ export default function AcademyScreen() {
       case 'meta': return item.formation;
       case 'skills': return isIt ? item.name_it : item.name_en;
       case 'training': return item.position;
+      case 'arrows': return item.formation;
       default: return '';
     }
   };
@@ -106,6 +108,7 @@ export default function AcademyScreen() {
       case 'meta': return `TIER ${item.tier}`;
       case 'skills': return item.best_role;
       case 'training': return (isIt ? item.priority_attributes_it : item.priority_attributes_en).join(' · ');
+      case 'arrows': return item.arrows;
       default: return '';
     }
   };
@@ -262,6 +265,18 @@ export default function AcademyScreen() {
                   <DetailBlock label={isIt ? 'NOTA' : 'NOTE'} value={isIt ? selected.note_it : selected.note_en} />
                 </>
               )}
+              {selected && section === 'arrows' && (
+                <>
+                  <View style={styles.detailBlock}>
+                    <Text style={styles.detailLabel}>{isIt ? 'FRECCE' : 'ARROWS'}</Text>
+                    <View style={styles.arrowsBox}>
+                      <Text style={styles.arrowsText}>{selected.arrows}</Text>
+                    </View>
+                  </View>
+                  <DetailBlock label={isIt ? 'MOVIMENTI CHIAVE' : 'KEY MOVEMENTS'} value={isIt ? selected.key_movements_it : selected.key_movements_en} />
+                  <DetailBlock label={isIt ? 'PERCHÉ FUNZIONA' : 'WHY IT WORKS'} value={isIt ? selected.explanation_it : selected.explanation_en} />
+                </>
+              )}
             </ScrollView>
           </View>
         </Animated.View>
@@ -367,4 +382,18 @@ const styles = StyleSheet.create({
     borderRadius: 4, paddingHorizontal: 12, paddingVertical: 6, marginRight: 8, marginBottom: 8,
   },
   chipText: { color: NothingTheme.colors.textPrimary, fontSize: 12, fontWeight: '500' },
+  arrowsBox: {
+    backgroundColor: NothingTheme.colors.accentMuted,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.accent,
+    borderRadius: 8,
+    paddingHorizontal: 16,
+    paddingVertical: 14,
+  },
+  arrowsText: {
+    color: NothingTheme.colors.accent,
+    fontSize: 18,
+    fontWeight: '700',
+    letterSpacing: 1,
+  },
 });
