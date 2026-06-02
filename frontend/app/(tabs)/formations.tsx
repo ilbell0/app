@@ -55,6 +55,7 @@ interface OpponentSettings {
   offside_trap: boolean;
   tip_en: string;
   tip_it: string;
+  arrows?: Record<string, string>;
   variant?: string;
 }
 
@@ -361,6 +362,32 @@ export default function FormationsScreen() {
                     ]}>
                       {currentSettings.offside_trap ? 'ON' : 'OFF'}
                     </Text>
+                  </View>
+                </View>
+              )}
+
+              {/* Per-scenario Arrows */}
+              {currentSettings?.arrows && Object.keys(currentSettings.arrows).length > 0 && (
+                <View style={styles.arrowsScenSection}>
+                  <Text style={styles.sectionLabel}>
+                    {language === 'it' ? 'FRECCE' : 'ARROWS'}
+                  </Text>
+                  <View style={styles.arrowsGrid}>
+                    {Object.entries(currentSettings.arrows).map(([pos, arrow]) => (
+                      <View key={pos} style={styles.arrowItem}>
+                        <Text style={styles.positionLabel}>{pos}</Text>
+                        <Text style={[
+                          styles.arrowIcon,
+                          { color: arrow === '↓'
+                              ? NothingTheme.colors.accent
+                              : arrow === '↑'
+                                ? '#FFFFFF'
+                                : NothingTheme.colors.textTertiary },
+                        ]}>
+                          {arrow}
+                        </Text>
+                      </View>
+                    ))}
                   </View>
                 </View>
               )}
@@ -682,6 +709,33 @@ const styles = StyleSheet.create({
   },
   toggleValueActive: {
     color: NothingTheme.colors.accent,
+  },
+  arrowsScenSection: {
+    marginBottom: 24,
+  },
+  arrowsGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
+  },
+  arrowItem: {
+    alignItems: 'center',
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    padding: 12,
+    minWidth: 56,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+  },
+  positionLabel: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 10,
+    fontWeight: '600',
+    marginBottom: 4,
+  },
+  arrowIcon: {
+    fontSize: 20,
+    fontWeight: '700',
   },
   tipSection: {
     marginBottom: 24,

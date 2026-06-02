@@ -55,7 +55,7 @@ export default function HomeScreen() {
     { icon: 'grid-outline', label: language === 'it' ? 'Formazioni' : 'Formations', route: '/(tabs)/formations' },
     { icon: 'shield-outline', label: language === 'it' ? 'Counter' : 'Counter', route: '/(tabs)/counters' },
     { icon: 'search-outline', label: 'Scout', route: '/(tabs)/scout' },
-    { icon: 'sparkles-outline', label: 'AI', route: '/(tabs)/ai-chat' },
+    { icon: 'school-outline', label: 'Academy', route: '/(tabs)/academy' },
   ];
 
   return (
@@ -132,27 +132,47 @@ export default function HomeScreen() {
           </View>
         </View>
 
+        {/* Academy Banner */}
+        <View style={styles.academyWrap}>
+          <TouchableOpacity
+            style={styles.academyCard}
+            onPress={() => router.push('/(tabs)/academy')}
+            activeOpacity={0.8}
+          >
+            <View style={styles.academyIcon}>
+              <Ionicons name="school" size={24} color={NothingTheme.colors.accent} />
+            </View>
+            <View style={styles.academyContent}>
+              <Text style={styles.academyTitle}>ACADEMY 2026</Text>
+              <Text style={styles.academySub}>
+                {language === 'it' ? 'Ruoli · Meta · Abilità · Allenamento' : 'Roles · Meta · Skills · Training'}
+              </Text>
+            </View>
+            <Ionicons name="chevron-forward" size={20} color={NothingTheme.colors.textTertiary} />
+          </TouchableOpacity>
+        </View>
+
         {/* Divider */}
         <View style={styles.divider} />
 
         {/* Stats Row */}
         <View style={styles.statsRow}>
           <View style={styles.statItem}>
-            <Text style={styles.statNumber}>31</Text>
+            <Text style={styles.statNumber}>37</Text>
             <Text style={styles.statLabel}>
               {language === 'it' ? 'FORMAZIONI' : 'FORMATIONS'}
             </Text>
           </View>
           <View style={styles.statDivider} />
           <View style={styles.statItem}>
-            <Text style={styles.statNumber}>32</Text>
+            <Text style={styles.statNumber}>19</Text>
             <Text style={styles.statLabel}>
-              {language === 'it' ? 'COUNTER' : 'COUNTERS'}
+              {language === 'it' ? 'RUOLI' : 'ROLES'}
             </Text>
           </View>
           <View style={styles.statDivider} />
           <View style={styles.statItem}>
-            <Text style={styles.statNumber}>5</Text>
+            <Text style={styles.statNumber}>8</Text>
             <Text style={styles.statLabel}>META</Text>
           </View>
         </View>
@@ -415,5 +435,41 @@ const styles = StyleSheet.create({
     color: NothingTheme.colors.textTertiary,
     fontSize: 10,
     marginTop: 4,
+  },
+  academyWrap: {
+    paddingHorizontal: 24,
+    paddingBottom: 8,
+  },
+  academyCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 12,
+    padding: 16,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.accent,
+  },
+  academyIcon: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    backgroundColor: NothingTheme.colors.accentMuted,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 14,
+  },
+  academyContent: {
+    flex: 1,
+  },
+  academyTitle: {
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 15,
+    fontWeight: '700',
+    letterSpacing: 1,
+  },
+  academySub: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 12,
+    marginTop: 2,
   },
 });
