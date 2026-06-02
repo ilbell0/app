@@ -105,7 +105,7 @@ export default function AcademyScreen() {
   const cardSubtitle = (item: any): string => {
     switch (section) {
       case 'roles': return item.position;
-      case 'meta': return `TIER ${item.tier}`;
+      case 'meta': return `TIER ${item.tier}` + (item.trending ? (isIt ? ' · DI MODA' : ' · TRENDING') : '');
       case 'skills': return item.best_role;
       case 'training': return (isIt ? item.priority_attributes_it : item.priority_attributes_en).join(' · ');
       case 'arrows': return item.arrows;
@@ -246,6 +246,7 @@ export default function AcademyScreen() {
               )}
               {selected && section === 'meta' && (
                 <>
+                  <DetailBlock label={isIt ? 'TREND 2026' : '2026 TREND'} value={selected.trending ? (isIt ? '★ Di moda adesso' : '★ Trending now') : (isIt ? 'Stabile' : 'Stable')} />
                   <DetailBlock label={isIt ? 'PERCHÉ FUNZIONA' : 'WHY IT WORKS'} value={isIt ? selected.why_it_works_it : selected.why_it_works_en} />
                   <DetailBlock label={isIt ? 'SETUP' : 'SETUP'} value={isIt ? selected.setup_it : selected.setup_en} />
                   <DetailBlock label={isIt ? 'COME CONTRASTARLA' : 'HOW TO COUNTER'} value={isIt ? selected.counter_it : selected.counter_en} />
