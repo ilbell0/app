@@ -276,7 +276,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Stay compact and let them come. Use long balls to your strikers on counter.',
-                "tip_it": 'Resta compatto e lasciali venire. Usa palle lunghe agli attaccanti in contropiede.'
+                "tip_it": 'Resta compatto e lasciali venire. Usa palle lunghe agli attaccanti in contropiede.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Normal',
@@ -294,7 +298,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Play your natural game. Use width and crosses to find your two strikers.',
-                "tip_it": "Gioca il tuo gioco naturale. Usa l'ampiezza e i cross per trovare i due attaccanti."
+                "tip_it": "Gioca il tuo gioco naturale. Usa l'ampiezza e i cross per trovare i due attaccanti.",
+                "arrows": {
+                    "ML": '↑',
+                    "MR": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Attacking',
@@ -312,7 +320,14 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Dominate with high pressing and quick passing. Overwhelm their defense with numbers.',
-                "tip_it": 'Domina con pressing alto e passaggi veloci. Travolgi la loro difesa con i numeri.'
+                "tip_it": 'Domina con pressing alto e passaggi veloci. Travolgi la loro difesa con i numeri.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "ML": '↑',
+                    "MR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -357,7 +372,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'DMC shields the back 4. Long balls to striker partnership on counters.',
-                "tip_it": "Il DMC protegge la difesa a 4. Palle lunghe alla coppia d'attacco in contropiede."
+                "tip_it": "Il DMC protegge la difesa a 4. Palle lunghe alla coppia d'attacco in contropiede.",
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓',
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Attacking',
@@ -375,7 +395,14 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Control the center and let AMC create for the 2 strikers. Be patient.',
-                "tip_it": "Controlla il centro e lascia che l'AMC crei per i 2 attaccanti. Sii paziente."
+                "tip_it": "Controlla il centro e lascia che l'AMC crei per i 2 attaccanti. Sii paziente.",
+                "arrows": {
+                    "DL": '↓',
+                    "DC": '↓',
+                    "DR": '↓',
+                    "AMC": '↑',
+                    "ST": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Attacking',
@@ -393,7 +420,13 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Dominate the center completely. Your AMC should feast on their weak midfield.',
-                "tip_it": 'Domina il centro completamente. Il tuo AMC deve banchettare sul loro centrocampo debole.'
+                "tip_it": 'Domina il centro completamente. Il tuo AMC deve banchettare sul loro centrocampo debole.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -438,7 +471,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Stay compact. Use AML/AMR pace on counters to find strikers.',
-                "tip_it": 'Resta compatto. Usa la velocità di AML/AMR in contropiede per trovare gli attaccanti.'
+                "tip_it": 'Resta compatto. Usa la velocità di AML/AMR in contropiede per trovare gli attaccanti.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓',
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Attacking',
@@ -456,7 +494,13 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Use width with AML/AMR. AMC links play between midfield and strikers.',
-                "tip_it": "Usa l'ampiezza con AML/AMR. L'AMC collega centrocampo e attaccanti."
+                "tip_it": "Usa l'ampiezza con AML/AMR. L'AMC collega centrocampo e attaccanti.",
+                "arrows": {
+                    "ST": '↑',
+                    "ML": '↑',
+                    "MR": '↑',
+                    "AMC": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Hard Attacking',
@@ -474,7 +518,15 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Push AML/AMR high. Overload their flanks with width and crosses.',
-                "tip_it": 'Spingi AML/AMR in alto. Sovraccarica le loro fasce con ampiezza e cross.'
+                "tip_it": 'Spingi AML/AMR in alto. Sovraccarica le loro fasce con ampiezza e cross.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -520,7 +572,12 @@ FORMATIONS = [
                 "marking_it": 'A Zona',
                 "offside_trap": True,
                 "tip_en": 'Park the bus! Let them attack, hit on counter with AML/AMR speed. DMC↓ to shield DCs.',
-                "tip_it": 'Parcheggia il bus! Lascia che attacchino, colpisci in contropiede con velocità AML/AMR. DMC↓ per schermare DC.'
+                "tip_it": 'Parcheggia il bus! Lascia che attacchino, colpisci in contropiede con velocità AML/AMR. DMC↓ per schermare DC.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓',
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Normal',
@@ -538,7 +595,12 @@ FORMATIONS = [
                 "marking_it": 'A Zona',
                 "offside_trap": True,
                 "tip_en": 'V-shape gives control. Push AML/AMR↑ for attack width. Counter when they overcommit.',
-                "tip_it": 'La forma a V dà controllo. Spingi AML/AMR↑ per ampiezza. Contropiede quando si sbilanciano.'
+                "tip_it": 'La forma a V dà controllo. Spingi AML/AMR↑ per ampiezza. Contropiede quando si sbilanciano.',
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "DMC": '↓'
+                }
             },
             "weak": {
                 "mentality": 'Attacking',
@@ -556,7 +618,15 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Dominate wings! DL/DR↑ overlap. AML/AMR become wingers. Overload their flanks.',
-                "tip_it": 'Domina le fasce! DL/DR↑ sovrapposizione. AML/AMR diventano ali. Sovraccarica le loro fasce.'
+                "tip_it": 'Domina le fasce! DL/DR↑ sovrapposizione. AML/AMR diventano ali. Sovraccarica le loro fasce.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -601,7 +671,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": '5 flat midfielders block everything. Counter with long balls to lone ST.',
-                "tip_it": '5 centrocampisti piatti bloccano tutto. Contropiede con palle lunghe al ST solitario.'
+                "tip_it": '5 centrocampisti piatti bloccano tutto. Contropiede con palle lunghe al ST solitario.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Defensive',
@@ -619,7 +693,13 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Control midfield with 5 players. Wait for counter opportunities.',
-                "tip_it": 'Controlla il centrocampo con 5 giocatori. Aspetta occasioni di contropiede.'
+                "tip_it": 'Controlla il centrocampo con 5 giocatori. Aspetta occasioni di contropiede.',
+                "arrows": {
+                    "ML": '↑',
+                    "MR": '↑',
+                    "DL": '↑',
+                    "DR": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Normal',
@@ -637,7 +717,14 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Push wide midfielders up. Use width to create for the lone striker.',
-                "tip_it": "Spingi gli esterni in alto. Usa l'ampiezza per creare per l'attaccante solitario."
+                "tip_it": "Spingi gli esterni in alto. Usa l'ampiezza per creare per l'attaccante solitario.",
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "ML": '↑',
+                    "MR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -683,7 +770,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": '2 MCs protect defense. Use AMC to link play on counter-attacks.',
-                "tip_it": "2 MC proteggono la difesa. Usa l'AMC per collegare in contropiede."
+                "tip_it": "2 MC proteggono la difesa. Usa l'AMC per collegare in contropiede.",
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Defensive',
@@ -701,7 +792,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Let AMC orchestrate attacks. Use AML/AMR width to create for the lone striker.',
-                "tip_it": "Lascia l'AMC orchestrare gli attacchi. Usa AML/AMR per creare per l'attaccante."
+                "tip_it": "Lascia l'AMC orchestrare gli attacchi. Usa AML/AMR per creare per l'attaccante.",
+                "arrows": {
+                    "AMC": '↑',
+                    "AML": '↑',
+                    "AMR": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Attacking',
@@ -719,7 +815,14 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Push your AML/AMR high. Overload their defense with creative play through AMC.',
-                "tip_it": "Spingi AML/AMR in avanti. Sovraccarica la difesa con gioco creativo dall'AMC."
+                "tip_it": "Spingi AML/AMR in avanti. Sovraccarica la difesa con gioco creativo dall'AMC.",
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -765,7 +868,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Stay compact in center. Use the 2 striker partnership to hold the ball on counters.',
-                "tip_it": "Resta compatto al centro. Usa la coppia d'attacco per tenere palla nei contropiedi."
+                "tip_it": "Resta compatto al centro. Usa la coppia d'attacco per tenere palla nei contropiedi.",
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Normal',
@@ -783,7 +890,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Control center with compact shape. AML/AMR drift in to support strikers.',
-                "tip_it": 'Controlla il centro con la forma compatta. AML/AMR accentrarsi per supportare gli attaccanti.'
+                "tip_it": 'Controlla il centro con la forma compatta. AML/AMR accentrarsi per supportare gli attaccanti.',
+                "arrows": {
+                    "DMC": '↓',
+                    "AML": '↑',
+                    "AMR": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Attacking',
@@ -801,7 +913,14 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Overwhelm center! Your 4 central attackers should dominate their midfield.',
-                "tip_it": 'Travolgi il centro! I tuoi 4 attaccanti centrali devono dominare il loro centrocampo.'
+                "tip_it": 'Travolgi il centro! I tuoi 4 attaccanti centrali devono dominare il loro centrocampo.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -846,7 +965,10 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": True,
                 "tip_en": 'Keep 5 midfielders tight. Counter through striker partnership.',
-                "tip_it": "Tieni i 5 centrocampisti stretti. Contropiede attraverso la coppia d'attacco."
+                "tip_it": "Tieni i 5 centrocampisti stretti. Contropiede attraverso la coppia d'attacco.",
+                "arrows": {
+                    "DC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Attacking',
@@ -864,7 +986,11 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": True,
                 "tip_en": 'Dominate midfield with 5 players. ML/MR overlap for width.',
-                "tip_it": 'Domina il centrocampo con 5 giocatori. ML/MR sovrappongono per ampiezza.'
+                "tip_it": 'Domina il centrocampo con 5 giocatori. ML/MR sovrappongono per ampiezza.',
+                "arrows": {
+                    "ML": '↑',
+                    "MR": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Hard Attacking',
@@ -882,7 +1008,12 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'All-out attack with 7 players forward. Overwhelm their defense!',
-                "tip_it": 'Attacco totale con 7 giocatori in avanti. Travolgi la loro difesa!'
+                "tip_it": 'Attacco totale con 7 giocatori in avanti. Travolgi la loro difesa!',
+                "arrows": {
+                    "ML": '↑',
+                    "MR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -927,7 +1058,10 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'High AML/AMR exploit space on counters. Protect 3 CBs.',
-                "tip_it": 'AML/AMR alti sfruttano spazi in contropiede. Proteggi i 3 DC.'
+                "tip_it": 'AML/AMR alti sfruttano spazi in contropiede. Proteggi i 3 DC.',
+                "arrows": {
+                    "DC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Attacking',
@@ -945,7 +1079,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Use width with AML/AMR. Strike partnership creates chances.',
-                "tip_it": "Usa l'ampiezza con AML/AMR. La coppia d'attacco crea occasioni."
+                "tip_it": "Usa l'ampiezza con AML/AMR. La coppia d'attacco crea occasioni.",
+                "arrows": {
+                    "ST": '↑',
+                    "AML": '↑',
+                    "AMR": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Hard Attacking',
@@ -963,7 +1102,12 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Push AML/AMR very high. Overwhelm with 5 attackers!',
-                "tip_it": 'Spingi AML/AMR molto in alto. Travolgi con 5 attaccanti!'
+                "tip_it": 'Spingi AML/AMR molto in alto. Travolgi con 5 attaccanti!',
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -1008,7 +1152,10 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": True,
                 "tip_en": 'DMC shields 3 CBs. Long balls to striker partnership on counters.',
-                "tip_it": "Il DMC protegge i 3 DC. Palle lunghe alla coppia d'attacco in contropiede."
+                "tip_it": "Il DMC protegge i 3 DC. Palle lunghe alla coppia d'attacco in contropiede.",
+                "arrows": {
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Defensive',
@@ -1026,7 +1173,12 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": True,
                 "tip_en": 'Press high with 4 midfielders. DMC covers. Strike on transitions.',
-                "tip_it": 'Pressa alto con 4 centrocampisti. Il DMC copre. Colpisci nelle transizioni.'
+                "tip_it": 'Pressa alto con 4 centrocampisti. Il DMC copre. Colpisci nelle transizioni.',
+                "arrows": {
+                    "ML": '↑',
+                    "MR": '↑',
+                    "DMC": '↓'
+                }
             },
             "weak": {
                 "mentality": 'Attacking',
@@ -1044,7 +1196,13 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Push ML/MR high as extra attackers. Overwhelm with 6 in attack!',
-                "tip_it": 'Spingi ML/MR in alto come attaccanti extra. Travolgi con 6 in attacco!'
+                "tip_it": 'Spingi ML/MR in alto come attaccanti extra. Travolgi con 6 in attacco!',
+                "arrows": {
+                    "ML": '↑',
+                    "MR": '↑',
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -1089,7 +1247,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'FULL CATENACCIO! 5-4-1 deep and compact. Long balls to lone striker on rare counters.',
-                "tip_it": "CATENACCIO TOTALE! 5-4-1 profondo e compatto. Palle lunghe all'attaccante nei rari contropiedi."
+                "tip_it": "CATENACCIO TOTALE! 5-4-1 profondo e compatto. Palle lunghe all'attaccante nei rari contropiedi.",
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Defensive',
@@ -1107,7 +1269,10 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Stay organized. Let wing-backs push when safe. Target lone striker.',
-                "tip_it": "Resta organizzato. Lascia sovrapporre gli esterni quando è sicuro. Punta l'attaccante solitario."
+                "tip_it": "Resta organizzato. Lascia sovrapporre gli esterni quando è sicuro. Punta l'attaccante solitario.",
+                "arrows": {
+                    "ST": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Normal',
@@ -1125,7 +1290,14 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Push wing-backs higher to create. You can be more adventurous.',
-                "tip_it": 'Spingi gli esterni più in alto per creare. Puoi essere più avventuroso.'
+                "tip_it": 'Spingi gli esterni più in alto per creare. Puoi essere più avventuroso.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "ML": '↑',
+                    "MR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -1170,7 +1342,10 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Stay deep. Double AMC links to ST on counters.',
-                "tip_it": 'Resta profondo. Doppio AMC collega a ST in contropiede.'
+                "tip_it": 'Resta profondo. Doppio AMC collega a ST in contropiede.',
+                "arrows": {
+                    "DC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Defensive',
@@ -1188,7 +1363,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Control center with double AMC. Wait for counter opportunities.',
-                "tip_it": 'Controlla il centro con doppio AMC. Aspetta occasioni di contropiede.'
+                "tip_it": 'Controlla il centro con doppio AMC. Aspetta occasioni di contropiede.',
+                "arrows": {
+                    "ML": '↑',
+                    "MR": '↑',
+                    "ST": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Normal',
@@ -1206,7 +1386,10 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Push AMCs forward. Create chances through the middle.',
-                "tip_it": 'Spingi gli AMC in avanti. Crea occasioni dal centro.'
+                "tip_it": 'Spingi gli AMC in avanti. Crea occasioni dal centro.',
+                "arrows": {
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -1251,7 +1434,10 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Double DMC shields 3 CBs. Counter through AML/AMR to ST.',
-                "tip_it": 'Doppio DMC protegge i 3 DC. Contropiede tramite AML/AMR verso ST.'
+                "tip_it": 'Doppio DMC protegge i 3 DC. Contropiede tramite AML/AMR verso ST.',
+                "arrows": {
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Normal',
@@ -1269,7 +1455,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Balance with double DMC. Use width with AML/AMR.',
-                "tip_it": "Equilibrio con doppio DMC. Usa l'ampiezza con AML/AMR."
+                "tip_it": "Equilibrio con doppio DMC. Usa l'ampiezza con AML/AMR.",
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "DMC": '↓'
+                }
             },
             "weak": {
                 "mentality": 'Attacking',
@@ -1287,7 +1478,13 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Push AML/AMR high. Overwhelm with width and pace!',
-                "tip_it": 'Spingi AML/AMR in alto. Travolgi con ampiezza e velocità!'
+                "tip_it": 'Spingi AML/AMR in alto. Travolgi con ampiezza e velocità!',
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -1333,7 +1530,12 @@ FORMATIONS = [
                 "marking_it": 'A Zona',
                 "offside_trap": False,
                 "tip_en": 'Defend deep! DMC↓ always. ML/MR track back. Quick long balls to ST on counter.',
-                "tip_it": 'Difendi basso! DMC↓ sempre. ML/MR rientrano. Lanci lunghi rapidi a ST in contropiede.'
+                "tip_it": 'Difendi basso! DMC↓ sempre. ML/MR rientrano. Lanci lunghi rapidi a ST in contropiede.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓',
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Normal',
@@ -1351,7 +1553,13 @@ FORMATIONS = [
                 "marking_it": 'A Zona',
                 "offside_trap": False,
                 "tip_en": 'Control the game. DMC anchors defense. Push MC forward if winning.',
-                "tip_it": 'Controlla la partita. DMC ancora la difesa. Spingi MC avanti se in vantaggio.'
+                "tip_it": 'Controlla la partita. DMC ancora la difesa. Spingi MC avanti se in vantaggio.',
+                "arrows": {
+                    "DL": '↓',
+                    "DC": '↓',
+                    "DR": '↓',
+                    "DMC": '↓'
+                }
             },
             "weak": {
                 "mentality": 'Attacking',
@@ -1369,7 +1577,15 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Push everyone! DMC becomes MC, ML/MR become AML/AMR. Suffocate them.',
-                "tip_it": 'Spingi tutti! DMC diventa MC, ML/MR diventano AML/AMR. Soffocali.'
+                "tip_it": 'Spingi tutti! DMC diventa MC, ML/MR diventano AML/AMR. Soffocali.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "ML": '↑',
+                    "MR": '↑',
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -1415,7 +1631,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": "Don't overcommit. Use wingers to stretch their defense on counters.",
-                "tip_it": 'Non esporti troppo. Usa le ali per allargare la difesa in contropiede.'
+                "tip_it": 'Non esporti troppo. Usa le ali per allargare la difesa in contropiede.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Attacking',
@@ -1433,7 +1653,13 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": True,
                 "tip_en": 'Press high and dominate flanks. Your wingers are key to breaking them.',
-                "tip_it": 'Pressa alto e domina le fasce. Le tue ali sono la chiave per sfondare.'
+                "tip_it": 'Pressa alto e domina le fasce. Le tue ali sono la chiave per sfondare.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "AML": '↑',
+                    "AMR": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Hard Attacking',
@@ -1451,7 +1677,14 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Full attack mode! Press relentlessly and overload their half.',
-                "tip_it": 'Attacco totale! Pressa senza sosta e sovraccarica la loro metà campo.'
+                "tip_it": 'Attacco totale! Pressa senza sosta e sovraccarica la loro metà campo.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -1496,7 +1729,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": '5 defenders block everything. Long balls to striker duo on counters.',
-                "tip_it": "5 difensori bloccano tutto. Palle lunghe alla coppia d'attacco in contropiede."
+                "tip_it": "5 difensori bloccano tutto. Palle lunghe alla coppia d'attacco in contropiede.",
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Defensive',
@@ -1514,7 +1751,10 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Stay deep and organized. Wing-backs push when safe.',
-                "tip_it": 'Resta profondo e organizzato. Gli esterni spingono quando è sicuro.'
+                "tip_it": 'Resta profondo e organizzato. Gli esterni spingono quando è sicuro.',
+                "arrows": {
+                    "ST": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Normal',
@@ -1532,7 +1772,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Wing-backs push high. Use width to create for strikers.',
-                "tip_it": "Gli esterni spingono in alto. Usa l'ampiezza per creare per gli attaccanti."
+                "tip_it": "Gli esterni spingono in alto. Usa l'ampiezza per creare per gli attaccanti.",
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -1577,7 +1822,10 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'RISKY! Use only if behind. Protect the 3 CBs on counters.',
-                "tip_it": 'RISCHIOSO! Usa solo se in svantaggio. Proteggi i 3 DC nei contropiedi.'
+                "tip_it": 'RISCHIOSO! Usa solo se in svantaggio. Proteggi i 3 DC nei contropiedi.',
+                "arrows": {
+                    "DC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Attacking',
@@ -1595,7 +1843,12 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": True,
                 "tip_en": 'Attack is the best defense. Press high and force errors.',
-                "tip_it": "L'attacco è la miglior difesa. Pressa alto e forza errori."
+                "tip_it": "L'attacco è la miglior difesa. Pressa alto e forza errori.",
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Hard Attacking',
@@ -1613,7 +1866,14 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Destroy them! Full attack with 7 players forward!',
-                "tip_it": 'Distruggili! Attacco totale con 7 giocatori in avanti!'
+                "tip_it": 'Distruggili! Attacco totale con 7 giocatori in avanti!',
+                "arrows": {
+                    "ML": '↑',
+                    "MR": '↑',
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -1658,7 +1918,10 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Double DMC protects. Counter through wide AML/AMR to ST.',
-                "tip_it": 'Doppio DMC protegge. Contropiede tramite AML/AMR larghi verso ST.'
+                "tip_it": 'Doppio DMC protegge. Contropiede tramite AML/AMR larghi verso ST.',
+                "arrows": {
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Attacking',
@@ -1676,7 +1939,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'AMC orchestrates. Use wide AML/AMR to create for ST.',
-                "tip_it": "L'AMC orchestra. Usa AML/AMR larghi per creare per ST."
+                "tip_it": "L'AMC orchestra. Usa AML/AMR larghi per creare per ST.",
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "DMC": '↓'
+                }
             },
             "weak": {
                 "mentality": 'Hard Attacking',
@@ -1694,7 +1962,13 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Full creative attack! AMC + wide players overwhelm!',
-                "tip_it": 'Attacco creativo totale! AMC + esterni travolgono!'
+                "tip_it": 'Attacco creativo totale! AMC + esterni travolgono!',
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -1739,7 +2013,10 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'DMC duo shields. AMC links to ST on quick counters.',
-                "tip_it": 'Duo DMC protegge. AMC collega a ST in contropiedi veloci.'
+                "tip_it": 'Duo DMC protegge. AMC collega a ST in contropiedi veloci.',
+                "arrows": {
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Normal',
@@ -1757,7 +2034,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'AMC is the tower. Feed him and let him create for ST.',
-                "tip_it": "L'AMC è la torre. Servilo e lascialo creare per ST."
+                "tip_it": "L'AMC è la torre. Servilo e lascialo creare per ST.",
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "DMC": '↓'
+                }
             },
             "weak": {
                 "mentality": 'Attacking',
@@ -1775,7 +2057,13 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Push AMC high. Let the tower dominate in their half!',
-                "tip_it": "Spingi l'AMC in alto. Lascia la torre dominare nella loro metà!"
+                "tip_it": "Spingi l'AMC in alto. Lascia la torre dominare nella loro metà!",
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -1820,7 +2108,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": '6 defenders! Long balls to striker duo on rare counters.',
-                "tip_it": "6 difensori! Palle lunghe alla coppia d'attacco nei rari contropiedi."
+                "tip_it": "6 difensori! Palle lunghe alla coppia d'attacco nei rari contropiedi.",
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓',
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Defensive',
@@ -1838,7 +2131,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Stay deep. Use AML/AMR on counters to find strikers.',
-                "tip_it": 'Resta profondo. Usa AML/AMR in contropiede per trovare gli attaccanti.'
+                "tip_it": 'Resta profondo. Usa AML/AMR in contropiede per trovare gli attaccanti.',
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "DMC": '↓'
+                }
             },
             "weak": {
                 "mentality": 'Normal',
@@ -1856,7 +2154,15 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Push AML/AMR high. Create for the striker duo.',
-                "tip_it": "Spingi AML/AMR in alto. Crea per la coppia d'attacco."
+                "tip_it": "Spingi AML/AMR in alto. Crea per la coppia d'attacco.",
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -1901,7 +2207,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Full catenaccio! DML/DMR block midfield. Long to strikers.',
-                "tip_it": 'Catenaccio totale! DML/DMR bloccano il centrocampo. Lungo agli attaccanti.'
+                "tip_it": 'Catenaccio totale! DML/DMR bloccano il centrocampo. Lungo agli attaccanti.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Defensive',
@@ -1919,7 +2229,10 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Stay organized. AMC links to strikers on counters.',
-                "tip_it": 'Resta organizzato. AMC collega agli attaccanti in contropiede.'
+                "tip_it": 'Resta organizzato. AMC collega agli attaccanti in contropiede.',
+                "arrows": {
+                    "ST": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Normal',
@@ -1937,7 +2250,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Push DML/DMR up. AMC orchestrates attacks to strikers.',
-                "tip_it": 'Spingi DML/DMR in alto. AMC orchestra attacchi verso gli attaccanti.'
+                "tip_it": 'Spingi DML/DMR in alto. AMC orchestra attacchi verso gli attaccanti.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -1982,7 +2300,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": '5 at back tight. Long balls to AML/AMR then to ST.',
-                "tip_it": '5 in difesa stretti. Palle lunghe ad AML/AMR poi a ST.'
+                "tip_it": '5 in difesa stretti. Palle lunghe ad AML/AMR poi a ST.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Defensive',
@@ -2000,7 +2322,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Stay compact. Use AML/AMR pace on counters.',
-                "tip_it": 'Resta compatto. Usa la velocità di AML/AMR in contropiede.'
+                "tip_it": 'Resta compatto. Usa la velocità di AML/AMR in contropiede.',
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Normal',
@@ -2018,7 +2344,14 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Push AML/AMR very high. Create for lone striker.',
-                "tip_it": "Spingi AML/AMR molto in alto. Crea per l'attaccante solitario."
+                "tip_it": "Spingi AML/AMR molto in alto. Crea per l'attaccante solitario.",
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -2063,7 +2396,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Counter through skewed side. AMR + ST combo on breaks.',
-                "tip_it": 'Contropiede dal lato skewato. Combo AMR + ST nelle ripartenze.'
+                "tip_it": 'Contropiede dal lato skewato. Combo AMR + ST nelle ripartenze.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓',
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Attacking',
@@ -2081,7 +2419,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Overload right side. AMR and ST create overload.',
-                "tip_it": 'Sovraccarica il lato destro. AMR e ST creano superiorità.'
+                "tip_it": 'Sovraccarica il lato destro. AMR e ST creano superiorità.',
+                "arrows": {
+                    "AMR": '↑',
+                    "DMC": '↓'
+                }
             },
             "weak": {
                 "mentality": 'Hard Attacking',
@@ -2099,7 +2441,14 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'All-out attack on right side! 2nd half switch to high pressing.',
-                "tip_it": 'Attacco totale sul lato destro! Nel 2°T passa a pressing alto.'
+                "tip_it": 'Attacco totale sul lato destro! Nel 2°T passa a pressing alto.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "AMR": '↑',
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -2144,7 +2493,10 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Protect 3 CBs. Use AML/AMR pace on counters to strikers.',
-                "tip_it": 'Proteggi i 3 DC. Usa la velocità di AML/AMR in contropiede verso gli attaccanti.'
+                "tip_it": 'Proteggi i 3 DC. Usa la velocità di AML/AMR in contropiede verso gli attaccanti.',
+                "arrows": {
+                    "DC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Attacking',
@@ -2162,7 +2514,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Use width to stretch parked buses. AML/AMR + 2 STs overload.',
-                "tip_it": "Usa l'ampiezza per allargare il catenaccio. AML/AMR + 2 ST sovraccaricano."
+                "tip_it": "Usa l'ampiezza per allargare il catenaccio. AML/AMR + 2 ST sovraccaricano.",
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Hard Attacking',
@@ -2180,7 +2536,12 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'All-out attack! 7 players forward will destroy them!',
-                "tip_it": 'Attacco totale! 7 giocatori in avanti li distruggeranno!'
+                "tip_it": 'Attacco totale! 7 giocatori in avanti li distruggeranno!',
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -2225,7 +2586,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": '3 MCs control center. AML/AMR break on counters to ST.',
-                "tip_it": '3 MC controllano il centro. AML/AMR sfondano in contropiede verso ST.'
+                "tip_it": '3 MC controllano il centro. AML/AMR sfondano in contropiede verso ST.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Attacking',
@@ -2243,7 +2608,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Dominate midfield with 3 MCs. AML/AMR create for lone ST.',
-                "tip_it": 'Domina il centrocampo con 3 MC. AML/AMR creano per ST solitario.'
+                "tip_it": 'Domina il centrocampo con 3 MC. AML/AMR creano per ST solitario.',
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Hard Attacking',
@@ -2261,7 +2630,14 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'All-out attack! Push all 6 attackers forward!',
-                "tip_it": 'Attacco totale! Spingi tutti i 6 attaccanti in avanti!'
+                "tip_it": 'Attacco totale! Spingi tutti i 6 attaccanti in avanti!',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -2377,7 +2753,10 @@ FORMATIONS = [
                 "offside_trap": True,
                 "variant": 'C',
                 "tip_en": 'Use Variant C (Quick Transition). Stay compact, counter with AMC-ST speed. MR/ML with backward arrows.',
-                "tip_it": 'Usa Variante C (Transizione Rapida). Resta compatto, contropiede con velocità AMC-ST. MR/ML con frecce indietro.'
+                "tip_it": 'Usa Variante C (Transizione Rapida). Resta compatto, contropiede con velocità AMC-ST. MR/ML con frecce indietro.',
+                "arrows": {
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Normal',
@@ -2396,7 +2775,11 @@ FORMATIONS = [
                 "offside_trap": True,
                 "variant": 'B',
                 "tip_en": 'Use Variant B (Balanced). Safer at the back, AMC and ST have freedom to create.',
-                "tip_it": 'Usa Variante B (Bilanciata). Più sicura dietro, AMC e ST con libertà di creare.'
+                "tip_it": 'Usa Variante B (Bilanciata). Più sicura dietro, AMC e ST con libertà di creare.',
+                "arrows": {
+                    "DMC": '↓',
+                    "MC": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Attacking',
@@ -2415,7 +2798,13 @@ FORMATIONS = [
                 "offside_trap": False,
                 "variant": 'A',
                 "tip_en": 'Use Variant A (Central Dominance). Crush them! High press, AMC as creative hub, MC forward arrows.',
-                "tip_it": 'Usa Variante A (Dominio Centrale). Schiaccialo! Pressing alto, AMC come perno, MC con frecce avanti.'
+                "tip_it": 'Usa Variante A (Dominio Centrale). Schiaccialo! Pressing alto, AMC come perno, MC con frecce avanti.',
+                "arrows": {
+                    "ML": '↑',
+                    "MR": '↑',
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -2461,7 +2850,10 @@ FORMATIONS = [
                 "marking_it": 'A Zona',
                 "offside_trap": True,
                 "tip_en": "Stay compact! DMC↓ to protect DCs. Counter through flanks. Don't chase the ball, let them come.",
-                "tip_it": 'Resta compatto! DMC↓ per proteggere i DC. Contropiede sulle fasce. Non rincorrere, lascia che vengano.'
+                "tip_it": 'Resta compatto! DMC↓ per proteggere i DC. Contropiede sulle fasce. Non rincorrere, lascia che vengano.',
+                "arrows": {
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Normal',
@@ -2479,7 +2871,12 @@ FORMATIONS = [
                 "marking_it": 'A Zona',
                 "offside_trap": True,
                 "tip_en": 'Balance attack and defense. AMC↑ for extra goal threat. Use ML/MR for width.',
-                "tip_it": 'Equilibra attacco e difesa. AMC↑ per minaccia extra. Usa ML/MR per ampiezza.'
+                "tip_it": 'Equilibra attacco e difesa. AMC↑ per minaccia extra. Usa ML/MR per ampiezza.',
+                "arrows": {
+                    "ML": '↑',
+                    "MR": '↑',
+                    "DMC": '↓'
+                }
             },
             "weak": {
                 "mentality": 'Attacking',
@@ -2497,7 +2894,13 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Dominate! Push everyone forward. AMC↑ MC↑ for 3-man attack. High press to suffocate.',
-                "tip_it": 'Domina! Spingi tutti avanti. AMC↑ MC↑ per attacco a 3. Pressing alto per soffocare.'
+                "tip_it": 'Domina! Spingi tutti avanti. AMC↑ MC↑ per attacco a 3. Pressing alto per soffocare.',
+                "arrows": {
+                    "ML": '↑',
+                    "MR": '↑',
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -2543,7 +2946,12 @@ FORMATIONS = [
                 "marking_it": 'A Zona',
                 "offside_trap": True,
                 "tip_en": 'PARK THE BUS! Everyone defends. Only AML/AMR and ST go forward on counters. Pray for 0-0.',
-                "tip_it": 'PARCHEGGIA IL BUS! Tutti difendono. Solo AML/AMR e ST avanti in contropiede. Prega per lo 0-0.'
+                "tip_it": 'PARCHEGGIA IL BUS! Tutti difendono. Solo AML/AMR e ST avanti in contropiede. Prega per lo 0-0.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓',
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Defensive',
@@ -2561,7 +2969,12 @@ FORMATIONS = [
                 "marking_it": 'A Zona',
                 "offside_trap": True,
                 "tip_en": 'Stay solid. Let them have the ball. Strike fast on counter with AML/AMR pace.',
-                "tip_it": 'Resta solido. Lascia che abbiano palla. Colpisci veloce in contropiede con velocità AML/AMR.'
+                "tip_it": 'Resta solido. Lascia che abbiano palla. Colpisci veloce in contropiede con velocità AML/AMR.',
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "DMC": '↓'
+                }
             },
             "weak": {
                 "mentality": 'Normal',
@@ -2579,7 +2992,15 @@ FORMATIONS = [
                 "marking_it": 'A Zona',
                 "offside_trap": True,
                 "tip_en": 'Push MC forward slightly. Still counter-focused but more possession.',
-                "tip_it": 'Spingi MC leggermente avanti. Ancora focus contropiede ma più possesso.'
+                "tip_it": 'Spingi MC leggermente avanti. Ancora focus contropiede ma più possesso.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -2625,7 +3046,11 @@ FORMATIONS = [
                 "marking_it": 'A Zona',
                 "offside_trap": False,
                 "tip_en": "False Nine drops, AML/AMR run into space. Quick 1-2s in the middle. Don't force it.",
-                "tip_it": 'Falso Nove arretra, AML/AMR corrono negli spazi. Rapidi 1-2 al centro. Non forzare.'
+                "tip_it": 'Falso Nove arretra, AML/AMR corrono negli spazi. Rapidi 1-2 al centro. Non forzare.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Attacking',
@@ -2643,7 +3068,11 @@ FORMATIONS = [
                 "marking_it": 'A Zona',
                 "offside_trap": False,
                 "tip_en": 'Full False Nine system. AMC drops, AML/AMR attack. Confuse their defense!',
-                "tip_it": 'Sistema Falso Nove completo. AMC arretra, AML/AMR attaccano. Confondi la loro difesa!'
+                "tip_it": 'Sistema Falso Nove completo. AMC arretra, AML/AMR attaccano. Confondi la loro difesa!',
+                "arrows": {
+                    "AML": '↑',
+                    "AMR": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Attacking',
@@ -2661,7 +3090,13 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Push False Nine to ST, wingers to AML/AMR. Full attack mode! 3 attackers vs their weak defense.',
-                "tip_it": 'Spingi Falso Nove a ST, ali a AML/AMR. Modalità attacco totale! 3 attaccanti vs loro difesa debole.'
+                "tip_it": 'Spingi Falso Nove a ST, ali a AML/AMR. Modalità attacco totale! 3 attaccanti vs loro difesa debole.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "AML": '↑',
+                    "AMR": '↑'
+                }
             }
         }
     },
@@ -2706,7 +3141,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Against stronger sides, stay compact in the 4-2-4, drop the pressing and hit on the counter.',
-                "tip_it": 'Contro avversari più forti, resta compatto col 4-2-4, abbassa il pressing e riparti in contropiede.'
+                "tip_it": 'Contro avversari più forti, resta compatto col 4-2-4, abbassa il pressing e riparti in contropiede.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Hard Attacking',
@@ -2724,7 +3163,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Ultra-attacking shape for desperate comebacks, but leaves the defense completely open.',
-                "tip_it": 'Modulo ultra-offensivo per rimonte disperate, ma lascia la difesa totalmente scoperta.'
+                "tip_it": 'Modulo ultra-offensivo per rimonte disperate, ma lascia la difesa totalmente scoperta.',
+                "arrows": {
+                    "ST": '↑',
+                    "AML": '↑',
+                    "AMR": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Hard Attacking',
@@ -2742,7 +3186,14 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Against weaker sides, push high with the 4-2-4, raise pressing and man-marking to dominate.',
-                "tip_it": 'Contro avversari più deboli, spingi alto col 4-2-4, alza pressing e marcatura a uomo per dominare.'
+                "tip_it": 'Contro avversari più deboli, spingi alto col 4-2-4, alza pressing e marcatura a uomo per dominare.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -2787,7 +3238,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Against stronger sides, stay compact in the 4-1-3-1-1, drop the pressing and hit on the counter.',
-                "tip_it": 'Contro avversari più forti, resta compatto col 4-1-3-1-1, abbassa il pressing e riparti in contropiede.'
+                "tip_it": 'Contro avversari più forti, resta compatto col 4-1-3-1-1, abbassa il pressing e riparti in contropiede.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓',
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Defensive',
@@ -2805,7 +3261,13 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": "Excellent for protecting the result and shutting down the opponent's wide attacks.",
-                "tip_it": 'Eccellente per proteggere il risultato e annullare gli attacchi esterni avversari.'
+                "tip_it": 'Eccellente per proteggere il risultato e annullare gli attacchi esterni avversari.',
+                "arrows": {
+                    "DMC": '↓',
+                    "MC": '↓',
+                    "AMC": '↓',
+                    "ST": '↓'
+                }
             },
             "weak": {
                 "mentality": 'Normal',
@@ -2823,7 +3285,15 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Against weaker sides, push high with the 4-1-3-1-1, raise pressing and man-marking to dominate.',
-                "tip_it": 'Contro avversari più deboli, spingi alto col 4-1-3-1-1, alza pressing e marcatura a uomo per dominare.'
+                "tip_it": 'Contro avversari più deboli, spingi alto col 4-1-3-1-1, alza pressing e marcatura a uomo per dominare.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "ML": '↑',
+                    "MR": '↑',
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -2868,7 +3338,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Against stronger sides, stay compact in the 4-3-2-1 XT (Xmas Tree), drop the pressing and hit on the counter.',
-                "tip_it": 'Contro avversari più forti, resta compatto col 4-3-2-1 XT (Xmas Tree), abbassa il pressing e riparti in contropiede.'
+                "tip_it": 'Contro avversari più forti, resta compatto col 4-3-2-1 XT (Xmas Tree), abbassa il pressing e riparti in contropiede.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Defensive',
@@ -2886,7 +3360,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Ideal to exploit the flanks and keep a solid midfield against versatile formations.',
-                "tip_it": 'Ideale per sfruttare le fasce e mantenere un centrocampo solido contro formazioni versatili.'
+                "tip_it": 'Ideale per sfruttare le fasce e mantenere un centrocampo solido contro formazioni versatili.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Normal',
@@ -2904,7 +3382,14 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Against weaker sides, push high with the 4-3-2-1 XT (Xmas Tree), raise pressing and man-marking to dominate.',
-                "tip_it": 'Contro avversari più deboli, spingi alto col 4-3-2-1 XT (Xmas Tree), alza pressing e marcatura a uomo per dominare.'
+                "tip_it": 'Contro avversari più deboli, spingi alto col 4-3-2-1 XT (Xmas Tree), alza pressing e marcatura a uomo per dominare.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "AML": '↑',
+                    "AMR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -2949,7 +3434,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Against stronger sides, stay compact in the 5-3-2, drop the pressing and hit on the counter.',
-                "tip_it": 'Contro avversari più forti, resta compatto col 5-3-2, abbassa il pressing e riparti in contropiede.'
+                "tip_it": 'Contro avversari più forti, resta compatto col 5-3-2, abbassa il pressing e riparti in contropiede.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Hard Defending',
@@ -2967,7 +3456,10 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": "The best choice to 'park the bus' and defend a lead you've earned.",
-                "tip_it": "La scelta migliore per 'parcheggiare l'autobus' e difendere un vantaggio acquisito."
+                "tip_it": "La scelta migliore per 'parcheggiare l'autobus' e difendere un vantaggio acquisito.",
+                "arrows": {
+                    "ST": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Defensive',
@@ -2985,7 +3477,12 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Against weaker sides, push high with the 5-3-2, raise pressing and man-marking to dominate.',
-                "tip_it": 'Contro avversari più deboli, spingi alto col 5-3-2, alza pressing e marcatura a uomo per dominare.'
+                "tip_it": 'Contro avversari più deboli, spingi alto col 5-3-2, alza pressing e marcatura a uomo per dominare.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -3030,7 +3527,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Against stronger sides, stay compact in the 4-1-3N-2, drop the pressing and hit on the counter.',
-                "tip_it": 'Contro avversari più forti, resta compatto col 4-1-3N-2, abbassa il pressing e riparti in contropiede.'
+                "tip_it": 'Contro avversari più forti, resta compatto col 4-1-3N-2, abbassa il pressing e riparti in contropiede.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓',
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Normal',
@@ -3048,7 +3550,14 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Great for dominating central possession and striking on the counter through the middle.',
-                "tip_it": 'Ottima per dominare il possesso centrale e colpire in contropiede attraverso il centro.'
+                "tip_it": 'Ottima per dominare il possesso centrale e colpire in contropiede attraverso il centro.',
+                "arrows": {
+                    "MC": '↑',
+                    "DMC": '↓',
+                    "DL": '↓',
+                    "DC": '↓',
+                    "DR": '↓'
+                }
             },
             "weak": {
                 "mentality": 'Attacking',
@@ -3066,7 +3575,13 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Against weaker sides, push high with the 4-1-3N-2, raise pressing and man-marking to dominate.',
-                "tip_it": 'Contro avversari più deboli, spingi alto col 4-1-3N-2, alza pressing e marcatura a uomo per dominare.'
+                "tip_it": 'Contro avversari più deboli, spingi alto col 4-1-3N-2, alza pressing e marcatura a uomo per dominare.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -3111,7 +3626,10 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Against stronger sides, stay compact in the 3-4-1-2, drop the pressing and hit on the counter.',
-                "tip_it": 'Contro avversari più forti, resta compatto col 3-4-1-2, abbassa il pressing e riparti in contropiede.'
+                "tip_it": 'Contro avversari più forti, resta compatto col 3-4-1-2, abbassa il pressing e riparti in contropiede.',
+                "arrows": {
+                    "DC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Attacking',
@@ -3129,7 +3647,12 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Effective at breaking through centrally, but needs disciplined full-backs to cover the wide spaces.',
-                "tip_it": 'Efficace per sfondare centralmente, ma richiede terzini bloccati per coprire le praterie esterne.'
+                "tip_it": 'Efficace per sfondare centralmente, ma richiede terzini bloccati per coprire le praterie esterne.',
+                "arrows": {
+                    "ST": '↑',
+                    "ML": '↑',
+                    "MR": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Hard Attacking',
@@ -3147,7 +3670,12 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Against weaker sides, push high with the 3-4-1-2, raise pressing and man-marking to dominate.',
-                "tip_it": 'Contro avversari più deboli, spingi alto col 3-4-1-2, alza pressing e marcatura a uomo per dominare.'
+                "tip_it": 'Contro avversari più deboli, spingi alto col 3-4-1-2, alza pressing e marcatura a uomo per dominare.',
+                "arrows": {
+                    "ML": '↑',
+                    "MR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     },
@@ -3192,7 +3720,10 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Against stronger sides, stay compact in the 3-1-3-1-2, drop the pressing and hit on the counter.',
-                "tip_it": 'Contro avversari più forti, resta compatto col 3-1-3-1-2, abbassa il pressing e riparti in contropiede.'
+                "tip_it": 'Contro avversari più forti, resta compatto col 3-1-3-1-2, abbassa il pressing e riparti in contropiede.',
+                "arrows": {
+                    "DMC": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Attacking',
@@ -3210,7 +3741,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'A basic attacking shape to create constant scoring chances against static defenses.',
-                "tip_it": "Modulo d'attacco basilare per creare costanti occasioni da gol contro difese statiche."
+                "tip_it": "Modulo d'attacco basilare per creare costanti occasioni da gol contro difese statiche.",
+                "arrows": {
+                    "ST": '↑',
+                    "MC": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Hard Attacking',
@@ -3228,7 +3763,11 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Against weaker sides, push high with the 3-1-3-1-2, raise pressing and man-marking to dominate.',
-                "tip_it": 'Contro avversari più deboli, spingi alto col 3-1-3-1-2, alza pressing e marcatura a uomo per dominare.'
+                "tip_it": 'Contro avversari più deboli, spingi alto col 3-1-3-1-2, alza pressing e marcatura a uomo per dominare.',
+                "arrows": {
+                    "ST": '↑',
+                    "DMC": '↓'
+                }
             }
         }
     },
@@ -3273,7 +3812,11 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": True,
                 "tip_en": 'Against stronger sides, stay compact in the 4-3N-3, drop the pressing and hit on the counter.',
-                "tip_it": 'Contro avversari più forti, resta compatto col 4-3N-3, abbassa il pressing e riparti in contropiede.'
+                "tip_it": 'Contro avversari più forti, resta compatto col 4-3N-3, abbassa il pressing e riparti in contropiede.',
+                "arrows": {
+                    "DL": '↓',
+                    "DR": '↓'
+                }
             },
             "equal": {
                 "mentality": 'Normal',
@@ -3291,7 +3834,10 @@ FORMATIONS = [
                 "marking_it": 'Zonale',
                 "offside_trap": False,
                 "tip_en": 'Aggressive variant ideal to unlock crowded midfields and dominate the central zone.',
-                "tip_it": 'Variante aggressiva ideale per scardinare centrocampi folti e dominare la zona centrale.'
+                "tip_it": 'Variante aggressiva ideale per scardinare centrocampi folti e dominare la zona centrale.',
+                "arrows": {
+                    "ST": '↑'
+                }
             },
             "weak": {
                 "mentality": 'Attacking',
@@ -3309,7 +3855,12 @@ FORMATIONS = [
                 "marking_it": 'Uomo a Uomo',
                 "offside_trap": False,
                 "tip_en": 'Against weaker sides, push high with the 4-3N-3, raise pressing and man-marking to dominate.',
-                "tip_it": 'Contro avversari più deboli, spingi alto col 4-3N-3, alza pressing e marcatura a uomo per dominare.'
+                "tip_it": 'Contro avversari più deboli, spingi alto col 4-3N-3, alza pressing e marcatura a uomo per dominare.',
+                "arrows": {
+                    "DL": '↑',
+                    "DR": '↑',
+                    "ST": '↑'
+                }
             }
         }
     }
