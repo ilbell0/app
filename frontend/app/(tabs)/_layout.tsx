@@ -76,6 +76,17 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="academy"
+        options={{
+          title: 'ACADEMY',
+          tabBarIcon: ({ color, focused }) => (
+            <View style={focused ? styles.activeIcon : undefined}>
+              <Ionicons name={focused ? "school" : "school-outline"} size={22} color={color} />
+            </View>
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="ai-chat"
         options={{
           title: 'AI',

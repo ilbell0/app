@@ -5539,6 +5539,207 @@ META_TACTICS = [
     }
 ]
 
+# ==================== SPECIAL ABILITIES DATA ====================
+
+SPECIAL_ABILITIES = [
+    {
+        "id": "shadow-striker",
+        "name_en": "Shadow Striker",
+        "name_it": "Incursore Ombra",
+        "best_role": "AMC",
+        "effect_en": "Lets the player break into empty spaces to score.",
+        "effect_it": "Permette al giocatore di inserirsi negli spazi vuoti per segnare.",
+        "when_to_use_en": "Use against opponents who don't field a DMC to protect the defense.",
+        "when_to_use_it": "Da usare contro avversari che non utilizzano un DMC per proteggere la difesa."
+    },
+    {
+        "id": "playmaker",
+        "name_en": "Playmaker",
+        "name_it": "Regista",
+        "best_role": "MC, AMC, DMC",
+        "effect_en": "Improves vision and the accuracy of decisive passes.",
+        "effect_it": "Migliora la visione di gioco e la precisione dei passaggi decisivi.",
+        "when_to_use_en": "Key to dominating possession and providing assists between the lines.",
+        "when_to_use_it": "Fondamentale per dominare il possesso palla e servire assist tra le linee."
+    },
+    {
+        "id": "dual-position",
+        "name_en": "Dual Position",
+        "name_it": "Ruolo Doppio",
+        "best_role": "Ogni ruolo",
+        "effect_en": "Allows the player to perform at full effectiveness in multiple positions.",
+        "effect_it": "Consente al giocatore di agire con massima efficacia in più posizioni.",
+        "when_to_use_en": "For tactical flexibility and to exploit the opponent's formation weaknesses.",
+        "when_to_use_it": "Per avere flessibilità tattica e colpire i punti deboli della formazione avversaria."
+    },
+    {
+        "id": "free-kick-specialist",
+        "name_en": "Free Kick Specialist",
+        "name_it": "Specialista Punizioni",
+        "best_role": "ST, AMC, MC",
+        "effect_en": "Drastically increases the chance of scoring from direct free kicks.",
+        "effect_it": "Aumenta drasticamente la probabilità di segnare su calcio di punizione diretto.",
+        "when_to_use_en": "Essential to unlock tight matches through set pieces.",
+        "when_to_use_it": "Essenziale per sbloccare partite chiuse tramite situazioni di palla inattiva."
+    },
+    {
+        "id": "corner-specialist",
+        "name_en": "Corner Specialist",
+        "name_it": "Specialista Angoli",
+        "best_role": "ML, MR, AML, AMR",
+        "effect_en": "Improves the accuracy and curl of corner deliveries.",
+        "effect_it": "Migliora la precisione e l'effetto dei cross effettuati dalla bandierina.",
+        "when_to_use_en": "Useful to maximize the aerial game if you have strong headers in the box.",
+        "when_to_use_it": "Utile per massimizzare il gioco aereo se si dispone di saltatori forti in area."
+    },
+    {
+        "id": "penalty-specialist",
+        "name_en": "Penalty Specialist",
+        "name_it": "Specialista Rigori",
+        "best_role": "ST, AMC",
+        "effect_en": "Ensures near-perfect accuracy when converting penalties.",
+        "effect_it": "Garantisce una precisione quasi totale nella trasformazione dei tiri dal dischetto.",
+        "when_to_use_en": "Assign to your designated penalty taker so you don't waste spot kicks.",
+        "when_to_use_it": "Da assegnare al rigorista designato per non sprecare occasioni dagli undici metri."
+    },
+    {
+        "id": "one-on-one-scoring",
+        "name_en": "One-on-One Scoring",
+        "name_it": "Finalizzatore 1v1",
+        "best_role": "ST, AML, AMR",
+        "effect_en": "Boosts scoring ability when the player faces the keeper one-on-one.",
+        "effect_it": "Potenzia la capacità di segnare quando il giocatore affronta il portiere in solitaria.",
+        "when_to_use_en": "Ideal for fast strikers who often operate on the counter.",
+        "when_to_use_it": "Ideale per attaccanti veloci che agiscono spesso in contropiede."
+    },
+    {
+        "id": "defensive-wall",
+        "name_en": "Defensive Wall",
+        "name_it": "Muro Difensivo",
+        "best_role": "DC, DMC",
+        "effect_en": "Increases the chance of blocking or deflecting shots on goal.",
+        "effect_it": "Aumenta la probabilità di intercettare o respingere i tiri avversari diretti in porta.",
+        "when_to_use_en": "To turn your box into a fortress against big shooters.",
+        "when_to_use_it": "Per rendere la propria area di rigore un fortino contro i grandi tiratori."
+    },
+    {
+        "id": "aerial-defence",
+        "name_en": "Aerial Defence",
+        "name_it": "Difesa Aerea",
+        "best_role": "DC",
+        "effect_en": "Improves timing and strength in aerial duels inside the box.",
+        "effect_it": "Migliora il tempismo e la forza nei contrasti aerei all'interno dell'area.",
+        "when_to_use_en": "Indispensable against opponents using a Target Man or constant crosses.",
+        "when_to_use_it": "Indispensabile contro avversari che utilizzano Target Man o cross continui."
+    },
+    {
+        "id": "pacey-dribbler",
+        "name_en": "Pacey Dribbler",
+        "name_it": "Dribblatore Veloce",
+        "best_role": "AML, AMR, ST",
+        "effect_en": "Increases ball control and speed when dribbling at pace.",
+        "effect_it": "Incrementa il controllo palla e la velocità durante i dribbling in progressione.",
+        "when_to_use_en": "To beat your man out wide and create instant numerical advantage.",
+        "when_to_use_it": "Per saltare l'uomo sulle fasce e creare superiorità numerica immediata."
+    },
+    {
+        "id": "long-throw-in",
+        "name_en": "Long Throw-in",
+        "name_it": "Rimessa Lunga",
+        "best_role": "DL, DR",
+        "effect_en": "Allows throwing the ball directly into the box from throw-ins.",
+        "effect_it": "Permette di lanciare la palla direttamente in area durante le rimesse laterali.",
+        "when_to_use_en": "Turns a simple throw-in into a potential scoring chance.",
+        "when_to_use_it": "Trasforma una semplice rimessa laterale in una potenziale occasione da gol."
+    }
+]
+
+# ==================== TRAINING GUIDE DATA ====================
+
+TRAINING_GUIDE = [
+    {
+        "position": "GK",
+        "priority_attributes_en": ["Saving", "Reflexes", "Aerial Ability", "Positioning"],
+        "priority_attributes_it": ["Parata", "Riflessi", "Uscite", "Posizionamento"],
+        "recommended_drills_en": ["GK Training"],
+        "recommended_drills_it": ["Allenamento GK"],
+        "note_en": "You can turn 3-star keepers into 10-star superstars with specific training.",
+        "note_it": "È possibile trasformare portieri da 3 stelle in superstar da 10 stelle con allenamenti specifici."
+    },
+    {
+        "position": "DC",
+        "priority_attributes_en": ["Marking", "Tackling", "Positioning"],
+        "priority_attributes_it": ["Marcatura", "Contrasto", "Posizionamento"],
+        "recommended_drills_en": ["Press the Play"],
+        "recommended_drills_it": ["Pressa il gioco"],
+        "note_en": "Train defenders with the 'Press the Play' drill to maximize white defensive attributes.",
+        "note_it": "Allena i difensori con il drill 'Pressa il gioco' per massimizzare gli attributi bianchi difensivi."
+    },
+    {
+        "position": "DL/DR",
+        "priority_attributes_en": ["Pace", "Tackling", "Marking", "Crossing"],
+        "priority_attributes_it": ["Velocità", "Contrasto", "Marcatura", "Cross"],
+        "recommended_drills_en": ["Defense", "Wings"],
+        "recommended_drills_it": ["Difesa", "Ali"],
+        "note_en": "Pace is a key attribute when deciding whether to use tactical arrows on full-backs.",
+        "note_it": "La velocità è un attributo chiave per decidere l'uso delle frecce tattiche sui difensori laterali."
+    },
+    {
+        "position": "DMC",
+        "priority_attributes_en": ["Tackling", "Marking", "Positioning", "Passing"],
+        "priority_attributes_it": ["Contrasto", "Marcatura", "Posizionamento", "Passaggio"],
+        "recommended_drills_en": ["Pressing", "Defense"],
+        "recommended_drills_it": ["Pressing", "Difesa"],
+        "note_en": "The DMC is vital in almost every formation to earn more clean sheets.",
+        "note_it": "Il DMC è vitale in quasi ogni modulo per ottenere un maggior numero di clean sheet."
+    },
+    {
+        "position": "MC",
+        "priority_attributes_en": ["Passing", "Creativity", "Dribbling", "Stamina"],
+        "priority_attributes_it": ["Passaggio", "Creatività", "Dribbling", "Resistenza"],
+        "recommended_drills_en": ["Possession"],
+        "recommended_drills_it": ["Possesso palla"],
+        "note_en": "Central midfielders must balance defense and attack to dominate the middle.",
+        "note_it": "I centrocampisti centrali devono bilanciare difesa e attacco per dominare la zona mediana."
+    },
+    {
+        "position": "ML/MR",
+        "priority_attributes_en": ["Crossing", "Passing", "Pace", "Dribbling"],
+        "priority_attributes_it": ["Cross", "Passaggio", "Velocità", "Dribbling"],
+        "recommended_drills_en": ["Wings", "Slalom"],
+        "recommended_drills_it": ["Ali", "Slalom"],
+        "note_en": "Having wide players with too-low quality (-70%) makes flank-based formations ineffective.",
+        "note_it": "Avere esterni con qualità troppo bassa (-70%) rende inefficaci i moduli che sfruttano le fasce."
+    },
+    {
+        "position": "AMC",
+        "priority_attributes_en": ["Passing", "Creativity", "Shooting", "Finishing"],
+        "priority_attributes_it": ["Passaggio", "Creatività", "Tiro", "Finalizzazione"],
+        "recommended_drills_en": ["Attacking Skills", "Creativity"],
+        "recommended_drills_it": ["Skill d'attacco", "Creatività"],
+        "note_en": "An AMC with high creativity and passing is key to feeding lethal assists to the striker.",
+        "note_it": "Un AMC con alta creatività e passaggio è fondamentale per servire assist letali alla punta."
+    },
+    {
+        "position": "AML/AMR",
+        "priority_attributes_en": ["Crossing", "Pace", "Finishing", "Passing"],
+        "priority_attributes_it": ["Cross", "Velocità", "Finalizzazione", "Passaggio"],
+        "recommended_drills_en": ["Fast Counter", "Slalom"],
+        "recommended_drills_it": ["Contrattacco veloce", "Slalom"],
+        "note_en": "Wingers exploit the 'Dual Position Advantage' to create overloads and cross.",
+        "note_it": "Le ali sfruttano il 'Dual Position Advantage' per creare superiorità numerica e crossare."
+    },
+    {
+        "position": "ST",
+        "priority_attributes_en": ["Finishing", "Shooting", "Pace", "Dribbling"],
+        "priority_attributes_it": ["Finalizzazione", "Tiro", "Velocità", "Dribbling"],
+        "recommended_drills_en": ["Finishing", "Attacking Skills"],
+        "recommended_drills_it": ["Finalizzazione", "Skill d'attacco"],
+        "note_en": "A striker with very high white attributes outperforms one with more stars but high grey stats.",
+        "note_it": "Un attaccante con attributi bianchi altissimi performa meglio di uno con più stelle ma statistiche grigie elevate."
+    }
+]
+
 # ==================== FORMATIONS ENDPOINTS ====================
 
 @api_router.get("/formations")
@@ -5634,6 +5835,38 @@ async def get_meta_tactics_by_tier(tier: str):
     if not items:
         raise HTTPException(status_code=404, detail="No meta tactics found for this tier")
     return items
+
+# ==================== SPECIAL ABILITIES ENDPOINTS ====================
+
+@api_router.get("/special-abilities")
+async def get_special_abilities():
+    """Get all player special abilities"""
+    return SPECIAL_ABILITIES
+
+@api_router.get("/special-abilities/{ability_id}")
+async def get_special_ability(ability_id: str):
+    """Get a specific special ability by id"""
+    for ability in SPECIAL_ABILITIES:
+        if ability["id"] == ability_id:
+            return ability
+    raise HTTPException(status_code=404, detail="Special ability not found")
+
+# ==================== TRAINING GUIDE ENDPOINTS ====================
+
+@api_router.get("/training-guide")
+async def get_training_guide():
+    """Get the full training guide (one entry per position)"""
+    return TRAINING_GUIDE
+
+@api_router.get("/training-guide/{position}")
+async def get_training_guide_for_position(position: str):
+    """Get the training guide for a specific position code (e.g. ST, DC, AMC)"""
+    pos = position.upper()
+    for entry in TRAINING_GUIDE:
+        slots = [p.strip().upper() for p in entry["position"].split("/")]
+        if pos in slots:
+            return entry
+    raise HTTPException(status_code=404, detail="Training guide not found for this position")
 
 # ==================== FAVORITES ENDPOINTS ====================
 
