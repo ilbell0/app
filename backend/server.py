@@ -5899,6 +5899,114 @@ ARROW_TACTICS = [
         "key_movements_it": "Tutta la colonna centrale arretrata.",
         "explanation_en": "Cancels opposing playmakers by removing all space between the defensive and midfield lines.",
         "explanation_it": "Annulla i trequartisti avversari togliendo loro ogni spazio tra le linee di difesa e centrocampo."
+    },
+    {
+        "formation_id": "424",
+        "formation": "4-2-4",
+        "arrows": "ST↑ ST↑ AML↑ AMR↑",
+        "key_movements_en": "All four attackers push forward.",
+        "key_movements_it": "I quattro attaccanti spingono in avanti.",
+        "explanation_en": "Maximizes attacking pressure to score at the expense of defensive cover.",
+        "explanation_it": "Massimizza la pressione offensiva per segnare gol a scapito della copertura difensiva."
+    },
+    {
+        "formation_id": "4321xt",
+        "formation": "4-3-2-1 XT (Xmas Tree)",
+        "arrows": "DL↑ DR↑",
+        "key_movements_en": "The full-backs push up to support the build-up.",
+        "key_movements_it": "I terzini salgono per supportare la manovra.",
+        "explanation_en": "Adds width to a dense midfield to feed the wingers and the lone striker.",
+        "explanation_it": "Fornisce ampiezza a un centrocampo denso per alimentare le ali e l'unica punta."
+    },
+    {
+        "formation_id": "532",
+        "formation": "5-3-2",
+        "arrows": "ST↑ ST↑",
+        "key_movements_en": "The two strikers chase depth.",
+        "key_movements_it": "Le due punte cercano la profondità.",
+        "explanation_en": "Keeps a solid defensive wall while providing outlets for the counter.",
+        "explanation_it": "Permette di mantenere un muro difensivo solido garantendo riferimenti per il contropiede."
+    },
+    {
+        "formation_id": "413n2",
+        "formation": "4-1-3N-2",
+        "arrows": "MC↑ DMC↓ DL↓ DC↓ DR↓",
+        "key_movements_en": "The central MC pushes up while the defense and holding mid stay deep.",
+        "key_movements_it": "MC centrale sale, difesa e mediano restano bassi.",
+        "explanation_en": "Protects your box and favors central runs to beat formations like the 4-2-3-1.",
+        "explanation_it": "Protegge la propria area e favorisce inserimenti centrali per battere moduli come il 4-2-3-1."
+    },
+    {
+        "formation_id": "3412",
+        "formation": "3-4-1-2",
+        "arrows": "ST↑ ST↑ ML↑ MR↑",
+        "key_movements_en": "Strikers and wide midfielders advance.",
+        "key_movements_it": "Punte ed esterni di centrocampo avanzano.",
+        "explanation_en": "Exploits the wide weakness of opposing defenses through the wide midfielders' runs.",
+        "explanation_it": "Sfrutta la debolezza laterale delle difese avversarie tramite la spinta dei centrocampisti laterali."
+    },
+    {
+        "formation_id": "31312",
+        "formation": "3-1-3-1-2",
+        "arrows": "ST↑ ST↑ MC↑",
+        "key_movements_en": "The strikers and a midfielder push forward.",
+        "key_movements_it": "Gli attaccanti e il centrocampista avanzano.",
+        "explanation_en": "Creates constant shooting chances with an all-out attacking setup.",
+        "explanation_it": "Crea costanti opportunità di tiro grazie a un assetto votato totalmente all'attacco."
+    },
+    {
+        "formation_id": "43n3",
+        "formation": "4-3N-3",
+        "arrows": "ST↑ ST↑ ST↑",
+        "key_movements_en": "The front three stays high.",
+        "key_movements_it": "Il tridente offensivo rimane alto.",
+        "explanation_en": "Applies suffocating pressure on the opposing centre-backs.",
+        "explanation_it": "Esercita una pressione asfissiante sui difensori centrali avversari."
+    },
+    {
+        "formation_id": "5212x",
+        "formation": "5-2-1-2 X-Style",
+        "arrows": "ST↑ ST↑",
+        "key_movements_en": "The two strikers push up for the breaks.",
+        "key_movements_it": "Le due punte avanzano per le ripartenze.",
+        "explanation_en": "Provides maximum defensive protection with outlets ready to strike in transition.",
+        "explanation_it": "Garantisce massima protezione difensiva con riferimenti pronti per colpire in transizione."
+    },
+    {
+        "formation_id": "451f",
+        "formation": "4-5-1 Flat",
+        "arrows": "ML↑ MR↑ DL↑ DR↑",
+        "key_movements_en": "Wide midfielders and full-backs push up the flanks.",
+        "key_movements_it": "Esterni e terzini spingono sulle fasce.",
+        "explanation_en": "Overloads the opponent's flanks to cross constantly into the box.",
+        "explanation_it": "Sovraccarica i fianchi avversari per crossare costantemente verso l'area."
+    },
+    {
+        "formation_id": "41212wd",
+        "formation": "4-1-2-1-2 WD",
+        "arrows": "ST↑ ST↑ ML↑ MR↑ AMC↑",
+        "key_movements_en": "Attack, AMC and wingers push forward.",
+        "key_movements_it": "Attacco, trequartista e ali in proiezione.",
+        "explanation_en": "Uses the width of the diamond to get around centrally-compact defenses.",
+        "explanation_it": "Sfrutta l'ampiezza del diamante per aggirare le difese chiuse centralmente."
+    },
+    {
+        "formation_id": "352v",
+        "formation": "3-5-2 V",
+        "arrows": "ST↑ ST↑ AML↑ AMR↑",
+        "key_movements_en": "Strikers and wingers push toward goal.",
+        "key_movements_it": "Punte e ali spingono verso la porta.",
+        "explanation_en": "Creates instant numerical superiority in both wide and central attacking zones.",
+        "explanation_it": "Crea superiorità numerica immediata nelle zone d'attacco esterne e interne."
+    },
+    {
+        "formation_id": "32221b",
+        "formation": "3-2-2-2-1 Butterfly",
+        "arrows": "ML↑ MR↑ ST↑",
+        "key_movements_en": "The wide players and the striker advance.",
+        "key_movements_it": "Esterni laterali e punta avanzano.",
+        "explanation_en": "Balances the back three by providing continuous support down the flanks.",
+        "explanation_it": "Bilancia la difesa a tre fornendo supporto continuo sulle corsie laterali."
     }
 ]
 
