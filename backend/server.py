@@ -5790,6 +5790,54 @@ SCOUT_TIPS = [
         "title_it": "Errori da Evitare",
         "content_en": "Avoid red arrows on both full-backs if your CBs don't outnumber the strikers — a long ball could break your defense. And don't use aggressive arrows too early against strong opponents to avoid physical collapse.",
         "content_it": "Evita la freccia rossa a entrambi i terzini se i DC non hanno superiorità numerica sulle punte: un lancio lungo distruggerebbe la difesa. E non usare frecce aggressive troppo presto contro avversari forti, per evitare crolli fisici."
+    },
+    {
+        "id": "51",
+        "category": "meta",
+        "title_en": "False 9: Why It Dominates",
+        "title_it": "Falso Nove: Perché Domina",
+        "content_en": "The False Nine is the strongest striker playstyle in the 2026 meta, able to break down even stronger opponents' defenses. It dominates because the forward gives the centre-backs no reference point, creating lethal gaps for teammates' runs.",
+        "content_it": "Il Falso Nove è lo stile di gioco per l'attaccante più potente nel meta 2026, capace di scardinare anche difese di avversari più forti. Domina perché la punta non dà punti di riferimento ai DC, creando spazi letali per gli inserimenti dei compagni."
+    },
+    {
+        "id": "52",
+        "category": "meta",
+        "title_en": "False 9: Key Attributes",
+        "title_it": "Falso Nove: Attributi Chiave",
+        "content_en": "You need very high 'white skills', especially finishing, shooting, passing and creativity. A 6-star forward with optimized white attributes beats one with more stars but too many grey stats.",
+        "content_it": "Servono 'white skills' altissime, in particolare finalizzazione, tiro, passaggio e creatività. Un attaccante da 6 stelle con attributi bianchi ottimizzati è preferibile a uno con più stelle ma troppe statistiche grigie."
+    },
+    {
+        "id": "53",
+        "category": "meta",
+        "title_en": "False 9: Best Formations",
+        "title_it": "Falso Nove: Moduli Migliori",
+        "content_en": "The most effective systems for the False Nine are the 4-3-3 and 4-5-1 V-Style, forming a dynamic front three and exploiting the forward dropping deep to link play with midfield.",
+        "content_it": "I sistemi più efficaci per il Falso Nove sono il 4-3-3 e il 4-5-1 V-Style, che formano un tridente dinamico e sfruttano la capacità della punta di abbassarsi per collegare il gioco col centrocampo."
+    },
+    {
+        "id": "54",
+        "category": "meta",
+        "title_en": "False 9: Arrows & Support",
+        "title_it": "Falso Nove: Frecce e Supporto",
+        "content_en": "Pair the False Nine with two wingers (AML/AMR) on red arrows that use the Dual Position to cut into the box. The forward stays with no arrow or a blue arrow to drag the CBs out, freeing the wingers in the space.",
+        "content_it": "Affianca al Falso Nove due ali (AML/AMR) con freccia rossa che sfruttino il Dual Position per tagliare in area. La punta resta senza freccia o con freccia blu per attirare i DC, lasciando le ali libere negli spazi."
+    },
+    {
+        "id": "55",
+        "category": "meta",
+        "title_en": "Defending vs the False 9",
+        "title_it": "Come Difendersi dal Falso Nove",
+        "content_en": "Against a False Nine the best counter is the 4-1-3-1-1, with the DMC and an MC sitting deep to choke the space between defense and midfield. Use a defensive mentality, zonal marking and pressing in your own half.",
+        "content_it": "Contro un Falso Nove la contromossa migliore è il 4-1-3-1-1, con DMC e un MC molto arretrati per soffocare lo spazio tra difesa e mediana. Usa mentalità difensiva, marcatura a zona e pressing nella tua metà campo."
+    },
+    {
+        "id": "56",
+        "category": "meta",
+        "title_en": "False 9: Mistakes to Avoid",
+        "title_it": "Falso Nove: Errori da Evitare",
+        "content_en": "Don't build the whole team around a single super-striker while ignoring Team Balance (keep it between 9.2 and 10). And don't turn on high pressing too early: it drains the fitness you need in the closing minutes.",
+        "content_it": "Non concentrare tutta la squadra su un solo super attaccante ignorando il Team Balance (tienilo tra 9.2 e 10). E non attivare il pressing alto troppo presto: riduce la condizione fisica nei minuti finali."
     }
 ]
 
