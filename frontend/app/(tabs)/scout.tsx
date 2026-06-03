@@ -13,9 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import axios from 'axios';
-
-const API_URL = process.env.EXPO_PUBLIC_BACKEND_URL || '';
+import { SCOUT_TIPS } from '@/src/data';
 
 interface ScoutTip {
   id: string;
@@ -61,14 +59,8 @@ export default function ScoutScreen() {
   }, [modalVisible]);
 
   const fetchTips = async () => {
-    try {
-      const response = await axios.get(`${API_URL}/api/scout-tips`);
-      setTips(response.data);
-    } catch (error) {
-      console.error('Error fetching tips:', error);
-    } finally {
-      setLoading(false);
-    }
+    setTips(SCOUT_TIPS as ScoutTip[]);
+    setLoading(false);
   };
 
   const filteredTips = selectedCategory === 'all'

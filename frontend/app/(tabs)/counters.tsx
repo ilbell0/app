@@ -13,9 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import axios from 'axios';
-
-const API_URL = process.env.EXPO_PUBLIC_BACKEND_URL || '';
+import { COUNTER_ENGINE } from '@/src/data';
 
 interface CounterScenario {
   mod: string;
@@ -71,14 +69,8 @@ export default function CountersScreen() {
   }, [modalVisible]);
 
   const fetchData = async () => {
-    try {
-      const res = await axios.get(`${API_URL}/api/counter-engine`);
-      setCounterEngine(res.data);
-    } catch (error) {
-      console.error('Error fetching counter engine data:', error);
-    } finally {
-      setLoading(false);
-    }
+    setCounterEngine(COUNTER_ENGINE as CounterEngine[]);
+    setLoading(false);
   };
 
   const getCategoryLabel = (cat: string) => {

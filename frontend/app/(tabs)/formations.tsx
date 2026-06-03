@@ -13,9 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import axios from 'axios';
-
-const API_URL = process.env.EXPO_PUBLIC_BACKEND_URL || '';
+import { FORMATIONS } from '@/src/data';
 
 interface Variant {
   name_en: string;
@@ -111,14 +109,8 @@ export default function FormationsScreen() {
   }, [modalVisible]);
 
   const fetchData = async () => {
-    try {
-      const response = await axios.get(`${API_URL}/api/formations`);
-      setFormations(response.data);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    } finally {
-      setLoading(false);
-    }
+    setFormations(FORMATIONS as Formation[]);
+    setLoading(false);
   };
 
   const getLevelLabel = (level: string) => {

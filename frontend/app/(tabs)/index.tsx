@@ -12,9 +12,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import axios from 'axios';
-
-const API_URL = process.env.EXPO_PUBLIC_BACKEND_URL || '';
+import { SCOUT_TIPS } from '@/src/data';
 
 interface ScoutTip {
   id: string;
@@ -37,12 +35,7 @@ export default function HomeScreen() {
   }, []);
 
   const fetchTips = async () => {
-    try {
-      const response = await axios.get(`${API_URL}/api/scout-tips`);
-      setTips(response.data.slice(0, 3));
-    } catch (error) {
-      console.error('Error fetching tips:', error);
-    }
+    setTips((SCOUT_TIPS as ScoutTip[]).slice(0, 3));
   };
 
   const onRefresh = async () => {

@@ -13,9 +13,15 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import axios from 'axios';
+import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS } from '@/src/data';
 
-const API_URL = process.env.EXPO_PUBLIC_BACKEND_URL || '';
+const LOCAL_DATA: Record<string, any[]> = {
+  roles: PLAYER_ROLES,
+  meta: META_TACTICS,
+  skills: SPECIAL_ABILITIES,
+  training: TRAINING_GUIDE,
+  arrows: ARROW_TACTICS,
+};
 
 type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows';
 
@@ -58,18 +64,9 @@ export default function AcademyScreen() {
   const [modalVisible, setModalVisible] = useState(false);
   const [fadeAnim] = useState(new Animated.Value(0));
 
-  const fetchSection = useCallback(async (sec: SectionId) => {
-    const def = SECTIONS.find((s) => s.id === sec)!;
-    setLoading(true);
-    try {
-      const res = await axios.get(`${API_URL}${def.endpoint}`);
-      setData((prev) => ({ ...prev, [sec]: res.data }));
-      setLoaded((prev) => ({ ...prev, [sec]: true }));
-    } catch (e) {
-      console.error(`Error fetching ${sec}:`, e);
-    } finally {
-      setLoading(false);
-    }
+  const fetchSection = useCallback((sec: SectionId) => {
+    setData((prev) => ({ ...prev, [sec]: LOCAL_DATA[sec] || [] }));
+    setLoaded((prev) => ({ ...prev, [sec]: true }));
   }, []);
 
   useEffect(() => {
