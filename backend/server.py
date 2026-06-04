@@ -5838,6 +5838,70 @@ SCOUT_TIPS = [
         "title_it": "Falso Nove: Errori da Evitare",
         "content_en": "Don't build the whole team around a single super-striker while ignoring Team Balance (keep it between 9.2 and 10). And don't turn on high pressing too early: it drains the fitness you need in the closing minutes.",
         "content_it": "Non concentrare tutta la squadra su un solo super attaccante ignorando il Team Balance (tienilo tra 9.2 e 10). E non attivare il pressing alto troppo presto: riduce la condizione fisica nei minuti finali."
+    },
+    {
+        "id": "57",
+        "category": "economy",
+        "title_en": "Special Sponsor First",
+        "title_it": "Special Sponsor Prima di Tutto",
+        "content_en": "Always sign the Special Sponsor (the daily tokens one) before any other deal. Over a season the cumulative income is the highest free token source in the game.",
+        "content_it": "Firma sempre lo Special Sponsor (quello dei token giornalieri) prima di ogni altro accordo. Sull'arco di una stagione l'introito cumulato è la fonte di token gratuita più alta del gioco."
+    },
+    {
+        "id": "58",
+        "category": "economy",
+        "title_en": "Daily Free Events",
+        "title_it": "Eventi Gratuiti Quotidiani",
+        "content_en": "Open the game every day for Draw Frenzy, free packs and rewards. Five minutes of activity equal 2-5 free tokens — over a season that's a serious budget.",
+        "content_it": "Apri il gioco ogni giorno per Draw Frenzy, pacchetti gratuiti e ricompense. Cinque minuti di attività valgono 2-5 token gratis — sull'arco della stagione è un budget serio."
+    },
+    {
+        "id": "59",
+        "category": "economy",
+        "title_en": "Auction Ceiling",
+        "title_it": "Tetto in Asta",
+        "content_en": "Set yourself a max-token limit per auction (e.g. 30 tokens for a key role, 15 for a backup). Never go beyond, even in the heat of bidding: tomorrow there's a better one.",
+        "content_it": "Datti un limite massimo di token per ogni asta (es. 30 token per un ruolo chiave, 15 per una riserva). Non superarlo mai, anche nella foga: domani ce n'è uno migliore."
+    },
+    {
+        "id": "60",
+        "category": "economy",
+        "title_en": "Youth Academy ROI",
+        "title_it": "ROI Accademia Giovanile",
+        "content_en": "15 tokens spent on the youth academy each season give an average of 1-2 six-star young players. Three years like this and you have a top squad without buying anyone.",
+        "content_it": "15 token spesi nell'accademia giovanile ogni stagione regalano in media 1-2 giovani da 6 stelle. Tre stagioni così e hai una rosa top senza comprare nessuno."
+    },
+    {
+        "id": "61",
+        "category": "economy",
+        "title_en": "Sell Before Negative",
+        "title_it": "Vendere Prima del Negativo",
+        "content_en": "A 27-year-old player still sells well; a 30-year-old loses most of his value. Plan generational changes 2 seasons in advance, you won't take losses.",
+        "content_it": "Un giocatore di 27 anni si vende ancora bene; uno di 30 perde la maggior parte del valore. Pianifica i ricambi generazionali con 2 stagioni di anticipo, non andrai in perdita."
+    },
+    {
+        "id": "62",
+        "category": "economy",
+        "title_en": "Friend Bonus Multiplier",
+        "title_it": "Moltiplicatore Bonus Amici",
+        "content_en": "Add 30+ active friends from the official Top Eleven communities. Their daily bonuses give you free tokens, packs and gifts: it's the equivalent of an extra sponsor.",
+        "content_it": "Aggiungi 30+ amici attivi dalle community ufficiali Top Eleven. I loro bonus quotidiani ti regalano token, pacchetti e gift gratis: equivale a uno sponsor extra."
+    },
+    {
+        "id": "63",
+        "category": "economy",
+        "title_en": "Don't Pay to Skip",
+        "title_it": "Non Pagare per Saltare",
+        "content_en": "Tokens to instantly heal an injury or speed up the academy are the worst purchases in the game. Wait the 24h: you'll save tokens to use where it really matters.",
+        "content_it": "I token per curare istantaneamente un infortunio o accelerare l'accademia sono i peggiori acquisti del gioco. Aspetta le 24h: risparmierai token per spenderli dove conta davvero."
+    },
+    {
+        "id": "64",
+        "category": "economy",
+        "title_en": "Right Stadium Size",
+        "title_it": "Stadio della Misura Giusta",
+        "content_en": "Don't over-grow your stadium. A fully-filled 35,000-seat stadium gives more income (and fan boost) than a half-empty 60,000-seat one.",
+        "content_it": "Non sovradimensionare lo stadio. Uno stadio da 35.000 posti sempre pieno rende più (anche in bonus tifo) di uno da 60.000 sempre mezzo vuoto."
     }
 ]
 
@@ -6580,6 +6644,256 @@ REAL_TEAMS = [
     }
 ]
 
+# ==================== SEASON STORIES DATA ====================
+
+SEASON_STORIES = [
+    {
+        "id": "treble-with-433",
+        "title_en": "Treble Season with the 4-3-3 False Nine",
+        "title_it": "Stagione del Triplete col 4-3-3 Falso Nove",
+        "subtitle_en": "How to win League, Cup and Champions in one season",
+        "subtitle_it": "Come vincere Campionato, Coppa e Champions in una stagione",
+        "formation_used": "4-3-3",
+        "outcome_en": "Champions League + League + Cup",
+        "outcome_it": "Champions League + Campionato + Coppa",
+        "story_en": "Pre-season: build a False Nine striker with high finishing, shooting and creativity (around 95% white attributes at 6 stars). Sign two wingers with the Dual Position ability. In the first 14 league matches use a Normal mentality to gather points without burning fitness, with Down Both Flanks passing. From matchday 15 switch to Attacking with red arrows on the wingers: this is when you create the lead. For the Champions League knockouts switch to Defensive with high pressing only in your own half: the False Nine drops deep, the wingers cut inside in transition. Substitute aggressive players in the last 15 minutes to keep the back line fresh.",
+        "story_it": "Pre-stagione: costruisci un attaccante Falso Nove con finalizzazione, tiro e creatività alti (attributi bianchi al 95% circa con 6 stelle). Acquista due ali con abilità Dual Position. Nelle prime 14 partite di campionato usa mentalità Normale per accumulare punti senza bruciare condizione, con passaggi sulle fasce. Dalla giornata 15 passa a Offensiva con frecce rosse sulle ali: è qui che crei il gap. Nei knockout di Champions passa a Difensiva con pressing alto solo nella tua metà: il Falso Nove si abbassa e le ali tagliano dentro in transizione. Sostituisci i giocatori aggressivi negli ultimi 15 minuti per tenere la difesa fresca.",
+        "key_lessons_en": [
+            "Build the squad in pre-season, not match by match",
+            "Switch mentality every 14 days based on objective",
+            "Save Fast Trainings for the Champions knockout rounds",
+            "Always 80/80 morale and condition before crucial matches"
+        ],
+        "key_lessons_it": [
+            "Costruisci la rosa in pre-season, non partita per partita",
+            "Cambia mentalità ogni 14 giorni in base all'obiettivo",
+            "Tieni gli Allenamenti Rapidi per i knockout di Champions",
+            "Sempre 80/80 di morale e condizione prima delle partite chiave"
+        ]
+    },
+    {
+        "id": "underdog-with-451v",
+        "title_en": "Underdog Survival with the 4-5-1 V-Style",
+        "title_it": "Sopravvivenza da Sfavorito col 4-5-1 V-Style",
+        "subtitle_en": "Beat stronger teams without spending tokens",
+        "subtitle_it": "Battere squadre più forti senza spendere token",
+        "formation_used": "4-5-1 V-Style",
+        "outcome_en": "Top-3 finish in a tough league",
+        "outcome_it": "Piazzamento in zona Champions in un campionato difficile",
+        "story_en": "When you face teams 1-2 stars stronger than you, the 4-5-1 V-Style is the answer. Anchor man DMC, Defensive mentality, Down Both Flanks passing, low pressing, zonal marking and offside trap ON. The AML/AMR with red arrow exploit the space left by their full-backs who push high. The only striker doesn't fight in the box: he drops to receive long balls and lays off to the wingers cutting inside. Each match you concede 60% possession but win 1-0 or 2-1. The secret is keeping all 11 players within 25 meters of each other.",
+        "story_it": "Quando affronti squadre 1-2 stelle più forti di te, il 4-5-1 V-Style è la risposta. DMC ancora, mentalità Difensiva, passaggi sulle fasce, pressing basso, marcatura a zona e fuorigioco ON. Gli AML/AMR con freccia rossa sfruttano lo spazio lasciato dai loro terzini che si sbilanciano. L'unico attaccante non combatte in area: si abbassa per ricevere palle lunghe e scarica per le ali che tagliano dentro. Ogni partita concedi il 60% del possesso ma vinci 1-0 o 2-1. Il segreto è tenere tutti gli 11 entro 25 metri uno dall'altro.",
+        "key_lessons_en": [
+            "Defending well isn't a defect: it's a strategy",
+            "The DMC is worth more than a 4th attacker",
+            "Trust the offside trap if your line is fast",
+            "Don't change shape during the match: trust your plan"
+        ],
+        "key_lessons_it": [
+            "Difendere bene non è un difetto: è una strategia",
+            "Il DMC vale più di un quarto attaccante",
+            "Fidati del fuorigioco se la tua linea è veloce",
+            "Non cambiare modulo durante la partita: fida del piano"
+        ]
+    },
+    {
+        "id": "comeback-with-arrows",
+        "title_en": "0-2 to 3-2: Comeback with Arrows",
+        "title_it": "Dal 0-2 al 3-2: Rimonta con le Frecce",
+        "subtitle_en": "How to flip a match in the last 30 minutes",
+        "subtitle_it": "Come ribaltare una partita negli ultimi 30 minuti",
+        "formation_used": "4-2-3-1 → 3-4-1-2",
+        "outcome_en": "Final comeback win 3-2",
+        "outcome_it": "Rimonta finale 3-2",
+        "story_en": "Down 0-2 at the 60th minute, opponent same star rating. Step 1: pause and save formation. Step 2: switch from 4-2-3-1 to 3-4-1-2 (one CB becomes a striker), Attacking mentality, high pressing, hard tackling, man-to-man marking. Step 3: red arrows on the strikers, ML and MR; blue arrow on the AMC who acts as a deep playmaker. Step 4: bring on the fast striker from the bench in place of a tired MC. Within 15 minutes you usually have 2-3 clear chances. Risk: if you don't score quickly you concede a third, but at 0-2 you don't have much to lose.",
+        "story_it": "Sotto 0-2 al 60°, avversario stesso livello stelle. Step 1: metti in pausa e salva la formazione. Step 2: passa dal 4-2-3-1 al 3-4-1-2 (un DC diventa attaccante), mentalità Offensiva, pressing alto, contrasti duri, marcatura a uomo. Step 3: frecce rosse su attaccanti, ML e MR; freccia blu sull'AMC che funge da regista basso. Step 4: inserisci la punta veloce dalla panchina al posto di un MC stanco. In 15 minuti di solito hai 2-3 occasioni nitide. Rischio: se non segni subito ne prendi un terzo, ma al 0-2 non hai molto da perdere.",
+        "key_lessons_en": [
+            "All-out attack works only when you're losing for sure",
+            "Never substitute defenders during a comeback",
+            "The 3-4-1-2 is a real comeback weapon",
+            "Save useful formations BEFORE the match"
+        ],
+        "key_lessons_it": [
+            "L'attacco totale funziona solo se stai perdendo sicuro",
+            "Non sostituire mai i difensori durante una rimonta",
+            "Il 3-4-1-2 è una vera arma da rimonta",
+            "Salva le formazioni utili PRIMA della partita"
+        ]
+    },
+    {
+        "id": "rebuild-with-young",
+        "title_en": "Rebuilding the Squad: All-Young Season",
+        "title_it": "Ricostruzione Rosa: Stagione tutta Giovani",
+        "subtitle_en": "Win with the youth academy without buying anyone",
+        "subtitle_it": "Vincere con l'accademia giovanile senza comprare nessuno",
+        "formation_used": "4-4-2 Classic",
+        "outcome_en": "Mid-table finish, full squad ready for next year",
+        "outcome_it": "Salvezza tranquilla, rosa pronta per la stagione dopo",
+        "story_en": "Goal: not spend a single token, get 3 six-star youth players, finish the league without relegation. Stick to the 4-4-2 Classic, the simplest formation: less tactical work, more space to manage minutes. Rotate two starting elevens every 3 days. Fast Train daily for the players with the highest growth potential. Friend bonuses at maximum. End of season: a squad with average 5.5 stars but with 3 six-star youth players to bring in next season.",
+        "story_it": "Obiettivo: non spendere un token, ottenere 3 giovani da 6 stelle, chiudere il campionato senza retrocedere. Stai sul 4-4-2 Classico, il modulo più semplice: meno lavoro tattico, più spazio per gestire minutaggi. Ruota due undici titolari ogni 3 giorni. Allena con Fast Training tutti i giorni i giocatori col potenziale di crescita più alto. Bonus amici al massimo. A fine stagione: squadra con 5.5 stelle medie ma con 3 giovani da 6 stelle da titolari l'anno dopo.",
+        "key_lessons_en": [
+            "Sometimes 'mid-table' is the right plan",
+            "The youth academy gives more in the long run than the auctions",
+            "Rotation prevents injuries and saves morale",
+            "Money saved this year is double the value next season"
+        ],
+        "key_lessons_it": [
+            "A volte 'metà classifica' è il piano giusto",
+            "L'accademia rende più nel lungo periodo delle aste",
+            "La rotazione evita infortuni e salva il morale",
+            "I token risparmiati quest'anno valgono il doppio l'anno prossimo"
+        ]
+    },
+    {
+        "id": "tiki-taka-fanatic",
+        "title_en": "The Tiki-Taka Fanatic: Possession 75%",
+        "title_it": "Fanatico del Tiki-Taka: Possesso 75%",
+        "subtitle_en": "When numbers lie and you still win",
+        "subtitle_it": "Quando i numeri mentono e vinci lo stesso",
+        "formation_used": "3-1-5-1 AMC",
+        "outcome_en": "League win with 75% average possession but only +12 GD",
+        "outcome_it": "Campionato vinto col 75% di possesso medio ma solo +12 di differenza reti",
+        "story_en": "3-1-5-1 with the strongest AMC available, anchor DMC, three CBs at 90%+ marking. Possession-obsessed system: Through the Middle passing, short style, no counter, low pressing. You'll see absurd stats: 75% possession, 18-3 shots, only 1-2 goals scored. The opponent will go crazy. Difficult against very deep teams (5-4-1 Flat); easy against everything else. The lesson: if you don't concede chances and have 75% of the ball, sooner or later something happens.",
+        "story_it": "3-1-5-1 con il miglior AMC disponibile, DMC ancora, tre DC al 90%+ di marcatura. Sistema ossessionato dal possesso: passaggi al centro, stile corto, no contropiede, pressing basso. Vedrai statistiche assurde: 75% possesso, 18-3 ai tiri, solo 1-2 gol fatti. L'avversario impazzirà. Difficile contro squadre molto chiuse (5-4-1 Flat); facile contro tutto il resto. La lezione: se non concedi occasioni e hai il 75% di palla, prima o poi qualcosa succede.",
+        "key_lessons_en": [
+            "Possession kills opponent's morale in the long match",
+            "An AMC at 95% in his role is worth more than 2 strikers",
+            "Against 5-4-1 Flat possession isn't enough: bring crosses",
+            "Be patient with the 1-0: don't get nervous"
+        ],
+        "key_lessons_it": [
+            "Il possesso ammazza il morale dell'avversario sulla lunga",
+            "Un AMC al 95% nel ruolo vale più di 2 attaccanti",
+            "Contro il 5-4-1 Flat il possesso non basta: porta cross",
+            "Sii paziente con l'1-0: non innervosirti"
+        ]
+    }
+]
+
+# ==================== FAQ DATA ====================
+
+FAQ = [
+    {
+        "id": "faq-1",
+        "category": "app",
+        "question_en": "Where do the data in this app come from?",
+        "question_it": "Da dove vengono i dati di questa app?",
+        "answer_en": "From a careful study of forums (Top Eleven Forum, Reddit r/topeleven), tactical videos, BlueStacks guides and the BojBojTech reference app, organized in a NotebookLM and structured into 9 datasets.",
+        "answer_it": "Da uno studio attento di forum (Top Eleven Forum, Reddit r/topeleven), video tattici, guide BlueStacks e dall'app di riferimento BojBojTech, organizzati in un NotebookLM e strutturati in 9 dataset."
+    },
+    {
+        "id": "faq-2",
+        "category": "app",
+        "question_en": "Does it work offline?",
+        "question_it": "Funziona offline?",
+        "answer_en": "Yes, all tactical data is embedded in the app. The AI chat is the only feature that needs internet.",
+        "answer_it": "Sì, tutti i dati tattici sono incorporati nell'app. La chat AI è l'unica funzione che richiede internet."
+    },
+    {
+        "id": "faq-3",
+        "category": "tactics",
+        "question_en": "Why does the same formation give different settings vs stronger/equal/weaker?",
+        "question_it": "Perché lo stesso modulo dà impostazioni diverse vs più forte / pari / più debole?",
+        "answer_en": "Top Eleven uses an internal star/quality rating: against weaker teams you can push, against stronger ones you must defend deeper. The app calibrates mentality, pressing, marking and arrows accordingly.",
+        "answer_it": "Top Eleven usa un rating interno di stelle/qualità: contro squadre più deboli puoi spingere, contro più forti devi difendere più basso. L'app calibra mentalità, pressing, marcatura e frecce di conseguenza."
+    },
+    {
+        "id": "faq-4",
+        "category": "tactics",
+        "question_en": "Red arrow vs blue arrow: what's the difference?",
+        "question_it": "Freccia rossa vs blu: che differenza c'è?",
+        "answer_en": "Red = the player advances and joins the attack (offensive). Blue = the player holds a deeper position and defends. Generally: red for fast players, blue for slower ones.",
+        "answer_it": "Rossa = il giocatore avanza e partecipa all'attacco (offensiva). Blu = il giocatore mantiene una posizione più arretrata e difende. In linea generale: rossa per i veloci, blu per i lenti."
+    },
+    {
+        "id": "faq-5",
+        "category": "tactics",
+        "question_en": "When do I use the offside trap?",
+        "question_it": "Quando uso il fuorigioco?",
+        "answer_en": "ON if the opponent plays long balls to fast strikers and your back line has high positioning. OFF against direct play or compact strikers who don't run in behind.",
+        "answer_it": "ON se l'avversario gioca lanci lunghi su attaccanti veloci e la tua linea difensiva ha alto posizionamento. OFF contro avversari diretti o con attaccanti compatti che non scattano alle spalle."
+    },
+    {
+        "id": "faq-6",
+        "category": "tactics",
+        "question_en": "What's the best formation for everyone?",
+        "question_it": "Qual è la migliore formazione in assoluto?",
+        "answer_en": "There is no 'best in absolute'. In the 2026 meta the 4-5-1 V-Style is the most versatile and the 4-3-3 with False Nine is the most lethal. Choose based on the players you have, not on the latest trend.",
+        "answer_it": "Non esiste 'la migliore in assoluto'. Nel meta 2026 il 4-5-1 V-Style è il più versatile e il 4-3-3 col Falso Nove è il più letale. Scegli in base ai giocatori che hai, non alla moda del momento."
+    },
+    {
+        "id": "faq-7",
+        "category": "training",
+        "question_en": "How do I get more 6-star players from the youth academy?",
+        "question_it": "Come ottengo più giocatori da 6 stelle dall'accademia giovanile?",
+        "answer_en": "Spend at least 15 tokens on the academy each season. Choose the highest-quality option available. With consistency it's realistic to get 3 6-star players a year.",
+        "answer_it": "Spendi almeno 15 token nell'accademia ogni stagione. Scegli l'opzione di qualità maggiore quando disponibile. Con costanza è realistico ottenere 3 giocatori da 6 stelle l'anno."
+    },
+    {
+        "id": "faq-8",
+        "category": "training",
+        "question_en": "Should I train all the players or just the starting eleven?",
+        "question_it": "Devo allenare tutti i giocatori o solo i titolari?",
+        "answer_en": "Priority to the starting eleven. The reserves train only enough to keep morale up. Save Fast Trainings for the key roles (False Nine striker, DMC, AMC).",
+        "answer_it": "Priorità ai titolari. Le riserve allenano solo quanto basta per tenere alto il morale. Tieni gli Allenamenti Rapidi per i ruoli chiave (attaccante Falso Nove, DMC, AMC)."
+    },
+    {
+        "id": "faq-9",
+        "category": "economy",
+        "question_en": "Are tokens worth buying with real money?",
+        "question_it": "I token valgono comprarli con soldi veri?",
+        "answer_en": "Honest answer: no, if you play casually. Yes if you want to compete at high-association level. With the Special Sponsor and free events you can accumulate enough tokens for an honest mid-table season.",
+        "answer_it": "Risposta onesta: no, se giochi a livello casual. Sì se vuoi competere ad alti livelli di associazione. Con lo Special Sponsor e gli eventi gratuiti puoi accumulare token sufficienti per una stagione onesta a metà classifica."
+    },
+    {
+        "id": "faq-10",
+        "category": "economy",
+        "question_en": "Which sponsor should I choose?",
+        "question_it": "Quale sponsor scelgo?",
+        "answer_en": "The Special Sponsor (the daily token one) is the most cost-effective in the long run. The shirt sponsor only if you need quick cash for an auction.",
+        "answer_it": "Lo Special Sponsor (quello dei token giornalieri) è il più conveniente sul lungo periodo. Lo sponsor maglietta solo se hai bisogno di cassa rapida per un'asta."
+    },
+    {
+        "id": "faq-11",
+        "category": "matchday",
+        "question_en": "Should I watch the match live or simulate?",
+        "question_it": "Devo guardare la partita live o simulare?",
+        "answer_en": "Live ONLY if you can make tactical changes (mentality, substitutions). If you can't watch, simulating is the same. Live the matches where you can actually intervene.",
+        "answer_it": "Live SOLO se puoi fare cambi tattici (mentalità, sostituzioni). Se non puoi seguire, simulare è la stessa cosa. Vivi solo le partite dove puoi davvero intervenire."
+    },
+    {
+        "id": "faq-12",
+        "category": "matchday",
+        "question_en": "When should I make the first substitution?",
+        "question_it": "Quando faccio la prima sostituzione?",
+        "answer_en": "Around the 55-65 minute, prioritizing midfielders who have lost more condition. Save one substitution for an emergency (injury or comeback).",
+        "answer_it": "Intorno al 55-65° minuto, dando priorità ai centrocampisti che hanno perso più condizione. Tieni una sostituzione per emergenza (infortunio o rimonta)."
+    },
+    {
+        "id": "faq-13",
+        "category": "matchday",
+        "question_en": "What does Team Balance mean? Why is it important?",
+        "question_it": "Cosa significa Team Balance? Perché è importante?",
+        "answer_en": "It's the cohesion index of your team. Below 9.0 you risk losing matches you should win. Keep it between 9.2 and 10. To get it up: rotate sensibly, friend bonuses, avoid 'mutant' players (single overpowered player).",
+        "answer_it": "È l'indice di coesione della tua squadra. Sotto 9.0 rischi di perdere partite che dovresti vincere. Tienilo tra 9.2 e 10. Per alzarlo: ruota con criterio, bonus amici, evita giocatori 'mutanti' (un solo overpowered)."
+    },
+    {
+        "id": "faq-14",
+        "category": "app",
+        "question_en": "Will the data be updated when the meta changes?",
+        "question_it": "I dati verranno aggiornati quando cambia il meta?",
+        "answer_en": "Yes, the app is built so we can update tactical data when a new meta emerges (currently 2026). The update will arrive with a new app version.",
+        "answer_it": "Sì, l'app è costruita per essere aggiornata nei dati tattici quando emerge un nuovo meta (attualmente 2026). L'aggiornamento arriverà con una nuova versione dell'app."
+    },
+    {
+        "id": "faq-15",
+        "category": "app",
+        "question_en": "Can I suggest a tactic or report an error?",
+        "question_it": "Posso suggerire una tattica o segnalare un errore?",
+        "answer_en": "Yes — that's the goal. A feedback button will be added in the next versions to gather suggestions and corrections directly from the community.",
+        "answer_it": "Sì — è proprio l'obiettivo. Sarà aggiunto un pulsante di feedback nelle prossime versioni per raccogliere suggerimenti e correzioni direttamente dalla community."
+    }
+]
+
 # ==================== ARROW TACTICS DATA ====================
 # Notation: up arrow = red arrow (forward/attacking), down arrow = blue arrow (back/defensive)
 
@@ -6959,6 +7273,36 @@ async def get_real_team(team_id: str):
         if team["id"] == team_id:
             return team
     raise HTTPException(status_code=404, detail="Real team not found")
+
+# ==================== SEASON STORIES ENDPOINTS ====================
+
+@api_router.get("/season-stories")
+async def get_season_stories():
+    """Get all narrated season stories"""
+    return SEASON_STORIES
+
+@api_router.get("/season-stories/{story_id}")
+async def get_season_story(story_id: str):
+    """Get a specific season story"""
+    for story in SEASON_STORIES:
+        if story["id"] == story_id:
+            return story
+    raise HTTPException(status_code=404, detail="Season story not found")
+
+# ==================== FAQ ENDPOINTS ====================
+
+@api_router.get("/faq")
+async def get_faq():
+    """Get all FAQs"""
+    return FAQ
+
+@api_router.get("/faq/{category}")
+async def get_faq_by_category(category: str):
+    """Filter FAQs by category (app, tactics, training, economy, matchday)"""
+    items = [f for f in FAQ if f["category"] == category]
+    if not items:
+        raise HTTPException(status_code=404, detail="No FAQs found for this category")
+    return items
 
 # ==================== FAVORITES ENDPOINTS ====================
 

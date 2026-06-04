@@ -446,5 +446,69 @@
 "title_it": "Falso Nove: Errori da Evitare",
 "content_en": "Don't build the whole team around a single super-striker while ignoring Team Balance (keep it between 9.2 and 10). And don't turn on high pressing too early: it drains the fitness you need in the closing minutes.",
 "content_it": "Non concentrare tutta la squadra su un solo super attaccante ignorando il Team Balance (tienilo tra 9.2 e 10). E non attivare il pressing alto troppo presto: riduce la condizione fisica nei minuti finali."
+},
+{
+"id": "57",
+"category": "economy",
+"title_en": "Special Sponsor First",
+"title_it": "Special Sponsor Prima di Tutto",
+"content_en": "Always sign the Special Sponsor (the daily tokens one) before any other deal. Over a season the cumulative income is the highest free token source in the game.",
+"content_it": "Firma sempre lo Special Sponsor (quello dei token giornalieri) prima di ogni altro accordo. Sull'arco di una stagione l'introito cumulato è la fonte di token gratuita più alta del gioco."
+},
+{
+"id": "58",
+"category": "economy",
+"title_en": "Daily Free Events",
+"title_it": "Eventi Gratuiti Quotidiani",
+"content_en": "Open the game every day for Draw Frenzy, free packs and rewards. Five minutes of activity equal 2-5 free tokens — over a season that's a serious budget.",
+"content_it": "Apri il gioco ogni giorno per Draw Frenzy, pacchetti gratuiti e ricompense. Cinque minuti di attività valgono 2-5 token gratis — sull'arco della stagione è un budget serio."
+},
+{
+"id": "59",
+"category": "economy",
+"title_en": "Auction Ceiling",
+"title_it": "Tetto in Asta",
+"content_en": "Set yourself a max-token limit per auction (e.g. 30 tokens for a key role, 15 for a backup). Never go beyond, even in the heat of bidding: tomorrow there's a better one.",
+"content_it": "Datti un limite massimo di token per ogni asta (es. 30 token per un ruolo chiave, 15 per una riserva). Non superarlo mai, anche nella foga: domani ce n'è uno migliore."
+},
+{
+"id": "60",
+"category": "economy",
+"title_en": "Youth Academy ROI",
+"title_it": "ROI Accademia Giovanile",
+"content_en": "15 tokens spent on the youth academy each season give an average of 1-2 six-star young players. Three years like this and you have a top squad without buying anyone.",
+"content_it": "15 token spesi nell'accademia giovanile ogni stagione regalano in media 1-2 giovani da 6 stelle. Tre stagioni così e hai una rosa top senza comprare nessuno."
+},
+{
+"id": "61",
+"category": "economy",
+"title_en": "Sell Before Negative",
+"title_it": "Vendere Prima del Negativo",
+"content_en": "A 27-year-old player still sells well; a 30-year-old loses most of his value. Plan generational changes 2 seasons in advance, you won't take losses.",
+"content_it": "Un giocatore di 27 anni si vende ancora bene; uno di 30 perde la maggior parte del valore. Pianifica i ricambi generazionali con 2 stagioni di anticipo, non andrai in perdita."
+},
+{
+"id": "62",
+"category": "economy",
+"title_en": "Friend Bonus Multiplier",
+"title_it": "Moltiplicatore Bonus Amici",
+"content_en": "Add 30+ active friends from the official Top Eleven communities. Their daily bonuses give you free tokens, packs and gifts: it's the equivalent of an extra sponsor.",
+"content_it": "Aggiungi 30+ amici attivi dalle community ufficiali Top Eleven. I loro bonus quotidiani ti regalano token, pacchetti e gift gratis: equivale a uno sponsor extra."
+},
+{
+"id": "63",
+"category": "economy",
+"title_en": "Don't Pay to Skip",
+"title_it": "Non Pagare per Saltare",
+"content_en": "Tokens to instantly heal an injury or speed up the academy are the worst purchases in the game. Wait the 24h: you'll save tokens to use where it really matters.",
+"content_it": "I token per curare istantaneamente un infortunio o accelerare l'accademia sono i peggiori acquisti del gioco. Aspetta le 24h: risparmierai token per spenderli dove conta davvero."
+},
+{
+"id": "64",
+"category": "economy",
+"title_en": "Right Stadium Size",
+"title_it": "Stadio della Misura Giusta",
+"content_en": "Don't over-grow your stadium. A fully-filled 35,000-seat stadium gives more income (and fan boost) than a half-empty 60,000-seat one.",
+"content_it": "Non sovradimensionare lo stadio. Uno stadio da 35.000 posti sempre pieno rende più (anche in bonus tifo) di uno da 60.000 sempre mezzo vuoto."
 }
 ]

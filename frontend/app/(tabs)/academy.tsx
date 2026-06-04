@@ -13,7 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS } from '@/src/data';
+import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS, SEASON_STORIES, FAQ } from '@/src/data';
 
 const LOCAL_DATA: Record<string, any[]> = {
   roles: PLAYER_ROLES,
@@ -22,9 +22,11 @@ const LOCAL_DATA: Record<string, any[]> = {
   training: TRAINING_GUIDE,
   arrows: ARROW_TACTICS,
   teams: REAL_TEAMS,
+  stories: SEASON_STORIES,
+  faq: FAQ,
 };
 
-type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows' | 'teams';
+type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows' | 'teams' | 'stories' | 'faq';
 
 interface SectionDef {
   id: SectionId;
@@ -41,6 +43,8 @@ const SECTIONS: SectionDef[] = [
   { id: 'training', endpoint: '/api/training-guide', label_en: 'Training', label_it: 'Allenam.', icon: 'barbell-outline' },
   { id: 'arrows', endpoint: '/api/arrow-tactics', label_en: 'Arrows', label_it: 'Frecce', icon: 'swap-vertical-outline' },
   { id: 'teams', endpoint: '/api/real-teams', label_en: 'Teams', label_it: 'Squadre', icon: 'shield-half-outline' },
+  { id: 'stories', endpoint: '/api/season-stories', label_en: 'Stories', label_it: 'Storie', icon: 'book-outline' },
+  { id: 'faq', endpoint: '/api/faq', label_en: 'FAQ', label_it: 'FAQ', icon: 'help-circle-outline' },
 ];
 
 const TIER_COLORS: Record<string, string> = {
@@ -56,10 +60,10 @@ export default function AcademyScreen() {
 
   const [section, setSection] = useState<SectionId>('roles');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], meta: [], skills: [], training: [], arrows: [], teams: [],
+    roles: [], meta: [], skills: [], training: [], arrows: [], teams: [], stories: [], faq: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, meta: false, skills: false, training: false, arrows: false, teams: false,
+    roles: false, meta: false, skills: false, training: false, arrows: false, teams: false, stories: false, faq: false,
   });
   const [loading, setLoading] = useState(false);
   const [selected, setSelected] = useState<any | null>(null);
@@ -99,6 +103,8 @@ export default function AcademyScreen() {
       case 'training': return item.position;
       case 'arrows': return item.formation;
       case 'teams': return item.team;
+      case 'stories': return isIt ? item.title_it : item.title_en;
+      case 'faq': return isIt ? item.question_it : item.question_en;
       default: return '';
     }
   };
@@ -110,6 +116,8 @@ export default function AcademyScreen() {
       case 'training': return (isIt ? item.priority_attributes_it : item.priority_attributes_en).join(' · ');
       case 'arrows': return item.arrows;
       case 'teams': return `${item.manager} · ${item.te_formation}`;
+      case 'stories': return isIt ? item.subtitle_it : item.subtitle_en;
+      case 'faq': return (item.category || '').toUpperCase();
       default: return '';
     }
   };
@@ -277,6 +285,19 @@ export default function AcademyScreen() {
                   </View>
                   <DetailBlock label={isIt ? 'MOVIMENTI CHIAVE' : 'KEY MOVEMENTS'} value={isIt ? selected.key_movements_it : selected.key_movements_en} />
                   <DetailBlock label={isIt ? 'PERCHÉ FUNZIONA' : 'WHY IT WORKS'} value={isIt ? selected.explanation_it : selected.explanation_en} />
+                </>
+              )}
+              {selected && section === 'stories' && (
+                <>
+                  <DetailBlock label={isIt ? 'MODULO USATO' : 'FORMATION USED'} value={selected.formation_used} />
+                  <DetailBlock label={isIt ? 'RISULTATO' : 'OUTCOME'} value={isIt ? selected.outcome_it : selected.outcome_en} />
+                  <DetailBlock label={isIt ? 'LA STORIA' : 'THE STORY'} value={isIt ? selected.story_it : selected.story_en} />
+                  <DetailChips label={isIt ? 'LEZIONI CHIAVE' : 'KEY LESSONS'} values={isIt ? selected.key_lessons_it : selected.key_lessons_en} />
+                </>
+              )}
+              {selected && section === 'faq' && (
+                <>
+                  <DetailBlock label={isIt ? 'RISPOSTA' : 'ANSWER'} value={isIt ? selected.answer_it : selected.answer_en} />
                 </>
               )}
               {selected && section === 'teams' && (
