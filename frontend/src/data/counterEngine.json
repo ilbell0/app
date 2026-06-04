@@ -2227,5 +2227,328 @@
 },
 "w": "★ VS 3-1-5-1 DEBOLE: Pressing totale! Solo 3 DC + 1 DMC. Superiorità numerica ovunque. Attacca le fasce con DL/DR avanti!"
 }
+},
+{
+"av": "4-3-3",
+"cat": "neu",
+"meta": true,
+"forte": {
+"mod": "4-4-2 C",
+"alt": "4-1-3-1-1",
+"men": "Difensiva",
+"pass": "Misto",
+"stile": "Lungo",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Norm",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ML": "—",
+"MR": "—",
+"ST": "—"
+},
+"w": "Compatto col 4-4-2. Lanci lunghi alla coppia d'attacco contro tridenti veloci"
+},
+"pari": {
+"mod": "4-4-2 C",
+"alt": "4-1-3-1-1",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Medio",
+"cont": "Norm",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"DL": "—",
+"DC": "—",
+"DR": "—",
+"ML": "↑",
+"MC": "—",
+"MR": "↑",
+"ST": "—"
+},
+"w": "Densità centrale a 4 in mediana. Le tue fasce attaccano i loro terzini"
+},
+"debole": {
+"mod": "4-1-3-2",
+"alt": "4-2-3-1",
+"men": "Offensiva",
+"pass": "Centro",
+"stile": "Corto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Norm",
+"marc": "Uomo",
+"fuo": "SI",
+"fr": {
+"DL": "↑",
+"DR": "↑",
+"DMC": "—",
+"MC": "↑",
+"AML": "—",
+"AMR": "—",
+"ST": "↑"
+},
+"w": "Sovraccarica il centro col DMC ancora. Pressing alto sui loro DC"
+}
+},
+{
+"av": "5-2-2(AML-AMR)-1",
+"cat": "dif",
+"forte": {
+"mod": "3W-1-2-3W-1",
+"alt": "4-4-2 C",
+"men": "Difensiva",
+"pass": "Misto",
+"stile": "Lungo",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Norm",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ML": "—",
+"MR": "—",
+"ST": "—"
+},
+"w": "Difesa a 3 wide e 4 dietro. Stop alle loro AML/AMR coi tuoi terzini bassi"
+},
+"pari": {
+"mod": "4-4-2 C",
+"alt": "4-3-3",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Medio",
+"cont": "Norm",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"DL": "↑",
+"DR": "↑",
+"ML": "↑",
+"MR": "↑",
+"ST": "—"
+},
+"w": "Spingi i terzini per attaccare le loro fasce. Le ali avversarie restano basse"
+},
+"debole": {
+"mod": "4-3-3",
+"alt": "3-4-3",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Corto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"DL": "↑",
+"DR": "↑",
+"AML": "↑",
+"AMR": "↑",
+"ST": "↑"
+},
+"w": "5 attaccanti vs 5 difensori. Sfonda dalle fasce con cross continui"
+}
+},
+{
+"av": "4-1-3W-2",
+"cat": "neu",
+"forte": {
+"mod": "5-4-1 F",
+"alt": "5-3W-2",
+"men": "Molto Difensiva",
+"pass": "Misto",
+"stile": "Lungo",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Norm",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"DMC": "—",
+"ML": "↓",
+"MR": "↓",
+"ST": "—"
+},
+"w": "Catenaccio. 5 dietro + 4 in mediana per chiudere le loro ali wide"
+},
+"pari": {
+"mod": "4-5-1 V",
+"alt": "4-4-2 C",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Medio",
+"cont": "Norm",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"DMC": "↓",
+"AML": "↑",
+"AMR": "↑",
+"ST": "—"
+},
+"w": "V-Style col DMC ancora. Ali sopra per sfruttare gli spazi che lasciano"
+},
+"debole": {
+"mod": "3-1-4-2",
+"alt": "3-5-2 F",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Corto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MC": "↑",
+"MR": "↑",
+"ST": "↑"
+},
+"w": "Sovraccarica il centro col DMC. Ali coi terzini sotto pressione"
+}
+},
+{
+"av": "3-1-4-2",
+"cat": "att",
+"forte": {
+"mod": "5-3W-2",
+"alt": "5-3N-2",
+"men": "Difensiva",
+"pass": "Misto",
+"stile": "Lungo",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Norm",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "5 dietro per neutralizzare le loro 2 punte. Le tue 2 punte fanno contropiede"
+},
+"pari": {
+"mod": "4-4-2 C",
+"alt": "4-1-2-1-2 ND",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Medio",
+"cont": "Norm",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"ST": "—"
+},
+"w": "Specchiati col 4-4-2. La tua difesa a 4 batte la loro a 3 sulle fasce"
+},
+"debole": {
+"mod": "3-4-3",
+"alt": "3-5-2 V",
+"men": "Offensiva",
+"pass": "Centro",
+"stile": "Corto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"AML": "↑",
+"AMR": "↑",
+"ST": "↑"
+},
+"w": "Tridente offensivo per sopraffare la loro difesa a 3"
+}
+},
+{
+"av": "3W-2N-3N-2",
+"cat": "dif",
+"forte": {
+"mod": "5-4-1 F",
+"alt": "4-1-4-1",
+"men": "Molto Difensiva",
+"pass": "Misto",
+"stile": "Lungo",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Norm",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"DMC": "↓",
+"ML": "↓",
+"MR": "↓",
+"ST": "—"
+},
+"w": "Centro affollato. Aspetta gli errori e riparti in contropiede col ST"
+},
+"pari": {
+"mod": "4-4-2 C",
+"alt": "4-5-1 F",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Medio",
+"cont": "Norm",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"ST": "—"
+},
+"w": "Sfrutta le fasce: il loro centro è denso ma le ali deboli"
+},
+"debole": {
+"mod": "3-5-2 F",
+"alt": "3-4-3",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Corto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"ST": "↑"
+},
+"w": "Pressing alto. Centrocampo a 5 ribalta il loro centro affollato"
+}
 }
 ]
