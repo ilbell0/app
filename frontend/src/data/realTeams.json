@@ -1,0 +1,262 @@
+[
+{
+"id": "pep-city",
+"manager": "Pep Guardiola",
+"team": "Manchester City",
+"era": "2017-oggi",
+"style_en": "Positional play, possession, false 9",
+"style_it": "Gioco di posizione, possesso, falso nove",
+"te_formation": "4-3-3",
+"te_formation_id": "433",
+"key_attributes_en": [
+"Passing",
+"Creativity",
+"Dribbling"
+],
+"key_attributes_it": [
+"Passaggio",
+"Creatività",
+"Dribbling"
+],
+"arrows": "DL↑ DR↑ AML↑ AMR↑",
+"mentality": "Attacking",
+"philosophy_en": "Dominate possession, overload the center, attack the half-spaces. The false nine drops between the lines to drag CBs out of position.",
+"philosophy_it": "Dominare il possesso, sovraccaricare il centro, attaccare gli half-spaces. Il falso nove si abbassa tra le linee per portare fuori i DC.",
+"how_to_copy_en": "Use the 4-3-3 with a False Nine striker. Push full-backs high with red arrows. Train MCs in Passing/Creativity. Set short passing through the middle.",
+"how_to_copy_it": "Usa il 4-3-3 con un attaccante Falso Nove. Spingi i terzini in alto con freccia rossa. Allena i MC in Passaggio/Creatività. Passaggi corti al centro."
+},
+{
+"id": "klopp-liverpool",
+"manager": "Jürgen Klopp",
+"team": "Liverpool",
+"era": "2015-2024",
+"style_en": "Gegenpressing, vertical transitions, heavy metal football",
+"style_it": "Gegenpressing, transizioni verticali, calcio aggressivo",
+"te_formation": "4-3-3",
+"te_formation_id": "433",
+"key_attributes_en": [
+"Stamina",
+"Pace",
+"Pressing"
+],
+"key_attributes_it": [
+"Resistenza",
+"Velocità",
+"Pressing"
+],
+"arrows": "AML↑ AMR↑ ST↑",
+"mentality": "Hard Attacking",
+"philosophy_en": "Press immediately after losing the ball, win it back in 5 seconds, attack vertically. Fast wide forwards cutting inside; tireless midfielders.",
+"philosophy_it": "Pressing immediato dopo aver perso palla, recupero in 5 secondi, attacco verticale. Ali veloci che rientrano; centrocampisti instancabili.",
+"how_to_copy_en": "4-3-3 with High Pressing, Hard Attacking mentality and counter-attack ON. Wingers with high Pace and Finishing. Box-to-Box MCs with high Stamina.",
+"how_to_copy_it": "4-3-3 con Pressing Alto, mentalità Molto Attaccante e contropiede ON. Ali con Velocità e Finalizzazione alte. MC box-to-box con Resistenza alta."
+},
+{
+"id": "ancelotti-real",
+"manager": "Carlo Ancelotti",
+"team": "Real Madrid",
+"era": "2021-oggi",
+"style_en": "Balanced 4-3-3, individual freedom, ruthless counters",
+"style_it": "4-3-3 equilibrato, libertà individuale, contropiedi letali",
+"te_formation": "4-3-3",
+"te_formation_id": "433",
+"key_attributes_en": [
+"Finishing",
+"Pace",
+"Creativity"
+],
+"key_attributes_it": [
+"Finalizzazione",
+"Velocità",
+"Creatività"
+],
+"arrows": "AML↑ AMR↑",
+"mentality": "Normal",
+"philosophy_en": "Less rigid than Pep: give your stars freedom, defend compact in midfield, devastate on the counter with pace and finishing. Champions League DNA.",
+"philosophy_it": "Meno rigido di Pep: dai libertà ai campioni, difendi compatto a centrocampo, devasta in contropiede con velocità e finalizzazione. DNA Champions.",
+"how_to_copy_en": "4-3-3 Normal mentality, counter-attack ON, mixed passing. Don't push full-backs too high. Star strikers must finish chances.",
+"how_to_copy_it": "4-3-3 mentalità Normale, contropiede ON, passaggi misti. Non spingere troppo i terzini. Le punte stelle devono concretizzare."
+},
+{
+"id": "conte-inter",
+"manager": "Antonio Conte",
+"team": "Inter / Tottenham / Juve",
+"era": "2011-oggi",
+"style_en": "3-5-2 with wing-backs, vertical aggression, brutal physicality",
+"style_it": "3-5-2 con esterni fluidificanti, verticalità, fisicità brutale",
+"te_formation": "3-5-2 Flat",
+"te_formation_id": "352f",
+"key_attributes_en": [
+"Stamina",
+"Strength",
+"Crossing"
+],
+"key_attributes_it": [
+"Resistenza",
+"Forza",
+"Cross"
+],
+"arrows": "ML↑ MR↑",
+"mentality": "Attacking",
+"philosophy_en": "Three powerful CBs, two wing-backs covering the whole flank, two strikers always present. Direct, vertical, never sterile possession.",
+"philosophy_it": "Tre DC potenti, due esterni che coprono tutta la fascia, due punte sempre presenti. Diretto, verticale, mai possesso sterile.",
+"how_to_copy_en": "3-5-2 with red arrows on ML/MR (wing-backs). Train them in Stamina/Crossing. Long/mixed passing. Strong heading on both strikers.",
+"how_to_copy_it": "3-5-2 con freccia rossa su ML/MR (esterni). Allena Resistenza/Cross. Passaggi lunghi/misti. Colpo di testa forte su entrambi gli attaccanti."
+},
+{
+"id": "mourinho-inter-2010",
+"manager": "José Mourinho",
+"team": "Inter Triplete",
+"era": "2009-2010",
+"style_en": "Pragmatic defense, lethal counters, total tactical discipline",
+"style_it": "Difesa pragmatica, contropiedi letali, disciplina tattica totale",
+"te_formation": "4-2-3-1",
+"te_formation_id": "4231",
+"key_attributes_en": [
+"Tackling",
+"Marking",
+"Pace"
+],
+"key_attributes_it": [
+"Contrasto",
+"Marcatura",
+"Velocità"
+],
+"arrows": "DL↓ DC↓ DR↓ MC↓ AML↑ AMR↑",
+"mentality": "Defensive",
+"philosophy_en": "Two DMs in front of the defense, an AMC linking play, fast wingers exploiting space on the break. Zero risks, maximum result.",
+"philosophy_it": "Due mediani davanti alla difesa, un trequartista collegamento, ali veloci che sfruttano gli spazi in contropiede. Zero rischi, massimo risultato.",
+"how_to_copy_en": "4-2-3-1 Defensive, blue arrows on the back line and MCs, red arrows on the wingers. Counter ON, long passing on transitions.",
+"how_to_copy_it": "4-2-3-1 Difensivo, frecce blu sulla difesa e i MC, frecce rosse sulle ali. Contropiede ON, passaggi lunghi nelle transizioni."
+},
+{
+"id": "simeone-atletico",
+"manager": "Diego Simeone",
+"team": "Atlético Madrid",
+"era": "2011-oggi",
+"style_en": "Compact 4-4-2, two banks of four, hard tackling",
+"style_it": "4-4-2 compatto, due linee da quattro, contrasti duri",
+"te_formation": "4-4-2 Classic",
+"te_formation_id": "442c",
+"key_attributes_en": [
+"Tackling",
+"Marking",
+"Strength"
+],
+"key_attributes_it": [
+"Contrasto",
+"Marcatura",
+"Forza"
+],
+"arrows": "DL↓ DR↓",
+"mentality": "Defensive",
+"philosophy_en": "Two compact banks of four behind a hard-running strike pair. Hard tackling, zero space between the lines, every match a war.",
+"philosophy_it": "Due linee da quattro compatte dietro una coppia d'attacco che corre. Contrasti duri, zero spazio tra le linee, ogni partita una guerra.",
+"how_to_copy_en": "4-4-2 Classic Defensive, hard tackling, man-to-man marking, blue arrows on the full-backs. Don't let your lines drift apart.",
+"how_to_copy_it": "4-4-2 Classico Difensivo, contrasti duri, marcatura a uomo, frecce blu sui terzini. Non lasciar mai distanziare le linee."
+},
+{
+"id": "pep-bayern",
+"manager": "Pep Guardiola",
+"team": "Bayern Munich",
+"era": "2013-2016",
+"style_en": "3-1-5-1 / 3-4-1-2, inverted full-backs, overload central control",
+"style_it": "3-1-5-1 / 3-4-1-2, terzini invertiti, controllo centrale totale",
+"te_formation": "3-1-5-1",
+"te_formation_id": "3151amc",
+"key_attributes_en": [
+"Passing",
+"Creativity",
+"Positioning"
+],
+"key_attributes_it": [
+"Passaggio",
+"Creatività",
+"Posizionamento"
+],
+"arrows": "DMC↓ MC↑",
+"mentality": "Attacking",
+"philosophy_en": "Solid back three, holding DM, half-midfielders breaking late, an AMC pulling strings between the lines. Suffocating central density.",
+"philosophy_it": "Difesa a tre solida, mediano davanti, mezzali a inserirsi, un trequartista a tessere tra le linee. Densità centrale soffocante.",
+"how_to_copy_en": "3-1-5-1 Attacking, blue arrow on the DMC, reds on the MCs. Short passing through the middle, possession-oriented.",
+"how_to_copy_it": "3-1-5-1 Attaccante, freccia blu sul DMC, rosse sui MC. Passaggi corti al centro, gioco di possesso."
+},
+{
+"id": "luis-enrique-barca",
+"manager": "Luis Enrique",
+"team": "Barcellona MSN",
+"era": "2014-2017",
+"style_en": "4-3-3 with the MSN trio, attacking trident, vertical possession",
+"style_it": "4-3-3 col tridente MSN, attacco totale, possesso verticale",
+"te_formation": "4-3-3",
+"te_formation_id": "433",
+"key_attributes_en": [
+"Finishing",
+"Dribbling",
+"Creativity"
+],
+"key_attributes_it": [
+"Finalizzazione",
+"Dribbling",
+"Creatività"
+],
+"arrows": "AML↑ AMR↑ ST↑",
+"mentality": "Hard Attacking",
+"philosophy_en": "Three world-class forwards: a poacher in the middle, an inverted winger on one flank, a creator on the other. Possession only as a means to feed them.",
+"philosophy_it": "Tre attaccanti di livello mondiale: un finalizzatore al centro, un'ala invertita su un lato, un creatore sull'altro. Il possesso solo per nutrirli.",
+"how_to_copy_en": "4-3-3 Hard Attacking, all front three on red arrows. Maximize Finishing and Dribbling. Short passing, no counter (you ARE the attack).",
+"how_to_copy_it": "4-3-3 Molto Attaccante, tutto il tridente con freccia rossa. Massimizza Finalizzazione e Dribbling. Passaggi corti, niente contropiede (sei tu l'attacco)."
+},
+{
+"id": "ferguson-united",
+"manager": "Alex Ferguson",
+"team": "Manchester United",
+"era": "1999-2013",
+"style_en": "Classic 4-4-2 with width and pace, late goals, never-give-up attitude",
+"style_it": "4-4-2 classico ampio e veloce, gol nel finale, mai mollare",
+"te_formation": "4-4-2 Classic",
+"te_formation_id": "442c",
+"key_attributes_en": [
+"Crossing",
+"Heading",
+"Finishing"
+],
+"key_attributes_it": [
+"Cross",
+"Colpo di testa",
+"Finalizzazione"
+],
+"arrows": "ML↑ MR↑",
+"mentality": "Normal",
+"philosophy_en": "British 4-4-2: fast wingers (Giggs/Ronaldo) feed the box, a target man + a poacher, mentality to score in the 90th minute.",
+"philosophy_it": "4-4-2 britannico: ali veloci (Giggs/Ronaldo) servono l'area, un boa + un finalizzatore, mentalità per segnare al 90°.",
+"how_to_copy_en": "4-4-2 Normal, red arrows on the wingers. Down both flanks passing, crossing maxed out. One striker tall (heading), one fast.",
+"how_to_copy_it": "4-4-2 Normale, freccia rossa sulle ali. Passaggi per entrambe le fasce, cross al massimo. Un attaccante alto (testa), uno veloce."
+},
+{
+"id": "tuchel-chelsea",
+"manager": "Thomas Tuchel",
+"team": "Chelsea Champions",
+"era": "2021",
+"style_en": "3-4-2-1, defensive solidity, two creators behind a lone striker",
+"style_it": "3-4-2-1, solidità difensiva, due trequartisti dietro la punta",
+"te_formation": "3-4-1-2",
+"te_formation_id": "3412",
+"key_attributes_en": [
+"Marking",
+"Passing",
+"Creativity"
+],
+"key_attributes_it": [
+"Marcatura",
+"Passaggio",
+"Creatività"
+],
+"arrows": "ST↑ ST↑ ML↑ MR↑",
+"mentality": "Normal",
+"philosophy_en": "Three CBs, two wing-backs giving width, two creative attackers (Mount/Havertz) feeding the striker. Solid plus brain.",
+"philosophy_it": "Tre DC, due esterni che danno ampiezza, due trequartisti creativi (Mount/Havertz) che nutrono la punta. Solidità e cervello.",
+"how_to_copy_en": "3-4-1-2 Normal, red arrows on ML/MR and strikers. Train the AMC in Creativity/Passing. Zonal marking.",
+"how_to_copy_it": "3-4-1-2 Normale, freccia rossa su ML/MR e attaccanti. Allena l'AMC in Creatività/Passaggio. Marcatura a zona."
+}
+]

@@ -13,7 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS } from '@/src/data';
+import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS } from '@/src/data';
 
 const LOCAL_DATA: Record<string, any[]> = {
   roles: PLAYER_ROLES,
@@ -21,9 +21,10 @@ const LOCAL_DATA: Record<string, any[]> = {
   skills: SPECIAL_ABILITIES,
   training: TRAINING_GUIDE,
   arrows: ARROW_TACTICS,
+  teams: REAL_TEAMS,
 };
 
-type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows';
+type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows' | 'teams';
 
 interface SectionDef {
   id: SectionId;
@@ -39,6 +40,7 @@ const SECTIONS: SectionDef[] = [
   { id: 'skills', endpoint: '/api/special-abilities', label_en: 'Skills', label_it: 'Abilità', icon: 'flash-outline' },
   { id: 'training', endpoint: '/api/training-guide', label_en: 'Training', label_it: 'Allenam.', icon: 'barbell-outline' },
   { id: 'arrows', endpoint: '/api/arrow-tactics', label_en: 'Arrows', label_it: 'Frecce', icon: 'swap-vertical-outline' },
+  { id: 'teams', endpoint: '/api/real-teams', label_en: 'Teams', label_it: 'Squadre', icon: 'shield-half-outline' },
 ];
 
 const TIER_COLORS: Record<string, string> = {
@@ -54,10 +56,10 @@ export default function AcademyScreen() {
 
   const [section, setSection] = useState<SectionId>('roles');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], meta: [], skills: [], training: [], arrows: [],
+    roles: [], meta: [], skills: [], training: [], arrows: [], teams: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, meta: false, skills: false, training: false, arrows: false,
+    roles: false, meta: false, skills: false, training: false, arrows: false, teams: false,
   });
   const [loading, setLoading] = useState(false);
   const [selected, setSelected] = useState<any | null>(null);
@@ -96,6 +98,7 @@ export default function AcademyScreen() {
       case 'skills': return isIt ? item.name_it : item.name_en;
       case 'training': return item.position;
       case 'arrows': return item.formation;
+      case 'teams': return item.team;
       default: return '';
     }
   };
@@ -106,6 +109,7 @@ export default function AcademyScreen() {
       case 'skills': return item.best_role;
       case 'training': return (isIt ? item.priority_attributes_it : item.priority_attributes_en).join(' · ');
       case 'arrows': return item.arrows;
+      case 'teams': return `${item.manager} · ${item.te_formation}`;
       default: return '';
     }
   };
@@ -273,6 +277,28 @@ export default function AcademyScreen() {
                   </View>
                   <DetailBlock label={isIt ? 'MOVIMENTI CHIAVE' : 'KEY MOVEMENTS'} value={isIt ? selected.key_movements_it : selected.key_movements_en} />
                   <DetailBlock label={isIt ? 'PERCHÉ FUNZIONA' : 'WHY IT WORKS'} value={isIt ? selected.explanation_it : selected.explanation_en} />
+                </>
+              )}
+              {selected && section === 'teams' && (
+                <>
+                  <DetailBlock label={isIt ? 'ALLENATORE' : 'MANAGER'} value={`${selected.manager} (${selected.era})`} />
+                  <DetailBlock label={isIt ? 'STILE' : 'STYLE'} value={isIt ? selected.style_it : selected.style_en} />
+                  <View style={styles.detailBlock}>
+                    <Text style={styles.detailLabel}>{isIt ? 'MODULO TOP ELEVEN' : 'TOP ELEVEN FORMATION'}</Text>
+                    <View style={styles.arrowsBox}>
+                      <Text style={styles.arrowsText}>{selected.te_formation}</Text>
+                    </View>
+                  </View>
+                  <DetailChips label={isIt ? 'ATTRIBUTI CHIAVE' : 'KEY ATTRIBUTES'} values={isIt ? selected.key_attributes_it : selected.key_attributes_en} />
+                  <View style={styles.detailBlock}>
+                    <Text style={styles.detailLabel}>{isIt ? 'FRECCE' : 'ARROWS'}</Text>
+                    <View style={styles.arrowsBox}>
+                      <Text style={styles.arrowsText}>{selected.arrows}</Text>
+                    </View>
+                  </View>
+                  <DetailBlock label={isIt ? 'MENTALITÀ' : 'MENTALITY'} value={selected.mentality} />
+                  <DetailBlock label={isIt ? 'FILOSOFIA' : 'PHILOSOPHY'} value={isIt ? selected.philosophy_it : selected.philosophy_en} />
+                  <DetailBlock label={isIt ? 'COME IMITARLA IN TOP ELEVEN' : 'HOW TO COPY IT IN TOP ELEVEN'} value={isIt ? selected.how_to_copy_it : selected.how_to_copy_en} />
                 </>
               )}
             </ScrollView>
