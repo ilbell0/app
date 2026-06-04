@@ -510,5 +510,45 @@
 "title_it": "Stadio della Misura Giusta",
 "content_en": "Don't over-grow your stadium. A fully-filled 35,000-seat stadium gives more income (and fan boost) than a half-empty 60,000-seat one.",
 "content_it": "Non sovradimensionare lo stadio. Uno stadio da 35.000 posti sempre pieno rende più (anche in bonus tifo) di uno da 60.000 sempre mezzo vuoto."
+},
+{
+"id": "65",
+"category": "general",
+"title_en": "Team Building: build the spine first",
+"title_it": "Team Building: prima costruisci la spina dorsale",
+"content_en": "Don't buy 11 stars together: focus your investments first on the central spine (GK · CB · DMC · AMC · ST). With those 5 roles at 6 stars and the rest at 5, you win 80% of matches. Quality at the center beats quality spread thin.",
+"content_it": "Non comprare 11 stelle insieme: concentra gli investimenti prima sulla colonna centrale (GK · DC · DMC · AMC · ST). Con quei 5 ruoli a 6 stelle e il resto a 5, vinci l'80% delle partite. La qualità al centro batte la qualità sparsa."
+},
+{
+"id": "66",
+"category": "tactics",
+"title_en": "4-2-3-1 Defensive: a hidden weapon",
+"title_it": "4-2-3-1 Difensivo: arma nascosta",
+"content_en": "Most players use the 4-2-3-1 attacking. Try it with Defensive mentality, blue arrows on the back four and the two MCs, red arrows only on AML/AMR. You concede little, the AMC orchestrates the counter. Lethal against attacking opponents who push high.",
+"content_it": "La maggior parte dei giocatori usa il 4-2-3-1 in attacco. Provalo con mentalità Difensiva, frecce blu sulla difesa a quattro e sui due MC, frecce rosse solo su AML/AMR. Concedi poco, l'AMC orchestra il contropiede. Letale contro avversari offensivi che salgono."
+},
+{
+"id": "67",
+"category": "tactics",
+"title_en": "Retro formations coming back",
+"title_it": "Moduli retrò che tornano",
+"content_en": "In high-level associations the 2-3-2-3 (modern WM) and the 3-3-3-1 are coming back: surprise the opponent who doesn't know how to counter them. Use them only if you have very mobile players with the Dual Position ability.",
+"content_it": "Nei livelli alti delle associazioni stanno tornando moduli come il 2-3-2-3 (W-M moderno) e il 3-3-3-1: sorprendono l'avversario che non sa come contrastarli. Usali solo se hai giocatori molto mobili con abilità Dual Position."
+},
+{
+"id": "68",
+"category": "tactics",
+"title_en": "Tiki-Taka requires the DMC playmaker",
+"title_it": "Il Tiki-Taka richiede il DMC playmaker",
+"content_en": "The mistake of those who try the Tiki-Taka in Top Eleven: putting the playmaker at AMC. Wrong: in Barça-2011 it was Busquets at DMC who started every action. Place a Deep-Lying Playmaker at DMC with maxed Passing/Creativity: it's the difference between 'it works' and 'it doesn't work'.",
+"content_it": "L'errore di chi prova il Tiki-Taka in Top Eleven: mettere il regista come AMC. Sbagliato: nel Barça-2011 era Busquets, DMC, a innescare ogni azione. Metti un Regista Arretrato come DMC con Passaggio/Creatività al massimo: è la differenza tra 'funziona' e 'non funziona'."
+},
+{
+"id": "69",
+"category": "meta",
+"title_en": "FM-style 4-2-3-1 attacking",
+"title_it": "4-2-3-1 attaccante stile FM",
+"content_en": "VictorHugo-style 4-2-3-1 (popular among Football Manager fans): Attacking mentality, Through the Middle, AMC with Shadow Striker ability, AML/AMR inverted (red arrows). Drowns the opponent with central pressure and creative passes; brutal against weaker teams.",
+"content_it": "Il 4-2-3-1 stile VictorHugo (popolare tra i fan di Football Manager): mentalità Offensiva, passaggi Al Centro, AMC con abilità Shadow Striker, AML/AMR invertiti (frecce rosse). Affoga l'avversario con pressione centrale e passaggi creativi; brutale contro avversari più deboli."
 }
 ]

@@ -258,5 +258,31 @@
 "philosophy_it": "Tre DC, due esterni che danno ampiezza, due trequartisti creativi (Mount/Havertz) che nutrono la punta. Solidità e cervello.",
 "how_to_copy_en": "3-4-1-2 Normal, red arrows on ML/MR and strikers. Train the AMC in Creativity/Passing. Zonal marking.",
 "how_to_copy_it": "3-4-1-2 Normale, freccia rossa su ML/MR e attaccanti. Allena l'AMC in Creatività/Passaggio. Marcatura a zona."
+},
+{
+"id": "ac-milan-modern",
+"manager": "Stefano Pioli / Fonseca",
+"team": "AC Milan",
+"era": "2022-oggi",
+"style_en": "4-2-3-1 with high pressing, two ball-playing DMs, hybrid 4-3-3 in possession",
+"style_it": "4-2-3-1 con pressing alto, doppio mediano costruttore, 4-3-3 ibrido in possesso",
+"te_formation": "4-2-3-1",
+"te_formation_id": "4231",
+"key_attributes_en": [
+"Passing",
+"Pace",
+"Creativity"
+],
+"key_attributes_it": [
+"Passaggio",
+"Velocità",
+"Creatività"
+],
+"arrows": "AML↑ AMC↑ AMR↑",
+"mentality": "Attacking",
+"philosophy_en": "Two creative midfielders in front of the defense, an Italian-style #10 (Brahim/Pulisic) plus two flank dribblers (Leao). High pressing and quick passing to keep the rivals in their own half.",
+"philosophy_it": "Due centrocampisti creativi davanti alla difesa, un trequartista all'italiana (Brahim/Pulisic) e due saltatori d'uomo larghi (Leao). Pressing alto e palla che gira veloce per tenere i rivali nella propria metà.",
+"how_to_copy_en": "4-2-3-1 Attacking, high pressing, Down Both Flanks passing, short style. AML/AMR with Pace and Dribbling; AMC with Playmaker ability. Ball-playing DCs.",
+"how_to_copy_it": "4-2-3-1 Offensivo, pressing alto, passaggi sulle fasce, stile corto. AML/AMR con Velocità e Dribbling; AMC con abilità Regista. DC costruttori."
 }
 ]

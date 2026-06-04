@@ -118,5 +118,21 @@
 "question_it": "Posso suggerire una tattica o segnalare un errore?",
 "answer_en": "Yes — that's the goal. A feedback button will be added in the next versions to gather suggestions and corrections directly from the community.",
 "answer_it": "Sì — è proprio l'obiettivo. Sarà aggiunto un pulsante di feedback nelle prossime versioni per raccogliere suggerimenti e correzioni direttamente dalla community."
+},
+{
+"id": "faq-16",
+"category": "tactics",
+"question_en": "Is it true that 'retro' formations are coming back?",
+"question_it": "È vero che stanno tornando moduli 'retrò'?",
+"answer_en": "Yes, in high-level associations and Discord communities you see modules like the 2-3-2-3 (modern W-M) and 3-3-3-1 used as surprise weapons. They only work with very mobile players with the Dual Position ability.",
+"answer_it": "Sì, nelle associazioni di alto livello e nelle community Discord si vedono moduli come il 2-3-2-3 (W-M moderno) e il 3-3-3-1 usati come armi sorpresa. Funzionano solo con giocatori molto mobili con abilità Dual Position."
+},
+{
+"id": "faq-17",
+"category": "tactics",
+"question_en": "Can I really copy Pep's Tiki-Taka in Top Eleven?",
+"question_it": "Posso davvero copiare il Tiki-Taka di Pep in Top Eleven?",
+"answer_en": "Yes, with the right setup. The key is the deep playmaker at DMC (not at AMC like many think), Normal mentality the whole match, Through the Middle short passing, no counter-attack. Read the 'Barça Tiki-Taka' story in the Stories section for details.",
+"answer_it": "Sì, con il setup giusto. Il segreto è il regista basso a DMC (non a AMC come pensano in tanti), mentalità Normale per tutto il match, passaggi Corti Al Centro, niente contropiede. Leggi la storia 'Tiki-Taka del Barça' nella sezione Storie per i dettagli."
 }
 ]

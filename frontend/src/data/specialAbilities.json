@@ -108,5 +108,25 @@
 "effect_it": "Permette di lanciare la palla direttamente in area durante le rimesse laterali.",
 "when_to_use_en": "Turns a simple throw-in into a potential scoring chance.",
 "when_to_use_it": "Trasforma una semplice rimessa laterale in una potenziale occasione da gol."
+},
+{
+"id": "ball-magnet",
+"name_en": "Ball Magnet",
+"name_it": "Calamita di Palla",
+"best_role": "MC, AMC, DMC",
+"effect_en": "Significantly increases the chance of receiving a pass: opens passing lanes wider than the rest of the team.",
+"effect_it": "Aumenta significativamente la probabilità di ricevere un passaggio: apre linee di passaggio più larghe del resto della squadra.",
+"when_to_use_en": "On the team playmaker. Multiplies the effectiveness of a Tiki-Taka system.",
+"when_to_use_it": "Sul regista della squadra. Moltiplica l'efficacia di un sistema Tiki-Taka."
+},
+{
+"id": "speed-merchant",
+"name_en": "Speed Merchant",
+"name_it": "Velocista",
+"best_role": "AML, AMR, ST",
+"effect_en": "Adds a real burst of pace in transitions: leaves slower defenders in his wake.",
+"effect_it": "Aggiunge un vero scatto di velocità nelle transizioni: lascia sul posto i difensori più lenti.",
+"when_to_use_en": "On the counter-attack winger. Devastating against high defensive lines.",
+"when_to_use_it": "Sull'ala da contropiede. Devastante contro linee difensive alte."
 }
 ]

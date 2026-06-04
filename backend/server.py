@@ -5902,6 +5902,46 @@ SCOUT_TIPS = [
         "title_it": "Stadio della Misura Giusta",
         "content_en": "Don't over-grow your stadium. A fully-filled 35,000-seat stadium gives more income (and fan boost) than a half-empty 60,000-seat one.",
         "content_it": "Non sovradimensionare lo stadio. Uno stadio da 35.000 posti sempre pieno rende più (anche in bonus tifo) di uno da 60.000 sempre mezzo vuoto."
+    },
+    {
+        "id": "65",
+        "category": "general",
+        "title_en": "Team Building: build the spine first",
+        "title_it": "Team Building: prima costruisci la spina dorsale",
+        "content_en": "Don't buy 11 stars together: focus your investments first on the central spine (GK · CB · DMC · AMC · ST). With those 5 roles at 6 stars and the rest at 5, you win 80% of matches. Quality at the center beats quality spread thin.",
+        "content_it": "Non comprare 11 stelle insieme: concentra gli investimenti prima sulla colonna centrale (GK · DC · DMC · AMC · ST). Con quei 5 ruoli a 6 stelle e il resto a 5, vinci l'80% delle partite. La qualità al centro batte la qualità sparsa."
+    },
+    {
+        "id": "66",
+        "category": "tactics",
+        "title_en": "4-2-3-1 Defensive: a hidden weapon",
+        "title_it": "4-2-3-1 Difensivo: arma nascosta",
+        "content_en": "Most players use the 4-2-3-1 attacking. Try it with Defensive mentality, blue arrows on the back four and the two MCs, red arrows only on AML/AMR. You concede little, the AMC orchestrates the counter. Lethal against attacking opponents who push high.",
+        "content_it": "La maggior parte dei giocatori usa il 4-2-3-1 in attacco. Provalo con mentalità Difensiva, frecce blu sulla difesa a quattro e sui due MC, frecce rosse solo su AML/AMR. Concedi poco, l'AMC orchestra il contropiede. Letale contro avversari offensivi che salgono."
+    },
+    {
+        "id": "67",
+        "category": "tactics",
+        "title_en": "Retro formations coming back",
+        "title_it": "Moduli retrò che tornano",
+        "content_en": "In high-level associations the 2-3-2-3 (modern WM) and the 3-3-3-1 are coming back: surprise the opponent who doesn't know how to counter them. Use them only if you have very mobile players with the Dual Position ability.",
+        "content_it": "Nei livelli alti delle associazioni stanno tornando moduli come il 2-3-2-3 (W-M moderno) e il 3-3-3-1: sorprendono l'avversario che non sa come contrastarli. Usali solo se hai giocatori molto mobili con abilità Dual Position."
+    },
+    {
+        "id": "68",
+        "category": "tactics",
+        "title_en": "Tiki-Taka requires the DMC playmaker",
+        "title_it": "Il Tiki-Taka richiede il DMC playmaker",
+        "content_en": "The mistake of those who try the Tiki-Taka in Top Eleven: putting the playmaker at AMC. Wrong: in Barça-2011 it was Busquets at DMC who started every action. Place a Deep-Lying Playmaker at DMC with maxed Passing/Creativity: it's the difference between 'it works' and 'it doesn't work'.",
+        "content_it": "L'errore di chi prova il Tiki-Taka in Top Eleven: mettere il regista come AMC. Sbagliato: nel Barça-2011 era Busquets, DMC, a innescare ogni azione. Metti un Regista Arretrato come DMC con Passaggio/Creatività al massimo: è la differenza tra 'funziona' e 'non funziona'."
+    },
+    {
+        "id": "69",
+        "category": "meta",
+        "title_en": "FM-style 4-2-3-1 attacking",
+        "title_it": "4-2-3-1 attaccante stile FM",
+        "content_en": "VictorHugo-style 4-2-3-1 (popular among Football Manager fans): Attacking mentality, Through the Middle, AMC with Shadow Striker ability, AML/AMR inverted (red arrows). Drowns the opponent with central pressure and creative passes; brutal against weaker teams.",
+        "content_it": "Il 4-2-3-1 stile VictorHugo (popolare tra i fan di Football Manager): mentalità Offensiva, passaggi Al Centro, AMC con abilità Shadow Striker, AML/AMR invertiti (frecce rosse). Affoga l'avversario con pressione centrale e passaggi creativi; brutale contro avversari più deboli."
     }
 ]
 
@@ -6370,6 +6410,26 @@ SPECIAL_ABILITIES = [
         "effect_it": "Permette di lanciare la palla direttamente in area durante le rimesse laterali.",
         "when_to_use_en": "Turns a simple throw-in into a potential scoring chance.",
         "when_to_use_it": "Trasforma una semplice rimessa laterale in una potenziale occasione da gol."
+    },
+    {
+        "id": "ball-magnet",
+        "name_en": "Ball Magnet",
+        "name_it": "Calamita di Palla",
+        "best_role": "MC, AMC, DMC",
+        "effect_en": "Significantly increases the chance of receiving a pass: opens passing lanes wider than the rest of the team.",
+        "effect_it": "Aumenta significativamente la probabilità di ricevere un passaggio: apre linee di passaggio più larghe del resto della squadra.",
+        "when_to_use_en": "On the team playmaker. Multiplies the effectiveness of a Tiki-Taka system.",
+        "when_to_use_it": "Sul regista della squadra. Moltiplica l'efficacia di un sistema Tiki-Taka."
+    },
+    {
+        "id": "speed-merchant",
+        "name_en": "Speed Merchant",
+        "name_it": "Velocista",
+        "best_role": "AML, AMR, ST",
+        "effect_en": "Adds a real burst of pace in transitions: leaves slower defenders in his wake.",
+        "effect_it": "Aggiunge un vero scatto di velocità nelle transizioni: lascia sul posto i difensori più lenti.",
+        "when_to_use_en": "On the counter-attack winger. Devastating against high defensive lines.",
+        "when_to_use_it": "Sull'ala da contropiede. Devastante contro linee difensive alte."
     }
 ]
 
@@ -6641,6 +6701,24 @@ REAL_TEAMS = [
         "philosophy_it": "Tre DC, due esterni che danno ampiezza, due trequartisti creativi (Mount/Havertz) che nutrono la punta. Solidità e cervello.",
         "how_to_copy_en": "3-4-1-2 Normal, red arrows on ML/MR and strikers. Train the AMC in Creativity/Passing. Zonal marking.",
         "how_to_copy_it": "3-4-1-2 Normale, freccia rossa su ML/MR e attaccanti. Allena l'AMC in Creatività/Passaggio. Marcatura a zona."
+    },
+    {
+        "id": "ac-milan-modern",
+        "manager": "Stefano Pioli / Fonseca",
+        "team": "AC Milan",
+        "era": "2022-oggi",
+        "style_en": "4-2-3-1 with high pressing, two ball-playing DMs, hybrid 4-3-3 in possession",
+        "style_it": "4-2-3-1 con pressing alto, doppio mediano costruttore, 4-3-3 ibrido in possesso",
+        "te_formation": "4-2-3-1",
+        "te_formation_id": "4231",
+        "key_attributes_en": ["Passing", "Pace", "Creativity"],
+        "key_attributes_it": ["Passaggio", "Velocità", "Creatività"],
+        "arrows": "AML↑ AMC↑ AMR↑",
+        "mentality": "Attacking",
+        "philosophy_en": "Two creative midfielders in front of the defense, an Italian-style #10 (Brahim/Pulisic) plus two flank dribblers (Leao). High pressing and quick passing to keep the rivals in their own half.",
+        "philosophy_it": "Due centrocampisti creativi davanti alla difesa, un trequartista all'italiana (Brahim/Pulisic) e due saltatori d'uomo larghi (Leao). Pressing alto e palla che gira veloce per tenere i rivali nella propria metà.",
+        "how_to_copy_en": "4-2-3-1 Attacking, high pressing, Down Both Flanks passing, short style. AML/AMR with Pace and Dribbling; AMC with Playmaker ability. Ball-playing DCs.",
+        "how_to_copy_it": "4-2-3-1 Offensivo, pressing alto, passaggi sulle fasce, stile corto. AML/AMR con Velocità e Dribbling; AMC con abilità Regista. DC costruttori."
     }
 ]
 
@@ -6765,6 +6843,30 @@ SEASON_STORIES = [
             "Un AMC al 95% nel ruolo vale più di 2 attaccanti",
             "Contro il 5-4-1 Flat il possesso non basta: porta cross",
             "Sii paziente con l'1-0: non innervosirti"
+        ]
+    },
+    {
+        "id": "tiki-taka-barca",
+        "title_en": "Barça Tiki-Taka in Top Eleven: pure 4-3-3",
+        "title_it": "Tiki-Taka del Barça in Top Eleven: il 4-3-3 puro",
+        "subtitle_en": "Faithfully recreating Guardiola's 2010/11 Barcelona",
+        "subtitle_it": "Ricreare fedelmente il Barcellona di Guardiola 2010/11",
+        "formation_used": "4-3-3",
+        "outcome_en": "75% possession, 25+ passes per attack, easy league won",
+        "outcome_it": "75% di possesso, 25+ passaggi per azione, campionato vinto in scioltezza",
+        "story_en": "Inspired by the Barça-2011 4-3-3 Tiki-Taka. Build the squad with the Pep Manchester City profile but reduced to 6 stars: a Ball-Playing DC (the 'Piqué'), a Deep-Lying Playmaker DMC ('Busquets'), two creative MCs ('Xavi/Iniesta' with high Passing and Creativity), a False Nine ST ('Messi'), two AML/AMR with Dribbling and Pace ('Villa/Pedro'). Normal mentality the whole match, Through the Middle passing, Short style, low pressing, no counter (the system never loses the ball). The blue arrow on the DMC is non-negotiable. Result: 75% possession average, opponents collapse in the second half because they've chased all match. Not for fast results: it takes 5-6 matches to click, but once it works it's nearly unstoppable.",
+        "story_it": "Ispirata al 4-3-3 Tiki-Taka del Barça-2011. Costruisci la rosa col profilo Pep Manchester City ma ridotta a 6 stelle: un DC Difensore Regista (il 'Piqué'), un DMC Regista Arretrato ('Busquets'), due MC creativi ('Xavi/Iniesta' con Passaggio e Creatività alti), un ST Falso Nove ('Messi'), due AML/AMR con Dribbling e Velocità ('Villa/Pedro'). Mentalità Normale per tutta la partita, passaggi Al Centro, stile Corto, pressing basso, no contropiede (il sistema non perde mai palla). La freccia blu sul DMC è non negoziabile. Risultato: 75% di possesso medio, l'avversario crolla nel secondo tempo perché ha rincorso per tutta la partita. Non per risultati rapidi: servono 5-6 partite perché clicchi, ma quando funziona è quasi inarrestabile.",
+        "key_lessons_en": [
+            "The DMC playmaker is the system's brain, not the AMC",
+            "Don't change mentality during the match: trust the possession",
+            "Width with Dribbling > Width with Crossing in pure Tiki-Taka",
+            "Against the 5-4-1 Flat: increase to Attacking from minute 65"
+        ],
+        "key_lessons_it": [
+            "Il DMC playmaker è il cervello del sistema, non l'AMC",
+            "Non cambiare mentalità durante la partita: fidati del possesso",
+            "Ampiezza col Dribbling > ampiezza col Cross nel Tiki-Taka puro",
+            "Contro il 5-4-1 Flat: alza a Offensiva dal 65°"
         ]
     }
 ]
@@ -6891,6 +6993,22 @@ FAQ = [
         "question_it": "Posso suggerire una tattica o segnalare un errore?",
         "answer_en": "Yes — that's the goal. A feedback button will be added in the next versions to gather suggestions and corrections directly from the community.",
         "answer_it": "Sì — è proprio l'obiettivo. Sarà aggiunto un pulsante di feedback nelle prossime versioni per raccogliere suggerimenti e correzioni direttamente dalla community."
+    },
+    {
+        "id": "faq-16",
+        "category": "tactics",
+        "question_en": "Is it true that 'retro' formations are coming back?",
+        "question_it": "È vero che stanno tornando moduli 'retrò'?",
+        "answer_en": "Yes, in high-level associations and Discord communities you see modules like the 2-3-2-3 (modern W-M) and 3-3-3-1 used as surprise weapons. They only work with very mobile players with the Dual Position ability.",
+        "answer_it": "Sì, nelle associazioni di alto livello e nelle community Discord si vedono moduli come il 2-3-2-3 (W-M moderno) e il 3-3-3-1 usati come armi sorpresa. Funzionano solo con giocatori molto mobili con abilità Dual Position."
+    },
+    {
+        "id": "faq-17",
+        "category": "tactics",
+        "question_en": "Can I really copy Pep's Tiki-Taka in Top Eleven?",
+        "question_it": "Posso davvero copiare il Tiki-Taka di Pep in Top Eleven?",
+        "answer_en": "Yes, with the right setup. The key is the deep playmaker at DMC (not at AMC like many think), Normal mentality the whole match, Through the Middle short passing, no counter-attack. Read the 'Barça Tiki-Taka' story in the Stories section for details.",
+        "answer_it": "Sì, con il setup giusto. Il segreto è il regista basso a DMC (non a AMC come pensano in tanti), mentalità Normale per tutto il match, passaggi Corti Al Centro, niente contropiede. Leggi la storia 'Tiki-Taka del Barça' nella sezione Storie per i dettagli."
     }
 ]
 
