@@ -87,17 +87,6 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="ai-chat"
-        options={{
-          title: 'AI',
-          tabBarIcon: ({ color, focused }) => (
-            <View style={focused ? styles.activeIcon : undefined}>
-              <Ionicons name={focused ? "sparkles" : "sparkles-outline"} size={22} color={color} />
-            </View>
-          ),
-        }}
-      />
-      <Tabs.Screen
         name="settings"
         options={{
           title: 'SET',
