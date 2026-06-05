@@ -2550,5 +2550,1183 @@
 },
 "w": "Pressing alto. Centrocampo a 5 ribalta il loro centro affollato"
 }
+},
+{
+"av": "3-5-2 Flat",
+"cat": "att",
+"forte": {
+"mod": "4-3N-2W-1",
+"alt": "3-2-2-2-1 B",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-3N-2W-1 e riparti in contropiede"
+},
+"pari": {
+"mod": "4-3N-2W-1",
+"alt": "3-2-2-2-1 B",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Basso",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Attacca le fasce per sfruttare l'assenza di terzini nella difesa a tre"
+},
+"debole": {
+"mod": "4-3N-2W-1",
+"alt": "3-2-2-2-1 B",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-3N-2W-1 e domina con pressing aggressivo"
+}
+},
+{
+"av": "3-5-2 V-Style",
+"cat": "att",
+"forte": {
+"mod": "4-2-2-2 H",
+"alt": "4-3N-2W-1",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-2-2-2 H e riparti in contropiede"
+},
+"pari": {
+"mod": "4-2-2-2 H",
+"alt": "4-3N-2W-1",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "L'Hexagon bilancia la copertura del campo contro la spinta laterale"
+},
+"debole": {
+"mod": "4-2-2-2 H",
+"alt": "4-3N-2W-1",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-2-2-2 H e domina con pressing aggressivo"
+}
+},
+{
+"av": "3-4-3",
+"cat": "att",
+"forte": {
+"mod": "4-2-2-2 H",
+"alt": "4-4-2 C",
+"men": "Molto Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-2-2-2 H e riparti in contropiede"
+},
+"pari": {
+"mod": "4-2-2-2 H",
+"alt": "4-4-2 C",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Proteggi i fianchi e colpisci in contropiede negli spazi esterni"
+},
+"debole": {
+"mod": "4-2-2-2 H",
+"alt": "4-4-2 C",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-2-2-2 H e domina con pressing aggressivo"
+}
+},
+{
+"av": "Maple Leaf 3W-2DMC-3W-1-1",
+"cat": "att",
+"forte": {
+"mod": "4-5-1 V-Style",
+"alt": "3N-1-4-2",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-5-1 V-Style e riparti in contropiede"
+},
+"pari": {
+"mod": "4-5-1 V-Style",
+"alt": "3N-1-4-2",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Allarga la manovra per aggirare il folto blocco dei DMC centrali"
+},
+"debole": {
+"mod": "4-5-1 V-Style",
+"alt": "3N-1-4-2",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-5-1 V-Style e domina con pressing aggressivo"
+}
+},
+{
+"av": "Eiffel Tower 3W-2DMC-3N-1-1",
+"cat": "att",
+"forte": {
+"mod": "4-5-1 V-Style",
+"alt": "4-4-2 C",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-5-1 V-Style e riparti in contropiede"
+},
+"pari": {
+"mod": "4-5-1 V-Style",
+"alt": "4-4-2 C",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Mantieni l'ampiezza per non schiantarti contro il muro centrale"
+},
+"debole": {
+"mod": "4-5-1 V-Style",
+"alt": "4-4-2 C",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-5-1 V-Style e domina con pressing aggressivo"
+}
+},
+{
+"av": "5-1DMC-2-2",
+"cat": "dif",
+"forte": {
+"mod": "4-1-3W-1-1",
+"alt": "4-1-4-1",
+"men": "Difensiva",
+"pass": "Misto",
+"stile": "Corto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-1-3W-1-1 e riparti in contropiede"
+},
+"pari": {
+"mod": "4-1-3W-1-1",
+"alt": "4-1-4-1",
+"men": "Normale",
+"pass": "Misto",
+"stile": "Corto",
+"ctrl": "NO",
+"press": "Medio",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Centrocampo versatile per scardinare la densità della difesa a 5"
+},
+"debole": {
+"mod": "4-1-3W-1-1",
+"alt": "4-1-4-1",
+"men": "Offensiva",
+"pass": "Misto",
+"stile": "Corto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-1-3W-1-1 e domina con pressing aggressivo"
+}
+},
+{
+"av": "4-1-3-1W-1",
+"cat": "neu",
+"forte": {
+"mod": "4-1-3-1-1",
+"alt": "4-5-1 V-Style",
+"men": "Molto Difensiva",
+"pass": "Misto",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-1-3-1-1 e riparti in contropiede"
+},
+"pari": {
+"mod": "4-1-3-1-1",
+"alt": "4-5-1 V-Style",
+"men": "Difensiva",
+"pass": "Misto",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "DMC e MC arretrati sono vitali per ottenere clean sheet"
+},
+"debole": {
+"mod": "4-1-3-1-1",
+"alt": "4-5-1 V-Style",
+"men": "Normale",
+"pass": "Misto",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-1-3-1-1 e domina con pressing aggressivo"
+}
+},
+{
+"av": "3-1-4-1-1",
+"cat": "att",
+"forte": {
+"mod": "4-1-2-1-2 ND",
+"alt": "4-4-2 C",
+"men": "Difensiva",
+"pass": "Centro",
+"stile": "Corto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-1-2-1-2 ND e riparti in contropiede"
+},
+"pari": {
+"mod": "4-1-2-1-2 ND",
+"alt": "4-4-2 C",
+"men": "Normale",
+"pass": "Centro",
+"stile": "Corto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Il diamante stretto domina il possesso neutralizzando i mediani"
+},
+"debole": {
+"mod": "4-1-2-1-2 ND",
+"alt": "4-4-2 C",
+"men": "Offensiva",
+"pass": "Centro",
+"stile": "Corto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-1-2-1-2 ND e domina con pressing aggressivo"
+}
+},
+{
+"av": "4-1-2-2-1",
+"cat": "neu",
+"forte": {
+"mod": "4-2-2-2 H",
+"alt": "4-5-1 V-Style",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-2-2-2 H e riparti in contropiede"
+},
+"pari": {
+"mod": "4-2-2-2 H",
+"alt": "4-5-1 V-Style",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Sfrutta le fasce se l'avversario concentra trequartisti al centro"
+},
+"debole": {
+"mod": "4-2-2-2 H",
+"alt": "4-5-1 V-Style",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-2-2-2 H e domina con pressing aggressivo"
+}
+},
+{
+"av": "False Nine + Wingers",
+"cat": "att",
+"forte": {
+"mod": "4-1-3-1-1",
+"alt": "4-4-2 C",
+"men": "Molto Difensiva",
+"pass": "Misto",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-1-3-1-1 e riparti in contropiede"
+},
+"pari": {
+"mod": "4-1-3-1-1",
+"alt": "4-4-2 C",
+"men": "Difensiva",
+"pass": "Misto",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Arretra DMC e MC per togliere spazio al Falso Nove tra le linee"
+},
+"debole": {
+"mod": "4-1-3-1-1",
+"alt": "4-4-2 C",
+"men": "Normale",
+"pass": "Misto",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-1-3-1-1 e domina con pressing aggressivo"
+}
+},
+{
+"av": "4-2-4",
+"cat": "att",
+"forte": {
+"mod": "5-4-1 F",
+"alt": "4-5-1 V",
+"men": "Molto Difensiva",
+"pass": "Misto",
+"stile": "Lungo",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 5-4-1 F e riparti in contropiede"
+},
+"pari": {
+"mod": "5-4-1 F",
+"alt": "4-5-1 V",
+"men": "Difensiva",
+"pass": "Misto",
+"stile": "Lungo",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Parcheggia l'autobus contro i 4 attaccanti e colpisci in contropiede"
+},
+"debole": {
+"mod": "5-4-1 F",
+"alt": "4-5-1 V",
+"men": "Normale",
+"pass": "Misto",
+"stile": "Lungo",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 5-4-1 F e domina con pressing aggressivo"
+}
+},
+{
+"av": "4-1-3-1-1",
+"cat": "neu",
+"forte": {
+"mod": "4-5-1 V",
+"alt": "4-4-2 C",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-5-1 V e riparti in contropiede"
+},
+"pari": {
+"mod": "4-5-1 V",
+"alt": "4-4-2 C",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Allarga il gioco per aggirare la densità centrale e rifornire la punta"
+},
+"debole": {
+"mod": "4-5-1 V",
+"alt": "4-4-2 C",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-5-1 V e domina con pressing aggressivo"
+}
+},
+{
+"av": "4-3-2-1 XT Xmas Tree",
+"cat": "neu",
+"forte": {
+"mod": "4-5-1 F",
+"alt": "4-1-4-1",
+"men": "Molto Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-5-1 F e riparti in contropiede"
+},
+"pari": {
+"mod": "4-5-1 F",
+"alt": "4-1-4-1",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Sfrutta le fasce per aggirare il centrocampo denso"
+},
+"debole": {
+"mod": "4-5-1 F",
+"alt": "4-1-4-1",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-5-1 F e domina con pressing aggressivo"
+}
+},
+{
+"av": "5-3-2",
+"cat": "dif",
+"forte": {
+"mod": "4-4-2 C",
+"alt": "4-3-3",
+"men": "Normale",
+"pass": "Misto",
+"stile": "Corto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-4-2 C e riparti in contropiede"
+},
+"pari": {
+"mod": "4-4-2 C",
+"alt": "4-3-3",
+"men": "Offensiva",
+"pass": "Misto",
+"stile": "Corto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Alza baricentro e ritmo per scardinare il muro a 5"
+},
+"debole": {
+"mod": "4-4-2 C",
+"alt": "4-3-3",
+"men": "Molto Offensiva",
+"pass": "Misto",
+"stile": "Corto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-4-2 C e domina con pressing aggressivo"
+}
+},
+{
+"av": "3-1-3-2W-1",
+"cat": "att",
+"forte": {
+"mod": "4-1-4-1",
+"alt": "4-5-1 V",
+"men": "Molto Difensiva",
+"pass": "Centro",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-1-4-1 e riparti in contropiede"
+},
+"pari": {
+"mod": "4-1-4-1",
+"alt": "4-5-1 V",
+"men": "Difensiva",
+"pass": "Centro",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Proteggi i fianchi e attacca centralmente dove la difesa a 3 è fragile"
+},
+"debole": {
+"mod": "4-1-4-1",
+"alt": "4-5-1 V",
+"men": "Normale",
+"pass": "Centro",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-1-4-1 e domina con pressing aggressivo"
+}
+},
+{
+"av": "3-3-1-3",
+"cat": "att",
+"forte": {
+"mod": "4-1-4-1",
+"alt": "4-5-1 V",
+"men": "Molto Difensiva",
+"pass": "Misto",
+"stile": "Lungo",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-1-4-1 e riparti in contropiede"
+},
+"pari": {
+"mod": "4-1-4-1",
+"alt": "4-5-1 V",
+"men": "Difensiva",
+"pass": "Misto",
+"stile": "Lungo",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Il 4-1-4-1 compatto neutralizza la fantasia di questo modulo asimmetrico"
+},
+"debole": {
+"mod": "4-1-4-1",
+"alt": "4-5-1 V",
+"men": "Normale",
+"pass": "Misto",
+"stile": "Lungo",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-1-4-1 e domina con pressing aggressivo"
+}
+},
+{
+"av": "4-2-2-1-1",
+"cat": "dif",
+"forte": {
+"mod": "4-4-2 C",
+"alt": "4-1-2-1-2 ND",
+"men": "Normale",
+"pass": "Misto",
+"stile": "Corto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-4-2 C e riparti in contropiede"
+},
+"pari": {
+"mod": "4-4-2 C",
+"alt": "4-1-2-1-2 ND",
+"men": "Offensiva",
+"pass": "Misto",
+"stile": "Corto",
+"ctrl": "NO",
+"press": "Medio",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Assetto propositivo per superare il doppio schermo davanti alla difesa"
+},
+"debole": {
+"mod": "4-4-2 C",
+"alt": "4-1-2-1-2 ND",
+"men": "Molto Offensiva",
+"pass": "Misto",
+"stile": "Corto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-4-2 C e domina con pressing aggressivo"
+}
+},
+{
+"av": "4-1-1-3-1",
+"cat": "att",
+"forte": {
+"mod": "4-5-1 V",
+"alt": "4-2-3-1",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-5-1 V e riparti in contropiede"
+},
+"pari": {
+"mod": "4-5-1 V",
+"alt": "4-2-3-1",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Basso",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Il V-Style versatile è la risposta migliore a questa variante fluida"
+},
+"debole": {
+"mod": "4-5-1 V",
+"alt": "4-2-3-1",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-5-1 V e domina con pressing aggressivo"
+}
+},
+{
+"av": "3N-2-2-2-1 B Butterfly 3N",
+"cat": "att",
+"forte": {
+"mod": "4-2-2-2 H",
+"alt": "4-3N-2-1",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Resta compatto col 4-2-2-2 H e riparti in contropiede"
+},
+"pari": {
+"mod": "4-2-2-2 H",
+"alt": "4-3N-2-1",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "L'Hexagon bilancia la copertura contro la mobilità del Butterfly"
+},
+"debole": {
+"mod": "4-2-2-2 H",
+"alt": "4-3N-2-1",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Uomo",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Spingi alto col 4-2-2-2 H e domina con pressing aggressivo"
+}
 }
 ]
