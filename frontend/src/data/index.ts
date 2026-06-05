@@ -1,4 +1,4 @@
-// AUTO-GENERATO da _gen_bundle.py
+// AUTO-GENERATO
 
 import formations from './formations.json';
 import counterEngine from './counterEngine.json';
