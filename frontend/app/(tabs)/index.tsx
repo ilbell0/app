@@ -12,7 +12,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { SCOUT_TIPS } from '@/src/data';
+import { SCOUT_TIPS, FORMATIONS, PLAYER_ROLES, META_TACTICS } from '@/src/data';
 
 interface ScoutTip {
   id: string;
@@ -138,7 +138,9 @@ export default function HomeScreen() {
             <View style={styles.academyContent}>
               <Text style={styles.academyTitle}>ACADEMY 2026</Text>
               <Text style={styles.academySub}>
-                {language === 'it' ? 'Ruoli · Meta · Abilità · Allenamento' : 'Roles · Meta · Skills · Training'}
+                {language === 'it'
+                  ? 'Ruoli · Frecce · Meta · Abilità · Allenam. · Squadre · Storie · FAQ · Rapido'
+                  : 'Roles · Arrows · Meta · Skills · Training · Teams · Stories · FAQ · Quick'}
               </Text>
             </View>
             <Ionicons name="chevron-forward" size={20} color={NothingTheme.colors.textTertiary} />
@@ -151,21 +153,21 @@ export default function HomeScreen() {
         {/* Stats Row */}
         <View style={styles.statsRow}>
           <View style={styles.statItem}>
-            <Text style={styles.statNumber}>37</Text>
+            <Text style={styles.statNumber}>{FORMATIONS.length}</Text>
             <Text style={styles.statLabel}>
               {language === 'it' ? 'FORMAZIONI' : 'FORMATIONS'}
             </Text>
           </View>
           <View style={styles.statDivider} />
           <View style={styles.statItem}>
-            <Text style={styles.statNumber}>19</Text>
+            <Text style={styles.statNumber}>{PLAYER_ROLES.length}</Text>
             <Text style={styles.statLabel}>
               {language === 'it' ? 'RUOLI' : 'ROLES'}
             </Text>
           </View>
           <View style={styles.statDivider} />
           <View style={styles.statItem}>
-            <Text style={styles.statNumber}>8</Text>
+            <Text style={styles.statNumber}>{META_TACTICS.length}</Text>
             <Text style={styles.statLabel}>META</Text>
           </View>
         </View>
