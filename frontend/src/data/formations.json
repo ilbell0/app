@@ -6051,5 +6051,987 @@
 }
 }
 }
+},
+{
+"id": "4312",
+"name": "4-3-1-2",
+"description_en": "4-3-1-2 - Balanced formation. Diamond midfield; amc creator.",
+"description_it": "4-3-1-2 - formazione bilanciata. Rombo centrale; amc creatore.",
+"positions": [
+"GK",
+"DR",
+"DC",
+"DC",
+"DL",
+"MC",
+"MC",
+"MC",
+"AMC",
+"ST",
+"ST"
+],
+"category_en": "Balanced",
+"category_it": "Bilanciata",
+"strengths_en": [
+"Diamond midfield",
+"AMC creator",
+"Two strikers",
+"Strong central control"
+],
+"strengths_it": [
+"Rombo centrale",
+"AMC creatore",
+"Due punte",
+"Forte controllo centrale"
+],
+"weaknesses_en": [
+"No natural wingers",
+"Vulnerable on flanks"
+],
+"weaknesses_it": [
+"Nessuna ala naturale",
+"Vulnerabile sulle fasce"
+],
+"tactic_type_en": "Balanced / Narrow Diamond Wide",
+"tactic_type_it": "Bilanciato / Rombo Largo",
+"recommended_tactics": {
+"mentality": "Normal",
+"focus_passing": "Through the Middle",
+"passing_style": "Short",
+"counter_attack": true,
+"pressing": "Medium",
+"tackling": "Normal",
+"marking": "Zonal",
+"offside_trap": false
+},
+"opponent_settings": {
+"strong": {
+"mentality": "Defensive",
+"mentality_it": "Difensivo",
+"focus_passing": "Through the Middle",
+"focus_passing_it": "Per il centro",
+"passing_style": "Short",
+"passing_style_it": "Corti",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Easy",
+"tackling_it": "Facile",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": true,
+"tip_en": "Against stronger sides, stay compact in the 4-3-1-2, drop the pressing and hit on the counter.",
+"tip_it": "Contro avversari più forti, resta compatto col 4-3-1-2, abbassa il pressing e riparti in contropiede.",
+"arrows": {
+"DL": "↓",
+"DR": "↓"
+}
+},
+"equal": {
+"mentality": "Normal",
+"mentality_it": "Normale",
+"focus_passing": "Through the Middle",
+"focus_passing_it": "Per il centro",
+"passing_style": "Short",
+"passing_style_it": "Corti",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Normal",
+"tackling_it": "Normale",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": false,
+"tip_en": "Wide diamond, focused on central possession. Use the AMC to feed both strikers.",
+"tip_it": "Diamante largo focalizzato sul possesso centrale. Usa l'AMC per servire le due punte.",
+"arrows": {
+"ST": "↑"
+}
+},
+"weak": {
+"mentality": "Attacking",
+"mentality_it": "Attaccante",
+"focus_passing": "Through the Middle",
+"focus_passing_it": "Per il centro",
+"passing_style": "Short",
+"passing_style_it": "Corti",
+"counter_attack": false,
+"pressing": "High",
+"pressing_it": "Alto",
+"tackling": "Hard",
+"tackling_it": "Duro",
+"marking": "Man-to-Man",
+"marking_it": "Uomo a Uomo",
+"offside_trap": false,
+"tip_en": "Against weaker sides, push high with the 4-3-1-2, raise pressing and man-marking to dominate.",
+"tip_it": "Contro avversari più deboli, spingi alto col 4-3-1-2, alza pressing e marcatura a uomo per dominare.",
+"arrows": {
+"DL": "↑",
+"DR": "↑",
+"ST": "↑"
+}
+}
+}
+},
+{
+"id": "31213",
+"name": "3-1-2-1-3",
+"description_en": "3-1-2-1-3 - Attacking formation. Three forwards; creative amc.",
+"description_it": "3-1-2-1-3 - formazione attaccante. Tre attaccanti; amc creativo.",
+"positions": [
+"GK",
+"DC",
+"DC",
+"DC",
+"DMC",
+"MC",
+"MC",
+"AMC",
+"AML",
+"ST",
+"AMR"
+],
+"category_en": "Attacking",
+"category_it": "Attaccante",
+"strengths_en": [
+"Three forwards",
+"Creative AMC",
+"DMC shield",
+"Strong central density"
+],
+"strengths_it": [
+"Tre attaccanti",
+"AMC creativo",
+"Schermo DMC",
+"Forte densità centrale"
+],
+"weaknesses_en": [
+"Only 3 CBs",
+"DMC alone in defensive midfield"
+],
+"weaknesses_it": [
+"Solo 3 DC",
+"DMC solo davanti alla difesa"
+],
+"tactic_type_en": "Hard Attacking / Modern",
+"tactic_type_it": "Molto Attaccante / Moderno",
+"recommended_tactics": {
+"mentality": "Hard Attacking",
+"focus_passing": "Through the Middle",
+"passing_style": "Short",
+"counter_attack": false,
+"pressing": "High",
+"tackling": "Hard",
+"marking": "Man-to-Man",
+"offside_trap": false
+},
+"opponent_settings": {
+"strong": {
+"mentality": "Attacking",
+"mentality_it": "Attaccante",
+"focus_passing": "Through the Middle",
+"focus_passing_it": "Per il centro",
+"passing_style": "Short",
+"passing_style_it": "Corti",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Easy",
+"tackling_it": "Facile",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": true,
+"tip_en": "Against stronger sides, stay compact in the 3-1-2-1-3, drop the pressing and hit on the counter.",
+"tip_it": "Contro avversari più forti, resta compatto col 3-1-2-1-3, abbassa il pressing e riparti in contropiede.",
+"arrows": {
+"DMC": "↓"
+}
+},
+"equal": {
+"mentality": "Hard Attacking",
+"mentality_it": "Molto Attaccante",
+"focus_passing": "Through the Middle",
+"focus_passing_it": "Per il centro",
+"passing_style": "Short",
+"passing_style_it": "Corti",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Normal",
+"tackling_it": "Normale",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": false,
+"tip_en": "Aggressive shape with three forwards and a creative AMC. Risky but lethal in attack.",
+"tip_it": "Modulo aggressivo con tre punte e un AMC creativo. Rischioso ma letale in attacco.",
+"arrows": {
+"AML": "↑",
+"AMR": "↑",
+"DMC": "↓"
+}
+},
+"weak": {
+"mentality": "Hard Attacking",
+"mentality_it": "Molto Attaccante",
+"focus_passing": "Through the Middle",
+"focus_passing_it": "Per il centro",
+"passing_style": "Short",
+"passing_style_it": "Corti",
+"counter_attack": false,
+"pressing": "High",
+"pressing_it": "Alto",
+"tackling": "Hard",
+"tackling_it": "Duro",
+"marking": "Man-to-Man",
+"marking_it": "Uomo a Uomo",
+"offside_trap": false,
+"tip_en": "Against weaker sides, push high with the 3-1-2-1-3, raise pressing and man-marking to dominate.",
+"tip_it": "Contro avversari più deboli, spingi alto col 3-1-2-1-3, alza pressing e marcatura a uomo per dominare.",
+"arrows": {
+"AML": "↑",
+"AMR": "↑",
+"ST": "↑",
+"DMC": "↓"
+}
+}
+}
+},
+{
+"id": "3421",
+"name": "3-4-2-1",
+"description_en": "3-4-2-1 - Balanced formation. Double AMC creators; wing-back width.",
+"description_it": "3-4-2-1 - formazione bilanciata. Doppio AMC creativo; ampiezza degli esterni.",
+"positions": [
+"GK",
+"DC",
+"DC",
+"DC",
+"ML",
+"MC",
+"MC",
+"MR",
+"AMC",
+"AMC",
+"ST"
+],
+"category_en": "Balanced",
+"category_it": "Bilanciata",
+"strengths_en": [
+"Double AMC creators",
+"Wing-back width",
+"Three-CB stability",
+"Italian variant"
+],
+"strengths_it": [
+"Doppio AMC creativo",
+"Ampiezza degli esterni",
+"Stabilità a 3 DC",
+"Variante italiana"
+],
+"weaknesses_en": [
+"Vulnerable to fast wings",
+"Needs mobile wing-backs"
+],
+"weaknesses_it": [
+"Vulnerabile contro ali veloci",
+"Richiede esterni mobili"
+],
+"tactic_type_en": "Balanced / Conte-Style",
+"tactic_type_it": "Bilanciato / Stile Conte",
+"recommended_tactics": {
+"mentality": "Normal",
+"focus_passing": "Mixed",
+"passing_style": "Mixed",
+"counter_attack": true,
+"pressing": "Medium",
+"tackling": "Normal",
+"marking": "Zonal",
+"offside_trap": false
+},
+"opponent_settings": {
+"strong": {
+"mentality": "Defensive",
+"mentality_it": "Difensivo",
+"focus_passing": "Mixed",
+"focus_passing_it": "Misto",
+"passing_style": "Mixed",
+"passing_style_it": "Misto",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Easy",
+"tackling_it": "Facile",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": true,
+"tip_en": "Against stronger sides, stay compact in the 3-4-2-1, drop the pressing and hit on the counter.",
+"tip_it": "Contro avversari più forti, resta compatto col 3-4-2-1, abbassa il pressing e riparti in contropiede.",
+"arrows": {
+"DC": "↓"
+}
+},
+"equal": {
+"mentality": "Normal",
+"mentality_it": "Normale",
+"focus_passing": "Mixed",
+"focus_passing_it": "Misto",
+"passing_style": "Mixed",
+"passing_style_it": "Misto",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Normal",
+"tackling_it": "Normale",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": false,
+"tip_en": "Conte/Tuchel style with double #10 behind a lone striker. Wing-backs provide width.",
+"tip_it": "Stile Conte/Tuchel con doppio trequartista dietro la punta. Gli esterni danno ampiezza.",
+"arrows": {
+"ML": "↑",
+"MR": "↑"
+}
+},
+"weak": {
+"mentality": "Attacking",
+"mentality_it": "Attaccante",
+"focus_passing": "Mixed",
+"focus_passing_it": "Misto",
+"passing_style": "Mixed",
+"passing_style_it": "Misto",
+"counter_attack": false,
+"pressing": "High",
+"pressing_it": "Alto",
+"tackling": "Hard",
+"tackling_it": "Duro",
+"marking": "Man-to-Man",
+"marking_it": "Uomo a Uomo",
+"offside_trap": false,
+"tip_en": "Against weaker sides, push high with the 3-4-2-1, raise pressing and man-marking to dominate.",
+"tip_it": "Contro avversari più deboli, spingi alto col 3-4-2-1, alza pressing e marcatura a uomo per dominare.",
+"arrows": {
+"ML": "↑",
+"MR": "↑",
+"ST": "↑"
+}
+}
+}
+},
+{
+"id": "523",
+"name": "5-2-3",
+"description_en": "5-2-3 - Defensive formation. Five at back; two wide forwards.",
+"description_it": "5-2-3 - formazione difensiva. Cinque dietro; due ali avanzate.",
+"positions": [
+"GK",
+"DL",
+"DC",
+"DC",
+"DC",
+"DR",
+"MC",
+"MC",
+"AML",
+"ST",
+"AMR"
+],
+"category_en": "Defensive",
+"category_it": "Difensiva",
+"strengths_en": [
+"Five at back",
+"Two wide forwards",
+"Counter-attack outlets",
+"Solid central defense"
+],
+"strengths_it": [
+"Cinque dietro",
+"Due ali avanzate",
+"Sbocchi per contropiede",
+"Difesa centrale solida"
+],
+"weaknesses_en": [
+"Only 2 MCs",
+"Lone striker isolated"
+],
+"weaknesses_it": [
+"Solo 2 MC",
+"Attaccante centrale isolato"
+],
+"tactic_type_en": "Defensive / Counter with Width",
+"tactic_type_it": "Difensivo / Contropiede con Ampiezza",
+"recommended_tactics": {
+"mentality": "Defensive",
+"focus_passing": "Down Both Flanks",
+"passing_style": "Long",
+"counter_attack": true,
+"pressing": "Low",
+"tackling": "Normal",
+"marking": "Zonal",
+"offside_trap": true
+},
+"opponent_settings": {
+"strong": {
+"mentality": "Hard Defending",
+"mentality_it": "Molto Difensivo",
+"focus_passing": "Down Both Flanks",
+"focus_passing_it": "Per entrambe le fasce",
+"passing_style": "Long",
+"passing_style_it": "Lungo",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Easy",
+"tackling_it": "Facile",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": true,
+"tip_en": "Against stronger sides, stay compact in the 5-2-3, drop the pressing and hit on the counter.",
+"tip_it": "Contro avversari più forti, resta compatto col 5-2-3, abbassa il pressing e riparti in contropiede.",
+"arrows": {
+"DL": "↓",
+"DR": "↓"
+}
+},
+"equal": {
+"mentality": "Defensive",
+"mentality_it": "Difensivo",
+"focus_passing": "Down Both Flanks",
+"focus_passing_it": "Per entrambe le fasce",
+"passing_style": "Long",
+"passing_style_it": "Lungo",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Normal",
+"tackling_it": "Normale",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": true,
+"tip_en": "Five at back with wide forwards for fast counters. Strong against attacking opponents.",
+"tip_it": "Cinque dietro con ali avanti per contropiedi veloci. Forte contro avversari offensivi.",
+"arrows": {
+"AML": "↑",
+"AMR": "↑"
+}
+},
+"weak": {
+"mentality": "Normal",
+"mentality_it": "Normale",
+"focus_passing": "Down Both Flanks",
+"focus_passing_it": "Per entrambe le fasce",
+"passing_style": "Long",
+"passing_style_it": "Lungo",
+"counter_attack": false,
+"pressing": "High",
+"pressing_it": "Alto",
+"tackling": "Hard",
+"tackling_it": "Duro",
+"marking": "Man-to-Man",
+"marking_it": "Uomo a Uomo",
+"offside_trap": false,
+"tip_en": "Against weaker sides, push high with the 5-2-3, raise pressing and man-marking to dominate.",
+"tip_it": "Contro avversari più deboli, spingi alto col 5-2-3, alza pressing e marcatura a uomo per dominare.",
+"arrows": {
+"DL": "↑",
+"DR": "↑",
+"AML": "↑",
+"AMR": "↑",
+"ST": "↑"
+}
+}
+}
+},
+{
+"id": "222n22",
+"name": "4-2-2-2 N (Narrow)",
+"description_en": "4-2-2-2 N (Narrow) - Balanced formation. Double DMC shield; compact midfield.",
+"description_it": "4-2-2-2 N (Narrow) - formazione bilanciata. Doppio scudo DMC; centrocampo compatto.",
+"positions": [
+"GK",
+"DL",
+"DC",
+"DC",
+"DR",
+"DMC",
+"DMC",
+"MC",
+"MC",
+"ST",
+"ST"
+],
+"category_en": "Balanced",
+"category_it": "Bilanciata",
+"strengths_en": [
+"Double DMC shield",
+"Compact midfield",
+"Two strikers",
+"Strong central spine"
+],
+"strengths_it": [
+"Doppio scudo DMC",
+"Centrocampo compatto",
+"Due punte",
+"Forte spina dorsale centrale"
+],
+"weaknesses_en": [
+"No wide attack",
+"Predictable through middle"
+],
+"weaknesses_it": [
+"Niente attacco largo",
+"Prevedibile al centro"
+],
+"tactic_type_en": "Balanced / Compact Hexagon Variant",
+"tactic_type_it": "Bilanciato / Variante Compatta",
+"recommended_tactics": {
+"mentality": "Normal",
+"focus_passing": "Through the Middle",
+"passing_style": "Short",
+"counter_attack": true,
+"pressing": "Medium",
+"tackling": "Normal",
+"marking": "Zonal",
+"offside_trap": false
+},
+"opponent_settings": {
+"strong": {
+"mentality": "Defensive",
+"mentality_it": "Difensivo",
+"focus_passing": "Through the Middle",
+"focus_passing_it": "Per il centro",
+"passing_style": "Short",
+"passing_style_it": "Corti",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Easy",
+"tackling_it": "Facile",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": true,
+"tip_en": "Against stronger sides, stay compact in the 4-2-2-2 N (Narrow), drop the pressing and hit on the counter.",
+"tip_it": "Contro avversari più forti, resta compatto col 4-2-2-2 N (Narrow), abbassa il pressing e riparti in contropiede.",
+"arrows": {
+"DL": "↓",
+"DR": "↓",
+"DMC": "↓"
+}
+},
+"equal": {
+"mentality": "Normal",
+"mentality_it": "Normale",
+"focus_passing": "Through the Middle",
+"focus_passing_it": "Per il centro",
+"passing_style": "Short",
+"passing_style_it": "Corti",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Normal",
+"tackling_it": "Normale",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": false,
+"tip_en": "Narrow variant of 4-2-2-2 Hexagon. Even more central focus, less width.",
+"tip_it": "Variante stretta del 4-2-2-2 Hexagon. Ancora più focus centrale, meno ampiezza.",
+"arrows": {
+"DMC": "↓"
+}
+},
+"weak": {
+"mentality": "Attacking",
+"mentality_it": "Attaccante",
+"focus_passing": "Through the Middle",
+"focus_passing_it": "Per il centro",
+"passing_style": "Short",
+"passing_style_it": "Corti",
+"counter_attack": false,
+"pressing": "High",
+"pressing_it": "Alto",
+"tackling": "Hard",
+"tackling_it": "Duro",
+"marking": "Man-to-Man",
+"marking_it": "Uomo a Uomo",
+"offside_trap": false,
+"tip_en": "Against weaker sides, push high with the 4-2-2-2 N (Narrow), raise pressing and man-marking to dominate.",
+"tip_it": "Contro avversari più deboli, spingi alto col 4-2-2-2 N (Narrow), alza pressing e marcatura a uomo per dominare.",
+"arrows": {
+"DL": "↑",
+"DR": "↑",
+"ST": "↑",
+"DMC": "↓"
+}
+}
+}
+},
+{
+"id": "3142w",
+"name": "3-1-4-2 W",
+"description_en": "3-1-4-2 W - Attacking formation. DMC anchor; wide midfield.",
+"description_it": "3-1-4-2 W - formazione attaccante. DMC ancora; centrocampo largo.",
+"positions": [
+"GK",
+"DC",
+"DC",
+"DC",
+"DMC",
+"ML",
+"MC",
+"MC",
+"MR",
+"ST",
+"ST"
+],
+"category_en": "Attacking",
+"category_it": "Attaccante",
+"strengths_en": [
+"DMC anchor",
+"Wide midfield",
+"Two strikers",
+"Strong wing presence"
+],
+"strengths_it": [
+"DMC ancora",
+"Centrocampo largo",
+"Due punte",
+"Forte presenza laterale"
+],
+"weaknesses_en": [
+"Only 3 CBs",
+"Wide MCs must defend too"
+],
+"weaknesses_it": [
+"Solo 3 DC",
+"I MC larghi devono difendere"
+],
+"tactic_type_en": "Attacking / Wide",
+"tactic_type_it": "Attaccante / Largo",
+"recommended_tactics": {
+"mentality": "Attacking",
+"focus_passing": "Down Both Flanks",
+"passing_style": "Mixed",
+"counter_attack": true,
+"pressing": "Medium",
+"tackling": "Normal",
+"marking": "Zonal",
+"offside_trap": false
+},
+"opponent_settings": {
+"strong": {
+"mentality": "Normal",
+"mentality_it": "Normale",
+"focus_passing": "Down Both Flanks",
+"focus_passing_it": "Per entrambe le fasce",
+"passing_style": "Mixed",
+"passing_style_it": "Misto",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Easy",
+"tackling_it": "Facile",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": true,
+"tip_en": "Against stronger sides, stay compact in the 3-1-4-2 W, drop the pressing and hit on the counter.",
+"tip_it": "Contro avversari più forti, resta compatto col 3-1-4-2 W, abbassa il pressing e riparti in contropiede.",
+"arrows": {
+"DMC": "↓"
+}
+},
+"equal": {
+"mentality": "Attacking",
+"mentality_it": "Attaccante",
+"focus_passing": "Down Both Flanks",
+"focus_passing_it": "Per entrambe le fasce",
+"passing_style": "Mixed",
+"passing_style_it": "Misto",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Normal",
+"tackling_it": "Normale",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": false,
+"tip_en": "Wide version of 3-1-4-2: ML/MR provide width while two strikers attack centrally.",
+"tip_it": "Versione larga del 3-1-4-2: ML/MR danno ampiezza, le due punte attaccano al centro.",
+"arrows": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓"
+}
+},
+"weak": {
+"mentality": "Hard Attacking",
+"mentality_it": "Molto Attaccante",
+"focus_passing": "Down Both Flanks",
+"focus_passing_it": "Per entrambe le fasce",
+"passing_style": "Mixed",
+"passing_style_it": "Misto",
+"counter_attack": false,
+"pressing": "High",
+"pressing_it": "Alto",
+"tackling": "Hard",
+"tackling_it": "Duro",
+"marking": "Man-to-Man",
+"marking_it": "Uomo a Uomo",
+"offside_trap": false,
+"tip_en": "Against weaker sides, push high with the 3-1-4-2 W, raise pressing and man-marking to dominate.",
+"tip_it": "Contro avversari più deboli, spingi alto col 3-1-4-2 W, alza pressing e marcatura a uomo per dominare.",
+"arrows": {
+"ML": "↑",
+"MR": "↑",
+"ST": "↑",
+"DMC": "↓"
+}
+}
+}
+},
+{
+"id": "4231a",
+"name": "4-2-3-1 Attack",
+"description_en": "4-2-3-1 Attack - Attacking formation. Versatile shape; amc creator.",
+"description_it": "4-2-3-1 Attack - formazione attaccante. Modulo versatile; amc creatore.",
+"positions": [
+"GK",
+"DR",
+"DC",
+"DC",
+"DL",
+"MC",
+"MC",
+"AML",
+"AMC",
+"AMR",
+"ST"
+],
+"category_en": "Attacking",
+"category_it": "Attaccante",
+"strengths_en": [
+"Versatile shape",
+"AMC creator",
+"Wide attackers",
+"High pressing potential"
+],
+"strengths_it": [
+"Modulo versatile",
+"AMC creatore",
+"Ali offensive",
+"Alto potenziale di pressing"
+],
+"weaknesses_en": [
+"Lone striker",
+"Two MCs only"
+],
+"weaknesses_it": [
+"Punta solitaria",
+"Solo due MC"
+],
+"tactic_type_en": "Attacking / Modern Press",
+"tactic_type_it": "Attaccante / Pressing Moderno",
+"recommended_tactics": {
+"mentality": "Attacking",
+"focus_passing": "Mixed",
+"passing_style": "Short",
+"counter_attack": false,
+"pressing": "High",
+"tackling": "Normal",
+"marking": "Man-to-Man",
+"offside_trap": false
+},
+"opponent_settings": {
+"strong": {
+"mentality": "Normal",
+"mentality_it": "Normale",
+"focus_passing": "Mixed",
+"focus_passing_it": "Misto",
+"passing_style": "Short",
+"passing_style_it": "Corti",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Easy",
+"tackling_it": "Facile",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": true,
+"tip_en": "Against stronger sides, stay compact in the 4-2-3-1 Attack, drop the pressing and hit on the counter.",
+"tip_it": "Contro avversari più forti, resta compatto col 4-2-3-1 Attack, abbassa il pressing e riparti in contropiede.",
+"arrows": {
+"DL": "↓",
+"DR": "↓"
+}
+},
+"equal": {
+"mentality": "Attacking",
+"mentality_it": "Attaccante",
+"focus_passing": "Mixed",
+"focus_passing_it": "Misto",
+"passing_style": "Short",
+"passing_style_it": "Corti",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Normal",
+"tackling_it": "Normale",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": false,
+"tip_en": "Modern 4-2-3-1 with high pressing setup. Used by top European teams.",
+"tip_it": "4-2-3-1 moderno con setup pressing alto. Usato dai top club europei.",
+"arrows": {
+"AML": "↑",
+"AMR": "↑"
+}
+},
+"weak": {
+"mentality": "Hard Attacking",
+"mentality_it": "Molto Attaccante",
+"focus_passing": "Mixed",
+"focus_passing_it": "Misto",
+"passing_style": "Short",
+"passing_style_it": "Corti",
+"counter_attack": false,
+"pressing": "High",
+"pressing_it": "Alto",
+"tackling": "Hard",
+"tackling_it": "Duro",
+"marking": "Man-to-Man",
+"marking_it": "Uomo a Uomo",
+"offside_trap": false,
+"tip_en": "Against weaker sides, push high with the 4-2-3-1 Attack, raise pressing and man-marking to dominate.",
+"tip_it": "Contro avversari più deboli, spingi alto col 4-2-3-1 Attack, alza pressing e marcatura a uomo per dominare.",
+"arrows": {
+"DL": "↑",
+"DR": "↑",
+"AML": "↑",
+"AMR": "↑",
+"ST": "↑"
+}
+}
+}
+},
+{
+"id": "42312",
+"name": "4-2-3-1-2",
+"description_en": "4-2-3-1-2 - Balanced formation. Double DMC shield; central amc.",
+"description_it": "4-2-3-1-2 - formazione bilanciata. Doppio scudo DMC; amc centrale.",
+"positions": [
+"GK",
+"DR",
+"DC",
+"DC",
+"DL",
+"DMC",
+"DMC",
+"MC",
+"AMC",
+"ST",
+"ST"
+],
+"category_en": "Balanced",
+"category_it": "Bilanciata",
+"strengths_en": [
+"Double DMC shield",
+"Central AMC",
+"Two strikers",
+"Strong central control"
+],
+"strengths_it": [
+"Doppio scudo DMC",
+"AMC centrale",
+"Due punte",
+"Forte controllo centrale"
+],
+"weaknesses_en": [
+"Heavy central focus",
+"Needs creative MC"
+],
+"weaknesses_it": [
+"Molto centrale",
+"Richiede MC creativo"
+],
+"tactic_type_en": "Balanced / Hybrid",
+"tactic_type_it": "Bilanciato / Ibrido",
+"recommended_tactics": {
+"mentality": "Normal",
+"focus_passing": "Through the Middle",
+"passing_style": "Short",
+"counter_attack": true,
+"pressing": "Medium",
+"tackling": "Normal",
+"marking": "Zonal",
+"offside_trap": false
+},
+"opponent_settings": {
+"strong": {
+"mentality": "Defensive",
+"mentality_it": "Difensivo",
+"focus_passing": "Through the Middle",
+"focus_passing_it": "Per il centro",
+"passing_style": "Short",
+"passing_style_it": "Corti",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Easy",
+"tackling_it": "Facile",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": true,
+"tip_en": "Against stronger sides, stay compact in the 4-2-3-1-2, drop the pressing and hit on the counter.",
+"tip_it": "Contro avversari più forti, resta compatto col 4-2-3-1-2, abbassa il pressing e riparti in contropiede.",
+"arrows": {
+"DL": "↓",
+"DR": "↓",
+"DMC": "↓"
+}
+},
+"equal": {
+"mentality": "Normal",
+"mentality_it": "Normale",
+"focus_passing": "Through the Middle",
+"focus_passing_it": "Per il centro",
+"passing_style": "Short",
+"passing_style_it": "Corti",
+"counter_attack": true,
+"pressing": "Low",
+"pressing_it": "Basso",
+"tackling": "Normal",
+"tackling_it": "Normale",
+"marking": "Zonal",
+"marking_it": "Zonale",
+"offside_trap": false,
+"tip_en": "Hybrid modern shape: double DMC for stability + AMC for creativity + two strikers.",
+"tip_it": "Ibrido moderno: doppio DMC per stabilità + AMC creativo + due punte.",
+"arrows": {
+"DMC": "↓"
+}
+},
+"weak": {
+"mentality": "Attacking",
+"mentality_it": "Attaccante",
+"focus_passing": "Through the Middle",
+"focus_passing_it": "Per il centro",
+"passing_style": "Short",
+"passing_style_it": "Corti",
+"counter_attack": false,
+"pressing": "High",
+"pressing_it": "Alto",
+"tackling": "Hard",
+"tackling_it": "Duro",
+"marking": "Man-to-Man",
+"marking_it": "Uomo a Uomo",
+"offside_trap": false,
+"tip_en": "Against weaker sides, push high with the 4-2-3-1-2, raise pressing and man-marking to dominate.",
+"tip_it": "Contro avversari più deboli, spingi alto col 4-2-3-1-2, alza pressing e marcatura a uomo per dominare.",
+"arrows": {
+"DL": "↑",
+"DR": "↑",
+"ST": "↑",
+"DMC": "↓"
+}
+}
+}
 }
 ]

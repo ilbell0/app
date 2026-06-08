@@ -3728,5 +3728,525 @@
 },
 "w": "Spingi alto col 4-2-2-2 H e domina con pressing aggressivo"
 }
+},
+{
+"av": "4-3-1-2",
+"cat": "neu",
+"forte": {
+"mod": "4-5-1 V-Style",
+"alt": "4-2-2-2 H",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Contro avversari piu' forti, resta compatto col 4-5-1 V-Style e riparti in contropiede"
+},
+"pari": {
+"mod": "4-5-1 V-Style",
+"alt": "4-2-2-2 H",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Medio",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Allarga il gioco e attacca le fasce dove il diamante non difende"
+},
+"debole": {
+"mod": "4-5-1 V-Style",
+"alt": "4-2-2-2 H",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"DL": "↑",
+"DR": "↑",
+"ML": "↑",
+"MR": "↑",
+"AML": "↑",
+"AMR": "↑",
+"ST": "↑"
+},
+"w": "Contro avversari piu' deboli, spingi alto col 4-5-1 V-Style con pressing e ritmo"
+}
+},
+{
+"av": "3-1-2-1-3",
+"cat": "att",
+"forte": {
+"mod": "4-1-3-1-1",
+"alt": "4-4-2 Classic",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Contro avversari piu' forti, resta compatto col 4-1-3-1-1 e riparti in contropiede"
+},
+"pari": {
+"mod": "4-1-3-1-1",
+"alt": "4-4-2 Classic",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Medio",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "DMC e MC arretrati neutralizzano l'AMC; difesa a 4 contro 3 punte"
+},
+"debole": {
+"mod": "4-1-3-1-1",
+"alt": "4-4-2 Classic",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"DL": "↑",
+"DR": "↑",
+"ML": "↑",
+"MR": "↑",
+"AML": "↑",
+"AMR": "↑",
+"ST": "↑"
+},
+"w": "Contro avversari piu' deboli, spingi alto col 4-1-3-1-1 con pressing e ritmo"
+}
+},
+{
+"av": "3-4-2-1",
+"cat": "neu",
+"forte": {
+"mod": "4-3-3",
+"alt": "4-5-1 V-Style",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Contro avversari piu' forti, resta compatto col 4-3-3 e riparti in contropiede"
+},
+"pari": {
+"mod": "4-3-3",
+"alt": "4-5-1 V-Style",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Medio",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "4-3-3 sfrutta gli spazi lasciati dai wing-back avanzati"
+},
+"debole": {
+"mod": "4-3-3",
+"alt": "4-5-1 V-Style",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"DL": "↑",
+"DR": "↑",
+"ML": "↑",
+"MR": "↑",
+"AML": "↑",
+"AMR": "↑",
+"ST": "↑"
+},
+"w": "Contro avversari piu' deboli, spingi alto col 4-3-3 con pressing e ritmo"
+}
+},
+{
+"av": "5-2-3",
+"cat": "dif",
+"forte": {
+"mod": "4-3-3",
+"alt": "3-5-2 F",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Contro avversari piu' forti, resta compatto col 4-3-3 e riparti in contropiede"
+},
+"pari": {
+"mod": "4-3-3",
+"alt": "3-5-2 F",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Medio",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Domina il centrocampo a 3 contro 2 e scardina con cross continui"
+},
+"debole": {
+"mod": "4-3-3",
+"alt": "3-5-2 F",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"DL": "↑",
+"DR": "↑",
+"ML": "↑",
+"MR": "↑",
+"AML": "↑",
+"AMR": "↑",
+"ST": "↑"
+},
+"w": "Contro avversari piu' deboli, spingi alto col 4-3-3 con pressing e ritmo"
+}
+},
+{
+"av": "4-2-2-2 N (Narrow)",
+"cat": "neu",
+"forte": {
+"mod": "4-3-3",
+"alt": "4-5-1 V-Style",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Contro avversari piu' forti, resta compatto col 4-3-3 e riparti in contropiede"
+},
+"pari": {
+"mod": "4-3-3",
+"alt": "4-5-1 V-Style",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Medio",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Allarga sulle fasce dove non ci sono ali avversarie"
+},
+"debole": {
+"mod": "4-3-3",
+"alt": "4-5-1 V-Style",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"DL": "↑",
+"DR": "↑",
+"ML": "↑",
+"MR": "↑",
+"AML": "↑",
+"AMR": "↑",
+"ST": "↑"
+},
+"w": "Contro avversari piu' deboli, spingi alto col 4-3-3 con pressing e ritmo"
+}
+},
+{
+"av": "3-1-4-2 W",
+"cat": "att",
+"forte": {
+"mod": "4-2-3-1",
+"alt": "4-4-2 Classic",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Contro avversari piu' forti, resta compatto col 4-2-3-1 e riparti in contropiede"
+},
+"pari": {
+"mod": "4-2-3-1",
+"alt": "4-4-2 Classic",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Medio",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "L'AMC del 4-2-3-1 sfrutta lo spazio tra DMC e linea difensiva avversaria"
+},
+"debole": {
+"mod": "4-2-3-1",
+"alt": "4-4-2 Classic",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"DL": "↑",
+"DR": "↑",
+"ML": "↑",
+"MR": "↑",
+"AML": "↑",
+"AMR": "↑",
+"ST": "↑"
+},
+"w": "Contro avversari piu' deboli, spingi alto col 4-2-3-1 con pressing e ritmo"
+}
+},
+{
+"av": "4-2-3-1 Attack",
+"cat": "att",
+"forte": {
+"mod": "4-1-3N-2",
+"alt": "4-4-2 Classic",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Contro avversari piu' forti, resta compatto col 4-1-3N-2 e riparti in contropiede"
+},
+"pari": {
+"mod": "4-1-3N-2",
+"alt": "4-4-2 Classic",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Medio",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "DMC stretto blocca l'AMC, due MC tengono il centro"
+},
+"debole": {
+"mod": "4-1-3N-2",
+"alt": "4-4-2 Classic",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"DL": "↑",
+"DR": "↑",
+"ML": "↑",
+"MR": "↑",
+"AML": "↑",
+"AMR": "↑",
+"ST": "↑"
+},
+"w": "Contro avversari piu' deboli, spingi alto col 4-1-3N-2 con pressing e ritmo"
+}
+},
+{
+"av": "4-2-3-1-2",
+"cat": "neu",
+"forte": {
+"mod": "4-3-3",
+"alt": "3-5-2 F",
+"men": "Difensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "SI",
+"press": "Basso",
+"cont": "Facile",
+"marc": "Zona",
+"fuo": "SI",
+"fr": {
+"DL": "↓",
+"DC": "↓",
+"DR": "↓",
+"MC": "↓",
+"ST": "—"
+},
+"w": "Contro avversari piu' forti, resta compatto col 4-3-3 e riparti in contropiede"
+},
+"pari": {
+"mod": "4-3-3",
+"alt": "3-5-2 F",
+"men": "Normale",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Medio",
+"cont": "Normale",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"ML": "↑",
+"MR": "↑",
+"DMC": "↓",
+"ST": "—"
+},
+"w": "Allarga il gioco: il centro è folto ma le fasce sono scoperte"
+},
+"debole": {
+"mod": "4-3-3",
+"alt": "3-5-2 F",
+"men": "Offensiva",
+"pass": "Fasce",
+"stile": "Misto",
+"ctrl": "NO",
+"press": "Alto",
+"cont": "Duro",
+"marc": "Zona",
+"fuo": "NO",
+"fr": {
+"DL": "↑",
+"DR": "↑",
+"ML": "↑",
+"MR": "↑",
+"AML": "↑",
+"AMR": "↑",
+"ST": "↑"
+},
+"w": "Contro avversari piu' deboli, spingi alto col 4-3-3 con pressing e ritmo"
+}
 }
 ]
