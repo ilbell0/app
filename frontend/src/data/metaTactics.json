@@ -94,5 +94,65 @@
 "setup_it": "Richiede mentalità difensiva/normale e un DMC con freccia blu per chiudere ogni spazio.",
 "counter_en": "Beaten with the 4-2-2-2 Hexagon to break its rigidity.",
 "counter_it": "Si batte con il 4-2-2-2 Hexagon per spezzare la sua rigidità."
+},
+{
+"id": "4-2-3-1-vertical-tiki-taka",
+"formation": "4-2-3-1 Vertical Tiki-Taka",
+"tier": "S",
+"trending": true,
+"why_it_works_en": "Combines short possession with quick vertical bursts: dominates the ball without losing pace in attack.",
+"why_it_works_it": "Combina possesso corto con verticalizzazioni rapide: domina la palla senza perdere ritmo in attacco.",
+"setup_en": "Attacking mentality, short passing through the middle, AMC as creator, AML/AMR cutting inside on red arrows.",
+"setup_it": "Mentalità offensiva, passaggi corti al centro, AMC creatore, AML/AMR che rientrano con freccia rossa.",
+"counter_en": "Beaten with a 4-1-3-1-1 that crowds the AMC and blocks vertical lanes.",
+"counter_it": "Si batte col 4-1-3-1-1 che soffoca l'AMC e blocca le linee verticali."
+},
+{
+"id": "4-2-3-1-defensive-counter",
+"formation": "4-2-3-1 Defensive Counter",
+"tier": "A",
+"trending": true,
+"why_it_works_en": "Defensive shape with two MCs protecting the back four, then exploding on the counter through the AMC and wingers.",
+"why_it_works_it": "Modulo difensivo con doppio MC a proteggere la difesa, poi esplode in contropiede con AMC e ali.",
+"setup_en": "Defensive mentality, mixed passing, low pressing, counter-attack ON, blue arrows on the back line and MCs, red on AMC.",
+"setup_it": "Mentalità difensiva, passaggi misti, pressing basso, contropiede ON, frecce blu su difesa e MC, rossa su AMC.",
+"counter_en": "Hard Attacking with a 3-4-3 that presses high and limits the time to organize the counter.",
+"counter_it": "Molto Offensivo col 3-4-3 che pressa alto e toglie tempo all'organizzazione del contropiede."
+},
+{
+"id": "4-3-3-tuned-meta",
+"formation": "4-3-3 Tuned Meta",
+"tier": "S",
+"trending": true,
+"why_it_works_en": "Optimized variant of the 4-3-3: false 9, two box-to-box MCs, deep playmaker DMC. The 'tuned' setup of the current meta.",
+"why_it_works_it": "Variante ottimizzata del 4-3-3: falso 9, due MC box-to-box, regista basso DMC. Il setup 'tuned' del meta attuale.",
+"setup_en": "Attacking mentality, short passing down both flanks, high pressing, the DMC has Playmaker ability, both MCs Box-to-Box, ST False 9.",
+"setup_it": "Mentalità offensiva, passaggi corti sulle fasce, pressing alto, DMC con abilità Regista, entrambi i MC Box-to-Box, ST Falso 9.",
+"counter_en": "Defensive 4-1-3-1-1: a DMC and an MC sit deep, marking the False 9 closely.",
+"counter_it": "4-1-3-1-1 difensivo: DMC e un MC arretrati, marcatura stretta sul Falso 9."
+},
+{
+"id": "3-4-3-press",
+"formation": "3-4-3 Press",
+"tier": "A",
+"trending": true,
+"why_it_works_en": "Three-CB stability + four midfield workers + three forwards on red arrows. Gegenpressing in Top Eleven style.",
+"why_it_works_it": "Stabilità a 3 DC + quattro centrocampisti operai + tridente con freccia rossa. Gegenpressing in stile Top Eleven.",
+"setup_en": "Hard Attacking, high pressing, hard tackling, man-to-man marking, red arrows on the front three and on the wide MCs (ML/MR).",
+"setup_it": "Molto Offensivo, pressing alto, contrasti duri, marcatura a uomo, frecce rosse sul tridente e sui MC larghi (ML/MR).",
+"counter_en": "Defensive 4-1-4-1 that absorbs pressure and counters down the wings.",
+"counter_it": "4-1-4-1 difensivo che assorbe la pressione e riparte sulle fasce."
+},
+{
+"id": "4-2-3-1-monster",
+"formation": "4-2-3-1 Monster",
+"tier": "S",
+"trending": true,
+"why_it_works_en": "Ultra-aggressive 4-2-3-1 designed to score 3+ goals per match. Sacrifices defensive cover for total attacking dominance.",
+"why_it_works_it": "4-2-3-1 ultra-aggressivo per segnare 3+ gol a partita. Sacrifica copertura difensiva per dominio totale in attacco.",
+"setup_en": "Hard Attacking mentality, short passing through the middle, high pressing, hard tackling, all the attacking line on red arrows.",
+"setup_it": "Mentalità Molto Offensiva, passaggi corti al centro, pressing alto, contrasti duri, tutto l'attacco con freccia rossa.",
+"counter_en": "5-3-2 with offside trap ON: park the bus and exploit the empty back when they over-commit.",
+"counter_it": "5-3-2 con fuorigioco ON: parcheggia l'autobus e sfrutta le spalle scoperte quando si sbilanciano."
 }
 ]

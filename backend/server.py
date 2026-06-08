@@ -10541,556 +10541,596 @@ COUNTER_QUICK = [
 
 SCOUT_TIPS = [
     {
-        "id": "1",
-        "category": "defense",
-        "title_en": "Center Back Selection",
-        "title_it": "Selezione Difensori Centrali",
-        "content_en": "Look for CBs with high Tackling, Heading, and Positioning. Speed is important to recover against fast strikers. Prioritize players with 4+ stars. Use 2 DC vs 1 ST, 3 DC vs 2 ST, and DL-DC-DR vs ST-AML-AMR.",
-        "content_it": "Cerca DC con alto Contrasto, Colpo di Testa e Posizionamento. La velocità è importante per recuperare contro attaccanti veloci. Dai priorità a giocatori con 4+ stelle. Usa 2 DC vs 1 ST, 3 DC vs 2 ST, e DL-DC-DR vs ST-AML-AMR."
+        "id": '1',
+        "category": 'defense',
+        "title_en": 'Center Back Selection',
+        "title_it": 'Selezione Difensori Centrali',
+        "content_en": 'Look for CBs with high Tackling, Heading, and Positioning. Speed is important to recover against fast strikers. Prioritize players with 4+ stars. Use 2 DC vs 1 ST, 3 DC vs 2 ST, and DL-DC-DR vs ST-AML-AMR.',
+        "content_it": 'Cerca DC con alto Contrasto, Colpo di Testa e Posizionamento. La velocità è importante per recuperare contro attaccanti veloci. Dai priorità a giocatori con 4+ stelle. Usa 2 DC vs 1 ST, 3 DC vs 2 ST, e DL-DC-DR vs ST-AML-AMR.'
     },
     {
-        "id": "2",
-        "category": "midfield",
-        "title_en": "Midfield Balance",
-        "title_it": "Equilibrio a Centrocampo",
-        "content_en": "Have a mix of defensive (DMC) and attacking (AMC) midfielders. ML/MR should have good Crossing and Pace. Central midfielders need Passing and Stamina. Box-to-box midfielders are gold!",
-        "content_it": "Avere un mix di centrocampisti difensivi (DMC) e offensivi (AMC). ML/MR devono avere buon Cross e Velocità. I centrocampisti centrali necessitano Passaggio e Resistenza. I centrocampisti box-to-box sono oro!"
+        "id": '2',
+        "category": 'midfield',
+        "title_en": 'Midfield Balance',
+        "title_it": 'Equilibrio a Centrocampo',
+        "content_en": 'Have a mix of defensive (DMC) and attacking (AMC) midfielders. ML/MR should have good Crossing and Pace. Central midfielders need Passing and Stamina. Box-to-box midfielders are gold!',
+        "content_it": 'Avere un mix di centrocampisti difensivi (DMC) e offensivi (AMC). ML/MR devono avere buon Cross e Velocità. I centrocampisti centrali necessitano Passaggio e Resistenza. I centrocampisti box-to-box sono oro!'
     },
     {
-        "id": "3",
-        "category": "attack",
-        "title_en": "Striker Types",
-        "title_it": "Tipi di Attaccante",
-        "content_en": "Target men need Heading and Strength. Speedsters need Pace and Finishing. Complete forwards are rare but valuable. Use 2 ST to break 4 defenders, 3 ST (or ST-AML-AMR) to break 3 defenders.",
-        "content_it": "I pivot necessitano Colpo di Testa e Forza. I velocisti necessitano Velocità e Finalizzazione. Gli attaccanti completi sono rari ma preziosi. Usa 2 ST vs 4 difensori, 3 ST (o ST-AML-AMR) vs 3 difensori."
+        "id": '3',
+        "category": 'attack',
+        "title_en": 'Striker Types',
+        "title_it": 'Tipi di Attaccante',
+        "content_en": 'Target men need Heading and Strength. Speedsters need Pace and Finishing. Complete forwards are rare but valuable. Use 2 ST to break 4 defenders, 3 ST (or ST-AML-AMR) to break 3 defenders.',
+        "content_it": 'I pivot necessitano Colpo di Testa e Forza. I velocisti necessitano Velocità e Finalizzazione. Gli attaccanti completi sono rari ma preziosi. Usa 2 ST vs 4 difensori, 3 ST (o ST-AML-AMR) vs 3 difensori.'
     },
     {
-        "id": "4",
-        "category": "training",
-        "title_en": "Training Priority",
-        "title_it": "Priorità Allenamento",
-        "content_en": "Focus training on your starting 11 first. Use Quick Training early in seasons. Save intensive drills for important matches. Maintain 80/80 teamplay before big games. Train GK: One-on-One, Aerial, Reflexes. Train DC: Tackling, Heading, Positioning.",
+        "id": '4',
+        "category": 'training',
+        "title_en": 'Training Priority',
+        "title_it": 'Priorità Allenamento',
+        "content_en": 'Focus training on your starting 11 first. Use Quick Training early in seasons. Save intensive drills for important matches. Maintain 80/80 teamplay before big games. Train GK: One-on-One, Aerial, Reflexes. Train DC: Tackling, Heading, Positioning.',
         "content_it": "Concentra l'allenamento prima sui titolari. Usa Allenamento Rapido all'inizio delle stagioni. Conserva gli esercizi intensivi per partite importanti. Mantieni 80/80 di affiatamento prima di grandi partite. Allena GK: Uno contro Uno, Aereo, Riflessi. Allena DC: Contrasto, Colpo di Testa, Posizionamento."
     },
     {
-        "id": "5",
-        "category": "budget",
-        "title_en": "Token Management",
-        "title_it": "Gestione Token",
+        "id": '5',
+        "category": 'budget',
+        "title_en": 'Token Management',
+        "title_it": 'Gestione Token',
         "content_en": "Don't spend more than 30 tokens for a single auction player. Spend at least 15 tokens for youth academy per season. Never buy assistant players for more than 50 tokens. Sign TV rights for daily token bonus.",
         "content_it": "Non spendere più di 30 token per un singolo giocatore all'asta. Spendi almeno 15 token per l'accademia giovanile per stagione. Mai comprare assistenti per più di 50 token. Firma i diritti TV per bonus token giornaliero."
     },
     {
-        "id": "6",
-        "category": "tactics",
-        "title_en": "Team Mentality Explained",
-        "title_it": "Mentalità di Squadra Spiegata",
+        "id": '6',
+        "category": 'tactics',
+        "title_en": 'Team Mentality Explained',
+        "title_it": 'Mentalità di Squadra Spiegata',
         "content_en": "Hard Defending: Deep position, counter-attacks. Defending: Slightly higher, counter from midfield. Normal: Balanced approach. Attacking: Higher line, fullbacks support. Hard Attacking: All-out attack from opponent's half.",
-        "content_it": "Ultra Difensivo: Posizione arretrata, contropiedi. Difensivo: Leggermente più alto, contropiede dal centrocampo. Normale: Approccio bilanciato. Offensivo: Linea più alta, terzini in attacco. Ultra Offensivo: Attacco totale dalla metà campo avversaria."
+        "content_it": 'Ultra Difensivo: Posizione arretrata, contropiedi. Difensivo: Leggermente più alto, contropiede dal centrocampo. Normale: Approccio bilanciato. Offensivo: Linea più alta, terzini in attacco. Ultra Offensivo: Attacco totale dalla metà campo avversaria.'
     },
     {
-        "id": "7",
-        "category": "tactics",
-        "title_en": "Focus Passing Guide",
-        "title_it": "Guida Focus Passaggio",
-        "content_en": "Mixed: Play everywhere on pitch. Down Both Flanks: Use wide players to create. Right/Left Flank: Focus one side. Through the Middle: Central penetration. Match your passing to your formation!",
-        "content_it": "Misto: Gioca ovunque sul campo. Sulle Fasce: Usa esterni per creare. Fascia Destra/Sinistra: Concentra su un lato. Al Centro: Penetrazione centrale. Adatta i passaggi alla tua formazione!"
+        "id": '7',
+        "category": 'tactics',
+        "title_en": 'Focus Passing Guide',
+        "title_it": 'Guida Focus Passaggio',
+        "content_en": 'Mixed: Play everywhere on pitch. Down Both Flanks: Use wide players to create. Right/Left Flank: Focus one side. Through the Middle: Central penetration. Match your passing to your formation!',
+        "content_it": 'Misto: Gioca ovunque sul campo. Sulle Fasce: Usa esterni per creare. Fascia Destra/Sinistra: Concentra su un lato. Al Centro: Penetrazione centrale. Adatta i passaggi alla tua formazione!'
     },
     {
-        "id": "8",
-        "category": "tactics",
-        "title_en": "Counter-Attack & Pressing",
-        "title_it": "Contropiede & Pressing",
-        "content_en": "Turn ON counter-attacks if opponent has more possession. Turn OFF if you dominate. High press wins ball high but tires players. Low press saves stamina for 2 daily games. Use high press against weaker teams!",
+        "id": '8',
+        "category": 'tactics',
+        "title_en": 'Counter-Attack & Pressing',
+        "title_it": 'Contropiede & Pressing',
+        "content_en": 'Turn ON counter-attacks if opponent has more possession. Turn OFF if you dominate. High press wins ball high but tires players. Low press saves stamina for 2 daily games. Use high press against weaker teams!',
         "content_it": "Attiva contropiede se l'avversario ha più possesso. Disattiva se domini. Pressing alto recupera palla in alto ma stanca. Pressing basso risparmia resistenza per 2 partite giornaliere. Usa pressing alto contro squadre più deboli!"
     },
     {
-        "id": "9",
-        "category": "tactics",
-        "title_en": "Marking & Tackling",
-        "title_it": "Marcatura & Contrasti",
+        "id": '9',
+        "category": 'tactics',
+        "title_en": 'Marking & Tackling',
+        "title_it": 'Marcatura & Contrasti',
         "content_en": "Zonal marking: Players stay in formation positions. Man-to-man: Mark specific attackers (tires defenders faster). Easy tackle: Few fouls, less risky. Hard tackle: More fouls but wins more balls. Match opponent's playstyle!",
         "content_it": "Marcatura a zona: Giocatori restano nelle posizioni. Uomo su uomo: Marca attaccanti specifici (stanca i difensori). Contrasto facile: Pochi falli, meno rischioso. Contrasto duro: Più falli ma recupera più palle. Adatta allo stile dell'avversario!"
     },
     {
-        "id": "10",
-        "category": "tactics",
-        "title_en": "Offside Trap",
-        "title_it": "Fuorigioco",
-        "content_en": "Turn ON offside trap if opponent plays long balls to strikers. Turn OFF if opponent plays short passes. Risky against fast strikers! Best used with high defensive line and coordinated back line.",
+        "id": '10',
+        "category": 'tactics',
+        "title_en": 'Offside Trap',
+        "title_it": 'Fuorigioco',
+        "content_en": 'Turn ON offside trap if opponent plays long balls to strikers. Turn OFF if opponent plays short passes. Risky against fast strikers! Best used with high defensive line and coordinated back line.',
         "content_it": "Attiva fuorigioco se l'avversario gioca palle lunghe agli attaccanti. Disattiva se gioca passaggi corti. Rischioso contro attaccanti veloci! Meglio con linea difensiva alta e difesa coordinata."
     },
     {
-        "id": "11",
-        "category": "defense",
-        "title_en": "Full-Back Selection",
-        "title_it": "Selezione Terzini",
-        "content_en": "DR/DL need pace and stamina for overlapping runs. Look for good crossing and tackling. Wing-backs (DML/DMR) need even more stamina. In 3-back systems, they are your only width!",
-        "content_it": "DR/DL necessitano velocità e resistenza per sovrapposizioni. Cerca buon cross e contrasto. I esterni (DML/DMR) necessitano ancora più resistenza. Nei sistemi a 3, sono la tua unica ampiezza!"
+        "id": '11',
+        "category": 'defense',
+        "title_en": 'Full-Back Selection',
+        "title_it": 'Selezione Terzini',
+        "content_en": 'DR/DL need pace and stamina for overlapping runs. Look for good crossing and tackling. Wing-backs (DML/DMR) need even more stamina. In 3-back systems, they are your only width!',
+        "content_it": 'DR/DL necessitano velocità e resistenza per sovrapposizioni. Cerca buon cross e contrasto. I esterni (DML/DMR) necessitano ancora più resistenza. Nei sistemi a 3, sono la tua unica ampiezza!'
     },
     {
-        "id": "12",
-        "category": "attack",
-        "title_en": "Winger Selection",
-        "title_it": "Selezione Ali",
-        "content_en": "ML/MR need Pace, Crossing, and Dribbling. AML/AMR should have Finishing too. Inverted wingers (right-footed on left) can cut inside and shoot. Classic wingers provide crosses for headers.",
-        "content_it": "ML/MR necessitano Velocità, Cross e Dribbling. AML/AMR dovrebbero avere anche Finalizzazione. Ali invertite (destro a sinistra) possono rientrare e tirare. Ali classiche forniscono cross per colpi di testa."
+        "id": '12',
+        "category": 'attack',
+        "title_en": 'Winger Selection',
+        "title_it": 'Selezione Ali',
+        "content_en": 'ML/MR need Pace, Crossing, and Dribbling. AML/AMR should have Finishing too. Inverted wingers (right-footed on left) can cut inside and shoot. Classic wingers provide crosses for headers.',
+        "content_it": 'ML/MR necessitano Velocità, Cross e Dribbling. AML/AMR dovrebbero avere anche Finalizzazione. Ali invertite (destro a sinistra) possono rientrare e tirare. Ali classiche forniscono cross per colpi di testa.'
     },
     {
-        "id": "13",
-        "category": "training",
-        "title_en": "Position Training Drills",
-        "title_it": "Esercizi per Posizione",
-        "content_en": "GK: One-on-One, Aerial, Reflexes. DC: Tackling, Heading, Positioning. DR/DL: Tackling, Pace, Crossing. MC: Passing, Tackling, Stamina. AMC: Passing, Finishing, Creativity. ST: Finishing, Heading, Pace.",
-        "content_it": "GK: Uno contro Uno, Aereo, Riflessi. DC: Contrasto, Colpo di Testa, Posizionamento. DR/DL: Contrasto, Velocità, Cross. MC: Passaggio, Contrasto, Resistenza. AMC: Passaggio, Finalizzazione, Creatività. ST: Finalizzazione, Colpo di Testa, Velocità."
+        "id": '13',
+        "category": 'training',
+        "title_en": 'Position Training Drills',
+        "title_it": 'Esercizi per Posizione',
+        "content_en": 'GK: One-on-One, Aerial, Reflexes. DC: Tackling, Heading, Positioning. DR/DL: Tackling, Pace, Crossing. MC: Passing, Tackling, Stamina. AMC: Passing, Finishing, Creativity. ST: Finishing, Heading, Pace.',
+        "content_it": 'GK: Uno contro Uno, Aereo, Riflessi. DC: Contrasto, Colpo di Testa, Posizionamento. DR/DL: Contrasto, Velocità, Cross. MC: Passaggio, Contrasto, Resistenza. AMC: Passaggio, Finalizzazione, Creatività. ST: Finalizzazione, Colpo di Testa, Velocità.'
     },
     {
-        "id": "14",
-        "category": "budget",
-        "title_en": "Youth Academy Tips",
-        "title_it": "Consigli Accademia Giovanile",
-        "content_en": "Try to get at least three 6-star players from youth academy every season. These young players will help your team win trophies in future seasons. Youth players develop faster with regular playing time.",
+        "id": '14',
+        "category": 'budget',
+        "title_en": 'Youth Academy Tips',
+        "title_it": 'Consigli Accademia Giovanile',
+        "content_en": 'Try to get at least three 6-star players from youth academy every season. These young players will help your team win trophies in future seasons. Youth players develop faster with regular playing time.',
         "content_it": "Cerca di ottenere almeno tre giocatori da 6 stelle dall'accademia ogni stagione. Questi giovani giocatori aiuteranno la squadra a vincere trofei nelle stagioni future. I giovani si sviluppano più velocemente con minuti regolari."
     },
     {
-        "id": "15",
-        "category": "general",
-        "title_en": "Beat Stronger Opponents",
-        "title_it": "Battere Avversari più Forti",
+        "id": '15',
+        "category": 'general',
+        "title_en": 'Beat Stronger Opponents',
+        "title_it": 'Battere Avversari più Forti',
         "content_en": "Play counter-attacking football. Be strong in numbers in defense. Mark all opponent's attackers. Play long balls for counter-attacks - don't try to out-pass stronger midfielders. Let them attack, then strike!",
-        "content_it": "Gioca calcio di contropiede. Sii forte numericamente in difesa. Marca tutti gli attaccanti avversari. Gioca palle lunghe per contropiedi - non provare a superare centrocampisti più forti. Lasciali attaccare, poi colpisci!"
+        "content_it": 'Gioca calcio di contropiede. Sii forte numericamente in difesa. Marca tutti gli attaccanti avversari. Gioca palle lunghe per contropiedi - non provare a superare centrocampisti più forti. Lasciali attaccare, poi colpisci!'
     },
     {
-        "id": "16",
-        "category": "general",
-        "title_en": "Pre-Match Preparation",
-        "title_it": "Preparazione Pre-Partita",
+        "id": '16',
+        "category": 'general',
+        "title_en": 'Pre-Match Preparation',
+        "title_it": 'Preparazione Pre-Partita',
         "content_en": "Always provide full Morale Boost and Fitness Condition before important matches. Add friends in Top Eleven - they help you get more possession during matches! Review opponent's formation and adjust tactics.",
-        "content_it": "Fornisci sempre Morale e Condizione al massimo prima di partite importanti. Aggiungi amici in Top Eleven - ti aiutano ad avere più possesso! Rivedi la formazione avversaria e adatta le tattiche."
+        "content_it": 'Fornisci sempre Morale e Condizione al massimo prima di partite importanti. Aggiungi amici in Top Eleven - ti aiutano ad avere più possesso! Rivedi la formazione avversaria e adatta le tattiche.'
     },
     {
-        "id": "17",
-        "category": "counter",
-        "title_en": "How to Beat 4-4-2 Classic",
-        "title_it": "Come Battere il 4-4-2 Classico",
-        "content_en": "Best counter: 4-5-1 V-Style. Setup — Mentality: Normal, Focus Passing: Down Both Flanks, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: No. Tip: Attack the flanks to exploit the absence of wide midfielders.",
+        "id": '17',
+        "category": 'counter',
+        "title_en": 'How to Beat 4-4-2 Classic',
+        "title_it": 'Come Battere il 4-4-2 Classico',
+        "content_en": 'Best counter: 4-5-1 V-Style. Setup — Mentality: Normal, Focus Passing: Down Both Flanks, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: No. Tip: Attack the flanks to exploit the absence of wide midfielders.',
         "content_it": "Miglior contromodulo: 4-5-1 V-Style. Impostazioni — Mentalità: Normale, Focus Passaggi: Su Entrambe le Fasce, Passaggi: Misto, Pressing: Basso, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: No. Consiglio: Attacca le fasce per sfruttare l'assenza di centrocampisti laterali."
     },
     {
-        "id": "18",
-        "category": "counter",
-        "title_en": "How to Beat 4-3-3",
-        "title_it": "Come Battere il 4-3-3",
-        "content_en": "Best counter: 4-4-2. Setup — Mentality: Defensive, Focus Passing: Mixed, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: Yes. Tip: Use the four-man midfield to dominate central space.",
-        "content_it": "Miglior contromodulo: 4-4-2. Impostazioni — Mentalità: Difensivo, Focus Passaggi: Misto, Passaggi: Misto, Pressing: Basso, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: Sì. Consiglio: Usa il centrocampo a quattro per dominare lo spazio centrale."
+        "id": '18',
+        "category": 'counter',
+        "title_en": 'How to Beat 4-3-3',
+        "title_it": 'Come Battere il 4-3-3',
+        "content_en": 'Best counter: 4-4-2. Setup — Mentality: Defensive, Focus Passing: Mixed, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: Yes. Tip: Use the four-man midfield to dominate central space.',
+        "content_it": 'Miglior contromodulo: 4-4-2. Impostazioni — Mentalità: Difensivo, Focus Passaggi: Misto, Passaggi: Misto, Pressing: Basso, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: Sì. Consiglio: Usa il centrocampo a quattro per dominare lo spazio centrale.'
     },
     {
-        "id": "19",
-        "category": "counter",
-        "title_en": "How to Beat 4-2-3-1",
-        "title_it": "Come Battere il 4-2-3-1",
-        "content_en": "Best counter: 4-1-3N-2. Setup — Mentality: Defensive, Focus Passing: Through the Middle, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: Yes. Tip: A DMC is vital for more clean sheets against this formation.",
-        "content_it": "Miglior contromodulo: 4-1-3N-2. Impostazioni — Mentalità: Difensivo, Focus Passaggi: Al Centro, Passaggi: Misto, Pressing: Basso, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: Sì. Consiglio: Un DMC è vitale per ottenere più clean sheet contro questo modulo."
+        "id": '19',
+        "category": 'counter',
+        "title_en": 'How to Beat 4-2-3-1',
+        "title_it": 'Come Battere il 4-2-3-1',
+        "content_en": 'Best counter: 4-1-3N-2. Setup — Mentality: Defensive, Focus Passing: Through the Middle, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: Yes. Tip: A DMC is vital for more clean sheets against this formation.',
+        "content_it": 'Miglior contromodulo: 4-1-3N-2. Impostazioni — Mentalità: Difensivo, Focus Passaggi: Al Centro, Passaggi: Misto, Pressing: Basso, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: Sì. Consiglio: Un DMC è vitale per ottenere più clean sheet contro questo modulo.'
     },
     {
-        "id": "20",
-        "category": "counter",
-        "title_en": "How to Beat 4-5-1 V-Style",
-        "title_it": "Come Battere il 4-5-1 V-Style",
-        "content_en": "Best counter: 4-3N-3. Setup — Mentality: Defensive, Focus Passing: Down Both Flanks, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: No. Tip: Protect your flanks and attack theirs.",
+        "id": '20',
+        "category": 'counter',
+        "title_en": 'How to Beat 4-5-1 V-Style',
+        "title_it": 'Come Battere il 4-5-1 V-Style',
+        "content_en": 'Best counter: 4-3N-3. Setup — Mentality: Defensive, Focus Passing: Down Both Flanks, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: No. Tip: Protect your flanks and attack theirs.',
         "content_it": "Miglior contromodulo: 4-3N-3. Impostazioni — Mentalità: Difensivo, Focus Passaggi: Su Entrambe le Fasce, Passaggi: Misto, Pressing: Basso, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: No. Consiglio: Proteggi i tuoi fianchi e attacca quelli dell'avversario."
     },
     {
-        "id": "21",
-        "category": "counter",
-        "title_en": "How to Beat 4-5-1 Flat",
-        "title_it": "Come Battere il 4-5-1 Flat",
-        "content_en": "Best counter: 4-1-4-1. Setup — Mentality: Normal, Focus Passing: Mixed, Passing: Short, Pressing: Medium, Tackling: Normal, Marking: Zonal, Offside Trap: No. Tip: Keep possession to neutralize their crowded midfield.",
-        "content_it": "Miglior contromodulo: 4-1-4-1. Impostazioni — Mentalità: Normale, Focus Passaggi: Misto, Passaggi: Corto, Pressing: Medio, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: No. Consiglio: Mantieni il possesso palla per neutralizzare il loro centrocampo folto."
+        "id": '21',
+        "category": 'counter',
+        "title_en": 'How to Beat 4-5-1 Flat',
+        "title_it": 'Come Battere il 4-5-1 Flat',
+        "content_en": 'Best counter: 4-1-4-1. Setup — Mentality: Normal, Focus Passing: Mixed, Passing: Short, Pressing: Medium, Tackling: Normal, Marking: Zonal, Offside Trap: No. Tip: Keep possession to neutralize their crowded midfield.',
+        "content_it": 'Miglior contromodulo: 4-1-4-1. Impostazioni — Mentalità: Normale, Focus Passaggi: Misto, Passaggi: Corto, Pressing: Medio, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: No. Consiglio: Mantieni il possesso palla per neutralizzare il loro centrocampo folto.'
     },
     {
-        "id": "22",
-        "category": "counter",
-        "title_en": "How to Beat 3-5-2 Flat",
-        "title_it": "Come Battere il 3-5-2 Flat",
-        "content_en": "Best counter: 4-5-1 V-Style. Setup — Mentality: Normal, Focus Passing: Down Both Flanks, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: No. Tip: Exploit the wide weakness of the three-man defense with fast wingers.",
-        "content_it": "Miglior contromodulo: 4-5-1 V-Style. Impostazioni — Mentalità: Normale, Focus Passaggi: Su Entrambe le Fasce, Passaggi: Misto, Pressing: Basso, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: No. Consiglio: Sfrutta la debolezza laterale della difesa a tre con ali veloci."
+        "id": '22',
+        "category": 'counter',
+        "title_en": 'How to Beat 3-5-2 Flat',
+        "title_it": 'Come Battere il 3-5-2 Flat',
+        "content_en": 'Best counter: 4-5-1 V-Style. Setup — Mentality: Normal, Focus Passing: Down Both Flanks, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: No. Tip: Exploit the wide weakness of the three-man defense with fast wingers.',
+        "content_it": 'Miglior contromodulo: 4-5-1 V-Style. Impostazioni — Mentalità: Normale, Focus Passaggi: Su Entrambe le Fasce, Passaggi: Misto, Pressing: Basso, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: No. Consiglio: Sfrutta la debolezza laterale della difesa a tre con ali veloci.'
     },
     {
-        "id": "23",
-        "category": "counter",
-        "title_en": "How to Beat 5-4-1 Flat",
-        "title_it": "Come Battere il 5-4-1 Flat",
-        "content_en": "Best counter: 4-4-2. Setup — Mentality: Attacking, Focus Passing: Mixed, Passing: Short, Pressing: High, Tackling: Normal, Marking: Man-to-Man, Offside Trap: No. Tip: Raise your line and pressing to break down the defensive wall.",
-        "content_it": "Miglior contromodulo: 4-4-2. Impostazioni — Mentalità: Offensivo, Focus Passaggi: Misto, Passaggi: Corto, Pressing: Alto, Contrasti: Normale, Marcatura: A Uomo, Trappola Fuorigioco: No. Consiglio: Alza il baricentro e il pressing per scardinare il muro difensivo."
+        "id": '23',
+        "category": 'counter',
+        "title_en": 'How to Beat 5-4-1 Flat',
+        "title_it": 'Come Battere il 5-4-1 Flat',
+        "content_en": 'Best counter: 4-4-2. Setup — Mentality: Attacking, Focus Passing: Mixed, Passing: Short, Pressing: High, Tackling: Normal, Marking: Man-to-Man, Offside Trap: No. Tip: Raise your line and pressing to break down the defensive wall.',
+        "content_it": 'Miglior contromodulo: 4-4-2. Impostazioni — Mentalità: Offensivo, Focus Passaggi: Misto, Passaggi: Corto, Pressing: Alto, Contrasti: Normale, Marcatura: A Uomo, Trappola Fuorigioco: No. Consiglio: Alza il baricentro e il pressing per scardinare il muro difensivo.'
     },
     {
-        "id": "24",
-        "category": "counter",
-        "title_en": "How to Beat 4-1-2-1-2 Narrow Diamond",
-        "title_it": "Come Battere il 4-1-2-1-2 Narrow Diamond",
-        "content_en": "Best counter: 4-5-1 V-Style. Setup — Mentality: Normal, Focus Passing: Down Both Flanks, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: No. Tip: Stretch play to bypass the density of the central diamond.",
-        "content_it": "Miglior contromodulo: 4-5-1 V-Style. Impostazioni — Mentalità: Normale, Focus Passaggi: Su Entrambe le Fasce, Passaggi: Misto, Pressing: Basso, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: No. Consiglio: Allarga il gioco per aggirare la densità del rombo centrale."
+        "id": '24',
+        "category": 'counter',
+        "title_en": 'How to Beat 4-1-2-1-2 Narrow Diamond',
+        "title_it": 'Come Battere il 4-1-2-1-2 Narrow Diamond',
+        "content_en": 'Best counter: 4-5-1 V-Style. Setup — Mentality: Normal, Focus Passing: Down Both Flanks, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: No. Tip: Stretch play to bypass the density of the central diamond.',
+        "content_it": 'Miglior contromodulo: 4-5-1 V-Style. Impostazioni — Mentalità: Normale, Focus Passaggi: Su Entrambe le Fasce, Passaggi: Misto, Pressing: Basso, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: No. Consiglio: Allarga il gioco per aggirare la densità del rombo centrale.'
     },
     {
-        "id": "25",
-        "category": "counter",
-        "title_en": "How to Beat 4-2-2-2 Hexagon",
-        "title_it": "Come Battere il 4-2-2-2 Hexagon",
-        "content_en": "Best counter: 4-5-1 V-Style. Setup — Mentality: Normal, Focus Passing: Down Both Flanks, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: No. Tip: Wingers are essential to hit this versatile formation.",
-        "content_it": "Miglior contromodulo: 4-5-1 V-Style. Impostazioni — Mentalità: Normale, Focus Passaggi: Su Entrambe le Fasce, Passaggi: Misto, Pressing: Basso, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: No. Consiglio: Le ali sono fondamentali per colpire questo modulo versatile."
+        "id": '25',
+        "category": 'counter',
+        "title_en": 'How to Beat 4-2-2-2 Hexagon',
+        "title_it": 'Come Battere il 4-2-2-2 Hexagon',
+        "content_en": 'Best counter: 4-5-1 V-Style. Setup — Mentality: Normal, Focus Passing: Down Both Flanks, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: No. Tip: Wingers are essential to hit this versatile formation.',
+        "content_it": 'Miglior contromodulo: 4-5-1 V-Style. Impostazioni — Mentalità: Normale, Focus Passaggi: Su Entrambe le Fasce, Passaggi: Misto, Pressing: Basso, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: No. Consiglio: Le ali sono fondamentali per colpire questo modulo versatile.'
     },
     {
-        "id": "26",
-        "category": "counter",
-        "title_en": "How to Beat 3-4-1-2",
-        "title_it": "Come Battere il 3-4-1-2",
-        "content_en": "Best counter: 4-1-2-1-2 ND. Setup — Mentality: Normal, Focus Passing: Through the Middle, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Man-to-Man, Offside Trap: No. Tip: Attack the sides of the CBs if the opponent has no wide players.",
+        "id": '26',
+        "category": 'counter',
+        "title_en": 'How to Beat 3-4-1-2',
+        "title_it": 'Come Battere il 3-4-1-2',
+        "content_en": 'Best counter: 4-1-2-1-2 ND. Setup — Mentality: Normal, Focus Passing: Through the Middle, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Man-to-Man, Offside Trap: No. Tip: Attack the sides of the CBs if the opponent has no wide players.',
         "content_it": "Miglior contromodulo: 4-1-2-1-2 ND. Impostazioni — Mentalità: Normale, Focus Passaggi: Al Centro, Passaggi: Misto, Pressing: Basso, Contrasti: Normale, Marcatura: A Uomo, Trappola Fuorigioco: No. Consiglio: Attacca i lati dei DC se l'avversario non ha ali laterali."
     },
     {
-        "id": "27",
-        "category": "counter",
-        "title_en": "How to Beat 3-4-3",
-        "title_it": "Come Battere il 3-4-3",
-        "content_en": "Best counter: 4-2-2-2 Hexagon. Setup — Mentality: Defensive, Focus Passing: Down Both Flanks, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: No. Tip: Exploit the open space on the flanks of the three-man defense.",
-        "content_it": "Miglior contromodulo: 4-2-2-2 Hexagon. Impostazioni — Mentalità: Difensivo, Focus Passaggi: Su Entrambe le Fasce, Passaggi: Misto, Pressing: Basso, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: No. Consiglio: Sfrutta lo spazio aperto sulle fasce della difesa a tre."
+        "id": '27',
+        "category": 'counter',
+        "title_en": 'How to Beat 3-4-3',
+        "title_it": 'Come Battere il 3-4-3',
+        "content_en": 'Best counter: 4-2-2-2 Hexagon. Setup — Mentality: Defensive, Focus Passing: Down Both Flanks, Passing: Mixed, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: No. Tip: Exploit the open space on the flanks of the three-man defense.',
+        "content_it": 'Miglior contromodulo: 4-2-2-2 Hexagon. Impostazioni — Mentalità: Difensivo, Focus Passaggi: Su Entrambe le Fasce, Passaggi: Misto, Pressing: Basso, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: No. Consiglio: Sfrutta lo spazio aperto sulle fasce della difesa a tre.'
     },
     {
-        "id": "28",
-        "category": "counter",
-        "title_en": "How to Beat 4-1-3-2 Wide",
-        "title_it": "Come Battere il 4-1-3-2 Wide",
+        "id": '28',
+        "category": 'counter',
+        "title_en": 'How to Beat 4-1-3-2 Wide',
+        "title_it": 'Come Battere il 4-1-3-2 Wide',
         "content_en": "Best counter: 4-5-1 V-Style. Setup — Mentality: Normal, Focus Passing: Mixed, Passing: Short, Pressing: Low, Tackling: Normal, Marking: Zonal, Offside Trap: No. Tip: Keep balance between the lines so you're not caught out.",
         "content_it": "Miglior contromodulo: 4-5-1 V-Style. Impostazioni — Mentalità: Normale, Focus Passaggi: Misto, Passaggi: Corto, Pressing: Basso, Contrasti: Normale, Marcatura: A Zona, Trappola Fuorigioco: No. Consiglio: Mantieni l'equilibrio tra le linee per non farti sorprendere."
     },
     {
-        "id": "29",
-        "category": "counter",
-        "title_en": "How to Beat 5-2-1-2 X-Style",
-        "title_it": "Come Battere il 5-2-1-2 X-Style",
-        "content_en": "Best counter: 4-1-2-1-2 ND. Setup — Mentality: Normal, Focus Passing: Mixed, Passing: Mixed, Pressing: High, Tackling: Normal, Marking: Man-to-Man, Offside Trap: No. Tip: Intensify pressing to win the ball back quickly.",
-        "content_it": "Miglior contromodulo: 4-1-2-1-2 ND. Impostazioni — Mentalità: Normale, Focus Passaggi: Misto, Passaggi: Misto, Pressing: Alto, Contrasti: Normale, Marcatura: A Uomo, Trappola Fuorigioco: No. Consiglio: Intensifica il pressing per recuperare palla velocemente."
+        "id": '29',
+        "category": 'counter',
+        "title_en": 'How to Beat 5-2-1-2 X-Style',
+        "title_it": 'Come Battere il 5-2-1-2 X-Style',
+        "content_en": 'Best counter: 4-1-2-1-2 ND. Setup — Mentality: Normal, Focus Passing: Mixed, Passing: Mixed, Pressing: High, Tackling: Normal, Marking: Man-to-Man, Offside Trap: No. Tip: Intensify pressing to win the ball back quickly.',
+        "content_it": 'Miglior contromodulo: 4-1-2-1-2 ND. Impostazioni — Mentalità: Normale, Focus Passaggi: Misto, Passaggi: Misto, Pressing: Alto, Contrasti: Normale, Marcatura: A Uomo, Trappola Fuorigioco: No. Consiglio: Intensifica il pressing per recuperare palla velocemente.'
     },
     {
-        "id": "30",
-        "category": "scenario",
-        "title_en": "Defending a Lead",
-        "title_it": "In Vantaggio",
+        "id": '30',
+        "category": 'scenario',
+        "title_en": 'Defending a Lead',
+        "title_it": 'In Vantaggio',
         "content_en": "When you hold a comfortable lead, switch to a defensive or 'park-the-bus' mentality using formations like the 5-4-1. Lower the pressing and set zonal marking to protect the result and conserve energy.",
         "content_it": "Se hai un vantaggio rassicurante, passa a una mentalità difensiva o 'Park-the-Bus' usando moduli come il 5-4-1. Riduci il pressing a basso e imposta la marcatura zonale per proteggere il risultato e conservare energia."
     },
     {
-        "id": "31",
-        "category": "scenario",
-        "title_en": "Chasing the Game",
-        "title_it": "In Svantaggio",
-        "content_en": "Around the 60th minute, switch to aggressive formations like the 4-2-4 or 3-4-1-2 to add attacking weight. Turn on high pressing and man-to-man marking to force errors and win the ball back quickly.",
+        "id": '31',
+        "category": 'scenario',
+        "title_en": 'Chasing the Game',
+        "title_it": 'In Svantaggio',
+        "content_en": 'Around the 60th minute, switch to aggressive formations like the 4-2-4 or 3-4-1-2 to add attacking weight. Turn on high pressing and man-to-man marking to force errors and win the ball back quickly.',
         "content_it": "Intorno al 60° minuto, passa a formazioni aggressive come il 4-2-4 o il 3-4-1-2 per aumentare il peso offensivo. Attiva il pressing alto e la marcatura a uomo per forzare l'avversario all'errore e recuperare palla velocemente."
     },
     {
-        "id": "32",
-        "category": "scenario",
-        "title_en": "Managing the 90 Minutes",
-        "title_it": "Gestione dei Tempi",
+        "id": '32',
+        "category": 'scenario',
+        "title_en": 'Managing the 90 Minutes',
+        "title_it": 'Gestione dei Tempi',
         "content_en": "Start the match with low pressing to preserve your key players' fitness. In the second half, raise the intensity and bring on a striker or winger from the bench if you need decisive late goals.",
         "content_it": "Inizia il match con pressing basso per conservare la condizione fisica dei tuoi giocatori chiave. Nel secondo tempo, aumenta l'intensità e inserisci un attaccante o un'ala dalla panchina se hai bisogno di segnare gol decisivi nel finale."
     },
     {
-        "id": "33",
-        "category": "scenario",
-        "title_en": "Quick Tactical Switches",
-        "title_it": "Cambi Tattici Rapidi",
+        "id": '33',
+        "category": 'scenario',
+        "title_en": 'Quick Tactical Switches',
+        "title_it": 'Cambi Tattici Rapidi',
         "content_en": "Save up to four different formations in the Team menu for instant tactical switches during the live match. This lets you react to the opponent's moves without wasting precious time or unnecessary substitutions.",
         "content_it": "Salva fino a quattro formazioni diverse nel menu Squadra per effettuare cambi tattici istantanei durante il match live. Questa strategia ti permette di reagire alle mosse dell'avversario senza sprecare tempo prezioso o sostituzioni inutili."
     },
     {
-        "id": "34",
-        "category": "morale",
-        "title_en": "Morale Baseline",
-        "title_it": "Baseline del Morale",
+        "id": '34',
+        "category": 'morale',
+        "title_en": 'Morale Baseline',
+        "title_it": 'Baseline del Morale',
         "content_en": "The 'Good' morale level is now the new baseline and is more impactful than the old 'Superb'. Always check the Morale tab to see if players need more game time or if events like a hat-trick have boosted their state.",
         "content_it": "Il livello di morale 'Buono' è ora il nuovo standard di base ed è più impattante del vecchio 'Superbo'. Controlla sempre il tab Morale per capire se i giocatori necessitano di più minutaggio o se eventi come una tripletta hanno aumentato il loro stato."
     },
     {
-        "id": "35",
-        "category": "morale",
-        "title_en": "Condition & Pressing",
-        "title_it": "Condizione e Pressing",
+        "id": '35',
+        "category": 'morale',
+        "title_en": 'Condition & Pressing',
+        "title_it": 'Condizione e Pressing',
         "content_en": "Avoid turning on high pressing too early so you don't drain fitness before the last 10 minutes. Condition that drops too low drastically reduces player effectiveness in the crucial phases of the match.",
         "content_it": "Evita di attivare il pressing alto troppo presto nel match per non esaurire la condizione fisica prima degli ultimi 10 minuti. Una condizione troppo bassa riduce drasticamente l'efficacia dei giocatori nelle fasi cruciali della partita."
     },
     {
-        "id": "36",
-        "category": "morale",
-        "title_en": "Team Balance",
-        "title_it": "Equilibrio di Squadra",
+        "id": '36',
+        "category": 'morale',
+        "title_en": 'Team Balance',
+        "title_it": 'Equilibrio di Squadra',
         "content_en": "Keep your Team Balance score between 9.2 and 10 to ensure the team performs at its peak. Having a single overpowered ('mutant') player can paradoxically lower overall quality and lead to losses against weaker teams.",
         "content_it": "Mantieni il punteggio di 'Team Balance' tra 9.2 e 10 per garantire che la squadra performi al massimo delle sue potenzialità. Avere un singolo giocatore 'overpowered' (mutante) può paradossalmente abbassare la qualità complessiva e portare a sconfitte contro team più deboli."
     },
     {
-        "id": "37",
-        "category": "market",
-        "title_en": "Hunting Fast Trainers",
-        "title_it": "Ricerca Fast Trainers",
+        "id": '37',
+        "category": 'market',
+        "title_en": 'Hunting Fast Trainers',
+        "title_it": 'Ricerca Fast Trainers',
         "content_en": "At auctions, focus on buying 'fast trainers' who grow quickly with training. Following specific lists of these talents lets you build a competitive squad while saving tokens and resources.",
         "content_it": "Durante le aste, concentrati sull'acquisto di giocatori definiti 'fast trainers' che crescono rapidamente con l'allenamento. Seguire liste specifiche di questi talenti ti permette di costruire una squadra competitiva risparmiando token e risorse."
     },
     {
-        "id": "38",
-        "category": "market",
-        "title_en": "Stockpiling Tokens",
-        "title_it": "Accumulo di Token",
-        "content_en": "Use the daily Special Sponsor and free events like the Draw Frenzy to stockpile tokens without spending real money. A good token reserve is essential to reinforce key roles during the hot phases of the season.",
+        "id": '38',
+        "category": 'market',
+        "title_en": 'Stockpiling Tokens',
+        "title_it": 'Accumulo di Token',
+        "content_en": 'Use the daily Special Sponsor and free events like the Draw Frenzy to stockpile tokens without spending real money. A good token reserve is essential to reinforce key roles during the hot phases of the season.',
         "content_it": "Sfrutta quotidianamente lo Special Sponsor e gli eventi gratuiti come il 'Draw Frenzy' per accumulare token senza spendere denaro reale. Una buona riserva di token è fondamentale per rinforzare i ruoli chiave durante le fasi calde della stagione."
     },
     {
-        "id": "39",
-        "category": "market",
-        "title_en": "Auction Strategy",
-        "title_it": "Strategia nelle Aste",
+        "id": '39',
+        "category": 'market',
+        "title_en": 'Auction Strategy',
+        "title_it": 'Strategia nelle Aste',
         "content_en": "Carefully analyze a player's 'white' attributes before bidding, favoring those with very high key stats and low 'grey' stats. Don't rebid compulsively — judge whether the token cost is justified by the player's growth potential.",
         "content_it": "Analizza attentamente le abilità 'bianche' di un giocatore prima di offrire, preferendo chi ha statistiche chiave altissime e statistiche 'grigie' basse. Non rilanciare compulsivamente, ma valuta se il costo in token è giustificato dal potenziale di crescita del giocatore."
     },
     {
-        "id": "40",
-        "category": "skills",
-        "title_en": "The False Nine Dominance",
-        "title_it": "Il Dominio del Falso Nove",
+        "id": '40',
+        "category": 'skills',
+        "title_en": 'The False Nine Dominance',
+        "title_it": 'Il Dominio del Falso Nove',
         "content_en": "In the 2026 meta the False Nine is considered the strongest striker playstyle. It lets the forward drop deep, dragging out the centre-backs and creating lethal gaps for the wingers' runs.",
-        "content_it": "Nel meta 2026, il False Nine è considerato lo stile di gioco più forte per un attaccante. Questo ruolo permette alla punta di arretrare, attirando fuori i difensori centrali e creando varchi letali per gli inserimenti delle ali."
+        "content_it": 'Nel meta 2026, il False Nine è considerato lo stile di gioco più forte per un attaccante. Questo ruolo permette alla punta di arretrare, attirando fuori i difensori centrali e creando varchi letali per gli inserimenti delle ali.'
     },
     {
-        "id": "41",
-        "category": "skills",
-        "title_en": "Wingers & Dual Position",
-        "title_it": "Ali e Doppio Ruolo",
-        "content_en": "Use players with the Dual Position ability (AML/AMR) to exploit weaknesses in opposing defenses. Wingers are essential to overload the flanks against formations that defend poorly out wide, like the 4-5-1 V-Style.",
+        "id": '41',
+        "category": 'skills',
+        "title_en": 'Wingers & Dual Position',
+        "title_it": 'Ali e Doppio Ruolo',
+        "content_en": 'Use players with the Dual Position ability (AML/AMR) to exploit weaknesses in opposing defenses. Wingers are essential to overload the flanks against formations that defend poorly out wide, like the 4-5-1 V-Style.',
         "content_it": "Utilizza giocatori con abilità 'Dual Position' (AML/AMR) per sfruttare i punti deboli delle difese avversarie. Le ali sono essenziali per sovraccaricare le fasce contro moduli che difendono male lateralmente, come il 4-5-1 V-Style."
     },
     {
-        "id": "42",
-        "category": "skills",
-        "title_en": "Arrows & Pace",
-        "title_it": "Frecce e Velocità",
+        "id": '42',
+        "category": 'skills',
+        "title_en": 'Arrows & Pace',
+        "title_it": 'Frecce e Velocità',
         "content_en": "Apply the red (forward) arrow to fast players to push them forward, and the blue (back) arrow to slower ones to keep them in defensive position. This trick optimizes the team's dynamic positioning based on each player's physical traits.",
-        "content_it": "Applica la freccia rossa ai giocatori con alta velocità per spingerli in fase offensiva e la freccia blu a quelli più lenti per mantenerli in posizione difensiva. Questo trucco ottimizza il posizionamento dinamico della squadra in base alle caratteristiche fisiche dei singoli."
+        "content_it": 'Applica la freccia rossa ai giocatori con alta velocità per spingerli in fase offensiva e la freccia blu a quelli più lenti per mantenerli in posizione difensiva. Questo trucco ottimizza il posizionamento dinamico della squadra in base alle caratteristiche fisiche dei singoli.'
     },
     {
-        "id": "43",
-        "category": "skills",
-        "title_en": "Shadow Striker Role",
-        "title_it": "Ruolo Shadow Striker",
+        "id": '43',
+        "category": 'skills',
+        "title_en": 'Shadow Striker Role',
+        "title_it": 'Ruolo Shadow Striker',
         "content_en": "Set up an AMC with the Shadow Striker ability to create a 'hidden' threat that breaks into the empty spaces left by the defense. This is especially effective when the opponent has no DMC protecting the area in front of the back line.",
         "content_it": "Imposta un AMC con l'abilità Shadow Striker per creare una minaccia 'segreta' che si inserisce negli spazi vuoti lasciati dalla difesa. Questa posizione è particolarmente efficace se l'avversario non utilizza un DMC per proteggere l'area davanti ai difensori."
     },
     {
-        "id": "44",
-        "category": "skills",
-        "title_en": "DMC for Clean Sheets",
-        "title_it": "DMC per i Clean Sheet",
+        "id": '44',
+        "category": 'skills',
+        "title_en": 'DMC for Clean Sheets',
+        "title_it": 'DMC per i Clean Sheet',
         "content_en": "Adding a DMC is vital in almost any formation to increase your chance of a clean sheet. Acting as an 'advanced stopper', he screens the defense and intercepts the play of the opponent's most dangerous AMCs.",
         "content_it": "L'inserimento di un DMC è vitale in quasi ogni formazione per aumentare la probabilità di non subire gol. Agendo come uno 'stopper avanzato', scherma la difesa e intercetta le trame di gioco degli AMC avversari più pericolosi."
     },
     {
-        "id": "45",
-        "category": "arrows",
-        "title_en": "Red Arrow (Attack)",
-        "title_it": "Freccia Rossa (Attacco)",
+        "id": '45',
+        "category": 'arrows',
+        "title_en": 'Red Arrow (Attack)',
+        "title_it": 'Freccia Rossa (Attacco)',
         "content_en": "The red arrow signals an attacking mentality and pushes the player forward to join the attack. It's useful for wingers or strikers who need to exploit empty spaces and create shooting chances.",
         "content_it": "La freccia rossa indica una mentalità offensiva e spinge il giocatore ad avanzare per partecipare alla manovra d'attacco. È utile per le ali o gli attaccanti che devono sfruttare gli spazi vuoti e creare opportunità di tiro."
     },
     {
-        "id": "46",
-        "category": "arrows",
-        "title_en": "Blue Arrow (Defense)",
-        "title_it": "Freccia Blu (Difesa)",
+        "id": '46',
+        "category": 'arrows',
+        "title_en": 'Blue Arrow (Defense)',
+        "title_it": 'Freccia Blu (Difesa)',
         "content_en": "The blue arrow gives defensive instructions, forcing the player to hold a deeper position. It's used to ensure unit solidity and stop defenders pushing up too far and leaving gaps.",
-        "content_it": "La freccia blu assegna istruzioni difensive, costringendo il giocatore a mantenere una posizione più arretrata. Garantisce la solidità del reparto e impedisce ai difensori di salire troppo lasciando varchi agli avversari."
+        "content_it": 'La freccia blu assegna istruzioni difensive, costringendo il giocatore a mantenere una posizione più arretrata. Garantisce la solidità del reparto e impedisce ai difensori di salire troppo lasciando varchi agli avversari.'
     },
     {
-        "id": "47",
-        "category": "arrows",
-        "title_en": "Setting Arrows",
-        "title_it": "Selezione delle Frecce",
-        "content_en": "To set arrows, tap the player in the Team menu: one tap sets the red arrow, a second the blue arrow, a third removes it. This turns a standard formation into an asymmetric or more versatile shape.",
-        "content_it": "Per applicare le frecce clicca sul giocatore nel menu Squadra: un clic attiva la freccia rossa, un secondo la freccia blu e un terzo la rimuove. Così trasformi una formazione standard in un modulo asimmetrico o più versatile."
+        "id": '47',
+        "category": 'arrows',
+        "title_en": 'Setting Arrows',
+        "title_it": 'Selezione delle Frecce',
+        "content_en": 'To set arrows, tap the player in the Team menu: one tap sets the red arrow, a second the blue arrow, a third removes it. This turns a standard formation into an asymmetric or more versatile shape.',
+        "content_it": 'Per applicare le frecce clicca sul giocatore nel menu Squadra: un clic attiva la freccia rossa, un secondo la freccia blu e un terzo la rimuove. Così trasformi una formazione standard in un modulo asimmetrico o più versatile.'
     },
     {
-        "id": "48",
-        "category": "arrows",
-        "title_en": "Impact on Condition",
-        "title_it": "Impatto sulla Condizione",
+        "id": '48',
+        "category": 'arrows',
+        "title_en": 'Impact on Condition',
+        "title_it": 'Impatto sulla Condizione',
         "content_en": "Activating too many attacking arrows, especially with high pressing, drastically drains fitness over time. Better to start with few arrows and activate them in the second half so you don't burn stamina before the finish.",
-        "content_it": "Attivare troppe frecce offensive, specialmente con pressing alto, riduce drasticamente la condizione fisica nel tempo. Meglio iniziare con poche frecce e attivarle nel secondo tempo per non esaurire la stamina prima del finale."
+        "content_it": 'Attivare troppe frecce offensive, specialmente con pressing alto, riduce drasticamente la condizione fisica nel tempo. Meglio iniziare con poche frecce e attivarle nel secondo tempo per non esaurire la stamina prima del finale.'
     },
     {
-        "id": "49",
-        "category": "arrows",
-        "title_en": "Arrows and Pace",
-        "title_it": "Frecce e Velocità",
+        "id": '49',
+        "category": 'arrows',
+        "title_en": 'Arrows and Pace',
+        "title_it": 'Frecce e Velocità',
         "content_en": "Key rule: red arrow for fast players, blue arrow for slower ones. This lets pacey players burst into space while slow ones hold position so they aren't beaten on the counter.",
-        "content_it": "Regola fondamentale: freccia rossa ai giocatori veloci, freccia blu ai più lenti. Così i velocisti scattano negli spazi mentre i lenti restano in posizione per non farsi superare in contropiede."
+        "content_it": 'Regola fondamentale: freccia rossa ai giocatori veloci, freccia blu ai più lenti. Così i velocisti scattano negli spazi mentre i lenti restano in posizione per non farsi superare in contropiede.'
     },
     {
-        "id": "50",
-        "category": "arrows",
-        "title_en": "Mistakes to Avoid",
-        "title_it": "Errori da Evitare",
+        "id": '50',
+        "category": 'arrows',
+        "title_en": 'Mistakes to Avoid',
+        "title_it": 'Errori da Evitare',
         "content_en": "Avoid red arrows on both full-backs if your CBs don't outnumber the strikers — a long ball could break your defense. And don't use aggressive arrows too early against strong opponents to avoid physical collapse.",
-        "content_it": "Evita la freccia rossa a entrambi i terzini se i DC non hanno superiorità numerica sulle punte: un lancio lungo distruggerebbe la difesa. E non usare frecce aggressive troppo presto contro avversari forti, per evitare crolli fisici."
+        "content_it": 'Evita la freccia rossa a entrambi i terzini se i DC non hanno superiorità numerica sulle punte: un lancio lungo distruggerebbe la difesa. E non usare frecce aggressive troppo presto contro avversari forti, per evitare crolli fisici.'
     },
     {
-        "id": "51",
-        "category": "meta",
-        "title_en": "False 9: Why It Dominates",
-        "title_it": "Falso Nove: Perché Domina",
+        "id": '51',
+        "category": 'meta',
+        "title_en": 'False 9: Why It Dominates',
+        "title_it": 'Falso Nove: Perché Domina',
         "content_en": "The False Nine is the strongest striker playstyle in the 2026 meta, able to break down even stronger opponents' defenses. It dominates because the forward gives the centre-backs no reference point, creating lethal gaps for teammates' runs.",
         "content_it": "Il Falso Nove è lo stile di gioco per l'attaccante più potente nel meta 2026, capace di scardinare anche difese di avversari più forti. Domina perché la punta non dà punti di riferimento ai DC, creando spazi letali per gli inserimenti dei compagni."
     },
     {
-        "id": "52",
-        "category": "meta",
-        "title_en": "False 9: Key Attributes",
-        "title_it": "Falso Nove: Attributi Chiave",
+        "id": '52',
+        "category": 'meta',
+        "title_en": 'False 9: Key Attributes',
+        "title_it": 'Falso Nove: Attributi Chiave',
         "content_en": "You need very high 'white skills', especially finishing, shooting, passing and creativity. A 6-star forward with optimized white attributes beats one with more stars but too many grey stats.",
         "content_it": "Servono 'white skills' altissime, in particolare finalizzazione, tiro, passaggio e creatività. Un attaccante da 6 stelle con attributi bianchi ottimizzati è preferibile a uno con più stelle ma troppe statistiche grigie."
     },
     {
-        "id": "53",
-        "category": "meta",
-        "title_en": "False 9: Best Formations",
-        "title_it": "Falso Nove: Moduli Migliori",
-        "content_en": "The most effective systems for the False Nine are the 4-3-3 and 4-5-1 V-Style, forming a dynamic front three and exploiting the forward dropping deep to link play with midfield.",
-        "content_it": "I sistemi più efficaci per il Falso Nove sono il 4-3-3 e il 4-5-1 V-Style, che formano un tridente dinamico e sfruttano la capacità della punta di abbassarsi per collegare il gioco col centrocampo."
+        "id": '53',
+        "category": 'meta',
+        "title_en": 'False 9: Best Formations',
+        "title_it": 'Falso Nove: Moduli Migliori',
+        "content_en": 'The most effective systems for the False Nine are the 4-3-3 and 4-5-1 V-Style, forming a dynamic front three and exploiting the forward dropping deep to link play with midfield.',
+        "content_it": 'I sistemi più efficaci per il Falso Nove sono il 4-3-3 e il 4-5-1 V-Style, che formano un tridente dinamico e sfruttano la capacità della punta di abbassarsi per collegare il gioco col centrocampo.'
     },
     {
-        "id": "54",
-        "category": "meta",
-        "title_en": "False 9: Arrows & Support",
-        "title_it": "Falso Nove: Frecce e Supporto",
-        "content_en": "Pair the False Nine with two wingers (AML/AMR) on red arrows that use the Dual Position to cut into the box. The forward stays with no arrow or a blue arrow to drag the CBs out, freeing the wingers in the space.",
-        "content_it": "Affianca al Falso Nove due ali (AML/AMR) con freccia rossa che sfruttino il Dual Position per tagliare in area. La punta resta senza freccia o con freccia blu per attirare i DC, lasciando le ali libere negli spazi."
+        "id": '54',
+        "category": 'meta',
+        "title_en": 'False 9: Arrows & Support',
+        "title_it": 'Falso Nove: Frecce e Supporto',
+        "content_en": 'Pair the False Nine with two wingers (AML/AMR) on red arrows that use the Dual Position to cut into the box. The forward stays with no arrow or a blue arrow to drag the CBs out, freeing the wingers in the space.',
+        "content_it": 'Affianca al Falso Nove due ali (AML/AMR) con freccia rossa che sfruttino il Dual Position per tagliare in area. La punta resta senza freccia o con freccia blu per attirare i DC, lasciando le ali libere negli spazi.'
     },
     {
-        "id": "55",
-        "category": "meta",
-        "title_en": "Defending vs the False 9",
-        "title_it": "Come Difendersi dal Falso Nove",
-        "content_en": "Against a False Nine the best counter is the 4-1-3-1-1, with the DMC and an MC sitting deep to choke the space between defense and midfield. Use a defensive mentality, zonal marking and pressing in your own half.",
-        "content_it": "Contro un Falso Nove la contromossa migliore è il 4-1-3-1-1, con DMC e un MC molto arretrati per soffocare lo spazio tra difesa e mediana. Usa mentalità difensiva, marcatura a zona e pressing nella tua metà campo."
+        "id": '55',
+        "category": 'meta',
+        "title_en": 'Defending vs the False 9',
+        "title_it": 'Come Difendersi dal Falso Nove',
+        "content_en": 'Against a False Nine the best counter is the 4-1-3-1-1, with the DMC and an MC sitting deep to choke the space between defense and midfield. Use a defensive mentality, zonal marking and pressing in your own half.',
+        "content_it": 'Contro un Falso Nove la contromossa migliore è il 4-1-3-1-1, con DMC e un MC molto arretrati per soffocare lo spazio tra difesa e mediana. Usa mentalità difensiva, marcatura a zona e pressing nella tua metà campo.'
     },
     {
-        "id": "56",
-        "category": "meta",
-        "title_en": "False 9: Mistakes to Avoid",
-        "title_it": "Falso Nove: Errori da Evitare",
+        "id": '56',
+        "category": 'meta',
+        "title_en": 'False 9: Mistakes to Avoid',
+        "title_it": 'Falso Nove: Errori da Evitare',
         "content_en": "Don't build the whole team around a single super-striker while ignoring Team Balance (keep it between 9.2 and 10). And don't turn on high pressing too early: it drains the fitness you need in the closing minutes.",
-        "content_it": "Non concentrare tutta la squadra su un solo super attaccante ignorando il Team Balance (tienilo tra 9.2 e 10). E non attivare il pressing alto troppo presto: riduce la condizione fisica nei minuti finali."
+        "content_it": 'Non concentrare tutta la squadra su un solo super attaccante ignorando il Team Balance (tienilo tra 9.2 e 10). E non attivare il pressing alto troppo presto: riduce la condizione fisica nei minuti finali.'
     },
     {
-        "id": "57",
-        "category": "economy",
-        "title_en": "Special Sponsor First",
-        "title_it": "Special Sponsor Prima di Tutto",
-        "content_en": "Always sign the Special Sponsor (the daily tokens one) before any other deal. Over a season the cumulative income is the highest free token source in the game.",
+        "id": '57',
+        "category": 'economy',
+        "title_en": 'Special Sponsor First',
+        "title_it": 'Special Sponsor Prima di Tutto',
+        "content_en": 'Always sign the Special Sponsor (the daily tokens one) before any other deal. Over a season the cumulative income is the highest free token source in the game.',
         "content_it": "Firma sempre lo Special Sponsor (quello dei token giornalieri) prima di ogni altro accordo. Sull'arco di una stagione l'introito cumulato è la fonte di token gratuita più alta del gioco."
     },
     {
-        "id": "58",
-        "category": "economy",
-        "title_en": "Daily Free Events",
-        "title_it": "Eventi Gratuiti Quotidiani",
+        "id": '58',
+        "category": 'economy',
+        "title_en": 'Daily Free Events',
+        "title_it": 'Eventi Gratuiti Quotidiani',
         "content_en": "Open the game every day for Draw Frenzy, free packs and rewards. Five minutes of activity equal 2-5 free tokens — over a season that's a serious budget.",
         "content_it": "Apri il gioco ogni giorno per Draw Frenzy, pacchetti gratuiti e ricompense. Cinque minuti di attività valgono 2-5 token gratis — sull'arco della stagione è un budget serio."
     },
     {
-        "id": "59",
-        "category": "economy",
-        "title_en": "Auction Ceiling",
-        "title_it": "Tetto in Asta",
+        "id": '59',
+        "category": 'economy',
+        "title_en": 'Auction Ceiling',
+        "title_it": 'Tetto in Asta',
         "content_en": "Set yourself a max-token limit per auction (e.g. 30 tokens for a key role, 15 for a backup). Never go beyond, even in the heat of bidding: tomorrow there's a better one.",
         "content_it": "Datti un limite massimo di token per ogni asta (es. 30 token per un ruolo chiave, 15 per una riserva). Non superarlo mai, anche nella foga: domani ce n'è uno migliore."
     },
     {
-        "id": "60",
-        "category": "economy",
-        "title_en": "Youth Academy ROI",
-        "title_it": "ROI Accademia Giovanile",
-        "content_en": "15 tokens spent on the youth academy each season give an average of 1-2 six-star young players. Three years like this and you have a top squad without buying anyone.",
+        "id": '60',
+        "category": 'economy',
+        "title_en": 'Youth Academy ROI',
+        "title_it": 'ROI Accademia Giovanile',
+        "content_en": '15 tokens spent on the youth academy each season give an average of 1-2 six-star young players. Three years like this and you have a top squad without buying anyone.',
         "content_it": "15 token spesi nell'accademia giovanile ogni stagione regalano in media 1-2 giovani da 6 stelle. Tre stagioni così e hai una rosa top senza comprare nessuno."
     },
     {
-        "id": "61",
-        "category": "economy",
-        "title_en": "Sell Before Negative",
-        "title_it": "Vendere Prima del Negativo",
+        "id": '61',
+        "category": 'economy',
+        "title_en": 'Sell Before Negative',
+        "title_it": 'Vendere Prima del Negativo',
         "content_en": "A 27-year-old player still sells well; a 30-year-old loses most of his value. Plan generational changes 2 seasons in advance, you won't take losses.",
-        "content_it": "Un giocatore di 27 anni si vende ancora bene; uno di 30 perde la maggior parte del valore. Pianifica i ricambi generazionali con 2 stagioni di anticipo, non andrai in perdita."
+        "content_it": 'Un giocatore di 27 anni si vende ancora bene; uno di 30 perde la maggior parte del valore. Pianifica i ricambi generazionali con 2 stagioni di anticipo, non andrai in perdita.'
     },
     {
-        "id": "62",
-        "category": "economy",
-        "title_en": "Friend Bonus Multiplier",
-        "title_it": "Moltiplicatore Bonus Amici",
+        "id": '62',
+        "category": 'economy',
+        "title_en": 'Friend Bonus Multiplier',
+        "title_it": 'Moltiplicatore Bonus Amici',
         "content_en": "Add 30+ active friends from the official Top Eleven communities. Their daily bonuses give you free tokens, packs and gifts: it's the equivalent of an extra sponsor.",
-        "content_it": "Aggiungi 30+ amici attivi dalle community ufficiali Top Eleven. I loro bonus quotidiani ti regalano token, pacchetti e gift gratis: equivale a uno sponsor extra."
+        "content_it": 'Aggiungi 30+ amici attivi dalle community ufficiali Top Eleven. I loro bonus quotidiani ti regalano token, pacchetti e gift gratis: equivale a uno sponsor extra.'
     },
     {
-        "id": "63",
-        "category": "economy",
+        "id": '63',
+        "category": 'economy',
         "title_en": "Don't Pay to Skip",
-        "title_it": "Non Pagare per Saltare",
+        "title_it": 'Non Pagare per Saltare',
         "content_en": "Tokens to instantly heal an injury or speed up the academy are the worst purchases in the game. Wait the 24h: you'll save tokens to use where it really matters.",
         "content_it": "I token per curare istantaneamente un infortunio o accelerare l'accademia sono i peggiori acquisti del gioco. Aspetta le 24h: risparmierai token per spenderli dove conta davvero."
     },
     {
-        "id": "64",
-        "category": "economy",
-        "title_en": "Right Stadium Size",
-        "title_it": "Stadio della Misura Giusta",
+        "id": '64',
+        "category": 'economy',
+        "title_en": 'Right Stadium Size',
+        "title_it": 'Stadio della Misura Giusta',
         "content_en": "Don't over-grow your stadium. A fully-filled 35,000-seat stadium gives more income (and fan boost) than a half-empty 60,000-seat one.",
-        "content_it": "Non sovradimensionare lo stadio. Uno stadio da 35.000 posti sempre pieno rende più (anche in bonus tifo) di uno da 60.000 sempre mezzo vuoto."
+        "content_it": 'Non sovradimensionare lo stadio. Uno stadio da 35.000 posti sempre pieno rende più (anche in bonus tifo) di uno da 60.000 sempre mezzo vuoto.'
     },
     {
-        "id": "65",
-        "category": "general",
-        "title_en": "Team Building: build the spine first",
-        "title_it": "Team Building: prima costruisci la spina dorsale",
+        "id": '65',
+        "category": 'general',
+        "title_en": 'Team Building: build the spine first',
+        "title_it": 'Team Building: prima costruisci la spina dorsale',
         "content_en": "Don't buy 11 stars together: focus your investments first on the central spine (GK · CB · DMC · AMC · ST). With those 5 roles at 6 stars and the rest at 5, you win 80% of matches. Quality at the center beats quality spread thin.",
         "content_it": "Non comprare 11 stelle insieme: concentra gli investimenti prima sulla colonna centrale (GK · DC · DMC · AMC · ST). Con quei 5 ruoli a 6 stelle e il resto a 5, vinci l'80% delle partite. La qualità al centro batte la qualità sparsa."
     },
     {
-        "id": "66",
-        "category": "tactics",
-        "title_en": "4-2-3-1 Defensive: a hidden weapon",
-        "title_it": "4-2-3-1 Difensivo: arma nascosta",
-        "content_en": "Most players use the 4-2-3-1 attacking. Try it with Defensive mentality, blue arrows on the back four and the two MCs, red arrows only on AML/AMR. You concede little, the AMC orchestrates the counter. Lethal against attacking opponents who push high.",
+        "id": '66',
+        "category": 'tactics',
+        "title_en": '4-2-3-1 Defensive: a hidden weapon',
+        "title_it": '4-2-3-1 Difensivo: arma nascosta',
+        "content_en": 'Most players use the 4-2-3-1 attacking. Try it with Defensive mentality, blue arrows on the back four and the two MCs, red arrows only on AML/AMR. You concede little, the AMC orchestrates the counter. Lethal against attacking opponents who push high.',
         "content_it": "La maggior parte dei giocatori usa il 4-2-3-1 in attacco. Provalo con mentalità Difensiva, frecce blu sulla difesa a quattro e sui due MC, frecce rosse solo su AML/AMR. Concedi poco, l'AMC orchestra il contropiede. Letale contro avversari offensivi che salgono."
     },
     {
-        "id": "67",
-        "category": "tactics",
-        "title_en": "Retro formations coming back",
-        "title_it": "Moduli retrò che tornano",
+        "id": '67',
+        "category": 'tactics',
+        "title_en": 'Retro formations coming back',
+        "title_it": 'Moduli retrò che tornano',
         "content_en": "In high-level associations the 2-3-2-3 (modern WM) and the 3-3-3-1 are coming back: surprise the opponent who doesn't know how to counter them. Use them only if you have very mobile players with the Dual Position ability.",
         "content_it": "Nei livelli alti delle associazioni stanno tornando moduli come il 2-3-2-3 (W-M moderno) e il 3-3-3-1: sorprendono l'avversario che non sa come contrastarli. Usali solo se hai giocatori molto mobili con abilità Dual Position."
     },
     {
-        "id": "68",
-        "category": "tactics",
-        "title_en": "Tiki-Taka requires the DMC playmaker",
-        "title_it": "Il Tiki-Taka richiede il DMC playmaker",
+        "id": '68',
+        "category": 'tactics',
+        "title_en": 'Tiki-Taka requires the DMC playmaker',
+        "title_it": 'Il Tiki-Taka richiede il DMC playmaker',
         "content_en": "The mistake of those who try the Tiki-Taka in Top Eleven: putting the playmaker at AMC. Wrong: in Barça-2011 it was Busquets at DMC who started every action. Place a Deep-Lying Playmaker at DMC with maxed Passing/Creativity: it's the difference between 'it works' and 'it doesn't work'.",
         "content_it": "L'errore di chi prova il Tiki-Taka in Top Eleven: mettere il regista come AMC. Sbagliato: nel Barça-2011 era Busquets, DMC, a innescare ogni azione. Metti un Regista Arretrato come DMC con Passaggio/Creatività al massimo: è la differenza tra 'funziona' e 'non funziona'."
     },
     {
-        "id": "69",
-        "category": "meta",
-        "title_en": "FM-style 4-2-3-1 attacking",
-        "title_it": "4-2-3-1 attaccante stile FM",
-        "content_en": "VictorHugo-style 4-2-3-1 (popular among Football Manager fans): Attacking mentality, Through the Middle, AMC with Shadow Striker ability, AML/AMR inverted (red arrows). Drowns the opponent with central pressure and creative passes; brutal against weaker teams.",
+        "id": '69',
+        "category": 'meta',
+        "title_en": 'FM-style 4-2-3-1 attacking',
+        "title_it": '4-2-3-1 attaccante stile FM',
+        "content_en": 'VictorHugo-style 4-2-3-1 (popular among Football Manager fans): Attacking mentality, Through the Middle, AMC with Shadow Striker ability, AML/AMR inverted (red arrows). Drowns the opponent with central pressure and creative passes; brutal against weaker teams.',
         "content_it": "Il 4-2-3-1 stile VictorHugo (popolare tra i fan di Football Manager): mentalità Offensiva, passaggi Al Centro, AMC con abilità Shadow Striker, AML/AMR invertiti (frecce rosse). Affoga l'avversario con pressione centrale e passaggi creativi; brutale contro avversari più deboli."
+    },
+    {
+        "id": '70',
+        "category": 'meta',
+        "title_en": "Vertical Tiki-Taka: don't get stuck on the ball",
+        "title_it": 'Tiki-Taka Verticale: non incantarsi sulla palla',
+        "content_en": 'The biggest mistake with Vertical Tiki-Taka is to keep possession for too long. The system works precisely BECAUSE the ball gets shot forward quickly after 3-4 short passes. Train the AMC to find the vertical pass.',
+        "content_it": "L'errore più comune col Tiki-Taka Verticale è tenere il possesso troppo a lungo. Il sistema funziona proprio PERCHÉ la palla parte in avanti dopo 3-4 passaggi corti. Allena l'AMC a trovare il passaggio verticale."
+    },
+    {
+        "id": '71',
+        "category": 'meta',
+        "title_en": 'Defensive Counter: pick the counter timing',
+        "title_it": 'Defensive Counter: scegli il momento del contropiede',
+        "content_en": 'Counter-attack always ON is a beginner mistake. With Defensive Counter you need the SPECIFIC moment: when the opponent commits 2+ players on the same flank. The AMC must read this and trigger the break.',
+        "content_it": "Contropiede sempre ON è da principianti. Col Defensive Counter serve il MOMENTO giusto: quando l'avversario sbilancia 2+ giocatori dalla stessa fascia. L'AMC deve leggere e lanciare la ripartenza."
+    },
+    {
+        "id": '72',
+        "category": 'meta',
+        "title_en": '4-3-3 Tuned: the DMC must be a Playmaker',
+        "title_it": '4-3-3 Tuned: il DMC deve essere un Regista',
+        "content_en": "The difference between an 'average' 4-3-3 and a 'tuned' 4-3-3 is the DMC. Without a Playmaker ability and Creativity 95+, the tactic collapses to ordinary. Invest tokens here, not on the wingers.",
+        "content_it": "La differenza tra un 4-3-3 'normale' e un 4-3-3 'tuned' è il DMC. Senza abilità Regista e Creatività 95+, la tattica crolla in ordinaria. Investi token qui, non sulle ali."
+    },
+    {
+        "id": '73',
+        "category": 'meta',
+        "title_en": '3-4-3 Press: stamina is the enemy',
+        "title_it": '3-4-3 Press: la stamina è il nemico',
+        "content_en": "The 3-4-3 Press burns fitness like nothing else. Make 2-3 substitutions by minute 60 and always rotate the ML/MR. Don't use it in three matches in a row: you'll lose the third for sure.",
+        "content_it": 'Il 3-4-3 Press brucia condizione come nessun altro modulo. Fai 2-3 cambi entro il 60° e ruota sempre ML/MR. Non usarlo in tre partite consecutive: la terza la perdi di sicuro.'
+    },
+    {
+        "id": '74',
+        "category": 'meta',
+        "title_en": 'Monster 4-2-3-1: only against weaker teams',
+        "title_it": 'Monster 4-2-3-1: solo contro avversari più deboli',
+        "content_en": 'The Monster is a no-defense tactic. Against teams within 0.5 stars of yours it WORKS; against stronger ones it ends 5-0 against you. Read the opponent rating BEFORE choosing it.',
+        "content_it": 'Il Monster è una tattica senza difesa. Contro avversari entro 0.5 stelle dal tuo livello FUNZIONA; contro più forti finisce 5-0 per loro. Leggi sempre il rating avversario PRIMA di sceglierlo.'
     }
 ]
 
@@ -11444,6 +11484,66 @@ META_TACTICS = [
         "setup_it": 'Richiede mentalità difensiva/normale e un DMC con freccia blu per chiudere ogni spazio.',
         "counter_en": 'Beaten with the 4-2-2-2 Hexagon to break its rigidity.',
         "counter_it": 'Si batte con il 4-2-2-2 Hexagon per spezzare la sua rigidità.'
+    },
+    {
+        "id": '4-2-3-1-vertical-tiki-taka',
+        "formation": '4-2-3-1 Vertical Tiki-Taka',
+        "tier": 'S',
+        "trending": True,
+        "why_it_works_en": 'Combines short possession with quick vertical bursts: dominates the ball without losing pace in attack.',
+        "why_it_works_it": 'Combina possesso corto con verticalizzazioni rapide: domina la palla senza perdere ritmo in attacco.',
+        "setup_en": 'Attacking mentality, short passing through the middle, AMC as creator, AML/AMR cutting inside on red arrows.',
+        "setup_it": 'Mentalità offensiva, passaggi corti al centro, AMC creatore, AML/AMR che rientrano con freccia rossa.',
+        "counter_en": 'Beaten with a 4-1-3-1-1 that crowds the AMC and blocks vertical lanes.',
+        "counter_it": "Si batte col 4-1-3-1-1 che soffoca l'AMC e blocca le linee verticali."
+    },
+    {
+        "id": '4-2-3-1-defensive-counter',
+        "formation": '4-2-3-1 Defensive Counter',
+        "tier": 'A',
+        "trending": True,
+        "why_it_works_en": 'Defensive shape with two MCs protecting the back four, then exploding on the counter through the AMC and wingers.',
+        "why_it_works_it": 'Modulo difensivo con doppio MC a proteggere la difesa, poi esplode in contropiede con AMC e ali.',
+        "setup_en": 'Defensive mentality, mixed passing, low pressing, counter-attack ON, blue arrows on the back line and MCs, red on AMC.',
+        "setup_it": 'Mentalità difensiva, passaggi misti, pressing basso, contropiede ON, frecce blu su difesa e MC, rossa su AMC.',
+        "counter_en": 'Hard Attacking with a 3-4-3 that presses high and limits the time to organize the counter.',
+        "counter_it": "Molto Offensivo col 3-4-3 che pressa alto e toglie tempo all'organizzazione del contropiede."
+    },
+    {
+        "id": '4-3-3-tuned-meta',
+        "formation": '4-3-3 Tuned Meta',
+        "tier": 'S',
+        "trending": True,
+        "why_it_works_en": "Optimized variant of the 4-3-3: false 9, two box-to-box MCs, deep playmaker DMC. The 'tuned' setup of the current meta.",
+        "why_it_works_it": "Variante ottimizzata del 4-3-3: falso 9, due MC box-to-box, regista basso DMC. Il setup 'tuned' del meta attuale.",
+        "setup_en": 'Attacking mentality, short passing down both flanks, high pressing, the DMC has Playmaker ability, both MCs Box-to-Box, ST False 9.',
+        "setup_it": 'Mentalità offensiva, passaggi corti sulle fasce, pressing alto, DMC con abilità Regista, entrambi i MC Box-to-Box, ST Falso 9.',
+        "counter_en": 'Defensive 4-1-3-1-1: a DMC and an MC sit deep, marking the False 9 closely.',
+        "counter_it": '4-1-3-1-1 difensivo: DMC e un MC arretrati, marcatura stretta sul Falso 9.'
+    },
+    {
+        "id": '3-4-3-press',
+        "formation": '3-4-3 Press',
+        "tier": 'A',
+        "trending": True,
+        "why_it_works_en": 'Three-CB stability + four midfield workers + three forwards on red arrows. Gegenpressing in Top Eleven style.',
+        "why_it_works_it": 'Stabilità a 3 DC + quattro centrocampisti operai + tridente con freccia rossa. Gegenpressing in stile Top Eleven.',
+        "setup_en": 'Hard Attacking, high pressing, hard tackling, man-to-man marking, red arrows on the front three and on the wide MCs (ML/MR).',
+        "setup_it": 'Molto Offensivo, pressing alto, contrasti duri, marcatura a uomo, frecce rosse sul tridente e sui MC larghi (ML/MR).',
+        "counter_en": 'Defensive 4-1-4-1 that absorbs pressure and counters down the wings.',
+        "counter_it": '4-1-4-1 difensivo che assorbe la pressione e riparte sulle fasce.'
+    },
+    {
+        "id": '4-2-3-1-monster',
+        "formation": '4-2-3-1 Monster',
+        "tier": 'S',
+        "trending": True,
+        "why_it_works_en": 'Ultra-aggressive 4-2-3-1 designed to score 3+ goals per match. Sacrifices defensive cover for total attacking dominance.',
+        "why_it_works_it": '4-2-3-1 ultra-aggressivo per segnare 3+ gol a partita. Sacrifica copertura difensiva per dominio totale in attacco.',
+        "setup_en": 'Hard Attacking mentality, short passing through the middle, high pressing, hard tackling, all the attacking line on red arrows.',
+        "setup_it": "Mentalità Molto Offensiva, passaggi corti al centro, pressing alto, contrasti duri, tutto l'attacco con freccia rossa.",
+        "counter_en": '5-3-2 with offside trap ON: park the bus and exploit the empty back when they over-commit.',
+        "counter_it": "5-3-2 con fuorigioco ON: parcheggia l'autobus e sfrutta le spalle scoperte quando si sbilanciano."
     }
 ]
 

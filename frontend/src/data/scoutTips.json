@@ -550,5 +550,45 @@
 "title_it": "4-2-3-1 attaccante stile FM",
 "content_en": "VictorHugo-style 4-2-3-1 (popular among Football Manager fans): Attacking mentality, Through the Middle, AMC with Shadow Striker ability, AML/AMR inverted (red arrows). Drowns the opponent with central pressure and creative passes; brutal against weaker teams.",
 "content_it": "Il 4-2-3-1 stile VictorHugo (popolare tra i fan di Football Manager): mentalità Offensiva, passaggi Al Centro, AMC con abilità Shadow Striker, AML/AMR invertiti (frecce rosse). Affoga l'avversario con pressione centrale e passaggi creativi; brutale contro avversari più deboli."
+},
+{
+"id": "70",
+"category": "meta",
+"title_en": "Vertical Tiki-Taka: don't get stuck on the ball",
+"title_it": "Tiki-Taka Verticale: non incantarsi sulla palla",
+"content_en": "The biggest mistake with Vertical Tiki-Taka is to keep possession for too long. The system works precisely BECAUSE the ball gets shot forward quickly after 3-4 short passes. Train the AMC to find the vertical pass.",
+"content_it": "L'errore più comune col Tiki-Taka Verticale è tenere il possesso troppo a lungo. Il sistema funziona proprio PERCHÉ la palla parte in avanti dopo 3-4 passaggi corti. Allena l'AMC a trovare il passaggio verticale."
+},
+{
+"id": "71",
+"category": "meta",
+"title_en": "Defensive Counter: pick the counter timing",
+"title_it": "Defensive Counter: scegli il momento del contropiede",
+"content_en": "Counter-attack always ON is a beginner mistake. With Defensive Counter you need the SPECIFIC moment: when the opponent commits 2+ players on the same flank. The AMC must read this and trigger the break.",
+"content_it": "Contropiede sempre ON è da principianti. Col Defensive Counter serve il MOMENTO giusto: quando l'avversario sbilancia 2+ giocatori dalla stessa fascia. L'AMC deve leggere e lanciare la ripartenza."
+},
+{
+"id": "72",
+"category": "meta",
+"title_en": "4-3-3 Tuned: the DMC must be a Playmaker",
+"title_it": "4-3-3 Tuned: il DMC deve essere un Regista",
+"content_en": "The difference between an 'average' 4-3-3 and a 'tuned' 4-3-3 is the DMC. Without a Playmaker ability and Creativity 95+, the tactic collapses to ordinary. Invest tokens here, not on the wingers.",
+"content_it": "La differenza tra un 4-3-3 'normale' e un 4-3-3 'tuned' è il DMC. Senza abilità Regista e Creatività 95+, la tattica crolla in ordinaria. Investi token qui, non sulle ali."
+},
+{
+"id": "73",
+"category": "meta",
+"title_en": "3-4-3 Press: stamina is the enemy",
+"title_it": "3-4-3 Press: la stamina è il nemico",
+"content_en": "The 3-4-3 Press burns fitness like nothing else. Make 2-3 substitutions by minute 60 and always rotate the ML/MR. Don't use it in three matches in a row: you'll lose the third for sure.",
+"content_it": "Il 3-4-3 Press brucia condizione come nessun altro modulo. Fai 2-3 cambi entro il 60° e ruota sempre ML/MR. Non usarlo in tre partite consecutive: la terza la perdi di sicuro."
+},
+{
+"id": "74",
+"category": "meta",
+"title_en": "Monster 4-2-3-1: only against weaker teams",
+"title_it": "Monster 4-2-3-1: solo contro avversari più deboli",
+"content_en": "The Monster is a no-defense tactic. Against teams within 0.5 stars of yours it WORKS; against stronger ones it ends 5-0 against you. Read the opponent rating BEFORE choosing it.",
+"content_it": "Il Monster è una tattica senza difesa. Contro avversari entro 0.5 stelle dal tuo livello FUNZIONA; contro più forti finisce 5-0 per loro. Leggi sempre il rating avversario PRIMA di sceglierlo."
 }
 ]
