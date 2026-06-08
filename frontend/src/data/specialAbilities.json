@@ -128,5 +128,85 @@
 "effect_it": "Aggiunge un vero scatto di velocità nelle transizioni: lascia sul posto i difensori più lenti.",
 "when_to_use_en": "On the counter-attack winger. Devastating against high defensive lines.",
 "when_to_use_it": "Sull'ala da contropiede. Devastante contro linee difensive alte."
+},
+{
+"id": "goal-poacher",
+"name_en": "Goal Poacher",
+"name_it": "Bomber di Razza",
+"best_role": "ST",
+"effect_en": "Extreme finishing ability inside the penalty area, even from difficult angles.",
+"effect_it": "Capacita di finalizzazione estrema dentro l'area, anche da angolazioni difficili.",
+"when_to_use_en": "On the main striker. Multiplies the conversion rate from chances.",
+"when_to_use_it": "Sull'attaccante centrale. Moltiplica il tasso di conversione delle occasioni."
+},
+{
+"id": "aerial-threat",
+"name_en": "Aerial Threat",
+"name_it": "Forza Aerea",
+"best_role": "ST, DC",
+"effect_en": "Dominates aerial duels on corners and crosses, scoring or defending headed balls.",
+"effect_it": "Domina i duelli aerei su corner e cross, segna o difende di testa.",
+"when_to_use_en": "Essential for tactics built on crosses or set-piece dominance.",
+"when_to_use_it": "Indispensabile per tattiche che vivono di cross o di dominio sui calci piazzati."
+},
+{
+"id": "set-piece-master",
+"name_en": "Set-Piece Master",
+"name_it": "Specialista delle Palle Inattive",
+"best_role": "MC, AMC",
+"effect_en": "Combines Free Kick + Corner + Penalty specialist in a single ability. Dead-ball god.",
+"effect_it": "Combina Punizioni + Angoli + Rigori in una singola abilita. Dio dei calci piazzati.",
+"when_to_use_en": "Rare and expensive. Saves you 3 player slots dedicated to set pieces.",
+"when_to_use_it": "Rara e costosa. Ti risparmia 3 slot di giocatori dedicati ai calci piazzati."
+},
+{
+"id": "strong-tackler",
+"name_en": "Strong Tackler",
+"name_it": "Contrastista",
+"best_role": "DC, DMC, MC",
+"effect_en": "Tackles with surgical precision, reducing fouls and gaining the ball cleanly.",
+"effect_it": "Contrasta con precisione chirurgica, riducendo i falli e guadagnando palla pulita.",
+"when_to_use_en": "On the midfield destroyer. Allows hard tackling without yellow card risk.",
+"when_to_use_it": "Sul distruttore di centrocampo. Permette contrasti duri senza rischio cartellino."
+},
+{
+"id": "anticipation",
+"name_en": "Anticipation",
+"name_it": "Anticipazione",
+"best_role": "DC, DMC",
+"effect_en": "Reads opposing passes early, intercepting balls and breaking up attacks before they develop.",
+"effect_it": "Legge i passaggi avversari in anticipo, intercettando le palle e spezzando gli attacchi sul nascere.",
+"when_to_use_en": "On the central CB. Worth more than +20% Tackling against creative opponents.",
+"when_to_use_it": "Sul DC centrale. Vale piu di +20% di Contrasto contro avversari creativi."
+},
+{
+"id": "crosser",
+"name_en": "Crosser",
+"name_it": "Crossatore",
+"best_role": "ML, MR, DL, DR",
+"effect_en": "High-quality crosses with curl and pace, always finding the head of the strikers.",
+"effect_it": "Cross di alta qualita con effetto e velocita, trovano sempre la testa degli attaccanti.",
+"when_to_use_en": "On full-backs or wide MCs in formations that play on the flanks.",
+"when_to_use_it": "Sui terzini o MC larghi nei moduli che giocano sulle fasce."
+},
+{
+"id": "wall-pass-master",
+"name_en": "Wall-Pass Master",
+"name_it": "Maestro dei Triangoli",
+"best_role": "MC, AMC",
+"effect_en": "Specialist in one-twos: launches and receives back the ball quickly to break the lines.",
+"effect_it": "Specialista del uno-due: rilancia e riceve velocemente per spezzare le linee.",
+"when_to_use_en": "On the offensive MC. Devastating in possession-based systems.",
+"when_to_use_it": "Sul MC offensivo. Devastante nei sistemi basati sul possesso."
+},
+{
+"id": "long-shot-specialist",
+"name_en": "Long-Shot Specialist",
+"name_it": "Specialista Tiro da Fuori",
+"best_role": "MC, AMC, AML, AMR",
+"effect_en": "Lethal shots from outside the box, breaking compact and deep defenses.",
+"effect_it": "Tiri letali da fuori area, scardinano difese compatte e basse.",
+"when_to_use_en": "Against teams that 'park the bus' (5-4-1 Flat, 4-5-1 V-Style defensive).",
+"when_to_use_it": "Contro squadre che 'parcheggiano l'autobus' (5-4-1 Flat, 4-5-1 V difensivo)."
 }
 ]

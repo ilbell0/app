@@ -454,5 +454,221 @@
 "training_focus_it": "Velocità, Forza, Resistenza",
 "description_en": "The team's first defender; harasses defenders during build-up.",
 "description_it": "Primo difensore della squadra; aggredisce i difensori in costruzione."
+},
+{
+"id": "trequartista",
+"position": "AMC",
+"name_en": "Trequartista",
+"name_it": "Trequartista",
+"key_attributes_en": [
+"Creativity",
+"Passing",
+"Vision"
+],
+"key_attributes_it": [
+"Creativita",
+"Passaggio",
+"Visione"
+],
+"best_formations": [
+"4-3-1-2",
+"3-4-1-2"
+],
+"training_focus_en": "Creativity, Passing, Shooting",
+"training_focus_it": "Creativita, Passaggio, Tiro",
+"description_en": "Italian-style #10: stays high and central, drops between the lines to find the killer pass.",
+"description_it": "Il numero 10 all'italiana: alto e centrale, si abbassa tra le linee per trovare il passaggio decisivo."
+},
+{
+"id": "regista",
+"position": "DMC",
+"name_en": "Regista",
+"name_it": "Regista",
+"key_attributes_en": [
+"Passing",
+"Creativity",
+"Vision"
+],
+"key_attributes_it": [
+"Passaggio",
+"Creativita",
+"Visione"
+],
+"best_formations": [
+"4-3-3",
+"4-1-2-1-2 ND"
+],
+"training_focus_en": "Passing, Creativity, Long-range Passing",
+"training_focus_it": "Passaggio, Creativita, Lanci lunghi",
+"description_en": "The Pirlo role: deep playmaker who orchestrates from in front of the defense.",
+"description_it": "Il ruolo alla Pirlo: regista basso che orchestra il gioco davanti alla difesa."
+},
+{
+"id": "half-back",
+"position": "DMC",
+"name_en": "Half-Back",
+"name_it": "Mediano Arretrato",
+"key_attributes_en": [
+"Tackling",
+"Positioning",
+"Passing"
+],
+"key_attributes_it": [
+"Contrasto",
+"Posizionamento",
+"Passaggio"
+],
+"best_formations": [
+"3-4-3",
+"3-5-2"
+],
+"training_focus_en": "Tackling, Marking, Positioning",
+"training_focus_it": "Contrasto, Marcatura, Posizionamento",
+"description_en": "Drops between the two CBs to form a back three in possession. Modern pivot.",
+"description_it": "Si abbassa tra i due DC per formare una difesa a tre in fase di possesso. Mediano moderno."
+},
+{
+"id": "carrilero",
+"position": "MC",
+"name_en": "Carrilero",
+"name_it": "Carrilero",
+"key_attributes_en": [
+"Stamina",
+"Tackling",
+"Positioning"
+],
+"key_attributes_it": [
+"Resistenza",
+"Contrasto",
+"Posizionamento"
+],
+"best_formations": [
+"4-4-2",
+"4-3-3"
+],
+"training_focus_en": "Stamina, Tackling, Passing",
+"training_focus_it": "Resistenza, Contrasto, Passaggio",
+"description_en": "Spanish-style MC who shuttles between the half-spaces, covers the full-back and supports build-up.",
+"description_it": "MC alla spagnola che fa la spola sugli half-space, copre il terzino e supporta la manovra."
+},
+{
+"id": "raumdeuter",
+"position": "AML/AMR",
+"name_en": "Raumdeuter",
+"name_it": "Raumdeuter",
+"key_attributes_en": [
+"Anticipation",
+"Finishing",
+"Off-ball Movement"
+],
+"key_attributes_it": [
+"Anticipazione",
+"Finalizzazione",
+"Smarcamento"
+],
+"best_formations": [
+"4-2-3-1",
+"4-3-3"
+],
+"training_focus_en": "Finishing, Anticipation, Positioning",
+"training_focus_it": "Finalizzazione, Anticipazione, Posizionamento",
+"description_en": "'Space investigator': wide forward who finds and exploits gaps without the ball. Müller's role.",
+"description_it": "'Investigatore degli spazi': ala che trova e sfrutta i varchi senza palla. Il ruolo di Müller."
+},
+{
+"id": "libero",
+"position": "DC",
+"name_en": "Libero",
+"name_it": "Libero",
+"key_attributes_en": [
+"Passing",
+"Positioning",
+"Tackling"
+],
+"key_attributes_it": [
+"Passaggio",
+"Posizionamento",
+"Contrasto"
+],
+"best_formations": [
+"3-5-2",
+"3-4-3"
+],
+"training_focus_en": "Passing, Positioning, Marking",
+"training_focus_it": "Passaggio, Posizionamento, Marcatura",
+"description_en": "Sweeper-CB who steps forward to break the lines. Beckenbauer's role re-imagined.",
+"description_it": "Difensore centrale libero che esce in conduzione per spezzare le linee. Il ruolo Beckenbauer rivisitato."
+},
+{
+"id": "ball-winning-midfielder",
+"position": "MC",
+"name_en": "Ball-Winning Midfielder",
+"name_it": "Centrocampista da Pressing",
+"key_attributes_en": [
+"Tackling",
+"Stamina",
+"Aggression"
+],
+"key_attributes_it": [
+"Contrasto",
+"Resistenza",
+"Aggressivita"
+],
+"best_formations": [
+"4-3-3",
+"3-4-3"
+],
+"training_focus_en": "Tackling, Stamina, Strength",
+"training_focus_it": "Contrasto, Resistenza, Forza",
+"description_en": "Aggressive MC dedicated to ball recovery. The 'destroyer' next to the playmaker.",
+"description_it": "MC aggressivo dedicato al recupero palla. Il 'distruttore' accanto al regista."
+},
+{
+"id": "defensive-forward",
+"position": "ST",
+"name_en": "Defensive Forward",
+"name_it": "Attaccante Difensivo",
+"key_attributes_en": [
+"Stamina",
+"Marking",
+"Tackling"
+],
+"key_attributes_it": [
+"Resistenza",
+"Marcatura",
+"Contrasto"
+],
+"best_formations": [
+"4-1-4-1",
+"4-5-1 V-Style"
+],
+"training_focus_en": "Stamina, Marking, Anticipation",
+"training_focus_it": "Resistenza, Marcatura, Anticipazione",
+"description_en": "Striker who drops to mark the opponent's DMC. First defender of the team.",
+"description_it": "Attaccante che si abbassa per marcare il DMC avversario. Primo difensore della squadra."
+},
+{
+"id": "wide-target-man",
+"position": "AML/AMR",
+"name_en": "Wide Target Man",
+"name_it": "Boa Largo",
+"key_attributes_en": [
+"Heading",
+"Strength",
+"Crossing"
+],
+"key_attributes_it": [
+"Colpo di testa",
+"Forza",
+"Cross"
+],
+"best_formations": [
+"4-3-3",
+"4-4-2"
+],
+"training_focus_en": "Heading, Strength, Crossing",
+"training_focus_it": "Colpo di testa, Forza, Cross",
+"description_en": "Physical winger who attacks crosses from the opposite side. Inverted target man.",
+"description_it": "Ala fisica che attacca i cross dal lato opposto. Boa atipico sull'esterno."
 }
 ]
