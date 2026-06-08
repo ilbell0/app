@@ -70,6 +70,7 @@ interface Formation {
   tactic_type_en?: string;
   tactic_type_it?: string;
   arrows?: string;
+  defense_count?: number;
   variants?: {
     A?: Variant;
     B?: Variant;
@@ -91,6 +92,7 @@ export default function FormationsScreen() {
   const [selectedLevel, setSelectedLevel] = useState<'strong' | 'equal' | 'weak'>('equal');
   const [modalVisible, setModalVisible] = useState(false);
   const [fadeAnim] = useState(new Animated.Value(0));
+  const [defenseFilter, setDefenseFilter] = useState<'all' | 3 | 4 | 5>('all');
 
   useEffect(() => {
     fetchData();
@@ -144,18 +146,33 @@ export default function FormationsScreen() {
       <View style={styles.header}>
         <Text style={styles.headerTitle}>FORMA</Text>
         <Text style={styles.headerSubtitle}>TIONS</Text>
-        <Text style={styles.headerCount}>{formations.length}</Text>
+        <Text style={styles.headerCount}>{formations.filter(f => defenseFilter === 'all' || f.defense_count === defenseFilter).length}</Text>
       </View>
 
       <View style={styles.divider} />
 
-      <ScrollView 
-        style={styles.scrollView} 
+      {/* Defense Filter */}
+      <View style={styles.defFilter}>
+        {([['all', language === 'it' ? 'TUTTE' : 'ALL'], [3, 'DIF 3'], [4, 'DIF 4'], [5, 'DIF 5']] as const).map(([val, lab]) => (
+          <TouchableOpacity
+            key={String(val)}
+            style={[styles.defBtn, defenseFilter === val && styles.defBtnActive]}
+            onPress={() => setDefenseFilter(val as any)}
+          >
+            <Text style={[styles.defBtnText, defenseFilter === val && styles.defBtnTextActive]}>{lab}</Text>
+          </TouchableOpacity>
+        ))}
+      </View>
+
+      <View style={styles.divider} />
+
+      <ScrollView
+        style={styles.scrollView}
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
       >
         {/* Formation List */}
-        {formations.map((formation, index) => (
+        {formations.filter(f => defenseFilter === 'all' || f.defense_count === defenseFilter).map((formation, index) => (
           <TouchableOpacity
             key={formation.id || index}
             style={styles.formationCard}
@@ -474,6 +491,34 @@ const styles = StyleSheet.create({
     height: 1,
     backgroundColor: NothingTheme.colors.divider,
     marginHorizontal: 24,
+  },
+  defFilter: {
+    flexDirection: 'row',
+    paddingHorizontal: 24,
+    paddingVertical: 14,
+    gap: 8,
+  },
+  defBtn: {
+    flex: 1,
+    paddingVertical: 10,
+    borderRadius: 5,
+    backgroundColor: NothingTheme.colors.surface,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+    alignItems: 'center',
+  },
+  defBtnActive: {
+    backgroundColor: NothingTheme.colors.accentMuted,
+    borderColor: NothingTheme.colors.accent,
+  },
+  defBtnText: {
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 10,
+    fontWeight: '700',
+    letterSpacing: 1,
+  },
+  defBtnTextActive: {
+    color: NothingTheme.colors.accent,
   },
   dividerModal: {
     height: 1,

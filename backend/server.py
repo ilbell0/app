@@ -329,7 +329,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '41212nd',
@@ -428,7 +429,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '41212wd',
@@ -528,7 +530,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '451v',
@@ -628,7 +631,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '451f',
@@ -726,7 +730,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '4231',
@@ -824,7 +829,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '4222h',
@@ -922,7 +928,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '352f',
@@ -1015,7 +1022,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '352v',
@@ -1109,7 +1117,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '3142',
@@ -1204,7 +1213,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '541f',
@@ -1299,7 +1309,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 5
     },
     {
         "id": '32221b',
@@ -1391,7 +1402,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '3n2221b',
@@ -1486,7 +1498,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '4141',
@@ -1587,7 +1600,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '433',
@@ -1686,7 +1700,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '53n2',
@@ -1779,7 +1794,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 5
     },
     {
         "id": '343',
@@ -1875,7 +1891,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '3w2dmc3w11ml',
@@ -1970,7 +1987,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '3w2dmc3n11tower',
@@ -2065,7 +2083,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '51dmc22',
@@ -2164,7 +2183,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 5
     },
     {
         "id": '5212x',
@@ -2257,7 +2277,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 5
     },
     {
         "id": '522amlamr1',
@@ -2353,7 +2374,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 5
     },
     {
         "id": '4131w1',
@@ -2450,7 +2472,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '3n52v',
@@ -2543,7 +2566,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '43n2w1',
@@ -2639,7 +2663,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '3151amc',
@@ -2806,7 +2831,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '31411',
@@ -2902,7 +2928,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '41221',
@@ -3002,7 +3029,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": 'fn9w',
@@ -3098,7 +3126,8 @@ FORMATIONS = [
                     "AMR": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '424',
@@ -3195,7 +3224,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '41311',
@@ -3295,7 +3325,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '4321xt',
@@ -3391,7 +3422,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '532',
@@ -3484,7 +3516,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 5
     },
     {
         "id": '413n2',
@@ -3583,7 +3616,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '3412',
@@ -3677,7 +3711,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '31312',
@@ -3769,7 +3804,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '43n3',
@@ -3862,7 +3898,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '3132w1',
@@ -3957,7 +3994,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '3n1213',
@@ -4048,7 +4086,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '4213',
@@ -4144,7 +4183,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '4112n2',
@@ -4239,7 +4279,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '3w13n12',
@@ -4334,7 +4375,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '3313',
@@ -4431,7 +4473,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '42n12n1',
@@ -4526,7 +4569,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '51112',
@@ -4621,7 +4665,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 5
     },
     {
         "id": '52w2n1',
@@ -4717,7 +4762,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 5
     },
     {
         "id": '42211',
@@ -4812,7 +4858,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '41131',
@@ -4911,7 +4958,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '4312',
@@ -5004,7 +5052,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '31213',
@@ -5099,7 +5148,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '3421',
@@ -5192,7 +5242,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '523',
@@ -5288,7 +5339,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 5
     },
     {
         "id": '222n22',
@@ -5383,7 +5435,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '3142w',
@@ -5478,7 +5531,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 3
     },
     {
         "id": '4231a',
@@ -5574,7 +5628,8 @@ FORMATIONS = [
                     "ST": '↑'
                 }
             }
-        }
+        },
+        "defense_count": 4
     },
     {
         "id": '42312',
@@ -5669,7 +5724,8 @@ FORMATIONS = [
                     "DMC": '↓'
                 }
             }
-        }
+        },
+        "defense_count": 4
     }
 ]
 
@@ -11391,6 +11447,117 @@ META_TACTICS = [
     }
 ]
 
+
+# ==================== ABBREVIATIONS LEGEND ====================
+# Leggenda delle abbreviazioni dei moduli Top Eleven
+
+ABBREVIATIONS = [
+    {
+        "code": "F",
+        "name_en": "Flat",
+        "name_it": "Piatto",
+        "example": "4-4-2 F",
+        "description_en": "All midfielders or defenders on a flat line, no diagonal.",
+        "description_it": "Tutti i centrocampisti o difensori su una linea piatta, senza diagonale."
+    },
+    {
+        "code": "N",
+        "name_en": "Narrow",
+        "name_it": "Stretto",
+        "example": "3N-5-2",
+        "description_en": "Central positioning, no full-backs or wide midfielders.",
+        "description_it": "Posizionamento centrale, senza terzini o esterni di centrocampo."
+    },
+    {
+        "code": "W",
+        "name_en": "Wide",
+        "name_it": "Largo",
+        "example": "3W-4-3",
+        "description_en": "Players positioned on the flanks: full-backs/wing-backs and wide midfielders.",
+        "description_it": "Giocatori posizionati sulle fasce: terzini/esterni e centrocampisti larghi."
+    },
+    {
+        "code": "B",
+        "name_en": "Butterfly",
+        "name_it": "Farfalla",
+        "example": "3N-2W-2N-2W-1",
+        "description_en": "Butterfly shape with alternating narrow/wide lines.",
+        "description_it": "Forma a farfalla con linee alternate strette/larghe."
+    },
+    {
+        "code": "C",
+        "name_en": "Curved",
+        "name_it": "Curvo",
+        "example": "3 DC + DL/DR avanzati",
+        "description_en": "Three CBs with advanced full-backs forming a curved defensive line.",
+        "description_it": "Tre DC con terzini avanzati che formano una linea difensiva curva."
+    },
+    {
+        "code": "D",
+        "name_en": "Dandelion",
+        "name_it": "Dente di Leone",
+        "example": "3N-1-3W-1-2",
+        "description_en": "Dandelion shape with narrow central base and wide attacking midfield.",
+        "description_it": "Forma a dente di leone con base centrale stretta e centrocampo offensivo largo."
+    },
+    {
+        "code": "H",
+        "name_en": "Hexagon",
+        "name_it": "Esagono",
+        "example": "4-0-2N-2W-2",
+        "description_en": "Hexagonal shape with central density and wide attacking midfielders.",
+        "description_it": "Forma esagonale con densita centrale e trequartisti larghi."
+    },
+    {
+        "code": "V",
+        "name_en": "V-Style",
+        "name_it": "Stile V",
+        "example": "4-[1-2N-2W]-1",
+        "description_en": "V-shape midfield with DMC anchor, central MCs and high AML/AMR.",
+        "description_it": "Centrocampo a V con DMC ancora, MC al centro e AML/AMR alti."
+    },
+    {
+        "code": "ET",
+        "name_en": "Eiffel Tower",
+        "name_it": "Torre Eiffel",
+        "example": "3-2N-3-1-1",
+        "description_en": "Tower-shaped formation: narrow at the top, wide at the base.",
+        "description_it": "Formazione a torre, stretta in alto e larga alla base."
+    },
+    {
+        "code": "ML",
+        "name_en": "Maple Leaf",
+        "name_it": "Foglia d'Acero",
+        "example": "3W-2N-3W-1-1",
+        "description_en": "Maple Leaf shape: wide base, narrow midfield core, wide attack.",
+        "description_it": "Forma a foglia d'acero: base larga, centro stretto, attacco largo."
+    },
+    {
+        "code": "ND",
+        "name_en": "Narrow Diamond",
+        "name_it": "Diamante Stretto",
+        "example": "4-1-2N-1-2",
+        "description_en": "Diamond midfield centered: DMC, two narrow MCs, AMC.",
+        "description_it": "Diamante centrale: DMC, due MC stretti, AMC."
+    },
+    {
+        "code": "WD",
+        "name_en": "Wide Diamond",
+        "name_it": "Diamante Largo",
+        "example": "4-1-2W-1-2",
+        "description_en": "Diamond midfield with two wide MCs (ML/MR) and AMC.",
+        "description_it": "Diamante con due MC larghi (ML/MR) e AMC."
+    },
+    {
+        "code": "XT",
+        "name_en": "Xmas Tree",
+        "name_it": "Albero di Natale",
+        "example": "4-0-3W-2N-1",
+        "description_en": "Christmas tree shape: 4 defenders, no DMC, 3 wide MCs, 2 narrow AMCs, 1 ST.",
+        "description_it": "Albero di Natale: 4 difensori, no DMC, 3 MC larghi, 2 AMC stretti, 1 punta."
+    }
+]
+
 # ==================== SPECIAL ABILITIES DATA ====================
 
 SPECIAL_ABILITIES = [
@@ -12436,6 +12603,32 @@ async def get_meta_tactics_by_tier(tier: str):
     items = [m for m in META_TACTICS if m["tier"].upper() == tier.upper()]
     if not items:
         raise HTTPException(status_code=404, detail="No meta tactics found for this tier")
+    return items
+
+# ==================== ABBREVIATIONS ENDPOINTS ====================
+
+@api_router.get("/abbreviations")
+async def get_abbreviations():
+    """Get the Top Eleven formation abbreviations legend"""
+    return ABBREVIATIONS
+
+@api_router.get("/abbreviations/{code}")
+async def get_abbreviation_by_code(code: str):
+    """Get a specific abbreviation entry by code"""
+    code_up = code.upper()
+    for a in ABBREVIATIONS:
+        if a["code"].upper() == code_up:
+            return a
+    raise HTTPException(status_code=404, detail="Abbreviation not found")
+
+# ==================== FORMATIONS FILTER BY DEFENSE ====================
+
+@api_router.get("/formations-by-defense/{n}")
+async def get_formations_by_defense(n: int):
+    """Filter formations by number of defenders (3, 4 or 5)"""
+    items = [f for f in FORMATIONS if f.get("defense_count") == n]
+    if not items:
+        raise HTTPException(status_code=404, detail=f"No formations with defense_count={n}")
     return items
 
 # ==================== SPECIAL ABILITIES ENDPOINTS ====================

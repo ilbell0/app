@@ -13,7 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS, SEASON_STORIES, FAQ, COUNTER_QUICK } from '@/src/data';
+import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS, SEASON_STORIES, FAQ, COUNTER_QUICK, ABBREVIATIONS } from '@/src/data';
 
 const LOCAL_DATA: Record<string, any[]> = {
   roles: PLAYER_ROLES,
@@ -25,9 +25,10 @@ const LOCAL_DATA: Record<string, any[]> = {
   stories: SEASON_STORIES,
   faq: FAQ,
   quick: COUNTER_QUICK,
+  abbr: ABBREVIATIONS,
 };
 
-type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows' | 'teams' | 'stories' | 'faq' | 'quick';
+type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows' | 'teams' | 'stories' | 'faq' | 'quick' | 'abbr';
 
 interface SectionDef {
   id: SectionId;
@@ -47,6 +48,7 @@ const SECTIONS: SectionDef[] = [
   { id: 'stories', endpoint: '/api/season-stories', label_en: 'Stories', label_it: 'Storie', icon: 'book-outline' },
   { id: 'faq', endpoint: '/api/faq', label_en: 'FAQ', label_it: 'FAQ', icon: 'help-circle-outline' },
   { id: 'quick', endpoint: '/api/counter-quick', label_en: 'Quick', label_it: 'Rapido', icon: 'flash-outline' },
+  { id: 'abbr', endpoint: '/api/abbreviations', label_en: 'Legend', label_it: 'Leggenda', icon: 'list-outline' },
 ];
 
 const TIER_COLORS: Record<string, string> = {
@@ -62,10 +64,10 @@ export default function AcademyScreen() {
 
   const [section, setSection] = useState<SectionId>('roles');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], meta: [], skills: [], training: [], arrows: [], teams: [], stories: [], faq: [], quick: [],
+    roles: [], meta: [], skills: [], training: [], arrows: [], teams: [], stories: [], faq: [], quick: [], abbr: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, meta: false, skills: false, training: false, arrows: false, teams: false, stories: false, faq: false, quick: false,
+    roles: false, meta: false, skills: false, training: false, arrows: false, teams: false, stories: false, faq: false, quick: false, abbr: false,
   });
   const [loading, setLoading] = useState(false);
   const [selected, setSelected] = useState<any | null>(null);
@@ -108,6 +110,7 @@ export default function AcademyScreen() {
       case 'stories': return isIt ? item.title_it : item.title_en;
       case 'faq': return isIt ? item.question_it : item.question_en;
       case 'quick': return item.av;
+      case 'abbr': return `${item.code}  ·  ${isIt ? item.name_it : item.name_en}`;
       default: return '';
     }
   };
@@ -122,6 +125,7 @@ export default function AcademyScreen() {
       case 'stories': return isIt ? item.subtitle_it : item.subtitle_en;
       case 'faq': return (item.category || '').toUpperCase();
       case 'quick': return `→ ${item.neu}`;
+      case 'abbr': return item.example;
       default: return '';
     }
   };
@@ -310,6 +314,19 @@ export default function AcademyScreen() {
                   <DetailBlock label={isIt ? 'SE GIOCHI OFFENSIVO' : 'OFFENSIVE COUNTER'} value={selected.off} />
                   <DetailBlock label={isIt ? 'SE GIOCHI BILANCIATO' : 'NEUTRAL COUNTER'} value={selected.neu} />
                   <DetailBlock label={isIt ? 'SE GIOCHI DIFENSIVO' : 'DEFENSIVE COUNTER'} value={selected.dif} />
+                </>
+              )}
+              {selected && section === 'abbr' && (
+                <>
+                  <View style={styles.detailBlock}>
+                    <Text style={styles.detailLabel}>{isIt ? 'CODICE' : 'CODE'}</Text>
+                    <View style={styles.arrowsBox}>
+                      <Text style={styles.arrowsText}>{selected.code}</Text>
+                    </View>
+                  </View>
+                  <DetailBlock label={isIt ? 'NOME' : 'NAME'} value={isIt ? selected.name_it : selected.name_en} />
+                  <DetailBlock label={isIt ? 'ESEMPIO' : 'EXAMPLE'} value={selected.example} />
+                  <DetailBlock label={isIt ? 'DESCRIZIONE' : 'DESCRIPTION'} value={isIt ? selected.description_it : selected.description_en} />
                 </>
               )}
               {selected && section === 'teams' && (
