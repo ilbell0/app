@@ -1,0 +1,247 @@
+[
+  {
+    "id": "433-vs-4231-dmc",
+    "order": 1,
+    "category_en": "4-3-3 vs 4-2-3-1 with DMC",
+    "category_it": "4-3-3 vs 4-2-3-1 con DMC",
+    "icon": "shuffle-outline",
+    "summary_it": "Si decide su fasce e cerchio centrocampo. Favorito: 4-2-3-1 con DMC. [Verificato NotebookLM]",
+    "summary_en": "",
+    "bullets_it": [
+      "Mossa vincente A (4-3-3): Focus passaggi sulle Fasce per bypassare il DMC",
+      "Mossa vincente A: Ali AML/AMR larghe con freccia rossa (Dual Position Advantage)",
+      "Mossa vincente A: ST Falso 9 che scende e libera spazio per inserimenti",
+      "Errore A: attaccare per vie centrali (DMC intercetta)",
+      "Errore A: nessuna copertura sull'AMC avversario (assist letali tra le linee)"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Si decide", "value": "Fasce + cerchio centrocampo" },
+      { "label": "Verdetto", "value": "4-2-3-1 con DMC leggermente favorito" },
+      { "label": "Perche favorito B", "value": "Il loro DMC schermo + 4 mediani vs 3 MC del 4-3-3" },
+      { "label": "Giocatore chiave A", "value": "ST Falso 9" },
+      { "label": "Fonte", "value": "NotebookLM 7b0eba98" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "433-vs-541-flat",
+    "order": 2,
+    "category_en": "4-3-3 vs 5-4-1 Flat (bus parking)",
+    "category_it": "4-3-3 vs 5-4-1 Flat (bus parcheggiato)",
+    "icon": "shuffle-outline",
+    "summary_it": "Si decide su fasce e trequarti offensiva. Favorito: 4-3-3 con setup giusto. [Verificato NotebookLM]",
+    "summary_en": "",
+    "bullets_it": [
+      "Mossa vincente A (4-3-3): Mentalita Offensiva da subito",
+      "Mossa vincente A: Focus passaggi sulle Fasce (no centro)",
+      "Mossa vincente A: ST Falso 9 attira fuori DC > varchi per inserimenti ali",
+      "Errore A: attaccare al centro (e' il punto di forza del 5-4-1)",
+      "Errore A: mentalita Normale o Difensiva (asseconda il loro piano 0-0)"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Si decide", "value": "Fasce laterali + trequarti offensiva" },
+      { "label": "Verdetto", "value": "4-3-3 favorito" },
+      { "label": "Perche", "value": "5-4-1 ha probabilita di segnare vicine a zero" },
+      { "label": "Giocatore chiave A", "value": "Ala AML/AMR con cross e dribbling" },
+      { "label": "Fonte", "value": "NotebookLM 7b0eba98" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "451v-vs-433",
+    "order": 3,
+    "category_en": "4-5-1 V-Style vs 4-3-3",
+    "category_it": "4-5-1 V-Style vs 4-3-3",
+    "icon": "shuffle-outline",
+    "summary_it": "Si decide su fasce e cerchio mediano. Favorito: 4-5-1 V-Style. [Verificato NotebookLM]",
+    "summary_en": "",
+    "bullets_it": [
+      "Mossa vincente A (4-5-1 V): DMC con freccia BLU (stopper avanzato, intercetta filtranti)",
+      "Mossa vincente A: Focus sulle Fasce (4-3-3 manca copertura ML/MR)",
+      "Mossa vincente A: Mentalita Difensiva/Normale + Force Counter-Attack ON",
+      "Errore A: attaccare al centro (3 MC densi del 4-3-3)",
+      "Errore A: non far ripiegare le ali > terzini isolati contro tridente"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Si decide", "value": "Fasce + cerchio centrocampo" },
+      { "label": "Verdetto", "value": "4-5-1 V-Style leggermente favorito" },
+      { "label": "Perche", "value": "Tier S 2026, 'jack of all trades', DMC equilibrio difensivo" },
+      { "label": "Giocatore chiave A", "value": "DMC con freccia blu" },
+      { "label": "Fonte", "value": "NotebookLM 7b0eba98" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "433-vs-433-mirror",
+    "order": 4,
+    "category_en": "4-3-3 vs 4-3-3 (mirror)",
+    "category_it": "4-3-3 vs 4-3-3 (specchio)",
+    "icon": "swap-horizontal-outline",
+    "summary_it": "Si decide su duelli sulle fasce. Vince chi ha Team Balance migliore. [Verificato NotebookLM]",
+    "summary_en": "",
+    "bullets_it": [
+      "Mossa vincente: ST Falso 9 (rompe la staticita dello specchio)",
+      "Mossa vincente: Sovrapposizione terzini (DL/DR freccia ROSSA su veloci)",
+      "Mossa vincente: gestire morale 'Superb' sui titolari chiave (bonus performance 2026)",
+      "Errore: Pressing alto immediato (stamina esaurita negli ultimi 20')",
+      "Errore: Insistere col focus 'Al Centro' (3 MC densi)"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Si decide", "value": "Duelli individuali AML/AMR vs DL/DR" },
+      { "label": "Verdetto", "value": "Vince chi ha Team Balance 9.2-10 + bianchi 150-200% nei ruoli chiave" },
+      { "label": "Cosa NON fare", "value": "Affidarsi a un singolo 'mutante' con balance scarso" },
+      { "label": "Giocatore chiave", "value": "Falso 9 + terzini veloci" },
+      { "label": "Fonte", "value": "NotebookLM 7b0eba98" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "41212-nd-vs-433",
+    "order": 5,
+    "category_en": "4-1-2-1-2 ND vs 4-3-3",
+    "category_it": "4-1-2-1-2 ND vs 4-3-3",
+    "icon": "shuffle-outline",
+    "summary_it": "Si decide al centro del campo. Favorito: 4-1-2-1-2 ND (controllo mediana).",
+    "summary_en": "",
+    "bullets_it": [
+      "Mossa vincente A: rosso su ST e AMC, passaggi rigorosamente Al Centro",
+      "Mossa vincente A: pressing alto > sfrutta sovraccarico mediana 4v3",
+      "Mossa vincente A: DMC + AMC creano linea verticale rapida",
+      "Errore A: aprire il gioco sulle fasce (perde l'identita del modulo)",
+      "Errore A: lasciare gli esterni del 4-3-3 liberi su contropiede"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Si decide", "value": "Al centro - mediana 4v3" },
+      { "label": "Verdetto", "value": "4-1-2-1-2 ND favorito (Tier S)" },
+      { "label": "Perche", "value": "4 mediani vs 3 del 4-3-3 = dominio palla" },
+      { "label": "Counter B (4-3-3)", "value": "Apri sulle fasce con AML/AMR larghi" },
+      { "label": "Giocatore chiave A", "value": "AMC creativo" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "3151-vs-451v",
+    "order": 6,
+    "category_en": "3-1-5-1 vs 4-5-1 V-Style",
+    "category_it": "3-1-5-1 vs 4-5-1 V-Style",
+    "icon": "shuffle-outline",
+    "summary_it": "Si decide sul controllo centrale. Scontro 'secret formation' vs 'versatile'.",
+    "summary_en": "",
+    "bullets_it": [
+      "Mossa vincente A (3-1-5-1): sovraccarico mediana 5v3 (5 MC vs DMC+2MC)",
+      "Mossa vincente A: DMC con freccia BLU + AMC con freccia ROSSA",
+      "Mossa vincente A: pressing alto + mentalita Offensiva",
+      "Errore A: difesa a 3 esposta se l'AMR/AML avversario riceve in profondita",
+      "Errore A: se l'avversario gioca contropiede > la mia retroguardia rischia"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Si decide", "value": "Trequarti offensiva del 3-1-5-1 (sovraccarico)" },
+      { "label": "Verdetto", "value": "3-1-5-1 favorito se l'avversario non contropiede" },
+      { "label": "Rischio A", "value": "Difesa a 3 + DMC unico = vulnerabile a 1v1 sulle ali" },
+      { "label": "Giocatore chiave A", "value": "AMC con Shadow Striker" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "4231-dmc-vs-442",
+    "order": 7,
+    "category_en": "4-2-3-1 with DMC vs 4-4-2 Classic",
+    "category_it": "4-2-3-1 con DMC vs 4-4-2 Classico",
+    "icon": "shuffle-outline",
+    "summary_it": "Si decide tra le linee. Favorito: 4-2-3-1 (AMC libero tra centrocampo e difesa).",
+    "summary_en": "",
+    "bullets_it": [
+      "Mossa vincente A (4-2-3-1): AMC con Shadow Striker tra le linee del 4-4-2",
+      "Mossa vincente A: passaggi corti + possesso (no DMC avversario)",
+      "Mossa vincente A: freccia rossa sull'ala lato debole del 4-4-2",
+      "Errore A: pressing alto > il 4-4-2 lancia lungo sulle due punte",
+      "Errore A: non proteggere i terzini contro ML/MR avversari"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Si decide", "value": "Spazio tra centrocampo e difesa del 4-4-2" },
+      { "label": "Verdetto", "value": "4-2-3-1 favorito" },
+      { "label": "Perche", "value": "AMC libero, 4-4-2 senza DMC non sa marcarlo" },
+      { "label": "Giocatore chiave A", "value": "AMC playmaker + Shadow Striker" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "451v-vs-541-flat",
+    "order": 8,
+    "category_en": "4-5-1 V-Style vs 5-4-1 Flat",
+    "category_it": "4-5-1 V-Style vs 5-4-1 Flat",
+    "icon": "shuffle-outline",
+    "summary_it": "Si decide su pazienza e palle inattive. Match spesso 0-0 o 1-0 di misura.",
+    "summary_en": "",
+    "bullets_it": [
+      "Mossa vincente A (4-5-1 V): AML/AMR larghi con cross alto (Corner Specialist)",
+      "Mossa vincente A: ST Target Man in area su corner e cross",
+      "Mossa vincente A: pazienza > mentalita Normale, non forzare Offensiva subito",
+      "Errore A: forzare attacco centrale (linea a 5 invalicabile)",
+      "Errore A: cambiare modulo a 30 min > perdi struttura"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Si decide", "value": "Palle inattive + cross dalle fasce" },
+      { "label": "Verdetto", "value": "4-5-1 V favorito ma deve essere paziente" },
+      { "label": "Setup", "value": "Mentalita Normale, Sulle Fasce, pressing medio" },
+      { "label": "Giocatore chiave A", "value": "ST Target Man con Aerial Threat" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "343-vs-433",
+    "order": 9,
+    "category_en": "3-4-3 vs 4-3-3",
+    "category_it": "3-4-3 vs 4-3-3",
+    "icon": "shuffle-outline",
+    "summary_it": "Scontro offensivo, partita aperta. Favorito: 3-4-3 se ha terzini fluidificanti.",
+    "summary_en": "",
+    "bullets_it": [
+      "Mossa vincente A (3-4-3): ML/MR con freccia rossa che salgono come Wing-Back",
+      "Mossa vincente A: 3 attaccanti vs 2 DC del 4-3-3 = superiorita centrale",
+      "Mossa vincente A: pressing alto > il 4-3-3 ha solo 3 MC per costruire",
+      "Errore A: difesa a 3 esposta se ali avversarie tagliano dentro",
+      "Errore A: contropiede subito sulle fasce > perdo gli esterni alti"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Si decide", "value": "Profondita centrale, ali del 4-3-3 vs Wing-Back" },
+      { "label": "Verdetto", "value": "3-4-3 favorito se terzini fluidi" },
+      { "label": "Perche", "value": "3 attaccanti vs 2 DC + Wing-Back larghi" },
+      { "label": "Giocatore chiave A", "value": "ML/MR con Dual Position" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "442-vs-433",
+    "order": 10,
+    "category_en": "4-4-2 Classic vs 4-3-3",
+    "category_it": "4-4-2 Classico vs 4-3-3",
+    "icon": "shuffle-outline",
+    "summary_it": "Si decide su rapidita transizioni. Favorito: 4-3-3 (controllo + Falso 9).",
+    "summary_en": "",
+    "bullets_it": [
+      "Mossa vincente A (4-4-2): pressing alto sull'uscita palla del 4-3-3",
+      "Mossa vincente A: ML/MR taglio dentro su contropiede",
+      "Mossa vincente A: 2 ST sui DC avversari (sovrapposizione 2v2)",
+      "Errore A: lasciare l'AMC inesistente (4-4-2 non ne ha) - libera il trequarti per il Falso 9",
+      "Errore A: insistere palla a terra - serve lancio lungo verso le 2 punte"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Si decide", "value": "Transizioni rapide (4-4-2 deve contropiede)" },
+      { "label": "Verdetto", "value": "4-3-3 favorito (controlla possesso + Falso 9 rompe linea)" },
+      { "label": "Counter A", "value": "Pressing alto + 2 ST verticali" },
+      { "label": "Giocatore chiave A", "value": "Coppia di ST veloci e fisici" }
+    ],
+    "table_en": null
+  }
+]

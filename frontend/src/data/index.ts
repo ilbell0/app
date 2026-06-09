@@ -17,6 +17,7 @@ import abbreviations from './abbreviations.json';
 import careerPaths from './careerPaths.json';
 import myPlaybook from './myPlaybook.json';
 import setPiece from './setPiece.json';
+import battleCards from './battleCards.json';
 
 export const FORMATIONS = formations as any[];
 export const COUNTER_ENGINE = counterEngine as any[];
@@ -35,3 +36,4 @@ export const ABBREVIATIONS = abbreviations as any[];
 export const CAREER_PATHS = careerPaths as any[];
 export const MY_PLAYBOOK = myPlaybook as any[];
 export const SET_PIECE = setPiece as any[];
+export const BATTLE_CARDS = battleCards as any[];

@@ -13,7 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS, SEASON_STORIES, FAQ, COUNTER_QUICK, ABBREVIATIONS, MATCHUP_MATRIX, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE } from '@/src/data';
+import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS, SEASON_STORIES, FAQ, COUNTER_QUICK, ABBREVIATIONS, MATCHUP_MATRIX, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS } from '@/src/data';
 
 const LOCAL_DATA: Record<string, any[]> = {
   roles: PLAYER_ROLES,
@@ -30,9 +30,10 @@ const LOCAL_DATA: Record<string, any[]> = {
   paths: CAREER_PATHS,
   mystyle: MY_PLAYBOOK,
   setpiece: SET_PIECE,
+  battles: BATTLE_CARDS,
 };
 
-type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows' | 'teams' | 'stories' | 'faq' | 'quick' | 'abbr' | 'matrix' | 'paths' | 'mystyle' | 'setpiece';
+type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows' | 'teams' | 'stories' | 'faq' | 'quick' | 'abbr' | 'matrix' | 'paths' | 'mystyle' | 'setpiece' | 'battles';
 
 interface SectionDef {
   id: SectionId;
@@ -57,6 +58,7 @@ const SECTIONS: SectionDef[] = [
   { id: 'paths', endpoint: '/api/career-paths', label_en: 'Paths', label_it: 'Percorsi', icon: 'trending-up-outline' },
   { id: 'mystyle', endpoint: '/api/my-playbook', label_en: 'My Style', label_it: 'Mio Stile', icon: 'compass-outline' },
   { id: 'setpiece', endpoint: '/api/set-piece', label_en: 'Set Piece', label_it: 'Piazzati', icon: 'football-outline' },
+  { id: 'battles', endpoint: '/api/battle-cards', label_en: 'Battles', label_it: 'Scontri', icon: 'shuffle-outline' },
 ];
 
 const TIER_COLORS: Record<string, string> = {
@@ -72,10 +74,10 @@ export default function AcademyScreen() {
 
   const [section, setSection] = useState<SectionId>('roles');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], meta: [], skills: [], training: [], arrows: [], teams: [], stories: [], faq: [], quick: [], abbr: [], matrix: [], paths: [], mystyle: [], setpiece: [],
+    roles: [], meta: [], skills: [], training: [], arrows: [], teams: [], stories: [], faq: [], quick: [], abbr: [], matrix: [], paths: [], mystyle: [], setpiece: [], battles: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, meta: false, skills: false, training: false, arrows: false, teams: false, stories: false, faq: false, quick: false, abbr: false, matrix: false, paths: false, mystyle: false, setpiece: false,
+    roles: false, meta: false, skills: false, training: false, arrows: false, teams: false, stories: false, faq: false, quick: false, abbr: false, matrix: false, paths: false, mystyle: false, setpiece: false, battles: false,
   });
   const [loading, setLoading] = useState(false);
   const [selected, setSelected] = useState<any | null>(null);
@@ -123,6 +125,7 @@ export default function AcademyScreen() {
       case 'paths': return `${item.label}  ·  ${isIt ? item.title_it : item.title_en}`;
       case 'mystyle': return `${item.order}. ${isIt ? item.category_it : item.category_en}`;
       case 'setpiece': return `${item.order}. ${isIt ? item.category_it : item.category_en}`;
+      case 'battles': return isIt ? item.category_it : item.category_en;
       default: return '';
     }
   };
@@ -142,6 +145,7 @@ export default function AcademyScreen() {
       case 'paths': return isIt ? item.subtitle_it : item.subtitle_en;
       case 'mystyle': return isIt ? item.summary_it : item.summary_en;
       case 'setpiece': return isIt ? item.summary_it : item.summary_en;
+      case 'battles': return isIt ? item.summary_it : item.summary_en;
       default: return '';
     }
   };
@@ -391,7 +395,7 @@ export default function AcademyScreen() {
                   <DetailBlock label={isIt ? 'COME IMITARLA IN TOP ELEVEN' : 'HOW TO COPY IT IN TOP ELEVEN'} value={isIt ? selected.how_to_copy_it : selected.how_to_copy_en} />
                 </>
               )}
-              {selected && (section === 'mystyle' || section === 'setpiece') && (
+              {selected && (section === 'mystyle' || section === 'setpiece' || section === 'battles') && (
                 <>
                   <DetailBlock label={isIt ? 'SINTESI' : 'SUMMARY'} value={isIt ? selected.summary_it : selected.summary_en} />
                   {((isIt ? selected.bullets_it : selected.bullets_en) || []).length > 0 && (
