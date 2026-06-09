@@ -1,0 +1,120 @@
+[
+  {
+    "id": "penalty",
+    "order": 1,
+    "category_en": "Penalty taker",
+    "category_it": "Rigorista",
+    "icon": "football-outline",
+    "summary_it": "Quasi-infallibile con Penalty Specialist + morale Superb.",
+    "summary_en": "",
+    "bullets_it": [
+      "Ruolo migliore: ST o AMC",
+      "Attributi chiave: Finalizzazione + Tiro",
+      "Abilita: Penalty Specialist (precisione quasi totale)",
+      "Tie-breaker se ho piu candidati: morale 'Superb' (bonus performance maggiore)",
+      "In alternativa: attributi bianchi > 150-200%"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Ruolo", "value": "ST o AMC" },
+      { "label": "Attributi", "value": "Finalizzazione + Tiro" },
+      { "label": "Abilita chiave", "value": "Penalty Specialist" },
+      { "label": "Tie-breaker", "value": "Morale Superb > attributi bianchi 150%+" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "free-kick",
+    "order": 2,
+    "category_en": "Direct free kicks",
+    "category_it": "Punizioni dirette",
+    "icon": "locate-outline",
+    "summary_it": "Arma per sbloccare partite chiuse. Lo specialista cambia tutto.",
+    "summary_en": "",
+    "bullets_it": [
+      "Ruoli ammessi: ST, AMC, MC",
+      "Attributi: Tiro + Passaggio alti",
+      "Abilita: Free Kick Specialist (essenziale)",
+      "Da assegnare al miglior tiratore SEMPRE in formazione titolare"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Ruolo", "value": "ST / AMC / MC" },
+      { "label": "Attributi", "value": "Tiro + Passaggio" },
+      { "label": "Abilita chiave", "value": "Free Kick Specialist" },
+      { "label": "Quando vale", "value": "Partite chiuse, sblocca da palla inattiva" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "corner-off",
+    "order": 3,
+    "category_en": "Offensive corners",
+    "category_it": "Calci d'angolo offensivi",
+    "icon": "flag-outline",
+    "summary_it": "Massimizzo gioco aereo. Battitore con Cross alto + saltatori in area.",
+    "summary_en": "",
+    "bullets_it": [
+      "Battitore: ML, MR, AML o AMR",
+      "Attributo battitore: Cross (target 200%+)",
+      "Abilita battitore: Corner Specialist",
+      "In area: DC (forza fisica) + ST con playstyle Target Man",
+      "Schema: massimizza saltatori forti vicino al portiere"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Battitore", "value": "ML / MR / AML / AMR" },
+      { "label": "Attributo battitore", "value": "Cross 200%+" },
+      { "label": "Abilita battitore", "value": "Corner Specialist" },
+      { "label": "Saltatori in area", "value": "DC fisici + ST Target Man" },
+      { "label": "Abilita saltatori", "value": "Aerial Threat" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "corner-def",
+    "order": 4,
+    "category_en": "Defending corners",
+    "category_it": "Difesa sui corner",
+    "icon": "shield-checkmark-outline",
+    "summary_it": "Zona di default. Uomo solo se avversario ha saltatori dominanti.",
+    "summary_en": "",
+    "bullets_it": [
+      "Marcatura standard: A Zona (stabilita)",
+      "A Uomo: solo se l'avversario ha saltatori dominanti (forza errore)",
+      "Abilita vitale: Aerial Defence su DMC Anchor Man o DC",
+      "Abilita complementare: Defensive Wall (intercetta deviazioni sul dischetto)",
+      "Mai lasciare la zona del dischetto scoperta"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Marcatura default", "value": "Zona" },
+      { "label": "Marcatura alternativa", "value": "Uomo (se loro hanno saltatori top)" },
+      { "label": "Abilita primaria", "value": "Aerial Defence (DMC/DC)" },
+      { "label": "Abilita secondaria", "value": "Defensive Wall (dischetto)" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "throw-in",
+    "order": 5,
+    "category_en": "Long throw-in",
+    "category_it": "Rimesse laterali lunghe",
+    "icon": "hand-right-outline",
+    "summary_it": "Skill Long Throw-in trasforma una rimessa in palla inattiva offensiva.",
+    "summary_en": "",
+    "bullets_it": [
+      "Skill: Long Throw-in su DL o DR",
+      "Effetto: rimessa diventa potenziale occasione da gol in area",
+      "Allenare un solo terzino con questa skill e sufficiente (il battitore titolare)",
+      "Saltatori in area come per i corner (DC + ST Target Man)"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Skill", "value": "Long Throw-in" },
+      { "label": "Su chi", "value": "DL o DR (basta uno titolare)" },
+      { "label": "Effetto", "value": "Rimessa = occasione in area" }
+    ],
+    "table_en": null
+  }
+]
