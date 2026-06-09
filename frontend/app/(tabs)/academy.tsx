@@ -13,7 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS, SEASON_STORIES, FAQ, COUNTER_QUICK, ABBREVIATIONS, MATCHUP_MATRIX, CAREER_PATHS } from '@/src/data';
+import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS, SEASON_STORIES, FAQ, COUNTER_QUICK, ABBREVIATIONS, MATCHUP_MATRIX, CAREER_PATHS, MY_PLAYBOOK } from '@/src/data';
 
 const LOCAL_DATA: Record<string, any[]> = {
   roles: PLAYER_ROLES,
@@ -28,9 +28,10 @@ const LOCAL_DATA: Record<string, any[]> = {
   abbr: ABBREVIATIONS,
   matrix: MATCHUP_MATRIX,
   paths: CAREER_PATHS,
+  mystyle: MY_PLAYBOOK,
 };
 
-type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows' | 'teams' | 'stories' | 'faq' | 'quick' | 'abbr' | 'matrix' | 'paths';
+type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows' | 'teams' | 'stories' | 'faq' | 'quick' | 'abbr' | 'matrix' | 'paths' | 'mystyle';
 
 interface SectionDef {
   id: SectionId;
@@ -53,6 +54,7 @@ const SECTIONS: SectionDef[] = [
   { id: 'abbr', endpoint: '/api/abbreviations', label_en: 'Legend', label_it: 'Leggenda', icon: 'list-outline' },
   { id: 'matrix', endpoint: '/api/matchup-matrix', label_en: 'Matrix', label_it: 'Matrice', icon: 'grid-outline' },
   { id: 'paths', endpoint: '/api/career-paths', label_en: 'Paths', label_it: 'Percorsi', icon: 'trending-up-outline' },
+  { id: 'mystyle', endpoint: '/api/my-playbook', label_en: 'My Style', label_it: 'Mio Stile', icon: 'compass-outline' },
 ];
 
 const TIER_COLORS: Record<string, string> = {
@@ -68,10 +70,10 @@ export default function AcademyScreen() {
 
   const [section, setSection] = useState<SectionId>('roles');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], meta: [], skills: [], training: [], arrows: [], teams: [], stories: [], faq: [], quick: [], abbr: [], matrix: [], paths: [],
+    roles: [], meta: [], skills: [], training: [], arrows: [], teams: [], stories: [], faq: [], quick: [], abbr: [], matrix: [], paths: [], mystyle: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, meta: false, skills: false, training: false, arrows: false, teams: false, stories: false, faq: false, quick: false, abbr: false, matrix: false, paths: false,
+    roles: false, meta: false, skills: false, training: false, arrows: false, teams: false, stories: false, faq: false, quick: false, abbr: false, matrix: false, paths: false, mystyle: false,
   });
   const [loading, setLoading] = useState(false);
   const [selected, setSelected] = useState<any | null>(null);
@@ -117,6 +119,7 @@ export default function AcademyScreen() {
       case 'abbr': return `${item.code}  ·  ${isIt ? item.name_it : item.name_en}`;
       case 'matrix': return item.opponent;
       case 'paths': return `${item.label}  ·  ${isIt ? item.title_it : item.title_en}`;
+      case 'mystyle': return `${item.order}. ${isIt ? item.category_it : item.category_en}`;
       default: return '';
     }
   };
@@ -134,6 +137,7 @@ export default function AcademyScreen() {
       case 'abbr': return item.example;
       case 'matrix': return `→ ${item.counter_neutral || '—'}`;
       case 'paths': return isIt ? item.subtitle_it : item.subtitle_en;
+      case 'mystyle': return isIt ? item.summary_it : item.summary_en;
       default: return '';
     }
   };
@@ -383,6 +387,17 @@ export default function AcademyScreen() {
                   <DetailBlock label={isIt ? 'COME IMITARLA IN TOP ELEVEN' : 'HOW TO COPY IT IN TOP ELEVEN'} value={isIt ? selected.how_to_copy_it : selected.how_to_copy_en} />
                 </>
               )}
+              {selected && section === 'mystyle' && (
+                <>
+                  <DetailBlock label={isIt ? 'SINTESI' : 'SUMMARY'} value={isIt ? selected.summary_it : selected.summary_en} />
+                  {((isIt ? selected.bullets_it : selected.bullets_en) || []).length > 0 && (
+                    <DetailChips label={isIt ? 'PUNTI CHIAVE' : 'KEY POINTS'} values={isIt ? selected.bullets_it : selected.bullets_en} />
+                  )}
+                  {(isIt ? selected.table_it : selected.table_en) && (
+                    <DetailTable label={isIt ? 'DETTAGLI' : 'DETAILS'} rows={isIt ? selected.table_it : selected.table_en} />
+                  )}
+                </>
+              )}
             </ScrollView>
           </View>
         </Animated.View>
@@ -410,6 +425,23 @@ function DetailChips({ label, values }: { label: string; values?: string[] }) {
         {values.map((v, i) => (
           <View key={i} style={styles.chip}>
             <Text style={styles.chipText}>{v}</Text>
+          </View>
+        ))}
+      </View>
+    </View>
+  );
+}
+
+function DetailTable({ label, rows }: { label: string; rows?: { label: string; value: string }[] | null }) {
+  if (!rows || rows.length === 0) return null;
+  return (
+    <View style={styles.detailBlock}>
+      <Text style={styles.detailLabel}>{label}</Text>
+      <View style={styles.tableBox}>
+        {rows.map((r, i) => (
+          <View key={i} style={[styles.tableRow, i === rows.length - 1 && styles.tableRowLast]}>
+            <Text style={styles.tableLabel}>{r.label}</Text>
+            <Text style={styles.tableValue}>{r.value}</Text>
           </View>
         ))}
       </View>
@@ -501,5 +533,36 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '700',
     letterSpacing: 1,
+  },
+  tableBox: {
+    backgroundColor: NothingTheme.colors.surface,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+    borderRadius: 8,
+    overflow: 'hidden',
+  },
+  tableRow: {
+    flexDirection: 'row',
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: NothingTheme.colors.divider,
+    gap: 12,
+  },
+  tableRowLast: {
+    borderBottomWidth: 0,
+  },
+  tableLabel: {
+    color: NothingTheme.colors.accent,
+    fontSize: 12,
+    fontWeight: '700',
+    letterSpacing: 1,
+    width: 120,
+  },
+  tableValue: {
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 13,
+    lineHeight: 18,
+    flex: 1,
   },
 });

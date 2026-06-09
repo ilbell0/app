@@ -1,0 +1,272 @@
+[
+  {
+    "id": "philosophy",
+    "order": 1,
+    "category_en": "Philosophy & Identity",
+    "category_it": "Filosofia & Identita",
+    "icon": "compass-outline",
+    "summary_it": "Il possesso e una forma di difesa. Se ho la palla, l'avversario non segna. Pazienza, controllo, stancare l'avversario.",
+    "summary_en": "Possession is a form of defense.",
+    "bullets_it": [
+      "Pazienza > fretta: 25+ passaggi per azione, vincere 1-0 al 88' va benissimo",
+      "Il numero non conta: 75% possesso e 1-0 finale e un successo",
+      "Stancare l'avversario: nel secondo tempo crolla, li decido la partita",
+      "Ispirazione: Barcellona 2010/11 di Guardiola"
+    ],
+    "bullets_en": [],
+    "table_it": null,
+    "table_en": null
+  },
+  {
+    "id": "dna",
+    "order": 2,
+    "category_en": "Squad DNA",
+    "category_it": "DNA della rosa",
+    "icon": "people-outline",
+    "summary_it": "Profilo titolari ideali per il 4-3-3 tiki-taka. Il giocatore piu forte e il DMC playmaker, non l'attaccante.",
+    "summary_en": "",
+    "bullets_it": [
+      "Regola d'oro: DMC playmaker = cervello del sistema",
+      "Abilita chiave: Playmaker (MC/DMC) + Shadow Striker (MC dx, inserimenti) + One-on-One Scoring (ali)",
+      "False Nine = playstyle ST piu forte del meta 2026",
+      "Evitare: attaccanti tank lenti, terzini Wing-Back, AMC puro nel 4-3-3"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "GK", "value": "Sweeper Keeper - Riflessi, Uscite, Posizionamento" },
+      { "label": "DC sx", "value": "Ball-Playing (Pique) - Passaggio, Marcatura, Creativita" },
+      { "label": "DC dx", "value": "No-Nonsense - Contrasto, Marcatura, Forza" },
+      { "label": "DL/DR", "value": "Full-Back (NO Wing-Back) - Marcatura, Velocita" },
+      { "label": "DMC", "value": "Deep-Lying Playmaker (Busquets) - Passaggio, Visione" },
+      { "label": "MC sx", "value": "Mezzala creativa (Xavi) - Passaggio, Creativita" },
+      { "label": "MC dx", "value": "Mezzala incursore (Iniesta) - Dribbling, Creativita" },
+      { "label": "AML", "value": "Inverted Winger - Dribbling, Velocita, Tiro" },
+      { "label": "AMR", "value": "Inverted Winger - Dribbling, Velocita, Tiro" },
+      { "label": "ST", "value": "False Nine (Messi) - Finalizzazione, Creativita, Visione" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "formations",
+    "order": 3,
+    "category_en": "Formation repertoire",
+    "category_it": "Repertorio moduli",
+    "icon": "grid-outline",
+    "summary_it": "3 moduli + 1 emergenza. Mai di piu.",
+    "summary_en": "",
+    "bullets_it": [
+      "Non uso mai: 5-4-1 Flat (no DNA), 4-4-2 Classic (poca creativita centrale)"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Default", "value": "4-3-3 puro - vs pari/deboli (story: tiki-taka-barca)" },
+      { "label": "Vs forti", "value": "3-1-5-1 AMC - pressing alto (story: tiki-taka-fanatic)" },
+      { "label": "Plan B", "value": "4-1-2-1-2 ND - contro transizioni veloci" },
+      { "label": "Emergenza", "value": "3-4-1-2 - solo da 0-2 (story: comeback-with-arrows)" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "setup",
+    "order": 4,
+    "category_en": "Base tactical setup",
+    "category_it": "Setup tattico base",
+    "icon": "settings-outline",
+    "summary_it": "Setup del 4-3-3 default. Cambio solo per emergenze.",
+    "summary_en": "",
+    "bullets_it": [],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Mentalita", "value": "Normale - tutta la partita" },
+      { "label": "Passaggi", "value": "Sulle Fasce - sfrutto ali Dual Position [meta 2026]" },
+      { "label": "Stile", "value": "Corto - mai lungo" },
+      { "label": "Pressing", "value": "Basso - conservo condizione fisica" },
+      { "label": "Marcatura", "value": "A Zona - blocco compatto" },
+      { "label": "Fuorigioco", "value": "ON - difesa alta tipo Barca" },
+      { "label": "Tackling", "value": "Normale - non perdo palla con duri" },
+      { "label": "Counter forzato", "value": "OFF - privilegia la manovra" },
+      { "label": "Gioco largo", "value": "ON - AML/AMR larghi (Dual Position Advantage)" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "arrows",
+    "order": 5,
+    "category_en": "Arrows & movements",
+    "category_it": "Frecce & movimenti",
+    "icon": "swap-vertical-outline",
+    "summary_it": "Freccia DMC condizionata all'AMC avversario. Senza la freccia giusta il sistema crolla.",
+    "summary_en": "",
+    "bullets_it": [
+      "REGOLA DMC: BLU di default (stopper avanzato, +clean sheet)",
+      "DMC ROSSA solo se l'avversario NON ha AMC > DMC sale come MC aggiunto",
+      "4-3-3: niente frecce su ali (gia alte). Niente su terzini (no sovrapposizioni)",
+      "3-1-5-1: BLU su DMC + ROSSA su AMC (finalizzatore reale)",
+      "Vs 5-4-1 Flat: ROSSA sui due terzini"
+    ],
+    "bullets_en": [],
+    "table_it": null,
+    "table_en": null
+  },
+  {
+    "id": "phases",
+    "order": 6,
+    "category_en": "4 phases of play",
+    "category_it": "Le 4 fasi di gioco",
+    "icon": "git-network-outline",
+    "summary_it": "Cosa deve succedere in ciascuna delle 4 fasi.",
+    "summary_en": "",
+    "bullets_it": [
+      "A) Costruzione: 3v2 in uscita (GK+2DC vs 2 punte). DMC si abbassa se pressing a 3. Mai lanci lunghi.",
+      "B) Sviluppo: triangoli MC-DMC-MC. Terzini larghi e BASSI. Ali aspettano alte.",
+      "C) Finalizzazione: Falso 9 si abbassa > libera spazio per ala. Mezzala lato debole arriva in area. KPI: 25+ passaggi per azione.",
+      "D) Non-possesso: regola dei 6 secondi. Pressing immediato. Se non torna in 6s, ritorno in posizione."
+    ],
+    "bullets_en": [],
+    "table_it": null,
+    "table_en": null
+  },
+  {
+    "id": "scenarios",
+    "order": 7,
+    "category_en": "Match scenarios playbook",
+    "category_it": "Playbook scenari",
+    "icon": "list-outline",
+    "summary_it": "Per livello stelle e per punteggio.",
+    "summary_en": "",
+    "bullets_it": [],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Vs Forte (+1/+2)", "value": "3-1-5-1 AMC - Difensiva > Normale al 60'" },
+      { "label": "Vs Pari", "value": "4-3-3 - Normale (default)" },
+      { "label": "Vs Debole (-1)", "value": "4-3-3 - Normale > Offensiva al 60'" },
+      { "label": "In vantaggio 1-0 70'+", "value": "Difensiva ma MANTENGO possesso" },
+      { "label": "In svantaggio 0-1 60'+", "value": "Offensiva. NON cambio modulo" },
+      { "label": "In svantaggio 0-2 60'+", "value": "Cambio al 3-4-1-2" },
+      { "label": "Pareggio vs forte 80'+", "value": "Difensiva + DC freschi" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "counters",
+    "order": 8,
+    "category_en": "Counter to tough opponents",
+    "category_it": "Counter ai moduli ostici",
+    "icon": "shield-outline",
+    "summary_it": "I 5 moduli che mi danno fastidio e come reagire.",
+    "summary_en": "",
+    "bullets_it": [],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "5-4-1 Flat (bus)", "value": "Offensiva dal 65', passaggi Fasce, freccia rossa su 1 terzino" },
+      { "label": "4-2-3-1 con DMC", "value": "NO attacco centrale (DMC blocca). Sulle Fasce + modulo 4-1-3N-2" },
+      { "label": "3-5-2 V", "value": "Sweeper Keeper alto, DMC si abbassa (build-up 3+1)" },
+      { "label": "4-1-2-1-2 ND", "value": "Apro con ala inversa - passaggi al centro non bastano" },
+      { "label": "4-3-3 specchio", "value": "Vince chi ha DMC e AMC migliori" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "subs",
+    "order": 9,
+    "category_en": "Substitutions",
+    "category_it": "Sostituzioni standard",
+    "icon": "swap-horizontal-outline",
+    "summary_it": "3 sostituzioni standard nel 4-3-3.",
+    "summary_en": "",
+    "bullets_it": [
+      "Regola: mai sostituire un difensore mentre rimonto"
+    ],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "60' - MC stanco", "value": "MC fresco con Playmaker (mantengo precisione)" },
+      { "label": "75' - Vinco 1-0/2-0", "value": "DMC fresco entra per 1 mezzala (chiudo)" },
+      { "label": "85' - Vantaggio risicato", "value": "DC fresco per terzino offensivo (difesa a 5)" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "season",
+    "order": 10,
+    "category_en": "Season rhythm & tokens",
+    "category_it": "Ritmo stagionale & token",
+    "icon": "calendar-outline",
+    "summary_it": "Settimana tipo + asta + regole token.",
+    "summary_en": "",
+    "bullets_it": [
+      "Lun-Mer: rotazione 2 undici, allenamenti Passaggio+Creativita",
+      "Gio: partita campionato, undici titolare",
+      "Ven-Sab: condizione/morale, NO Allenamenti Rapidi",
+      "Dom: knockout/Coppa, qui uso eventuali Rapidi",
+      "Asta priorita: 1) DMC playmaker giovane 2) MC creativa under 21 3) AML/AMR dribbler piede inverso 4) DC Ball-Playing 5) ST False Nine se libero",
+      "Token: 80% riservati a knockout Champions. 0 token su attaccanti puri. Prima rosa sana, poi asta."
+    ],
+    "bullets_en": [],
+    "table_it": null,
+    "table_en": null
+  },
+  {
+    "id": "mistakes",
+    "order": 11,
+    "category_en": "Mistakes to avoid",
+    "category_it": "Errori da NON fare",
+    "icon": "warning-outline",
+    "summary_it": "Autoregole, ognuna nata da una lezione.",
+    "summary_en": "",
+    "bullets_it": [
+      "Mai Pressing Alto nel 1' tempo (esaurisce stamina, crolli nel finale)",
+      "Mai scendere sotto Team Balance 9.2-10 ('mutante' danneggia il collettivo)",
+      "Mai frecce ROSSE su giocatori con Velocita bassa",
+      "Mai Offensiva dal 1' (brucio condizione)",
+      "Mai cambiare modulo durante la partita (eccezione: 0-2 + rimonta)",
+      "Mai Allenamento Rapido fuori da knockout",
+      "Mai vendere il DMC playmaker, neanche al triplo del valore",
+      "Mai sostituire al 80%+ possesso prima del 75'",
+      "Mai inseguire palla individualmente"
+    ],
+    "bullets_en": [],
+    "table_it": null,
+    "table_en": null
+  },
+  {
+    "id": "kpi",
+    "order": 12,
+    "category_en": "KPI - am I playing my style?",
+    "category_it": "KPI - sto giocando il mio stile?",
+    "icon": "stats-chart-outline",
+    "summary_it": "Target a regime (non a singola partita).",
+    "summary_en": "",
+    "bullets_it": [],
+    "bullets_en": [],
+    "table_it": [
+      { "label": "Possesso medio", "value": ">= 65% (sotto = non controllo il tempo)" },
+      { "label": "Passaggi completati", "value": ">= 88% (sotto = rischio troppo)" },
+      { "label": "Tiri totali", "value": ">= 2x avversario (sotto = non finalizzo)" },
+      { "label": "Goal subiti/partita", "value": "< 1.0 (sopra = buchi difensivi)" },
+      { "label": "Goal fatti/partita", "value": ">= 1.5 (sotto = sistema sterile)" },
+      { "label": "Passaggi per azione", "value": ">= 15 (sotto = troppo verticale)" }
+    ],
+    "table_en": null
+  },
+  {
+    "id": "checklist",
+    "order": 13,
+    "category_en": "Pre-match 60s checklist",
+    "category_it": "Checklist pre-partita 60 secondi",
+    "icon": "checkmark-done-outline",
+    "summary_it": "60 secondi prima del calcio d'inizio.",
+    "summary_en": "",
+    "bullets_it": [
+      "Morale 80/80 sui titolari?",
+      "Condizione 80/80 sui titolari?",
+      "Modulo salvato e caricato?",
+      "Freccia BLU sul DMC verificata?",
+      "AML/AMR sono dribbler veri (non lenti)?",
+      "Avversario ha DMC? (decide 4-3-3 vs 3-1-5-1)",
+      "Penalty Specialist e Free Kick Specialist in campo?"
+    ],
+    "bullets_en": [],
+    "table_it": null,
+    "table_en": null
+  }
+]
