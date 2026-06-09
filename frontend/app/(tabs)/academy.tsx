@@ -13,7 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS, SEASON_STORIES, FAQ, COUNTER_QUICK, ABBREVIATIONS } from '@/src/data';
+import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS, SEASON_STORIES, FAQ, COUNTER_QUICK, ABBREVIATIONS, MATCHUP_MATRIX } from '@/src/data';
 
 const LOCAL_DATA: Record<string, any[]> = {
   roles: PLAYER_ROLES,
@@ -26,9 +26,10 @@ const LOCAL_DATA: Record<string, any[]> = {
   faq: FAQ,
   quick: COUNTER_QUICK,
   abbr: ABBREVIATIONS,
+  matrix: MATCHUP_MATRIX,
 };
 
-type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows' | 'teams' | 'stories' | 'faq' | 'quick' | 'abbr';
+type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows' | 'teams' | 'stories' | 'faq' | 'quick' | 'abbr' | 'matrix';
 
 interface SectionDef {
   id: SectionId;
@@ -49,6 +50,7 @@ const SECTIONS: SectionDef[] = [
   { id: 'faq', endpoint: '/api/faq', label_en: 'FAQ', label_it: 'FAQ', icon: 'help-circle-outline' },
   { id: 'quick', endpoint: '/api/counter-quick', label_en: 'Quick', label_it: 'Rapido', icon: 'flash-outline' },
   { id: 'abbr', endpoint: '/api/abbreviations', label_en: 'Legend', label_it: 'Leggenda', icon: 'list-outline' },
+  { id: 'matrix', endpoint: '/api/matchup-matrix', label_en: 'Matrix', label_it: 'Matrice', icon: 'grid-outline' },
 ];
 
 const TIER_COLORS: Record<string, string> = {
@@ -64,10 +66,10 @@ export default function AcademyScreen() {
 
   const [section, setSection] = useState<SectionId>('roles');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], meta: [], skills: [], training: [], arrows: [], teams: [], stories: [], faq: [], quick: [], abbr: [],
+    roles: [], meta: [], skills: [], training: [], arrows: [], teams: [], stories: [], faq: [], quick: [], abbr: [], matrix: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, meta: false, skills: false, training: false, arrows: false, teams: false, stories: false, faq: false, quick: false, abbr: false,
+    roles: false, meta: false, skills: false, training: false, arrows: false, teams: false, stories: false, faq: false, quick: false, abbr: false, matrix: false,
   });
   const [loading, setLoading] = useState(false);
   const [selected, setSelected] = useState<any | null>(null);
@@ -111,6 +113,7 @@ export default function AcademyScreen() {
       case 'faq': return isIt ? item.question_it : item.question_en;
       case 'quick': return item.av;
       case 'abbr': return `${item.code}  ·  ${isIt ? item.name_it : item.name_en}`;
+      case 'matrix': return item.opponent;
       default: return '';
     }
   };
@@ -126,6 +129,7 @@ export default function AcademyScreen() {
       case 'faq': return (item.category || '').toUpperCase();
       case 'quick': return `→ ${item.neu}`;
       case 'abbr': return item.example;
+      case 'matrix': return `→ ${item.counter_neutral || '—'}`;
       default: return '';
     }
   };
@@ -327,6 +331,15 @@ export default function AcademyScreen() {
                   <DetailBlock label={isIt ? 'NOME' : 'NAME'} value={isIt ? selected.name_it : selected.name_en} />
                   <DetailBlock label={isIt ? 'ESEMPIO' : 'EXAMPLE'} value={selected.example} />
                   <DetailBlock label={isIt ? 'DESCRIZIONE' : 'DESCRIPTION'} value={isIt ? selected.description_it : selected.description_en} />
+                </>
+              )}
+              {selected && section === 'matrix' && (
+                <>
+                  <DetailBlock label={isIt ? 'AVVERSARIO' : 'OPPONENT'} value={selected.opponent} />
+                  <DetailBlock label={isIt ? 'CATEGORIA' : 'CATEGORY'} value={(selected.category || '').toUpperCase()} />
+                  <DetailBlock label={isIt ? 'SE GIOCHI OFFENSIVO' : 'OFFENSIVE COUNTER'} value={selected.counter_offensive || '—'} />
+                  <DetailBlock label={isIt ? 'SE GIOCHI BILANCIATO' : 'NEUTRAL COUNTER'} value={selected.counter_neutral || '—'} />
+                  <DetailBlock label={isIt ? 'SE GIOCHI DIFENSIVO' : 'DEFENSIVE COUNTER'} value={selected.counter_defensive || '—'} />
                 </>
               )}
               {selected && section === 'teams' && (

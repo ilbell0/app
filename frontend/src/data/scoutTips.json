@@ -590,5 +590,69 @@
 "title_it": "Monster 4-2-3-1: solo contro avversari più deboli",
 "content_en": "The Monster is a no-defense tactic. Against teams within 0.5 stars of yours it WORKS; against stronger ones it ends 5-0 against you. Read the opponent rating BEFORE choosing it.",
 "content_it": "Il Monster è una tattica senza difesa. Contro avversari entro 0.5 stelle dal tuo livello FUNZIONA; contro più forti finisce 5-0 per loro. Leggi sempre il rating avversario PRIMA di sceglierlo."
+},
+{
+"id": "75",
+"category": "meta",
+"title_en": "4-3-3: the absolute meta of the matrix",
+"title_it": "4-3-3: il meta assoluto della matrice",
+"content_en": "Statistical analysis of 117 matchups: the 4-3-3 beats 26 different modules — almost half of the entire formation database. If you have to learn ONE single formation, learn this one.",
+"content_it": "Analisi statistica di 117 matchup: il 4-3-3 batte 26 moduli diversi — quasi metà del database completo. Se devi imparare UN solo modulo, impara questo."
+},
+{
+"id": "76",
+"category": "meta",
+"title_en": "4-1-4-1: the 'always works' shield",
+"title_it": "4-1-4-1: lo scudo che funziona sempre",
+"content_en": "Second only to 4-3-3: counters 21/56 modules. Ideal for those who like to defend low. If the opponent loves wing play, switch to 4-1-4-1 and your back four absorbs everything.",
+"content_it": "Secondo solo al 4-3-3: contrasta 21/56 moduli. Ideale per chi ama difendere basso. Se l'avversario gioca tutto sulle fasce, passa al 4-1-4-1 e la tua difesa a 4 assorbe tutto."
+},
+{
+"id": "77",
+"category": "meta",
+"title_en": "3-4-3 Press: the third choice",
+"title_it": "3-4-3 Press: la terza scelta",
+"content_en": "Counters 18/56 modules. The 3-4-3 is the most aggressive option in the trio of top-3 effective formations. Pick it when you NEED to score, knowing the back three is exposed.",
+"content_it": "Contrasta 18/56 moduli. Il 3-4-3 è la scelta più aggressiva del trio dei top-3 efficaci. Sceglilo quando DEVI segnare, accettando che la difesa a 3 sia esposta."
+},
+{
+"id": "78",
+"category": "meta",
+"title_en": "Avoid 4-2-3-1 without a real DMC",
+"title_it": "Evita 4-2-3-1 senza un DMC vero",
+"content_en": "The 4-2-3-1 is among the most VULNERABLE: 3+ formations beat it. The reason? Without a creative DMC the playmaker AMC gets isolated. Build the squad spine first.",
+"content_it": "Il 4-2-3-1 è tra i più VULNERABILI: 3+ formazioni lo battono. Il motivo? Senza un DMC creativo, l'AMC playmaker resta isolato. Costruisci prima la colonna vertebrale."
+},
+{
+"id": "79",
+"category": "meta",
+"title_en": "5-4-1 Flat: not just defense",
+"title_it": "5-4-1 Flat: non solo difesa",
+"content_en": "The 5-4-1 batters 15/56 modules: it's the 4th counter formation in the matrix. Don't think it's only 'park-the-bus' — it's an actual answer to many attacking opponents.",
+"content_it": "Il 5-4-1 contrasta 15/56 moduli: è la 4ª formazione counter della matrice. Non pensare sia solo 'park-the-bus' — è una vera risposta a molti avversari offensivi."
+},
+{
+"id": "80",
+"category": "meta",
+"title_en": "Three-CB formations: a balanced choice",
+"title_it": "Difese a tre: scelta bilanciata",
+"content_en": "20 of the 56 formations use 3 CBs. They beat as many modules as 4-CB ones but are MORE vulnerable to wide play. Use them only with very mobile wing-backs.",
+"content_it": "20 delle 56 formazioni usano 3 DC. Battono tanti moduli quanto quelle a 4 difensori ma sono PIÙ vulnerabili al gioco esterno. Usale solo se hai esterni molto mobili."
+},
+{
+"id": "81",
+"category": "meta",
+"title_en": "Counter philosophy: 3 levels matter",
+"title_it": "Filosofia del counter: contano 3 livelli",
+"content_en": "The matrix shows EVERY opponent has 3 counters: offensive, neutral, defensive. The cardinal sin is to always play offensive. Switch based on the rating gap with the opponent.",
+"content_it": "La matrice mostra: OGNI avversario ha 3 counter (offensivo/neutro/difensivo). Il peccato cardinale è giocare sempre offensivo. Cambia in base al gap di rating con l'avversario."
+},
+{
+"id": "82",
+"category": "meta",
+"title_en": "Read your opponent's defense first",
+"title_it": "Prima leggi la difesa avversaria",
+"content_en": "Look at the opponent's formation: how many defenders? 3, 4 or 5? This is the FIRST question. Against 3-back you press the flanks; against 5-back you crowd the center.",
+"content_it": "Guarda la formazione avversaria: quanti difensori? 3, 4 o 5? È la PRIMA domanda. Contro difesa a 3 pressi le fasce; contro difesa a 5 affolli il centro."
 }
 ]

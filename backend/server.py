@@ -332,7 +332,7 @@ FORMATIONS = [
         },
         "defense_count": 4,
         "vulnerable_to": ['3-2-2-2-1 B (Butterfly)', '4-1-2-1-2 ND (Narrow Diamond)'],
-        "effective_against": ['3-1-4-2', '4-2-2-1-1', '4-3-3', '5-2-2(AML-AMR)-1', '5-3-2', '5-3N-2', '5-4-1 F (Flat)']
+        "effective_against": ['3-1-4-2', '3-2-2-2-1 B (Butterfly)', '4-2-2-1-1', '4-3-3', '5-1-1-1-2', '5-1DMC-2-2', '5-2-2(AML-AMR)-1', '5-2-3', '5-2W-2N-1', '5-3-2', '5-3N-2', '5-4-1 F (Flat)']
     },
     {
         "id": '41212nd',
@@ -536,7 +536,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": [],
+        "vulnerable_to": ['3-4-3', '4-1-4-1'],
         "effective_against": []
     },
     {
@@ -639,7 +639,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": ['4-3N-3'],
+        "vulnerable_to": ['3-4-3', '4-1-4-1', '4-3N-3'],
         "effective_against": ['3-1-3-1-2', '3W-2DMC-3N-1-1 Tower (Eiffel Tower)', '3W-2DMC-3W-1-1 ML (Maple Leaf)', '4-1-1-3-1', '4-1-2-1-2 ND (Narrow Diamond)', '4-1-3-1-1', '4-2-2-2 H (Hexagon)', '4-3-1-2']
     },
     {
@@ -1038,7 +1038,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 3,
-        "vulnerable_to": ['4-3N-2W-1'],
+        "vulnerable_to": ['4-3-3', '4-3N-2W-1', '5-4-1 F (Flat)'],
         "effective_against": ['3-1-3-1-2', '3-4-1-2', '4-5-1 F (Flat)', '5-4-1 F (Flat)']
     },
     {
@@ -1135,7 +1135,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 3,
-        "vulnerable_to": ['4-2-2-2 H (Hexagon)'],
+        "vulnerable_to": ['4-2-2-2 H (Hexagon)', '4-3-3', '5-4-1 F (Flat)'],
         "effective_against": ['3-1-3-1-2', '3W-1-3N-1-2', '4-1-4-1', '4-5-1 F (Flat)']
     },
     {
@@ -1332,7 +1332,7 @@ FORMATIONS = [
         },
         "defense_count": 5,
         "vulnerable_to": ['3-5-2 F (Flat)', '4-3N-2W-1', '4-4-2 C (Classic)'],
-        "effective_against": ['4-2-3-1', '4-2-4']
+        "effective_against": ['3-1-2-1-3', '3-1-3-2W-1', '3-1-4-1-1', '3-1-4-2 W', '3-3-1-3', '3-4-3', '3-5-2 F (Flat)', '3-5-2 V (V-Style)', '3N-1-2-1-3', '4-1-1-3-1', '4-2-1-3', '4-2-3-1', '4-2-3-1 Attack', '4-2-4', 'False Nine + Wingers']
     },
     {
         "id": '32221b',
@@ -1426,7 +1426,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 3,
-        "vulnerable_to": ['3-4-1-2'],
+        "vulnerable_to": ['3-4-1-2', '4-3-3', '4-4-2 C (Classic)'],
         "effective_against": ['3N-5-2 V', '4-4-2 C (Classic)']
     },
     {
@@ -1629,7 +1629,7 @@ FORMATIONS = [
         },
         "defense_count": 4,
         "vulnerable_to": ['3-5-2 V (V-Style)', '4-2-2-2 H (Hexagon)', '4-2-3-1'],
-        "effective_against": ['3-1-3-2W-1', '3-3-1-3', '4-2-3-1', '4-5-1 F (Flat)']
+        "effective_against": ['3-1-3-2W-1', '3-3-1-3', '3-4-2-1', '3W-1-3N-1-2', '3W-2DMC-3N-1-1 Tower (Eiffel Tower)', '3W-2DMC-3W-1-1 ML (Maple Leaf)', '4-1-1-2N-2', '4-1-2-1-2 WD (Wide Diamond)', '4-1-2-2-1', '4-1-3-1-1', '4-1-3-1W-1', '4-1-3N-2', '4-2-2-2 N (Narrow)', '4-2-3-1', '4-2-3-1-2', '4-2N-1-2N-1', '4-3-1-2', '4-3-2-1 XT (Xmas Tree)', '4-3N-3', '4-5-1 F (Flat)', '4-5-1 V-Style']
     },
     {
         "id": '433',
@@ -1731,7 +1731,7 @@ FORMATIONS = [
         },
         "defense_count": 4,
         "vulnerable_to": ['4-4-2 C (Classic)'],
-        "effective_against": ['3-1-5-1 AMC', '3-4-2-1', '4-2-2-2 N (Narrow)', '4-2-3-1-2', '5-2-2(AML-AMR)-1', '5-2-3']
+        "effective_against": ['3-1-2-1-3', '3-1-3-2W-1', '3-1-4-1-1', '3-1-4-2 W', '3-1-5-1 AMC', '3-2-2-2-1 B (Butterfly)', '3-3-1-3', '3-4-2-1', '3-4-3', '3-5-2 F (Flat)', '3-5-2 V (V-Style)', '3N-1-2-1-3', '4-1-1-3-1', '4-2-1-3', '4-2-2-1-1', '4-2-2-2 N (Narrow)', '4-2-3-1 Attack', '4-2-3-1-2', '4-2-4', '5-1-1-1-2', '5-1DMC-2-2', '5-2-2(AML-AMR)-1', '5-2-3', '5-2W-2N-1', '5-3-2', 'False Nine + Wingers']
     },
     {
         "id": '53n2',
@@ -1925,8 +1925,8 @@ FORMATIONS = [
             }
         },
         "defense_count": 3,
-        "vulnerable_to": ['4-2-2-2 H (Hexagon)'],
-        "effective_against": ['3-1-4-2']
+        "vulnerable_to": ['4-2-2-2 H (Hexagon)', '4-3-3', '5-4-1 F (Flat)'],
+        "effective_against": ['3-1-4-2', '3-4-2-1', '3W-1-3N-1-2', '3W-2DMC-3N-1-1 Tower (Eiffel Tower)', '3W-2DMC-3W-1-1 ML (Maple Leaf)', '4-1-1-2N-2', '4-1-2-1-2 WD (Wide Diamond)', '4-1-2-2-1', '4-1-3-1-1', '4-1-3-1W-1', '4-1-3N-2', '4-2-2-2 N (Narrow)', '4-2-3-1-2', '4-2N-1-2N-1', '4-3-1-2', '4-3-2-1 XT (Xmas Tree)', '4-3N-3', '4-5-1 V-Style']
     },
     {
         "id": '3w2dmc3w11ml',
@@ -2023,7 +2023,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 3,
-        "vulnerable_to": ['4-5-1 V-Style'],
+        "vulnerable_to": ['3-4-3', '4-1-4-1', '4-5-1 V-Style'],
         "effective_against": []
     },
     {
@@ -2121,7 +2121,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 3,
-        "vulnerable_to": ['4-5-1 V-Style'],
+        "vulnerable_to": ['3-4-3', '4-1-4-1', '4-5-1 V-Style'],
         "effective_against": []
     },
     {
@@ -2223,7 +2223,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 5,
-        "vulnerable_to": [],
+        "vulnerable_to": ['4-3-3', '4-4-2 C (Classic)'],
         "effective_against": []
     },
     {
@@ -2518,7 +2518,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": ['4-1-3-1-1'],
+        "vulnerable_to": ['3-4-3', '4-1-3-1-1', '4-1-4-1'],
         "effective_against": []
     },
     {
@@ -2982,7 +2982,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 3,
-        "vulnerable_to": ['4-1-2-1-2 ND (Narrow Diamond)'],
+        "vulnerable_to": ['4-1-2-1-2 ND (Narrow Diamond)', '4-3-3', '5-4-1 F (Flat)'],
         "effective_against": ['4-3N-2W-1']
     },
     {
@@ -3085,7 +3085,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": ['4-2-2-2 H (Hexagon)'],
+        "vulnerable_to": ['3-4-3', '4-1-4-1', '4-2-2-2 H (Hexagon)'],
         "effective_against": []
     },
     {
@@ -3184,7 +3184,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": ['4-1-3-1-1'],
+        "vulnerable_to": ['4-1-3-1-1', '4-3-3', '5-4-1 F (Flat)'],
         "effective_against": []
     },
     {
@@ -3284,7 +3284,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": ['5-4-1 F (Flat)'],
+        "vulnerable_to": ['4-3-3', '5-4-1 F (Flat)'],
         "effective_against": []
     },
     {
@@ -3387,7 +3387,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": ['4-5-1 V-Style'],
+        "vulnerable_to": ['3-4-3', '4-1-4-1', '4-5-1 V-Style'],
         "effective_against": ['3-1-2-1-3', '4-1-3-1W-1', 'False Nine + Wingers']
     },
     {
@@ -3486,7 +3486,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": ['4-5-1 F (Flat)'],
+        "vulnerable_to": ['3-4-3', '4-1-4-1', '4-5-1 F (Flat)'],
         "effective_against": []
     },
     {
@@ -3582,7 +3582,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 5,
-        "vulnerable_to": ['4-4-2 C (Classic)'],
+        "vulnerable_to": ['4-3-3', '4-4-2 C (Classic)'],
         "effective_against": []
     },
     {
@@ -3684,7 +3684,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": [],
+        "vulnerable_to": ['3-4-3', '4-1-4-1'],
         "effective_against": ['4-2-3-1 Attack']
     },
     {
@@ -3972,7 +3972,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": ['3-4-1-2'],
+        "vulnerable_to": ['3-4-1-2', '3-4-3', '4-1-4-1'],
         "effective_against": ['4-5-1 V-Style']
     },
     {
@@ -4070,7 +4070,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 3,
-        "vulnerable_to": ['4-1-4-1'],
+        "vulnerable_to": ['4-1-4-1', '4-3-3', '5-4-1 F (Flat)'],
         "effective_against": []
     },
     {
@@ -4164,7 +4164,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 3,
-        "vulnerable_to": [],
+        "vulnerable_to": ['4-3-3', '5-4-1 F (Flat)'],
         "effective_against": []
     },
     {
@@ -4263,7 +4263,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": [],
+        "vulnerable_to": ['4-3-3', '5-4-1 F (Flat)'],
         "effective_against": []
     },
     {
@@ -4361,7 +4361,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": [],
+        "vulnerable_to": ['3-4-3', '4-1-4-1'],
         "effective_against": []
     },
     {
@@ -4459,7 +4459,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 3,
-        "vulnerable_to": ['3-5-2 V (V-Style)'],
+        "vulnerable_to": ['3-4-3', '3-5-2 V (V-Style)', '4-1-4-1'],
         "effective_against": []
     },
     {
@@ -4559,7 +4559,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 3,
-        "vulnerable_to": ['4-1-4-1'],
+        "vulnerable_to": ['4-1-4-1', '4-3-3', '5-4-1 F (Flat)'],
         "effective_against": []
     },
     {
@@ -4657,7 +4657,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": [],
+        "vulnerable_to": ['3-4-3', '4-1-4-1'],
         "effective_against": []
     },
     {
@@ -4755,7 +4755,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 5,
-        "vulnerable_to": ['3N-5-2 V'],
+        "vulnerable_to": ['3N-5-2 V', '4-3-3', '4-4-2 C (Classic)'],
         "effective_against": []
     },
     {
@@ -4854,7 +4854,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 5,
-        "vulnerable_to": [],
+        "vulnerable_to": ['4-3-3', '4-4-2 C (Classic)'],
         "effective_against": []
     },
     {
@@ -4952,7 +4952,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": ['4-4-2 C (Classic)'],
+        "vulnerable_to": ['4-3-3', '4-4-2 C (Classic)'],
         "effective_against": []
     },
     {
@@ -5054,7 +5054,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": ['4-5-1 V-Style'],
+        "vulnerable_to": ['4-3-3', '4-5-1 V-Style', '5-4-1 F (Flat)'],
         "effective_against": []
     },
     {
@@ -5150,7 +5150,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": ['4-5-1 V-Style'],
+        "vulnerable_to": ['3-4-3', '4-1-4-1', '4-5-1 V-Style'],
         "effective_against": []
     },
     {
@@ -5248,7 +5248,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 3,
-        "vulnerable_to": ['4-1-3-1-1'],
+        "vulnerable_to": ['4-1-3-1-1', '4-3-3', '5-4-1 F (Flat)'],
         "effective_against": []
     },
     {
@@ -5344,7 +5344,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 3,
-        "vulnerable_to": ['4-3-3'],
+        "vulnerable_to": ['3-4-3', '4-1-4-1', '4-3-3'],
         "effective_against": []
     },
     {
@@ -5443,7 +5443,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 5,
-        "vulnerable_to": ['4-3-3'],
+        "vulnerable_to": ['4-3-3', '4-4-2 C (Classic)'],
         "effective_against": []
     },
     {
@@ -5541,7 +5541,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": ['4-3-3'],
+        "vulnerable_to": ['3-4-3', '4-1-4-1', '4-3-3'],
         "effective_against": []
     },
     {
@@ -5639,7 +5639,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 3,
-        "vulnerable_to": ['4-2-3-1'],
+        "vulnerable_to": ['4-2-3-1', '4-3-3', '5-4-1 F (Flat)'],
         "effective_against": []
     },
     {
@@ -5738,7 +5738,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": ['4-1-3N-2'],
+        "vulnerable_to": ['4-1-3N-2', '4-3-3', '5-4-1 F (Flat)'],
         "effective_against": []
     },
     {
@@ -5836,7 +5836,7 @@ FORMATIONS = [
             }
         },
         "defense_count": 4,
-        "vulnerable_to": ['4-3-3'],
+        "vulnerable_to": ['3-4-3', '4-1-4-1', '4-3-3'],
         "effective_against": []
     }
 ]
@@ -11839,9 +11839,9 @@ MATCHUP_MATRIX = [
     {
         "opponent": '4-5-1 V-Style',
         "category": 'neu',
-        "counter_offensive": '4-3N-3',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '4-3N-3',
-        "counter_defensive": '4-3N-3'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '4-5-1 F (Flat)',
@@ -12021,289 +12021,289 @@ MATCHUP_MATRIX = [
     {
         "opponent": '3-5-2 F (Flat)',
         "category": 'att',
-        "counter_offensive": '4-3N-2W-1',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-3N-2W-1',
-        "counter_defensive": '4-3N-2W-1'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": '3-5-2 V (V-Style)',
         "category": 'att',
-        "counter_offensive": '4-2-2-2 H (Hexagon)',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-2-2-2 H (Hexagon)',
-        "counter_defensive": '4-2-2-2 H (Hexagon)'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": '3-4-3',
         "category": 'att',
-        "counter_offensive": '4-2-2-2 H (Hexagon)',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-2-2-2 H (Hexagon)',
-        "counter_defensive": '4-2-2-2 H (Hexagon)'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": 'Maple Leaf 3W-2DMC-3W-1-1',
         "category": 'att',
-        "counter_offensive": '4-5-1 V-Style',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-5-1 V-Style',
-        "counter_defensive": '4-5-1 V-Style'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": 'Eiffel Tower 3W-2DMC-3N-1-1',
         "category": 'att',
-        "counter_offensive": '4-5-1 V-Style',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-5-1 V-Style',
-        "counter_defensive": '4-5-1 V-Style'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": '5-1DMC-2-2',
         "category": 'dif',
-        "counter_offensive": '4-1-3W-1-1',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-1-3W-1-1',
-        "counter_defensive": '4-1-3W-1-1'
+        "counter_defensive": '4-4-2 C'
     },
     {
         "opponent": '4-1-3-1W-1',
         "category": 'neu',
-        "counter_offensive": '4-1-3-1-1',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '4-1-3-1-1',
-        "counter_defensive": '4-1-3-1-1'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '3-1-4-1-1',
         "category": 'att',
-        "counter_offensive": '4-1-2-1-2 ND (Narrow Diamond)',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-1-2-1-2 ND (Narrow Diamond)',
-        "counter_defensive": '4-1-2-1-2 ND (Narrow Diamond)'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": '4-1-2-2-1',
         "category": 'neu',
-        "counter_offensive": '4-2-2-2 H (Hexagon)',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '4-2-2-2 H (Hexagon)',
-        "counter_defensive": '4-2-2-2 H (Hexagon)'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": 'False Nine + Wingers',
         "category": 'att',
-        "counter_offensive": '4-1-3-1-1',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-1-3-1-1',
-        "counter_defensive": '4-1-3-1-1'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": '4-2-4',
         "category": 'att',
-        "counter_offensive": '5-4-1 F (Flat)',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '5-4-1 F (Flat)',
-        "counter_defensive": '5-4-1 F (Flat)'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": '4-1-3-1-1',
         "category": 'neu',
-        "counter_offensive": '4-5-1 V-Style',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '4-5-1 V-Style',
-        "counter_defensive": '4-5-1 V-Style'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '4-3-2-1 XT Xmas Tree',
         "category": 'neu',
-        "counter_offensive": '4-5-1 F (Flat)',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '4-5-1 F (Flat)',
-        "counter_defensive": '4-5-1 F (Flat)'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '5-3-2',
         "category": 'dif',
-        "counter_offensive": '4-4-2 C (Classic)',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-4-2 C (Classic)',
-        "counter_defensive": '4-4-2 C (Classic)'
+        "counter_defensive": '4-4-2 C'
     },
     {
         "opponent": '3-1-3-2W-1',
         "category": 'att',
-        "counter_offensive": '4-1-4-1',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-1-4-1',
-        "counter_defensive": '4-1-4-1'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": '3-3-1-3',
         "category": 'att',
-        "counter_offensive": '4-1-4-1',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-1-4-1',
-        "counter_defensive": '4-1-4-1'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": '4-2-2-1-1',
         "category": 'dif',
-        "counter_offensive": '4-4-2 C (Classic)',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-4-2 C (Classic)',
-        "counter_defensive": '4-4-2 C (Classic)'
+        "counter_defensive": '4-4-2 C'
     },
     {
         "opponent": '4-1-1-3-1',
         "category": 'att',
-        "counter_offensive": '4-5-1 V-Style',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-5-1 V-Style',
-        "counter_defensive": '4-5-1 V-Style'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": '3N-2-2-2-1 B Butterfly 3N',
         "category": 'att',
-        "counter_offensive": '4-2-2-2 H (Hexagon)',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-2-2-2 H (Hexagon)',
-        "counter_defensive": '4-2-2-2 H (Hexagon)'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": '4-3-1-2',
         "category": 'neu',
-        "counter_offensive": '4-5-1 V-Style',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '4-5-1 V-Style',
-        "counter_defensive": '4-5-1 V-Style'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '3-1-2-1-3',
         "category": 'att',
-        "counter_offensive": '4-1-3-1-1',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-1-3-1-1',
-        "counter_defensive": '4-1-3-1-1'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": '3-4-2-1',
         "category": 'neu',
-        "counter_offensive": '4-3-3',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '4-3-3',
-        "counter_defensive": '4-3-3'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '5-2-3',
         "category": 'dif',
         "counter_offensive": '4-3-3',
         "counter_neutral": '4-3-3',
-        "counter_defensive": '4-3-3'
+        "counter_defensive": '4-4-2 C'
     },
     {
         "opponent": '4-2-2-2 N (Narrow)',
         "category": 'neu',
-        "counter_offensive": '4-3-3',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '4-3-3',
-        "counter_defensive": '4-3-3'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '3-1-4-2 W',
         "category": 'att',
-        "counter_offensive": '4-2-3-1',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-2-3-1',
-        "counter_defensive": '4-2-3-1'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": '4-2-3-1 Attack',
         "category": 'att',
-        "counter_offensive": '4-1-3N-2',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '4-1-3N-2',
-        "counter_defensive": '4-1-3N-2'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": '4-2-3-1-2',
         "category": 'neu',
-        "counter_offensive": '4-3-3',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '4-3-3',
-        "counter_defensive": '4-3-3'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '4-1-2-1-2 WD (Wide Diamond)',
         "category": 'neu',
-        "counter_offensive": '4-3W-1-2',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '4-3W-1-2',
-        "counter_defensive": '4-3W-1-2'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '3-2-2-2-1 B (Butterfly)',
         "category": 'dif',
-        "counter_offensive": '3-4-1-2',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '3-4-1-2',
-        "counter_defensive": '3-4-1-2'
+        "counter_defensive": '4-4-2 C'
     },
     {
         "opponent": '3W-2DMC-3W-1-1 ML (Maple Leaf)',
         "category": 'neu',
-        "counter_offensive": '4-5-1 V-Style',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '4-5-1 V-Style',
-        "counter_defensive": '4-5-1 V-Style'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '3W-2DMC-3N-1-1 Tower (Eiffel Tower)',
         "category": 'neu',
-        "counter_offensive": '4-5-1 V-Style',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '4-5-1 V-Style',
-        "counter_defensive": '4-5-1 V-Style'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '4-3-2-1 XT (Xmas Tree)',
         "category": 'neu',
-        "counter_offensive": '4-5-1 F (Flat)',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '4-5-1 F (Flat)',
-        "counter_defensive": '4-5-1 F (Flat)'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '4-1-3N-2',
         "category": 'neu',
-        "counter_offensive": '3-1-3N-2W-1',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '3-1-3N-2W-1',
-        "counter_defensive": '3-1-3N-2W-1'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '4-3N-3',
         "category": 'neu',
-        "counter_offensive": '3-4-1-2',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '3-4-1-2',
-        "counter_defensive": '3-4-1-2'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '3N-1-2-1-3',
         "category": 'att',
-        "counter_offensive": '3-1-3N-1-2',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '3-1-3N-1-2',
-        "counter_defensive": '3-1-3N-1-2'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": '4-2-1-3',
         "category": 'att',
-        "counter_offensive": '3-1-3N-2W-1',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '3-1-3N-2W-1',
-        "counter_defensive": '3-1-3N-2W-1'
+        "counter_defensive": '5-4-1 F'
     },
     {
         "opponent": '4-1-1-2N-2',
         "category": 'neu',
-        "counter_offensive": '3W-2N-1-3W-1',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '3W-2N-1-3W-1',
-        "counter_defensive": '3W-2N-1-3W-1'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '3W-1-3N-1-2',
         "category": 'neu',
-        "counter_offensive": '3-5-2 V (V-Style)',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '3-5-2 V (V-Style)',
-        "counter_defensive": '3-5-2 V (V-Style)'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '4-2N-1-2N-1',
         "category": 'neu',
-        "counter_offensive": '3N-1-4-1-1',
+        "counter_offensive": '3-4-3',
         "counter_neutral": '3N-1-4-1-1',
-        "counter_defensive": '3N-1-4-1-1'
+        "counter_defensive": '4-1-4-1'
     },
     {
         "opponent": '5-1-1-1-2',
         "category": 'dif',
-        "counter_offensive": '3N-5-2 V',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '3N-5-2 V',
-        "counter_defensive": '3N-5-2 V'
+        "counter_defensive": '4-4-2 C'
     },
     {
         "opponent": '5-2W-2N-1',
         "category": 'dif',
-        "counter_offensive": '3N-1-3W-1-2',
+        "counter_offensive": '4-3-3',
         "counter_neutral": '3N-1-3W-1-2',
-        "counter_defensive": '3N-1-3W-1-2'
+        "counter_defensive": '4-4-2 C'
     },
     {
         "opponent": '3N-5-1-1',
@@ -13174,6 +13174,70 @@ SCOUT_TIPS = [
         "title_it": 'Monster 4-2-3-1: solo contro avversari più deboli',
         "content_en": 'The Monster is a no-defense tactic. Against teams within 0.5 stars of yours it WORKS; against stronger ones it ends 5-0 against you. Read the opponent rating BEFORE choosing it.',
         "content_it": 'Il Monster è una tattica senza difesa. Contro avversari entro 0.5 stelle dal tuo livello FUNZIONA; contro più forti finisce 5-0 per loro. Leggi sempre il rating avversario PRIMA di sceglierlo.'
+    },
+    {
+        "id": '75',
+        "category": 'meta',
+        "title_en": '4-3-3: the absolute meta of the matrix',
+        "title_it": '4-3-3: il meta assoluto della matrice',
+        "content_en": 'Statistical analysis of 117 matchups: the 4-3-3 beats 26 different modules — almost half of the entire formation database. If you have to learn ONE single formation, learn this one.',
+        "content_it": 'Analisi statistica di 117 matchup: il 4-3-3 batte 26 moduli diversi — quasi metà del database completo. Se devi imparare UN solo modulo, impara questo.'
+    },
+    {
+        "id": '76',
+        "category": 'meta',
+        "title_en": "4-1-4-1: the 'always works' shield",
+        "title_it": '4-1-4-1: lo scudo che funziona sempre',
+        "content_en": 'Second only to 4-3-3: counters 21/56 modules. Ideal for those who like to defend low. If the opponent loves wing play, switch to 4-1-4-1 and your back four absorbs everything.',
+        "content_it": "Secondo solo al 4-3-3: contrasta 21/56 moduli. Ideale per chi ama difendere basso. Se l'avversario gioca tutto sulle fasce, passa al 4-1-4-1 e la tua difesa a 4 assorbe tutto."
+    },
+    {
+        "id": '77',
+        "category": 'meta',
+        "title_en": '3-4-3 Press: the third choice',
+        "title_it": '3-4-3 Press: la terza scelta',
+        "content_en": 'Counters 18/56 modules. The 3-4-3 is the most aggressive option in the trio of top-3 effective formations. Pick it when you NEED to score, knowing the back three is exposed.',
+        "content_it": 'Contrasta 18/56 moduli. Il 3-4-3 è la scelta più aggressiva del trio dei top-3 efficaci. Sceglilo quando DEVI segnare, accettando che la difesa a 3 sia esposta.'
+    },
+    {
+        "id": '78',
+        "category": 'meta',
+        "title_en": 'Avoid 4-2-3-1 without a real DMC',
+        "title_it": 'Evita 4-2-3-1 senza un DMC vero',
+        "content_en": 'The 4-2-3-1 is among the most VULNERABLE: 3+ formations beat it. The reason? Without a creative DMC the playmaker AMC gets isolated. Build the squad spine first.',
+        "content_it": "Il 4-2-3-1 è tra i più VULNERABILI: 3+ formazioni lo battono. Il motivo? Senza un DMC creativo, l'AMC playmaker resta isolato. Costruisci prima la colonna vertebrale."
+    },
+    {
+        "id": '79',
+        "category": 'meta',
+        "title_en": '5-4-1 Flat: not just defense',
+        "title_it": '5-4-1 Flat: non solo difesa',
+        "content_en": "The 5-4-1 batters 15/56 modules: it's the 4th counter formation in the matrix. Don't think it's only 'park-the-bus' — it's an actual answer to many attacking opponents.",
+        "content_it": "Il 5-4-1 contrasta 15/56 moduli: è la 4ª formazione counter della matrice. Non pensare sia solo 'park-the-bus' — è una vera risposta a molti avversari offensivi."
+    },
+    {
+        "id": '80',
+        "category": 'meta',
+        "title_en": 'Three-CB formations: a balanced choice',
+        "title_it": 'Difese a tre: scelta bilanciata',
+        "content_en": '20 of the 56 formations use 3 CBs. They beat as many modules as 4-CB ones but are MORE vulnerable to wide play. Use them only with very mobile wing-backs.',
+        "content_it": '20 delle 56 formazioni usano 3 DC. Battono tanti moduli quanto quelle a 4 difensori ma sono PIÙ vulnerabili al gioco esterno. Usale solo se hai esterni molto mobili.'
+    },
+    {
+        "id": '81',
+        "category": 'meta',
+        "title_en": 'Counter philosophy: 3 levels matter',
+        "title_it": 'Filosofia del counter: contano 3 livelli',
+        "content_en": 'The matrix shows EVERY opponent has 3 counters: offensive, neutral, defensive. The cardinal sin is to always play offensive. Switch based on the rating gap with the opponent.',
+        "content_it": "La matrice mostra: OGNI avversario ha 3 counter (offensivo/neutro/difensivo). Il peccato cardinale è giocare sempre offensivo. Cambia in base al gap di rating con l'avversario."
+    },
+    {
+        "id": '82',
+        "category": 'meta',
+        "title_en": "Read your opponent's defense first",
+        "title_it": 'Prima leggi la difesa avversaria',
+        "content_en": "Look at the opponent's formation: how many defenders? 3, 4 or 5? This is the FIRST question. Against 3-back you press the flanks; against 5-back you crowd the center.",
+        "content_it": 'Guarda la formazione avversaria: quanti difensori? 3, 4 o 5? È la PRIMA domanda. Contro difesa a 3 pressi le fasce; contro difesa a 5 affolli il centro.'
     }
 ]
 
