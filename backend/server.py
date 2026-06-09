@@ -330,7 +330,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['3-2-2-2-1 B (Butterfly)', '4-1-2-1-2 ND (Narrow Diamond)'],
+        "effective_against": ['3-1-4-2', '4-2-2-1-1', '4-3-3', '5-2-2(AML-AMR)-1', '5-3-2', '5-3N-2', '5-4-1 F (Flat)']
     },
     {
         "id": '41212nd',
@@ -430,7 +432,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['3N-5-2 V', '4-5-1 V-Style'],
+        "effective_against": ['3-1-4-1-1', '3-4-1-2', '4-4-2 C (Classic)']
     },
     {
         "id": '41212wd',
@@ -531,7 +535,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": [],
+        "effective_against": []
     },
     {
         "id": '451v',
@@ -632,7 +638,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['4-3N-3'],
+        "effective_against": ['3-1-3-1-2', '3W-2DMC-3N-1-1 Tower (Eiffel Tower)', '3W-2DMC-3W-1-1 ML (Maple Leaf)', '4-1-1-3-1', '4-1-2-1-2 ND (Narrow Diamond)', '4-1-3-1-1', '4-2-2-2 H (Hexagon)', '4-3-1-2']
     },
     {
         "id": '451f',
@@ -731,7 +739,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['3-5-2 F (Flat)', '3-5-2 V (V-Style)', '4-1-4-1'],
+        "effective_against": ['4-3-2-1 XT (Xmas Tree)']
     },
     {
         "id": '4231',
@@ -830,7 +840,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['3-1-4-2', '4-1-4-1', '5-4-1 F (Flat)'],
+        "effective_against": ['3-1-4-2 W', '3-1-5-1 AMC', '4-1-4-1']
     },
     {
         "id": '4222h',
@@ -929,7 +941,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['4-5-1 V-Style'],
+        "effective_against": ['3-4-3', '3-5-2 V (V-Style)', '4-1-2-2-1', '4-1-4-1']
     },
     {
         "id": '352f',
@@ -1023,7 +1037,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['4-3N-2W-1'],
+        "effective_against": ['3-1-3-1-2', '3-4-1-2', '4-5-1 F (Flat)', '5-4-1 F (Flat)']
     },
     {
         "id": '352v',
@@ -1118,7 +1134,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['4-2-2-2 H (Hexagon)'],
+        "effective_against": ['3-1-3-1-2', '3W-1-3N-1-2', '4-1-4-1', '4-5-1 F (Flat)']
     },
     {
         "id": '3142',
@@ -1214,7 +1232,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['3-4-3', '4-4-2 C (Classic)'],
+        "effective_against": ['4-2-3-1']
     },
     {
         "id": '541f',
@@ -1310,7 +1330,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 5
+        "defense_count": 5,
+        "vulnerable_to": ['3-5-2 F (Flat)', '4-3N-2W-1', '4-4-2 C (Classic)'],
+        "effective_against": ['4-2-3-1', '4-2-4']
     },
     {
         "id": '32221b',
@@ -1403,7 +1425,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['3-4-1-2'],
+        "effective_against": ['3N-5-2 V', '4-4-2 C (Classic)']
     },
     {
         "id": '3n2221b',
@@ -1499,7 +1523,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['4-3N-2W-1'],
+        "effective_against": []
     },
     {
         "id": '4141',
@@ -1601,7 +1627,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['3-5-2 V (V-Style)', '4-2-2-2 H (Hexagon)', '4-2-3-1'],
+        "effective_against": ['3-1-3-2W-1', '3-3-1-3', '4-2-3-1', '4-5-1 F (Flat)']
     },
     {
         "id": '433',
@@ -1701,7 +1729,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['4-4-2 C (Classic)'],
+        "effective_against": ['3-1-5-1 AMC', '3-4-2-1', '4-2-2-2 N (Narrow)', '4-2-3-1-2', '5-2-2(AML-AMR)-1', '5-2-3']
     },
     {
         "id": '53n2',
@@ -1795,7 +1825,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 5
+        "defense_count": 5,
+        "vulnerable_to": ['4-4-2 C (Classic)'],
+        "effective_against": []
     },
     {
         "id": '343',
@@ -1892,7 +1924,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['4-2-2-2 H (Hexagon)'],
+        "effective_against": ['3-1-4-2']
     },
     {
         "id": '3w2dmc3w11ml',
@@ -1988,7 +2022,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['4-5-1 V-Style'],
+        "effective_against": []
     },
     {
         "id": '3w2dmc3n11tower',
@@ -2084,7 +2120,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['4-5-1 V-Style'],
+        "effective_against": []
     },
     {
         "id": '51dmc22',
@@ -2184,7 +2222,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 5
+        "defense_count": 5,
+        "vulnerable_to": [],
+        "effective_against": []
     },
     {
         "id": '5212x',
@@ -2278,7 +2318,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 5
+        "defense_count": 5,
+        "vulnerable_to": [],
+        "effective_against": []
     },
     {
         "id": '522amlamr1',
@@ -2375,7 +2417,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 5
+        "defense_count": 5,
+        "vulnerable_to": ['4-3-3', '4-4-2 C (Classic)'],
+        "effective_against": []
     },
     {
         "id": '4131w1',
@@ -2473,7 +2517,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['4-1-3-1-1'],
+        "effective_against": []
     },
     {
         "id": '3n52v',
@@ -2567,7 +2613,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['3-2-2-2-1 B (Butterfly)', '4-3N-2W-1'],
+        "effective_against": ['4-1-2-1-2 ND (Narrow Diamond)', '5-1-1-1-2']
     },
     {
         "id": '43n2w1',
@@ -2664,7 +2712,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['3-1-4-1-1'],
+        "effective_against": ['3-5-2 F (Flat)', '3N-2-2-2-1 B (Butterfly 3N)', '3N-5-2 V', '5-4-1 F (Flat)']
     },
     {
         "id": '3151amc',
@@ -2832,7 +2882,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['4-2-3-1', '4-3-3'],
+        "effective_against": []
     },
     {
         "id": '31411',
@@ -2929,7 +2981,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['4-1-2-1-2 ND (Narrow Diamond)'],
+        "effective_against": ['4-3N-2W-1']
     },
     {
         "id": '41221',
@@ -3030,7 +3084,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['4-2-2-2 H (Hexagon)'],
+        "effective_against": []
     },
     {
         "id": 'fn9w',
@@ -3127,7 +3183,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['4-1-3-1-1'],
+        "effective_against": []
     },
     {
         "id": '424',
@@ -3225,7 +3283,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['5-4-1 F (Flat)'],
+        "effective_against": []
     },
     {
         "id": '41311',
@@ -3326,7 +3386,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['4-5-1 V-Style'],
+        "effective_against": ['3-1-2-1-3', '4-1-3-1W-1', 'False Nine + Wingers']
     },
     {
         "id": '4321xt',
@@ -3423,7 +3485,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['4-5-1 F (Flat)'],
+        "effective_against": []
     },
     {
         "id": '532',
@@ -3517,7 +3581,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 5
+        "defense_count": 5,
+        "vulnerable_to": ['4-4-2 C (Classic)'],
+        "effective_against": []
     },
     {
         "id": '413n2',
@@ -3617,7 +3683,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": [],
+        "effective_against": ['4-2-3-1 Attack']
     },
     {
         "id": '3412',
@@ -3712,7 +3780,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['3-5-2 F (Flat)', '4-1-2-1-2 ND (Narrow Diamond)'],
+        "effective_against": ['3-2-2-2-1 B (Butterfly)', '4-3N-3']
     },
     {
         "id": '31312',
@@ -3805,7 +3875,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['3-5-2 F (Flat)', '3-5-2 V (V-Style)', '4-5-1 V-Style'],
+        "effective_against": []
     },
     {
         "id": '43n3',
@@ -3899,7 +3971,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['3-4-1-2'],
+        "effective_against": ['4-5-1 V-Style']
     },
     {
         "id": '3132w1',
@@ -3995,7 +4069,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['4-1-4-1'],
+        "effective_against": []
     },
     {
         "id": '3n1213',
@@ -4087,7 +4163,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": [],
+        "effective_against": []
     },
     {
         "id": '4213',
@@ -4184,7 +4262,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": [],
+        "effective_against": []
     },
     {
         "id": '4112n2',
@@ -4280,7 +4360,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": [],
+        "effective_against": []
     },
     {
         "id": '3w13n12',
@@ -4376,7 +4458,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['3-5-2 V (V-Style)'],
+        "effective_against": []
     },
     {
         "id": '3313',
@@ -4474,7 +4558,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['4-1-4-1'],
+        "effective_against": []
     },
     {
         "id": '42n12n1',
@@ -4570,7 +4656,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": [],
+        "effective_against": []
     },
     {
         "id": '51112',
@@ -4666,7 +4754,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 5
+        "defense_count": 5,
+        "vulnerable_to": ['3N-5-2 V'],
+        "effective_against": []
     },
     {
         "id": '52w2n1',
@@ -4763,7 +4853,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 5
+        "defense_count": 5,
+        "vulnerable_to": [],
+        "effective_against": []
     },
     {
         "id": '42211',
@@ -4859,7 +4951,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['4-4-2 C (Classic)'],
+        "effective_against": []
     },
     {
         "id": '41131',
@@ -4959,7 +5053,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['4-5-1 V-Style'],
+        "effective_against": []
     },
     {
         "id": '4312',
@@ -5053,7 +5149,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['4-5-1 V-Style'],
+        "effective_against": []
     },
     {
         "id": '31213',
@@ -5149,7 +5247,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['4-1-3-1-1'],
+        "effective_against": []
     },
     {
         "id": '3421',
@@ -5243,7 +5343,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['4-3-3'],
+        "effective_against": []
     },
     {
         "id": '523',
@@ -5340,7 +5442,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 5
+        "defense_count": 5,
+        "vulnerable_to": ['4-3-3'],
+        "effective_against": []
     },
     {
         "id": '222n22',
@@ -5436,7 +5540,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['4-3-3'],
+        "effective_against": []
     },
     {
         "id": '3142w',
@@ -5532,7 +5638,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 3
+        "defense_count": 3,
+        "vulnerable_to": ['4-2-3-1'],
+        "effective_against": []
     },
     {
         "id": '4231a',
@@ -5629,7 +5737,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['4-1-3N-2'],
+        "effective_against": []
     },
     {
         "id": '42312',
@@ -5725,7 +5835,9 @@ FORMATIONS = [
                 }
             }
         },
-        "defense_count": 4
+        "defense_count": 4,
+        "vulnerable_to": ['4-3-3'],
+        "effective_against": []
     }
 ]
 
@@ -9984,6 +10096,1111 @@ COUNTER_ENGINE = [
             },
             "w": "Contro avversari piu' deboli, spingi alto col 4-3-3 con pressing e ritmo"
         }
+    },
+    {
+        "av": '4-1-2-1-2 WD (Wide Diamond)',
+        "cat": 'neu',
+        "forte": {
+            "mod": '4-3W-1-2',
+            "alt": '4-1-4-1',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 4-3W-1-2 e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '4-3W-1-2',
+            "alt": '4-1-4-1',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": 'Centro denso ma fasce vulnerabili: spinge sui terzini avversari'
+        },
+        "debole": {
+            "mod": '4-3W-1-2',
+            "alt": '4-1-4-1',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 4-3W-1-2 con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '4-5-1 V-Style',
+        "cat": 'neu',
+        "forte": {
+            "mod": '4-3N-3',
+            "alt": '4-2-2-2 H',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 4-3N-3 e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '4-3N-3',
+            "alt": '4-2-2-2 H',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": 'Sovraccarica il centro col tridente stretto, evita lo scontro laterale'
+        },
+        "debole": {
+            "mod": '4-3N-3',
+            "alt": '4-2-2-2 H',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 4-3N-3 con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '3-5-2 F (Flat)',
+        "cat": 'att',
+        "forte": {
+            "mod": '4-3N-2W-1',
+            "alt": '4-4-2 C',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 4-3N-2W-1 e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '4-3N-2W-1',
+            "alt": '4-4-2 C',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": "Attacca le fasce per sfruttare l'assenza di terzini nella difesa a tre"
+        },
+        "debole": {
+            "mod": '4-3N-2W-1',
+            "alt": '4-4-2 C',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 4-3N-2W-1 con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '3-5-2 V (V-Style)',
+        "cat": 'att',
+        "forte": {
+            "mod": '4-2-2-2 H',
+            "alt": '4-3N-2W-1',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 4-2-2-2 H e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '4-2-2-2 H',
+            "alt": '4-3N-2W-1',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": "L'Hexagon bilancia la copertura contro le ali alte avversarie"
+        },
+        "debole": {
+            "mod": '4-2-2-2 H',
+            "alt": '4-3N-2W-1',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 4-2-2-2 H con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '3-2-2-2-1 B (Butterfly)',
+        "cat": 'dif',
+        "forte": {
+            "mod": '3-4-1-2',
+            "alt": '4-2-2-2 H',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 3-4-1-2 e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '3-4-1-2',
+            "alt": '4-2-2-2 H',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": 'Aggressivita centrale per superare il doppio schermo difensivo'
+        },
+        "debole": {
+            "mod": '3-4-1-2',
+            "alt": '4-2-2-2 H',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 3-4-1-2 con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '3W-2DMC-3W-1-1 ML (Maple Leaf)',
+        "cat": 'neu',
+        "forte": {
+            "mod": '4-5-1 V-Style',
+            "alt": '3N-1-4-2',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 4-5-1 V-Style e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '4-5-1 V-Style',
+            "alt": '3N-1-4-2',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": 'Usa le ali per allargare e aggirare il folto blocco DMC centrali'
+        },
+        "debole": {
+            "mod": '4-5-1 V-Style',
+            "alt": '3N-1-4-2',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 4-5-1 V-Style con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '3W-2DMC-3N-1-1 Tower (Eiffel Tower)',
+        "cat": 'neu',
+        "forte": {
+            "mod": '4-5-1 V-Style',
+            "alt": '4-4-2 C',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 4-5-1 V-Style e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '4-5-1 V-Style',
+            "alt": '4-4-2 C',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": "Mantieni l'ampiezza per non schiantarti contro il muro centrale"
+        },
+        "debole": {
+            "mod": '4-5-1 V-Style',
+            "alt": '4-4-2 C',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 4-5-1 V-Style con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '4-3-2-1 XT (Xmas Tree)',
+        "cat": 'neu',
+        "forte": {
+            "mod": '4-5-1 F',
+            "alt": '4-1-4-1',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 4-5-1 F e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '4-5-1 F',
+            "alt": '4-1-4-1',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": 'Sfrutta le fasce per aggirare il centrocampo denso e colpire in transizione'
+        },
+        "debole": {
+            "mod": '4-5-1 F',
+            "alt": '4-1-4-1',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 4-5-1 F con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '4-1-3N-2',
+        "cat": 'neu',
+        "forte": {
+            "mod": '3-1-3N-2W-1',
+            "alt": '4-3N-2W-1',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 3-1-3N-2W-1 e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '3-1-3N-2W-1',
+            "alt": '4-3N-2W-1',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": 'Tridente stretto avversario: contrastalo con difesa larga e contropiede'
+        },
+        "debole": {
+            "mod": '3-1-3N-2W-1',
+            "alt": '4-3N-2W-1',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 3-1-3N-2W-1 con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '4-3N-3',
+        "cat": 'neu',
+        "forte": {
+            "mod": '3-4-1-2',
+            "alt": '4-1-4-1',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 3-4-1-2 e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '3-4-1-2',
+            "alt": '4-1-4-1',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": "Tridente stretto: doppio AMC sfonda l'area dietro le tre punte"
+        },
+        "debole": {
+            "mod": '3-4-1-2',
+            "alt": '4-1-4-1',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 3-4-1-2 con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '3N-1-2-1-3',
+        "cat": 'att',
+        "forte": {
+            "mod": '3-1-3N-1-2',
+            "alt": '4-1-3N-2',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 3-1-3N-1-2 e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '3-1-3N-1-2',
+            "alt": '4-1-3N-2',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": 'Tre punte avversarie: doppia copertura centrale + due punte da contropiede'
+        },
+        "debole": {
+            "mod": '3-1-3N-1-2',
+            "alt": '4-1-3N-2',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 3-1-3N-1-2 con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '4-2-1-3',
+        "cat": 'att',
+        "forte": {
+            "mod": '3-1-3N-2W-1',
+            "alt": '4-3N-2W-1',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 3-1-3N-2W-1 e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '3-1-3N-2W-1',
+            "alt": '4-3N-2W-1',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": 'AMC e tridente: chiudi al centro e attacca le fasce in transizione'
+        },
+        "debole": {
+            "mod": '3-1-3N-2W-1',
+            "alt": '4-3N-2W-1',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 3-1-3N-2W-1 con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '4-1-1-2N-2',
+        "cat": 'neu',
+        "forte": {
+            "mod": '3W-2N-1-3W-1',
+            "alt": '4-2(DMC)-2-2 H',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 3W-2N-1-3W-1 e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '3W-2N-1-3W-1',
+            "alt": '4-2(DMC)-2-2 H',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": 'Doppio AMC al centro: allarga gli esterni per togliere referenti'
+        },
+        "debole": {
+            "mod": '3W-2N-1-3W-1',
+            "alt": '4-2(DMC)-2-2 H',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 3W-2N-1-3W-1 con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '3W-1-3N-1-2',
+        "cat": 'neu',
+        "forte": {
+            "mod": '3-5-2 V',
+            "alt": '4-5-1 V-Style',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 3-5-2 V e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '3-5-2 V',
+            "alt": '4-5-1 V-Style',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": 'Asimmetrica: bilancia con il centrocampo a 5 e ali alte'
+        },
+        "debole": {
+            "mod": '3-5-2 V',
+            "alt": '4-5-1 V-Style',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 3-5-2 V con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '4-2N-1-2N-1',
+        "cat": 'neu',
+        "forte": {
+            "mod": '3N-1-4-1-1',
+            "alt": '4-1-3-2',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 3N-1-4-1-1 e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '3N-1-4-1-1',
+            "alt": '4-1-3-2',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": 'Doppio DMC + doppio AMC: aggira con un attaccante che si abbassa'
+        },
+        "debole": {
+            "mod": '3N-1-4-1-1',
+            "alt": '4-1-3-2',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 3N-1-4-1-1 con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '5-1-1-1-2',
+        "cat": 'dif',
+        "forte": {
+            "mod": '3N-5-2 V',
+            "alt": '4-1-3-1-1',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 3N-5-2 V e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '3N-5-2 V',
+            "alt": '4-1-3-1-1',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": 'Piramide stretta: ali alte sfondano la difesa a 5 senza fasce coperte'
+        },
+        "debole": {
+            "mod": '3N-5-2 V',
+            "alt": '4-1-3-1-1',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 3N-5-2 V con pressing e marcatura aggressiva"
+        }
+    },
+    {
+        "av": '5-2W-2N-1',
+        "cat": 'dif',
+        "forte": {
+            "mod": '3N-1-3W-1-2',
+            "alt": '4-2-2-1-1',
+            "men": 'Difensiva',
+            "pass": 'Misto',
+            "stile": 'Lungo',
+            "ctrl": 'SI',
+            "press": 'Basso',
+            "cont": 'Facile',
+            "marc": 'Zona',
+            "fuo": 'SI',
+            "fr": {
+                "DL": '↓',
+                "DC": '↓',
+                "DR": '↓',
+                "MC": '↓',
+                "ST": '—'
+            },
+            "w": "Contro avversari piu' forti, resta compatto col 3N-1-3W-1-2 e riparti in contropiede"
+        },
+        "pari": {
+            "mod": '3N-1-3W-1-2',
+            "alt": '4-2-2-1-1',
+            "men": 'Normale',
+            "pass": 'Fasce',
+            "stile": 'Misto',
+            "ctrl": 'NO',
+            "press": 'Medio',
+            "cont": 'Normale',
+            "marc": 'Zona',
+            "fuo": 'NO',
+            "fr": {
+                "ML": '↑',
+                "MR": '↑',
+                "DMC": '↓',
+                "ST": '—'
+            },
+            "w": 'Difesa a 5 con esterni: doppia ala interna sfonda il muro centrale'
+        },
+        "debole": {
+            "mod": '3N-1-3W-1-2',
+            "alt": '4-2-2-1-1',
+            "men": 'Offensiva',
+            "pass": 'Fasce',
+            "stile": 'Corto',
+            "ctrl": 'NO',
+            "press": 'Alto',
+            "cont": 'Duro',
+            "marc": 'Uomo',
+            "fuo": 'NO',
+            "fr": {
+                "DL": '↑',
+                "DR": '↑',
+                "ML": '↑',
+                "MR": '↑',
+                "AML": '↑',
+                "AMR": '↑',
+                "ST": '↑'
+            },
+            "w": "Contro avversari piu' deboli, spingi alto col 3N-1-3W-1-2 con pressing e marcatura aggressiva"
+        }
     }
 ]
 
@@ -10534,6 +11751,832 @@ COUNTER_QUICK = [
         "off": '3-4-1-2',
         "neu": '4-2-2-2',
         "dif": '3N-3W-2N-1-1'
+    }
+]
+
+
+# ==================== MATCHUP MATRIX ====================
+# Matrice avversario -> counter consigliato per ogni stile di gioco (offensivo/neutro/difensivo)
+
+MATCHUP_MATRIX = [
+    {
+        "opponent": '3N-5-2 F',
+        "category": 'att',
+        "counter_offensive": '3-1-4-2',
+        "counter_neutral": '4-3N-2W-1',
+        "counter_defensive": '4-2-3-1'
+    },
+    {
+        "opponent": '3W-5-2 F',
+        "category": 'att',
+        "counter_offensive": '3-1-3N-2W-1',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '3N-4-3',
+        "category": 'att',
+        "counter_offensive": '3-5-2 F (Flat)',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '5-4-1 F (Flat)'
+    },
+    {
+        "opponent": '3W-4-3',
+        "category": 'att',
+        "counter_offensive": '3-5-2 V (V-Style)',
+        "counter_neutral": '4-2-2-2 H (Hexagon)',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '3W-1-4-2',
+        "category": 'att',
+        "counter_offensive": '3-4-1-2',
+        "counter_neutral": '4-1-2-1-2 ND (Narrow Diamond)',
+        "counter_defensive": '4-1-2-1-2 ND (Narrow Diamond)'
+    },
+    {
+        "opponent": '3N-1-4-2',
+        "category": 'att',
+        "counter_offensive": '3-5-1-1 V',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '3N-5-2 V',
+        "category": 'att',
+        "counter_offensive": '3-1-3N-3',
+        "counter_neutral": '4-3N-2W-1',
+        "counter_defensive": '3-2-2-2-1 B (Butterfly)'
+    },
+    {
+        "opponent": '3N-1-3W-1-2 D (Dandelion)',
+        "category": 'att',
+        "counter_offensive": '3-5-1-1 V',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '3N-2-2-2-1 B (Butterfly 3N)',
+        "category": 'att',
+        "counter_offensive": '3N-5-2 F',
+        "counter_neutral": '4-3N-2W-1',
+        "counter_defensive": '3N-5-2 F'
+    },
+    {
+        "opponent": '3W-2(DMC)-3W-1-1 ML (Maple Leaf)',
+        "category": 'att',
+        "counter_offensive": '3W-5-2 V',
+        "counter_neutral": '3N-1-4-2',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '4-4-2 C (Classic)',
+        "category": 'neu',
+        "counter_offensive": '4-1-2-1-2 ND (Narrow Diamond)',
+        "counter_neutral": '4-1-2-1-2 ND (Narrow Diamond)',
+        "counter_defensive": '3-2-2-2-1 B (Butterfly)'
+    },
+    {
+        "opponent": '4-5-1 V-Style',
+        "category": 'neu',
+        "counter_offensive": '4-3N-3',
+        "counter_neutral": '4-3N-3',
+        "counter_defensive": '4-3N-3'
+    },
+    {
+        "opponent": '4-5-1 F (Flat)',
+        "category": 'neu',
+        "counter_offensive": '3-5-2 F (Flat)',
+        "counter_neutral": '3-5-2 V (V-Style)',
+        "counter_defensive": '4-1-4-1'
+    },
+    {
+        "opponent": '4-1-2-1-2 ND (Narrow Diamond)',
+        "category": 'neu',
+        "counter_offensive": '3N-5-2 V',
+        "counter_neutral": '3N-5-2 V',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '4-2-2-2 H (Hexagon)',
+        "category": 'neu',
+        "counter_offensive": '3N-4-3',
+        "counter_neutral": '3N-4-1-2',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '4-3N-2W-1',
+        "category": 'neu',
+        "counter_offensive": '3-1-4-1-1',
+        "counter_neutral": '3-1-4-1-1',
+        "counter_defensive": '4-4-1-1'
+    },
+    {
+        "opponent": '4-1-4-1',
+        "category": 'neu',
+        "counter_offensive": '3-5-2 V (V-Style)',
+        "counter_neutral": '4-2-2-2 H (Hexagon)',
+        "counter_defensive": '4-2-3-1'
+    },
+    {
+        "opponent": '4-4-1-1',
+        "category": 'neu',
+        "counter_offensive": '3-5-2 F (Flat)',
+        "counter_neutral": '3-5-2 F (Flat)',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '4-2-3-1',
+        "category": 'neu',
+        "counter_offensive": '3-1-4-2',
+        "counter_neutral": '4-1-4-1',
+        "counter_defensive": '5-4-1 F (Flat)'
+    },
+    {
+        "opponent": '3-4-1-2',
+        "category": 'neu',
+        "counter_offensive": '3-5-2 F (Flat)',
+        "counter_neutral": '4-1-3W-1-1',
+        "counter_defensive": '4-1-2-1-2 ND (Narrow Diamond)'
+    },
+    {
+        "opponent": '3N-1-4-1-1',
+        "category": 'att',
+        "counter_offensive": '3-1-4-1-1',
+        "counter_neutral": '4-1-2-1-2 ND (Narrow Diamond)',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '3W-1-4-1-1',
+        "category": 'att',
+        "counter_offensive": '3-5-2 V (V-Style)',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '3-5-2 V (V-Style)'
+    },
+    {
+        "opponent": '4-1-3N-1-1',
+        "category": 'neu',
+        "counter_offensive": '3-1-4-2',
+        "counter_neutral": '3-1-4-1-1',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '4-1-3W-1-1',
+        "category": 'neu',
+        "counter_offensive": '3-1-4-1-1',
+        "counter_neutral": '4-4-1-1',
+        "counter_defensive": '5-1(DMC)-2-2'
+    },
+    {
+        "opponent": '3-1-3-2-1 (Tiki-taka)',
+        "category": 'att',
+        "counter_offensive": '4-3N-3',
+        "counter_neutral": '4-3N-2W-1',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '3-1-3-1-2',
+        "category": 'att',
+        "counter_offensive": '3-5-2 V (V-Style)',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '3-5-2 F (Flat)'
+    },
+    {
+        "opponent": '5-4-1 F (Flat)',
+        "category": 'dif',
+        "counter_offensive": '3-5-2 F (Flat)',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '4-3N-2W-1'
+    },
+    {
+        "opponent": '5-3N-2',
+        "category": 'dif',
+        "counter_offensive": '3N-4-1-2',
+        "counter_neutral": '3N-4-1-2',
+        "counter_defensive": '4-4-2 C (Classic)'
+    },
+    {
+        "opponent": '5-3W-2',
+        "category": 'dif',
+        "counter_offensive": '3N-5-2 V',
+        "counter_neutral": '3N-4-1-2',
+        "counter_defensive": '4-4-2 C (Classic)'
+    },
+    {
+        "opponent": '5-2-1-2 X (X-Style)',
+        "category": 'dif',
+        "counter_offensive": '3N-1-4-2',
+        "counter_neutral": '3N-1-4-2',
+        "counter_defensive": '4-1-2N-1-2'
+    },
+    {
+        "opponent": '4-3W-2N-1 XT (Xmas Tree)',
+        "category": 'neu',
+        "counter_offensive": '3-1-5-1 AMC',
+        "counter_neutral": '3-1-5-1 AMC',
+        "counter_defensive": '3W-2(DMC)-3N-1-1'
+    },
+    {
+        "opponent": '3-1-5-1 AMC',
+        "category": 'neu',
+        "counter_offensive": '4-3-3',
+        "counter_neutral": '4-2-3-1',
+        "counter_defensive": '4-3-3'
+    },
+    {
+        "opponent": '4-3-3',
+        "category": 'neu',
+        "counter_offensive": '4-1-3-2',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '4-4-2 C (Classic)'
+    },
+    {
+        "opponent": '5-2-2(AML-AMR)-1',
+        "category": 'dif',
+        "counter_offensive": '4-3-3',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '3W-1-2-3W-1'
+    },
+    {
+        "opponent": '4-1-3W-2',
+        "category": 'neu',
+        "counter_offensive": '3-1-4-2',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '5-4-1 F (Flat)'
+    },
+    {
+        "opponent": '3-1-4-2',
+        "category": 'att',
+        "counter_offensive": '3-4-3',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '5-3W-2'
+    },
+    {
+        "opponent": '3W-2N-3N-2',
+        "category": 'dif',
+        "counter_offensive": '3-5-2 F (Flat)',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '5-4-1 F (Flat)'
+    },
+    {
+        "opponent": '3-5-2 F (Flat)',
+        "category": 'att',
+        "counter_offensive": '4-3N-2W-1',
+        "counter_neutral": '4-3N-2W-1',
+        "counter_defensive": '4-3N-2W-1'
+    },
+    {
+        "opponent": '3-5-2 V (V-Style)',
+        "category": 'att',
+        "counter_offensive": '4-2-2-2 H (Hexagon)',
+        "counter_neutral": '4-2-2-2 H (Hexagon)',
+        "counter_defensive": '4-2-2-2 H (Hexagon)'
+    },
+    {
+        "opponent": '3-4-3',
+        "category": 'att',
+        "counter_offensive": '4-2-2-2 H (Hexagon)',
+        "counter_neutral": '4-2-2-2 H (Hexagon)',
+        "counter_defensive": '4-2-2-2 H (Hexagon)'
+    },
+    {
+        "opponent": 'Maple Leaf 3W-2DMC-3W-1-1',
+        "category": 'att',
+        "counter_offensive": '4-5-1 V-Style',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": 'Eiffel Tower 3W-2DMC-3N-1-1',
+        "category": 'att',
+        "counter_offensive": '4-5-1 V-Style',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '5-1DMC-2-2',
+        "category": 'dif',
+        "counter_offensive": '4-1-3W-1-1',
+        "counter_neutral": '4-1-3W-1-1',
+        "counter_defensive": '4-1-3W-1-1'
+    },
+    {
+        "opponent": '4-1-3-1W-1',
+        "category": 'neu',
+        "counter_offensive": '4-1-3-1-1',
+        "counter_neutral": '4-1-3-1-1',
+        "counter_defensive": '4-1-3-1-1'
+    },
+    {
+        "opponent": '3-1-4-1-1',
+        "category": 'att',
+        "counter_offensive": '4-1-2-1-2 ND (Narrow Diamond)',
+        "counter_neutral": '4-1-2-1-2 ND (Narrow Diamond)',
+        "counter_defensive": '4-1-2-1-2 ND (Narrow Diamond)'
+    },
+    {
+        "opponent": '4-1-2-2-1',
+        "category": 'neu',
+        "counter_offensive": '4-2-2-2 H (Hexagon)',
+        "counter_neutral": '4-2-2-2 H (Hexagon)',
+        "counter_defensive": '4-2-2-2 H (Hexagon)'
+    },
+    {
+        "opponent": 'False Nine + Wingers',
+        "category": 'att',
+        "counter_offensive": '4-1-3-1-1',
+        "counter_neutral": '4-1-3-1-1',
+        "counter_defensive": '4-1-3-1-1'
+    },
+    {
+        "opponent": '4-2-4',
+        "category": 'att',
+        "counter_offensive": '5-4-1 F (Flat)',
+        "counter_neutral": '5-4-1 F (Flat)',
+        "counter_defensive": '5-4-1 F (Flat)'
+    },
+    {
+        "opponent": '4-1-3-1-1',
+        "category": 'neu',
+        "counter_offensive": '4-5-1 V-Style',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '4-3-2-1 XT Xmas Tree',
+        "category": 'neu',
+        "counter_offensive": '4-5-1 F (Flat)',
+        "counter_neutral": '4-5-1 F (Flat)',
+        "counter_defensive": '4-5-1 F (Flat)'
+    },
+    {
+        "opponent": '5-3-2',
+        "category": 'dif',
+        "counter_offensive": '4-4-2 C (Classic)',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '4-4-2 C (Classic)'
+    },
+    {
+        "opponent": '3-1-3-2W-1',
+        "category": 'att',
+        "counter_offensive": '4-1-4-1',
+        "counter_neutral": '4-1-4-1',
+        "counter_defensive": '4-1-4-1'
+    },
+    {
+        "opponent": '3-3-1-3',
+        "category": 'att',
+        "counter_offensive": '4-1-4-1',
+        "counter_neutral": '4-1-4-1',
+        "counter_defensive": '4-1-4-1'
+    },
+    {
+        "opponent": '4-2-2-1-1',
+        "category": 'dif',
+        "counter_offensive": '4-4-2 C (Classic)',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '4-4-2 C (Classic)'
+    },
+    {
+        "opponent": '4-1-1-3-1',
+        "category": 'att',
+        "counter_offensive": '4-5-1 V-Style',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '3N-2-2-2-1 B Butterfly 3N',
+        "category": 'att',
+        "counter_offensive": '4-2-2-2 H (Hexagon)',
+        "counter_neutral": '4-2-2-2 H (Hexagon)',
+        "counter_defensive": '4-2-2-2 H (Hexagon)'
+    },
+    {
+        "opponent": '4-3-1-2',
+        "category": 'neu',
+        "counter_offensive": '4-5-1 V-Style',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '3-1-2-1-3',
+        "category": 'att',
+        "counter_offensive": '4-1-3-1-1',
+        "counter_neutral": '4-1-3-1-1',
+        "counter_defensive": '4-1-3-1-1'
+    },
+    {
+        "opponent": '3-4-2-1',
+        "category": 'neu',
+        "counter_offensive": '4-3-3',
+        "counter_neutral": '4-3-3',
+        "counter_defensive": '4-3-3'
+    },
+    {
+        "opponent": '5-2-3',
+        "category": 'dif',
+        "counter_offensive": '4-3-3',
+        "counter_neutral": '4-3-3',
+        "counter_defensive": '4-3-3'
+    },
+    {
+        "opponent": '4-2-2-2 N (Narrow)',
+        "category": 'neu',
+        "counter_offensive": '4-3-3',
+        "counter_neutral": '4-3-3',
+        "counter_defensive": '4-3-3'
+    },
+    {
+        "opponent": '3-1-4-2 W',
+        "category": 'att',
+        "counter_offensive": '4-2-3-1',
+        "counter_neutral": '4-2-3-1',
+        "counter_defensive": '4-2-3-1'
+    },
+    {
+        "opponent": '4-2-3-1 Attack',
+        "category": 'att',
+        "counter_offensive": '4-1-3N-2',
+        "counter_neutral": '4-1-3N-2',
+        "counter_defensive": '4-1-3N-2'
+    },
+    {
+        "opponent": '4-2-3-1-2',
+        "category": 'neu',
+        "counter_offensive": '4-3-3',
+        "counter_neutral": '4-3-3',
+        "counter_defensive": '4-3-3'
+    },
+    {
+        "opponent": '4-1-2-1-2 WD (Wide Diamond)',
+        "category": 'neu',
+        "counter_offensive": '4-3W-1-2',
+        "counter_neutral": '4-3W-1-2',
+        "counter_defensive": '4-3W-1-2'
+    },
+    {
+        "opponent": '3-2-2-2-1 B (Butterfly)',
+        "category": 'dif',
+        "counter_offensive": '3-4-1-2',
+        "counter_neutral": '3-4-1-2',
+        "counter_defensive": '3-4-1-2'
+    },
+    {
+        "opponent": '3W-2DMC-3W-1-1 ML (Maple Leaf)',
+        "category": 'neu',
+        "counter_offensive": '4-5-1 V-Style',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '3W-2DMC-3N-1-1 Tower (Eiffel Tower)',
+        "category": 'neu',
+        "counter_offensive": '4-5-1 V-Style',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '4-5-1 V-Style'
+    },
+    {
+        "opponent": '4-3-2-1 XT (Xmas Tree)',
+        "category": 'neu',
+        "counter_offensive": '4-5-1 F (Flat)',
+        "counter_neutral": '4-5-1 F (Flat)',
+        "counter_defensive": '4-5-1 F (Flat)'
+    },
+    {
+        "opponent": '4-1-3N-2',
+        "category": 'neu',
+        "counter_offensive": '3-1-3N-2W-1',
+        "counter_neutral": '3-1-3N-2W-1',
+        "counter_defensive": '3-1-3N-2W-1'
+    },
+    {
+        "opponent": '4-3N-3',
+        "category": 'neu',
+        "counter_offensive": '3-4-1-2',
+        "counter_neutral": '3-4-1-2',
+        "counter_defensive": '3-4-1-2'
+    },
+    {
+        "opponent": '3N-1-2-1-3',
+        "category": 'att',
+        "counter_offensive": '3-1-3N-1-2',
+        "counter_neutral": '3-1-3N-1-2',
+        "counter_defensive": '3-1-3N-1-2'
+    },
+    {
+        "opponent": '4-2-1-3',
+        "category": 'att',
+        "counter_offensive": '3-1-3N-2W-1',
+        "counter_neutral": '3-1-3N-2W-1',
+        "counter_defensive": '3-1-3N-2W-1'
+    },
+    {
+        "opponent": '4-1-1-2N-2',
+        "category": 'neu',
+        "counter_offensive": '3W-2N-1-3W-1',
+        "counter_neutral": '3W-2N-1-3W-1',
+        "counter_defensive": '3W-2N-1-3W-1'
+    },
+    {
+        "opponent": '3W-1-3N-1-2',
+        "category": 'neu',
+        "counter_offensive": '3-5-2 V (V-Style)',
+        "counter_neutral": '3-5-2 V (V-Style)',
+        "counter_defensive": '3-5-2 V (V-Style)'
+    },
+    {
+        "opponent": '4-2N-1-2N-1',
+        "category": 'neu',
+        "counter_offensive": '3N-1-4-1-1',
+        "counter_neutral": '3N-1-4-1-1',
+        "counter_defensive": '3N-1-4-1-1'
+    },
+    {
+        "opponent": '5-1-1-1-2',
+        "category": 'dif',
+        "counter_offensive": '3N-5-2 V',
+        "counter_neutral": '3N-5-2 V',
+        "counter_defensive": '3N-5-2 V'
+    },
+    {
+        "opponent": '5-2W-2N-1',
+        "category": 'dif',
+        "counter_offensive": '3N-1-3W-1-2',
+        "counter_neutral": '3N-1-3W-1-2',
+        "counter_defensive": '3N-1-3W-1-2'
+    },
+    {
+        "opponent": '3N-5-1-1',
+        "category": 'att',
+        "counter_offensive": '3-1-3N-1-2',
+        "counter_neutral": '4-1-2-1-2 ND (Narrow Diamond)',
+        "counter_defensive": '3N-2W-2N-1-2'
+    },
+    {
+        "opponent": '3W-5-1-1',
+        "category": 'att',
+        "counter_offensive": '3-1-3N-2W-1',
+        "counter_neutral": '4-1-2-1-2 ND (Narrow Diamond)',
+        "counter_defensive": '3N-2W-2N-1-2'
+    },
+    {
+        "opponent": '3W-5-2 V',
+        "category": 'att',
+        "counter_offensive": '3-1-3N-1-2',
+        "counter_neutral": '4-2-2-2 H (Hexagon)',
+        "counter_defensive": '3-2-2-2-1 B (Butterfly)'
+    },
+    {
+        "opponent": '3W-2N-3W-2',
+        "category": 'att',
+        "counter_offensive": '3W-5-2 F',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '5-4-1 F (Flat)'
+    },
+    {
+        "opponent": '3N-2(DMC/MC)-3W-2',
+        "category": 'att',
+        "counter_offensive": '3-1-4-2',
+        "counter_neutral": '4-1-2-1-2 ND (Narrow Diamond)',
+        "counter_defensive": '3-2-2-2-1 B (Butterfly)'
+    },
+    {
+        "opponent": '3W-2(DMC/MC)-3W-2',
+        "category": 'att',
+        "counter_offensive": '3-1-4-2',
+        "counter_neutral": '4-4-2',
+        "counter_defensive": '3-2-2-2-1 B (Butterfly)'
+    },
+    {
+        "opponent": '3N-3(DMC/MC)-2W-2',
+        "category": 'att',
+        "counter_offensive": '3-1-3N-2W-1',
+        "counter_neutral": '4-3N-2W-1',
+        "counter_defensive": '3-2-2-2-1 B (Butterfly)'
+    },
+    {
+        "opponent": '3W-2-3W-1-1 ML',
+        "category": 'att',
+        "counter_offensive": '3N-1-4-2',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '3-2-2-2-1 B (Butterfly)'
+    },
+    {
+        "opponent": '3W-2N-2W-1-2',
+        "category": 'att',
+        "counter_offensive": '3W-5-2 V',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '3-2-2-2-1 B (Butterfly)'
+    },
+    {
+        "opponent": '3W-2N-2N-2W-1',
+        "category": 'att',
+        "counter_offensive": '3-4-1-2',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '3N-2W-3N-2'
+    },
+    {
+        "opponent": '3N-2N-1-2W-2',
+        "category": 'att',
+        "counter_offensive": '3-1-3W-1-2',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '3-2-2-2-1 B (Butterfly)'
+    },
+    {
+        "opponent": '3W-1-5-1',
+        "category": 'att',
+        "counter_offensive": '3-3N-3W-1',
+        "counter_neutral": '4-3N-2W-1',
+        "counter_defensive": '3-2-2-2-1 B (Butterfly)'
+    },
+    {
+        "opponent": '3W-1-3W-2N-1',
+        "category": 'att',
+        "counter_offensive": '3-5-2 V (V-Style)',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '3-2-2-2-1 B (Butterfly)'
+    },
+    {
+        "opponent": '3N-1-3W-2N-1',
+        "category": 'att',
+        "counter_offensive": '3-5-1-1 V',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '3-2-2-2-1 B (Butterfly)'
+    },
+    {
+        "opponent": '3W-1-3W-1-2',
+        "category": 'att',
+        "counter_offensive": '3N-5-2 F',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '3-2N-3-1-1 ET'
+    },
+    {
+        "opponent": '3N-1-3W-1-2 D',
+        "category": 'att',
+        "counter_offensive": '3-5-1-1 V',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '3N-3W-2N-1-1'
+    },
+    {
+        "opponent": '3N-4-1-2',
+        "category": 'att',
+        "counter_offensive": '3-1-3N-2W-1',
+        "counter_neutral": '4-1-2-1-2 ND (Narrow Diamond)',
+        "counter_defensive": '3N-2W-2N-1-2'
+    },
+    {
+        "opponent": '3W-4-1-2',
+        "category": 'att',
+        "counter_offensive": '3-1-3N-1-2',
+        "counter_neutral": '4-1-2-1-2 ND (Narrow Diamond)',
+        "counter_defensive": '3N-2W-2N-1-2'
+    },
+    {
+        "opponent": '4-1(DMC)-2-3',
+        "category": 'neu',
+        "counter_offensive": '3-1-4-2',
+        "counter_neutral": '4-1-4-1',
+        "counter_defensive": '5-3N-2'
+    },
+    {
+        "opponent": '4-1-1-2W-2',
+        "category": 'neu',
+        "counter_offensive": '3N-2N-1-2W-2',
+        "counter_neutral": '4-2-3-1',
+        "counter_defensive": '3N-3W-2-2'
+    },
+    {
+        "opponent": '4-2N-1-2W-1',
+        "category": 'neu',
+        "counter_offensive": '3W-1-4-1-1',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '5-2-2(AML-AMR)-1'
+    },
+    {
+        "opponent": '4-3W-3',
+        "category": 'neu',
+        "counter_offensive": '3-5-1-1 V',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '5-4-1 F (Flat)'
+    },
+    {
+        "opponent": '4-2(DMC)-3W-1',
+        "category": 'neu',
+        "counter_offensive": '3-1-3-2W-1',
+        "counter_neutral": '4-1-4-1',
+        "counter_defensive": '3-2-2-2-1 B (Butterfly)'
+    },
+    {
+        "opponent": '4-2-3N(AMC)-1',
+        "category": 'neu',
+        "counter_offensive": '3-1-4-2',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '3W-2N-3W-2'
+    },
+    {
+        "opponent": '4-2-3W-1',
+        "category": 'neu',
+        "counter_offensive": '3-1-3W-1-2',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '5-3W-2'
+    },
+    {
+        "opponent": '4-3N-1-2',
+        "category": 'neu',
+        "counter_offensive": '3-1-3N-2W-1',
+        "counter_neutral": '4-5-1 V-Style',
+        "counter_defensive": '3-2-2-2-1 B (Butterfly)'
+    },
+    {
+        "opponent": '4-3W-1-2',
+        "category": 'neu',
+        "counter_offensive": '3N-1-4-2',
+        "counter_neutral": '4-1-4-1',
+        "counter_defensive": '3-2-3-1-1'
+    },
+    {
+        "opponent": '4-3W-2N-1 XT',
+        "category": 'neu',
+        "counter_offensive": '3-1-5-1 AMC',
+        "counter_neutral": '4-5-1 F (Flat)',
+        "counter_defensive": '3W-2N-3N-1-1 ET'
+    },
+    {
+        "opponent": '4-3N-2N-1',
+        "category": 'neu',
+        "counter_offensive": '3-1-4-1-1',
+        "counter_neutral": '4-1-3W-1-1',
+        "counter_defensive": '3W-2N-3W-1-1 ML'
+    },
+    {
+        "opponent": '4-1(DMC)-2(MC)-3',
+        "category": 'neu',
+        "counter_offensive": '3-1-4-1-1',
+        "counter_neutral": '4-1-4-1',
+        "counter_defensive": '5-1-3N-1'
+    },
+    {
+        "opponent": '4-1-2(AMC)-3',
+        "category": 'neu',
+        "counter_offensive": '3-1-4-2',
+        "counter_neutral": '4-1-3W-2',
+        "counter_defensive": '5-1-3W-1'
+    },
+    {
+        "opponent": '5-1-3N-1',
+        "category": 'dif',
+        "counter_offensive": '3N-5-2 V',
+        "counter_neutral": '4-1-3-1-1',
+        "counter_defensive": '3N-3W-3W-1'
+    },
+    {
+        "opponent": '5-1-3W-1',
+        "category": 'dif',
+        "counter_offensive": '3N-5-2 V',
+        "counter_neutral": '4-5-1 F (Flat)',
+        "counter_defensive": '3N-2W-3W-2'
+    },
+    {
+        "opponent": '5-1-2N-1-1',
+        "category": 'dif',
+        "counter_offensive": '3N-5-2 V',
+        "counter_neutral": '4-1-3-2',
+        "counter_defensive": '3N-2W-2N-2W-1'
+    },
+    {
+        "opponent": '5-1-2W-1-1',
+        "category": 'dif',
+        "counter_offensive": '3N-5-2 V',
+        "counter_neutral": '4-1-3-2',
+        "counter_defensive": '3N-2W-2N-2W-1'
+    },
+    {
+        "opponent": '5-2-2W-1',
+        "category": 'dif',
+        "counter_offensive": '3W-1-2-3W-1',
+        "counter_neutral": '4-4-2 C (Classic)',
+        "counter_defensive": '3N-2W-3N-2'
+    },
+    {
+        "opponent": '5-2-2N-1',
+        "category": 'dif',
+        "counter_offensive": '3N-1-3W-1-2',
+        "counter_neutral": '4-2-2-1-1',
+        "counter_defensive": '3W-2-3W-2'
+    },
+    {
+        "opponent": '3N-2W-3N-2',
+        "category": 'dif',
+        "counter_offensive": '3-5-2 F (Flat)',
+        "counter_neutral": '4-5-1 F (Flat)',
+        "counter_defensive": '5-4-1 F (Flat)'
+    },
+    {
+        "opponent": '3N-2W-2-1-2',
+        "category": 'dif',
+        "counter_offensive": '3-4-1-2',
+        "counter_neutral": '4-4-2',
+        "counter_defensive": '3W-3N-3W-1'
     }
 ]
 
@@ -12848,6 +14891,21 @@ async def get_counter_quick_by_category(category: str):
     if not items:
         raise HTTPException(status_code=404, detail="No quick counters in this category")
     return items
+
+# ==================== MATCHUP MATRIX ENDPOINTS ====================
+
+@api_router.get("/matchup-matrix")
+async def get_matchup_matrix():
+    """Get the full matchup matrix: opponent -> 3 counter options (offensive/neutral/defensive)"""
+    return MATCHUP_MATRIX
+
+@api_router.get("/matchup-matrix/{opponent}")
+async def get_matchup_for_opponent(opponent: str):
+    """Get the matchup data for a specific opponent formation"""
+    for m in MATCHUP_MATRIX:
+        if m["opponent"].lower() == opponent.lower():
+            return m
+    raise HTTPException(status_code=404, detail="Opponent not found in matchup matrix")
 
 # ==================== SCOUT TIPS ENDPOINTS ====================
 

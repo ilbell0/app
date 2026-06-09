@@ -71,6 +71,8 @@ interface Formation {
   tactic_type_it?: string;
   arrows?: string;
   defense_count?: number;
+  effective_against?: string[];
+  vulnerable_to?: string[];
   variants?: {
     A?: Variant;
     B?: Variant;
@@ -412,6 +414,40 @@ export default function FormationsScreen() {
                   </View>
                 </View>
               )}
+
+              {/* Matchup Matrix Reverse Lookup */}
+              {(selectedFormation?.effective_against?.length || selectedFormation?.vulnerable_to?.length) ? (
+                <View style={styles.tipSection}>
+                  {selectedFormation?.effective_against && selectedFormation.effective_against.length > 0 && (
+                    <View style={{marginBottom: 16}}>
+                      <Text style={styles.sectionLabel}>
+                        {language === 'it' ? `BATTE (${selectedFormation.effective_against.length})` : `BEATS (${selectedFormation.effective_against.length})`}
+                      </Text>
+                      <View style={{flexDirection: 'row', flexWrap: 'wrap', gap: 6}}>
+                        {selectedFormation.effective_against.map((opp: string, i: number) => (
+                          <View key={i} style={[styles.tipBox, {paddingHorizontal: 10, paddingVertical: 6, borderLeftColor: '#FFFFFF'}]}>
+                            <Text style={[styles.tipText, {fontSize: 11}]}>{opp}</Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+                  {selectedFormation?.vulnerable_to && selectedFormation.vulnerable_to.length > 0 && (
+                    <View>
+                      <Text style={styles.sectionLabel}>
+                        {language === 'it' ? `VULNERABILE A (${selectedFormation.vulnerable_to.length})` : `WEAK TO (${selectedFormation.vulnerable_to.length})`}
+                      </Text>
+                      <View style={{flexDirection: 'row', flexWrap: 'wrap', gap: 6}}>
+                        {selectedFormation.vulnerable_to.map((opp: string, i: number) => (
+                          <View key={i} style={[styles.tipBox, {paddingHorizontal: 10, paddingVertical: 6}]}>
+                            <Text style={[styles.tipText, {fontSize: 11}]}>{opp}</Text>
+                          </View>
+                        ))}
+                      </View>
+                    </View>
+                  )}
+                </View>
+              ) : null}
 
               {/* Strengths & Weaknesses */}
               <View style={styles.prosConsSection}>

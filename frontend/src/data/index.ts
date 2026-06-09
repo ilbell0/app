@@ -3,6 +3,7 @@
 import formations from './formations.json';
 import counterEngine from './counterEngine.json';
 import counterQuick from './counterQuick.json';
+import matchupMatrix from './matchupMatrix.json';
 import scoutTips from './scoutTips.json';
 import playerRoles from './playerRoles.json';
 import metaTactics from './metaTactics.json';
@@ -17,6 +18,7 @@ import abbreviations from './abbreviations.json';
 export const FORMATIONS = formations as any[];
 export const COUNTER_ENGINE = counterEngine as any[];
 export const COUNTER_QUICK = counterQuick as any[];
+export const MATCHUP_MATRIX = matchupMatrix as any[];
 export const SCOUT_TIPS = scoutTips as any[];
 export const PLAYER_ROLES = playerRoles as any[];
 export const META_TACTICS = metaTactics as any[];

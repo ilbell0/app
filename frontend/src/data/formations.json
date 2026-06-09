@@ -122,7 +122,20 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"3-2-2-2-1 B (Butterfly)",
+"4-1-2-1-2 ND (Narrow Diamond)"
+],
+"effective_against": [
+"3-1-4-2",
+"4-2-2-1-1",
+"4-3-3",
+"5-2-2(AML-AMR)-1",
+"5-3-2",
+"5-3N-2",
+"5-4-1 F (Flat)"
+]
 },
 {
 "id": "41212nd",
@@ -252,7 +265,16 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"3N-5-2 V",
+"4-5-1 V-Style"
+],
+"effective_against": [
+"3-1-4-1-1",
+"3-4-1-2",
+"4-4-2 C (Classic)"
+]
 },
 {
 "id": "41212wd",
@@ -383,7 +405,9 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [],
+"effective_against": []
 },
 {
 "id": "451v",
@@ -516,7 +540,20 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"4-3N-3"
+],
+"effective_against": [
+"3-1-3-1-2",
+"3W-2DMC-3N-1-1 Tower (Eiffel Tower)",
+"3W-2DMC-3W-1-1 ML (Maple Leaf)",
+"4-1-1-3-1",
+"4-1-2-1-2 ND (Narrow Diamond)",
+"4-1-3-1-1",
+"4-2-2-2 H (Hexagon)",
+"4-3-1-2"
+]
 },
 {
 "id": "451f",
@@ -645,7 +682,15 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"3-5-2 F (Flat)",
+"3-5-2 V (V-Style)",
+"4-1-4-1"
+],
+"effective_against": [
+"4-3-2-1 XT (Xmas Tree)"
+]
 },
 {
 "id": "4231",
@@ -774,7 +819,17 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"3-1-4-2",
+"4-1-4-1",
+"5-4-1 F (Flat)"
+],
+"effective_against": [
+"3-1-4-2 W",
+"3-1-5-1 AMC",
+"4-1-4-1"
+]
 },
 {
 "id": "4222h",
@@ -903,7 +958,16 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"4-5-1 V-Style"
+],
+"effective_against": [
+"3-4-3",
+"3-5-2 V (V-Style)",
+"4-1-2-2-1",
+"4-1-4-1"
+]
 },
 {
 "id": "352f",
@@ -1025,7 +1089,16 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"4-3N-2W-1"
+],
+"effective_against": [
+"3-1-3-1-2",
+"3-4-1-2",
+"4-5-1 F (Flat)",
+"5-4-1 F (Flat)"
+]
 },
 {
 "id": "352v",
@@ -1150,7 +1223,16 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"4-2-2-2 H (Hexagon)"
+],
+"effective_against": [
+"3-1-3-1-2",
+"3W-1-3N-1-2",
+"4-1-4-1",
+"4-5-1 F (Flat)"
+]
 },
 {
 "id": "3142",
@@ -1276,7 +1358,14 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"3-4-3",
+"4-4-2 C (Classic)"
+],
+"effective_against": [
+"4-2-3-1"
+]
 },
 {
 "id": "541f",
@@ -1402,7 +1491,16 @@
 }
 }
 },
-"defense_count": 5
+"defense_count": 5,
+"vulnerable_to": [
+"3-5-2 F (Flat)",
+"4-3N-2W-1",
+"4-4-2 C (Classic)"
+],
+"effective_against": [
+"4-2-3-1",
+"4-2-4"
+]
 },
 {
 "id": "32221b",
@@ -1521,7 +1619,14 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"3-4-1-2"
+],
+"effective_against": [
+"3N-5-2 V",
+"4-4-2 C (Classic)"
+]
 },
 {
 "id": "3n2221b",
@@ -1645,7 +1750,11 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"4-3N-2W-1"
+],
+"effective_against": []
 },
 {
 "id": "4141",
@@ -1779,7 +1888,18 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"3-5-2 V (V-Style)",
+"4-2-2-2 H (Hexagon)",
+"4-2-3-1"
+],
+"effective_against": [
+"3-1-3-2W-1",
+"3-3-1-3",
+"4-2-3-1",
+"4-5-1 F (Flat)"
+]
 },
 {
 "id": "433",
@@ -1909,7 +2029,18 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"4-4-2 C (Classic)"
+],
+"effective_against": [
+"3-1-5-1 AMC",
+"3-4-2-1",
+"4-2-2-2 N (Narrow)",
+"4-2-3-1-2",
+"5-2-2(AML-AMR)-1",
+"5-2-3"
+]
 },
 {
 "id": "53n2",
@@ -2033,7 +2164,11 @@
 }
 }
 },
-"defense_count": 5
+"defense_count": 5,
+"vulnerable_to": [
+"4-4-2 C (Classic)"
+],
+"effective_against": []
 },
 {
 "id": "343",
@@ -2160,7 +2295,13 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"4-2-2-2 H (Hexagon)"
+],
+"effective_against": [
+"3-1-4-2"
+]
 },
 {
 "id": "3w2dmc3w11ml",
@@ -2285,7 +2426,11 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"4-5-1 V-Style"
+],
+"effective_against": []
 },
 {
 "id": "3w2dmc3n11tower",
@@ -2410,7 +2555,11 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"4-5-1 V-Style"
+],
+"effective_against": []
 },
 {
 "id": "51dmc22",
@@ -2540,7 +2689,9 @@
 }
 }
 },
-"defense_count": 5
+"defense_count": 5,
+"vulnerable_to": [],
+"effective_against": []
 },
 {
 "id": "5212x",
@@ -2664,7 +2815,9 @@
 }
 }
 },
-"defense_count": 5
+"defense_count": 5,
+"vulnerable_to": [],
+"effective_against": []
 },
 {
 "id": "522amlamr1",
@@ -2791,7 +2944,12 @@
 }
 }
 },
-"defense_count": 5
+"defense_count": 5,
+"vulnerable_to": [
+"4-3-3",
+"4-4-2 C (Classic)"
+],
+"effective_against": []
 },
 {
 "id": "4131w1",
@@ -2919,7 +3077,11 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"4-1-3-1-1"
+],
+"effective_against": []
 },
 {
 "id": "3n52v",
@@ -3043,7 +3205,15 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"3-2-2-2-1 B (Butterfly)",
+"4-3N-2W-1"
+],
+"effective_against": [
+"4-1-2-1-2 ND (Narrow Diamond)",
+"5-1-1-1-2"
+]
 },
 {
 "id": "43n2w1",
@@ -3170,7 +3340,16 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"3-1-4-1-1"
+],
+"effective_against": [
+"3-5-2 F (Flat)",
+"3N-2-2-2-1 B (Butterfly 3N)",
+"3N-5-2 V",
+"5-4-1 F (Flat)"
+]
 },
 {
 "id": "3151amc",
@@ -3379,7 +3558,12 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"4-2-3-1",
+"4-3-3"
+],
+"effective_against": []
 },
 {
 "id": "31411",
@@ -3508,7 +3692,13 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"4-1-2-1-2 ND (Narrow Diamond)"
+],
+"effective_against": [
+"4-3N-2W-1"
+]
 },
 {
 "id": "41221",
@@ -3641,7 +3831,11 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"4-2-2-2 H (Hexagon)"
+],
+"effective_against": []
 },
 {
 "id": "fn9w",
@@ -3770,7 +3964,11 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"4-1-3-1-1"
+],
+"effective_against": []
 },
 {
 "id": "424",
@@ -3894,7 +4092,11 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"5-4-1 F (Flat)"
+],
+"effective_against": []
 },
 {
 "id": "41311",
@@ -4021,7 +4223,15 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"4-5-1 V-Style"
+],
+"effective_against": [
+"3-1-2-1-3",
+"4-1-3-1W-1",
+"False Nine + Wingers"
+]
 },
 {
 "id": "4321xt",
@@ -4144,7 +4354,11 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"4-5-1 F (Flat)"
+],
+"effective_against": []
 },
 {
 "id": "532",
@@ -4264,7 +4478,11 @@
 }
 }
 },
-"defense_count": 5
+"defense_count": 5,
+"vulnerable_to": [
+"4-4-2 C (Classic)"
+],
+"effective_against": []
 },
 {
 "id": "413n2",
@@ -4390,7 +4608,11 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [],
+"effective_against": [
+"4-2-3-1 Attack"
+]
 },
 {
 "id": "3412",
@@ -4511,7 +4733,15 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"3-5-2 F (Flat)",
+"4-1-2-1-2 ND (Narrow Diamond)"
+],
+"effective_against": [
+"3-2-2-2-1 B (Butterfly)",
+"4-3N-3"
+]
 },
 {
 "id": "31312",
@@ -4630,7 +4860,13 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"3-5-2 F (Flat)",
+"3-5-2 V (V-Style)",
+"4-5-1 V-Style"
+],
+"effective_against": []
 },
 {
 "id": "43n3",
@@ -4750,7 +4986,13 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"3-4-1-2"
+],
+"effective_against": [
+"4-5-1 V-Style"
+]
 },
 {
 "id": "3132w1",
@@ -4872,7 +5114,11 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"4-1-4-1"
+],
+"effective_against": []
 },
 {
 "id": "3n1213",
@@ -4990,7 +5236,9 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [],
+"effective_against": []
 },
 {
 "id": "4213",
@@ -5113,7 +5361,9 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [],
+"effective_against": []
 },
 {
 "id": "4112n2",
@@ -5235,7 +5485,9 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [],
+"effective_against": []
 },
 {
 "id": "3w13n12",
@@ -5357,7 +5609,11 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"3-5-2 V (V-Style)"
+],
+"effective_against": []
 },
 {
 "id": "3313",
@@ -5481,7 +5737,11 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"4-1-4-1"
+],
+"effective_against": []
 },
 {
 "id": "42n12n1",
@@ -5603,7 +5863,9 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [],
+"effective_against": []
 },
 {
 "id": "51112",
@@ -5725,7 +5987,11 @@
 }
 }
 },
-"defense_count": 5
+"defense_count": 5,
+"vulnerable_to": [
+"3N-5-2 V"
+],
+"effective_against": []
 },
 {
 "id": "52w2n1",
@@ -5848,7 +6114,9 @@
 }
 }
 },
-"defense_count": 5
+"defense_count": 5,
+"vulnerable_to": [],
+"effective_against": []
 },
 {
 "id": "42211",
@@ -5970,7 +6238,11 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"4-4-2 C (Classic)"
+],
+"effective_against": []
 },
 {
 "id": "41131",
@@ -6098,7 +6370,11 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"4-5-1 V-Style"
+],
+"effective_against": []
 },
 {
 "id": "4312",
@@ -6220,7 +6496,11 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"4-5-1 V-Style"
+],
+"effective_against": []
 },
 {
 "id": "31213",
@@ -6344,7 +6624,11 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"4-1-3-1-1"
+],
+"effective_against": []
 },
 {
 "id": "3421",
@@ -6466,7 +6750,11 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"4-3-3"
+],
+"effective_against": []
 },
 {
 "id": "523",
@@ -6591,7 +6879,11 @@
 }
 }
 },
-"defense_count": 5
+"defense_count": 5,
+"vulnerable_to": [
+"4-3-3"
+],
+"effective_against": []
 },
 {
 "id": "222n22",
@@ -6715,7 +7007,11 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"4-3-3"
+],
+"effective_against": []
 },
 {
 "id": "3142w",
@@ -6839,7 +7135,11 @@
 }
 }
 },
-"defense_count": 3
+"defense_count": 3,
+"vulnerable_to": [
+"4-2-3-1"
+],
+"effective_against": []
 },
 {
 "id": "4231a",
@@ -6964,7 +7264,11 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"4-1-3N-2"
+],
+"effective_against": []
 },
 {
 "id": "42312",
@@ -7088,6 +7392,10 @@
 }
 }
 },
-"defense_count": 4
+"defense_count": 4,
+"vulnerable_to": [
+"4-3-3"
+],
+"effective_against": []
 }
 ]

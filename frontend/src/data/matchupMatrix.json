@@ -1,0 +1,821 @@
+[
+{
+"opponent": "3N-5-2 F",
+"category": "att",
+"counter_offensive": "3-1-4-2",
+"counter_neutral": "4-3N-2W-1",
+"counter_defensive": "4-2-3-1"
+},
+{
+"opponent": "3W-5-2 F",
+"category": "att",
+"counter_offensive": "3-1-3N-2W-1",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "3N-4-3",
+"category": "att",
+"counter_offensive": "3-5-2 F (Flat)",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "5-4-1 F (Flat)"
+},
+{
+"opponent": "3W-4-3",
+"category": "att",
+"counter_offensive": "3-5-2 V (V-Style)",
+"counter_neutral": "4-2-2-2 H (Hexagon)",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "3W-1-4-2",
+"category": "att",
+"counter_offensive": "3-4-1-2",
+"counter_neutral": "4-1-2-1-2 ND (Narrow Diamond)",
+"counter_defensive": "4-1-2-1-2 ND (Narrow Diamond)"
+},
+{
+"opponent": "3N-1-4-2",
+"category": "att",
+"counter_offensive": "3-5-1-1 V",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "3N-5-2 V",
+"category": "att",
+"counter_offensive": "3-1-3N-3",
+"counter_neutral": "4-3N-2W-1",
+"counter_defensive": "3-2-2-2-1 B (Butterfly)"
+},
+{
+"opponent": "3N-1-3W-1-2 D (Dandelion)",
+"category": "att",
+"counter_offensive": "3-5-1-1 V",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "3N-2-2-2-1 B (Butterfly 3N)",
+"category": "att",
+"counter_offensive": "3N-5-2 F",
+"counter_neutral": "4-3N-2W-1",
+"counter_defensive": "3N-5-2 F"
+},
+{
+"opponent": "3W-2(DMC)-3W-1-1 ML (Maple Leaf)",
+"category": "att",
+"counter_offensive": "3W-5-2 V",
+"counter_neutral": "3N-1-4-2",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "4-4-2 C (Classic)",
+"category": "neu",
+"counter_offensive": "4-1-2-1-2 ND (Narrow Diamond)",
+"counter_neutral": "4-1-2-1-2 ND (Narrow Diamond)",
+"counter_defensive": "3-2-2-2-1 B (Butterfly)"
+},
+{
+"opponent": "4-5-1 V-Style",
+"category": "neu",
+"counter_offensive": "4-3N-3",
+"counter_neutral": "4-3N-3",
+"counter_defensive": "4-3N-3"
+},
+{
+"opponent": "4-5-1 F (Flat)",
+"category": "neu",
+"counter_offensive": "3-5-2 F (Flat)",
+"counter_neutral": "3-5-2 V (V-Style)",
+"counter_defensive": "4-1-4-1"
+},
+{
+"opponent": "4-1-2-1-2 ND (Narrow Diamond)",
+"category": "neu",
+"counter_offensive": "3N-5-2 V",
+"counter_neutral": "3N-5-2 V",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "4-2-2-2 H (Hexagon)",
+"category": "neu",
+"counter_offensive": "3N-4-3",
+"counter_neutral": "3N-4-1-2",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "4-3N-2W-1",
+"category": "neu",
+"counter_offensive": "3-1-4-1-1",
+"counter_neutral": "3-1-4-1-1",
+"counter_defensive": "4-4-1-1"
+},
+{
+"opponent": "4-1-4-1",
+"category": "neu",
+"counter_offensive": "3-5-2 V (V-Style)",
+"counter_neutral": "4-2-2-2 H (Hexagon)",
+"counter_defensive": "4-2-3-1"
+},
+{
+"opponent": "4-4-1-1",
+"category": "neu",
+"counter_offensive": "3-5-2 F (Flat)",
+"counter_neutral": "3-5-2 F (Flat)",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "4-2-3-1",
+"category": "neu",
+"counter_offensive": "3-1-4-2",
+"counter_neutral": "4-1-4-1",
+"counter_defensive": "5-4-1 F (Flat)"
+},
+{
+"opponent": "3-4-1-2",
+"category": "neu",
+"counter_offensive": "3-5-2 F (Flat)",
+"counter_neutral": "4-1-3W-1-1",
+"counter_defensive": "4-1-2-1-2 ND (Narrow Diamond)"
+},
+{
+"opponent": "3N-1-4-1-1",
+"category": "att",
+"counter_offensive": "3-1-4-1-1",
+"counter_neutral": "4-1-2-1-2 ND (Narrow Diamond)",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "3W-1-4-1-1",
+"category": "att",
+"counter_offensive": "3-5-2 V (V-Style)",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "3-5-2 V (V-Style)"
+},
+{
+"opponent": "4-1-3N-1-1",
+"category": "neu",
+"counter_offensive": "3-1-4-2",
+"counter_neutral": "3-1-4-1-1",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "4-1-3W-1-1",
+"category": "neu",
+"counter_offensive": "3-1-4-1-1",
+"counter_neutral": "4-4-1-1",
+"counter_defensive": "5-1(DMC)-2-2"
+},
+{
+"opponent": "3-1-3-2-1 (Tiki-taka)",
+"category": "att",
+"counter_offensive": "4-3N-3",
+"counter_neutral": "4-3N-2W-1",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "3-1-3-1-2",
+"category": "att",
+"counter_offensive": "3-5-2 V (V-Style)",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "3-5-2 F (Flat)"
+},
+{
+"opponent": "5-4-1 F (Flat)",
+"category": "dif",
+"counter_offensive": "3-5-2 F (Flat)",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "4-3N-2W-1"
+},
+{
+"opponent": "5-3N-2",
+"category": "dif",
+"counter_offensive": "3N-4-1-2",
+"counter_neutral": "3N-4-1-2",
+"counter_defensive": "4-4-2 C (Classic)"
+},
+{
+"opponent": "5-3W-2",
+"category": "dif",
+"counter_offensive": "3N-5-2 V",
+"counter_neutral": "3N-4-1-2",
+"counter_defensive": "4-4-2 C (Classic)"
+},
+{
+"opponent": "5-2-1-2 X (X-Style)",
+"category": "dif",
+"counter_offensive": "3N-1-4-2",
+"counter_neutral": "3N-1-4-2",
+"counter_defensive": "4-1-2N-1-2"
+},
+{
+"opponent": "4-3W-2N-1 XT (Xmas Tree)",
+"category": "neu",
+"counter_offensive": "3-1-5-1 AMC",
+"counter_neutral": "3-1-5-1 AMC",
+"counter_defensive": "3W-2(DMC)-3N-1-1"
+},
+{
+"opponent": "3-1-5-1 AMC",
+"category": "neu",
+"counter_offensive": "4-3-3",
+"counter_neutral": "4-2-3-1",
+"counter_defensive": "4-3-3"
+},
+{
+"opponent": "4-3-3",
+"category": "neu",
+"counter_offensive": "4-1-3-2",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "4-4-2 C (Classic)"
+},
+{
+"opponent": "5-2-2(AML-AMR)-1",
+"category": "dif",
+"counter_offensive": "4-3-3",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "3W-1-2-3W-1"
+},
+{
+"opponent": "4-1-3W-2",
+"category": "neu",
+"counter_offensive": "3-1-4-2",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "5-4-1 F (Flat)"
+},
+{
+"opponent": "3-1-4-2",
+"category": "att",
+"counter_offensive": "3-4-3",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "5-3W-2"
+},
+{
+"opponent": "3W-2N-3N-2",
+"category": "dif",
+"counter_offensive": "3-5-2 F (Flat)",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "5-4-1 F (Flat)"
+},
+{
+"opponent": "3-5-2 F (Flat)",
+"category": "att",
+"counter_offensive": "4-3N-2W-1",
+"counter_neutral": "4-3N-2W-1",
+"counter_defensive": "4-3N-2W-1"
+},
+{
+"opponent": "3-5-2 V (V-Style)",
+"category": "att",
+"counter_offensive": "4-2-2-2 H (Hexagon)",
+"counter_neutral": "4-2-2-2 H (Hexagon)",
+"counter_defensive": "4-2-2-2 H (Hexagon)"
+},
+{
+"opponent": "3-4-3",
+"category": "att",
+"counter_offensive": "4-2-2-2 H (Hexagon)",
+"counter_neutral": "4-2-2-2 H (Hexagon)",
+"counter_defensive": "4-2-2-2 H (Hexagon)"
+},
+{
+"opponent": "Maple Leaf 3W-2DMC-3W-1-1",
+"category": "att",
+"counter_offensive": "4-5-1 V-Style",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "Eiffel Tower 3W-2DMC-3N-1-1",
+"category": "att",
+"counter_offensive": "4-5-1 V-Style",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "5-1DMC-2-2",
+"category": "dif",
+"counter_offensive": "4-1-3W-1-1",
+"counter_neutral": "4-1-3W-1-1",
+"counter_defensive": "4-1-3W-1-1"
+},
+{
+"opponent": "4-1-3-1W-1",
+"category": "neu",
+"counter_offensive": "4-1-3-1-1",
+"counter_neutral": "4-1-3-1-1",
+"counter_defensive": "4-1-3-1-1"
+},
+{
+"opponent": "3-1-4-1-1",
+"category": "att",
+"counter_offensive": "4-1-2-1-2 ND (Narrow Diamond)",
+"counter_neutral": "4-1-2-1-2 ND (Narrow Diamond)",
+"counter_defensive": "4-1-2-1-2 ND (Narrow Diamond)"
+},
+{
+"opponent": "4-1-2-2-1",
+"category": "neu",
+"counter_offensive": "4-2-2-2 H (Hexagon)",
+"counter_neutral": "4-2-2-2 H (Hexagon)",
+"counter_defensive": "4-2-2-2 H (Hexagon)"
+},
+{
+"opponent": "False Nine + Wingers",
+"category": "att",
+"counter_offensive": "4-1-3-1-1",
+"counter_neutral": "4-1-3-1-1",
+"counter_defensive": "4-1-3-1-1"
+},
+{
+"opponent": "4-2-4",
+"category": "att",
+"counter_offensive": "5-4-1 F (Flat)",
+"counter_neutral": "5-4-1 F (Flat)",
+"counter_defensive": "5-4-1 F (Flat)"
+},
+{
+"opponent": "4-1-3-1-1",
+"category": "neu",
+"counter_offensive": "4-5-1 V-Style",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "4-3-2-1 XT Xmas Tree",
+"category": "neu",
+"counter_offensive": "4-5-1 F (Flat)",
+"counter_neutral": "4-5-1 F (Flat)",
+"counter_defensive": "4-5-1 F (Flat)"
+},
+{
+"opponent": "5-3-2",
+"category": "dif",
+"counter_offensive": "4-4-2 C (Classic)",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "4-4-2 C (Classic)"
+},
+{
+"opponent": "3-1-3-2W-1",
+"category": "att",
+"counter_offensive": "4-1-4-1",
+"counter_neutral": "4-1-4-1",
+"counter_defensive": "4-1-4-1"
+},
+{
+"opponent": "3-3-1-3",
+"category": "att",
+"counter_offensive": "4-1-4-1",
+"counter_neutral": "4-1-4-1",
+"counter_defensive": "4-1-4-1"
+},
+{
+"opponent": "4-2-2-1-1",
+"category": "dif",
+"counter_offensive": "4-4-2 C (Classic)",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "4-4-2 C (Classic)"
+},
+{
+"opponent": "4-1-1-3-1",
+"category": "att",
+"counter_offensive": "4-5-1 V-Style",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "3N-2-2-2-1 B Butterfly 3N",
+"category": "att",
+"counter_offensive": "4-2-2-2 H (Hexagon)",
+"counter_neutral": "4-2-2-2 H (Hexagon)",
+"counter_defensive": "4-2-2-2 H (Hexagon)"
+},
+{
+"opponent": "4-3-1-2",
+"category": "neu",
+"counter_offensive": "4-5-1 V-Style",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "3-1-2-1-3",
+"category": "att",
+"counter_offensive": "4-1-3-1-1",
+"counter_neutral": "4-1-3-1-1",
+"counter_defensive": "4-1-3-1-1"
+},
+{
+"opponent": "3-4-2-1",
+"category": "neu",
+"counter_offensive": "4-3-3",
+"counter_neutral": "4-3-3",
+"counter_defensive": "4-3-3"
+},
+{
+"opponent": "5-2-3",
+"category": "dif",
+"counter_offensive": "4-3-3",
+"counter_neutral": "4-3-3",
+"counter_defensive": "4-3-3"
+},
+{
+"opponent": "4-2-2-2 N (Narrow)",
+"category": "neu",
+"counter_offensive": "4-3-3",
+"counter_neutral": "4-3-3",
+"counter_defensive": "4-3-3"
+},
+{
+"opponent": "3-1-4-2 W",
+"category": "att",
+"counter_offensive": "4-2-3-1",
+"counter_neutral": "4-2-3-1",
+"counter_defensive": "4-2-3-1"
+},
+{
+"opponent": "4-2-3-1 Attack",
+"category": "att",
+"counter_offensive": "4-1-3N-2",
+"counter_neutral": "4-1-3N-2",
+"counter_defensive": "4-1-3N-2"
+},
+{
+"opponent": "4-2-3-1-2",
+"category": "neu",
+"counter_offensive": "4-3-3",
+"counter_neutral": "4-3-3",
+"counter_defensive": "4-3-3"
+},
+{
+"opponent": "4-1-2-1-2 WD (Wide Diamond)",
+"category": "neu",
+"counter_offensive": "4-3W-1-2",
+"counter_neutral": "4-3W-1-2",
+"counter_defensive": "4-3W-1-2"
+},
+{
+"opponent": "3-2-2-2-1 B (Butterfly)",
+"category": "dif",
+"counter_offensive": "3-4-1-2",
+"counter_neutral": "3-4-1-2",
+"counter_defensive": "3-4-1-2"
+},
+{
+"opponent": "3W-2DMC-3W-1-1 ML (Maple Leaf)",
+"category": "neu",
+"counter_offensive": "4-5-1 V-Style",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "3W-2DMC-3N-1-1 Tower (Eiffel Tower)",
+"category": "neu",
+"counter_offensive": "4-5-1 V-Style",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "4-5-1 V-Style"
+},
+{
+"opponent": "4-3-2-1 XT (Xmas Tree)",
+"category": "neu",
+"counter_offensive": "4-5-1 F (Flat)",
+"counter_neutral": "4-5-1 F (Flat)",
+"counter_defensive": "4-5-1 F (Flat)"
+},
+{
+"opponent": "4-1-3N-2",
+"category": "neu",
+"counter_offensive": "3-1-3N-2W-1",
+"counter_neutral": "3-1-3N-2W-1",
+"counter_defensive": "3-1-3N-2W-1"
+},
+{
+"opponent": "4-3N-3",
+"category": "neu",
+"counter_offensive": "3-4-1-2",
+"counter_neutral": "3-4-1-2",
+"counter_defensive": "3-4-1-2"
+},
+{
+"opponent": "3N-1-2-1-3",
+"category": "att",
+"counter_offensive": "3-1-3N-1-2",
+"counter_neutral": "3-1-3N-1-2",
+"counter_defensive": "3-1-3N-1-2"
+},
+{
+"opponent": "4-2-1-3",
+"category": "att",
+"counter_offensive": "3-1-3N-2W-1",
+"counter_neutral": "3-1-3N-2W-1",
+"counter_defensive": "3-1-3N-2W-1"
+},
+{
+"opponent": "4-1-1-2N-2",
+"category": "neu",
+"counter_offensive": "3W-2N-1-3W-1",
+"counter_neutral": "3W-2N-1-3W-1",
+"counter_defensive": "3W-2N-1-3W-1"
+},
+{
+"opponent": "3W-1-3N-1-2",
+"category": "neu",
+"counter_offensive": "3-5-2 V (V-Style)",
+"counter_neutral": "3-5-2 V (V-Style)",
+"counter_defensive": "3-5-2 V (V-Style)"
+},
+{
+"opponent": "4-2N-1-2N-1",
+"category": "neu",
+"counter_offensive": "3N-1-4-1-1",
+"counter_neutral": "3N-1-4-1-1",
+"counter_defensive": "3N-1-4-1-1"
+},
+{
+"opponent": "5-1-1-1-2",
+"category": "dif",
+"counter_offensive": "3N-5-2 V",
+"counter_neutral": "3N-5-2 V",
+"counter_defensive": "3N-5-2 V"
+},
+{
+"opponent": "5-2W-2N-1",
+"category": "dif",
+"counter_offensive": "3N-1-3W-1-2",
+"counter_neutral": "3N-1-3W-1-2",
+"counter_defensive": "3N-1-3W-1-2"
+},
+{
+"opponent": "3N-5-1-1",
+"category": "att",
+"counter_offensive": "3-1-3N-1-2",
+"counter_neutral": "4-1-2-1-2 ND (Narrow Diamond)",
+"counter_defensive": "3N-2W-2N-1-2"
+},
+{
+"opponent": "3W-5-1-1",
+"category": "att",
+"counter_offensive": "3-1-3N-2W-1",
+"counter_neutral": "4-1-2-1-2 ND (Narrow Diamond)",
+"counter_defensive": "3N-2W-2N-1-2"
+},
+{
+"opponent": "3W-5-2 V",
+"category": "att",
+"counter_offensive": "3-1-3N-1-2",
+"counter_neutral": "4-2-2-2 H (Hexagon)",
+"counter_defensive": "3-2-2-2-1 B (Butterfly)"
+},
+{
+"opponent": "3W-2N-3W-2",
+"category": "att",
+"counter_offensive": "3W-5-2 F",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "5-4-1 F (Flat)"
+},
+{
+"opponent": "3N-2(DMC/MC)-3W-2",
+"category": "att",
+"counter_offensive": "3-1-4-2",
+"counter_neutral": "4-1-2-1-2 ND (Narrow Diamond)",
+"counter_defensive": "3-2-2-2-1 B (Butterfly)"
+},
+{
+"opponent": "3W-2(DMC/MC)-3W-2",
+"category": "att",
+"counter_offensive": "3-1-4-2",
+"counter_neutral": "4-4-2",
+"counter_defensive": "3-2-2-2-1 B (Butterfly)"
+},
+{
+"opponent": "3N-3(DMC/MC)-2W-2",
+"category": "att",
+"counter_offensive": "3-1-3N-2W-1",
+"counter_neutral": "4-3N-2W-1",
+"counter_defensive": "3-2-2-2-1 B (Butterfly)"
+},
+{
+"opponent": "3W-2-3W-1-1 ML",
+"category": "att",
+"counter_offensive": "3N-1-4-2",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "3-2-2-2-1 B (Butterfly)"
+},
+{
+"opponent": "3W-2N-2W-1-2",
+"category": "att",
+"counter_offensive": "3W-5-2 V",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "3-2-2-2-1 B (Butterfly)"
+},
+{
+"opponent": "3W-2N-2N-2W-1",
+"category": "att",
+"counter_offensive": "3-4-1-2",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "3N-2W-3N-2"
+},
+{
+"opponent": "3N-2N-1-2W-2",
+"category": "att",
+"counter_offensive": "3-1-3W-1-2",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "3-2-2-2-1 B (Butterfly)"
+},
+{
+"opponent": "3W-1-5-1",
+"category": "att",
+"counter_offensive": "3-3N-3W-1",
+"counter_neutral": "4-3N-2W-1",
+"counter_defensive": "3-2-2-2-1 B (Butterfly)"
+},
+{
+"opponent": "3W-1-3W-2N-1",
+"category": "att",
+"counter_offensive": "3-5-2 V (V-Style)",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "3-2-2-2-1 B (Butterfly)"
+},
+{
+"opponent": "3N-1-3W-2N-1",
+"category": "att",
+"counter_offensive": "3-5-1-1 V",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "3-2-2-2-1 B (Butterfly)"
+},
+{
+"opponent": "3W-1-3W-1-2",
+"category": "att",
+"counter_offensive": "3N-5-2 F",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "3-2N-3-1-1 ET"
+},
+{
+"opponent": "3N-1-3W-1-2 D",
+"category": "att",
+"counter_offensive": "3-5-1-1 V",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "3N-3W-2N-1-1"
+},
+{
+"opponent": "3N-4-1-2",
+"category": "att",
+"counter_offensive": "3-1-3N-2W-1",
+"counter_neutral": "4-1-2-1-2 ND (Narrow Diamond)",
+"counter_defensive": "3N-2W-2N-1-2"
+},
+{
+"opponent": "3W-4-1-2",
+"category": "att",
+"counter_offensive": "3-1-3N-1-2",
+"counter_neutral": "4-1-2-1-2 ND (Narrow Diamond)",
+"counter_defensive": "3N-2W-2N-1-2"
+},
+{
+"opponent": "4-1(DMC)-2-3",
+"category": "neu",
+"counter_offensive": "3-1-4-2",
+"counter_neutral": "4-1-4-1",
+"counter_defensive": "5-3N-2"
+},
+{
+"opponent": "4-1-1-2W-2",
+"category": "neu",
+"counter_offensive": "3N-2N-1-2W-2",
+"counter_neutral": "4-2-3-1",
+"counter_defensive": "3N-3W-2-2"
+},
+{
+"opponent": "4-2N-1-2W-1",
+"category": "neu",
+"counter_offensive": "3W-1-4-1-1",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "5-2-2(AML-AMR)-1"
+},
+{
+"opponent": "4-3W-3",
+"category": "neu",
+"counter_offensive": "3-5-1-1 V",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "5-4-1 F (Flat)"
+},
+{
+"opponent": "4-2(DMC)-3W-1",
+"category": "neu",
+"counter_offensive": "3-1-3-2W-1",
+"counter_neutral": "4-1-4-1",
+"counter_defensive": "3-2-2-2-1 B (Butterfly)"
+},
+{
+"opponent": "4-2-3N(AMC)-1",
+"category": "neu",
+"counter_offensive": "3-1-4-2",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "3W-2N-3W-2"
+},
+{
+"opponent": "4-2-3W-1",
+"category": "neu",
+"counter_offensive": "3-1-3W-1-2",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "5-3W-2"
+},
+{
+"opponent": "4-3N-1-2",
+"category": "neu",
+"counter_offensive": "3-1-3N-2W-1",
+"counter_neutral": "4-5-1 V-Style",
+"counter_defensive": "3-2-2-2-1 B (Butterfly)"
+},
+{
+"opponent": "4-3W-1-2",
+"category": "neu",
+"counter_offensive": "3N-1-4-2",
+"counter_neutral": "4-1-4-1",
+"counter_defensive": "3-2-3-1-1"
+},
+{
+"opponent": "4-3W-2N-1 XT",
+"category": "neu",
+"counter_offensive": "3-1-5-1 AMC",
+"counter_neutral": "4-5-1 F (Flat)",
+"counter_defensive": "3W-2N-3N-1-1 ET"
+},
+{
+"opponent": "4-3N-2N-1",
+"category": "neu",
+"counter_offensive": "3-1-4-1-1",
+"counter_neutral": "4-1-3W-1-1",
+"counter_defensive": "3W-2N-3W-1-1 ML"
+},
+{
+"opponent": "4-1(DMC)-2(MC)-3",
+"category": "neu",
+"counter_offensive": "3-1-4-1-1",
+"counter_neutral": "4-1-4-1",
+"counter_defensive": "5-1-3N-1"
+},
+{
+"opponent": "4-1-2(AMC)-3",
+"category": "neu",
+"counter_offensive": "3-1-4-2",
+"counter_neutral": "4-1-3W-2",
+"counter_defensive": "5-1-3W-1"
+},
+{
+"opponent": "5-1-3N-1",
+"category": "dif",
+"counter_offensive": "3N-5-2 V",
+"counter_neutral": "4-1-3-1-1",
+"counter_defensive": "3N-3W-3W-1"
+},
+{
+"opponent": "5-1-3W-1",
+"category": "dif",
+"counter_offensive": "3N-5-2 V",
+"counter_neutral": "4-5-1 F (Flat)",
+"counter_defensive": "3N-2W-3W-2"
+},
+{
+"opponent": "5-1-2N-1-1",
+"category": "dif",
+"counter_offensive": "3N-5-2 V",
+"counter_neutral": "4-1-3-2",
+"counter_defensive": "3N-2W-2N-2W-1"
+},
+{
+"opponent": "5-1-2W-1-1",
+"category": "dif",
+"counter_offensive": "3N-5-2 V",
+"counter_neutral": "4-1-3-2",
+"counter_defensive": "3N-2W-2N-2W-1"
+},
+{
+"opponent": "5-2-2W-1",
+"category": "dif",
+"counter_offensive": "3W-1-2-3W-1",
+"counter_neutral": "4-4-2 C (Classic)",
+"counter_defensive": "3N-2W-3N-2"
+},
+{
+"opponent": "5-2-2N-1",
+"category": "dif",
+"counter_offensive": "3N-1-3W-1-2",
+"counter_neutral": "4-2-2-1-1",
+"counter_defensive": "3W-2-3W-2"
+},
+{
+"opponent": "3N-2W-3N-2",
+"category": "dif",
+"counter_offensive": "3-5-2 F (Flat)",
+"counter_neutral": "4-5-1 F (Flat)",
+"counter_defensive": "5-4-1 F (Flat)"
+},
+{
+"opponent": "3N-2W-2-1-2",
+"category": "dif",
+"counter_offensive": "3-4-1-2",
+"counter_neutral": "4-4-2",
+"counter_defensive": "3W-3N-3W-1"
+}
+]
