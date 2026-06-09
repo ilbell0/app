@@ -14,6 +14,7 @@ import realTeams from './realTeams.json';
 import seasonStories from './seasonStories.json';
 import faq from './faq.json';
 import abbreviations from './abbreviations.json';
+import careerPaths from './careerPaths.json';
 
 export const FORMATIONS = formations as any[];
 export const COUNTER_ENGINE = counterEngine as any[];
@@ -29,3 +30,4 @@ export const REAL_TEAMS = realTeams as any[];
 export const SEASON_STORIES = seasonStories as any[];
 export const FAQ = faq as any[];
 export const ABBREVIATIONS = abbreviations as any[];
+export const CAREER_PATHS = careerPaths as any[];

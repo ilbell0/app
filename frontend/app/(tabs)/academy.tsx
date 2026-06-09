@@ -13,7 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS, SEASON_STORIES, FAQ, COUNTER_QUICK, ABBREVIATIONS, MATCHUP_MATRIX } from '@/src/data';
+import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS, SEASON_STORIES, FAQ, COUNTER_QUICK, ABBREVIATIONS, MATCHUP_MATRIX, CAREER_PATHS } from '@/src/data';
 
 const LOCAL_DATA: Record<string, any[]> = {
   roles: PLAYER_ROLES,
@@ -27,9 +27,10 @@ const LOCAL_DATA: Record<string, any[]> = {
   quick: COUNTER_QUICK,
   abbr: ABBREVIATIONS,
   matrix: MATCHUP_MATRIX,
+  paths: CAREER_PATHS,
 };
 
-type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows' | 'teams' | 'stories' | 'faq' | 'quick' | 'abbr' | 'matrix';
+type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows' | 'teams' | 'stories' | 'faq' | 'quick' | 'abbr' | 'matrix' | 'paths';
 
 interface SectionDef {
   id: SectionId;
@@ -51,6 +52,7 @@ const SECTIONS: SectionDef[] = [
   { id: 'quick', endpoint: '/api/counter-quick', label_en: 'Quick', label_it: 'Rapido', icon: 'flash-outline' },
   { id: 'abbr', endpoint: '/api/abbreviations', label_en: 'Legend', label_it: 'Leggenda', icon: 'list-outline' },
   { id: 'matrix', endpoint: '/api/matchup-matrix', label_en: 'Matrix', label_it: 'Matrice', icon: 'grid-outline' },
+  { id: 'paths', endpoint: '/api/career-paths', label_en: 'Paths', label_it: 'Percorsi', icon: 'trending-up-outline' },
 ];
 
 const TIER_COLORS: Record<string, string> = {
@@ -66,10 +68,10 @@ export default function AcademyScreen() {
 
   const [section, setSection] = useState<SectionId>('roles');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], meta: [], skills: [], training: [], arrows: [], teams: [], stories: [], faq: [], quick: [], abbr: [], matrix: [],
+    roles: [], meta: [], skills: [], training: [], arrows: [], teams: [], stories: [], faq: [], quick: [], abbr: [], matrix: [], paths: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, meta: false, skills: false, training: false, arrows: false, teams: false, stories: false, faq: false, quick: false, abbr: false, matrix: false,
+    roles: false, meta: false, skills: false, training: false, arrows: false, teams: false, stories: false, faq: false, quick: false, abbr: false, matrix: false, paths: false,
   });
   const [loading, setLoading] = useState(false);
   const [selected, setSelected] = useState<any | null>(null);
@@ -114,6 +116,7 @@ export default function AcademyScreen() {
       case 'quick': return item.av;
       case 'abbr': return `${item.code}  ·  ${isIt ? item.name_it : item.name_en}`;
       case 'matrix': return item.opponent;
+      case 'paths': return `${item.label}  ·  ${isIt ? item.title_it : item.title_en}`;
       default: return '';
     }
   };
@@ -130,6 +133,7 @@ export default function AcademyScreen() {
       case 'quick': return `→ ${item.neu}`;
       case 'abbr': return item.example;
       case 'matrix': return `→ ${item.counter_neutral || '—'}`;
+      case 'paths': return isIt ? item.subtitle_it : item.subtitle_en;
       default: return '';
     }
   };
@@ -340,6 +344,21 @@ export default function AcademyScreen() {
                   <DetailBlock label={isIt ? 'SE GIOCHI OFFENSIVO' : 'OFFENSIVE COUNTER'} value={selected.counter_offensive || '—'} />
                   <DetailBlock label={isIt ? 'SE GIOCHI BILANCIATO' : 'NEUTRAL COUNTER'} value={selected.counter_neutral || '—'} />
                   <DetailBlock label={isIt ? 'SE GIOCHI DIFENSIVO' : 'DEFENSIVE COUNTER'} value={selected.counter_defensive || '—'} />
+                </>
+              )}
+              {selected && section === 'paths' && (
+                <>
+                  <View style={styles.detailBlock}>
+                    <Text style={styles.detailLabel}>{isIt ? 'LIVELLO ROSA' : 'SQUAD LEVEL'}</Text>
+                    <View style={styles.arrowsBox}>
+                      <Text style={styles.arrowsText}>{selected.label}</Text>
+                    </View>
+                  </View>
+                  <DetailBlock label={isIt ? 'OBIETTIVO REALISTICO' : 'EXPECTED OUTCOME'} value={isIt ? selected.expected_outcome_it : selected.expected_outcome_en} />
+                  <DetailChips label={isIt ? 'MODULI CONSIGLIATI' : 'RECOMMENDED FORMATIONS'} values={selected.recommended_formations} />
+                  <DetailBlock label={isIt ? 'PERCHÉ FUNZIONANO' : 'WHY THEY WORK'} value={isIt ? selected.explanation_it : selected.explanation_en} />
+                  <DetailChips label={isIt ? 'PRIORITÀ ALLENAMENTO' : 'TRAINING PRIORITY'} values={isIt ? selected.training_priority_it : selected.training_priority_en} />
+                  <DetailChips label={isIt ? 'EVITA' : 'AVOID'} values={isIt ? selected.avoid_it : selected.avoid_en} />
                 </>
               )}
               {selected && section === 'teams' && (

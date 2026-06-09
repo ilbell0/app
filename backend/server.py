@@ -12580,6 +12580,103 @@ MATCHUP_MATRIX = [
     }
 ]
 
+
+# ==================== CAREER PATHS ====================
+# Percorsi tattici consigliati per livello stelle rosa (3, 4, 5, 6, 7+)
+
+CAREER_PATHS = [
+    {
+        "id": 'starter-3',
+        "stars": 3,
+        "label": '3★',
+        "title_en": 'Starter: 3★ rookie squad',
+        "title_it": 'Esordi: rosa rookie da 3 stelle',
+        "subtitle_en": 'Your first season - building the foundation',
+        "subtitle_it": 'Prima stagione - costruisci le fondamenta',
+        "expected_outcome_en": 'Mid-table finish, league safety, 1 free 6★ from the youth academy',
+        "expected_outcome_it": "Salvezza tranquilla a metà classifica, 1 giovane da 6 stelle gratis dall'accademia",
+        "recommended_formations": ['4-4-2 C (Classic)', '5-4-1 F (Flat)', '4-5-1 V-Style'],
+        "explanation_en": 'With a 3★ squad you cannot dictate matches: defend smart and grab points. The 4-4-2 Classic is the simplest tactical management; the 5-4-1 saves you against stronger sides; the 4-5-1 V-Style lets you steal wins on the counter.',
+        "explanation_it": 'Con una rosa da 3 stelle non puoi dettare le partite: difendi con criterio e prendi i punti. Il 4-4-2 Classico è la gestione tattica più semplice; il 5-4-1 ti salva contro i più forti; il 4-5-1 V-Style ti permette di rubare partite in contropiede.',
+        "training_priority_en": ['GK (clean sheets are worth more than 5★ strikers)', 'Central CBs', 'Stamina across the whole team'],
+        "training_priority_it": ['GK (i clean sheet valgono più di un attaccante da 5 stelle)', 'DC centrali', 'Resistenza per tutta la squadra'],
+        "avoid_en": ["3-back formations (your CBs aren't ready)", "High pressing (burns stamina you don't have)", 'Offering 30+ tokens at auctions'],
+        "avoid_it": ['Formazioni a 3 difensori (i tuoi DC non sono pronti)', 'Pressing alto (brucia stamina che non hai)', 'Offerte oltre 30 token alle aste']
+    },
+    {
+        "id": 'growing-4',
+        "stars": 4,
+        "label": '4★',
+        "title_en": 'Growing: 4★ ambitious squad',
+        "title_it": 'Crescita: rosa ambiziosa da 4 stelle',
+        "subtitle_en": 'Champions League contender',
+        "subtitle_it": 'In corsa per la Champions',
+        "expected_outcome_en": 'Top-4 finish, semifinal in domestic cup, group-stage qualification in Champions League',
+        "expected_outcome_it": 'Piazzamento Champions, semifinale di coppa nazionale, qualificazione gironi in Champions League',
+        "recommended_formations": ['4-3-3', '4-2-3-1', '4-4-2 C (Classic)'],
+        "explanation_en": 'At 4★ you can finally play. 4-3-3 is the main meta module (beats 26/56). The 4-2-3-1 gives tactical versatility. Keep the 4-4-2 as a safe option when you face the strongest opponents in cups.',
+        "explanation_it": 'A 4 stelle puoi finalmente giocartela. 4-3-3 è il modulo meta principale (batte 26/56). Il 4-2-3-1 dà versatilità tattica. Tieni il 4-4-2 come piano sicuro contro i più forti in coppa.',
+        "training_priority_en": ['Box-to-Box midfielders (engine room)', 'Wingers with Pace + Crossing', 'A Playmaker DMC if you want the 4-3-3 Tuned'],
+        "training_priority_it": ['Centrocampisti Box-to-Box (motore)', 'Ali con Velocità + Cross', 'Un DMC Regista se vuoi il 4-3-3 Tuned'],
+        "avoid_en": ['Too aggressive Monster 4-2-3-1 against equal teams', 'Buying super-strikers ignoring the central spine'],
+        "avoid_it": ['Monster 4-2-3-1 troppo aggressivo contro pari livello', 'Comprare super-attaccanti trascurando la spina dorsale']
+    },
+    {
+        "id": 'competitive-5',
+        "stars": 5,
+        "label": '5★',
+        "title_en": 'Competitive: 5★ elite squad',
+        "title_it": 'Competitivi: rosa élite da 5 stelle',
+        "subtitle_en": 'Title contention and European hopes',
+        "subtitle_it": "In lotta per il titolo e per l'Europa",
+        "expected_outcome_en": 'League title fight, cup final, Champions League quarter-finals',
+        "expected_outcome_it": 'Lotta per il titolo, finale di coppa, quarti di Champions League',
+        "recommended_formations": ['4-3-3 Tuned Meta', '4-5-1 V-Style', '4-2-3-1 Vertical Tiki-Taka'],
+        "explanation_en": 'At 5★ you can express the modern meta. 4-3-3 Tuned with False 9 + Playmaker DMC dominates. The 4-5-1 V-Style is the tactical chameleon. Vertical Tiki-Taka exploits possession + speed to break through tough defenses.',
+        "explanation_it": 'A 5 stelle puoi esprimere il meta moderno. 4-3-3 Tuned con Falso 9 + DMC Regista domina. Il 4-5-1 V-Style è il camaleonte tattico. Il Vertical Tiki-Taka sfrutta possesso + velocità per scardinare difese chiuse.',
+        "training_priority_en": ['A False 9 striker (white attributes 95+)', 'Playmaker DMC (Pirlo role)', 'Inverted wingers AML/AMR (Dual Position)'],
+        "training_priority_it": ['Un Falso 9 (attributi bianchi 95+)', 'DMC Regista (ruolo Pirlo)', 'Ali invertite AML/AMR (Dual Position)'],
+        "avoid_en": ['Switching shape every match (Team Balance must stay 9.2-10)', 'Forgetting the special abilities of your stars'],
+        "avoid_it": ['Cambiare modulo a ogni partita (il Team Balance deve restare 9.2-10)', 'Dimenticare le abilità speciali dei tuoi top']
+    },
+    {
+        "id": 'dominant-6',
+        "stars": 6,
+        "label": '6★',
+        "title_en": 'Dominant: 6★ super squad',
+        "title_it": 'Dominanti: super rosa da 6 stelle',
+        "subtitle_en": 'Treble dreams',
+        "subtitle_it": 'Sogno triplete',
+        "expected_outcome_en": 'League title, domestic cup, Champions League at least semifinal (often the title)',
+        "expected_outcome_it": 'Titolo di campionato, coppa nazionale, Champions League almeno semifinale (spesso vittoria)',
+        "recommended_formations": ['4-3-3 Tuned Meta', '4-2-3-1 Vertical Tiki-Taka', '3-4-2-1'],
+        "explanation_en": 'At 6★ you no longer fear anyone. 4-3-3 Tuned remains the king. Vertical Tiki-Taka makes you dominant in possession. 3-4-2-1 (Conte/Tuchel style) is the magic weapon in Champions League with two #10s.',
+        "explanation_it": "A 6 stelle non temi più nessuno. 4-3-3 Tuned resta il re. Il Vertical Tiki-Taka ti rende dominante nel possesso. Il 3-4-2-1 (stile Conte/Tuchel) è l'arma magica in Champions con doppio trequartista.",
+        "training_priority_en": ['Set Piece Master ability on the AMC', 'Aerial Threat ability on at least 2 players', 'Maximum Team Balance (9.5+)'],
+        "training_priority_it": ["Abilità Set Piece Master sull'AMC", 'Abilità Aerial Threat su almeno 2 giocatori', 'Team Balance massimo (9.5+)'],
+        "avoid_en": ['Resting key players too much against stronger opponents', "Overtraining single 'mutant' players that break the balance"],
+        "avoid_it": ['Lasciare a riposo i top contro avversari forti', "Sovrallenare singoli 'mutanti' che spezzano l'equilibrio"]
+    },
+    {
+        "id": 'godlike-7',
+        "stars": 7,
+        "label": '7★+',
+        "title_en": 'Godlike: 7★+ legendary squad',
+        "title_it": 'Leggenda: rosa epica da 7+ stelle',
+        "subtitle_en": 'When victory is mathematics',
+        "subtitle_it": 'Quando vincere è una matematica',
+        "expected_outcome_en": 'Wins every competition. Goal: undefeated season',
+        "expected_outcome_it": 'Vince qualsiasi competizione. Obiettivo: stagione imbattuto',
+        "recommended_formations": ['4-3-3 Tuned Meta', '4-2-3-1 Monster', '3-4-3 Press'],
+        "explanation_en": 'At 7★+ you can afford the Monster, which sacrifices the defense for total attacking dominance. 3-4-3 Press for gegenpressing. 4-3-3 Tuned remains the safe choice for important matches.',
+        "explanation_it": 'A 7+ stelle puoi permetterti il Monster, che sacrifica la difesa per dominio totale. Il 3-4-3 Press per gegenpressing. Il 4-3-3 Tuned resta la scelta sicura per i match importanti.',
+        "training_priority_en": ['Maintain Team Balance at 10/10 against all odds', 'Rotate the squad to keep morale + fitness', "Don't sell aging players too early: they still convert chances"],
+        "training_priority_it": ['Tieni il Team Balance a 10/10 a tutti i costi', 'Ruota la rosa per tenere morale + condizione', 'Non vendere i veterani troppo presto: convertono ancora'],
+        "avoid_en": ['Underestimating opponents', "Massive purchases that break balance (the 'mutant')", 'Playing Monster against teams of equal strength'],
+        "avoid_it": ['Sottovalutare gli avversari', "Acquisti enormi che rompono il balance (il 'mutante')", 'Giocare il Monster contro pari livello']
+    }
+]
+
 # ==================== SCOUT TIPS DATA (EXPANDED) ====================
 
 SCOUT_TIPS = [
@@ -14970,6 +15067,21 @@ async def get_matchup_for_opponent(opponent: str):
         if m["opponent"].lower() == opponent.lower():
             return m
     raise HTTPException(status_code=404, detail="Opponent not found in matchup matrix")
+
+# ==================== CAREER PATHS ENDPOINTS ====================
+
+@api_router.get("/career-paths")
+async def get_career_paths():
+    """Get all recommended career paths by squad star level"""
+    return CAREER_PATHS
+
+@api_router.get("/career-paths/{stars}")
+async def get_career_path_for_stars(stars: int):
+    """Get the recommended path for a specific star level (3-7+)"""
+    for p in CAREER_PATHS:
+        if p["stars"] == stars or (stars >= 7 and p["stars"] == 7):
+            return p
+    raise HTTPException(status_code=404, detail="Career path not found")
 
 # ==================== SCOUT TIPS ENDPOINTS ====================
 
