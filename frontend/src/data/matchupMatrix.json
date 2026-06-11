@@ -210,13 +210,6 @@
     "counter_defensive": "4-1-2N-1-2"
   },
   {
-    "opponent": "4-3W-2N-1 XT (Xmas Tree)",
-    "category": "neu",
-    "counter_offensive": "3-1-5-1 AMC",
-    "counter_neutral": "3-1-5-1 AMC",
-    "counter_defensive": "3W-2DMC-3N-1-1 Tower (Eiffel Tower)"
-  },
-  {
     "opponent": "3-1-5-1 AMC",
     "category": "neu",
     "counter_offensive": "4-3-3",
@@ -338,9 +331,9 @@
   {
     "opponent": "4-3-2-1 XT (Xmas Tree)",
     "category": "neu",
-    "counter_offensive": "3-4-3",
-    "counter_neutral": "4-5-1 F (Flat)",
-    "counter_defensive": "4-1-4-1"
+    "counter_offensive": "3-1-5-1 AMC",
+    "counter_neutral": "3-1-5-1 AMC",
+    "counter_defensive": "3W-2DMC-3N-1-1 Tower (Eiffel Tower)"
   },
   {
     "opponent": "5-3-2",
@@ -560,13 +553,6 @@
     "counter_defensive": "3-2-2-2-1 B (Butterfly)"
   },
   {
-    "opponent": "3W-2-3W-1-1 ML",
-    "category": "att",
-    "counter_offensive": "3N-1-4-2",
-    "counter_neutral": "4-5-1 V-Style",
-    "counter_defensive": "3-2-2-2-1 B (Butterfly)"
-  },
-  {
     "opponent": "3W-2N-2W-1-2",
     "category": "att",
     "counter_offensive": "3W-5-2 V",
@@ -613,7 +599,7 @@
     "category": "att",
     "counter_offensive": "3N-5-2 F",
     "counter_neutral": "4-4-2 C (Classic)",
-    "counter_defensive": "3-2N-3-1-1 ET"
+    "counter_defensive": "3W-2DMC-3N-1-1 Tower (Eiffel Tower)"
   },
   {
     "opponent": "3N-4-1-2",
@@ -690,21 +676,14 @@
     "category": "neu",
     "counter_offensive": "3N-1-4-2",
     "counter_neutral": "4-1-4-1",
-    "counter_defensive": "3-2-3-1-1"
+    "counter_defensive": "3W-2DMC-3N-1-1 Tower (Eiffel Tower)"
   },
   {
     "opponent": "4-3N-2N-1",
     "category": "neu",
     "counter_offensive": "3-1-4-1-1",
     "counter_neutral": "4-1-3W-1-1",
-    "counter_defensive": "3W-2N-3W-1-1 ML"
-  },
-  {
-    "opponent": "4-1(DMC)-2(MC)-3",
-    "category": "neu",
-    "counter_offensive": "3-1-4-1-1",
-    "counter_neutral": "4-1-4-1",
-    "counter_defensive": "5-1-3N-1"
+    "counter_defensive": "3W-2DMC-3W-1-1 ML (Maple Leaf)"
   },
   {
     "opponent": "4-1-2(AMC)-3",

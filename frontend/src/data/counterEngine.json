@@ -2073,7 +2073,7 @@
     }
   },
   {
-    "av": "4-3W-2N-1 XT (Xmas Tree)",
+    "av": "4-3-2-1 XT (Xmas Tree)",
     "cat": "neu",
     "forte": {
       "mod": "3W-2DMC-3N-1-1 Tower (Eiffel Tower)",
@@ -3227,68 +3227,6 @@
         "ST": "—"
       },
       "w": "Spingi alto col 4-5-1 V e domina con pressing aggressivo"
-    }
-  },
-  {
-    "av": "4-3-2-1 XT (Xmas Tree)",
-    "cat": "neu",
-    "forte": {
-      "mod": "4-5-1 F (Flat)",
-      "alt": "4-1-4-1",
-      "men": "Molto Difensiva",
-      "pass": "Fasce",
-      "stile": "Misti",
-      "ctrl": "SI",
-      "press": "Basso",
-      "cont": "Facile",
-      "marc": "Zona",
-      "fuo": "SI",
-      "fr": {
-        "DL": "↓",
-        "DC": "↓",
-        "DR": "↓",
-        "MC": "↓",
-        "ST": "—"
-      },
-      "w": "Resta compatto col 4-5-1 F e riparti in contropiede"
-    },
-    "pari": {
-      "mod": "4-5-1 F (Flat)",
-      "alt": "4-1-4-1",
-      "men": "Difensiva",
-      "pass": "Fasce",
-      "stile": "Misti",
-      "ctrl": "SI",
-      "press": "Basso",
-      "cont": "Normale",
-      "marc": "Zona",
-      "fuo": "NO",
-      "fr": {
-        "ML": "↑",
-        "MR": "↑",
-        "DMC": "↓",
-        "ST": "—"
-      },
-      "w": "Sfrutta le fasce per aggirare il centrocampo denso"
-    },
-    "debole": {
-      "mod": "4-5-1 F (Flat)",
-      "alt": "4-1-4-1",
-      "men": "Normale",
-      "pass": "Fasce",
-      "stile": "Misti",
-      "ctrl": "NO",
-      "press": "Alto",
-      "cont": "Duro",
-      "marc": "Uomo",
-      "fuo": "NO",
-      "fr": {
-        "ML": "↑",
-        "MR": "↑",
-        "DMC": "↓",
-        "ST": "—"
-      },
-      "w": "Spingi alto col 4-5-1 F e domina con pressing aggressivo"
     }
   },
   {
@@ -5307,74 +5245,6 @@
     }
   },
   {
-    "av": "3W-2-3W-1-1 ML",
-    "cat": "att",
-    "forte": {
-      "mod": "3-2-2-2-1 B (Butterfly)",
-      "alt": "4-5-1 V-Style",
-      "men": "Difensiva",
-      "pass": "Fasce",
-      "stile": "Lunghi",
-      "ctrl": "SI",
-      "press": "Basso",
-      "cont": "Easy",
-      "marc": "Uomo",
-      "fuo": "NO",
-      "fr": {
-        "DC": "↓",
-        "MC": "—",
-        "AML": "↑",
-        "AMR": "↑",
-        "ST": "—"
-      },
-      "w": "Difesa a 3: proteggi le fasce dove spingono, riparti largo dove non coprono. Il DMC marca il loro AMC"
-    },
-    "pari": {
-      "mod": "4-5-1 V-Style",
-      "alt": "3N-1-4-2",
-      "men": "Normale",
-      "pass": "Fasce",
-      "stile": "Misti",
-      "ctrl": "SI",
-      "press": "Basso",
-      "cont": "Norm",
-      "marc": "Zona",
-      "fuo": "NO",
-      "fr": {
-        "DL": "—",
-        "DC": "↓",
-        "DR": "—",
-        "ML": "—",
-        "MC": "—",
-        "MR": "—",
-        "AMC": "—",
-        "ST": "—"
-      },
-      "w": "3 dietro = ampiezza scoperta: ML/MR o ali al 1v1 contro i braccetti. DMC freccia blu sul loro AMC"
-    },
-    "debole": {
-      "mod": "3N-1-4-2",
-      "alt": "4-5-1 V-Style",
-      "men": "Offensiva",
-      "pass": "Fasce",
-      "stile": "Misti",
-      "ctrl": "NO",
-      "press": "Alto",
-      "cont": "Norm",
-      "marc": "Zona",
-      "fuo": "SI",
-      "fr": {
-        "DC": "↓",
-        "DMC": "—",
-        "ML": "↑",
-        "MC": "—",
-        "MR": "↑",
-        "ST": "—"
-      },
-      "w": "Solo 3 dietro: attacca l'ampiezza con due ali larghe, cross e inserimenti"
-    }
-  },
-  {
     "av": "3W-2N-2W-1-2",
     "cat": "att",
     "forte": {
@@ -5784,7 +5654,7 @@
     "av": "3W-1-3W-1-2",
     "cat": "att",
     "forte": {
-      "mod": "3-2N-3-1-1 ET",
+      "mod": "3W-2DMC-3N-1-1 Tower (Eiffel Tower)",
       "alt": "4-4-2 C (Classic)",
       "men": "Difensiva",
       "pass": "Fasce",
@@ -6535,7 +6405,7 @@
     "av": "4-3W-1-2",
     "cat": "neu",
     "forte": {
-      "mod": "3-2-3-1-1",
+      "mod": "3W-2DMC-3N-1-1 Tower (Eiffel Tower)",
       "alt": "4-1-4-1",
       "men": "Difensiva",
       "pass": "Fasce",
@@ -6602,7 +6472,7 @@
     "av": "4-3N-2N-1",
     "cat": "neu",
     "forte": {
-      "mod": "3W-2N-3W-1-1 ML",
+      "mod": "3W-2DMC-3W-1-1 ML (Maple Leaf)",
       "alt": "4-1-3W-1-1",
       "men": "Difensiva",
       "pass": "Fasce",
@@ -6667,78 +6537,6 @@
         "ST": "—"
       },
       "w": "Centro intasato ma fasce vuote: dominio sulle corsie, cross e secondo palo"
-    }
-  },
-  {
-    "av": "4-1(DMC)-2(MC)-3",
-    "cat": "neu",
-    "forte": {
-      "mod": "5-1-3N-1",
-      "alt": "4-1-4-1",
-      "men": "Difensiva",
-      "pass": "Fasce",
-      "stile": "Lunghi",
-      "ctrl": "SI",
-      "press": "Basso",
-      "cont": "Easy",
-      "marc": "Zona",
-      "fuo": "NO",
-      "fr": {
-        "DL": "↓",
-        "DC": "↓",
-        "DR": "↓",
-        "DMC": "↓",
-        "AML": "↑",
-        "AMC": "↑",
-        "AMR": "↑",
-        "ST": "—"
-      },
-      "w": "Avversario piu' forte: blocco ordinato, zona, e contropiede sulle fasce"
-    },
-    "pari": {
-      "mod": "4-1-4-1",
-      "alt": "3-1-4-1-1",
-      "men": "Normale",
-      "pass": "Fasce",
-      "stile": "Misti",
-      "ctrl": "SI",
-      "press": "Basso",
-      "cont": "Norm",
-      "marc": "Zona",
-      "fuo": "NO",
-      "fr": {
-        "DL": "—",
-        "DC": "↓",
-        "DR": "—",
-        "DMC": "↓",
-        "ML": "—",
-        "MC": "—",
-        "MR": "—",
-        "ST": "—"
-      },
-      "w": "Equilibrio: vinci i duelli a centrocampo e sfrutta l'ampiezza"
-    },
-    "debole": {
-      "mod": "3-1-4-1-1",
-      "alt": "4-1-4-1",
-      "men": "Offensiva",
-      "pass": "Fasce",
-      "stile": "Misti",
-      "ctrl": "NO",
-      "press": "Alto",
-      "cont": "Norm",
-      "marc": "Zona",
-      "fuo": "SI",
-      "fr": {
-        "DC": "↓",
-        "DMC": "—",
-        "ML": "↑",
-        "MC": "—",
-        "MR": "↑",
-        "AMC": "↑",
-        "ST": "—"
-      },
-      "w": "Sei superiore: pressing alto, possesso e ampiezza per allargare le maglie"
     }
   },
   {

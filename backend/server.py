@@ -791,7 +791,7 @@ FORMATIONS = [
         'name': '4-2-3-1',
         'description_en': 'Modern tactical formation with 2 MCs and 3 attacking mids behind lone striker. ★ Defensive arrows on 3DC, ML and MR.',
         'description_it': 'Formazione tattica moderna con 2 MC e 3 trequartisti dietro attaccante solitario. ★ Frecce difensive a 3DC, ML e MR.',
-        'positions': ['GK', 'DR', 'DC', 'DC', 'DL', 'MC', 'MC', 'AML', 'AMC', 'AMR', 'ST'],
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'MC', 'MC', 'AML', 'AMC', 'AMR', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
         'strengths_en': ['Defensive stability', 'Creative playmaker', 'Compact midfield', 'Flexible'],
@@ -1186,7 +1186,7 @@ FORMATIONS = [
         'name': '3-1-4-2',
         'description_en': 'DMC anchors the midfield with 4 wide midfielders. Strong against 4-3-3 and formations with 3 attackers.',
         'description_it': 'DMC ancora il centrocampo con 4 centrocampisti larghi. Forte contro 4-3-3 e formazioni con 3 attaccanti.',
-        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'MR', 'MC', 'MC', 'ML', 'ST', 'ST'],
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'ML', 'MC', 'MC', 'MR', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Attaccante',
         'strengths_en': ['DMC protection', 'Wide midfield', 'Two strikers', 'Counter 4-3-3'],
@@ -1397,7 +1397,7 @@ FORMATIONS = [
         'name': '3-2-2-2-1 B (Butterfly)',
         'description_en': 'Defensive Butterfly formation. Double AMC creates chances for lone striker.',
         'description_it': "Butterfly difensivo. Doppio trequartista crea occasioni per l'attaccante solitario.",
-        'positions': ['GK', 'DC', 'DC', 'DC', 'MC', 'MC', 'AMC', 'AMC', 'ST'],
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'DMC', 'MC', 'MC', 'AML', 'AMR', 'ST'],
         'category_en': 'Defensive',
         'category_it': 'Difensiva',
         'strengths_en': ['Double playmakers', 'Compact center', 'Counter-attack ready'],
@@ -1728,7 +1728,7 @@ FORMATIONS = [
         'name': '4-3-3',
         'description_en': 'Attacking formation with 3 forwards. ★ Red arrows on AML, AMR, ST. 3 attackers press high, MCs fall back in defense.',
         'description_it': 'Formazione offensiva con 3 attaccanti. ★ Frecce rosse su AML, AMR, ST. 3 attaccanti, MC rientrano in difesa.',
-        'positions': ['GK', 'DR', 'DC', 'DC', 'DL', 'MC', 'MC', 'MC', 'AML', 'ST', 'AMR'],
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'MC', 'MC', 'MC', 'AML', 'ST', 'AMR'],
         'category_en': 'Attacking',
         'category_it': 'Attaccante',
         'strengths_en': ['High pressing', 'Width in attack', 'Creative midfield', 'Overloads flanks'],
@@ -1861,7 +1861,7 @@ FORMATIONS = [
         'name': '5-3N-2',
         'description_en': '5 defenders + 3 central MCs. Very solid against wing attacks.',
         'description_it': '5 difensori + 3 MC centrali. Solido contro ali.',
-        'positions': ['GK', 'DR', 'DC', 'DC', 'DC', 'DL', 'MC', 'MC', 'MC', 'ST', 'ST'],
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DC', 'DR', 'MC', 'MC', 'MC', 'ST', 'ST'],
         'category_en': 'Defensive',
         'category_it': 'Difensiva',
         'strengths_en': ['5 defenders', 'Central control', 'Two strikers', 'Hard to break'],
@@ -1957,7 +1957,7 @@ FORMATIONS = [
         'name': '3-4-3',
         'description_en': 'Ultra-attacking with 3 attackers and wide midfield. Good against 4-2-2-2 H. Overloads wide midfield.',
         'description_it': 'Ultra-offensiva con 3 attaccanti e centrocampo ampio. Contro 4-2-2-2 H. Sovraffolla il centrocampo largo.',
-        'positions': ['GK', 'DC', 'DC', 'DC', 'MR', 'MC', 'MC', 'ML', 'AML', 'ST', 'AMR'],
+        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MC', 'MR', 'AML', 'ST', 'AMR'],
         'category_en': 'Attacking',
         'category_it': 'Attaccante',
         'strengths_en': ['3 attackers', 'Width', 'Pressing intensity', 'Overwhelming offense'],
@@ -2075,7 +2075,7 @@ FORMATIONS = [
         'name': '3W-2DMC-3W-1-1 ML (Maple Leaf)',
         'description_en': 'Maple Leaf formation. Wide AML/AMR with AMC as playmaker. Double DMC shield. Against 4-1-3W-2.',
         'description_it': 'Maple Leaf. AML/AMR larghi, AMC trequartista. Doppio DMC schermo. Contro 4-1-3W-2.',
-        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'DMC', 'AML', 'AMC', 'AMR', 'ST'],
+        'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'DMC', 'ML', 'MC', 'MR', 'AMC', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Attaccante',
         'strengths_en': ['Double DMC shield', 'Wide AML/AMR', 'Creative AMC', 'Flexible'],
@@ -2173,7 +2173,7 @@ FORMATIONS = [
         'name': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)',
         'description_en': 'Tower/Eiffel Tower formation. Two screening DMCs, AMC is the offensive tower.',
         'description_it': 'Tower: due DMC schermo, AMC torre offensiva.',
-        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'DMC', 'AML', 'AMC', 'AMR', 'ST'],
+        'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'DMC', 'MC', 'MC', 'MC', 'AMC', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Attaccante',
         'strengths_en': ['Double DMC screen', 'AMC as tower', 'Creative play', 'Solid base'],
@@ -2469,7 +2469,7 @@ FORMATIONS = [
         'name': '5-2-2(AML-AMR)-1',
         'description_en': '5 defenders with high wings. Against 4-2N-1-2W-1 formations.',
         'description_it': '5 difensori con ali alte. Contro 4-2N-1-2W-1.',
-        'positions': ['GK', 'DR', 'DC', 'DC', 'DC', 'DL', 'MC', 'MC', 'AML', 'AMR', 'ST'],
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DC', 'DR', 'MC', 'MC', 'AML', 'AMR', 'ST'],
         'category_en': 'Defensive',
         'category_it': 'Difensiva',
         'strengths_en': ['5 defenders', 'High AML/AMR', 'Counter ready', 'Solid base'],
@@ -2673,7 +2673,7 @@ FORMATIONS = [
         'name': '3N-5-2 V',
         'description_en': '3 DCs + 5 midfielders with high AML/AMR. Effective against parked bus formations.',
         'description_it': '3 DC + 5 MF con ali alte. Efficace contro bus parcheggiato.',
-        'positions': ['GK', 'DC', 'DC', 'DC', 'MC', 'MC', 'MC', 'AML', 'AMR', 'ST', 'ST'],
+        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MC', 'MC', 'MR', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Attaccante',
         'strengths_en': ['High wingers', 'Midfield control', 'Two strikers', 'Breaks parked bus'],
@@ -2769,7 +2769,7 @@ FORMATIONS = [
         'name': '4-3N-2W-1',
         'description_en': '3 central MCs + high AML/AMR. Very common at high levels.',
         'description_it': '3 MC + AML/AMR alti. Molto diffusa ai livelli alti.',
-        'positions': ['GK', 'DR', 'DC', 'DC', 'DL', 'MC', 'MC', 'MC', 'AML', 'AMR', 'ST'],
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'MC', 'MC', 'MC', 'AML', 'AMR', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Attaccante',
         'strengths_en': ['Central control', 'High wingers', 'Popular at high levels', 'Flexible'],
@@ -2868,7 +2868,7 @@ FORMATIONS = [
         'name': '3-1-5-1 AMC',
         'description_en': 'Highly tactical formation with DMC shield and 5-man midfield including AMC as playmaker. 3 variants: A (Central Dominance), B (Balanced Control), C (Quick Transition). Very effective with a quality AMC.',
         'description_it': 'Formazione altamente tattica con DMC scudo e centrocampo a 5 con AMC come regista. 3 varianti: A (Dominio Centrale), B (Bilanciata-Controllo), C (Transizione Rapida). Molto efficace con un AMC di qualità.',
-        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'MR', 'MC', 'MC', 'ML', 'AMC', 'ST'],
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'ML', 'MC', 'MC', 'MC', 'MR', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
         'strengths_en': [
@@ -3491,7 +3491,7 @@ FORMATIONS = [
         'name': '4-1-3-1-1',
         'description_en': '4-1-3-1-1 - Balanced formation. Defensive solidity; frequent clean sheets.',
         'description_it': '4-1-3-1-1 - formazione bilanciata. Solidità difensiva; clean sheet frequenti.',
-        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'DMC', 'ML', 'MC', 'MR', 'AMC', 'ST'],
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'DMC', 'MC', 'MC', 'MC', 'AMC', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
         'strengths_en': ['Defensive solidity', 'Frequent clean sheets', 'Neutralizes the 4-3-3'],
@@ -4083,7 +4083,7 @@ FORMATIONS = [
         'name': '4-3N-3',
         'description_en': '4-3N-3 - Balanced formation. Counters the 4-5-1 V-Style; attacking density.',
         'description_it': '4-3N-3 - formazione bilanciata. Counter del 4-5-1 V-Style; densità offensiva.',
-        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'MC', 'MC', 'MC', 'ST', 'ST', 'ST'],
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'MC', 'MC', 'MC', 'AML', 'ST', 'AMR'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
         'strengths_en': ['Counters the 4-5-1 V-Style', 'Attacking density', 'Central pressing'],
@@ -4277,7 +4277,7 @@ FORMATIONS = [
         'name': '3N-1-2-1-3',
         'description_en': '3N-1-2-1-3 - Attacking formation. Three-striker firepower; creative amc.',
         'description_it': '3N-1-2-1-3 - formazione attaccante. Potenza dei tre attaccanti; amc creativo.',
-        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'MC', 'MC', 'AMC', 'ST', 'ST', 'ST'],
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'MC', 'MC', 'AMC', 'AML', 'ST', 'AMR'],
         'category_en': 'Attacking',
         'category_it': 'Attaccante',
         'strengths_en': ['Three-striker firepower', 'Creative AMC', 'High pressing'],
@@ -4371,7 +4371,7 @@ FORMATIONS = [
         'name': '4-2-1-3',
         'description_en': '4-2-1-3 - Attacking formation. AMC and full attack; two mcs cover.',
         'description_it': '4-2-1-3 - formazione attaccante. AMC e attacco completo; due mc coprono.',
-        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'MC', 'MC', 'AMC', 'AML', 'AMR', 'ST'],
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'MC', 'MC', 'AMC', 'AML', 'ST', 'AMR'],
         'category_en': 'Attacking',
         'category_it': 'Attaccante',
         'strengths_en': ['AMC and full attack', 'Two MCs cover', 'Strong central creativity'],
@@ -4666,7 +4666,7 @@ FORMATIONS = [
         'name': '3-3-1-3',
         'description_en': '3-3-1-3 - Attacking formation. Maximum width and creativity; amc orchestrates.',
         'description_it': '3-3-1-3 - formazione attaccante. Massima ampiezza e creatività; amc orchestratore.',
-        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MR', 'AMC', 'AML', 'ST', 'AMR'],
+        'positions': ['GK', 'DC', 'DC', 'DC', 'MC', 'MC', 'MC', 'AMC', 'AML', 'ST', 'AMR'],
         'category_en': 'Attacking',
         'category_it': 'Attaccante',
         'strengths_en': ['Maximum width and creativity', 'AMC orchestrates', 'Three forwards'],
@@ -4962,7 +4962,7 @@ FORMATIONS = [
         'name': '5-2W-2N-1',
         'description_en': '5-2W-2N-1 - Defensive formation. Maximum flank coverage; five at back.',
         'description_it': '5-2W-2N-1 - formazione difensiva. Massima copertura laterale; cinque dietro.',
-        'positions': ['GK', 'DL', 'DC', 'DC', 'DC', 'DR', 'ML', 'MR', 'MC', 'MC', 'ST'],
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DC', 'DR', 'ML', 'MR', 'AMC', 'AMC', 'ST'],
         'category_en': 'Defensive',
         'category_it': 'Difensiva',
         'strengths_en': ['Maximum flank coverage', 'Five at back', 'Solid midfield'],
@@ -5159,7 +5159,7 @@ FORMATIONS = [
         'name': '4-1-1-3-1',
         'description_en': '4-1-1-3-1 - Attacking formation. Five attacking players; dmc anchor.',
         'description_it': "4-1-1-3-1 - formazione attaccante. Cinque giocatori d'attacco; dmc ancora.",
-        'positions': ['GK', 'DR', 'DC', 'DC', 'DL', 'DMC', 'AMC', 'AML', 'AMC', 'AMR', 'ST'],
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'DMC', 'MC', 'AML', 'AMC', 'AMR', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Attaccante',
         'strengths_en': ['Five attacking players', 'DMC anchor', 'Maximum creative density'],
@@ -5261,7 +5261,7 @@ FORMATIONS = [
         'name': '4-3-1-2',
         'description_en': '4-3-1-2 - Balanced formation. Diamond midfield; amc creator.',
         'description_it': '4-3-1-2 - formazione bilanciata. Rombo centrale; amc creatore.',
-        'positions': ['GK', 'DR', 'DC', 'DC', 'DL', 'MC', 'MC', 'MC', 'AMC', 'ST', 'ST'],
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'MC', 'MC', 'MC', 'AMC', 'ST', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
         'strengths_en': ['Diamond midfield', 'AMC creator', 'Two strikers', 'Strong central control'],
@@ -5455,7 +5455,7 @@ FORMATIONS = [
         'name': '3-4-2-1',
         'description_en': '3-4-2-1 - Balanced formation. Double AMC creators; wing-back width.',
         'description_it': '3-4-2-1 - formazione bilanciata. Doppio AMC creativo; ampiezza degli esterni.',
-        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MC', 'MR', 'AMC', 'AMC', 'ST'],
+        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MC', 'MR', 'AML', 'AMR', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
         'strengths_en': ['Double AMC creators', 'Wing-back width', 'Three-CB stability', 'Italian variant'],
@@ -6037,6 +6037,6944 @@ FORMATIONS = [
         'defense_count': 4,
         'vulnerable_to': ['3-4-3', '4-1-4-1', '4-3-3'],
         'effective_against': []
+    },
+    {
+        'id': '313n2w1',
+        'name': '3-1-3N-2W-1',
+        'description_en': '3-1-3N-2W-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3-1-3N-2W-1 con difesa a 3. Eccelle nello sfruttare le fasce contro difese a tre.',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'MC', 'MC', 'MC', 'AML', 'AMR', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence'],
+        'strengths_it': [
+            'Eccelle nello sfruttare le fasce contro difese a tre.',
+            'Superiorita numerica a centrocampo',
+            'DMC a protezione della difesa'
+        ],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers',
+            'Isolated striker without support'
+        ],
+        'weaknesses_it': [
+            'I 3 DC centrali esposti a imbucate rapide se i laterali non rientrano.',
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': [
+            '3N-3(DMC/MC)-2W-2',
+            '3N-4-1-2',
+            '3W-5-1-1',
+            '3W-5-2 F',
+            '4-1-3N-2',
+            '4-2-1-3',
+            '4-3N-1-2'
+        ],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '3n142',
+        'name': '3N-1-4-2',
+        'description_en': '3N-1-4-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-1-4-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'ML', 'MC', 'MC', 'MR', 'ST', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'DMC shielding the defence',
+            'Possession control in midfield',
+            'Strike partnership'
+        ],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'DMC a protezione della difesa',
+            'Controllo del possesso in mediana',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['3W-2DMC-3W-1-1 ML (Maple Leaf)', '4-3W-1-2', '5-2-1-2 X (X-Style)'],
+        'vulnerable_to': ['3-5-1-1 V', '4-5-1 V-Style'],
+        'defense_count': 3
+    },
+    {
+        'id': '313n12',
+        'name': '3-1-3N-1-2',
+        'description_en': '3-1-3N-1-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3-1-3N-1-2 con difesa a 3. Forza il possesso centrale e sovraccarica la trequarti avversaria.',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'MC', 'MC', 'MC', 'AMC', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence', 'Strike partnership'],
+        'strengths_it': [
+            'Forza il possesso centrale e sovraccarica la trequarti avversaria.',
+            'Superiorita numerica a centrocampo',
+            'DMC a protezione della difesa',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fianchi scoperti ai lanci lunghi per le ali.',
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'MC': '↑'
+                }
+            }
+        },
+        'effective_against': ['3N-1-2-1-3', '3N-5-1-1', '3W-4-1-2', '3W-5-2 V'],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '3n412',
+        'name': '3N-4-1-2',
+        'description_en': '3N-4-1-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-4-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MC', 'MR', 'AMC', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Strike partnership'],
+        'strengths_it': ['Superiorita numerica a centrocampo', "Coppia d'attacco"],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['4-2-2-2 H (Hexagon)', '5-3N-2', '5-3W-2'],
+        'vulnerable_to': ['3-1-3N-2W-1', '4-1-2-1-2 ND (Narrow Diamond)', '3N-2W-2N-1-2'],
+        'defense_count': 3
+    },
+    {
+        'id': '413w11',
+        'name': '4-1-3W-1-1',
+        'description_en': '4-1-3W-1-1 shape with a back 4. DMC shielding the defence',
+        'description_it': 'Modulo 4-1-3W-1-1 con difesa a 4. DMC a protezione della difesa',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'DMC', 'ML', 'MC', 'MR', 'AMC', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['DMC shielding the defence', 'Good width'],
+        'strengths_it': ['DMC a protezione della difesa', 'Buona ampiezza di gioco'],
+        'weaknesses_en': [],
+        'weaknesses_it': [],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['3-4-1-2', '4-3N-2N-1'],
+        'vulnerable_to': ['3-1-4-1-1', '4-4-1-1', '5-1DMC-2-2'],
+        'defense_count': 4
+    },
+    {
+        'id': '4132',
+        'name': '4-1-3-2',
+        'description_en': '4-1-3-2 shape with a back 4. DMC shielding the defence',
+        'description_it': 'Modulo 4-1-3-2 con difesa a 4. Ottimo equilibrio tra mediana e attacco a due punte.',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'DMC', 'MC', 'MC', 'MC', 'ST', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['DMC shielding the defence', 'Strike partnership'],
+        'strengths_it': [
+            'Ottimo equilibrio tra mediana e attacco a due punte.',
+            'DMC a protezione della difesa',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': ['Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Puo soffrire la mancanza di ampiezza contro ali molto larghe.',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑'
+                }
+            }
+        },
+        'effective_against': ['4-3-3', '5-1-2N-1-1', '5-1-2W-1-1'],
+        'vulnerable_to': [],
+        'defense_count': 4
+    },
+    {
+        'id': '3511v',
+        'name': '3-5-1-1 V',
+        'description_en': '3-5-1-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3-5-1-1 con difesa a 3. Densita centrale insuperabile per annullare moduli stretti.',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MC', 'MC', 'MR', 'AMC', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['Midfield numerical advantage', 'Possession control in midfield'],
+        'strengths_it': [
+            'Densita centrale insuperabile per annullare moduli stretti.',
+            'Superiorita numerica a centrocampo',
+            'Controllo del possesso in mediana'
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            "Poca spinta offensiva laterale se l'AMC rimane isolato.",
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['3N-1-3W-1-2 D (Dandelion)', '3N-1-3W-2N-1', '3N-1-4-2', '4-3W-3'],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '3n2w2n12',
+        'name': '3N-2W-2N-1-2',
+        'description_en': '3N-2W-2N-1-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-2W-2N-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MR', 'MC', 'MC', 'AMC', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Double screen in front of defence', 'Strike partnership'],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'Doppio schermo davanti alla difesa',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'MC': '↑'
+                }
+            }
+        },
+        'effective_against': ['3N-4-1-2', '3N-5-1-1', '3W-4-1-2', '3W-5-1-1'],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '4411',
+        'name': '4-4-1-1',
+        'description_en': '4-4-1-1 shape with a back 4. Good width',
+        'description_it': 'Modulo 4-4-1-1 con difesa a 4. Buona ampiezza di gioco',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'ML', 'MC', 'MC', 'MR', 'AMC', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['Good width'],
+        'strengths_it': ['Buona ampiezza di gioco'],
+        'weaknesses_en': [],
+        'weaknesses_it': [],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['4-1-3W-1-1', '4-3N-2W-1'],
+        'vulnerable_to': ['3-5-2 F (Flat)', '4-5-1 V-Style'],
+        'defense_count': 4
+    },
+    {
+        'id': '3n52f',
+        'name': '3N-5-2 F',
+        'description_en': '3N-5-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-5-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MC', 'MC', 'MR', 'ST', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['Midfield numerical advantage', 'Possession control in midfield', 'Strike partnership'],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'Controllo del possesso in mediana',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['3W-1-3W-1-2'],
+        'vulnerable_to': ['3-1-4-2', '4-3N-2W-1', '4-2-3-1'],
+        'defense_count': 3
+    },
+    {
+        'id': '313w12',
+        'name': '3-1-3W-1-2',
+        'description_en': '3-1-3W-1-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3-1-3W-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'ML', 'MC', 'MR', 'AMC', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence', 'Strike partnership'],
+        'strengths_it': ['Superiorita numerica a centrocampo', 'DMC a protezione della difesa', "Coppia d'attacco"],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['3N-2N-1-2W-2', '4-2-3W-1'],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '53w2',
+        'name': '5-3W-2',
+        'description_en': '5-3W-2 shape with a back 5. Very solid back five',
+        'description_it': 'Modulo 5-3W-2 con difesa a 5. Difesa solidissima a 5',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DC', 'DR', 'ML', 'MC', 'MR', 'ST', 'ST'],
+        'category_en': 'Defensive',
+        'category_it': 'Difensiva',
+        'strengths_en': ['Very solid back five', 'Good width', 'Strike partnership'],
+        'strengths_it': ['Difesa solidissima a 5', 'Buona ampiezza di gioco', "Coppia d'attacco"],
+        'weaknesses_en': ['Limited attacking push unless wingers advance'],
+        'weaknesses_it': ['Poca spinta offensiva se le ali non salgono'],
+        'tactic_type_en': 'Defensive',
+        'tactic_type_it': 'Difensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['3-1-4-2', '4-2-3W-1'],
+        'vulnerable_to': ['3N-5-2 V', '3N-4-1-2', '4-4-2 C (Classic)'],
+        'defense_count': 5
+    },
+    {
+        'id': '3n13w12',
+        'name': '3N-1-3W-1-2',
+        'description_en': '3N-1-3W-1-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-1-3W-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'ML', 'MC', 'MR', 'AMC', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence', 'Strike partnership'],
+        'strengths_it': ['Superiorita numerica a centrocampo', 'DMC a protezione della difesa', "Coppia d'attacco"],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['5-2-2N-1', '5-2W-2N-1'],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '3n2w3n2',
+        'name': '3N-2W-3N-2',
+        'description_en': '3N-2W-3N-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-2W-3N-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MR', 'AMC', 'AMC', 'AMC', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Strike partnership'],
+        'strengths_it': ['Superiorita numerica a centrocampo', "Coppia d'attacco"],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['3W-2N-2N-2W-1', '5-2-2W-1'],
+        'vulnerable_to': ['3-5-2 F (Flat)', '4-5-1 F (Flat)', '5-4-1 F (Flat)'],
+        'defense_count': 3
+    },
+    {
+        'id': '3n1411',
+        'name': '3N-1-4-1-1',
+        'description_en': '3N-1-4-1-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-1-4-1-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'ML', 'MC', 'MC', 'MR', 'AMC', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'DMC shielding the defence',
+            'Possession control in midfield'
+        ],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'DMC a protezione della difesa',
+            'Controllo del possesso in mediana'
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['4-2N-1-2N-1'],
+        'vulnerable_to': ['3-1-4-1-1', '4-1-2-1-2 ND (Narrow Diamond)', '4-5-1 V-Style'],
+        'defense_count': 3
+    },
+    {
+        'id': '413w2',
+        'name': '4-1-3W-2',
+        'description_en': '4-1-3W-2 shape with a back 4. DMC shielding the defence',
+        'description_it': 'Modulo 4-1-3W-2 con difesa a 4. DMC a protezione della difesa',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'DMC', 'ML', 'MC', 'MR', 'ST', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['DMC shielding the defence', 'Good width', 'Strike partnership'],
+        'strengths_it': ['DMC a protezione della difesa', 'Buona ampiezza di gioco', "Coppia d'attacco"],
+        'weaknesses_en': [],
+        'weaknesses_it': [],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['4-1-2(AMC)-3'],
+        'vulnerable_to': ['3-1-4-2', '4-5-1 V-Style', '5-4-1 F (Flat)'],
+        'defense_count': 4
+    },
+    {
+        'id': '43w12',
+        'name': '4-3W-1-2',
+        'description_en': '4-3W-1-2 shape with a back 4. Good width',
+        'description_it': 'Modulo 4-3W-1-2 con difesa a 4. Buona ampiezza di gioco',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'ML', 'MC', 'MR', 'AMC', 'ST', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['Good width', 'Strike partnership'],
+        'strengths_it': ['Buona ampiezza di gioco', "Coppia d'attacco"],
+        'weaknesses_en': [],
+        'weaknesses_it': [],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['4-1-2-1-2 WD (Wide Diamond)'],
+        'vulnerable_to': ['3N-1-4-2', '4-1-4-1', '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'],
+        'defense_count': 4
+    },
+    {
+        'id': '3w52f',
+        'name': '3W-5-2 F',
+        'description_en': '3W-5-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-5-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'ML', 'MC', 'MC', 'MC', 'MR', 'ST', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'Possession control in midfield',
+            'Good width',
+            'Strike partnership'
+        ],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'Controllo del possesso in mediana',
+            'Buona ampiezza di gioco',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['3W-2N-3W-2'],
+        'vulnerable_to': ['3-1-3N-2W-1', '4-5-1 V-Style'],
+        'defense_count': 3
+    },
+    {
+        'id': '3w123w1',
+        'name': '3W-1-2-3W-1',
+        'description_en': '3W-1-2-3W-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-1-2-3W-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'MC', 'MC', 'AML', 'AMC', 'AMR', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence', 'Good width'],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'DMC a protezione della difesa',
+            'Buona ampiezza di gioco'
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': ['5-2-2(AML-AMR)-1', '5-2-2W-1'],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '3w1411',
+        'name': '3W-1-4-1-1',
+        'description_en': '3W-1-4-1-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-1-4-1-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'ML', 'MC', 'MC', 'MR', 'AMC', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'DMC shielding the defence',
+            'Possession control in midfield',
+            'Good width'
+        ],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'DMC a protezione della difesa',
+            'Controllo del possesso in mediana',
+            'Buona ampiezza di gioco'
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['4-2N-1-2W-1'],
+        'vulnerable_to': ['3-5-2 V (V-Style)', '4-5-1 V-Style'],
+        'defense_count': 3
+    },
+    {
+        'id': '3w52v',
+        'name': '3W-5-2 V',
+        'description_en': '3W-5-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-5-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'ML', 'MC', 'MC', 'MC', 'MR', 'ST', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'Possession control in midfield',
+            'Good width',
+            'Strike partnership'
+        ],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'Controllo del possesso in mediana',
+            'Buona ampiezza di gioco',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['3W-2N-2W-1-2'],
+        'vulnerable_to': ['3-1-3N-1-2', '4-2-2-2 H (Hexagon)', '3-2-2-2-1 B (Butterfly)'],
+        'defense_count': 3
+    },
+    {
+        'id': '3n2n12w2',
+        'name': '3N-2N-1-2W-2',
+        'description_en': '3N-2N-1-2W-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-2N-1-2W-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'DMC', 'MC', 'AML', 'AMR', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Double screen in front of defence', 'Strike partnership'],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'Doppio schermo davanti alla difesa',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': ['4-1-1-2W-2'],
+        'vulnerable_to': ['3-1-3W-1-2', '4-4-2 C (Classic)', '3-2-2-2-1 B (Butterfly)'],
+        'defense_count': 3
+    },
+    {
+        'id': '3n43',
+        'name': '3N-4-3',
+        'description_en': '3N-4-3 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-4-3 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MC', 'MR', 'AML', 'ST', 'AMR'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Strike partnership'],
+        'strengths_it': ['Superiorita numerica a centrocampo', "Coppia d'attacco"],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['4-2-2-2 H (Hexagon)'],
+        'vulnerable_to': ['3-5-2 F (Flat)', '4-4-2 C (Classic)', '5-4-1 F (Flat)'],
+        'defense_count': 3
+    },
+    {
+        'id': '3w2n3w2',
+        'name': '3W-2N-3W-2',
+        'description_en': '3W-2N-3W-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-2N-3W-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'MC', 'MC', 'AML', 'AMC', 'AMR', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Good width', 'Strike partnership'],
+        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': ['4-2-3N(AMC)-1'],
+        'vulnerable_to': ['3W-5-2 F', '4-4-2 C (Classic)', '5-4-1 F (Flat)'],
+        'defense_count': 3
+    },
+    {
+        'id': '513w1',
+        'name': '5-1-3W-1',
+        'description_en': '5-1-3W-1 shape with a back 5. Very solid back five',
+        'description_it': 'Modulo 5-1-3W-1 con difesa a 5. Difesa solidissima a 5',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DC', 'DR', 'DMC', 'ML', 'MC', 'MR', 'ST'],
+        'category_en': 'Defensive',
+        'category_it': 'Difensiva',
+        'strengths_en': ['Very solid back five', 'DMC shielding the defence', 'Good width'],
+        'strengths_it': ['Difesa solidissima a 5', 'DMC a protezione della difesa', 'Buona ampiezza di gioco'],
+        'weaknesses_en': ['Limited attacking push unless wingers advance', 'Isolated striker without support'],
+        'weaknesses_it': ['Poca spinta offensiva se le ali non salgono', 'Punta isolata senza rifinitore'],
+        'tactic_type_en': 'Defensive',
+        'tactic_type_it': 'Difensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': ['4-1-2(AMC)-3'],
+        'vulnerable_to': ['3N-5-2 V', '4-5-1 F (Flat)', '3N-2W-3W-2'],
+        'defense_count': 5
+    },
+    {
+        'id': '3n2w2n2w1',
+        'name': '3N-2W-2N-2W-1',
+        'description_en': '3N-2W-2N-2W-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-2W-2N-2W-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MR', 'MC', 'MC', 'AML', 'AMR', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Double screen in front of defence'],
+        'strengths_it': ['Superiorita numerica a centrocampo', 'Doppio schermo davanti alla difesa'],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers',
+            'Isolated striker without support'
+        ],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie',
+            'Punta isolata senza rifinitore'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': ['5-1-2N-1-1', '5-1-2W-1-1'],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '3w2n13w1',
+        'name': '3W-2N-1-3W-1',
+        'description_en': '3W-2N-1-3W-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-2N-1-3W-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'DMC', 'MC', 'AML', 'AMC', 'AMR', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Double screen in front of defence', 'Good width'],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'Doppio schermo davanti alla difesa',
+            'Buona ampiezza di gioco'
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': ['4-1-1-2N-2'],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '3w43',
+        'name': '3W-4-3',
+        'description_en': '3W-4-3 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-4-3 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'ML', 'MC', 'MC', 'MR', 'AML', 'ST', 'AMR'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Good width', 'Strike partnership'],
+        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-5-2 V (V-Style)', '4-2-2-2 H (Hexagon)', '4-5-1 V-Style'],
+        'defense_count': 3
+    },
+    {
+        'id': '412n12',
+        'name': '4-1-2N-1-2',
+        'description_en': '4-1-2N-1-2 shape with a back 4. DMC shielding the defence',
+        'description_it': 'Modulo 4-1-2N-1-2 con difesa a 4. DMC a protezione della difesa',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'DMC', 'MC', 'MC', 'AMC', 'ST', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['DMC shielding the defence', 'Strike partnership'],
+        'strengths_it': ['DMC a protezione della difesa', "Coppia d'attacco"],
+        'weaknesses_en': ['Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': ['Manca ampiezza: vulnerabile alle ali avversarie'],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑'
+                }
+            }
+        },
+        'effective_against': ['5-2-1-2 X (X-Style)'],
+        'vulnerable_to': [],
+        'defense_count': 4
+    },
+    {
+        'id': '33n3w1',
+        'name': '3-3N-3W-1',
+        'description_en': '3-3N-3W-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3-3N-3W-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'MC', 'MC', 'MC', 'AML', 'AMC', 'AMR', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage'],
+        'strengths_it': ['Superiorita numerica a centrocampo'],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': ['3W-1-5-1'],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '3w142',
+        'name': '3W-1-4-2',
+        'description_en': '3W-1-4-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-1-4-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'ML', 'MC', 'MC', 'MR', 'ST', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'DMC shielding the defence',
+            'Possession control in midfield',
+            'Good width'
+        ],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'DMC a protezione della difesa',
+            'Controllo del possesso in mediana',
+            'Buona ampiezza di gioco'
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-4-1-2', '4-1-2-1-2 ND (Narrow Diamond)'],
+        'defense_count': 3
+    },
+    {
+        'id': '313n3',
+        'name': '3-1-3N-3',
+        'description_en': '3-1-3N-3 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3-1-3N-3 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'MC', 'MC', 'MC', 'AML', 'ST', 'AMR'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence', 'Strike partnership'],
+        'strengths_it': ['Superiorita numerica a centrocampo', 'DMC a protezione della difesa', "Coppia d'attacco"],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'MC': '↑'
+                }
+            }
+        },
+        'effective_against': ['3N-5-2 V'],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '3n13w12ddandelion',
+        'name': '3N-1-3W-1-2 D (Dandelion)',
+        'description_en': '3N-1-3W-1-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-1-3W-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'ML', 'MC', 'MR', 'AMC', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence', 'Strike partnership'],
+        'strengths_it': ['Superiorita numerica a centrocampo', 'DMC a protezione della difesa', "Coppia d'attacco"],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-5-1-1 V', '4-4-2 C (Classic)', '4-5-1 V-Style'],
+        'defense_count': 3
+    },
+    {
+        'id': '413n11',
+        'name': '4-1-3N-1-1',
+        'description_en': '4-1-3N-1-1 shape with a back 4. DMC shielding the defence',
+        'description_it': 'Modulo 4-1-3N-1-1 con difesa a 4. DMC a protezione della difesa',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'DMC', 'MC', 'MC', 'MC', 'AMC', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['DMC shielding the defence'],
+        'strengths_it': ['DMC a protezione della difesa'],
+        'weaknesses_en': ['Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': ['Manca ampiezza: vulnerabile alle ali avversarie'],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-1-4-2', '3-1-4-1-1', '4-5-1 V-Style'],
+        'defense_count': 4
+    },
+    {
+        'id': '3n511',
+        'name': '3N-5-1-1',
+        'description_en': '3N-5-1-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-5-1-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MC', 'MC', 'MR', 'AMC', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['Midfield numerical advantage', 'Possession control in midfield'],
+        'strengths_it': ['Superiorita numerica a centrocampo', 'Controllo del possesso in mediana'],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-1-3N-1-2', '4-1-2-1-2 ND (Narrow Diamond)', '3N-2W-2N-1-2'],
+        'defense_count': 3
+    },
+    {
+        'id': '3w511',
+        'name': '3W-5-1-1',
+        'description_en': '3W-5-1-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-5-1-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'ML', 'MC', 'MC', 'MC', 'MR', 'AMC', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['Midfield numerical advantage', 'Possession control in midfield', 'Good width'],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'Controllo del possesso in mediana',
+            'Buona ampiezza di gioco'
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-1-3N-2W-1', '4-1-2-1-2 ND (Narrow Diamond)', '3N-2W-2N-1-2'],
+        'defense_count': 3
+    },
+    {
+        'id': '3n2dmcmc3w2',
+        'name': '3N-2(DMC/MC)-3W-2',
+        'description_en': '3N-2(DMC/MC)-3W-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-2(DMC/MC)-3W-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'DMC', 'ML', 'MC', 'MR', 'ST', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'Double screen in front of defence',
+            'Possession control in midfield',
+            'Strike partnership'
+        ],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'Doppio schermo davanti alla difesa',
+            'Controllo del possesso in mediana',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-1-4-2', '4-1-2-1-2 ND (Narrow Diamond)', '3-2-2-2-1 B (Butterfly)'],
+        'defense_count': 3
+    },
+    {
+        'id': '3w2dmcmc3w2',
+        'name': '3W-2(DMC/MC)-3W-2',
+        'description_en': '3W-2(DMC/MC)-3W-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-2(DMC/MC)-3W-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'DMC', 'ML', 'MC', 'MR', 'ST', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'Double screen in front of defence',
+            'Possession control in midfield',
+            'Good width'
+        ],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'Doppio schermo davanti alla difesa',
+            'Controllo del possesso in mediana',
+            'Buona ampiezza di gioco'
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-1-4-2', '4-4-2 C (Classic)', '3-2-2-2-1 B (Butterfly)'],
+        'defense_count': 3
+    },
+    {
+        'id': '3n3dmcmc2w2',
+        'name': '3N-3(DMC/MC)-2W-2',
+        'description_en': '3N-3(DMC/MC)-2W-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-3(DMC/MC)-2W-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'DMC', 'DMC', 'ML', 'MR', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Double screen in front of defence', 'Strike partnership'],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'Doppio schermo davanti alla difesa',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-1-3N-2W-1', '4-3N-2W-1', '3-2-2-2-1 B (Butterfly)'],
+        'defense_count': 3
+    },
+    {
+        'id': '3w2n2w12',
+        'name': '3W-2N-2W-1-2',
+        'description_en': '3W-2N-2W-1-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-2N-2W-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'DMC', 'ML', 'MR', 'AMC', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'Double screen in front of defence',
+            'Good width',
+            'Strike partnership'
+        ],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'Doppio schermo davanti alla difesa',
+            'Buona ampiezza di gioco',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3W-5-2 V', '4-5-1 V-Style', '3-2-2-2-1 B (Butterfly)'],
+        'defense_count': 3
+    },
+    {
+        'id': '3w2n2n2w1',
+        'name': '3W-2N-2N-2W-1',
+        'description_en': '3W-2N-2N-2W-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-2N-2N-2W-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'DMC', 'MC', 'MC', 'AML', 'AMR', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Double screen in front of defence', 'Good width'],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'Doppio schermo davanti alla difesa',
+            'Buona ampiezza di gioco'
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Isolated striker without support'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi', 'Punta isolata senza rifinitore'],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-4-1-2', '4-4-2 C (Classic)', '3N-2W-3N-2'],
+        'defense_count': 3
+    },
+    {
+        'id': '3w151',
+        'name': '3W-1-5-1',
+        'description_en': '3W-1-5-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-1-5-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'ML', 'MC', 'MC', 'MC', 'MR', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'DMC shielding the defence',
+            'Possession control in midfield',
+            'Good width'
+        ],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'DMC a protezione della difesa',
+            'Controllo del possesso in mediana',
+            'Buona ampiezza di gioco'
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Isolated striker without support'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi', 'Punta isolata senza rifinitore'],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-3N-3W-1', '4-3N-2W-1', '3-2-2-2-1 B (Butterfly)'],
+        'defense_count': 3
+    },
+    {
+        'id': '3w13w2n1',
+        'name': '3W-1-3W-2N-1',
+        'description_en': '3W-1-3W-2N-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-1-3W-2N-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'ML', 'MC', 'MR', 'AMC', 'AMC', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence', 'Good width'],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'DMC a protezione della difesa',
+            'Buona ampiezza di gioco'
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-5-2 V (V-Style)', '4-5-1 V-Style', '3-2-2-2-1 B (Butterfly)'],
+        'defense_count': 3
+    },
+    {
+        'id': '3n13w2n1',
+        'name': '3N-1-3W-2N-1',
+        'description_en': '3N-1-3W-2N-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-1-3W-2N-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'ML', 'MC', 'MR', 'AMC', 'AMC', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence'],
+        'strengths_it': ['Superiorita numerica a centrocampo', 'DMC a protezione della difesa'],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-5-1-1 V', '4-5-1 V-Style', '3-2-2-2-1 B (Butterfly)'],
+        'defense_count': 3
+    },
+    {
+        'id': '3w13w12',
+        'name': '3W-1-3W-1-2',
+        'description_en': '3W-1-3W-1-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-1-3W-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'ML', 'MC', 'MR', 'AMC', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'DMC shielding the defence',
+            'Good width',
+            'Strike partnership'
+        ],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'DMC a protezione della difesa',
+            'Buona ampiezza di gioco',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3N-5-2 F', '4-4-2 C (Classic)', '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'],
+        'defense_count': 3
+    },
+    {
+        'id': '3w412',
+        'name': '3W-4-1-2',
+        'description_en': '3W-4-1-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-4-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'ML', 'MC', 'MC', 'MR', 'AMC', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Good width', 'Strike partnership'],
+        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-1-3N-1-2', '4-1-2-1-2 ND (Narrow Diamond)', '3N-2W-2N-1-2'],
+        'defense_count': 3
+    },
+    {
+        'id': '41dmc23',
+        'name': '4-1(DMC)-2-3',
+        'description_en': '4-1(DMC)-2-3 shape with a back 4. DMC shielding the defence',
+        'description_it': 'Modulo 4-1(DMC)-2-3 con difesa a 4. DMC a protezione della difesa',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'DMC', 'MC', 'MC', 'AML', 'ST', 'AMR'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['DMC shielding the defence', 'Strike partnership'],
+        'strengths_it': ['DMC a protezione della difesa', "Coppia d'attacco"],
+        'weaknesses_en': ['Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': ['Manca ampiezza: vulnerabile alle ali avversarie'],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-1-4-2', '4-1-4-1', '5-3N-2'],
+        'defense_count': 4
+    },
+    {
+        'id': '4112w2',
+        'name': '4-1-1-2W-2',
+        'description_en': '4-1-1-2W-2 shape with a back 4. DMC shielding the defence',
+        'description_it': 'Modulo 4-1-1-2W-2 con difesa a 4. DMC a protezione della difesa',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'DMC', 'MC', 'AML', 'AMR', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['DMC shielding the defence', 'Good width', 'Strike partnership'],
+        'strengths_it': ['DMC a protezione della difesa', 'Buona ampiezza di gioco', "Coppia d'attacco"],
+        'weaknesses_en': [],
+        'weaknesses_it': [],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3N-2N-1-2W-2', '4-2-3-1', '3N-3W-2-2'],
+        'defense_count': 4
+    },
+    {
+        'id': '3n3w22',
+        'name': '3N-3W-2-2',
+        'description_en': '3N-3W-2-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-3W-2-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MR', 'AML', 'AMR', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Good width', 'Strike partnership'],
+        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑',
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': ['4-1-1-2W-2'],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '42n12w1',
+        'name': '4-2N-1-2W-1',
+        'description_en': '4-2N-1-2W-1 shape with a back 4. Double screen in front of defence',
+        'description_it': 'Modulo 4-2N-1-2W-1 con difesa a 4. Doppio schermo davanti alla difesa',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'DMC', 'DMC', 'MC', 'AML', 'AMR', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['Double screen in front of defence', 'Good width'],
+        'strengths_it': ['Doppio schermo davanti alla difesa', 'Buona ampiezza di gioco'],
+        'weaknesses_en': ['Isolated striker without support'],
+        'weaknesses_it': ['Punta isolata senza rifinitore'],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3W-1-4-1-1', '4-4-2 C (Classic)', '5-2-2(AML-AMR)-1'],
+        'defense_count': 4
+    },
+    {
+        'id': '43w3',
+        'name': '4-3W-3',
+        'description_en': '4-3W-3 shape with a back 4. Good width',
+        'description_it': 'Modulo 4-3W-3 con difesa a 4. Buona ampiezza di gioco',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'ML', 'MC', 'MR', 'AML', 'ST', 'AMR'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['Good width', 'Strike partnership'],
+        'strengths_it': ['Buona ampiezza di gioco', "Coppia d'attacco"],
+        'weaknesses_en': [],
+        'weaknesses_it': [],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-5-1-1 V', '4-5-1 V-Style', '5-4-1 F (Flat)'],
+        'defense_count': 4
+    },
+    {
+        'id': '42dmc3w1',
+        'name': '4-2(DMC)-3W-1',
+        'description_en': '4-2(DMC)-3W-1 shape with a back 4. Double screen in front of defence',
+        'description_it': 'Modulo 4-2(DMC)-3W-1 con difesa a 4. Doppio schermo davanti alla difesa',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'DMC', 'DMC', 'ML', 'MC', 'MR', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['Double screen in front of defence', 'Possession control in midfield', 'Good width'],
+        'strengths_it': [
+            'Doppio schermo davanti alla difesa',
+            'Controllo del possesso in mediana',
+            'Buona ampiezza di gioco'
+        ],
+        'weaknesses_en': ['Isolated striker without support'],
+        'weaknesses_it': ['Punta isolata senza rifinitore'],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-1-3-2W-1', '4-1-4-1', '3-2-2-2-1 B (Butterfly)'],
+        'defense_count': 4
+    },
+    {
+        'id': '423w1',
+        'name': '4-2-3W-1',
+        'description_en': '4-2-3W-1 shape with a back 4. Good width',
+        'description_it': 'Modulo 4-2-3W-1 con difesa a 4. Buona ampiezza di gioco',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'MC', 'MC', 'AML', 'AMC', 'AMR', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Good width'],
+        'strengths_it': ['Buona ampiezza di gioco'],
+        'weaknesses_en': [],
+        'weaknesses_it': [],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-1-3W-1-2', '4-4-2 C (Classic)', '5-3W-2'],
+        'defense_count': 4
+    },
+    {
+        'id': '43n12',
+        'name': '4-3N-1-2',
+        'description_en': '4-3N-1-2 shape with a back 4. Strike partnership',
+        'description_it': "Modulo 4-3N-1-2 con difesa a 4. Coppia d'attacco",
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'MC', 'MC', 'MC', 'AMC', 'ST', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['Strike partnership'],
+        'strengths_it': ["Coppia d'attacco"],
+        'weaknesses_en': ['Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': ['Manca ampiezza: vulnerabile alle ali avversarie'],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-1-3N-2W-1', '4-5-1 V-Style', '3-2-2-2-1 B (Butterfly)'],
+        'defense_count': 4
+    },
+    {
+        'id': '43n2n1',
+        'name': '4-3N-2N-1',
+        'description_en': '4-3N-2N-1 shape with a back 4. ',
+        'description_it': 'Modulo 4-3N-2N-1 con difesa a 4. ',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'MC', 'MC', 'MC', 'AMC', 'AMC', 'ST'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': [],
+        'strengths_it': [],
+        'weaknesses_en': ['Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': ['Manca ampiezza: vulnerabile alle ali avversarie'],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-1-4-1-1', '4-1-3W-1-1', '3W-2DMC-3W-1-1 ML (Maple Leaf)'],
+        'defense_count': 4
+    },
+    {
+        'id': '412amc3',
+        'name': '4-1-2(AMC)-3',
+        'description_en': '4-1-2(AMC)-3 shape with a back 4. DMC shielding the defence',
+        'description_it': 'Modulo 4-1-2(AMC)-3 con difesa a 4. DMC a protezione della difesa',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'DMC', 'MC', 'MC', 'AML', 'ST', 'AMR'],
+        'category_en': 'Balanced',
+        'category_it': 'Bilanciata',
+        'strengths_en': ['DMC shielding the defence', 'Strike partnership'],
+        'strengths_it': ['DMC a protezione della difesa', "Coppia d'attacco"],
+        'weaknesses_en': ['Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': ['Manca ampiezza: vulnerabile alle ali avversarie'],
+        'tactic_type_en': 'Balanced',
+        'tactic_type_it': 'Bilanciata',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-1-4-2', '4-1-3W-2', '5-1-3W-1'],
+        'defense_count': 4
+    },
+    {
+        'id': '513n1',
+        'name': '5-1-3N-1',
+        'description_en': '5-1-3N-1 shape with a back 5. Very solid back five',
+        'description_it': 'Modulo 5-1-3N-1 con difesa a 5. Difesa solidissima a 5',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DC', 'DR', 'DMC', 'MC', 'MC', 'MC', 'ST'],
+        'category_en': 'Defensive',
+        'category_it': 'Difensiva',
+        'strengths_en': ['Very solid back five', 'DMC shielding the defence'],
+        'strengths_it': ['Difesa solidissima a 5', 'DMC a protezione della difesa'],
+        'weaknesses_en': [
+            'Limited attacking push unless wingers advance',
+            'Lacks width: vulnerable to opposition wingers',
+            'Isolated striker without support'
+        ],
+        'weaknesses_it': [
+            'Poca spinta offensiva se le ali non salgono',
+            'Manca ampiezza: vulnerabile alle ali avversarie',
+            'Punta isolata senza rifinitore'
+        ],
+        'tactic_type_en': 'Defensive',
+        'tactic_type_it': 'Difensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3N-5-2 V', '4-1-3-1-1', '3N-3W-3W-1'],
+        'defense_count': 5
+    },
+    {
+        'id': '3n3w3w1',
+        'name': '3N-3W-3W-1',
+        'description_en': '3N-3W-3W-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-3W-3W-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MR', 'AML', 'AMC', 'AMR', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Good width'],
+        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco'],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑',
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': ['5-1-3N-1'],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '3n2w3w2',
+        'name': '3N-2W-3W-2',
+        'description_en': '3N-2W-3W-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-2W-3W-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MR', 'AML', 'AMC', 'AMR', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Good width', 'Strike partnership'],
+        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑',
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': ['5-1-3W-1'],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '512n11',
+        'name': '5-1-2N-1-1',
+        'description_en': '5-1-2N-1-1 shape with a back 5. Very solid back five',
+        'description_it': 'Modulo 5-1-2N-1-1 con difesa a 5. Difesa solidissima a 5',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DC', 'DR', 'DMC', 'MC', 'MC', 'AMC', 'ST'],
+        'category_en': 'Defensive',
+        'category_it': 'Difensiva',
+        'strengths_en': ['Very solid back five', 'DMC shielding the defence'],
+        'strengths_it': ['Difesa solidissima a 5', 'DMC a protezione della difesa'],
+        'weaknesses_en': [
+            'Limited attacking push unless wingers advance',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
+        'weaknesses_it': [
+            'Poca spinta offensiva se le ali non salgono',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Defensive',
+        'tactic_type_it': 'Difensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3N-5-2 V', '4-1-3-2', '3N-2W-2N-2W-1'],
+        'defense_count': 5
+    },
+    {
+        'id': '512w11',
+        'name': '5-1-2W-1-1',
+        'description_en': '5-1-2W-1-1 shape with a back 5. Very solid back five',
+        'description_it': 'Modulo 5-1-2W-1-1 con difesa a 5. Difesa solidissima a 5',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DC', 'DR', 'DMC', 'ML', 'MR', 'AMC', 'ST'],
+        'category_en': 'Defensive',
+        'category_it': 'Difensiva',
+        'strengths_en': ['Very solid back five', 'DMC shielding the defence', 'Good width'],
+        'strengths_it': ['Difesa solidissima a 5', 'DMC a protezione della difesa', 'Buona ampiezza di gioco'],
+        'weaknesses_en': ['Limited attacking push unless wingers advance'],
+        'weaknesses_it': ['Poca spinta offensiva se le ali non salgono'],
+        'tactic_type_en': 'Defensive',
+        'tactic_type_it': 'Difensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'ML': '↑',
+                    'MR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3N-5-2 V', '4-1-3-2', '3N-2W-2N-2W-1'],
+        'defense_count': 5
+    },
+    {
+        'id': '522w1',
+        'name': '5-2-2W-1',
+        'description_en': '5-2-2W-1 shape with a back 5. Very solid back five',
+        'description_it': 'Modulo 5-2-2W-1 con difesa a 5. Difesa solidissima a 5',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DC', 'DR', 'MC', 'MC', 'AML', 'AMR', 'ST'],
+        'category_en': 'Defensive',
+        'category_it': 'Difensiva',
+        'strengths_en': ['Very solid back five', 'Good width'],
+        'strengths_it': ['Difesa solidissima a 5', 'Buona ampiezza di gioco'],
+        'weaknesses_en': ['Limited attacking push unless wingers advance', 'Isolated striker without support'],
+        'weaknesses_it': ['Poca spinta offensiva se le ali non salgono', 'Punta isolata senza rifinitore'],
+        'tactic_type_en': 'Defensive',
+        'tactic_type_it': 'Difensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3W-1-2-3W-1', '4-4-2 C (Classic)', '3N-2W-3N-2'],
+        'defense_count': 5
+    },
+    {
+        'id': '522n1',
+        'name': '5-2-2N-1',
+        'description_en': '5-2-2N-1 shape with a back 5. Very solid back five',
+        'description_it': 'Modulo 5-2-2N-1 con difesa a 5. Difesa solidissima a 5',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DC', 'DR', 'MC', 'MC', 'AMC', 'AMC', 'ST'],
+        'category_en': 'Defensive',
+        'category_it': 'Difensiva',
+        'strengths_en': ['Very solid back five'],
+        'strengths_it': ['Difesa solidissima a 5'],
+        'weaknesses_en': [
+            'Limited attacking push unless wingers advance',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
+        'weaknesses_it': [
+            'Poca spinta offensiva se le ali non salgono',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Defensive',
+        'tactic_type_it': 'Difensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Mixed',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3N-1-3W-1-2', '4-2-2-1-1', '3W-2-3W-2'],
+        'defense_count': 5
+    },
+    {
+        'id': '3w23w2',
+        'name': '3W-2-3W-2',
+        'description_en': '3W-2-3W-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-2-3W-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'MC', 'MC', 'AML', 'AMC', 'AMR', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Good width', 'Strike partnership'],
+        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': ['5-2-2N-1'],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '3n2w212',
+        'name': '3N-2W-2-1-2',
+        'description_en': '3N-2W-2-1-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3N-2W-2-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MR', 'MC', 'MC', 'AMC', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Double screen in front of defence', 'Strike partnership'],
+        'strengths_it': [
+            'Superiorita numerica a centrocampo',
+            'Doppio schermo davanti alla difesa',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'MC': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-4-1-2', '4-4-2 C (Classic)', '3W-3N-3W-1'],
+        'defense_count': 3
+    },
+    {
+        'id': '3w3n3w1',
+        'name': '3W-3N-3W-1',
+        'description_en': '3W-3N-3W-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-3N-3W-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'MC', 'MC', 'MC', 'AML', 'AMC', 'AMR', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Good width'],
+        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco'],
+        'weaknesses_en': ['Defensive flanks exposed to counters'],
+        'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑',
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': ['3N-2W-2-1-2'],
+        'vulnerable_to': [],
+        'defense_count': 3
+    },
+    {
+        'id': '31321tikitaka',
+        'name': '3-1-3-2-1 (Tiki-taka)',
+        'description_en': '3-1-3-2-1 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3-1-3-2-1 con difesa a 3. Massimizza il possesso palla e la creativita tra le linee.',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'MC', 'MC', 'MC', 'AML', 'AMR', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence'],
+        'strengths_it': [
+            'Massimizza il possesso palla e la creativita tra le linee.',
+            'Superiorita numerica a centrocampo',
+            'DMC a protezione della difesa'
+        ],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers',
+            'Isolated striker without support'
+        ],
+        'weaknesses_it': [
+            'Richiede Team Balance 9.2-10 per non crollare fisicamente.',
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'AML': '↑',
+                    'AMR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['4-3N-3', '4-3N-2W-1', '4-5-1 V-Style'],
+        'defense_count': 3
+    },
+    {
+        'id': '3w2n3n2',
+        'name': '3W-2N-3N-2',
+        'description_en': '3W-2N-3N-2 shape with a back 3. Midfield numerical advantage',
+        'description_it': 'Modulo 3W-2N-3N-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'MC', 'MC', 'AMC', 'AMC', 'AMC', 'ST', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Midfield numerical advantage', 'Strike partnership'],
+        'strengths_it': ['Superiorita numerica a centrocampo', "Coppia d'attacco"],
+        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_it': [
+            'Fasce difensive esposte ai contropiedi',
+            'Manca ampiezza: vulnerabile alle ali avversarie'
+        ],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Mixed',
+            'counter_attack': False,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact, hit them on the break with long balls.',
+                'tip_it': 'Resta compatto e riparti con palle lunghe.',
+                'arrows': {
+                    'DL': '↓',
+                    'DR': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Play your natural game and exploit your shape's strengths.",
+                'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high and keep the ball in their half.',
+                'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-5-2 F (Flat)', '4-4-2 C (Classic)', '5-4-1 F (Flat)'],
+        'defense_count': 3
+    },
+    {
+        'id': '423namc1',
+        'name': '4-2-3N(AMC)-1',
+        'description_en': '4-2-3-1 variant with three narrow AMCs behind the striker.',
+        'description_it': 'Variante del 4-2-3-1 con tre AMC stretti alle spalle della punta.',
+        'positions': ['GK', 'DL', 'DC', 'DC', 'DR', 'MC', 'MC', 'AMC', 'AMC', 'AMC', 'ST'],
+        'category_en': 'Attacking',
+        'category_it': 'Offensiva',
+        'strengths_en': ['Overloads the central attacking zone', 'Creative play between the lines'],
+        'strengths_it': ['Sovraccarica la trequarti centrale', 'Gioco creativo tra le linee'],
+        'weaknesses_en': ['No natural width', 'Flanks exposed to opposition wingers'],
+        'weaknesses_it': ['Nessuna ampiezza naturale', 'Fasce esposte alle ali avversarie'],
+        'tactic_type_en': 'Attacking',
+        'tactic_type_it': 'Offensiva',
+        'recommended_tactics': {
+            'mentality': 'Normal',
+            'focus_passing': 'Through the Middle',
+            'passing_style': 'Short',
+            'counter_attack': True,
+            'pressing': 'Medium',
+            'tackling': 'Normal',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Defensive',
+                'mentality_it': 'Difensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Long',
+                'passing_style_it': 'Lunghi',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Easy',
+                'tackling_it': 'Facile',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Stay compact centrally and break with quick vertical balls.',
+                'tip_it': 'Compatto al centro, riparti con verticalizzazioni rapide.',
+                'arrows': {
+                    'DC': '↓'
+                }
+            },
+            'equal': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Feed the three AMCs between the lines.',
+                'tip_it': 'Cerca i tre AMC tra le linee.',
+                'arrows': {
+                    'MC': '↑'
+                }
+            },
+            'weak': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Through the Middle',
+                'focus_passing_it': 'Al Centro',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': True,
+                'tip_en': 'Press high, overload the box with the AMC trio.',
+                'tip_it': "Pressa alto, riempi l'area col trio di AMC.",
+                'arrows': {
+                    'DL': '↑',
+                    'DR': '↑'
+                }
+            }
+        },
+        'effective_against': [],
+        'vulnerable_to': ['3-1-4-2', '4-4-2 C (Classic)', '3W-2N-3W-2'],
+        'defense_count': 4
     }
 ]
 
@@ -8120,7 +15058,7 @@ COUNTER_ENGINE = [
         }
     },
     {
-        'av': '4-3W-2N-1 XT (Xmas Tree)',
+        'av': '4-3-2-1 XT (Xmas Tree)',
         'cat': 'neu',
         'forte': {
             'mod': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)',
@@ -9274,68 +16212,6 @@ COUNTER_ENGINE = [
                 'ST': '—'
             },
             'w': 'Spingi alto col 4-5-1 V e domina con pressing aggressivo'
-        }
-    },
-    {
-        'av': '4-3-2-1 XT (Xmas Tree)',
-        'cat': 'neu',
-        'forte': {
-            'mod': '4-5-1 F (Flat)',
-            'alt': '4-1-4-1',
-            'men': 'Molto Difensiva',
-            'pass': 'Fasce',
-            'stile': 'Misti',
-            'ctrl': 'SI',
-            'press': 'Basso',
-            'cont': 'Facile',
-            'marc': 'Zona',
-            'fuo': 'SI',
-            'fr': {
-                'DL': '↓',
-                'DC': '↓',
-                'DR': '↓',
-                'MC': '↓',
-                'ST': '—'
-            },
-            'w': 'Resta compatto col 4-5-1 F e riparti in contropiede'
-        },
-        'pari': {
-            'mod': '4-5-1 F (Flat)',
-            'alt': '4-1-4-1',
-            'men': 'Difensiva',
-            'pass': 'Fasce',
-            'stile': 'Misti',
-            'ctrl': 'SI',
-            'press': 'Basso',
-            'cont': 'Normale',
-            'marc': 'Zona',
-            'fuo': 'NO',
-            'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
-                'ST': '—'
-            },
-            'w': 'Sfrutta le fasce per aggirare il centrocampo denso'
-        },
-        'debole': {
-            'mod': '4-5-1 F (Flat)',
-            'alt': '4-1-4-1',
-            'men': 'Normale',
-            'pass': 'Fasce',
-            'stile': 'Misti',
-            'ctrl': 'NO',
-            'press': 'Alto',
-            'cont': 'Duro',
-            'marc': 'Uomo',
-            'fuo': 'NO',
-            'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
-                'ST': '—'
-            },
-            'w': 'Spingi alto col 4-5-1 F e domina con pressing aggressivo'
         }
     },
     {
@@ -11354,74 +18230,6 @@ COUNTER_ENGINE = [
         }
     },
     {
-        'av': '3W-2-3W-1-1 ML',
-        'cat': 'att',
-        'forte': {
-            'mod': '3-2-2-2-1 B (Butterfly)',
-            'alt': '4-5-1 V-Style',
-            'men': 'Difensiva',
-            'pass': 'Fasce',
-            'stile': 'Lunghi',
-            'ctrl': 'SI',
-            'press': 'Basso',
-            'cont': 'Easy',
-            'marc': 'Uomo',
-            'fuo': 'NO',
-            'fr': {
-                'DC': '↓',
-                'MC': '—',
-                'AML': '↑',
-                'AMR': '↑',
-                'ST': '—'
-            },
-            'w': 'Difesa a 3: proteggi le fasce dove spingono, riparti largo dove non coprono. Il DMC marca il loro AMC'
-        },
-        'pari': {
-            'mod': '4-5-1 V-Style',
-            'alt': '3N-1-4-2',
-            'men': 'Normale',
-            'pass': 'Fasce',
-            'stile': 'Misti',
-            'ctrl': 'SI',
-            'press': 'Basso',
-            'cont': 'Norm',
-            'marc': 'Zona',
-            'fuo': 'NO',
-            'fr': {
-                'DL': '—',
-                'DC': '↓',
-                'DR': '—',
-                'ML': '—',
-                'MC': '—',
-                'MR': '—',
-                'AMC': '—',
-                'ST': '—'
-            },
-            'w': '3 dietro = ampiezza scoperta: ML/MR o ali al 1v1 contro i braccetti. DMC freccia blu sul loro AMC'
-        },
-        'debole': {
-            'mod': '3N-1-4-2',
-            'alt': '4-5-1 V-Style',
-            'men': 'Offensiva',
-            'pass': 'Fasce',
-            'stile': 'Misti',
-            'ctrl': 'NO',
-            'press': 'Alto',
-            'cont': 'Norm',
-            'marc': 'Zona',
-            'fuo': 'SI',
-            'fr': {
-                'DC': '↓',
-                'DMC': '—',
-                'ML': '↑',
-                'MC': '—',
-                'MR': '↑',
-                'ST': '—'
-            },
-            'w': "Solo 3 dietro: attacca l'ampiezza con due ali larghe, cross e inserimenti"
-        }
-    },
-    {
         'av': '3W-2N-2W-1-2',
         'cat': 'att',
         'forte': {
@@ -11831,7 +18639,7 @@ COUNTER_ENGINE = [
         'av': '3W-1-3W-1-2',
         'cat': 'att',
         'forte': {
-            'mod': '3-2N-3-1-1 ET',
+            'mod': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)',
             'alt': '4-4-2 C (Classic)',
             'men': 'Difensiva',
             'pass': 'Fasce',
@@ -12582,7 +19390,7 @@ COUNTER_ENGINE = [
         'av': '4-3W-1-2',
         'cat': 'neu',
         'forte': {
-            'mod': '3-2-3-1-1',
+            'mod': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)',
             'alt': '4-1-4-1',
             'men': 'Difensiva',
             'pass': 'Fasce',
@@ -12649,7 +19457,7 @@ COUNTER_ENGINE = [
         'av': '4-3N-2N-1',
         'cat': 'neu',
         'forte': {
-            'mod': '3W-2N-3W-1-1 ML',
+            'mod': '3W-2DMC-3W-1-1 ML (Maple Leaf)',
             'alt': '4-1-3W-1-1',
             'men': 'Difensiva',
             'pass': 'Fasce',
@@ -12714,78 +19522,6 @@ COUNTER_ENGINE = [
                 'ST': '—'
             },
             'w': 'Centro intasato ma fasce vuote: dominio sulle corsie, cross e secondo palo'
-        }
-    },
-    {
-        'av': '4-1(DMC)-2(MC)-3',
-        'cat': 'neu',
-        'forte': {
-            'mod': '5-1-3N-1',
-            'alt': '4-1-4-1',
-            'men': 'Difensiva',
-            'pass': 'Fasce',
-            'stile': 'Lunghi',
-            'ctrl': 'SI',
-            'press': 'Basso',
-            'cont': 'Easy',
-            'marc': 'Zona',
-            'fuo': 'NO',
-            'fr': {
-                'DL': '↓',
-                'DC': '↓',
-                'DR': '↓',
-                'DMC': '↓',
-                'AML': '↑',
-                'AMC': '↑',
-                'AMR': '↑',
-                'ST': '—'
-            },
-            'w': "Avversario piu' forte: blocco ordinato, zona, e contropiede sulle fasce"
-        },
-        'pari': {
-            'mod': '4-1-4-1',
-            'alt': '3-1-4-1-1',
-            'men': 'Normale',
-            'pass': 'Fasce',
-            'stile': 'Misti',
-            'ctrl': 'SI',
-            'press': 'Basso',
-            'cont': 'Norm',
-            'marc': 'Zona',
-            'fuo': 'NO',
-            'fr': {
-                'DL': '—',
-                'DC': '↓',
-                'DR': '—',
-                'DMC': '↓',
-                'ML': '—',
-                'MC': '—',
-                'MR': '—',
-                'ST': '—'
-            },
-            'w': "Equilibrio: vinci i duelli a centrocampo e sfrutta l'ampiezza"
-        },
-        'debole': {
-            'mod': '3-1-4-1-1',
-            'alt': '4-1-4-1',
-            'men': 'Offensiva',
-            'pass': 'Fasce',
-            'stile': 'Misti',
-            'ctrl': 'NO',
-            'press': 'Alto',
-            'cont': 'Norm',
-            'marc': 'Zona',
-            'fuo': 'SI',
-            'fr': {
-                'DC': '↓',
-                'DMC': '—',
-                'ML': '↑',
-                'MC': '—',
-                'MR': '↑',
-                'AMC': '↑',
-                'ST': '—'
-            },
-            'w': 'Sei superiore: pressing alto, possesso e ampiezza per allargare le maglie'
         }
     },
     {
@@ -13436,16 +20172,16 @@ COUNTER_QUICK = [
     {
         'av': '3N-5-2 F',
         'cat': 'att',
-        'off': '3-1-3N-2W-1',
+        'off': '3-1-4-2',
         'neu': '4-3N-2W-1',
-        'dif': '3-2-2-2-1 B (Butterfly)'
+        'dif': '4-2-3-1'
     },
     {
         'av': '3W-5-2 F',
         'cat': 'att',
-        'off': '3-1-3N-2N-1',
+        'off': '3-1-3N-2W-1',
         'neu': '4-5-1 V-Style',
-        'dif': '3-2-2-2-1 B (Butterfly)'
+        'dif': '4-5-1 V-Style'
     },
     {
         'av': '3N-5-1-1',
@@ -13466,13 +20202,13 @@ COUNTER_QUICK = [
         'cat': 'att',
         'off': '3-5-2 V (V-Style)',
         'neu': '4-2-2-2 H (Hexagon)',
-        'dif': '3N-2W-3N-2'
+        'dif': '4-5-1 V-Style'
     },
     {
         'av': '3N-4-3',
         'cat': 'att',
         'off': '3-5-2 F (Flat)',
-        'neu': '4-3N-2W-1',
+        'neu': '4-4-2 C (Classic)',
         'dif': '5-4-1 F (Flat)'
     },
     {
@@ -13480,21 +20216,21 @@ COUNTER_QUICK = [
         'cat': 'att',
         'off': '3-4-1-2',
         'neu': '4-1-2-1-2 ND (Narrow Diamond)',
-        'dif': '3N-2W-2N-1-2'
+        'dif': '4-1-2-1-2 ND (Narrow Diamond)'
     },
     {
         'av': '3W-1-4-1-1',
         'cat': 'att',
         'off': '3-5-2 V (V-Style)',
         'neu': '4-5-1 V-Style',
-        'dif': '3-2-2-2-1 B (Butterfly)'
+        'dif': '3-5-2 V (V-Style)'
     },
     {
         'av': '3N-1-4-2',
         'cat': 'att',
         'off': '3-5-1-1 V',
         'neu': '4-5-1 V-Style',
-        'dif': '3-2-2-2-1 B (Butterfly)'
+        'dif': '4-5-1 V-Style'
     },
     {
         'av': '3N-5-2 V',
@@ -13539,7 +20275,7 @@ COUNTER_QUICK = [
         'dif': '3-2-2-2-1 B (Butterfly)'
     },
     {
-        'av': '3W-2-3W-1-1 ML',
+        'av': '3W-2DMC-3W-1-1 ML (Maple Leaf)',
         'cat': 'att',
         'off': '3N-1-4-2',
         'neu': '4-5-1 V-Style',
@@ -13569,9 +20305,9 @@ COUNTER_QUICK = [
     {
         'av': '3N-1-2-1-3',
         'cat': 'att',
-        'off': '3-1-3N-1-2',
-        'neu': '4-1-3N-2',
-        'dif': '3W-3N-3W-1'
+        'off': '4-3-3',
+        'neu': '3-1-3N-1-2',
+        'dif': '5-4-1 F (Flat)'
     },
     {
         'av': '3W-1-5-1',
@@ -13599,28 +20335,28 @@ COUNTER_QUICK = [
         'cat': 'att',
         'off': '3N-5-2 F',
         'neu': '4-4-2 C (Classic)',
-        'dif': '3-2N-3-1-1 ET'
+        'dif': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'
     },
     {
         'av': '3N-1-3W-1-2 D (Dandelion)',
         'cat': 'att',
         'off': '3-5-1-1 V',
-        'neu': '4-5-1 V-Style',
-        'dif': '3N-3W-2N-1-1'
+        'neu': '4-4-2 C (Classic)',
+        'dif': '4-5-1 V-Style'
     },
     {
         'av': '3N-1-4-1-1',
         'cat': 'att',
-        'off': '3-1-3-1-2',
+        'off': '3-1-4-1-1',
         'neu': '4-1-2-1-2 ND (Narrow Diamond)',
-        'dif': '5-3-2 F'
+        'dif': '4-5-1 V-Style'
     },
     {
         'av': '3W-1-3N-1-2',
         'cat': 'att',
-        'off': '3-5-2 V (V-Style)',
-        'neu': '4-5-1 V-Style',
-        'dif': '3-2-2-2-1 B (Butterfly)'
+        'off': '3-4-3',
+        'neu': '3-5-2 V (V-Style)',
+        'dif': '4-1-4-1'
     },
     {
         'av': '3N-4-1-2',
@@ -13640,21 +20376,21 @@ COUNTER_QUICK = [
         'av': '4-5-1 F (Flat)',
         'cat': 'neu',
         'off': '3-5-2 F (Flat)',
-        'neu': '4-1-4-1',
-        'dif': '3N-2W-3N-1-1'
+        'neu': '3-5-2 V (V-Style)',
+        'dif': '4-1-4-1'
     },
     {
         'av': '4-5-1 V-Style',
         'cat': 'neu',
-        'off': '3-3-1-3',
+        'off': '3-4-3',
         'neu': '4-3N-3',
-        'dif': '3N-2W-3N-2'
+        'dif': '4-1-4-1'
     },
     {
         'av': '4-4-2 C (Classic)',
         'cat': 'neu',
-        'off': '3N-4-1-2',
-        'neu': '4-3W-1-2',
+        'off': '4-1-2-1-2 ND (Narrow Diamond)',
+        'neu': '4-1-2-1-2 ND (Narrow Diamond)',
         'dif': '3-2-2-2-1 B (Butterfly)'
     },
     {
@@ -13668,22 +20404,22 @@ COUNTER_QUICK = [
         'av': '4-1-2-1-2 ND (Narrow Diamond)',
         'cat': 'neu',
         'off': '3N-5-2 V',
-        'neu': '4-5-1 V-Style',
-        'dif': '3N-3W-2-1-1'
+        'neu': '3N-5-2 V',
+        'dif': '4-5-1 V-Style'
     },
     {
         'av': '4-1-2-1-2 WD (Wide Diamond)',
         'cat': 'neu',
-        'off': '3-5-2 F (Flat)',
+        'off': '3-4-3',
         'neu': '4-3W-1-2',
-        'dif': '3N-2W-3N-1-1'
+        'dif': '4-1-4-1'
     },
     {
-        'av': '4-1-2-2(AMC)-1',
+        'av': '4-1-2-2-1',
         'cat': 'neu',
-        'off': '3W-2N-1-3W-1',
-        'neu': '4-2(DMC)-2-2 H',
-        'dif': '3W-2N-3W-1-1'
+        'off': '3-4-3',
+        'neu': '4-2-2-2 H (Hexagon)',
+        'dif': '4-1-4-1'
     },
     {
         'av': '4-1-1-2W-2',
@@ -13695,16 +20431,16 @@ COUNTER_QUICK = [
     {
         'av': '4-1-1-2N-2',
         'cat': 'neu',
-        'off': '3W-2N-2-2W-1',
-        'neu': '4-5-1 V-Style',
-        'dif': '4-3W-2(MC)-1'
+        'off': '3-4-3',
+        'neu': '3W-2N-1-3W-1',
+        'dif': '4-1-4-1'
     },
     {
         'av': '4-2N-1-2N-1',
         'cat': 'neu',
-        'off': '3N-1-4-1-1',
-        'neu': '4-1-3-2',
-        'dif': '3W-2N-3N-1-1'
+        'off': '3-4-3',
+        'neu': '3N-1-4-1-1',
+        'dif': '4-1-4-1'
     },
     {
         'av': '4-2N-1-2W-1',
@@ -13723,30 +20459,30 @@ COUNTER_QUICK = [
     {
         'av': '4-3N-3',
         'cat': 'neu',
-        'off': '3-4-1-2',
-        'neu': '4-1-4-1',
-        'dif': '5-3N-2'
+        'off': '3-4-3',
+        'neu': '3-4-1-2',
+        'dif': '4-1-4-1'
     },
     {
         'av': '4-1-3N-2',
         'cat': 'neu',
-        'off': '3-1-3N-2W-1',
-        'neu': '4-3N-2W-1',
-        'dif': '3-2-2-2-1 B (Butterfly)'
+        'off': '3-4-3',
+        'neu': '3-1-3N-2W-1',
+        'dif': '4-1-4-1'
     },
     {
         'av': '4-1-3N-1-1',
         'cat': 'neu',
-        'off': '3N-5-2 V',
-        'neu': '4-5-1 V-Style',
-        'dif': '3N-3W-2-1-1'
+        'off': '3-1-4-2',
+        'neu': '3-1-4-1-1',
+        'dif': '4-5-1 V-Style'
     },
     {
         'av': '4-1-3W-2',
         'cat': 'neu',
         'off': '3-1-4-2',
         'neu': '4-5-1 V-Style',
-        'dif': '3-2-2-2-1 B (Butterfly)'
+        'dif': '5-4-1 F (Flat)'
     },
     {
         'av': '4-1-3W-1-1',
@@ -13788,42 +20524,35 @@ COUNTER_QUICK = [
         'cat': 'neu',
         'off': '3N-1-4-2',
         'neu': '4-1-4-1',
-        'dif': '3-2-3-1-1'
+        'dif': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'
     },
     {
-        'av': '4-3W-2N-1 XT (Xmas Tree)',
+        'av': '4-3-2-1 XT (Xmas Tree)',
         'cat': 'neu',
         'off': '3-1-5-1 AMC',
-        'neu': '4-5-1 F (Flat)',
-        'dif': '3W-2N-3N-1-1 ET'
+        'neu': '3-1-5-1 AMC',
+        'dif': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'
     },
     {
         'av': '4-3N-2N-1',
         'cat': 'neu',
         'off': '3-1-4-1-1',
         'neu': '4-1-3W-1-1',
-        'dif': '3W-2N-3W-1-1 ML'
+        'dif': '3W-2DMC-3W-1-1 ML (Maple Leaf)'
     },
     {
         'av': '4-3N-2W-1',
         'cat': 'neu',
         'off': '3-1-4-1-1',
-        'neu': '4-4-1-1',
-        'dif': '3N-2W-3N-1-1'
+        'neu': '3-1-4-1-1',
+        'dif': '4-4-1-1'
     },
     {
         'av': '4-2-2-2 H (Hexagon)',
         'cat': 'neu',
         'off': '3N-4-3',
-        'neu': '4-5-1 V-Style',
-        'dif': '3-2-2-2-1 B (Butterfly)'
-    },
-    {
-        'av': '4-1(DMC)-2(MC)-3',
-        'cat': 'neu',
-        'off': '3-1-4-1-1',
-        'neu': '4-1-4-1',
-        'dif': '5-1-3N-1'
+        'neu': '3N-4-1-2',
+        'dif': '4-5-1 V-Style'
     },
     {
         'av': '4-1-2(AMC)-3',
@@ -13835,44 +20564,44 @@ COUNTER_QUICK = [
     {
         'av': '4-2-1-3',
         'cat': 'neu',
-        'off': '3-1-3N-2W-1',
-        'neu': '4-5-1 V-Style',
-        'dif': '3-2-2-2-1 B (Butterfly)'
+        'off': '4-3-3',
+        'neu': '3-1-3N-2W-1',
+        'dif': '5-4-1 F (Flat)'
     },
     {
         'av': '4-1-4-1',
         'cat': 'neu',
         'off': '3-5-2 V (V-Style)',
-        'neu': '4-5-1 V-Style',
-        'dif': '3-2-2-2-1 B (Butterfly)'
+        'neu': '4-2-2-2 H (Hexagon)',
+        'dif': '4-5-1 V-Style'
     },
     {
         'av': '4-4-1-1',
         'cat': 'neu',
         'off': '3-5-2 F (Flat)',
-        'neu': '4-5-1 V-Style',
-        'dif': '3W-2N-3W-1-1'
+        'neu': '3-5-2 F (Flat)',
+        'dif': '4-5-1 V-Style'
     },
     {
         'av': '5-4-1 F (Flat)',
         'cat': 'dif',
         'off': '3-5-2 F (Flat)',
         'neu': '4-4-2 C (Classic)',
-        'dif': '3W-3N-3W-1'
+        'dif': '4-3N-2W-1'
     },
     {
         'av': '5-3N-2',
         'cat': 'dif',
         'off': '3N-4-1-2',
-        'neu': '4-4-2 C (Classic)',
-        'dif': '3N-3W-2-2'
+        'neu': '3N-4-1-2',
+        'dif': '4-4-2 C (Classic)'
     },
     {
         'av': '5-3W-2',
         'cat': 'dif',
-        'off': '3N-4-1-2',
-        'neu': '4-4-2 C (Classic)',
-        'dif': '3N-2W-3W-1-1'
+        'off': '3N-5-2 V',
+        'neu': '3N-4-1-2',
+        'dif': '4-4-2 C (Classic)'
     },
     {
         'av': '5-1-3N-1',
@@ -13912,9 +20641,9 @@ COUNTER_QUICK = [
     {
         'av': '5-2W-2N-1',
         'cat': 'dif',
-        'off': '3W-2-2W-1-2',
-        'neu': '4-2-2-2 H (Hexagon)',
-        'dif': '3W-2-3W-1-1 ML'
+        'off': '4-3-3',
+        'neu': '3N-1-3W-1-2',
+        'dif': '4-4-2 C (Classic)'
     },
     {
         'av': '5-2-2N-1',
@@ -13927,15 +20656,15 @@ COUNTER_QUICK = [
         'av': '5-2-1-2 X (X-Style)',
         'cat': 'dif',
         'off': '3N-1-4-2',
-        'neu': '4-1-2N-1-2',
-        'dif': '3N-3W-2-1-1'
+        'neu': '3N-1-4-2',
+        'dif': '4-1-2N-1-2'
     },
     {
         'av': '5-1-1-1-2',
         'cat': 'dif',
-        'off': '3N-1-3W-1-2',
-        'neu': '4-3N-3 F',
-        'dif': '3N-2W-2N-1-2'
+        'off': '4-3-3',
+        'neu': '3N-5-2 V',
+        'dif': '4-4-2 C (Classic)'
     },
     {
         'av': '3N-2W-3N-2',
@@ -13954,9 +20683,9 @@ COUNTER_QUICK = [
     {
         'av': '3-2-2-2-1 B (Butterfly)',
         'cat': 'dif',
-        'off': '3-4-1-2',
-        'neu': '4-2-2-2',
-        'dif': '3N-3W-2N-1-1'
+        'off': '4-3-3',
+        'neu': '3-4-1-2',
+        'dif': '5-4-1 F (Flat)'
     }
 ]
 
@@ -14176,13 +20905,6 @@ MATCHUP_MATRIX = [
         'counter_defensive': '4-1-2N-1-2'
     },
     {
-        'opponent': '4-3W-2N-1 XT (Xmas Tree)',
-        'category': 'neu',
-        'counter_offensive': '3-1-5-1 AMC',
-        'counter_neutral': '3-1-5-1 AMC',
-        'counter_defensive': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'
-    },
-    {
         'opponent': '3-1-5-1 AMC',
         'category': 'neu',
         'counter_offensive': '4-3-3',
@@ -14304,9 +21026,9 @@ MATCHUP_MATRIX = [
     {
         'opponent': '4-3-2-1 XT (Xmas Tree)',
         'category': 'neu',
-        'counter_offensive': '3-4-3',
-        'counter_neutral': '4-5-1 F (Flat)',
-        'counter_defensive': '4-1-4-1'
+        'counter_offensive': '3-1-5-1 AMC',
+        'counter_neutral': '3-1-5-1 AMC',
+        'counter_defensive': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'
     },
     {
         'opponent': '5-3-2',
@@ -14526,13 +21248,6 @@ MATCHUP_MATRIX = [
         'counter_defensive': '3-2-2-2-1 B (Butterfly)'
     },
     {
-        'opponent': '3W-2-3W-1-1 ML',
-        'category': 'att',
-        'counter_offensive': '3N-1-4-2',
-        'counter_neutral': '4-5-1 V-Style',
-        'counter_defensive': '3-2-2-2-1 B (Butterfly)'
-    },
-    {
         'opponent': '3W-2N-2W-1-2',
         'category': 'att',
         'counter_offensive': '3W-5-2 V',
@@ -14579,7 +21294,7 @@ MATCHUP_MATRIX = [
         'category': 'att',
         'counter_offensive': '3N-5-2 F',
         'counter_neutral': '4-4-2 C (Classic)',
-        'counter_defensive': '3-2N-3-1-1 ET'
+        'counter_defensive': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'
     },
     {
         'opponent': '3N-4-1-2',
@@ -14656,21 +21371,14 @@ MATCHUP_MATRIX = [
         'category': 'neu',
         'counter_offensive': '3N-1-4-2',
         'counter_neutral': '4-1-4-1',
-        'counter_defensive': '3-2-3-1-1'
+        'counter_defensive': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'
     },
     {
         'opponent': '4-3N-2N-1',
         'category': 'neu',
         'counter_offensive': '3-1-4-1-1',
         'counter_neutral': '4-1-3W-1-1',
-        'counter_defensive': '3W-2N-3W-1-1 ML'
-    },
-    {
-        'opponent': '4-1(DMC)-2(MC)-3',
-        'category': 'neu',
-        'counter_offensive': '3-1-4-1-1',
-        'counter_neutral': '4-1-4-1',
-        'counter_defensive': '5-1-3N-1'
+        'counter_defensive': '3W-2DMC-3W-1-1 ML (Maple Leaf)'
     },
     {
         'opponent': '4-1-2(AMC)-3',
