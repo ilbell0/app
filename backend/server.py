@@ -343,7 +343,8 @@ FORMATIONS = [
             '5-2W-2N-1',
             '5-3-2',
             '5-3N-2',
-            '5-4-1 F (Flat)'
+            '5-4-1 F (Flat)',
+            '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'
         ]
     },
     {
@@ -1484,7 +1485,7 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['3-4-1-2', '4-3-3'],
-        'effective_against': ['3N-5-2 V', '4-4-2 C (Classic)']
+        'effective_against': ['3N-5-2 V', '4-4-2 C (Classic)', '3W-2DMC-3W-1-1 ML (Maple Leaf)']
     },
     {
         'id': '3n2221b',
@@ -2164,7 +2165,7 @@ FORMATIONS = [
             }
         },
         'defense_count': 3,
-        'vulnerable_to': ['3-4-3', '4-1-4-1', '4-5-1 V-Style'],
+        'vulnerable_to': ['3N-1-4-2', '4-5-1 V-Style', '3-2-2-2-1 B (Butterfly)'],
         'effective_against': []
     },
     {
@@ -2262,7 +2263,7 @@ FORMATIONS = [
             }
         },
         'defense_count': 3,
-        'vulnerable_to': ['3-4-3', '4-1-4-1', '4-5-1 V-Style'],
+        'vulnerable_to': ['4-4-2 C (Classic)', '4-5-1 V-Style', '5-4-1 F (Flat)'],
         'effective_against': []
     },
     {
@@ -6673,8 +6674,8 @@ COUNTER_ENGINE = [
         'av': '3W-2DMC-3W-1-1 ML (Maple Leaf)',
         'cat': 'att',
         'forte': {
-            'mod': '4-5-1 V-Style',
-            'alt': '4-2-3-1',
+            'mod': '3-2-2-2-1 B (Butterfly)',
+            'alt': '4-1-4-1',
             'men': 'Difensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -6684,20 +6685,18 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'DL': '↓',
                 'DC': '↓',
-                'DR': '↓',
                 'DMC': '↓',
                 'MC': '—',
                 'AML': '↑',
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': "Maple Leaf: 3 ali Larghe + AMC. DMC tuo marca l'AMC avversario"
+            'w': "Counter difensivo verificato: il Butterfly chiude il centro con 2 DMC e regge l'urto dei loro esterni alti."
         },
         'pari': {
-            'mod': '3N-1-4-2',
-            'alt': '4-5-1 V-Style',
+            'mod': '4-5-1 V-Style',
+            'alt': '4-4-2 C (Classic)',
             'men': 'Normale',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -6707,18 +6706,16 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'DC': '↓',
-                'DMC': '↓',
                 'ML': '↑',
-                'MC': '—',
                 'MR': '↑',
+                'DMC': '↓',
                 'ST': '—'
             },
-            'w': '4 MC vs loro 2 DMC: vantaggio numerico. Sfrutta le fasce'
+            'w': '4-5-1 V equilibrato: il DMC scherma, le ali ripartono nelle fasce lasciate scoperte dai loro 3W.'
         },
         'debole': {
-            'mod': '3W-5-2 V',
-            'alt': '3N-1-4-2',
+            'mod': '3N-1-4-2',
+            'alt': '3-4-3',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -6729,14 +6726,13 @@ COUNTER_ENGINE = [
             'fuo': 'SI',
             'fr': {
                 'DC': '↓',
+                'DMC': '↓',
                 'ML': '↑',
                 'MC': '↑',
                 'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Specchia le loro ali Wide con AML/AMR. Dominio assoluto'
+            'w': 'Attacca col 3N-1-4-2: aggira la mediana folta sulle fasce, 2 punte contro i 3 DC larghi.'
         }
     },
     {
@@ -8808,7 +8804,7 @@ COUNTER_ENGINE = [
         },
         'pari': {
             'mod': '4-5-1 V-Style',
-            'alt': '4-4-2 C (Classic)',
+            'alt': '4-2-3-1',
             'men': 'Normale',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -8823,11 +8819,11 @@ COUNTER_ENGINE = [
                 'DMC': '↓',
                 'ST': '—'
             },
-            'w': "Mantieni l'ampiezza per non schiantarti contro il muro centrale"
+            'w': "4-5-1 V-Style: counter principale da fonte, controlla la mediana e mantieni l'ampiezza."
         },
         'debole': {
-            'mod': '4-5-1 V-Style',
-            'alt': '4-4-2 C (Classic)',
+            'mod': '4-4-2 C (Classic)',
+            'alt': '4-3-3',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -8837,12 +8833,13 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
+                'DL': '↑',
+                'DR': '↑',
                 'ML': '↑',
                 'MR': '↑',
-                'DMC': '↓',
                 'ST': '—'
             },
-            'w': 'Spingi alto col 4-5-1 V-Style e domina con pressing aggressivo'
+            'w': 'Mantieni ampiezza col 4-4-2 Classic: allarga il muro centrale, cross per le due punte.'
         }
     },
     {
@@ -14034,9 +14031,9 @@ MATCHUP_MATRIX = [
     {
         'opponent': '3W-2DMC-3W-1-1 ML (Maple Leaf)',
         'category': 'att',
-        'counter_offensive': '3-4-3',
+        'counter_offensive': '3N-1-4-2',
         'counter_neutral': '4-5-1 V-Style',
-        'counter_defensive': '4-1-4-1'
+        'counter_defensive': '3-2-2-2-1 B (Butterfly)'
     },
     {
         'opponent': '4-4-2 C (Classic)',
@@ -14251,7 +14248,7 @@ MATCHUP_MATRIX = [
     {
         'opponent': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)',
         'category': 'att',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '4-4-2 C (Classic)',
         'counter_neutral': '4-5-1 V-Style',
         'counter_defensive': '5-4-1 F (Flat)'
     },

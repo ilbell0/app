@@ -65,9 +65,9 @@
   {
     "opponent": "3W-2DMC-3W-1-1 ML (Maple Leaf)",
     "category": "att",
-    "counter_offensive": "3-4-3",
+    "counter_offensive": "3N-1-4-2",
     "counter_neutral": "4-5-1 V-Style",
-    "counter_defensive": "4-1-4-1"
+    "counter_defensive": "3-2-2-2-1 B (Butterfly)"
   },
   {
     "opponent": "4-4-2 C (Classic)",
@@ -282,7 +282,7 @@
   {
     "opponent": "3W-2DMC-3N-1-1 Tower (Eiffel Tower)",
     "category": "att",
-    "counter_offensive": "4-3-3",
+    "counter_offensive": "4-4-2 C (Classic)",
     "counter_neutral": "4-5-1 V-Style",
     "counter_defensive": "5-4-1 F (Flat)"
   },

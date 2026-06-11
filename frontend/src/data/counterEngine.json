@@ -627,8 +627,8 @@
     "av": "3W-2DMC-3W-1-1 ML (Maple Leaf)",
     "cat": "att",
     "forte": {
-      "mod": "4-5-1 V-Style",
-      "alt": "4-2-3-1",
+      "mod": "3-2-2-2-1 B (Butterfly)",
+      "alt": "4-1-4-1",
       "men": "Difensiva",
       "pass": "Fasce",
       "stile": "Misti",
@@ -638,20 +638,18 @@
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
-        "DL": "↓",
         "DC": "↓",
-        "DR": "↓",
         "DMC": "↓",
         "MC": "—",
         "AML": "↑",
         "AMR": "↑",
         "ST": "—"
       },
-      "w": "Maple Leaf: 3 ali Larghe + AMC. DMC tuo marca l'AMC avversario"
+      "w": "Counter difensivo verificato: il Butterfly chiude il centro con 2 DMC e regge l'urto dei loro esterni alti."
     },
     "pari": {
-      "mod": "3N-1-4-2",
-      "alt": "4-5-1 V-Style",
+      "mod": "4-5-1 V-Style",
+      "alt": "4-4-2 C (Classic)",
       "men": "Normale",
       "pass": "Fasce",
       "stile": "Misti",
@@ -661,18 +659,16 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
-        "DC": "↓",
-        "DMC": "↓",
         "ML": "↑",
-        "MC": "—",
         "MR": "↑",
+        "DMC": "↓",
         "ST": "—"
       },
-      "w": "4 MC vs loro 2 DMC: vantaggio numerico. Sfrutta le fasce"
+      "w": "4-5-1 V equilibrato: il DMC scherma, le ali ripartono nelle fasce lasciate scoperte dai loro 3W."
     },
     "debole": {
-      "mod": "3W-5-2 V",
-      "alt": "3N-1-4-2",
+      "mod": "3N-1-4-2",
+      "alt": "3-4-3",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Misti",
@@ -683,14 +679,13 @@
       "fuo": "SI",
       "fr": {
         "DC": "↓",
+        "DMC": "↓",
         "ML": "↑",
         "MC": "↑",
         "MR": "↑",
-        "AML": "↑",
-        "AMR": "↑",
         "ST": "—"
       },
-      "w": "Specchia le loro ali Wide con AML/AMR. Dominio assoluto"
+      "w": "Attacca col 3N-1-4-2: aggira la mediana folta sulle fasce, 2 punte contro i 3 DC larghi."
     }
   },
   {
@@ -2762,7 +2757,7 @@
     },
     "pari": {
       "mod": "4-5-1 V-Style",
-      "alt": "4-4-2 C (Classic)",
+      "alt": "4-2-3-1",
       "men": "Normale",
       "pass": "Fasce",
       "stile": "Misti",
@@ -2777,11 +2772,11 @@
         "DMC": "↓",
         "ST": "—"
       },
-      "w": "Mantieni l'ampiezza per non schiantarti contro il muro centrale"
+      "w": "4-5-1 V-Style: counter principale da fonte, controlla la mediana e mantieni l'ampiezza."
     },
     "debole": {
-      "mod": "4-5-1 V-Style",
-      "alt": "4-4-2 C (Classic)",
+      "mod": "4-4-2 C (Classic)",
+      "alt": "4-3-3",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Misti",
@@ -2791,12 +2786,13 @@
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
+        "DL": "↑",
+        "DR": "↑",
         "ML": "↑",
         "MR": "↑",
-        "DMC": "↓",
         "ST": "—"
       },
-      "w": "Spingi alto col 4-5-1 V-Style e domina con pressing aggressivo"
+      "w": "Mantieni ampiezza col 4-4-2 Classic: allarga il muro centrale, cross per le due punte."
     }
   },
   {
