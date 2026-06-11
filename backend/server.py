@@ -521,8 +521,8 @@ FORMATIONS = [
                 'tip_it': "Usa l'ampiezza con AML/AMR. L'AMC collega centrocampo e attaccanti.",
                 'arrows': {
                     'ST': '↑',
-                    'ML': '↑',
-                    'MR': '↑',
+                    'AML': '↑',
+                    'AMR': '↑',
                     'AMC': '↑'
                 }
             },
@@ -953,7 +953,7 @@ FORMATIONS = [
                 'tip_en': 'Control center with compact shape. AML/AMR drift in to support strikers.',
                 'tip_it': 'Controlla il centro con la forma compatta. AML/AMR accentrarsi per supportare gli attaccanti.',
                 'arrows': {
-                    'DMC': '↓',
+                    'MC': '↓',
                     'AML': '↑',
                     'AMR': '↑'
                 }
@@ -1456,8 +1456,8 @@ FORMATIONS = [
                 'tip_en': 'Control center with double AMC. Wait for counter opportunities.',
                 'tip_it': 'Controlla il centro con doppio AMC. Aspetta occasioni di contropiede.',
                 'arrows': {
-                    'ML': '↑',
-                    'MR': '↑',
+                    'AML': '↑',
+                    'AMR': '↑',
                     'ST': '↑'
                 }
             },
@@ -2134,8 +2134,8 @@ FORMATIONS = [
                 'tip_en': 'AMC orchestrates. Use wide AML/AMR to create for ST.',
                 'tip_it': "L'AMC orchestra. Usa AML/AMR larghi per creare per ST.",
                 'arrows': {
-                    'AML': '↑',
-                    'AMR': '↑',
+                    'ML': '↑',
+                    'MR': '↑',
                     'DMC': '↓'
                 }
             },
@@ -2157,8 +2157,8 @@ FORMATIONS = [
                 'tip_en': 'Full creative attack! AMC + wide players overwhelm!',
                 'tip_it': 'Attacco creativo totale! AMC + esterni travolgono!',
                 'arrows': {
-                    'AML': '↑',
-                    'AMR': '↑',
+                    'ML': '↑',
+                    'MR': '↑',
                     'ST': '↑',
                     'DMC': '↓'
                 }
@@ -2232,8 +2232,7 @@ FORMATIONS = [
                 'tip_en': 'AMC is the tower. Feed him and let him create for ST.',
                 'tip_it': "L'AMC è la torre. Servilo e lascialo creare per ST.",
                 'arrows': {
-                    'AML': '↑',
-                    'AMR': '↑',
+                    'AMC': '↑',
                     'DMC': '↓'
                 }
             },
@@ -2255,8 +2254,7 @@ FORMATIONS = [
                 'tip_en': 'Push AMC high. Let the tower dominate in their half!',
                 'tip_it': "Spingi l'AMC in alto. Lascia la torre dominare nella loro metà!",
                 'arrows': {
-                    'AML': '↑',
-                    'AMR': '↑',
+                    'AMC': '↑',
                     'ST': '↑',
                     'DMC': '↓'
                 }
@@ -2732,8 +2730,8 @@ FORMATIONS = [
                 'tip_en': 'Use width to stretch parked buses. AML/AMR + 2 STs overload.',
                 'tip_it': "Usa l'ampiezza per allargare il catenaccio. AML/AMR + 2 ST sovraccaricano.",
                 'arrows': {
-                    'AML': '↑',
-                    'AMR': '↑'
+                    'ML': '↑',
+                    'MR': '↑'
                 }
             },
             'weak': {
@@ -2754,8 +2752,8 @@ FORMATIONS = [
                 'tip_en': 'All-out attack! 7 players forward will destroy them!',
                 'tip_it': 'Attacco totale! 7 giocatori in avanti li distruggeranno!',
                 'arrows': {
-                    'AML': '↑',
-                    'AMR': '↑',
+                    'ML': '↑',
+                    'MR': '↑',
                     'ST': '↑'
                 }
             }
@@ -3578,8 +3576,7 @@ FORMATIONS = [
                 'arrows': {
                     'DL': '↑',
                     'DR': '↑',
-                    'ML': '↑',
-                    'MR': '↑',
+                    'MC': '↑',
                     'ST': '↑',
                     'DMC': '↓'
                 }
@@ -4726,9 +4723,7 @@ FORMATIONS = [
                 'tip_it': 'Modulo ultra-creativo per dominare il possesso in tutta la metà campo avversaria.',
                 'arrows': {
                     'AML': '↑',
-                    'AMR': '↑',
-                    'ML': '↑',
-                    'MR': '↑'
+                    'AMR': '↑'
                 }
             },
             'weak': {
@@ -4749,8 +4744,6 @@ FORMATIONS = [
                 'tip_en': 'Against weaker sides, push high with the 3-3-1-3, raise pressing and man-marking to dominate.',
                 'tip_it': 'Contro avversari più deboli, spingi alto col 3-3-1-3, alza pressing e marcatura a uomo per dominare.',
                 'arrows': {
-                    'ML': '↑',
-                    'MR': '↑',
                     'AML': '↑',
                     'AMR': '↑',
                     'ST': '↑'
@@ -9960,8 +9953,8 @@ FORMATIONS = [
                 'tip_en': "Play your natural game and exploit your shape's strengths.",
                 'tip_it': 'Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.',
                 'arrows': {
-                    'AML': '↑',
-                    'AMR': '↑'
+                    'ML': '↑',
+                    'MR': '↑'
                 }
             },
             'weak': {
@@ -9982,8 +9975,8 @@ FORMATIONS = [
                 'tip_en': 'Press high and keep the ball in their half.',
                 'tip_it': "Pressa alto e tieni palla nella loro meta' campo.",
                 'arrows': {
-                    'AML': '↑',
-                    'AMR': '↑'
+                    'ML': '↑',
+                    'MR': '↑'
                 }
             }
         },
@@ -13254,9 +13247,9 @@ COUNTER_ENGINE = [
             'fuo': 'SI',
             'fr': {
                 'DC': '↓',
-                'ML': '↑',
+                'AML': '↑',
                 'MC': '↑',
-                'MR': '↑',
+                'AMR': '↑',
                 'ST': '—'
             },
             'w': '5 MF vs 3 MC: dominio totale al centro poi sfonda in ampiezza'
@@ -13396,8 +13389,6 @@ COUNTER_ENGINE = [
                 'ML': '↑',
                 'MC': '↑',
                 'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '—'
             },
             'w': '5 MF vs loro 4+1: schiacciante. Aggredisci le fasce aperte'
@@ -13533,8 +13524,6 @@ COUNTER_ENGINE = [
                 'ML': '↑',
                 'MC': '↑',
                 'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '—'
             },
             'w': '5 MF domina il loro 3+3+1: nessuno può seguire tutti i tuoi giocatori'
@@ -13559,8 +13548,6 @@ COUNTER_ENGINE = [
                 'ML': '↑',
                 'MC': '—',
                 'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '—'
             },
             'w': 'Butterfly 3DC: 2 DMC + 2 MC + 2 AML/AMR. Molto bilanciato. Sii paziente'
@@ -13644,8 +13631,8 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'AML': '↑',
+                'AMR': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -13847,9 +13834,9 @@ COUNTER_ENGINE = [
             'fuo': 'NO',
             'fr': {
                 'DC': '↓',
-                'ML': '—',
+                'AML': '—',
                 'MC': '—',
-                'MR': '—',
+                'AMR': '—',
                 'ST': '—'
             },
             'w': '3 DC + 5 MF: match-up paritario. Usa passaggi lunghi per sfuggire al pressing'
@@ -13917,8 +13904,6 @@ COUNTER_ENGINE = [
                 'ML': '—',
                 'MC': '—',
                 'MR': '—',
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '—'
             },
             'w': 'Flanchi liberi del ND: attacca con AML e AMR che non hanno avversari'
@@ -13939,8 +13924,6 @@ COUNTER_ENGINE = [
                 'ML': '↑',
                 'MC': '↑',
                 'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '—'
             },
             'w': 'Aggredisci: il ND non ha terzini né ali. Completamente aperto sui lati'
@@ -13985,9 +13968,8 @@ COUNTER_ENGINE = [
             'fuo': 'NO',
             'fr': {
                 'DC': '↓',
-                'DMC': '↓',
+                'MC': '↓',
                 'ML': '—',
-                'MC': '—',
                 'MR': '—',
                 'ST': '—'
             },
@@ -14145,9 +14127,9 @@ COUNTER_ENGINE = [
             'fuo': 'SI',
             'fr': {
                 'DC': '↓',
-                'ML': '↑',
+                'AML': '↑',
                 'MC': '↑',
-                'MR': '↑',
+                'AMR': '↑',
                 'ST': '—'
             },
             'w': 'Premi alto con 5 MF: sovrasta il loro centrocampo'
@@ -14449,11 +14431,9 @@ COUNTER_ENGINE = [
             'fuo': 'NO',
             'fr': {
                 'DC': '↓',
-                'ML': '—',
+                'AML': '—',
                 'MC': '—',
-                'MR': '—',
-                'AML': '↑',
-                'AMR': '↑',
+                'AMR': '—',
                 'ST': '—'
             },
             'w': '4 MC avversari affollano il centro. 5 MF bilancia il numero'
@@ -14494,9 +14474,9 @@ COUNTER_ENGINE = [
             'fuo': 'SI',
             'fr': {
                 'DC': '↓',
-                'ML': '↑',
+                'AML': '↑',
                 'MC': '↑',
-                'MR': '↑',
+                'AMR': '↑',
                 'ST': '—'
             },
             'w': 'Domina il centrocampo poi apri sulle fasce. Nessun terzino = spazio enorme'
@@ -14774,10 +14754,8 @@ COUNTER_ENGINE = [
             'fuo': 'SI',
             'fr': {
                 'DC': '↓',
-                'ML': '↑',
-                'MC': '↑',
-                'MR': '↑',
                 'AML': '↑',
+                'MC': '↑',
                 'AMR': '↑',
                 'ST': '—'
             },
@@ -14890,9 +14868,8 @@ COUNTER_ENGINE = [
             'fuo': 'SI',
             'fr': {
                 'DC': '↓',
-                'DMC': '—',
+                'MC': '—',
                 'ML': '↑',
-                'MC': '↑',
                 'MR': '↑',
                 'ST': '—'
             },
@@ -14911,9 +14888,8 @@ COUNTER_ENGINE = [
             'fuo': 'SI',
             'fr': {
                 'DC': '↓',
-                'DMC': '↑',
-                'ML': '↑',
                 'MC': '↑',
+                'ML': '↑',
                 'MR': '↑',
                 'ST': '↑'
             },
@@ -14958,9 +14934,8 @@ COUNTER_ENGINE = [
             'fuo': 'SI',
             'fr': {
                 'DC': '↓',
-                'DMC': '↑',
-                'ML': '↑',
                 'MC': '↑',
+                'ML': '↑',
                 'MR': '↑',
                 'ST': '—'
             },
@@ -14982,8 +14957,6 @@ COUNTER_ENGINE = [
                 'ML': '↑',
                 'MC': '↑',
                 'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '—'
             },
             'w': '5 MC dominano il centro. Le loro 3W restano alte e inutili sotto pressing'
@@ -15075,8 +15048,7 @@ COUNTER_ENGINE = [
                 'DC': '↓',
                 'DMC': '↓',
                 'MC': '—',
-                'AML': '↑',
-                'AMR': '↑',
+                'AMC': '↑',
                 'ST': '—'
             },
             'w': 'Tower + 2 DMC schermo vs Xmas Tree. AML/AMR pronti al contropiede'
@@ -15098,8 +15070,6 @@ COUNTER_ENGINE = [
                 'ML': '—',
                 'MC': '—',
                 'MR': '—',
-                'AML': '—',
-                'AMR': '—',
                 'ST': '—'
             },
             'w': '5 MF affolla il centro vs loro 3N+2AMC. Nessun DMC avversario'
@@ -15121,8 +15091,6 @@ COUNTER_ENGINE = [
                 'ML': '↑',
                 'MC': '↑',
                 'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '—'
             },
             'w': 'XT senza DMC: il centro è completamente aperto. Sfonda con tutto'
@@ -15146,11 +15114,8 @@ COUNTER_ENGINE = [
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
-                'DC2': '↓',
                 'DR': '↓',
                 'MC': '↓',
-                'MC2': '—',
-                'MC3': '—',
                 'ST': '↑',
                 'AML': '↑',
                 'AMR': '↑'
@@ -15171,10 +15136,8 @@ COUNTER_ENGINE = [
             'fr': {
                 'DL': '—',
                 'DC': '↓',
-                'DC2': '↓',
                 'DR': '—',
-                'DMC': '↓',
-                'DMC2': '—',
+                'MC': '↓',
                 'AML': '↑',
                 'AMC': '↑',
                 'AMR': '↑',
@@ -15196,11 +15159,8 @@ COUNTER_ENGINE = [
             'fr': {
                 'DL': '↑',
                 'DC': '—',
-                'DC2': '—',
                 'DR': '↑',
                 'MC': '↑',
-                'MC2': '↑',
-                'MC3': '↑',
                 'ST': '↑',
                 'AML': '↑',
                 'AMR': '↑'
@@ -15272,8 +15232,6 @@ COUNTER_ENGINE = [
                 'DR': '↑',
                 'DMC': '—',
                 'MC': '↑',
-                'AML': '—',
-                'AMR': '—',
                 'ST': '↑'
             },
             'w': 'Sovraccarica il centro col DMC ancora. Pressing alto sui loro DC'
@@ -15298,8 +15256,8 @@ COUNTER_ENGINE = [
                 'DC': '↓',
                 'DR': '↓',
                 'MC': '↓',
-                'ML': '—',
-                'MR': '—',
+                'AML': '—',
+                'AMR': '—',
                 'ST': '—'
             },
             'w': 'Difesa a 3 wide e 4 dietro. Stop alle loro AML/AMR coi tuoi terzini bassi'
@@ -15363,7 +15321,7 @@ COUNTER_ENGINE = [
                 'DL': '↓',
                 'DC': '↓',
                 'DR': '↓',
-                'DMC': '—',
+                'MC': '—',
                 'ML': '↓',
                 'MR': '↓',
                 'ST': '—'
@@ -15487,7 +15445,7 @@ COUNTER_ENGINE = [
                 'DL': '↓',
                 'DC': '↓',
                 'DR': '↓',
-                'DMC': '↓',
+                'MC': '↓',
                 'ML': '↓',
                 'MR': '↓',
                 'ST': '—'
@@ -15566,9 +15524,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': "Attacca le fasce per sfruttare l'assenza di terzini nella difesa a tre"
@@ -15585,9 +15543,9 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Spingi alto col 4-3N-2W-1 e domina con pressing aggressivo'
@@ -15628,9 +15586,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': "L'Hexagon bilancia la copertura del campo contro la spinta laterale"
@@ -15647,9 +15605,9 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Spingi alto col 4-2-2-2 H e domina con pressing aggressivo'
@@ -15690,9 +15648,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Proteggi i fianchi e colpisci in contropiede negli spazi esterni'
@@ -15709,9 +15667,9 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Spingi alto col 4-2-2-2 H e domina con pressing aggressivo'
@@ -15752,8 +15710,8 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'AML': '↑',
+                'AMR': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -15877,8 +15835,7 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'MC': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -15896,8 +15853,7 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'MC': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -15939,8 +15895,7 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'MC': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -15958,8 +15913,7 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'MC': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -16001,9 +15955,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': "Sfrutta le fasce se l'avversario concentra trequartisti al centro"
@@ -16020,9 +15974,9 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Spingi alto col 4-2-2-2 H e domina con pressing aggressivo'
@@ -16063,8 +16017,7 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'MC': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -16082,8 +16035,7 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'MC': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -16127,7 +16079,7 @@ COUNTER_ENGINE = [
             'fr': {
                 'ML': '↑',
                 'MR': '↑',
-                'DMC': '↓',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': "Parcheggia l'autobus contro i 4 attaccanti e colpisci in contropiede"
@@ -16146,7 +16098,7 @@ COUNTER_ENGINE = [
             'fr': {
                 'ML': '↑',
                 'MR': '↑',
-                'DMC': '↓',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Spingi alto col 5-4-1 F e domina con pressing aggressivo'
@@ -16187,8 +16139,8 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'AML': '↑',
+                'AMR': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -16206,8 +16158,8 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'AML': '↑',
+                'AMR': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -16251,7 +16203,7 @@ COUNTER_ENGINE = [
             'fr': {
                 'ML': '↑',
                 'MR': '↑',
-                'DMC': '↓',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Alza baricentro e ritmo per scardinare il muro a 5'
@@ -16270,7 +16222,7 @@ COUNTER_ENGINE = [
             'fr': {
                 'ML': '↑',
                 'MR': '↑',
-                'DMC': '↓',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Spingi alto col 4-4-2 C e domina con pressing aggressivo'
@@ -16437,7 +16389,7 @@ COUNTER_ENGINE = [
             'fr': {
                 'ML': '↑',
                 'MR': '↑',
-                'DMC': '↓',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Assetto propositivo per superare il doppio schermo davanti alla difesa'
@@ -16456,7 +16408,7 @@ COUNTER_ENGINE = [
             'fr': {
                 'ML': '↑',
                 'MR': '↑',
-                'DMC': '↓',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Spingi alto col 4-4-2 C e domina con pressing aggressivo'
@@ -16497,8 +16449,8 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'AML': '↑',
+                'AMR': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -16516,8 +16468,8 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'AML': '↑',
+                'AMR': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -16559,8 +16511,8 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'AML': '↑',
+                'AMR': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -16580,8 +16532,6 @@ COUNTER_ENGINE = [
             'fr': {
                 'DL': '↑',
                 'DR': '↑',
-                'ML': '↑',
-                'MR': '↑',
                 'AML': '↑',
                 'AMR': '↑',
                 'ST': '↑'
@@ -16624,8 +16574,7 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'MC': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -16645,10 +16594,8 @@ COUNTER_ENGINE = [
             'fr': {
                 'DL': '↑',
                 'DR': '↑',
-                'ML': '↑',
-                'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
+                'MC': '↑',
+                'AMC': '↑',
                 'ST': '↑'
             },
             'w': "Contro avversari piu' deboli, spingi alto col 4-1-3-1-1 con pressing e ritmo"
@@ -16689,9 +16636,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': '4-3-3 sfrutta gli spazi lasciati dai wing-back avanzati'
@@ -16710,8 +16657,6 @@ COUNTER_ENGINE = [
             'fr': {
                 'DL': '↑',
                 'DR': '↑',
-                'ML': '↑',
-                'MR': '↑',
                 'AML': '↑',
                 'AMR': '↑',
                 'ST': '↑'
@@ -16754,9 +16699,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Domina il centrocampo a 3 contro 2 e scardina con cross continui'
@@ -16775,8 +16720,6 @@ COUNTER_ENGINE = [
             'fr': {
                 'DL': '↑',
                 'DR': '↑',
-                'ML': '↑',
-                'MR': '↑',
                 'AML': '↑',
                 'AMR': '↑',
                 'ST': '↑'
@@ -16819,9 +16762,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Allarga sulle fasce dove non ci sono ali avversarie'
@@ -16840,8 +16783,6 @@ COUNTER_ENGINE = [
             'fr': {
                 'DL': '↑',
                 'DR': '↑',
-                'ML': '↑',
-                'MR': '↑',
                 'AML': '↑',
                 'AMR': '↑',
                 'ST': '↑'
@@ -16884,9 +16825,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': "L'AMC del 4-2-3-1 sfrutta lo spazio tra DMC e linea difensiva avversaria"
@@ -16905,8 +16846,6 @@ COUNTER_ENGINE = [
             'fr': {
                 'DL': '↑',
                 'DR': '↑',
-                'ML': '↑',
-                'MR': '↑',
                 'AML': '↑',
                 'AMR': '↑',
                 'ST': '↑'
@@ -16949,8 +16888,7 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'MC': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -16970,10 +16908,7 @@ COUNTER_ENGINE = [
             'fr': {
                 'DL': '↑',
                 'DR': '↑',
-                'ML': '↑',
-                'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
+                'MC': '↑',
                 'ST': '↑'
             },
             'w': "Contro avversari piu' deboli, spingi alto col 4-1-3N-2 con pressing e ritmo"
@@ -17014,9 +16949,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Allarga il gioco: il centro è folto ma le fasce sono scoperte'
@@ -17035,8 +16970,6 @@ COUNTER_ENGINE = [
             'fr': {
                 'DL': '↑',
                 'DR': '↑',
-                'ML': '↑',
-                'MR': '↑',
                 'AML': '↑',
                 'AMR': '↑',
                 'ST': '↑'
@@ -17081,7 +17014,7 @@ COUNTER_ENGINE = [
             'fr': {
                 'ML': '↑',
                 'MR': '↑',
-                'DMC': '↓',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Centro denso ma fasce vulnerabili: spinge sui terzini avversari'
@@ -17102,8 +17035,6 @@ COUNTER_ENGINE = [
                 'DR': '↑',
                 'ML': '↑',
                 'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '↑'
             },
             'w': "Contro avversari piu' deboli, spingi alto col 4-3W-1-2 con pressing e marcatura aggressiva"
@@ -17124,9 +17055,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
-                'DL': '↓',
+                'ML': '↓',
                 'DC': '↓',
-                'DR': '↓',
+                'MR': '↓',
                 'MC': '↓',
                 'ST': '—'
             },
@@ -17146,7 +17077,7 @@ COUNTER_ENGINE = [
             'fr': {
                 'ML': '↑',
                 'MR': '↑',
-                'DMC': '↓',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Aggressivita centrale per superare il doppio schermo difensivo'
@@ -17163,12 +17094,8 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'DL': '↑',
-                'DR': '↑',
                 'ML': '↑',
                 'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '↑'
             },
             'w': "Contro avversari piu' deboli, spingi alto col 3-4-1-2 con pressing e marcatura aggressiva"
@@ -17189,9 +17116,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
-                'DL': '↓',
+                'AML': '↓',
                 'DC': '↓',
-                'DR': '↓',
+                'AMR': '↓',
                 'MC': '↓',
                 'ST': '—'
             },
@@ -17209,8 +17136,8 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'AML': '↑',
+                'AMR': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -17228,10 +17155,6 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'DL': '↑',
-                'DR': '↑',
-                'ML': '↑',
-                'MR': '↑',
                 'AML': '↑',
                 'AMR': '↑',
                 'ST': '↑'
@@ -17254,9 +17177,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
-                'DL': '↓',
+                'ML': '↓',
                 'DC': '↓',
-                'DR': '↓',
+                'MR': '↓',
                 'MC': '↓',
                 'ST': '—'
             },
@@ -17276,7 +17199,7 @@ COUNTER_ENGINE = [
             'fr': {
                 'ML': '↑',
                 'MR': '↑',
-                'DMC': '↓',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': "Tridente stretto: doppio AMC sfonda l'area dietro le tre punte"
@@ -17293,12 +17216,8 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'DL': '↑',
-                'DR': '↑',
                 'ML': '↑',
                 'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '↑'
             },
             'w': "Contro avversari piu' deboli, spingi alto col 3-4-1-2 con pressing e marcatura aggressiva"
@@ -17319,9 +17238,7 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
-                'DL': '↓',
                 'DC': '↓',
-                'DR': '↓',
                 'MC': '↓',
                 'ST': '—'
             },
@@ -17339,8 +17256,7 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'MC': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -17358,12 +17274,8 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'DL': '↑',
-                'DR': '↑',
-                'ML': '↑',
-                'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
+                'MC': '↑',
+                'AMC': '↑',
                 'ST': '↑'
             },
             'w': "Contro avversari piu' deboli, spingi alto col 3-1-3N-1-2 con pressing e marcatura aggressiva"
@@ -17384,9 +17296,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
-                'DL': '↓',
+                'AML': '↓',
                 'DC': '↓',
-                'DR': '↓',
+                'AMR': '↓',
                 'MC': '↓',
                 'ST': '—'
             },
@@ -17404,8 +17316,8 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'AML': '↑',
+                'AMR': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -17423,10 +17335,6 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'DL': '↑',
-                'DR': '↑',
-                'ML': '↑',
-                'MR': '↑',
                 'AML': '↑',
                 'AMR': '↑',
                 'ST': '↑'
@@ -17469,8 +17377,8 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'AML': '↑',
+                'AMR': '↑',
                 'DMC': '↓',
                 'ST': '—'
             },
@@ -17490,8 +17398,6 @@ COUNTER_ENGINE = [
             'fr': {
                 'DL': '↑',
                 'DR': '↑',
-                'ML': '↑',
-                'MR': '↑',
                 'AML': '↑',
                 'AMR': '↑',
                 'ST': '↑'
@@ -17514,9 +17420,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
-                'DL': '↓',
+                'AML': '↓',
                 'DC': '↓',
-                'DR': '↓',
+                'AMR': '↓',
                 'MC': '↓',
                 'ST': '—'
             },
@@ -17534,9 +17440,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Asimmetrica: bilancia con il centrocampo a 5 e ali alte'
@@ -17553,10 +17459,6 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'DL': '↑',
-                'DR': '↑',
-                'ML': '↑',
-                'MR': '↑',
                 'AML': '↑',
                 'AMR': '↑',
                 'ST': '↑'
@@ -17579,9 +17481,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
-                'DL': '↓',
+                'ML': '↓',
                 'DC': '↓',
-                'DR': '↓',
+                'MR': '↓',
                 'MC': '↓',
                 'ST': '—'
             },
@@ -17618,12 +17520,8 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'DL': '↑',
-                'DR': '↑',
                 'ML': '↑',
                 'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '↑'
             },
             'w': "Contro avversari piu' deboli, spingi alto col 3N-1-4-1-1 con pressing e marcatura aggressiva"
@@ -17644,9 +17542,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
-                'DL': '↓',
+                'ML': '↓',
                 'DC': '↓',
-                'DR': '↓',
+                'MR': '↓',
                 'MC': '↓',
                 'ST': '—'
             },
@@ -17666,7 +17564,7 @@ COUNTER_ENGINE = [
             'fr': {
                 'ML': '↑',
                 'MR': '↑',
-                'DMC': '↓',
+                'MC': '↓',
                 'ST': '—'
             },
             'w': 'Piramide stretta: ali alte sfondano la difesa a 5 senza fasce coperte'
@@ -17683,12 +17581,8 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'DL': '↑',
-                'DR': '↑',
                 'ML': '↑',
                 'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '↑'
             },
             'w': "Contro avversari piu' deboli, spingi alto col 3N-5-2 V con pressing e marcatura aggressiva"
@@ -17709,9 +17603,9 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
-                'DL': '↓',
+                'ML': '↓',
                 'DC': '↓',
-                'DR': '↓',
+                'MR': '↓',
                 'MC': '↓',
                 'ST': '—'
             },
@@ -17748,12 +17642,8 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'DL': '↑',
-                'DR': '↑',
                 'ML': '↑',
                 'MR': '↑',
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '↑'
             },
             'w': "Contro avversari piu' deboli, spingi alto col 3N-1-3W-1-2 con pressing e marcatura aggressiva"
@@ -18267,10 +18157,9 @@ COUNTER_ENGINE = [
                 'DL': '—',
                 'DC': '↓',
                 'DR': '—',
-                'ML': '—',
+                'AML': '—',
                 'MC': '—',
-                'MR': '—',
-                'AMC': '—',
+                'AMR': '—',
                 'ST': '—'
             },
             'w': '3 dietro = ampiezza scoperta: ML/MR o ali al 1v1 contro i braccetti. DMC freccia blu sul loro AMC'
@@ -18314,9 +18203,7 @@ COUNTER_ENGINE = [
                 'DC': '↓',
                 'ML': '—',
                 'MR': '—',
-                'AML': '↑',
                 'AMC': '↑',
-                'AMR': '↑',
                 'ST': '—'
             },
             'w': 'Difesa a 3: proteggi le fasce dove spingono, riparti largo dove non coprono'
@@ -18538,10 +18425,9 @@ COUNTER_ENGINE = [
                 'DL': '—',
                 'DC': '↓',
                 'DR': '—',
-                'ML': '—',
+                'AML': '—',
                 'MC': '—',
-                'MR': '—',
-                'AMC': '—',
+                'AMR': '—',
                 'ST': '—'
             },
             'w': '3 dietro = ampiezza scoperta: ML/MR o ali al 1v1 contro i braccetti'
@@ -18559,9 +18445,9 @@ COUNTER_ENGINE = [
             'fuo': 'SI',
             'fr': {
                 'DC': '↓',
-                'ML': '↑',
+                'AML': '↑',
                 'MC': '—',
-                'MR': '↑',
+                'AMR': '↑',
                 'ST': '—'
             },
             'w': "Solo 3 dietro: attacca l'ampiezza con due ali larghe, cross e inserimenti"
@@ -18605,10 +18491,9 @@ COUNTER_ENGINE = [
                 'DL': '—',
                 'DC': '↓',
                 'DR': '—',
-                'ML': '—',
+                'AML': '—',
                 'MC': '—',
-                'MR': '—',
-                'AMC': '—',
+                'AMR': '—',
                 'ST': '—'
             },
             'w': '3 dietro = ampiezza scoperta: ML/MR o ali al 1v1 contro i braccetti'
@@ -19082,10 +18967,9 @@ COUNTER_ENGINE = [
                 'DL': '—',
                 'DC': '↓',
                 'DR': '—',
-                'ML': '—',
+                'AML': '—',
                 'MC': '—',
-                'MR': '—',
-                'AMC': '—',
+                'AMR': '—',
                 'ST': '—'
             },
             'w': 'Larghi loro: il tuo DMC e gli MC dominano il centro. Passaggi interni rapidi'
@@ -19356,10 +19240,9 @@ COUNTER_ENGINE = [
                 'DL': '—',
                 'DC': '↓',
                 'DR': '—',
-                'ML': '—',
+                'AML': '—',
                 'MC': '—',
-                'MR': '—',
-                'AMC': '—',
+                'AMR': '—',
                 'ST': '—'
             },
             'w': 'Sono stretti: le fasce sono tue. Focus Fasce e terzini che accompagnano. DMC freccia blu sul loro AMC'
@@ -19543,9 +19426,9 @@ COUNTER_ENGINE = [
                 'DC': '↓',
                 'DR': '↓',
                 'DMC': '↓',
-                'AML': '↑',
-                'AMC': '↑',
-                'AMR': '↑',
+                'ML': '↑',
+                'MC': '↑',
+                'MR': '↑',
                 'ST': '—'
             },
             'w': "Avversario piu' forte: blocco ordinato, zona, e contropiede sulle fasce"
@@ -19566,9 +19449,9 @@ COUNTER_ENGINE = [
                 'DC': '↓',
                 'DR': '—',
                 'DMC': '↓',
-                'AML': '—',
-                'AMC': '—',
-                'AMR': '—',
+                'ML': '—',
+                'MC': '—',
+                'MR': '—',
                 'ST': '—'
             },
             'w': "Equilibrio: vinci i duelli a centrocampo e sfrutta l'ampiezza"
@@ -19773,9 +19656,7 @@ COUNTER_ENGINE = [
                 'DC': '↓',
                 'DR': '—',
                 'DMC': '↓',
-                'AML': '—',
-                'AMC': '—',
-                'AMR': '—',
+                'MC': '—',
                 'ST': '—'
             },
             'w': 'Bus avversario: pazienza, ampiezza e cross. ML/MR larghi, niente fretta. DMC freccia blu sul loro AMC'
@@ -19842,9 +19723,7 @@ COUNTER_ENGINE = [
                 'DC': '↓',
                 'DR': '—',
                 'DMC': '↓',
-                'AML': '—',
-                'AMC': '—',
-                'AMR': '—',
+                'MC': '—',
                 'ST': '—'
             },
             'w': 'Bus avversario: pazienza, ampiezza e cross. ML/MR larghi, niente fretta. DMC freccia blu sul loro AMC'
@@ -19888,9 +19767,7 @@ COUNTER_ENGINE = [
                 'DC': '↓',
                 'ML': '—',
                 'MR': '—',
-                'AML': '↑',
                 'AMC': '↑',
-                'AMR': '↑',
                 'ST': '—'
             },
             'w': 'Linea a 5 e blocco basso: non sfondare al centro. Blocco anche tu e riparti sulle fasce'

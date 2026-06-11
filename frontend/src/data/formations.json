@@ -378,8 +378,8 @@
         "tip_it": "Usa l'ampiezza con AML/AMR. L'AMC collega centrocampo e attaccanti.",
         "arrows": {
           "ST": "↑",
-          "ML": "↑",
-          "MR": "↑",
+          "AML": "↑",
+          "AMR": "↑",
           "AMC": "↑"
         }
       },
@@ -936,7 +936,7 @@
         "tip_en": "Control center with compact shape. AML/AMR drift in to support strikers.",
         "tip_it": "Controlla il centro con la forma compatta. AML/AMR accentrarsi per supportare gli attaccanti.",
         "arrows": {
-          "DMC": "↓",
+          "MC": "↓",
           "AML": "↑",
           "AMR": "↑"
         }
@@ -1618,8 +1618,8 @@
         "tip_en": "Control center with double AMC. Wait for counter opportunities.",
         "tip_it": "Controlla il centro con doppio AMC. Aspetta occasioni di contropiede.",
         "arrows": {
-          "ML": "↑",
-          "MR": "↑",
+          "AML": "↑",
+          "AMR": "↑",
           "ST": "↑"
         }
       },
@@ -2480,8 +2480,8 @@
         "tip_en": "AMC orchestrates. Use wide AML/AMR to create for ST.",
         "tip_it": "L'AMC orchestra. Usa AML/AMR larghi per creare per ST.",
         "arrows": {
-          "AML": "↑",
-          "AMR": "↑",
+          "ML": "↑",
+          "MR": "↑",
           "DMC": "↓"
         }
       },
@@ -2503,8 +2503,8 @@
         "tip_en": "Full creative attack! AMC + wide players overwhelm!",
         "tip_it": "Attacco creativo totale! AMC + esterni travolgono!",
         "arrows": {
-          "AML": "↑",
-          "AMR": "↑",
+          "ML": "↑",
+          "MR": "↑",
           "ST": "↑",
           "DMC": "↓"
         }
@@ -2612,8 +2612,7 @@
         "tip_en": "AMC is the tower. Feed him and let him create for ST.",
         "tip_it": "L'AMC è la torre. Servilo e lascialo creare per ST.",
         "arrows": {
-          "AML": "↑",
-          "AMR": "↑",
+          "AMC": "↑",
           "DMC": "↓"
         }
       },
@@ -2635,8 +2634,7 @@
         "tip_en": "Push AMC high. Let the tower dominate in their half!",
         "tip_it": "Spingi l'AMC in alto. Lascia la torre dominare nella loro metà!",
         "arrows": {
-          "AML": "↑",
-          "AMR": "↑",
+          "AMC": "↑",
           "ST": "↑",
           "DMC": "↓"
         }
@@ -3271,8 +3269,8 @@
         "tip_en": "Use width to stretch parked buses. AML/AMR + 2 STs overload.",
         "tip_it": "Usa l'ampiezza per allargare il catenaccio. AML/AMR + 2 ST sovraccaricano.",
         "arrows": {
-          "AML": "↑",
-          "AMR": "↑"
+          "ML": "↑",
+          "MR": "↑"
         }
       },
       "weak": {
@@ -3293,8 +3291,8 @@
         "tip_en": "All-out attack! 7 players forward will destroy them!",
         "tip_it": "Attacco totale! 7 giocatori in avanti li distruggeranno!",
         "arrows": {
-          "AML": "↑",
-          "AMR": "↑",
+          "ML": "↑",
+          "MR": "↑",
           "ST": "↑"
         }
       }
@@ -4317,8 +4315,7 @@
         "arrows": {
           "DL": "↑",
           "DR": "↑",
-          "ML": "↑",
-          "MR": "↑",
+          "MC": "↑",
           "ST": "↑",
           "DMC": "↓"
         }
@@ -5830,9 +5827,7 @@
         "tip_it": "Modulo ultra-creativo per dominare il possesso in tutta la metà campo avversaria.",
         "arrows": {
           "AML": "↑",
-          "AMR": "↑",
-          "ML": "↑",
-          "MR": "↑"
+          "AMR": "↑"
         }
       },
       "weak": {
@@ -5853,8 +5848,6 @@
         "tip_en": "Against weaker sides, push high with the 3-3-1-3, raise pressing and man-marking to dominate.",
         "tip_it": "Contro avversari più deboli, spingi alto col 3-3-1-3, alza pressing e marcatura a uomo per dominare.",
         "arrows": {
-          "ML": "↑",
-          "MR": "↑",
           "AML": "↑",
           "AMR": "↑",
           "ST": "↑"
@@ -12403,8 +12396,8 @@
         "tip_en": "Play your natural game and exploit your shape's strengths.",
         "tip_it": "Gioca il tuo gioco naturale sfruttando i punti di forza del modulo.",
         "arrows": {
-          "AML": "↑",
-          "AMR": "↑"
+          "ML": "↑",
+          "MR": "↑"
         }
       },
       "weak": {
@@ -12425,8 +12418,8 @@
         "tip_en": "Press high and keep the ball in their half.",
         "tip_it": "Pressa alto e tieni palla nella loro meta' campo.",
         "arrows": {
-          "AML": "↑",
-          "AMR": "↑"
+          "ML": "↑",
+          "MR": "↑"
         }
       }
     },
