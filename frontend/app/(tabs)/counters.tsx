@@ -66,7 +66,7 @@ export default function CountersScreen() {
     } else {
       fadeAnim.setValue(0);
     }
-  }, [modalVisible]);
+  }, [fadeAnim, modalVisible]);
 
   const fetchData = async () => {
     setCounterEngine(COUNTER_ENGINE as CounterEngine[]);

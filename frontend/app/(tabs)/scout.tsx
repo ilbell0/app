@@ -56,7 +56,7 @@ export default function ScoutScreen() {
     } else {
       fadeAnim.setValue(0);
     }
-  }, [modalVisible]);
+  }, [fadeAnim, modalVisible]);
 
   const fetchTips = async () => {
     setTips(SCOUT_TIPS as ScoutTip[]);

@@ -12,7 +12,7 @@ export default function Index() {
     }, 500);
     
     return () => clearTimeout(timer);
-  }, []);
+  }, [router]);
 
   return (
     <View style={styles.container}>

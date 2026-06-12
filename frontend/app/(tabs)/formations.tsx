@@ -110,7 +110,7 @@ export default function FormationsScreen() {
     } else {
       fadeAnim.setValue(0);
     }
-  }, [modalVisible]);
+  }, [fadeAnim, modalVisible]);
 
   const fetchData = async () => {
     setFormations(FORMATIONS as Formation[]);

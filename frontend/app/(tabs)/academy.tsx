@@ -5,7 +5,6 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
-  ActivityIndicator,
   Modal,
   Animated,
 } from 'react-native';
@@ -79,7 +78,6 @@ export default function AcademyScreen() {
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
     roles: false, meta: false, skills: false, training: false, arrows: false, teams: false, stories: false, faq: false, quick: false, abbr: false, matrix: false, paths: false, mystyle: false, setpiece: false, battles: false,
   });
-  const [loading, setLoading] = useState(false);
   const [selected, setSelected] = useState<any | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
   const [fadeAnim] = useState(new Animated.Value(0));
@@ -99,7 +97,7 @@ export default function AcademyScreen() {
     } else {
       fadeAnim.setValue(0);
     }
-  }, [modalVisible]);
+  }, [fadeAnim, modalVisible]);
 
   const openItem = (item: any) => {
     setSelected(item);
@@ -196,53 +194,47 @@ export default function AcademyScreen() {
       </View>
 
       {/* List */}
-      {loading && items.length === 0 ? (
-        <View style={[styles.container, styles.centered]}>
-          <ActivityIndicator size="large" color={NothingTheme.colors.accent} />
-        </View>
-      ) : (
-        <ScrollView
-          style={styles.scrollView}
-          contentContainerStyle={styles.scrollContent}
-          showsVerticalScrollIndicator={false}
-        >
-          {items.map((item, index) => (
-            <TouchableOpacity
-              key={item.id || item.position || index}
-              style={styles.card}
-              onPress={() => openItem(item)}
-              activeOpacity={0.7}
-            >
-              {section === 'meta' ? (
-                <View style={[styles.tierBadge, { borderColor: TIER_COLORS[item.tier] || NothingTheme.colors.border }]}>
-                  <Text style={[styles.tierBadgeText, { color: TIER_COLORS[item.tier] || NothingTheme.colors.textPrimary }]}>
-                    {item.tier}
-                  </Text>
-                </View>
-              ) : (
-                <View style={styles.cardIcon}>
-                  <Ionicons
-                    name={SECTIONS.find((s) => s.id === section)!.icon as any}
-                    size={20}
-                    color={NothingTheme.colors.textPrimary}
-                  />
-                </View>
-              )}
-              <View style={styles.cardContent}>
-                <Text style={styles.cardTitle}>{cardTitle(item)}</Text>
-                <Text style={styles.cardSubtitle} numberOfLines={1}>{cardSubtitle(item)}</Text>
+      <ScrollView
+        style={styles.scrollView}
+        contentContainerStyle={styles.scrollContent}
+        showsVerticalScrollIndicator={false}
+      >
+        {items.map((item, index) => (
+          <TouchableOpacity
+            key={item.id || item.position || index}
+            style={styles.card}
+            onPress={() => openItem(item)}
+            activeOpacity={0.7}
+          >
+            {section === 'meta' ? (
+              <View style={[styles.tierBadge, { borderColor: TIER_COLORS[item.tier] || NothingTheme.colors.border }]}>
+                <Text style={[styles.tierBadgeText, { color: TIER_COLORS[item.tier] || NothingTheme.colors.textPrimary }]}>
+                  {item.tier}
+                </Text>
               </View>
-              <Ionicons name="chevron-forward" size={18} color={NothingTheme.colors.textTertiary} />
-            </TouchableOpacity>
-          ))}
-
-          {items.length === 0 && !loading && (
-            <View style={styles.emptyState}>
-              <Text style={styles.emptyText}>{isIt ? 'Nessun dato disponibile' : 'No data available'}</Text>
+            ) : (
+              <View style={styles.cardIcon}>
+                <Ionicons
+                  name={SECTIONS.find((s) => s.id === section)!.icon as any}
+                  size={20}
+                  color={NothingTheme.colors.textPrimary}
+                />
+              </View>
+            )}
+            <View style={styles.cardContent}>
+              <Text style={styles.cardTitle}>{cardTitle(item)}</Text>
+              <Text style={styles.cardSubtitle} numberOfLines={1}>{cardSubtitle(item)}</Text>
             </View>
-          )}
-        </ScrollView>
-      )}
+            <Ionicons name="chevron-forward" size={18} color={NothingTheme.colors.textTertiary} />
+          </TouchableOpacity>
+        ))}
+
+        {items.length === 0 && (
+          <View style={styles.emptyState}>
+            <Text style={styles.emptyText}>{isIt ? 'Nessun dato disponibile' : 'No data available'}</Text>
+          </View>
+        )}
+      </ScrollView>
 
       {/* Detail Modal */}
       <Modal

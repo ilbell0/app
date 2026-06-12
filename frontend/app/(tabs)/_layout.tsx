@@ -1,14 +1,10 @@
 import React from 'react';
 import { Tabs } from 'expo-router';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Platform } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { useLanguage } from '@/src/context/LanguageContext';
-import { Platform } from 'react-native';
 import { NothingTheme } from '@/src/theme/NothingTheme';
 
 export default function TabLayout() {
-  const { t } = useLanguage();
-
   return (
     <Tabs
       screenOptions={{
@@ -95,13 +91,6 @@ export default function TabLayout() {
               <Ionicons name={focused ? "settings" : "settings-outline"} size={22} color={color} />
             </View>
           ),
-        }}
-      />
-      {/* Hide profile tab */}
-      <Tabs.Screen
-        name="profile"
-        options={{
-          href: null,
         }}
       />
     </Tabs>
