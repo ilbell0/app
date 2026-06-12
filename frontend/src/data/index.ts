@@ -37,3 +37,5 @@ export const CAREER_PATHS = careerPaths as any[];
 export const MY_PLAYBOOK = myPlaybook as any[];
 export const SET_PIECE = setPiece as any[];
 export const BATTLE_CARDS = battleCards as any[];
+
+export { APP_META } from './appMeta';

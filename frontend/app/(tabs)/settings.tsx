@@ -10,6 +10,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
+import { APP_META } from '@/src/data';
 
 export default function SettingsScreen() {
   const insets = useSafeAreaInsets();
@@ -45,7 +46,7 @@ export default function SettingsScreen() {
           <Text style={styles.appName}>TOP ELEVEN</Text>
           <Text style={styles.appSubname}>TACTICS</Text>
           <View style={styles.versionBadge}>
-            <Text style={styles.versionText}>v2.0 · META 2026</Text>
+            <Text style={styles.versionText}>{APP_META.settingsBadge}</Text>
           </View>
         </View>
 
@@ -114,22 +115,22 @@ export default function SettingsScreen() {
           
           <View style={styles.statsList}>
             <View style={styles.statItem}>
-              <Text style={styles.statValue}>31</Text>
+              <Text style={styles.statValue}>{APP_META.formations}</Text>
               <Text style={styles.statLabel}>
                 {language === 'it' ? 'Formazioni' : 'Formations'}
               </Text>
             </View>
             <View style={styles.statDivider} />
             <View style={styles.statItem}>
-              <Text style={styles.statValue}>32</Text>
+              <Text style={styles.statValue}>{APP_META.counters}</Text>
               <Text style={styles.statLabel}>
                 {language === 'it' ? 'Counter' : 'Counters'}
               </Text>
             </View>
             <View style={styles.statDivider} />
             <View style={styles.statItem}>
-              <Text style={styles.statValue}>5</Text>
-              <Text style={styles.statLabel}>META</Text>
+              <Text style={styles.statValue}>{APP_META.academySections}</Text>
+              <Text style={styles.statLabel}>ACADEMY</Text>
             </View>
           </View>
         </View>
@@ -140,11 +141,11 @@ export default function SettingsScreen() {
         <View style={styles.credits}>
           <Text style={styles.creditsText}>
             {language === 'it' 
-              ? 'Dati da YouTube, Forum e Community'
-              : 'Data from YouTube, Forums & Community'}
+              ? `Dati da YouTube, forum e community - ${APP_META.datasets} dataset offline`
+              : `Data from YouTube, forums and community - ${APP_META.datasets} offline datasets`}
           </Text>
           <Text style={styles.copyright}>
-            © 2026 TOP ELEVEN TACTICS WIKI
+            (C) 2026 TOP ELEVEN TACTICS WIKI
           </Text>
         </View>
       </ScrollView>

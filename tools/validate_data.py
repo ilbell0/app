@@ -43,6 +43,8 @@ ENG_VOCAB = {
     "marc": {"Zona", "Uomo"},
     "fuo": {"SI", "NO"},
 }
+# mojibake: UTF-8 letto come Latin-1/cp1252 ("Ã¬", "â€"). Mai legittimo nei dati.
+MOJIBAKE_RX = re.compile(r"Ã|â€|Â°|Å")
 # parole italiane con accento perso (regressione tipica dei generatori)
 ACCENT_RX = re.compile(
     r"\b(piu|perche|puo|cosi|mentalita|abilita|velocita|qualita|superiorita|"
@@ -198,10 +200,13 @@ def check_accents(data):
         elif isinstance(obj, list):
             for i, x in enumerate(obj):
                 walk(x, in_it, f"{path}[{i}]")
-        elif isinstance(obj, str) and in_it:
-            m = ACCENT_RX.search(obj)
-            if m:
-                warn(f"accento mancante in {path}: ...{obj[max(0, m.start()-20):m.end()+20]}...")
+        elif isinstance(obj, str):
+            if MOJIBAKE_RX.search(obj):
+                err(f"mojibake (encoding corrotto) in {path}: {obj[:80]!r}")
+            if in_it:
+                m = ACCENT_RX.search(obj)
+                if m:
+                    warn(f"accento mancante in {path}: ...{obj[max(0, m.start()-20):m.end()+20]}...")
     for var, d in data.items():
         walk(d, False, var)
 

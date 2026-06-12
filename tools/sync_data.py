@@ -27,6 +27,8 @@ def main():
     for var, fname in DATASETS.items():
         lines.append(f"export const {var} = {fname} as any[];")
     lines.append("")
+    lines.append("export { APP_META } from './appMeta';")
+    lines.append("")
     with open(os.path.join(DATA_DIR, "index.ts"), "w", encoding="utf-8", newline="\n") as fh:
         fh.write("\n".join(lines))
     print("index.ts rigenerato")

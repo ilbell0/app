@@ -12,7 +12,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { SCOUT_TIPS, FORMATIONS, PLAYER_ROLES, META_TACTICS } from '@/src/data';
+import { APP_META, SCOUT_TIPS } from '@/src/data';
 
 interface ScoutTip {
   id: string;
@@ -26,7 +26,7 @@ interface ScoutTip {
 export default function HomeScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
   const [tips, setTips] = useState<ScoutTip[]>([]);
   const [refreshing, setRefreshing] = useState(false);
 
@@ -92,7 +92,7 @@ export default function HomeScreen() {
           
           {/* Version Badge */}
           <View style={styles.versionBadge}>
-            <Text style={styles.versionText}>META 2026</Text>
+            <Text style={styles.versionText}>{APP_META.settingsBadge}</Text>
           </View>
         </View>
 
@@ -137,11 +137,7 @@ export default function HomeScreen() {
             </View>
             <View style={styles.academyContent}>
               <Text style={styles.academyTitle}>ACADEMY 2026</Text>
-              <Text style={styles.academySub}>
-                {language === 'it'
-                  ? 'Ruoli · Frecce · Meta · Abilità · Allenam. · Squadre · Storie · FAQ · Rapido'
-                  : 'Roles · Arrows · Meta · Skills · Training · Teams · Stories · FAQ · Quick'}
-              </Text>
+              <Text style={styles.academySub}>{APP_META.academySummary[language]}</Text>
             </View>
             <Ionicons name="chevron-forward" size={20} color={NothingTheme.colors.textTertiary} />
           </TouchableOpacity>
@@ -153,22 +149,22 @@ export default function HomeScreen() {
         {/* Stats Row */}
         <View style={styles.statsRow}>
           <View style={styles.statItem}>
-            <Text style={styles.statNumber}>{FORMATIONS.length}</Text>
+            <Text style={styles.statNumber}>{APP_META.formations}</Text>
             <Text style={styles.statLabel}>
               {language === 'it' ? 'FORMAZIONI' : 'FORMATIONS'}
             </Text>
           </View>
           <View style={styles.statDivider} />
           <View style={styles.statItem}>
-            <Text style={styles.statNumber}>{PLAYER_ROLES.length}</Text>
+            <Text style={styles.statNumber}>{APP_META.academyItems}</Text>
             <Text style={styles.statLabel}>
-              {language === 'it' ? 'RUOLI' : 'ROLES'}
+              {language === 'it' ? 'SCHEDE ACADEMY' : 'ACADEMY CARDS'}
             </Text>
           </View>
           <View style={styles.statDivider} />
           <View style={styles.statItem}>
-            <Text style={styles.statNumber}>{META_TACTICS.length}</Text>
-            <Text style={styles.statLabel}>META</Text>
+            <Text style={styles.statNumber}>{APP_META.counters}</Text>
+            <Text style={styles.statLabel}>COUNTER</Text>
           </View>
         </View>
 
@@ -215,9 +211,9 @@ export default function HomeScreen() {
         {/* Footer */}
         <View style={styles.footer}>
           <Text style={styles.footerText}>
-            TOP ELEVEN TACTICS WIKI
+            {APP_META.footerLabel}
           </Text>
-          <Text style={styles.footerVersion}>v2.0</Text>
+          <Text style={styles.footerVersion}>{APP_META.datasets} DATASET</Text>
         </View>
       </ScrollView>
     </View>
