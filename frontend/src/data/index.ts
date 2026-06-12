@@ -1,4 +1,4 @@
-// AUTO-GENERATO
+// AUTO-GENERATO da tools/sync_data.py — non modificare a mano
 
 import formations from './formations.json';
 import counterEngine from './counterEngine.json';

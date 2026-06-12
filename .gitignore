@@ -77,4 +77,14 @@ agenthub/agents/youtube/db
 .cache/
 
 # Mobile development
-android-sdk/ 
+android-sdk/
+.expo/
+.metro-cache/
+
+# Script temporanei di sessione (vedi HANDOFF.md §11)
+/_*.py
+/preview_server.py
+.firecrawl/
+
+# Lockfile canonico: yarn.lock (niente npm)
+frontend/package-lock.json 

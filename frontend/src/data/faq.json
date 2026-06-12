@@ -1,138 +1,138 @@
 [
-{
-"id": "faq-1",
-"category": "app",
-"question_en": "Where do the data in this app come from?",
-"question_it": "Da dove vengono i dati di questa app?",
-"answer_en": "From a careful study of forums (Top Eleven Forum, Reddit r/topeleven), tactical videos, BlueStacks guides and the BojBojTech reference app, organized in a NotebookLM and structured into 9 datasets.",
-"answer_it": "Da uno studio attento di forum (Top Eleven Forum, Reddit r/topeleven), video tattici, guide BlueStacks e dall'app di riferimento BojBojTech, organizzati in un NotebookLM e strutturati in 9 dataset."
-},
-{
-"id": "faq-2",
-"category": "app",
-"question_en": "Does it work offline?",
-"question_it": "Funziona offline?",
-"answer_en": "Yes, all tactical data is embedded in the app. The AI chat is the only feature that needs internet.",
-"answer_it": "Sì, tutti i dati tattici sono incorporati nell'app. La chat AI è l'unica funzione che richiede internet."
-},
-{
-"id": "faq-3",
-"category": "tactics",
-"question_en": "Why does the same formation give different settings vs stronger/equal/weaker?",
-"question_it": "Perché lo stesso modulo dà impostazioni diverse vs più forte / pari / più debole?",
-"answer_en": "Top Eleven uses an internal star/quality rating: against weaker teams you can push, against stronger ones you must defend deeper. The app calibrates mentality, pressing, marking and arrows accordingly.",
-"answer_it": "Top Eleven usa un rating interno di stelle/qualità: contro squadre più deboli puoi spingere, contro più forti devi difendere più basso. L'app calibra mentalità, pressing, marcatura e frecce di conseguenza."
-},
-{
-"id": "faq-4",
-"category": "tactics",
-"question_en": "Red arrow vs blue arrow: what's the difference?",
-"question_it": "Freccia rossa vs blu: che differenza c'è?",
-"answer_en": "Red = the player advances and joins the attack (offensive). Blue = the player holds a deeper position and defends. Generally: red for fast players, blue for slower ones.",
-"answer_it": "Rossa = il giocatore avanza e partecipa all'attacco (offensiva). Blu = il giocatore mantiene una posizione più arretrata e difende. In linea generale: rossa per i veloci, blu per i lenti."
-},
-{
-"id": "faq-5",
-"category": "tactics",
-"question_en": "When do I use the offside trap?",
-"question_it": "Quando uso il fuorigioco?",
-"answer_en": "ON if the opponent plays long balls to fast strikers and your back line has high positioning. OFF against direct play or compact strikers who don't run in behind.",
-"answer_it": "ON se l'avversario gioca lanci lunghi su attaccanti veloci e la tua linea difensiva ha alto posizionamento. OFF contro avversari diretti o con attaccanti compatti che non scattano alle spalle."
-},
-{
-"id": "faq-6",
-"category": "tactics",
-"question_en": "What's the best formation for everyone?",
-"question_it": "Qual è la migliore formazione in assoluto?",
-"answer_en": "There is no 'best in absolute'. In the 2026 meta the 4-5-1 V-Style is the most versatile and the 4-3-3 with False Nine is the most lethal. Choose based on the players you have, not on the latest trend.",
-"answer_it": "Non esiste 'la migliore in assoluto'. Nel meta 2026 il 4-5-1 V-Style è il più versatile e il 4-3-3 col Falso Nove è il più letale. Scegli in base ai giocatori che hai, non alla moda del momento."
-},
-{
-"id": "faq-7",
-"category": "training",
-"question_en": "How do I get more 6-star players from the youth academy?",
-"question_it": "Come ottengo più giocatori da 6 stelle dall'accademia giovanile?",
-"answer_en": "Spend at least 15 tokens on the academy each season. Choose the highest-quality option available. With consistency it's realistic to get 3 6-star players a year.",
-"answer_it": "Spendi almeno 15 token nell'accademia ogni stagione. Scegli l'opzione di qualità maggiore quando disponibile. Con costanza è realistico ottenere 3 giocatori da 6 stelle l'anno."
-},
-{
-"id": "faq-8",
-"category": "training",
-"question_en": "Should I train all the players or just the starting eleven?",
-"question_it": "Devo allenare tutti i giocatori o solo i titolari?",
-"answer_en": "Priority to the starting eleven. The reserves train only enough to keep morale up. Save Fast Trainings for the key roles (False Nine striker, DMC, AMC).",
-"answer_it": "Priorità ai titolari. Le riserve allenano solo quanto basta per tenere alto il morale. Tieni gli Allenamenti Rapidi per i ruoli chiave (attaccante Falso Nove, DMC, AMC)."
-},
-{
-"id": "faq-9",
-"category": "economy",
-"question_en": "Are tokens worth buying with real money?",
-"question_it": "I token valgono comprarli con soldi veri?",
-"answer_en": "Honest answer: no, if you play casually. Yes if you want to compete at high-association level. With the Special Sponsor and free events you can accumulate enough tokens for an honest mid-table season.",
-"answer_it": "Risposta onesta: no, se giochi a livello casual. Sì se vuoi competere ad alti livelli di associazione. Con lo Special Sponsor e gli eventi gratuiti puoi accumulare token sufficienti per una stagione onesta a metà classifica."
-},
-{
-"id": "faq-10",
-"category": "economy",
-"question_en": "Which sponsor should I choose?",
-"question_it": "Quale sponsor scelgo?",
-"answer_en": "The Special Sponsor (the daily token one) is the most cost-effective in the long run. The shirt sponsor only if you need quick cash for an auction.",
-"answer_it": "Lo Special Sponsor (quello dei token giornalieri) è il più conveniente sul lungo periodo. Lo sponsor maglietta solo se hai bisogno di cassa rapida per un'asta."
-},
-{
-"id": "faq-11",
-"category": "matchday",
-"question_en": "Should I watch the match live or simulate?",
-"question_it": "Devo guardare la partita live o simulare?",
-"answer_en": "Live ONLY if you can make tactical changes (mentality, substitutions). If you can't watch, simulating is the same. Live the matches where you can actually intervene.",
-"answer_it": "Live SOLO se puoi fare cambi tattici (mentalità, sostituzioni). Se non puoi seguire, simulare è la stessa cosa. Vivi solo le partite dove puoi davvero intervenire."
-},
-{
-"id": "faq-12",
-"category": "matchday",
-"question_en": "When should I make the first substitution?",
-"question_it": "Quando faccio la prima sostituzione?",
-"answer_en": "Around the 55-65 minute, prioritizing midfielders who have lost more condition. Save one substitution for an emergency (injury or comeback).",
-"answer_it": "Intorno al 55-65° minuto, dando priorità ai centrocampisti che hanno perso più condizione. Tieni una sostituzione per emergenza (infortunio o rimonta)."
-},
-{
-"id": "faq-13",
-"category": "matchday",
-"question_en": "What does Team Balance mean? Why is it important?",
-"question_it": "Cosa significa Team Balance? Perché è importante?",
-"answer_en": "It's the cohesion index of your team. Below 9.0 you risk losing matches you should win. Keep it between 9.2 and 10. To get it up: rotate sensibly, friend bonuses, avoid 'mutant' players (single overpowered player).",
-"answer_it": "È l'indice di coesione della tua squadra. Sotto 9.0 rischi di perdere partite che dovresti vincere. Tienilo tra 9.2 e 10. Per alzarlo: ruota con criterio, bonus amici, evita giocatori 'mutanti' (un solo overpowered)."
-},
-{
-"id": "faq-14",
-"category": "app",
-"question_en": "Will the data be updated when the meta changes?",
-"question_it": "I dati verranno aggiornati quando cambia il meta?",
-"answer_en": "Yes, the app is built so we can update tactical data when a new meta emerges (currently 2026). The update will arrive with a new app version.",
-"answer_it": "Sì, l'app è costruita per essere aggiornata nei dati tattici quando emerge un nuovo meta (attualmente 2026). L'aggiornamento arriverà con una nuova versione dell'app."
-},
-{
-"id": "faq-15",
-"category": "app",
-"question_en": "Can I suggest a tactic or report an error?",
-"question_it": "Posso suggerire una tattica o segnalare un errore?",
-"answer_en": "Yes — that's the goal. A feedback button will be added in the next versions to gather suggestions and corrections directly from the community.",
-"answer_it": "Sì — è proprio l'obiettivo. Sarà aggiunto un pulsante di feedback nelle prossime versioni per raccogliere suggerimenti e correzioni direttamente dalla community."
-},
-{
-"id": "faq-16",
-"category": "tactics",
-"question_en": "Is it true that 'retro' formations are coming back?",
-"question_it": "È vero che stanno tornando moduli 'retrò'?",
-"answer_en": "Yes, in high-level associations and Discord communities you see modules like the 2-3-2-3 (modern W-M) and 3-3-3-1 used as surprise weapons. They only work with very mobile players with the Dual Position ability.",
-"answer_it": "Sì, nelle associazioni di alto livello e nelle community Discord si vedono moduli come il 2-3-2-3 (W-M moderno) e il 3-3-3-1 usati come armi sorpresa. Funzionano solo con giocatori molto mobili con abilità Dual Position."
-},
-{
-"id": "faq-17",
-"category": "tactics",
-"question_en": "Can I really copy Pep's Tiki-Taka in Top Eleven?",
-"question_it": "Posso davvero copiare il Tiki-Taka di Pep in Top Eleven?",
-"answer_en": "Yes, with the right setup. The key is the deep playmaker at DMC (not at AMC like many think), Normal mentality the whole match, Through the Middle short passing, no counter-attack. Read the 'Barça Tiki-Taka' story in the Stories section for details.",
-"answer_it": "Sì, con il setup giusto. Il segreto è il regista basso a DMC (non a AMC come pensano in tanti), mentalità Normale per tutto il match, passaggi Corti Al Centro, niente contropiede. Leggi la storia 'Tiki-Taka del Barça' nella sezione Storie per i dettagli."
-}
+  {
+    "id": "faq-1",
+    "category": "app",
+    "question_en": "Where do the data in this app come from?",
+    "question_it": "Da dove vengono i dati di questa app?",
+    "answer_en": "From a careful study of forums (Top Eleven Forum, Reddit r/topeleven), tactical videos, BlueStacks guides and the BojBojTech reference app, organized in NotebookLM and structured into 18 offline datasets.",
+    "answer_it": "Da uno studio attento di forum (Top Eleven Forum, Reddit r/topeleven), video tattici, guide BlueStacks e dall'app di riferimento BojBojTech, organizzati in NotebookLM e strutturati in 18 dataset offline."
+  },
+  {
+    "id": "faq-2",
+    "category": "app",
+    "question_en": "Does it work offline?",
+    "question_it": "Funziona offline?",
+    "answer_en": "Yes. All tactical data is embedded in the app, so the core experience works offline. Internet is only needed for OTA updates or external links.",
+    "answer_it": "Sì. Tutti i dati tattici sono incorporati nell'app, quindi l'esperienza principale funziona offline. Internet serve solo per aggiornamenti OTA o link esterni."
+  },
+  {
+    "id": "faq-3",
+    "category": "tactics",
+    "question_en": "Why does the same formation give different settings vs stronger/equal/weaker?",
+    "question_it": "Perché lo stesso modulo dà impostazioni diverse vs più forte / pari / più debole?",
+    "answer_en": "Top Eleven uses an internal star/quality rating: against weaker teams you can push, against stronger ones you must defend deeper. The app calibrates mentality, pressing, marking and arrows accordingly.",
+    "answer_it": "Top Eleven usa un rating interno di stelle/qualità: contro squadre più deboli puoi spingere, contro più forti devi difendere più basso. L'app calibra mentalità, pressing, marcatura e frecce di conseguenza."
+  },
+  {
+    "id": "faq-4",
+    "category": "tactics",
+    "question_en": "Red arrow vs blue arrow: what's the difference?",
+    "question_it": "Freccia rossa vs blu: che differenza c'è?",
+    "answer_en": "Red = the player advances and joins the attack (offensive). Blue = the player holds a deeper position and defends. Generally: red for fast players, blue for slower ones.",
+    "answer_it": "Rossa = il giocatore avanza e partecipa all'attacco (offensiva). Blu = il giocatore mantiene una posizione più arretrata e difende. In linea generale: rossa per i veloci, blu per i lenti."
+  },
+  {
+    "id": "faq-5",
+    "category": "tactics",
+    "question_en": "When do I use the offside trap?",
+    "question_it": "Quando uso il fuorigioco?",
+    "answer_en": "ON if the opponent plays long balls to fast strikers and your back line has high positioning. OFF against direct play or compact strikers who don't run in behind.",
+    "answer_it": "ON se l'avversario gioca lanci lunghi su attaccanti veloci e la tua linea difensiva ha alto posizionamento. OFF contro avversari diretti o con attaccanti compatti che non scattano alle spalle."
+  },
+  {
+    "id": "faq-6",
+    "category": "tactics",
+    "question_en": "What's the best formation for everyone?",
+    "question_it": "Qual è la migliore formazione in assoluto?",
+    "answer_en": "There is no 'best in absolute'. In the 2026 meta the 4-5-1 V-Style is the most versatile and the 4-3-3 with False Nine is the most lethal. Choose based on the players you have, not on the latest trend.",
+    "answer_it": "Non esiste 'la migliore in assoluto'. Nel meta 2026 il 4-5-1 V-Style è il più versatile e il 4-3-3 col Falso Nove è il più letale. Scegli in base ai giocatori che hai, non alla moda del momento."
+  },
+  {
+    "id": "faq-7",
+    "category": "training",
+    "question_en": "How do I get more 6-star players from the youth academy?",
+    "question_it": "Come ottengo più giocatori da 6 stelle dall'accademia giovanile?",
+    "answer_en": "Spend at least 15 tokens on the academy each season. Choose the highest-quality option available. With consistency it's realistic to get 3 6-star players a year.",
+    "answer_it": "Spendi almeno 15 token nell'accademia ogni stagione. Scegli l'opzione di qualità maggiore quando disponibile. Con costanza è realistico ottenere 3 giocatori da 6 stelle l'anno."
+  },
+  {
+    "id": "faq-8",
+    "category": "training",
+    "question_en": "Should I train all the players or just the starting eleven?",
+    "question_it": "Devo allenare tutti i giocatori o solo i titolari?",
+    "answer_en": "Priority to the starting eleven. The reserves train only enough to keep morale up. Save Fast Trainings for the key roles (False Nine striker, DMC, AMC).",
+    "answer_it": "Priorità ai titolari. Le riserve allenano solo quanto basta per tenere alto il morale. Tieni gli Allenamenti Rapidi per i ruoli chiave (attaccante Falso Nove, DMC, AMC)."
+  },
+  {
+    "id": "faq-9",
+    "category": "economy",
+    "question_en": "Are tokens worth buying with real money?",
+    "question_it": "I token valgono comprarli con soldi veri?",
+    "answer_en": "Honest answer: no, if you play casually. Yes if you want to compete at high-association level. With the Special Sponsor and free events you can accumulate enough tokens for an honest mid-table season.",
+    "answer_it": "Risposta onesta: no, se giochi a livello casual. Sì se vuoi competere ad alti livelli di associazione. Con lo Special Sponsor e gli eventi gratuiti puoi accumulare token sufficienti per una stagione onesta a metà classifica."
+  },
+  {
+    "id": "faq-10",
+    "category": "economy",
+    "question_en": "Which sponsor should I choose?",
+    "question_it": "Quale sponsor scelgo?",
+    "answer_en": "The Special Sponsor (the daily token one) is the most cost-effective in the long run. The shirt sponsor only if you need quick cash for an auction.",
+    "answer_it": "Lo Special Sponsor (quello dei token giornalieri) è il più conveniente sul lungo periodo. Lo sponsor maglietta solo se hai bisogno di cassa rapida per un'asta."
+  },
+  {
+    "id": "faq-11",
+    "category": "matchday",
+    "question_en": "Should I watch the match live or simulate?",
+    "question_it": "Devo guardare la partita live o simulare?",
+    "answer_en": "Live ONLY if you can make tactical changes (mentality, substitutions). If you can't watch, simulating is the same. Live the matches where you can actually intervene.",
+    "answer_it": "Live SOLO se puoi fare cambi tattici (mentalità, sostituzioni). Se non puoi seguire, simulare è la stessa cosa. Vivi solo le partite dove puoi davvero intervenire."
+  },
+  {
+    "id": "faq-12",
+    "category": "matchday",
+    "question_en": "When should I make the first substitution?",
+    "question_it": "Quando faccio la prima sostituzione?",
+    "answer_en": "Around the 55-65 minute, prioritizing midfielders who have lost more condition. Save one substitution for an emergency (injury or comeback).",
+    "answer_it": "Intorno al 55-65° minuto, dando priorità ai centrocampisti che hanno perso più condizione. Tieni una sostituzione per emergenza (infortunio o rimonta)."
+  },
+  {
+    "id": "faq-13",
+    "category": "matchday",
+    "question_en": "What does Team Balance mean? Why is it important?",
+    "question_it": "Cosa significa Team Balance? Perché è importante?",
+    "answer_en": "It's the cohesion index of your team. Below 9.0 you risk losing matches you should win. Keep it between 9.2 and 10. To get it up: rotate sensibly, friend bonuses, avoid 'mutant' players (single overpowered player).",
+    "answer_it": "È l'indice di coesione della tua squadra. Sotto 9.0 rischi di perdere partite che dovresti vincere. Tienilo tra 9.2 e 10. Per alzarlo: ruota con criterio, bonus amici, evita giocatori 'mutanti' (un solo overpowered)."
+  },
+  {
+    "id": "faq-14",
+    "category": "app",
+    "question_en": "Will the data be updated when the meta changes?",
+    "question_it": "I dati verranno aggiornati quando cambia il meta?",
+    "answer_en": "Yes. Tactical data can be refreshed when the meta changes. In most cases the update can arrive via OTA without reinstalling the app.",
+    "answer_it": "Sì. I dati tattici possono essere aggiornati quando cambia il meta. Nella maggior parte dei casi l'aggiornamento può arrivare via OTA senza reinstallare l'app."
+  },
+  {
+    "id": "faq-15",
+    "category": "app",
+    "question_en": "Can I suggest a tactic or report an error?",
+    "question_it": "Posso suggerire una tattica o segnalare un errore?",
+    "answer_en": "Yes — that's the goal. A feedback button will be added in the next versions to gather suggestions and corrections directly from the community.",
+    "answer_it": "Sì — è proprio l'obiettivo. Sarà aggiunto un pulsante di feedback nelle prossime versioni per raccogliere suggerimenti e correzioni direttamente dalla community."
+  },
+  {
+    "id": "faq-16",
+    "category": "tactics",
+    "question_en": "Is it true that 'retro' formations are coming back?",
+    "question_it": "È vero che stanno tornando moduli 'retrò'?",
+    "answer_en": "Yes, in high-level associations and Discord communities you see modules like the 2-3-2-3 (modern W-M) and 3-3-3-1 used as surprise weapons. They only work with very mobile players with the Dual Position ability.",
+    "answer_it": "Sì, nelle associazioni di alto livello e nelle community Discord si vedono moduli come il 2-3-2-3 (W-M moderno) e il 3-3-3-1 usati come armi sorpresa. Funzionano solo con giocatori molto mobili con abilità Dual Position."
+  },
+  {
+    "id": "faq-17",
+    "category": "tactics",
+    "question_en": "Can I really copy Pep's Tiki-Taka in Top Eleven?",
+    "question_it": "Posso davvero copiare il Tiki-Taka di Pep in Top Eleven?",
+    "answer_en": "Yes, with the right setup. The key is the deep playmaker at DMC (not at AMC like many think), Normal mentality the whole match, Through the Middle short passing, no counter-attack. Read the 'Barça Tiki-Taka' story in the Stories section for details.",
+    "answer_it": "Sì, con il setup giusto. Il segreto è il regista basso a DMC (non a AMC come pensano in tanti), mentalità Normale per tutto il match, passaggi Corti Al Centro, niente contropiede. Leggi la storia 'Tiki-Taka del Barça' nella sezione Storie per i dettagli."
+  }
 ]

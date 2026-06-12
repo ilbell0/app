@@ -371,7 +371,7 @@ FORMATIONS = [
             'focus_passing': 'Through the Middle',
             'passing_style': 'Short',
             'counter_attack': False,
-            'pressing': 'Normal',
+            'pressing': 'Medium',
             'tackling': 'Normal',
             'marking': 'Zonal',
             'offside_trap': False
@@ -408,8 +408,8 @@ FORMATIONS = [
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
-                'pressing': 'Normal',
-                'pressing_it': 'Normale',
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
                 'tackling': 'Normal',
                 'tackling_it': 'Normale',
                 'marking': 'Zonal',
@@ -528,7 +528,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Short',
@@ -603,7 +603,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Down Both Flanks',
-                'focus_passing_it': 'Sulle Fasce',
+                'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -612,7 +612,7 @@ FORMATIONS = [
                 'tackling': 'Easy',
                 'tackling_it': 'Facile',
                 'marking': 'Zonal',
-                'marking_it': 'A Zona',
+                'marking_it': 'Zonale',
                 'offside_trap': False,
                 'tip_en': 'Park the bus! Let them attack, hit on counter with AML/AMR speed. DMC↓ to shield DCs.',
                 'tip_it': 'Parcheggia il bus! Lascia che attacchino, colpisci in contropiede con velocità AML/AMR. DMC↓ per schermare DC.',
@@ -630,12 +630,12 @@ FORMATIONS = [
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
-                'pressing': 'Normal',
-                'pressing_it': 'Normale',
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
                 'tackling': 'Normal',
                 'tackling_it': 'Normale',
                 'marking': 'Zonal',
-                'marking_it': 'A Zona',
+                'marking_it': 'Zonale',
                 'offside_trap': True,
                 'tip_en': 'V-shape gives control. Push AML/AMR↑ for attack width. Counter when they overcommit.',
                 'tip_it': 'La forma a V dà controllo. Spingi AML/AMR↑ per ampiezza. Contropiede quando si sbilanciano.',
@@ -649,7 +649,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Down Both Flanks',
-                'focus_passing_it': 'Sulle Fasce',
+                'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -712,7 +712,7 @@ FORMATIONS = [
         'opponent_settings': {
             'strong': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Molto Difensivo',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Mixed',
                 'focus_passing_it': 'Misto',
                 'passing_style': 'Long',
@@ -997,7 +997,11 @@ FORMATIONS = [
         'category_en': 'Attacking',
         'category_it': 'Attaccante',
         'strengths_en': ['Midfield control', 'Numerical advantage in center', 'Partnership up front'],
-        'strengths_it': ['Controllo del centrocampo', 'Vantaggio numerico al centro', 'Partnership in attacco'],
+        'strengths_it': [
+            'Controllo del centrocampo',
+            'Vantaggio numerico al centro',
+            'Partnership in attacco'
+        ],
         'weaknesses_en': ['Exposed flanks', 'No full-backs', 'Weak against wide formations'],
         'weaknesses_it': ['Fianchi esposti', 'Nessun terzino', 'Debole contro formazioni ampie'],
         'tactic_type_en': 'Attacking / High Press',
@@ -1058,7 +1062,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Mixed',
                 'focus_passing_it': 'Misto',
                 'passing_style': 'Mixed',
@@ -1155,7 +1159,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Short',
@@ -1306,7 +1310,7 @@ FORMATIONS = [
         'opponent_settings': {
             'strong': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Molto Difensivo',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Long',
@@ -1419,7 +1423,7 @@ FORMATIONS = [
         'opponent_settings': {
             'strong': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Molto Difensivo',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Mixed',
                 'focus_passing_it': 'Misto',
                 'passing_style': 'Long',
@@ -1627,7 +1631,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Down Both Flanks',
-                'focus_passing_it': 'Sulle Fasce',
+                'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -1636,7 +1640,7 @@ FORMATIONS = [
                 'tackling': 'Easy',
                 'tackling_it': 'Facile',
                 'marking': 'Zonal',
-                'marking_it': 'A Zona',
+                'marking_it': 'Zonale',
                 'offside_trap': False,
                 'tip_en': 'Defend deep! DMC↓ always. ML/MR track back. Quick long balls to ST on counter.',
                 'tip_it': 'Difendi basso! DMC↓ sempre. ML/MR rientrano. Lanci lunghi rapidi a ST in contropiede.',
@@ -1654,12 +1658,12 @@ FORMATIONS = [
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
-                'pressing': 'Normal',
-                'pressing_it': 'Normale',
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
                 'tackling': 'Normal',
                 'tackling_it': 'Normale',
                 'marking': 'Zonal',
-                'marking_it': 'A Zona',
+                'marking_it': 'Zonale',
                 'offside_trap': False,
                 'tip_en': 'Control the game. DMC anchors defense. Push MC forward if winning.',
                 'tip_it': 'Controlla la partita. DMC ancora la difesa. Spingi MC avanti se in vantaggio.',
@@ -1674,7 +1678,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Per il Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -1732,7 +1736,12 @@ FORMATIONS = [
         'category_en': 'Attacking',
         'category_it': 'Attaccante',
         'strengths_en': ['High pressing', 'Width in attack', 'Creative midfield', 'Overloads flanks'],
-        'strengths_it': ['Pressing alto', 'Ampiezza in attacco', 'Centrocampo creativo', 'Sovraccarica le fasce'],
+        'strengths_it': [
+            'Pressing alto',
+            'Ampiezza in attacco',
+            'Centrocampo creativo',
+            'Sovraccarica le fasce'
+        ],
         'weaknesses_en': ['Vulnerable to counters', 'Midfield can be overrun', '3 MCs must work hard'],
         'weaknesses_it': [
             'Vulnerabile ai contropiedi',
@@ -1801,7 +1810,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Short',
@@ -1883,7 +1892,7 @@ FORMATIONS = [
         'opponent_settings': {
             'strong': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Molto Difensivo',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Through the Middle',
                 'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
@@ -2023,7 +2032,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Short',
@@ -2141,7 +2150,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Short',
@@ -2187,7 +2196,7 @@ FORMATIONS = [
             'focus_passing': 'Through the Middle',
             'passing_style': 'Short',
             'counter_attack': False,
-            'pressing': 'Normal',
+            'pressing': 'Medium',
             'tackling': 'Normal',
             'marking': 'Zonal',
             'offside_trap': False
@@ -2222,8 +2231,8 @@ FORMATIONS = [
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
-                'pressing': 'Normal',
-                'pressing_it': 'Normale',
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
                 'tackling': 'Normal',
                 'tackling_it': 'Normale',
                 'marking': 'Zonal',
@@ -2291,7 +2300,7 @@ FORMATIONS = [
         'opponent_settings': {
             'strong': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Molto Difensivo',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Long',
@@ -2393,7 +2402,7 @@ FORMATIONS = [
         'opponent_settings': {
             'strong': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Molto Difensivo',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Through the Middle',
                 'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
@@ -2489,7 +2498,7 @@ FORMATIONS = [
         'opponent_settings': {
             'strong': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Molto Difensivo',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Long',
@@ -2638,7 +2647,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Right Flank',
                 'focus_passing_it': 'Fascia destra',
                 'passing_style': 'Short',
@@ -2736,7 +2745,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Short',
@@ -2773,7 +2782,11 @@ FORMATIONS = [
         'strengths_en': ['Central control', 'High wingers', 'Popular at high levels', 'Flexible'],
         'strengths_it': ['Controllo centrale', 'Ali alte', 'Popolare ai livelli alti', 'Flessibile'],
         'weaknesses_en': ['Lone striker', 'Needs quality MCs', 'Can be exposed on counters'],
-        'weaknesses_it': ['Attaccante solitario', 'Richiede MC di qualità', 'Può essere esposta ai contropiedi'],
+        'weaknesses_it': [
+            'Attaccante solitario',
+            'Richiede MC di qualità',
+            'Può essere esposta ai contropiedi'
+        ],
         'tactic_type_en': 'Attacking / High Level Meta',
         'tactic_type_it': 'Attaccante / Meta Alto Livello',
         'recommended_tactics': {
@@ -2781,7 +2794,7 @@ FORMATIONS = [
             'focus_passing': 'Down Both Flanks',
             'passing_style': 'Mixed',
             'counter_attack': False,
-            'pressing': 'Normal',
+            'pressing': 'Medium',
             'tackling': 'Normal',
             'marking': 'Zonal',
             'offside_trap': False
@@ -2817,8 +2830,8 @@ FORMATIONS = [
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': False,
-                'pressing': 'Normal',
-                'pressing_it': 'Normale',
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
                 'tackling': 'Normal',
                 'tackling_it': 'Normale',
                 'marking': 'Zonal',
@@ -2833,7 +2846,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Short',
@@ -2882,7 +2895,11 @@ FORMATIONS = [
             'Flessibile contro ogni formazione'
         ],
         'weaknesses_en': ['Requires quality AMC (135+)', 'Only 3 defenders', 'Wings can be exposed'],
-        'weaknesses_it': ['Richiede AMC di qualità (135+)', 'Solo 3 difensori', 'Fasce possono essere esposte'],
+        'weaknesses_it': [
+            'Richiede AMC di qualità (135+)',
+            'Solo 3 difensori',
+            'Fasce possono essere esposte'
+        ],
         'tactic_type_en': 'META 2025 / Multi-Variant',
         'tactic_type_it': 'META 2025 / Multi-Variante',
         'arrows': '★ Variante A: MC↑ | Variante C: MR↓ ML↓',
@@ -2977,7 +2994,7 @@ FORMATIONS = [
                 'tackling': 'Easy',
                 'tackling_it': 'Facile',
                 'marking': 'Zonal',
-                'marking_it': 'A Zona',
+                'marking_it': 'Zonale',
                 'offside_trap': False,
                 'variant': 'C',
                 'tip_en': 'Use Variant C (Quick Transition). Stay compact, counter with AMC-ST speed. MR/ML with backward arrows.',
@@ -2994,12 +3011,12 @@ FORMATIONS = [
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
-                'pressing': 'Normal',
-                'pressing_it': 'Normale',
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
                 'tackling': 'Normal',
                 'tackling_it': 'Normale',
                 'marking': 'Zonal',
-                'marking_it': 'A Zona',
+                'marking_it': 'Zonale',
                 'offside_trap': True,
                 'variant': 'B',
                 'tip_en': 'Use Variant B (Balanced). Safer at the back, AMC and ST have freedom to create.',
@@ -3013,7 +3030,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Per il Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -3061,7 +3078,11 @@ FORMATIONS = [
             'Ottimo contropiede',
             'Batte avversari 12%+ più forti'
         ],
-        'weaknesses_en': ['Vulnerable to 3-striker formations', 'Wings can be exposed', 'Requires quality DMC'],
+        'weaknesses_en': [
+            'Vulnerable to 3-striker formations',
+            'Wings can be exposed',
+            'Requires quality DMC'
+        ],
         'weaknesses_it': [
             'Vulnerabile a formazioni con 3 attaccanti',
             'Fasce possono essere esposte',
@@ -3085,7 +3106,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Down Both Flanks',
-                'focus_passing_it': 'Sulle Fasce',
+                'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -3094,7 +3115,7 @@ FORMATIONS = [
                 'tackling': 'Easy',
                 'tackling_it': 'Facile',
                 'marking': 'Zonal',
-                'marking_it': 'A Zona',
+                'marking_it': 'Zonale',
                 'offside_trap': False,
                 'tip_en': "Stay compact! DMC↓ to protect DCs. Counter through flanks. Don't chase the ball, let them come.",
                 'tip_it': 'Resta compatto! DMC↓ per proteggere i DC. Contropiede sulle fasce. Non rincorrere, lascia che vengano.',
@@ -3110,12 +3131,12 @@ FORMATIONS = [
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
-                'pressing': 'Normal',
-                'pressing_it': 'Normale',
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
                 'tackling': 'Normal',
                 'tackling_it': 'Normale',
                 'marking': 'Zonal',
-                'marking_it': 'A Zona',
+                'marking_it': 'Zonale',
                 'offside_trap': True,
                 'tip_en': 'Balance attack and defense. AMC↑ for extra goal threat. Use ML/MR for width.',
                 'tip_it': 'Equilibra attacco e difesa. AMC↑ per minaccia extra. Usa ML/MR per ampiezza.',
@@ -3129,7 +3150,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Per il Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -3177,7 +3198,11 @@ FORMATIONS = [
             'Migliore per squadre deboli'
         ],
         'weaknesses_en': ['Very limited attack', 'Relies on counters only', 'Can be boring to play'],
-        'weaknesses_it': ['Attacco molto limitato', 'Si basa solo sui contropiedi', 'Può essere noiosa da giocare'],
+        'weaknesses_it': [
+            'Attacco molto limitato',
+            'Si basa solo sui contropiedi',
+            'Può essere noiosa da giocare'
+        ],
         'tactic_type_en': 'META 2026 / Ultra Defensive',
         'tactic_type_it': 'META 2026 / Ultra Difensiva',
         'arrows': 'DMC↓ MC↓',
@@ -3194,9 +3219,9 @@ FORMATIONS = [
         'opponent_settings': {
             'strong': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Ultra Difensiva',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Down Both Flanks',
-                'focus_passing_it': 'Sulle Fasce',
+                'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -3205,7 +3230,7 @@ FORMATIONS = [
                 'tackling': 'Hard',
                 'tackling_it': 'Duro',
                 'marking': 'Zonal',
-                'marking_it': 'A Zona',
+                'marking_it': 'Zonale',
                 'offside_trap': False,
                 'tip_en': 'PARK THE BUS! Everyone defends. Only AML/AMR and ST go forward on counters. Pray for 0-0.',
                 'tip_it': 'PARCHEGGIA IL BUS! Tutti difendono. Solo AML/AMR e ST avanti in contropiede. Prega per lo 0-0.',
@@ -3219,7 +3244,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Down Both Flanks',
-                'focus_passing_it': 'Sulle Fasce',
+                'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -3228,7 +3253,7 @@ FORMATIONS = [
                 'tackling': 'Normal',
                 'tackling_it': 'Normale',
                 'marking': 'Zonal',
-                'marking_it': 'A Zona',
+                'marking_it': 'Zonale',
                 'offside_trap': False,
                 'tip_en': 'Stay solid. Let them have the ball. Strike fast on counter with AML/AMR pace.',
                 'tip_it': 'Resta solido. Lascia che abbiano palla. Colpisci veloce in contropiede con velocità AML/AMR.',
@@ -3246,12 +3271,12 @@ FORMATIONS = [
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
-                'pressing': 'Normal',
-                'pressing_it': 'Normale',
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
                 'tackling': 'Normal',
                 'tackling_it': 'Normale',
                 'marking': 'Zonal',
-                'marking_it': 'A Zona',
+                'marking_it': 'Zonale',
                 'offside_trap': True,
                 'tip_en': 'Push MC forward slightly. Still counter-focused but more possession.',
                 'tip_it': 'Spingi MC leggermente avanti. Ancora focus contropiede ma più possesso.',
@@ -3319,12 +3344,12 @@ FORMATIONS = [
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
-                'pressing': 'Normal',
-                'pressing_it': 'Normale',
+                'pressing': 'Medium',
+                'pressing_it': 'Medio',
                 'tackling': 'Normal',
                 'tackling_it': 'Normale',
                 'marking': 'Zonal',
-                'marking_it': 'A Zona',
+                'marking_it': 'Zonale',
                 'offside_trap': False,
                 'tip_en': "False Nine drops, AML/AMR run into space. Quick 1-2s in the middle. Don't force it.",
                 'tip_it': 'Falso Nove arretra, AML/AMR corrono negli spazi. Rapidi 1-2 al centro. Non forzare.',
@@ -3337,7 +3362,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Per il Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -3346,7 +3371,7 @@ FORMATIONS = [
                 'tackling': 'Normal',
                 'tackling_it': 'Normale',
                 'marking': 'Zonal',
-                'marking_it': 'A Zona',
+                'marking_it': 'Zonale',
                 'offside_trap': False,
                 'tip_en': 'Full False Nine system. AMC drops, AML/AMR attack. Confuse their defense!',
                 'tip_it': 'Sistema Falso Nove completo. AMC arretra, AML/AMR attaccano. Confondi la loro difesa!',
@@ -3359,7 +3384,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Per il Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -3433,7 +3458,7 @@ FORMATIONS = [
             },
             'equal': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Mixed',
                 'focus_passing_it': 'Misto',
                 'passing_style': 'Long',
@@ -3456,7 +3481,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Mixed',
                 'focus_passing_it': 'Misto',
                 'passing_style': 'Long',
@@ -3511,7 +3536,7 @@ FORMATIONS = [
         'opponent_settings': {
             'strong': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Molto Difensivo',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Mixed',
                 'focus_passing_it': 'Misto',
                 'passing_style': 'Mixed',
@@ -3613,7 +3638,7 @@ FORMATIONS = [
         'opponent_settings': {
             'strong': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Molto Difensivo',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Mixed',
@@ -3712,7 +3737,7 @@ FORMATIONS = [
         'opponent_settings': {
             'strong': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Molto Difensivo',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Through the Middle',
                 'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
@@ -3734,7 +3759,7 @@ FORMATIONS = [
             },
             'equal': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Molto Difensivo',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Through the Middle',
                 'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
@@ -3954,7 +3979,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Through the Middle',
                 'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
@@ -4050,7 +4075,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Through the Middle',
                 'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
@@ -4242,7 +4267,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Mixed',
@@ -4317,7 +4342,7 @@ FORMATIONS = [
             },
             'equal': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Through the Middle',
                 'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
@@ -4338,7 +4363,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Through the Middle',
                 'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
@@ -4434,7 +4459,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Short',
@@ -4706,7 +4731,7 @@ FORMATIONS = [
             },
             'equal': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Short',
@@ -4728,7 +4753,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Short',
@@ -4879,7 +4904,7 @@ FORMATIONS = [
         'opponent_settings': {
             'strong': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Molto Difensivo',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Through the Middle',
                 'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
@@ -4977,7 +5002,7 @@ FORMATIONS = [
         'opponent_settings': {
             'strong': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Molto Difensivo',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Mixed',
@@ -5076,7 +5101,7 @@ FORMATIONS = [
         'opponent_settings': {
             'strong': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Molto Difensivo',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Mixed',
                 'focus_passing_it': 'Misto',
                 'passing_style': 'Mixed',
@@ -5220,7 +5245,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Through the Middle',
                 'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
@@ -5393,7 +5418,7 @@ FORMATIONS = [
             },
             'equal': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Through the Middle',
                 'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
@@ -5416,7 +5441,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Through the Middle',
                 'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
@@ -5452,7 +5477,12 @@ FORMATIONS = [
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
         'strengths_en': ['Double AMC creators', 'Wing-back width', 'Three-CB stability', 'Italian variant'],
-        'strengths_it': ['Doppio AMC creativo', 'Ampiezza degli esterni', 'Stabilità a 3 DC', 'Variante italiana'],
+        'strengths_it': [
+            'Doppio AMC creativo',
+            'Ampiezza degli esterni',
+            'Stabilità a 3 DC',
+            'Variante italiana'
+        ],
         'weaknesses_en': ['Vulnerable to fast wings', 'Needs mobile wing-backs'],
         'weaknesses_it': ['Vulnerabile contro ali veloci', 'Richiede esterni mobili'],
         'tactic_type_en': 'Balanced / Conte-Style',
@@ -5547,8 +5577,18 @@ FORMATIONS = [
         'positions': ['GK', 'DL', 'DC', 'DC', 'DC', 'DR', 'MC', 'MC', 'AML', 'ST', 'AMR'],
         'category_en': 'Defensive',
         'category_it': 'Difensiva',
-        'strengths_en': ['Five at back', 'Two wide forwards', 'Counter-attack outlets', 'Solid central defense'],
-        'strengths_it': ['Cinque dietro', 'Due ali avanzate', 'Sbocchi per contropiede', 'Difesa centrale solida'],
+        'strengths_en': [
+            'Five at back',
+            'Two wide forwards',
+            'Counter-attack outlets',
+            'Solid central defense'
+        ],
+        'strengths_it': [
+            'Cinque dietro',
+            'Due ali avanzate',
+            'Sbocchi per contropiede',
+            'Difesa centrale solida'
+        ],
         'weaknesses_en': ['Only 2 MCs', 'Lone striker isolated'],
         'weaknesses_it': ['Solo 2 MC', 'Attaccante centrale isolato'],
         'tactic_type_en': 'Defensive / Counter with Width',
@@ -5566,7 +5606,7 @@ FORMATIONS = [
         'opponent_settings': {
             'strong': {
                 'mentality': 'Hard Defending',
-                'mentality_it': 'Molto Difensivo',
+                'mentality_it': 'Molto Difensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Long',
@@ -5647,7 +5687,12 @@ FORMATIONS = [
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
         'strengths_en': ['Double DMC shield', 'Compact midfield', 'Two strikers', 'Strong central spine'],
-        'strengths_it': ['Doppio scudo DMC', 'Centrocampo compatto', 'Due punte', 'Forte spina dorsale centrale'],
+        'strengths_it': [
+            'Doppio scudo DMC',
+            'Centrocampo compatto',
+            'Due punte',
+            'Forte spina dorsale centrale'
+        ],
         'weaknesses_en': ['No wide attack', 'Predictable through middle'],
         'weaknesses_it': ['Niente attacco largo', 'Prevedibile al centro'],
         'tactic_type_en': 'Balanced / Compact Hexagon Variant',
@@ -5807,7 +5852,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Down Both Flanks',
                 'focus_passing_it': 'Per entrambe le fasce',
                 'passing_style': 'Mixed',
@@ -5905,7 +5950,7 @@ FORMATIONS = [
             },
             'weak': {
                 'mentality': 'Hard Attacking',
-                'mentality_it': 'Molto Attaccante',
+                'mentality_it': 'Molto Offensiva',
                 'focus_passing': 'Mixed',
                 'focus_passing_it': 'Misto',
                 'passing_style': 'Short',
@@ -6042,7 +6087,7 @@ FORMATIONS = [
         'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence'],
         'strengths_it': [
             'Eccelle nello sfruttare le fasce contro difese a tre.',
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'DMC a protezione della difesa'
         ],
         'weaknesses_en': [
@@ -6134,15 +6179,7 @@ FORMATIONS = [
                 }
             }
         },
-        'effective_against': [
-            '3N-3(DMC/MC)-2W-2',
-            '3N-4-1-2',
-            '3W-5-1-1',
-            '3W-5-2 F',
-            '4-1-3N-2',
-            '4-2-1-3',
-            '4-3N-1-2'
-        ],
+        'effective_against': ['3N-3(DMC/MC)-2W-2', '3N-4-1-2', '3W-5-1-1', '3W-5-2 F', '4-1-3N-2', '4-2-1-3', '4-3N-1-2'],
         'vulnerable_to': [],
         'defense_count': 3
     },
@@ -6150,7 +6187,7 @@ FORMATIONS = [
         'id': '3n142',
         'name': '3N-1-4-2',
         'description_en': '3N-1-4-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-1-4-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-1-4-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'ML', 'MC', 'MC', 'MR', 'ST', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
@@ -6161,12 +6198,15 @@ FORMATIONS = [
             'Strike partnership'
         ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'DMC a protezione della difesa',
             'Controllo del possesso in mediana',
             "Coppia d'attacco"
         ],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -6265,11 +6305,14 @@ FORMATIONS = [
         'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence', 'Strike partnership'],
         'strengths_it': [
             'Forza il possesso centrale e sovraccarica la trequarti avversaria.',
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'DMC a protezione della difesa',
             "Coppia d'attacco"
         ],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fianchi scoperti ai lanci lunghi per le ali.',
             'Fasce difensive esposte ai contropiedi',
@@ -6292,7 +6335,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -6313,7 +6356,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -6334,7 +6377,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -6360,13 +6403,16 @@ FORMATIONS = [
         'id': '3n412',
         'name': '3N-4-1-2',
         'description_en': '3N-4-1-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-4-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-4-1-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MC', 'MR', 'AMC', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'Strike partnership'],
-        'strengths_it': ['Superiorita numerica a centrocampo', "Coppia d'attacco"],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'strengths_it': ['Superiorità numerica a centrocampo', "Coppia d'attacco"],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -6568,7 +6614,7 @@ FORMATIONS = [
         ],
         'weaknesses_en': ['Lacks width: vulnerable to opposition wingers'],
         'weaknesses_it': [
-            'Puo soffrire la mancanza di ampiezza contro ali molto larghe.',
+            'Può soffrire la mancanza di ampiezza contro ali molto larghe.',
             'Manca ampiezza: vulnerabile alle ali avversarie'
         ],
         'tactic_type_en': 'Balanced',
@@ -6588,7 +6634,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -6610,7 +6656,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -6631,7 +6677,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -6658,17 +6704,20 @@ FORMATIONS = [
         'id': '3511v',
         'name': '3-5-1-1 V',
         'description_en': '3-5-1-1 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3-5-1-1 con difesa a 3. Densita centrale insuperabile per annullare moduli stretti.',
+        'description_it': 'Modulo 3-5-1-1 con difesa a 3. Densità centrale insuperabile per annullare moduli stretti.',
         'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MC', 'MC', 'MR', 'AMC', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
         'strengths_en': ['Midfield numerical advantage', 'Possession control in midfield'],
         'strengths_it': [
-            'Densita centrale insuperabile per annullare moduli stretti.',
-            'Superiorita numerica a centrocampo',
+            'Densità centrale insuperabile per annullare moduli stretti.',
+            'Superiorità numerica a centrocampo',
             'Controllo del possesso in mediana'
         ],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             "Poca spinta offensiva laterale se l'AMC rimane isolato.",
             'Fasce difensive esposte ai contropiedi',
@@ -6761,17 +6810,24 @@ FORMATIONS = [
         'id': '3n2w2n12',
         'name': '3N-2W-2N-1-2',
         'description_en': '3N-2W-2N-1-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-2W-2N-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-2W-2N-1-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MR', 'MC', 'MC', 'AMC', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
-        'strengths_en': ['Midfield numerical advantage', 'Double screen in front of defence', 'Strike partnership'],
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'Double screen in front of defence',
+            'Strike partnership'
+        ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'Doppio schermo davanti alla difesa',
             "Coppia d'attacco"
         ],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -6793,7 +6849,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -6814,7 +6870,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -6835,7 +6891,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -6959,17 +7015,24 @@ FORMATIONS = [
         'id': '3n52f',
         'name': '3N-5-2 F',
         'description_en': '3N-5-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-5-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-5-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MC', 'MC', 'MR', 'ST', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
-        'strengths_en': ['Midfield numerical advantage', 'Possession control in midfield', 'Strike partnership'],
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'Possession control in midfield',
+            'Strike partnership'
+        ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'Controllo del possesso in mediana',
             "Coppia d'attacco"
         ],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -7061,13 +7124,20 @@ FORMATIONS = [
         'id': '313w12',
         'name': '3-1-3W-1-2',
         'description_en': '3-1-3W-1-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3-1-3W-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3-1-3W-1-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'ML', 'MC', 'MR', 'AMC', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence', 'Strike partnership'],
-        'strengths_it': ['Superiorita numerica a centrocampo', 'DMC a protezione della difesa', "Coppia d'attacco"],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'strengths_it': [
+            'Superiorità numerica a centrocampo',
+            'DMC a protezione della difesa',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -7257,13 +7327,20 @@ FORMATIONS = [
         'id': '3n13w12',
         'name': '3N-1-3W-1-2',
         'description_en': '3N-1-3W-1-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-1-3W-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-1-3W-1-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'ML', 'MC', 'MR', 'AMC', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence', 'Strike partnership'],
-        'strengths_it': ['Superiorita numerica a centrocampo', 'DMC a protezione della difesa', "Coppia d'attacco"],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'strengths_it': [
+            'Superiorità numerica a centrocampo',
+            'DMC a protezione della difesa',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -7355,13 +7432,16 @@ FORMATIONS = [
         'id': '3n2w3n2',
         'name': '3N-2W-3N-2',
         'description_en': '3N-2W-3N-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-2W-3N-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-2W-3N-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MR', 'AMC', 'AMC', 'AMC', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'Strike partnership'],
-        'strengths_it': ['Superiorita numerica a centrocampo', "Coppia d'attacco"],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'strengths_it': ['Superiorità numerica a centrocampo', "Coppia d'attacco"],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -7453,7 +7533,7 @@ FORMATIONS = [
         'id': '3n1411',
         'name': '3N-1-4-1-1',
         'description_en': '3N-1-4-1-1 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-1-4-1-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-1-4-1-1 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'ML', 'MC', 'MC', 'MR', 'AMC', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
@@ -7463,11 +7543,14 @@ FORMATIONS = [
             'Possession control in midfield'
         ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'DMC a protezione della difesa',
             'Controllo del possesso in mediana'
         ],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -7755,7 +7838,7 @@ FORMATIONS = [
         'id': '3w52f',
         'name': '3W-5-2 F',
         'description_en': '3W-5-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-5-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-5-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'ML', 'MC', 'MC', 'MC', 'MR', 'ST', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
@@ -7766,7 +7849,7 @@ FORMATIONS = [
             'Strike partnership'
         ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'Controllo del possesso in mediana',
             'Buona ampiezza di gioco',
             "Coppia d'attacco"
@@ -7863,13 +7946,13 @@ FORMATIONS = [
         'id': '3w123w1',
         'name': '3W-1-2-3W-1',
         'description_en': '3W-1-2-3W-1 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-1-2-3W-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-1-2-3W-1 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'MC', 'MC', 'AML', 'AMC', 'AMR', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence', 'Good width'],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'DMC a protezione della difesa',
             'Buona ampiezza di gioco'
         ],
@@ -7965,7 +8048,7 @@ FORMATIONS = [
         'id': '3w1411',
         'name': '3W-1-4-1-1',
         'description_en': '3W-1-4-1-1 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-1-4-1-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-1-4-1-1 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'ML', 'MC', 'MC', 'MR', 'AMC', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
@@ -7976,7 +8059,7 @@ FORMATIONS = [
             'Good width'
         ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'DMC a protezione della difesa',
             'Controllo del possesso in mediana',
             'Buona ampiezza di gioco'
@@ -8073,7 +8156,7 @@ FORMATIONS = [
         'id': '3w52v',
         'name': '3W-5-2 V',
         'description_en': '3W-5-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-5-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-5-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'ML', 'MC', 'MC', 'MC', 'MR', 'ST', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
@@ -8084,7 +8167,7 @@ FORMATIONS = [
             'Strike partnership'
         ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'Controllo del possesso in mediana',
             'Buona ampiezza di gioco',
             "Coppia d'attacco"
@@ -8181,17 +8264,24 @@ FORMATIONS = [
         'id': '3n2n12w2',
         'name': '3N-2N-1-2W-2',
         'description_en': '3N-2N-1-2W-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-2N-1-2W-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-2N-1-2W-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'DMC', 'MC', 'AML', 'AMR', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
-        'strengths_en': ['Midfield numerical advantage', 'Double screen in front of defence', 'Strike partnership'],
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'Double screen in front of defence',
+            'Strike partnership'
+        ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'Doppio schermo davanti alla difesa',
             "Coppia d'attacco"
         ],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -8283,13 +8373,16 @@ FORMATIONS = [
         'id': '3n43',
         'name': '3N-4-3',
         'description_en': '3N-4-3 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-4-3 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-4-3 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MC', 'MR', 'AML', 'ST', 'AMR'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'Strike partnership'],
-        'strengths_it': ['Superiorita numerica a centrocampo', "Coppia d'attacco"],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'strengths_it': ['Superiorità numerica a centrocampo', "Coppia d'attacco"],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -8381,12 +8474,12 @@ FORMATIONS = [
         'id': '3w2n3w2',
         'name': '3W-2N-3W-2',
         'description_en': '3W-2N-3W-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-2N-3W-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-2N-3W-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'MC', 'MC', 'AML', 'AMC', 'AMR', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'Good width', 'Strike partnership'],
-        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
+        'strengths_it': ['Superiorità numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
         'weaknesses_en': ['Defensive flanks exposed to counters'],
         'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
         'tactic_type_en': 'Attacking',
@@ -8484,8 +8577,15 @@ FORMATIONS = [
         'category_en': 'Defensive',
         'category_it': 'Difensiva',
         'strengths_en': ['Very solid back five', 'DMC shielding the defence', 'Good width'],
-        'strengths_it': ['Difesa solidissima a 5', 'DMC a protezione della difesa', 'Buona ampiezza di gioco'],
-        'weaknesses_en': ['Limited attacking push unless wingers advance', 'Isolated striker without support'],
+        'strengths_it': [
+            'Difesa solidissima a 5',
+            'DMC a protezione della difesa',
+            'Buona ampiezza di gioco'
+        ],
+        'weaknesses_en': [
+            'Limited attacking push unless wingers advance',
+            'Isolated striker without support'
+        ],
         'weaknesses_it': ['Poca spinta offensiva se le ali non salgono', 'Punta isolata senza rifinitore'],
         'tactic_type_en': 'Defensive',
         'tactic_type_it': 'Difensiva',
@@ -8577,12 +8677,12 @@ FORMATIONS = [
         'id': '3n2w2n2w1',
         'name': '3N-2W-2N-2W-1',
         'description_en': '3N-2W-2N-2W-1 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-2W-2N-2W-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-2W-2N-2W-1 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MR', 'MC', 'MC', 'AML', 'AMR', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'Double screen in front of defence'],
-        'strengths_it': ['Superiorita numerica a centrocampo', 'Doppio schermo davanti alla difesa'],
+        'strengths_it': ['Superiorità numerica a centrocampo', 'Doppio schermo davanti alla difesa'],
         'weaknesses_en': [
             'Defensive flanks exposed to counters',
             'Lacks width: vulnerable to opposition wingers',
@@ -8680,13 +8780,13 @@ FORMATIONS = [
         'id': '3w2n13w1',
         'name': '3W-2N-1-3W-1',
         'description_en': '3W-2N-1-3W-1 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-2N-1-3W-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-2N-1-3W-1 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'DMC', 'MC', 'AML', 'AMC', 'AMR', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'Double screen in front of defence', 'Good width'],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'Doppio schermo davanti alla difesa',
             'Buona ampiezza di gioco'
         ],
@@ -8782,12 +8882,12 @@ FORMATIONS = [
         'id': '3w43',
         'name': '3W-4-3',
         'description_en': '3W-4-3 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-4-3 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-4-3 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'ML', 'MC', 'MC', 'MR', 'AML', 'ST', 'AMR'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'Good width', 'Strike partnership'],
-        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
+        'strengths_it': ['Superiorità numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
         'weaknesses_en': ['Defensive flanks exposed to counters'],
         'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
         'tactic_type_en': 'Attacking',
@@ -8905,7 +9005,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -8927,7 +9027,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -8948,7 +9048,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -8975,13 +9075,16 @@ FORMATIONS = [
         'id': '33n3w1',
         'name': '3-3N-3W-1',
         'description_en': '3-3N-3W-1 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3-3N-3W-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3-3N-3W-1 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'MC', 'MC', 'MC', 'AML', 'AMC', 'AMR', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage'],
-        'strengths_it': ['Superiorita numerica a centrocampo'],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'strengths_it': ['Superiorità numerica a centrocampo'],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -9073,7 +9176,7 @@ FORMATIONS = [
         'id': '3w142',
         'name': '3W-1-4-2',
         'description_en': '3W-1-4-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-1-4-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-1-4-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'ML', 'MC', 'MC', 'MR', 'ST', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
@@ -9084,7 +9187,7 @@ FORMATIONS = [
             'Good width'
         ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'DMC a protezione della difesa',
             'Controllo del possesso in mediana',
             'Buona ampiezza di gioco'
@@ -9181,13 +9284,20 @@ FORMATIONS = [
         'id': '313n3',
         'name': '3-1-3N-3',
         'description_en': '3-1-3N-3 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3-1-3N-3 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3-1-3N-3 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'MC', 'MC', 'MC', 'AML', 'ST', 'AMR'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence', 'Strike partnership'],
-        'strengths_it': ['Superiorita numerica a centrocampo', 'DMC a protezione della difesa', "Coppia d'attacco"],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'strengths_it': [
+            'Superiorità numerica a centrocampo',
+            'DMC a protezione della difesa',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -9209,7 +9319,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -9230,7 +9340,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -9251,7 +9361,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -9277,13 +9387,20 @@ FORMATIONS = [
         'id': '3n13w12ddandelion',
         'name': '3N-1-3W-1-2 D (Dandelion)',
         'description_en': '3N-1-3W-1-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-1-3W-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-1-3W-1-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'ML', 'MC', 'MR', 'AMC', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence', 'Strike partnership'],
-        'strengths_it': ['Superiorita numerica a centrocampo', 'DMC a protezione della difesa', "Coppia d'attacco"],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'strengths_it': [
+            'Superiorità numerica a centrocampo',
+            'DMC a protezione della difesa',
+            "Coppia d'attacco"
+        ],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -9400,7 +9517,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -9422,7 +9539,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -9443,7 +9560,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -9470,13 +9587,16 @@ FORMATIONS = [
         'id': '3n511',
         'name': '3N-5-1-1',
         'description_en': '3N-5-1-1 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-5-1-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-5-1-1 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MC', 'MC', 'MR', 'AMC', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
         'strengths_en': ['Midfield numerical advantage', 'Possession control in midfield'],
-        'strengths_it': ['Superiorita numerica a centrocampo', 'Controllo del possesso in mediana'],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'strengths_it': ['Superiorità numerica a centrocampo', 'Controllo del possesso in mediana'],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -9568,13 +9688,13 @@ FORMATIONS = [
         'id': '3w511',
         'name': '3W-5-1-1',
         'description_en': '3W-5-1-1 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-5-1-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-5-1-1 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'ML', 'MC', 'MC', 'MC', 'MR', 'AMC', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
         'strengths_en': ['Midfield numerical advantage', 'Possession control in midfield', 'Good width'],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'Controllo del possesso in mediana',
             'Buona ampiezza di gioco'
         ],
@@ -9670,7 +9790,7 @@ FORMATIONS = [
         'id': '3n2dmcmc3w2',
         'name': '3N-2(DMC/MC)-3W-2',
         'description_en': '3N-2(DMC/MC)-3W-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-2(DMC/MC)-3W-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-2(DMC/MC)-3W-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'DMC', 'ML', 'MC', 'MR', 'ST', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
@@ -9681,12 +9801,15 @@ FORMATIONS = [
             'Strike partnership'
         ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'Doppio schermo davanti alla difesa',
             'Controllo del possesso in mediana',
             "Coppia d'attacco"
         ],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -9778,7 +9901,7 @@ FORMATIONS = [
         'id': '3w2dmcmc3w2',
         'name': '3W-2(DMC/MC)-3W-2',
         'description_en': '3W-2(DMC/MC)-3W-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-2(DMC/MC)-3W-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-2(DMC/MC)-3W-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'DMC', 'ML', 'MC', 'MR', 'ST', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
@@ -9789,7 +9912,7 @@ FORMATIONS = [
             'Good width'
         ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'Doppio schermo davanti alla difesa',
             'Controllo del possesso in mediana',
             'Buona ampiezza di gioco'
@@ -9886,17 +10009,24 @@ FORMATIONS = [
         'id': '3n3dmcmc2w2',
         'name': '3N-3(DMC/MC)-2W-2',
         'description_en': '3N-3(DMC/MC)-2W-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-3(DMC/MC)-2W-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-3(DMC/MC)-2W-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'DMC', 'DMC', 'ML', 'MR', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
-        'strengths_en': ['Midfield numerical advantage', 'Double screen in front of defence', 'Strike partnership'],
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'Double screen in front of defence',
+            'Strike partnership'
+        ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'Doppio schermo davanti alla difesa',
             "Coppia d'attacco"
         ],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -9988,7 +10118,7 @@ FORMATIONS = [
         'id': '3w2n2w12',
         'name': '3W-2N-2W-1-2',
         'description_en': '3W-2N-2W-1-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-2N-2W-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-2N-2W-1-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'DMC', 'ML', 'MR', 'AMC', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
@@ -9999,7 +10129,7 @@ FORMATIONS = [
             'Strike partnership'
         ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'Doppio schermo davanti alla difesa',
             'Buona ampiezza di gioco',
             "Coppia d'attacco"
@@ -10096,13 +10226,13 @@ FORMATIONS = [
         'id': '3w2n2n2w1',
         'name': '3W-2N-2N-2W-1',
         'description_en': '3W-2N-2N-2W-1 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-2N-2N-2W-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-2N-2N-2W-1 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'DMC', 'MC', 'MC', 'AML', 'AMR', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'Double screen in front of defence', 'Good width'],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'Doppio schermo davanti alla difesa',
             'Buona ampiezza di gioco'
         ],
@@ -10198,7 +10328,7 @@ FORMATIONS = [
         'id': '3w151',
         'name': '3W-1-5-1',
         'description_en': '3W-1-5-1 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-1-5-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-1-5-1 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'ML', 'MC', 'MC', 'MC', 'MR', 'ST'],
         'category_en': 'Balanced',
         'category_it': 'Bilanciata',
@@ -10209,7 +10339,7 @@ FORMATIONS = [
             'Good width'
         ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'DMC a protezione della difesa',
             'Controllo del possesso in mediana',
             'Buona ampiezza di gioco'
@@ -10306,13 +10436,13 @@ FORMATIONS = [
         'id': '3w13w2n1',
         'name': '3W-1-3W-2N-1',
         'description_en': '3W-1-3W-2N-1 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-1-3W-2N-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-1-3W-2N-1 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'ML', 'MC', 'MR', 'AMC', 'AMC', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence', 'Good width'],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'DMC a protezione della difesa',
             'Buona ampiezza di gioco'
         ],
@@ -10408,13 +10538,16 @@ FORMATIONS = [
         'id': '3n13w2n1',
         'name': '3N-1-3W-2N-1',
         'description_en': '3N-1-3W-2N-1 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-1-3W-2N-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-1-3W-2N-1 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'DMC', 'ML', 'MC', 'MR', 'AMC', 'AMC', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence'],
-        'strengths_it': ['Superiorita numerica a centrocampo', 'DMC a protezione della difesa'],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'strengths_it': ['Superiorità numerica a centrocampo', 'DMC a protezione della difesa'],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -10506,7 +10639,7 @@ FORMATIONS = [
         'id': '3w13w12',
         'name': '3W-1-3W-1-2',
         'description_en': '3W-1-3W-1-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-1-3W-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-1-3W-1-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'DMC', 'ML', 'MC', 'MR', 'AMC', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
@@ -10517,7 +10650,7 @@ FORMATIONS = [
             'Strike partnership'
         ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'DMC a protezione della difesa',
             'Buona ampiezza di gioco',
             "Coppia d'attacco"
@@ -10614,12 +10747,12 @@ FORMATIONS = [
         'id': '3w412',
         'name': '3W-4-1-2',
         'description_en': '3W-4-1-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-4-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-4-1-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'ML', 'MC', 'MC', 'MR', 'AMC', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'Good width', 'Strike partnership'],
-        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
+        'strengths_it': ['Superiorità numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
         'weaknesses_en': ['Defensive flanks exposed to counters'],
         'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
         'tactic_type_en': 'Attacking',
@@ -10737,7 +10870,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -10759,7 +10892,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -10780,7 +10913,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -10905,12 +11038,12 @@ FORMATIONS = [
         'id': '3n3w22',
         'name': '3N-3W-2-2',
         'description_en': '3N-3W-2-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-3W-2-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-3W-2-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MR', 'AML', 'AMR', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'Good width', 'Strike partnership'],
-        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
+        'strengths_it': ['Superiorità numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
         'weaknesses_en': ['Defensive flanks exposed to counters'],
         'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
         'tactic_type_en': 'Attacking',
@@ -11423,7 +11556,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -11445,7 +11578,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -11466,7 +11599,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -11518,7 +11651,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -11540,7 +11673,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -11561,7 +11694,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -11613,7 +11746,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -11635,7 +11768,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -11656,7 +11789,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -11716,7 +11849,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -11738,7 +11871,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -11759,7 +11892,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -11786,12 +11919,12 @@ FORMATIONS = [
         'id': '3n3w3w1',
         'name': '3N-3W-3W-1',
         'description_en': '3N-3W-3W-1 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-3W-3W-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-3W-3W-1 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MC', 'MR', 'AML', 'AMC', 'AMR', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'Good width'],
-        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco'],
+        'strengths_it': ['Superiorità numerica a centrocampo', 'Buona ampiezza di gioco'],
         'weaknesses_en': ['Defensive flanks exposed to counters'],
         'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
         'tactic_type_en': 'Attacking',
@@ -11883,12 +12016,12 @@ FORMATIONS = [
         'id': '3n2w3w2',
         'name': '3N-2W-3W-2',
         'description_en': '3N-2W-3W-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-2W-3W-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-2W-3W-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MR', 'AML', 'AMC', 'AMR', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'Good width', 'Strike partnership'],
-        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
+        'strengths_it': ['Superiorità numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
         'weaknesses_en': ['Defensive flanks exposed to counters'],
         'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
         'tactic_type_en': 'Attacking',
@@ -12011,7 +12144,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -12033,7 +12166,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -12054,7 +12187,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -12086,7 +12219,11 @@ FORMATIONS = [
         'category_en': 'Defensive',
         'category_it': 'Difensiva',
         'strengths_en': ['Very solid back five', 'DMC shielding the defence', 'Good width'],
-        'strengths_it': ['Difesa solidissima a 5', 'DMC a protezione della difesa', 'Buona ampiezza di gioco'],
+        'strengths_it': [
+            'Difesa solidissima a 5',
+            'DMC a protezione della difesa',
+            'Buona ampiezza di gioco'
+        ],
         'weaknesses_en': ['Limited attacking push unless wingers advance'],
         'weaknesses_it': ['Poca spinta offensiva se le ali non salgono'],
         'tactic_type_en': 'Defensive',
@@ -12185,7 +12322,10 @@ FORMATIONS = [
         'category_it': 'Difensiva',
         'strengths_en': ['Very solid back five', 'Good width'],
         'strengths_it': ['Difesa solidissima a 5', 'Buona ampiezza di gioco'],
-        'weaknesses_en': ['Limited attacking push unless wingers advance', 'Isolated striker without support'],
+        'weaknesses_en': [
+            'Limited attacking push unless wingers advance',
+            'Isolated striker without support'
+        ],
         'weaknesses_it': ['Poca spinta offensiva se le ali non salgono', 'Punta isolata senza rifinitore'],
         'tactic_type_en': 'Defensive',
         'tactic_type_it': 'Difensiva',
@@ -12308,7 +12448,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -12330,7 +12470,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -12351,7 +12491,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -12378,12 +12518,12 @@ FORMATIONS = [
         'id': '3w23w2',
         'name': '3W-2-3W-2',
         'description_en': '3W-2-3W-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-2-3W-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-2-3W-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'MC', 'MC', 'AML', 'AMC', 'AMR', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'Good width', 'Strike partnership'],
-        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
+        'strengths_it': ['Superiorità numerica a centrocampo', 'Buona ampiezza di gioco', "Coppia d'attacco"],
         'weaknesses_en': ['Defensive flanks exposed to counters'],
         'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
         'tactic_type_en': 'Attacking',
@@ -12476,17 +12616,24 @@ FORMATIONS = [
         'id': '3n2w212',
         'name': '3N-2W-2-1-2',
         'description_en': '3N-2W-2-1-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3N-2W-2-1-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3N-2W-2-1-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DC', 'DC', 'DC', 'ML', 'MR', 'MC', 'MC', 'AMC', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
-        'strengths_en': ['Midfield numerical advantage', 'Double screen in front of defence', 'Strike partnership'],
+        'strengths_en': [
+            'Midfield numerical advantage',
+            'Double screen in front of defence',
+            'Strike partnership'
+        ],
         'strengths_it': [
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'Doppio schermo davanti alla difesa',
             "Coppia d'attacco"
         ],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -12508,7 +12655,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -12529,7 +12676,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -12550,7 +12697,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -12576,12 +12723,12 @@ FORMATIONS = [
         'id': '3w3n3w1',
         'name': '3W-3N-3W-1',
         'description_en': '3W-3N-3W-1 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-3N-3W-1 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-3N-3W-1 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'MC', 'MC', 'MC', 'AML', 'AMC', 'AMR', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'Good width'],
-        'strengths_it': ['Superiorita numerica a centrocampo', 'Buona ampiezza di gioco'],
+        'strengths_it': ['Superiorità numerica a centrocampo', 'Buona ampiezza di gioco'],
         'weaknesses_en': ['Defensive flanks exposed to counters'],
         'weaknesses_it': ['Fasce difensive esposte ai contropiedi'],
         'tactic_type_en': 'Attacking',
@@ -12681,7 +12828,7 @@ FORMATIONS = [
         'strengths_en': ['Midfield numerical advantage', 'DMC shielding the defence'],
         'strengths_it': [
             'Massimizza il possesso palla e la creativita tra le linee.',
-            'Superiorita numerica a centrocampo',
+            'Superiorità numerica a centrocampo',
             'DMC a protezione della difesa'
         ],
         'weaknesses_en': [
@@ -12781,13 +12928,16 @@ FORMATIONS = [
         'id': '3w2n3n2',
         'name': '3W-2N-3N-2',
         'description_en': '3W-2N-3N-2 shape with a back 3. Midfield numerical advantage',
-        'description_it': 'Modulo 3W-2N-3N-2 con difesa a 3. Superiorita numerica a centrocampo',
+        'description_it': 'Modulo 3W-2N-3N-2 con difesa a 3. Superiorità numerica a centrocampo',
         'positions': ['GK', 'DL', 'DC', 'DR', 'MC', 'MC', 'AMC', 'AMC', 'AMC', 'ST', 'ST'],
         'category_en': 'Attacking',
         'category_it': 'Offensiva',
         'strengths_en': ['Midfield numerical advantage', 'Strike partnership'],
-        'strengths_it': ['Superiorita numerica a centrocampo', "Coppia d'attacco"],
-        'weaknesses_en': ['Defensive flanks exposed to counters', 'Lacks width: vulnerable to opposition wingers'],
+        'strengths_it': ['Superiorità numerica a centrocampo', "Coppia d'attacco"],
+        'weaknesses_en': [
+            'Defensive flanks exposed to counters',
+            'Lacks width: vulnerable to opposition wingers'
+        ],
         'weaknesses_it': [
             'Fasce difensive esposte ai contropiedi',
             'Manca ampiezza: vulnerabile alle ali avversarie'
@@ -12809,7 +12959,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -12831,7 +12981,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -12852,7 +13002,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -12904,7 +13054,7 @@ FORMATIONS = [
                 'mentality': 'Defensive',
                 'mentality_it': 'Difensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Long',
                 'passing_style_it': 'Lunghi',
                 'counter_attack': True,
@@ -12925,7 +13075,7 @@ FORMATIONS = [
                 'mentality': 'Normal',
                 'mentality_it': 'Normale',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Mixed',
                 'passing_style_it': 'Misti',
                 'counter_attack': True,
@@ -12946,7 +13096,7 @@ FORMATIONS = [
                 'mentality': 'Attacking',
                 'mentality_it': 'Offensiva',
                 'focus_passing': 'Through the Middle',
-                'focus_passing_it': 'Al Centro',
+                'focus_passing_it': 'Per il centro',
                 'passing_style': 'Short',
                 'passing_style_it': 'Corti',
                 'counter_attack': False,
@@ -12988,7 +13138,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -13011,7 +13161,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13033,7 +13183,7 @@ COUNTER_ENGINE = [
             'stile': 'Corti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -13058,7 +13208,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -13081,7 +13231,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13104,7 +13254,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -13129,7 +13279,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13151,7 +13301,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'SI',
             'fr': {
@@ -13173,7 +13323,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Hard',
+            'cont': 'Duro',
             'marc': 'Uomo',
             'fuo': 'SI',
             'fr': {
@@ -13197,7 +13347,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13220,7 +13370,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13242,7 +13392,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -13266,7 +13416,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -13288,9 +13438,9 @@ COUNTER_ENGINE = [
             'stile': 'Corti',
             'ctrl': 'NO',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '—',
                 'DC': '↓',
@@ -13310,7 +13460,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -13335,7 +13485,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -13358,7 +13508,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13381,7 +13531,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -13405,7 +13555,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -13426,7 +13576,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13448,7 +13598,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Hard',
+            'cont': 'Duro',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -13471,7 +13621,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13494,7 +13644,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13516,7 +13666,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -13540,7 +13690,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -13560,7 +13710,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13582,7 +13732,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Hard',
+            'cont': 'Duro',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -13606,7 +13756,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -13627,7 +13777,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13646,7 +13796,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -13671,7 +13821,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -13692,7 +13842,7 @@ COUNTER_ENGINE = [
             'stile': 'Corti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -13714,7 +13864,7 @@ COUNTER_ENGINE = [
             'stile': 'Corti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Hard',
+            'cont': 'Duro',
             'marc': 'Uomo',
             'fuo': 'SI',
             'fr': {
@@ -13740,7 +13890,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -13763,7 +13913,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13783,7 +13933,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -13806,7 +13956,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -13829,7 +13979,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13849,7 +13999,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -13873,7 +14023,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13896,7 +14046,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13916,7 +14066,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Hard',
+            'cont': 'Duro',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -13940,7 +14090,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -13963,7 +14113,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -13983,7 +14133,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14007,7 +14157,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -14029,7 +14179,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -14051,7 +14201,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14077,7 +14227,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -14100,7 +14250,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -14122,7 +14272,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14146,7 +14296,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -14169,7 +14319,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -14189,7 +14339,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14213,7 +14363,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -14235,7 +14385,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -14258,7 +14408,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14283,7 +14433,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -14305,7 +14455,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -14329,7 +14479,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14354,7 +14504,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -14377,9 +14527,9 @@ COUNTER_ENGINE = [
             'stile': 'Corti',
             'ctrl': 'NO',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '—',
                 'DC': '↓',
@@ -14399,7 +14549,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14426,7 +14576,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -14446,7 +14596,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -14469,7 +14619,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14494,7 +14644,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -14517,7 +14667,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -14539,7 +14689,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14565,7 +14715,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -14587,7 +14737,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -14609,7 +14759,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14636,7 +14786,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -14659,7 +14809,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -14681,7 +14831,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14706,9 +14856,9 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DC': '↓',
                 'ML': '—',
@@ -14726,9 +14876,9 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '—',
                 'DC': '↓',
@@ -14749,7 +14899,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14773,7 +14923,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14795,7 +14945,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14817,7 +14967,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14841,7 +14991,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14863,7 +15013,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14883,7 +15033,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14907,7 +15057,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14929,7 +15079,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14949,7 +15099,7 @@ COUNTER_ENGINE = [
             'stile': 'Corti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Hard',
+            'cont': 'Duro',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -14973,7 +15123,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'SI',
             'fr': {
@@ -14995,7 +15145,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -15016,7 +15166,7 @@ COUNTER_ENGINE = [
             'stile': 'Corti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Hard',
+            'cont': 'Duro',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -15041,7 +15191,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -15061,9 +15211,9 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DC': '↓',
                 'DMC': '↓',
@@ -15082,7 +15232,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -15108,9 +15258,9 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -15130,7 +15280,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Medio',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -15180,9 +15330,9 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -15202,7 +15352,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Medio',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -15224,7 +15374,7 @@ COUNTER_ENGINE = [
             'stile': 'Corti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Uomo',
             'fuo': 'SI',
             'fr': {
@@ -15248,7 +15398,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -15270,7 +15420,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Medio',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -15314,9 +15464,9 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -15336,7 +15486,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Medio',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -15378,9 +15528,9 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -15398,7 +15548,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Medio',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -15438,9 +15588,9 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -15460,7 +15610,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Medio',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -15502,7 +15652,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -15564,7 +15714,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -15626,7 +15776,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -15688,7 +15838,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -15751,7 +15901,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -15813,7 +15963,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -15833,7 +15983,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Normale',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'MC': '↑',
                 'DMC': '↓',
@@ -15873,7 +16023,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -15933,7 +16083,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -15995,7 +16145,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16015,7 +16165,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Normale',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'MC': '↑',
                 'DMC': '↓',
@@ -16055,7 +16205,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16117,7 +16267,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16179,7 +16329,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16241,7 +16391,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16303,7 +16453,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16365,7 +16515,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16427,7 +16577,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16489,7 +16639,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16497,7 +16647,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 4-5-1 V-Style e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 4-5-1 V-Style e riparti in contropiede'
         },
         'pari': {
             'mod': '4-5-1 V-Style',
@@ -16536,7 +16686,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 4-5-1 V-Style con pressing e ritmo"
+            'w': 'Contro avversari più deboli, spingi alto col 4-5-1 V-Style con pressing e ritmo'
         }
     },
     {
@@ -16552,7 +16702,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16560,7 +16710,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 4-1-3-1-1 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 4-1-3-1-1 e riparti in contropiede'
         },
         'pari': {
             'mod': '4-1-3-1-1',
@@ -16598,7 +16748,7 @@ COUNTER_ENGINE = [
                 'AMC': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 4-1-3-1-1 con pressing e ritmo"
+            'w': 'Contro avversari più deboli, spingi alto col 4-1-3-1-1 con pressing e ritmo'
         }
     },
     {
@@ -16614,7 +16764,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16622,7 +16772,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 4-3-3 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 4-3-3 e riparti in contropiede'
         },
         'pari': {
             'mod': '4-3-3',
@@ -16661,7 +16811,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 4-3-3 con pressing e ritmo"
+            'w': 'Contro avversari più deboli, spingi alto col 4-3-3 con pressing e ritmo'
         }
     },
     {
@@ -16677,7 +16827,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16685,7 +16835,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 4-3-3 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 4-3-3 e riparti in contropiede'
         },
         'pari': {
             'mod': '4-3-3',
@@ -16724,7 +16874,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 4-3-3 con pressing e ritmo"
+            'w': 'Contro avversari più deboli, spingi alto col 4-3-3 con pressing e ritmo'
         }
     },
     {
@@ -16740,7 +16890,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16748,7 +16898,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 4-3-3 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 4-3-3 e riparti in contropiede'
         },
         'pari': {
             'mod': '4-3-3',
@@ -16787,7 +16937,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 4-3-3 con pressing e ritmo"
+            'w': 'Contro avversari più deboli, spingi alto col 4-3-3 con pressing e ritmo'
         }
     },
     {
@@ -16803,7 +16953,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16811,7 +16961,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 4-2-3-1 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 4-2-3-1 e riparti in contropiede'
         },
         'pari': {
             'mod': '4-2-3-1',
@@ -16850,7 +17000,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 4-2-3-1 con pressing e ritmo"
+            'w': 'Contro avversari più deboli, spingi alto col 4-2-3-1 con pressing e ritmo'
         }
     },
     {
@@ -16866,7 +17016,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16874,7 +17024,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 4-1-3N-2 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 4-1-3N-2 e riparti in contropiede'
         },
         'pari': {
             'mod': '4-1-3N-2',
@@ -16911,7 +17061,7 @@ COUNTER_ENGINE = [
                 'MC': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 4-1-3N-2 con pressing e ritmo"
+            'w': 'Contro avversari più deboli, spingi alto col 4-1-3N-2 con pressing e ritmo'
         }
     },
     {
@@ -16927,7 +17077,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16935,7 +17085,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 4-3-3 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 4-3-3 e riparti in contropiede'
         },
         'pari': {
             'mod': '4-3-3',
@@ -16974,7 +17124,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 4-3-3 con pressing e ritmo"
+            'w': 'Contro avversari più deboli, spingi alto col 4-3-3 con pressing e ritmo'
         }
     },
     {
@@ -16990,7 +17140,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -16998,7 +17148,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 4-3W-1-2 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 4-3W-1-2 e riparti in contropiede'
         },
         'pari': {
             'mod': '4-3W-1-2',
@@ -17037,7 +17187,7 @@ COUNTER_ENGINE = [
                 'MR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 4-3W-1-2 con pressing e marcatura aggressiva"
+            'w': 'Contro avversari più deboli, spingi alto col 4-3W-1-2 con pressing e marcatura aggressiva'
         }
     },
     {
@@ -17053,7 +17203,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'ML': '↓',
                 'DC': '↓',
@@ -17061,7 +17211,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 3-4-1-2 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 3-4-1-2 e riparti in contropiede'
         },
         'pari': {
             'mod': '3-4-1-2',
@@ -17098,7 +17248,7 @@ COUNTER_ENGINE = [
                 'MR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 3-4-1-2 con pressing e marcatura aggressiva"
+            'w': 'Contro avversari più deboli, spingi alto col 3-4-1-2 con pressing e marcatura aggressiva'
         }
     },
     {
@@ -17114,7 +17264,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'AML': '↓',
                 'DC': '↓',
@@ -17122,7 +17272,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 3-1-3N-2W-1 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 3-1-3N-2W-1 e riparti in contropiede'
         },
         'pari': {
             'mod': '3-1-3N-2W-1',
@@ -17159,7 +17309,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 3-1-3N-2W-1 con pressing e marcatura aggressiva"
+            'w': 'Contro avversari più deboli, spingi alto col 3-1-3N-2W-1 con pressing e marcatura aggressiva'
         }
     },
     {
@@ -17175,7 +17325,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'ML': '↓',
                 'DC': '↓',
@@ -17183,7 +17333,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 3-4-1-2 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 3-4-1-2 e riparti in contropiede'
         },
         'pari': {
             'mod': '3-4-1-2',
@@ -17220,7 +17370,7 @@ COUNTER_ENGINE = [
                 'MR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 3-4-1-2 con pressing e marcatura aggressiva"
+            'w': 'Contro avversari più deboli, spingi alto col 3-4-1-2 con pressing e marcatura aggressiva'
         }
     },
     {
@@ -17236,13 +17386,13 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DC': '↓',
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 3-1-3N-1-2 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 3-1-3N-1-2 e riparti in contropiede'
         },
         'pari': {
             'mod': '3-1-3N-1-2',
@@ -17278,7 +17428,7 @@ COUNTER_ENGINE = [
                 'AMC': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 3-1-3N-1-2 con pressing e marcatura aggressiva"
+            'w': 'Contro avversari più deboli, spingi alto col 3-1-3N-1-2 con pressing e marcatura aggressiva'
         }
     },
     {
@@ -17294,7 +17444,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'AML': '↓',
                 'DC': '↓',
@@ -17302,7 +17452,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 3-1-3N-2W-1 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 3-1-3N-2W-1 e riparti in contropiede'
         },
         'pari': {
             'mod': '3-1-3N-2W-1',
@@ -17339,7 +17489,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 3-1-3N-2W-1 con pressing e marcatura aggressiva"
+            'w': 'Contro avversari più deboli, spingi alto col 3-1-3N-2W-1 con pressing e marcatura aggressiva'
         }
     },
     {
@@ -17355,7 +17505,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'DL': '↓',
                 'DC': '↓',
@@ -17363,7 +17513,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 3W-2N-1-3W-1 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 3W-2N-1-3W-1 e riparti in contropiede'
         },
         'pari': {
             'mod': '3W-2N-1-3W-1',
@@ -17402,7 +17552,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 3W-2N-1-3W-1 con pressing e marcatura aggressiva"
+            'w': 'Contro avversari più deboli, spingi alto col 3W-2N-1-3W-1 con pressing e marcatura aggressiva'
         }
     },
     {
@@ -17418,7 +17568,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'AML': '↓',
                 'DC': '↓',
@@ -17426,7 +17576,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 3-5-2 V e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 3-5-2 V e riparti in contropiede'
         },
         'pari': {
             'mod': '3-5-2 V (V-Style)',
@@ -17463,7 +17613,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 3-5-2 V con pressing e marcatura aggressiva"
+            'w': 'Contro avversari più deboli, spingi alto col 3-5-2 V con pressing e marcatura aggressiva'
         }
     },
     {
@@ -17479,7 +17629,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'ML': '↓',
                 'DC': '↓',
@@ -17487,7 +17637,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 3N-1-4-1-1 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 3N-1-4-1-1 e riparti in contropiede'
         },
         'pari': {
             'mod': '3N-1-4-1-1',
@@ -17524,7 +17674,7 @@ COUNTER_ENGINE = [
                 'MR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 3N-1-4-1-1 con pressing e marcatura aggressiva"
+            'w': 'Contro avversari più deboli, spingi alto col 3N-1-4-1-1 con pressing e marcatura aggressiva'
         }
     },
     {
@@ -17540,7 +17690,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'ML': '↓',
                 'DC': '↓',
@@ -17548,7 +17698,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 3N-5-2 V e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 3N-5-2 V e riparti in contropiede'
         },
         'pari': {
             'mod': '3N-5-2 V',
@@ -17585,7 +17735,7 @@ COUNTER_ENGINE = [
                 'MR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 3N-5-2 V con pressing e marcatura aggressiva"
+            'w': 'Contro avversari più deboli, spingi alto col 3N-5-2 V con pressing e marcatura aggressiva'
         }
     },
     {
@@ -17601,7 +17751,7 @@ COUNTER_ENGINE = [
             'press': 'Basso',
             'cont': 'Facile',
             'marc': 'Zona',
-            'fuo': 'SI',
+            'fuo': 'NO',
             'fr': {
                 'ML': '↓',
                 'DC': '↓',
@@ -17609,7 +17759,7 @@ COUNTER_ENGINE = [
                 'MC': '↓',
                 'ST': '—'
             },
-            'w': "Contro avversari piu' forti, resta compatto col 3N-1-3W-1-2 e riparti in contropiede"
+            'w': 'Contro avversari più forti, resta compatto col 3N-1-3W-1-2 e riparti in contropiede'
         },
         'pari': {
             'mod': '3N-1-3W-1-2',
@@ -17646,7 +17796,7 @@ COUNTER_ENGINE = [
                 'MR': '↑',
                 'ST': '↑'
             },
-            'w': "Contro avversari piu' deboli, spingi alto col 3N-1-3W-1-2 con pressing e marcatura aggressiva"
+            'w': 'Contro avversari più deboli, spingi alto col 3N-1-3W-1-2 con pressing e marcatura aggressiva'
         }
     },
     {
@@ -17660,7 +17810,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -17681,7 +17831,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -17703,7 +17853,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -17727,7 +17877,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -17748,7 +17898,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -17770,7 +17920,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -17795,7 +17945,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -17815,7 +17965,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -17837,7 +17987,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -17861,7 +18011,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -17883,7 +18033,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -17905,7 +18055,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -17929,7 +18079,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -17949,7 +18099,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -17971,7 +18121,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -17996,7 +18146,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -18016,7 +18166,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18038,7 +18188,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -18063,7 +18213,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -18083,7 +18233,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18105,7 +18255,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -18130,7 +18280,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -18150,7 +18300,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18172,7 +18322,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -18196,7 +18346,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -18216,7 +18366,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18238,7 +18388,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -18263,7 +18413,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -18283,7 +18433,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18305,7 +18455,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -18331,7 +18481,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -18351,7 +18501,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18373,7 +18523,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -18398,7 +18548,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -18418,7 +18568,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18440,7 +18590,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -18464,7 +18614,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -18484,7 +18634,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18506,7 +18656,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -18531,7 +18681,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -18550,7 +18700,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18572,7 +18722,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -18596,7 +18746,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -18617,7 +18767,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18639,7 +18789,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -18664,7 +18814,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
@@ -18685,7 +18835,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18707,7 +18857,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -18731,7 +18881,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18741,7 +18891,7 @@ COUNTER_ENGINE = [
                 'MC': '—',
                 'ST': '—'
             },
-            'w': "Avversario piu' forte: blocco ordinato, zona, e contropiede sulle fasce"
+            'w': 'Avversario più forte: blocco ordinato, zona, e contropiede sulle fasce'
         },
         'pari': {
             'mod': '4-1-4-1',
@@ -18751,7 +18901,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18774,7 +18924,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -18799,7 +18949,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18821,7 +18971,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18844,7 +18994,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -18868,7 +19018,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18890,7 +19040,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18912,7 +19062,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -18938,7 +19088,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18960,7 +19110,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -18982,7 +19132,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -19007,7 +19157,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19027,7 +19177,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19050,7 +19200,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -19075,7 +19225,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19096,7 +19246,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19118,7 +19268,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -19143,7 +19293,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19165,7 +19315,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19187,7 +19337,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -19213,7 +19363,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19233,7 +19383,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19255,7 +19405,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -19280,7 +19430,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19299,7 +19449,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19322,7 +19472,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -19347,7 +19497,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19368,7 +19518,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19392,7 +19542,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -19418,7 +19568,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19431,7 +19581,7 @@ COUNTER_ENGINE = [
                 'MR': '↑',
                 'ST': '—'
             },
-            'w': "Avversario piu' forte: blocco ordinato, zona, e contropiede sulle fasce"
+            'w': 'Avversario più forte: blocco ordinato, zona, e contropiede sulle fasce'
         },
         'pari': {
             'mod': '4-1-3W-2',
@@ -19441,7 +19591,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19464,7 +19614,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -19489,7 +19639,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19512,7 +19662,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19534,7 +19684,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -19558,7 +19708,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19580,7 +19730,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19602,7 +19752,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -19626,7 +19776,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19648,7 +19798,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19669,7 +19819,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -19693,7 +19843,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19715,7 +19865,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19736,7 +19886,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -19760,7 +19910,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19780,7 +19930,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19802,7 +19952,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -19828,7 +19978,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19849,7 +19999,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19870,7 +20020,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -19896,7 +20046,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19918,7 +20068,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19940,7 +20090,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -19964,7 +20114,7 @@ COUNTER_ENGINE = [
             'stile': 'Lunghi',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Easy',
+            'cont': 'Facile',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -19985,7 +20135,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'SI',
             'press': 'Basso',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
@@ -20007,7 +20157,7 @@ COUNTER_ENGINE = [
             'stile': 'Misti',
             'ctrl': 'NO',
             'press': 'Alto',
-            'cont': 'Norm',
+            'cont': 'Normale',
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
@@ -20182,9 +20332,9 @@ COUNTER_QUICK = [
     {
         'av': '3N-1-2-1-3',
         'cat': 'att',
-        'off': '4-3-3',
+        'off': '3-1-3N-1-2',
         'neu': '3-1-3N-1-2',
-        'dif': '5-4-1 F (Flat)'
+        'dif': '3-1-3N-1-2'
     },
     {
         'av': '3W-1-5-1',
@@ -20230,10 +20380,10 @@ COUNTER_QUICK = [
     },
     {
         'av': '3W-1-3N-1-2',
-        'cat': 'att',
-        'off': '3-4-3',
+        'cat': 'neu',
+        'off': '3-5-2 V (V-Style)',
         'neu': '3-5-2 V (V-Style)',
-        'dif': '4-1-4-1'
+        'dif': '3-5-2 V (V-Style)'
     },
     {
         'av': '3N-4-1-2',
@@ -20259,9 +20409,9 @@ COUNTER_QUICK = [
     {
         'av': '4-5-1 V-Style',
         'cat': 'neu',
-        'off': '3-4-3',
+        'off': '3-3-1-3',
         'neu': '4-3N-3',
-        'dif': '4-1-4-1'
+        'dif': '4-5-1 V-Style'
     },
     {
         'av': '4-4-2 C (Classic)',
@@ -20287,16 +20437,16 @@ COUNTER_QUICK = [
     {
         'av': '4-1-2-1-2 WD (Wide Diamond)',
         'cat': 'neu',
-        'off': '3-4-3',
+        'off': '4-3W-1-2',
         'neu': '4-3W-1-2',
-        'dif': '4-1-4-1'
+        'dif': '4-3W-1-2'
     },
     {
         'av': '4-1-2-2-1',
         'cat': 'neu',
-        'off': '3-4-3',
+        'off': '4-2-2-2 H (Hexagon)',
         'neu': '4-2-2-2 H (Hexagon)',
-        'dif': '4-1-4-1'
+        'dif': '4-2-2-2 H (Hexagon)'
     },
     {
         'av': '4-1-1-2W-2',
@@ -20308,16 +20458,16 @@ COUNTER_QUICK = [
     {
         'av': '4-1-1-2N-2',
         'cat': 'neu',
-        'off': '3-4-3',
+        'off': '3W-2N-1-3W-1',
         'neu': '3W-2N-1-3W-1',
-        'dif': '4-1-4-1'
+        'dif': '3W-2N-1-3W-1'
     },
     {
         'av': '4-2N-1-2N-1',
         'cat': 'neu',
-        'off': '3-4-3',
+        'off': '3N-1-4-1-1',
         'neu': '3N-1-4-1-1',
-        'dif': '4-1-4-1'
+        'dif': '3N-1-4-1-1'
     },
     {
         'av': '4-2N-1-2W-1',
@@ -20336,16 +20486,16 @@ COUNTER_QUICK = [
     {
         'av': '4-3N-3',
         'cat': 'neu',
-        'off': '3-4-3',
+        'off': '3-4-1-2',
         'neu': '3-4-1-2',
-        'dif': '4-1-4-1'
+        'dif': '3-4-1-2'
     },
     {
         'av': '4-1-3N-2',
         'cat': 'neu',
-        'off': '3-4-3',
+        'off': '3-1-3N-2W-1',
         'neu': '3-1-3N-2W-1',
-        'dif': '4-1-4-1'
+        'dif': '3-1-3N-2W-1'
     },
     {
         'av': '4-1-3N-1-1',
@@ -20440,17 +20590,17 @@ COUNTER_QUICK = [
     },
     {
         'av': '4-2-1-3',
-        'cat': 'neu',
-        'off': '4-3-3',
+        'cat': 'att',
+        'off': '3-1-3N-2W-1',
         'neu': '3-1-3N-2W-1',
-        'dif': '5-4-1 F (Flat)'
+        'dif': '3-1-3N-2W-1'
     },
     {
         'av': '4-1-4-1',
         'cat': 'neu',
         'off': '3-5-2 V (V-Style)',
         'neu': '4-2-2-2 H (Hexagon)',
-        'dif': '4-5-1 V-Style'
+        'dif': '4-2-3-1'
     },
     {
         'av': '4-4-1-1',
@@ -20518,9 +20668,9 @@ COUNTER_QUICK = [
     {
         'av': '5-2W-2N-1',
         'cat': 'dif',
-        'off': '4-3-3',
+        'off': '3N-1-3W-1-2',
         'neu': '3N-1-3W-1-2',
-        'dif': '4-4-2 C (Classic)'
+        'dif': '3N-1-3W-1-2'
     },
     {
         'av': '5-2-2N-1',
@@ -20539,9 +20689,9 @@ COUNTER_QUICK = [
     {
         'av': '5-1-1-1-2',
         'cat': 'dif',
-        'off': '4-3-3',
+        'off': '3N-5-2 V',
         'neu': '3N-5-2 V',
-        'dif': '4-4-2 C (Classic)'
+        'dif': '3N-5-2 V'
     },
     {
         'av': '3N-2W-3N-2',
@@ -20560,9 +20710,9 @@ COUNTER_QUICK = [
     {
         'av': '3-2-2-2-1 B (Butterfly)',
         'cat': 'dif',
-        'off': '4-3-3',
+        'off': '3-4-1-2',
         'neu': '3-4-1-2',
-        'dif': '5-4-1 F (Flat)'
+        'dif': '3-4-1-2'
     }
 ]
 
@@ -20630,9 +20780,9 @@ MATCHUP_MATRIX = [
     {
         'opponent': '3N-2-2-2-1 B (Butterfly 3N)',
         'category': 'att',
-        'counter_offensive': '4-3-3',
-        'counter_neutral': '4-2-2-2 H (Hexagon)',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_offensive': '3N-5-2 F',
+        'counter_neutral': '4-3N-2W-1',
+        'counter_defensive': '3N-5-2 F'
     },
     {
         'opponent': '3W-2DMC-3W-1-1 ML (Maple Leaf)',
@@ -20651,9 +20801,9 @@ MATCHUP_MATRIX = [
     {
         'opponent': '4-5-1 V-Style',
         'category': 'neu',
-        'counter_offensive': '3-4-3',
+        'counter_offensive': '3-3-1-3',
         'counter_neutral': '4-3N-3',
-        'counter_defensive': '4-1-4-1'
+        'counter_defensive': '4-5-1 V-Style'
     },
     {
         'opponent': '4-5-1 F (Flat)',
@@ -20688,7 +20838,7 @@ MATCHUP_MATRIX = [
         'category': 'neu',
         'counter_offensive': '3-5-2 V (V-Style)',
         'counter_neutral': '4-2-2-2 H (Hexagon)',
-        'counter_defensive': '4-5-1 V-Style'
+        'counter_defensive': '4-2-3-1'
     },
     {
         'opponent': '4-4-1-1',
@@ -20782,6 +20932,13 @@ MATCHUP_MATRIX = [
         'counter_defensive': '4-1-2N-1-2'
     },
     {
+        'opponent': '4-3-2-1 XT (Xmas Tree)',
+        'category': 'neu',
+        'counter_offensive': '3-1-5-1 AMC',
+        'counter_neutral': '3-1-5-1 AMC',
+        'counter_defensive': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'
+    },
+    {
         'opponent': '3-1-5-1 AMC',
         'category': 'neu',
         'counter_offensive': '4-3-3',
@@ -20826,254 +20983,247 @@ MATCHUP_MATRIX = [
     {
         'opponent': '3-5-2 F (Flat)',
         'category': 'att',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '4-3N-2W-1',
         'counter_neutral': '4-3N-2W-1',
-        'counter_defensive': '5-3-2'
+        'counter_defensive': '4-3N-2W-1'
     },
     {
         'opponent': '3-5-2 V (V-Style)',
         'category': 'att',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '4-2-2-2 H (Hexagon)',
         'counter_neutral': '4-2-2-2 H (Hexagon)',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_defensive': '4-2-2-2 H (Hexagon)'
     },
     {
         'opponent': '3-4-3',
         'category': 'att',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '4-2-2-2 H (Hexagon)',
         'counter_neutral': '4-2-2-2 H (Hexagon)',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_defensive': '4-2-2-2 H (Hexagon)'
     },
     {
         'opponent': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)',
         'category': 'att',
         'counter_offensive': '4-4-2 C (Classic)',
         'counter_neutral': '4-5-1 V-Style',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_defensive': '4-5-1 V-Style'
     },
     {
         'opponent': '5-1DMC-2-2',
         'category': 'dif',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '4-1-3W-1-1',
         'counter_neutral': '4-1-3W-1-1',
-        'counter_defensive': '4-4-2 C (Classic)'
+        'counter_defensive': '4-1-3W-1-1'
     },
     {
         'opponent': '4-1-3-1W-1',
         'category': 'neu',
-        'counter_offensive': '3-4-3',
+        'counter_offensive': '4-1-3-1-1',
         'counter_neutral': '4-1-3-1-1',
-        'counter_defensive': '4-1-4-1'
+        'counter_defensive': '4-1-3-1-1'
     },
     {
         'opponent': '3-1-4-1-1',
         'category': 'att',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '4-1-2-1-2 ND (Narrow Diamond)',
         'counter_neutral': '4-1-2-1-2 ND (Narrow Diamond)',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_defensive': '4-1-2-1-2 ND (Narrow Diamond)'
     },
     {
         'opponent': '4-1-2-2-1',
         'category': 'neu',
-        'counter_offensive': '3-4-3',
+        'counter_offensive': '4-2-2-2 H (Hexagon)',
         'counter_neutral': '4-2-2-2 H (Hexagon)',
-        'counter_defensive': '4-1-4-1'
+        'counter_defensive': '4-2-2-2 H (Hexagon)'
     },
     {
         'opponent': 'False Nine + Wingers',
         'category': 'att',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '4-1-3-1-1',
         'counter_neutral': '4-1-3-1-1',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_defensive': '4-1-3-1-1'
     },
     {
         'opponent': '4-2-4',
         'category': 'att',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '5-4-1 F (Flat)',
         'counter_neutral': '5-4-1 F (Flat)',
         'counter_defensive': '5-4-1 F (Flat)'
     },
     {
         'opponent': '4-1-3-1-1',
         'category': 'neu',
-        'counter_offensive': '3-4-3',
+        'counter_offensive': '4-5-1 V-Style',
         'counter_neutral': '4-5-1 V-Style',
-        'counter_defensive': '4-1-4-1'
-    },
-    {
-        'opponent': '4-3-2-1 XT (Xmas Tree)',
-        'category': 'neu',
-        'counter_offensive': '3-1-5-1 AMC',
-        'counter_neutral': '3-1-5-1 AMC',
-        'counter_defensive': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'
+        'counter_defensive': '4-5-1 V-Style'
     },
     {
         'opponent': '5-3-2',
         'category': 'dif',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '4-4-2 C (Classic)',
         'counter_neutral': '4-4-2 C (Classic)',
         'counter_defensive': '4-4-2 C (Classic)'
     },
     {
         'opponent': '3-1-3-2W-1',
         'category': 'att',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '4-1-4-1',
         'counter_neutral': '4-1-4-1',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_defensive': '4-1-4-1'
     },
     {
         'opponent': '3-3-1-3',
         'category': 'att',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '4-1-4-1',
         'counter_neutral': '4-1-4-1',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_defensive': '4-1-4-1'
     },
     {
         'opponent': '4-2-2-1-1',
         'category': 'dif',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '4-4-2 C (Classic)',
         'counter_neutral': '4-4-2 C (Classic)',
         'counter_defensive': '4-4-2 C (Classic)'
     },
     {
         'opponent': '4-1-1-3-1',
         'category': 'att',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '4-5-1 V-Style',
         'counter_neutral': '4-5-1 V-Style',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_defensive': '4-5-1 V-Style'
     },
     {
         'opponent': '4-3-1-2',
         'category': 'neu',
-        'counter_offensive': '3-4-3',
+        'counter_offensive': '4-5-1 V-Style',
         'counter_neutral': '4-5-1 V-Style',
-        'counter_defensive': '4-1-4-1'
+        'counter_defensive': '4-5-1 V-Style'
     },
     {
         'opponent': '3-1-2-1-3',
         'category': 'att',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '4-1-3-1-1',
         'counter_neutral': '4-1-3-1-1',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_defensive': '4-1-3-1-1'
     },
     {
         'opponent': '3-4-2-1',
         'category': 'neu',
-        'counter_offensive': '3-4-3',
+        'counter_offensive': '4-3-3',
         'counter_neutral': '4-3-3',
-        'counter_defensive': '4-1-4-1'
+        'counter_defensive': '4-3-3'
     },
     {
         'opponent': '5-2-3',
         'category': 'dif',
         'counter_offensive': '4-3-3',
         'counter_neutral': '4-3-3',
-        'counter_defensive': '4-4-2 C (Classic)'
+        'counter_defensive': '4-3-3'
     },
     {
         'opponent': '4-2-2-2 N (Narrow)',
         'category': 'neu',
-        'counter_offensive': '3-4-3',
+        'counter_offensive': '4-3-3',
         'counter_neutral': '4-3-3',
-        'counter_defensive': '4-1-4-1'
+        'counter_defensive': '4-3-3'
     },
     {
         'opponent': '3-1-4-2 W',
         'category': 'att',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '4-2-3-1',
         'counter_neutral': '4-2-3-1',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_defensive': '4-2-3-1'
     },
     {
         'opponent': '4-2-3-1 Attack',
         'category': 'att',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '4-1-3N-2',
         'counter_neutral': '4-1-3N-2',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_defensive': '4-1-3N-2'
     },
     {
         'opponent': '4-2-3-1-2',
         'category': 'neu',
-        'counter_offensive': '3-4-3',
+        'counter_offensive': '4-3-3',
         'counter_neutral': '4-3-3',
-        'counter_defensive': '4-1-4-1'
+        'counter_defensive': '4-3-3'
     },
     {
         'opponent': '4-1-2-1-2 WD (Wide Diamond)',
         'category': 'neu',
-        'counter_offensive': '3-4-3',
+        'counter_offensive': '4-3W-1-2',
         'counter_neutral': '4-3W-1-2',
-        'counter_defensive': '4-1-4-1'
+        'counter_defensive': '4-3W-1-2'
     },
     {
         'opponent': '3-2-2-2-1 B (Butterfly)',
         'category': 'dif',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '3-4-1-2',
         'counter_neutral': '3-4-1-2',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_defensive': '3-4-1-2'
     },
     {
         'opponent': '4-1-3N-2',
         'category': 'neu',
-        'counter_offensive': '3-4-3',
+        'counter_offensive': '3-1-3N-2W-1',
         'counter_neutral': '3-1-3N-2W-1',
-        'counter_defensive': '4-1-4-1'
+        'counter_defensive': '3-1-3N-2W-1'
     },
     {
         'opponent': '4-3N-3',
         'category': 'neu',
-        'counter_offensive': '3-4-3',
+        'counter_offensive': '3-4-1-2',
         'counter_neutral': '3-4-1-2',
-        'counter_defensive': '4-1-4-1'
+        'counter_defensive': '3-4-1-2'
     },
     {
         'opponent': '3N-1-2-1-3',
         'category': 'att',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '3-1-3N-1-2',
         'counter_neutral': '3-1-3N-1-2',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_defensive': '3-1-3N-1-2'
     },
     {
         'opponent': '4-2-1-3',
         'category': 'att',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '3-1-3N-2W-1',
         'counter_neutral': '3-1-3N-2W-1',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_defensive': '3-1-3N-2W-1'
     },
     {
         'opponent': '4-1-1-2N-2',
         'category': 'neu',
-        'counter_offensive': '3-4-3',
+        'counter_offensive': '3W-2N-1-3W-1',
         'counter_neutral': '3W-2N-1-3W-1',
-        'counter_defensive': '4-1-4-1'
+        'counter_defensive': '3W-2N-1-3W-1'
     },
     {
         'opponent': '3W-1-3N-1-2',
         'category': 'neu',
-        'counter_offensive': '3-4-3',
+        'counter_offensive': '3-5-2 V (V-Style)',
         'counter_neutral': '3-5-2 V (V-Style)',
-        'counter_defensive': '4-1-4-1'
+        'counter_defensive': '3-5-2 V (V-Style)'
     },
     {
         'opponent': '4-2N-1-2N-1',
         'category': 'neu',
-        'counter_offensive': '3-4-3',
+        'counter_offensive': '3N-1-4-1-1',
         'counter_neutral': '3N-1-4-1-1',
-        'counter_defensive': '4-1-4-1'
+        'counter_defensive': '3N-1-4-1-1'
     },
     {
         'opponent': '5-1-1-1-2',
         'category': 'dif',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '3N-5-2 V',
         'counter_neutral': '3N-5-2 V',
-        'counter_defensive': '4-4-2 C (Classic)'
+        'counter_defensive': '3N-5-2 V'
     },
     {
         'opponent': '5-2W-2N-1',
         'category': 'dif',
-        'counter_offensive': '4-3-3',
+        'counter_offensive': '3N-1-3W-1-2',
         'counter_neutral': '3N-1-3W-1-2',
-        'counter_defensive': '4-4-2 C (Classic)'
+        'counter_defensive': '3N-1-3W-1-2'
     },
     {
         'opponent': '3N-5-1-1',
@@ -21425,275 +21575,403 @@ CAREER_PATHS = [
 
 MY_PLAYBOOK = [
     {
-        "id": "philosophy",
-        "order": 1,
-        "category_en": "Philosophy & Identity",
-        "category_it": "Filosofia & Identita",
-        "icon": "compass-outline",
-        "summary_it": "Il possesso e una forma di difesa. Se ho la palla, l'avversario non segna. Pazienza, controllo, stancare l'avversario.",
-        "summary_en": "Possession is a form of defense.",
-        "bullets_it": [
+        'id': 'philosophy',
+        'order': 1,
+        'category_en': 'Philosophy & Identity',
+        'category_it': 'Filosofia & Identita',
+        'icon': 'compass-outline',
+        'summary_it': "Il possesso e una forma di difesa. Se ho la palla, l'avversario non segna. Pazienza, controllo, stancare l'avversario.",
+        'summary_en': 'Possession is a form of defense.',
+        'bullets_it': [
             "Pazienza > fretta: 25+ passaggi per azione, vincere 1-0 al 88' va benissimo",
-            "Il numero non conta: 75% possesso e 1-0 finale e' un successo",
-            "Stancare l'avversario: nel secondo tempo crolla, li' decido la partita",
-            "Ispirazione: Barcellona 2010/11 di Guardiola",
+            'Il numero non conta: 75% possesso e 1-0 finale è un successo',
+            "Stancare l'avversario: nel secondo tempo crolla, lì decido la partita",
+            'Ispirazione: Barcellona 2010/11 di Guardiola'
         ],
-        "bullets_en": [],
-        "table_it": None,
-        "table_en": None,
+        'bullets_en': [],
+        'table_it': None,
+        'table_en': None
     },
     {
-        "id": "dna",
-        "order": 2,
-        "category_en": "Squad DNA",
-        "category_it": "DNA della rosa",
-        "icon": "people-outline",
-        "summary_it": "Profilo titolari ideali per il 4-3-3 tiki-taka. Il giocatore piu' forte e' il DMC playmaker, non l'attaccante.",
-        "summary_en": "",
-        "bullets_it": [
+        'id': 'dna',
+        'order': 2,
+        'category_en': 'Squad DNA',
+        'category_it': 'DNA della rosa',
+        'icon': 'people-outline',
+        'summary_it': "Profilo titolari ideali per il 4-3-3 tiki-taka. Il giocatore più forte è il DMC playmaker, non l'attaccante.",
+        'summary_en': '',
+        'bullets_it': [
             "Regola d'oro: DMC playmaker = cervello del sistema",
-            "Abilita chiave: Playmaker (MC/DMC) + Shadow Striker (MC dx, inserimenti) + One-on-One Scoring (ali)",
-            "False Nine = playstyle ST piu' forte del meta 2026",
-            "Evitare: attaccanti tank lenti, terzini Wing-Back, AMC puro nel 4-3-3",
+            'Abilità chiave: Playmaker (MC/DMC) + Shadow Striker (MC dx, inserimenti) + One-on-One Scoring (ali)',
+            'False Nine = playstyle ST più forte del meta 2026',
+            'Evitare: attaccanti tank lenti, terzini Wing-Back, AMC puro nel 4-3-3'
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "GK", "value": "Sweeper Keeper - Riflessi, Uscite, Posizionamento"},
-            {"label": "DC sx", "value": "Ball-Playing (Pique) - Passaggio, Marcatura, Creativita"},
-            {"label": "DC dx", "value": "No-Nonsense - Contrasto, Marcatura, Forza"},
-            {"label": "DL/DR", "value": "Full-Back (NO Wing-Back) - Marcatura, Velocita"},
-            {"label": "DMC", "value": "Deep-Lying Playmaker (Busquets) - Passaggio, Visione"},
-            {"label": "MC sx", "value": "Mezzala creativa (Xavi) - Passaggio, Creativita"},
-            {"label": "MC dx", "value": "Mezzala incursore (Iniesta) - Dribbling, Creativita"},
-            {"label": "AML", "value": "Inverted Winger - Dribbling, Velocita, Tiro"},
-            {"label": "AMR", "value": "Inverted Winger - Dribbling, Velocita, Tiro"},
-            {"label": "ST", "value": "False Nine (Messi) - Finalizzazione, Creativita, Visione"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'GK',
+                'value': 'Sweeper Keeper - Riflessi, Uscite, Posizionamento'
+            },
+            {
+                'label': 'DC sx',
+                'value': 'Ball-Playing (Pique) - Passaggio, Marcatura, Creativita'
+            },
+            {
+                'label': 'DC dx',
+                'value': 'No-Nonsense - Contrasto, Marcatura, Forza'
+            },
+            {
+                'label': 'DL/DR',
+                'value': 'Full-Back (NO Wing-Back) - Marcatura, Velocità'
+            },
+            {
+                'label': 'DMC',
+                'value': 'Deep-Lying Playmaker (Busquets) - Passaggio, Visione'
+            },
+            {
+                'label': 'MC sx',
+                'value': 'Mezzala creativa (Xavi) - Passaggio, Creativita'
+            },
+            {
+                'label': 'MC dx',
+                'value': 'Mezzala incursore (Iniesta) - Dribbling, Creativita'
+            },
+            {
+                'label': 'AML',
+                'value': 'Inverted Winger - Dribbling, Velocità, Tiro'
+            },
+            {
+                'label': 'AMR',
+                'value': 'Inverted Winger - Dribbling, Velocità, Tiro'
+            },
+            {
+                'label': 'ST',
+                'value': 'False Nine (Messi) - Finalizzazione, Creativita, Visione'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "formations",
-        "order": 3,
-        "category_en": "Formation repertoire",
-        "category_it": "Repertorio moduli",
-        "icon": "grid-outline",
-        "summary_it": "3 moduli + 1 emergenza. Mai di piu'.",
-        "summary_en": "",
-        "bullets_it": [
-            "Non uso mai: 5-4-1 Flat (no DNA), 4-4-2 Classic (poca creativita centrale)",
+        'id': 'formations',
+        'order': 3,
+        'category_en': 'Formation repertoire',
+        'category_it': 'Repertorio moduli',
+        'icon': 'grid-outline',
+        'summary_it': '3 moduli + 1 emergenza. Mai di più.',
+        'summary_en': '',
+        'bullets_it': ['Non uso mai: 5-4-1 Flat (no DNA), 4-4-2 Classic (poca creativita centrale)'],
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Default',
+                'value': '4-3-3 puro - vs pari/deboli (story: tiki-taka-barca)'
+            },
+            {
+                'label': 'Vs forti',
+                'value': '3-1-5-1 AMC - pressing alto (story: tiki-taka-fanatic)'
+            },
+            {
+                'label': 'Plan B',
+                'value': '4-1-2-1-2 ND - contro transizioni veloci'
+            },
+            {
+                'label': 'Emergenza',
+                'value': '3-4-1-2 - solo da 0-2 (story: comeback-with-arrows)'
+            }
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Default", "value": "4-3-3 puro - vs pari/deboli (story: tiki-taka-barca)"},
-            {"label": "Vs forti", "value": "3-1-5-1 AMC - pressing alto (story: tiki-taka-fanatic)"},
-            {"label": "Plan B", "value": "4-1-2-1-2 ND - contro transizioni veloci"},
-            {"label": "Emergenza", "value": "3-4-1-2 - solo da 0-2 (story: comeback-with-arrows)"},
-        ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "setup",
-        "order": 4,
-        "category_en": "Base tactical setup",
-        "category_it": "Setup tattico base",
-        "icon": "settings-outline",
-        "summary_it": "Setup del 4-3-3 default. Cambio solo per emergenze.",
-        "summary_en": "",
-        "bullets_it": [],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Mentalita", "value": "Normale - tutta la partita"},
-            {"label": "Passaggi", "value": "Sulle Fasce - sfrutto ali Dual Position [meta 2026]"},
-            {"label": "Stile", "value": "Corto - mai lungo"},
-            {"label": "Pressing", "value": "Basso - conservo condizione fisica"},
-            {"label": "Marcatura", "value": "A Zona - blocco compatto"},
-            {"label": "Fuorigioco", "value": "ON - difesa alta tipo Barca"},
-            {"label": "Tackling", "value": "Normale - non perdo palla con duri"},
-            {"label": "Counter forzato", "value": "OFF - privilegia la manovra"},
-            {"label": "Gioco largo", "value": "ON - AML/AMR larghi (Dual Position Advantage)"},
+        'id': 'setup',
+        'order': 4,
+        'category_en': 'Base tactical setup',
+        'category_it': 'Setup tattico base',
+        'icon': 'settings-outline',
+        'summary_it': 'Setup del 4-3-3 default. Cambio solo per emergenze.',
+        'summary_en': '',
+        'bullets_it': [],
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Mentalità',
+                'value': 'Normale - tutta la partita'
+            },
+            {
+                'label': 'Passaggi',
+                'value': 'Sulle Fasce - sfrutto ali Dual Position [meta 2026]'
+            },
+            {
+                'label': 'Stile',
+                'value': 'Corto - mai lungo'
+            },
+            {
+                'label': 'Pressing',
+                'value': 'Basso - conservo condizione fisica'
+            },
+            {
+                'label': 'Marcatura',
+                'value': 'A Zona - blocco compatto'
+            },
+            {
+                'label': 'Fuorigioco',
+                'value': 'ON - difesa alta tipo Barca'
+            },
+            {
+                'label': 'Tackling',
+                'value': 'Normale - non perdo palla con duri'
+            },
+            {
+                'label': 'Counter forzato',
+                'value': 'OFF - privilegia la manovra'
+            },
+            {
+                'label': 'Gioco largo',
+                'value': 'ON - AML/AMR larghi (Dual Position Advantage)'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "arrows",
-        "order": 5,
-        "category_en": "Arrows & movements",
-        "category_it": "Frecce & movimenti",
-        "icon": "swap-vertical-outline",
-        "summary_it": "Freccia DMC condizionata all'AMC avversario. Senza la freccia giusta il sistema crolla.",
-        "summary_en": "",
-        "bullets_it": [
-            "REGOLA DMC: BLU di default (stopper avanzato, +clean sheet)",
+        'id': 'arrows',
+        'order': 5,
+        'category_en': 'Arrows & movements',
+        'category_it': 'Frecce & movimenti',
+        'icon': 'swap-vertical-outline',
+        'summary_it': "Freccia DMC condizionata all'AMC avversario. Senza la freccia giusta il sistema crolla.",
+        'summary_en': '',
+        'bullets_it': [
+            'REGOLA DMC: BLU di default (stopper avanzato, +clean sheet)',
             "DMC ROSSA solo se l'avversario NON ha AMC > DMC sale come MC aggiunto",
-            "4-3-3: niente frecce su ali (gia' alte). Niente su terzini (no sovrapposizioni)",
-            "3-1-5-1: BLU su DMC + ROSSA su AMC (finalizzatore reale)",
-            "Vs 5-4-1 Flat: ROSSA sui due terzini",
+            '4-3-3: niente frecce su ali (già alte). Niente su terzini (no sovrapposizioni)',
+            '3-1-5-1: BLU su DMC + ROSSA su AMC (finalizzatore reale)',
+            'Vs 5-4-1 Flat: ROSSA sui due terzini'
         ],
-        "bullets_en": [],
-        "table_it": None,
-        "table_en": None,
+        'bullets_en': [],
+        'table_it': None,
+        'table_en': None
     },
     {
-        "id": "phases",
-        "order": 6,
-        "category_en": "4 phases of play",
-        "category_it": "Le 4 fasi di gioco",
-        "icon": "git-network-outline",
-        "summary_it": "Cosa deve succedere in ciascuna delle 4 fasi.",
-        "summary_en": "",
-        "bullets_it": [
-            "A) Costruzione: 3v2 in uscita (GK+2DC vs 2 punte). DMC si abbassa se pressing a 3. Mai lanci lunghi.",
-            "B) Sviluppo: triangoli MC-DMC-MC. Terzini larghi e BASSI. Ali aspettano alte.",
-            "C) Finalizzazione: Falso 9 si abbassa > libera spazio per ala. Mezzala lato debole arriva in area. KPI: 25+ passaggi per azione.",
-            "D) Non-possesso: regola dei 6 secondi. Pressing immediato. Se non torna in 6'', ritorno in posizione.",
+        'id': 'phases',
+        'order': 6,
+        'category_en': '4 phases of play',
+        'category_it': 'Le 4 fasi di gioco',
+        'icon': 'git-network-outline',
+        'summary_it': 'Cosa deve succedere in ciascuna delle 4 fasi.',
+        'summary_en': '',
+        'bullets_it': [
+            'A) Costruzione: 3v2 in uscita (GK+2DC vs 2 punte). DMC si abbassa se pressing a 3. Mai lanci lunghi.',
+            'B) Sviluppo: triangoli MC-DMC-MC. Terzini larghi e BASSI. Ali aspettano alte.',
+            'C) Finalizzazione: Falso 9 si abbassa > libera spazio per ala. Mezzala lato debole arriva in area. KPI: 25+ passaggi per azione.',
+            'D) Non-possesso: regola dei 6 secondi. Pressing immediato. Se non torna in 6s, ritorno in posizione.'
         ],
-        "bullets_en": [],
-        "table_it": None,
-        "table_en": None,
+        'bullets_en': [],
+        'table_it': None,
+        'table_en': None
     },
     {
-        "id": "scenarios",
-        "order": 7,
-        "category_en": "Match scenarios playbook",
-        "category_it": "Playbook scenari",
-        "icon": "list-outline",
-        "summary_it": "Per livello stelle e per punteggio.",
-        "summary_en": "",
-        "bullets_it": [],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Vs Forte (+1/+2)", "value": "3-1-5-1 AMC - Difensiva > Normale al 60'"},
-            {"label": "Vs Pari", "value": "4-3-3 - Normale (default)"},
-            {"label": "Vs Debole (-1)", "value": "4-3-3 - Normale > Offensiva al 60'"},
-            {"label": "In vantaggio 1-0 70'+", "value": "Difensiva ma MANTENGO possesso"},
-            {"label": "In svantaggio 0-1 60'+", "value": "Offensiva. NON cambio modulo"},
-            {"label": "In svantaggio 0-2 60'+", "value": "Cambio al 3-4-1-2"},
-            {"label": "Pareggio vs forte 80'+", "value": "Difensiva + DC freschi"},
+        'id': 'scenarios',
+        'order': 7,
+        'category_en': 'Match scenarios playbook',
+        'category_it': 'Playbook scenari',
+        'icon': 'list-outline',
+        'summary_it': 'Per livello stelle e per punteggio.',
+        'summary_en': '',
+        'bullets_it': [],
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Vs Forte (+1/+2)',
+                'value': "3-1-5-1 AMC - Difensiva > Normale al 60'"
+            },
+            {
+                'label': 'Vs Pari',
+                'value': '4-3-3 - Normale (default)'
+            },
+            {
+                'label': 'Vs Debole (-1)',
+                'value': "4-3-3 - Normale > Offensiva al 60'"
+            },
+            {
+                'label': "In vantaggio 1-0 70'+",
+                'value': 'Difensiva ma MANTENGO possesso'
+            },
+            {
+                'label': "In svantaggio 0-1 60'+",
+                'value': 'Offensiva. NON cambio modulo'
+            },
+            {
+                'label': "In svantaggio 0-2 60'+",
+                'value': 'Cambio al 3-4-1-2'
+            },
+            {
+                'label': "Pareggio vs forte 80'+",
+                'value': 'Difensiva + DC freschi'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "counters",
-        "order": 8,
-        "category_en": "Counter to tough opponents",
-        "category_it": "Counter ai moduli ostici",
-        "icon": "shield-outline",
-        "summary_it": "I 5 moduli che mi danno fastidio e come reagire.",
-        "summary_en": "",
-        "bullets_it": [],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "5-4-1 Flat (bus)", "value": "Offensiva dal 65', passaggi Fasce, freccia rossa su 1 terzino"},
-            {"label": "4-2-3-1 con DMC", "value": "NO attacco centrale (DMC blocca). Sulle Fasce + modulo 4-1-3N-2"},
-            {"label": "3-5-2 V", "value": "Sweeper Keeper alto, DMC si abbassa (build-up 3+1)"},
-            {"label": "4-1-2-1-2 ND", "value": "Apro con ala inversa - passaggi al centro non bastano"},
-            {"label": "4-3-3 specchio", "value": "Vince chi ha DMC e AMC migliori"},
+        'id': 'counters',
+        'order': 8,
+        'category_en': 'Counter to tough opponents',
+        'category_it': 'Counter ai moduli ostici',
+        'icon': 'shield-outline',
+        'summary_it': 'I 5 moduli che mi danno fastidio e come reagire.',
+        'summary_en': '',
+        'bullets_it': [],
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': '5-4-1 Flat (bus)',
+                'value': "Offensiva dal 65', passaggi Fasce, freccia rossa su 1 terzino"
+            },
+            {
+                'label': '4-2-3-1 con DMC',
+                'value': 'NO attacco centrale (DMC blocca). Sulle Fasce + modulo 4-1-3N-2'
+            },
+            {
+                'label': '3-5-2 V',
+                'value': 'Sweeper Keeper alto, DMC si abbassa (build-up 3+1)'
+            },
+            {
+                'label': '4-1-2-1-2 ND',
+                'value': 'Apro con ala inversa - passaggi al centro non bastano'
+            },
+            {
+                'label': '4-3-3 specchio',
+                'value': 'Vince chi ha DMC e AMC migliori'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "subs",
-        "order": 9,
-        "category_en": "Substitutions",
-        "category_it": "Sostituzioni standard",
-        "icon": "swap-horizontal-outline",
-        "summary_it": "3 sostituzioni standard nel 4-3-3.",
-        "summary_en": "",
-        "bullets_it": [
-            "Regola: mai sostituire un difensore mentre rimonto",
+        'id': 'subs',
+        'order': 9,
+        'category_en': 'Substitutions',
+        'category_it': 'Sostituzioni standard',
+        'icon': 'swap-horizontal-outline',
+        'summary_it': '3 sostituzioni standard nel 4-3-3.',
+        'summary_en': '',
+        'bullets_it': ['Regola: mai sostituire un difensore mentre rimonto'],
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': "60' - MC stanco",
+                'value': 'MC fresco con Playmaker (mantengo precisione)'
+            },
+            {
+                'label': "75' - Vinco 1-0/2-0",
+                'value': 'DMC fresco entra per 1 mezzala (chiudo)'
+            },
+            {
+                'label': "85' - Vantaggio risicato",
+                'value': 'DC fresco per terzino offensivo (difesa a 5)'
+            }
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "60' - MC stanco", "value": "MC fresco con Playmaker (mantengo precisione)"},
-            {"label": "75' - Vinco 1-0/2-0", "value": "DMC fresco entra per 1 mezzala (chiudo)"},
-            {"label": "85' - Vantaggio risicato", "value": "DC fresco per terzino offensivo (difesa a 5)"},
-        ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "season",
-        "order": 10,
-        "category_en": "Season rhythm & tokens",
-        "category_it": "Ritmo stagionale & token",
-        "icon": "calendar-outline",
-        "summary_it": "Settimana tipo + asta + regole token.",
-        "summary_en": "",
-        "bullets_it": [
-            "Lun-Mer: rotazione 2 undici, allenamenti Passaggio+Creativita",
-            "Gio: partita campionato, undici titolare",
-            "Ven-Sab: condizione/morale, NO Allenamenti Rapidi",
-            "Dom: knockout/Coppa, qui uso eventuali Rapidi",
-            "Asta priorita: 1) DMC playmaker giovane 2) MC creativa under 21 3) AML/AMR dribbler piede inverso 4) DC Ball-Playing 5) ST False Nine se libero",
-            "Token: 80% riservati a knockout Champions. 0 token su attaccanti puri. Prima rosa sana, poi asta.",
+        'id': 'season',
+        'order': 10,
+        'category_en': 'Season rhythm & tokens',
+        'category_it': 'Ritmo stagionale & token',
+        'icon': 'calendar-outline',
+        'summary_it': 'Settimana tipo + asta + regole token.',
+        'summary_en': '',
+        'bullets_it': [
+            'Lun-Mer: rotazione 2 undici, allenamenti Passaggio+Creativita',
+            'Gio: partita campionato, undici titolare',
+            'Ven-Sab: condizione/morale, NO Allenamenti Rapidi',
+            'Dom: knockout/Coppa, qui uso eventuali Rapidi',
+            'Asta priorita: 1) DMC playmaker giovane 2) MC creativa under 21 3) AML/AMR dribbler piede inverso 4) DC Ball-Playing 5) ST False Nine se libero',
+            'Token: 80% riservati a knockout Champions. 0 token su attaccanti puri. Prima rosa sana, poi asta.'
         ],
-        "bullets_en": [],
-        "table_it": None,
-        "table_en": None,
+        'bullets_en': [],
+        'table_it': None,
+        'table_en': None
     },
     {
-        "id": "mistakes",
-        "order": 11,
-        "category_en": "Mistakes to avoid",
-        "category_it": "Errori da NON fare",
-        "icon": "warning-outline",
-        "summary_it": "Autoregole, ognuna nata da una lezione.",
-        "summary_en": "",
-        "bullets_it": [
+        'id': 'mistakes',
+        'order': 11,
+        'category_en': 'Mistakes to avoid',
+        'category_it': 'Errori da NON fare',
+        'icon': 'warning-outline',
+        'summary_it': 'Autoregole, ognuna nata da una lezione.',
+        'summary_en': '',
+        'bullets_it': [
             "Mai Pressing Alto nel 1' tempo (esaurisce stamina, crolli nel finale)",
             "Mai scendere sotto Team Balance 9.2-10 ('mutante' danneggia il collettivo)",
-            "Mai frecce ROSSE su giocatori con Velocita bassa",
+            'Mai frecce ROSSE su giocatori con Velocità bassa',
             "Mai Offensiva dal 1' (brucio condizione)",
-            "Mai cambiare modulo durante la partita (eccezione: 0-2 + rimonta)",
-            "Mai Allenamento Rapido fuori da knockout",
-            "Mai vendere il DMC playmaker, neanche al triplo del valore",
+            'Mai cambiare modulo durante la partita (eccezione: 0-2 + rimonta)',
+            'Mai Allenamento Rapido fuori da knockout',
+            'Mai vendere il DMC playmaker, neanche al triplo del valore',
             "Mai sostituire al 80%+ possesso prima del 75'",
-            "Mai inseguire palla individualmente",
+            'Mai inseguire palla individualmente'
         ],
-        "bullets_en": [],
-        "table_it": None,
-        "table_en": None,
+        'bullets_en': [],
+        'table_it': None,
+        'table_en': None
     },
     {
-        "id": "kpi",
-        "order": 12,
-        "category_en": "KPI - am I playing my style?",
-        "category_it": "KPI - sto giocando il mio stile?",
-        "icon": "stats-chart-outline",
-        "summary_it": "Target a regime (non a singola partita).",
-        "summary_en": "",
-        "bullets_it": [],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Possesso medio", "value": ">= 65% (sotto = non controllo il tempo)"},
-            {"label": "Passaggi completati", "value": ">= 88% (sotto = rischio troppo)"},
-            {"label": "Tiri totali", "value": ">= 2x avversario (sotto = non finalizzo)"},
-            {"label": "Goal subiti/partita", "value": "< 1.0 (sopra = buchi difensivi)"},
-            {"label": "Goal fatti/partita", "value": ">= 1.5 (sotto = sistema sterile)"},
-            {"label": "Passaggi per azione", "value": ">= 15 (sotto = troppo verticale)"},
+        'id': 'kpi',
+        'order': 12,
+        'category_en': 'KPI - am I playing my style?',
+        'category_it': 'KPI - sto giocando il mio stile?',
+        'icon': 'stats-chart-outline',
+        'summary_it': 'Target a regime (non a singola partita).',
+        'summary_en': '',
+        'bullets_it': [],
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Possesso medio',
+                'value': '>= 65% (sotto = non controllo il tempo)'
+            },
+            {
+                'label': 'Passaggi completati',
+                'value': '>= 88% (sotto = rischio troppo)'
+            },
+            {
+                'label': 'Tiri totali',
+                'value': '>= 2x avversario (sotto = non finalizzo)'
+            },
+            {
+                'label': 'Goal subiti/partita',
+                'value': '< 1.0 (sopra = buchi difensivi)'
+            },
+            {
+                'label': 'Goal fatti/partita',
+                'value': '>= 1.5 (sotto = sistema sterile)'
+            },
+            {
+                'label': 'Passaggi per azione',
+                'value': '>= 15 (sotto = troppo verticale)'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "checklist",
-        "order": 13,
-        "category_en": "Pre-match 60s checklist",
-        "category_it": "Checklist pre-partita 60 secondi",
-        "icon": "checkmark-done-outline",
-        "summary_it": "60 secondi prima del calcio d'inizio.",
-        "summary_en": "",
-        "bullets_it": [
-            "Morale 80/80 sui titolari?",
-            "Condizione 80/80 sui titolari?",
-            "Modulo salvato e caricato?",
-            "Freccia BLU sul DMC verificata?",
-            "AML/AMR sono dribbler veri (non lenti)?",
-            "Avversario ha DMC? (decide 4-3-3 vs 3-1-5-1)",
-            "Penalty Specialist e Free Kick Specialist in campo?",
+        'id': 'checklist',
+        'order': 13,
+        'category_en': 'Pre-match 60s checklist',
+        'category_it': 'Checklist pre-partita 60 secondi',
+        'icon': 'checkmark-done-outline',
+        'summary_it': "60 secondi prima del calcio d'inizio.",
+        'summary_en': '',
+        'bullets_it': [
+            'Morale 80/80 sui titolari?',
+            'Condizione 80/80 sui titolari?',
+            'Modulo salvato e caricato?',
+            'Freccia BLU sul DMC verificata?',
+            'AML/AMR sono dribbler veri (non lenti)?',
+            'Avversario ha DMC? (decide 4-3-3 vs 3-1-5-1)',
+            'Penalty Specialist e Free Kick Specialist in campo?'
         ],
-        "bullets_en": [],
-        "table_it": None,
-        "table_en": None,
-    },
+        'bullets_en': [],
+        'table_it': None,
+        'table_en': None
+    }
 ]
 
 # ==================== SET PIECE ====================
@@ -21702,123 +21980,183 @@ MY_PLAYBOOK = [
 
 SET_PIECE = [
     {
-        "id": "penalty",
-        "order": 1,
-        "category_en": "Penalty taker",
-        "category_it": "Rigorista",
-        "icon": "football-outline",
-        "summary_it": "Quasi-infallibile con Penalty Specialist + morale Superb.",
-        "summary_en": "",
-        "bullets_it": [
-            "Ruolo migliore: ST o AMC",
-            "Attributi chiave: Finalizzazione + Tiro",
-            "Abilita: Penalty Specialist (precisione quasi totale)",
-            "Tie-breaker se ho piu candidati: morale 'Superb' (bonus performance maggiore)",
-            "In alternativa: attributi bianchi > 150-200%",
+        'id': 'penalty',
+        'order': 1,
+        'category_en': 'Penalty taker',
+        'category_it': 'Rigorista',
+        'icon': 'football-outline',
+        'summary_it': 'Quasi-infallibile con Penalty Specialist + morale Superb.',
+        'summary_en': '',
+        'bullets_it': [
+            'Ruolo migliore: ST o AMC',
+            'Attributi chiave: Finalizzazione + Tiro',
+            'Abilità: Penalty Specialist (precisione quasi totale)',
+            "Tie-breaker se ho più candidati: morale 'Superb' (bonus performance maggiore)",
+            'In alternativa: attributi bianchi > 150-200%'
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Ruolo", "value": "ST o AMC"},
-            {"label": "Attributi", "value": "Finalizzazione + Tiro"},
-            {"label": "Abilita chiave", "value": "Penalty Specialist"},
-            {"label": "Tie-breaker", "value": "Morale Superb > attributi bianchi 150%+"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Ruolo',
+                'value': 'ST o AMC'
+            },
+            {
+                'label': 'Attributi',
+                'value': 'Finalizzazione + Tiro'
+            },
+            {
+                'label': 'Abilità chiave',
+                'value': 'Penalty Specialist'
+            },
+            {
+                'label': 'Tie-breaker',
+                'value': 'Morale Superb > attributi bianchi 150%+'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "free-kick",
-        "order": 2,
-        "category_en": "Direct free kicks",
-        "category_it": "Punizioni dirette",
-        "icon": "locate-outline",
-        "summary_it": "Arma per sbloccare partite chiuse. Lo specialista cambia tutto.",
-        "summary_en": "",
-        "bullets_it": [
-            "Ruoli ammessi: ST, AMC, MC",
-            "Attributi: Tiro + Passaggio alti",
-            "Abilita: Free Kick Specialist (essenziale)",
-            "Da assegnare al miglior tiratore SEMPRE in formazione titolare",
+        'id': 'free-kick',
+        'order': 2,
+        'category_en': 'Direct free kicks',
+        'category_it': 'Punizioni dirette',
+        'icon': 'locate-outline',
+        'summary_it': 'Arma per sbloccare partite chiuse. Lo specialista cambia tutto.',
+        'summary_en': '',
+        'bullets_it': [
+            'Ruoli ammessi: ST, AMC, MC',
+            'Attributi: Tiro + Passaggio alti',
+            'Abilità: Free Kick Specialist (essenziale)',
+            'Da assegnare al miglior tiratore SEMPRE in formazione titolare'
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Ruolo", "value": "ST / AMC / MC"},
-            {"label": "Attributi", "value": "Tiro + Passaggio"},
-            {"label": "Abilita chiave", "value": "Free Kick Specialist"},
-            {"label": "Quando vale", "value": "Partite chiuse, sblocca da palla inattiva"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Ruolo',
+                'value': 'ST / AMC / MC'
+            },
+            {
+                'label': 'Attributi',
+                'value': 'Tiro + Passaggio'
+            },
+            {
+                'label': 'Abilità chiave',
+                'value': 'Free Kick Specialist'
+            },
+            {
+                'label': 'Quando vale',
+                'value': 'Partite chiuse, sblocca da palla inattiva'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "corner-off",
-        "order": 3,
-        "category_en": "Offensive corners",
-        "category_it": "Calci d'angolo offensivi",
-        "icon": "flag-outline",
-        "summary_it": "Massimizzo gioco aereo. Battitore con Cross alto + saltatori in area.",
-        "summary_en": "",
-        "bullets_it": [
-            "Battitore: ML, MR, AML o AMR",
-            "Attributo battitore: Cross (target 200%+)",
-            "Abilita battitore: Corner Specialist",
-            "In area: DC (forza fisica) + ST con playstyle Target Man",
-            "Schema: massimizza saltatori forti vicino al portiere",
+        'id': 'corner-off',
+        'order': 3,
+        'category_en': 'Offensive corners',
+        'category_it': "Calci d'angolo offensivi",
+        'icon': 'flag-outline',
+        'summary_it': 'Massimizzo gioco aereo. Battitore con Cross alto + saltatori in area.',
+        'summary_en': '',
+        'bullets_it': [
+            'Battitore: ML, MR, AML o AMR',
+            'Attributo battitore: Cross (target 200%+)',
+            'Abilità battitore: Corner Specialist',
+            'In area: DC (forza fisica) + ST con playstyle Target Man',
+            'Schema: massimizza saltatori forti vicino al portiere'
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Battitore", "value": "ML / MR / AML / AMR"},
-            {"label": "Attributo battitore", "value": "Cross 200%+"},
-            {"label": "Abilita battitore", "value": "Corner Specialist"},
-            {"label": "Saltatori in area", "value": "DC fisici + ST Target Man"},
-            {"label": "Abilita saltatori", "value": "Aerial Threat"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Battitore',
+                'value': 'ML / MR / AML / AMR'
+            },
+            {
+                'label': 'Attributo battitore',
+                'value': 'Cross 200%+'
+            },
+            {
+                'label': 'Abilità battitore',
+                'value': 'Corner Specialist'
+            },
+            {
+                'label': 'Saltatori in area',
+                'value': 'DC fisici + ST Target Man'
+            },
+            {
+                'label': 'Abilità saltatori',
+                'value': 'Aerial Threat'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "corner-def",
-        "order": 4,
-        "category_en": "Defending corners",
-        "category_it": "Difesa sui corner",
-        "icon": "shield-checkmark-outline",
-        "summary_it": "Zona di default. Uomo solo se avversario ha saltatori dominanti.",
-        "summary_en": "",
-        "bullets_it": [
-            "Marcatura standard: A Zona (stabilita)",
+        'id': 'corner-def',
+        'order': 4,
+        'category_en': 'Defending corners',
+        'category_it': 'Difesa sui corner',
+        'icon': 'shield-checkmark-outline',
+        'summary_it': 'Zona di default. Uomo solo se avversario ha saltatori dominanti.',
+        'summary_en': '',
+        'bullets_it': [
+            'Marcatura standard: A Zona (stabilita)',
             "A Uomo: solo se l'avversario ha saltatori dominanti (forza errore)",
-            "Abilita vitale: Aerial Defence su DMC Anchor Man o DC",
-            "Abilita complementare: Defensive Wall (intercetta deviazioni sul dischetto)",
-            "Mai lasciare la zona del dischetto scoperta",
+            'Abilità vitale: Aerial Defence su DMC Anchor Man o DC',
+            'Abilità complementare: Defensive Wall (intercetta deviazioni sul dischetto)',
+            'Mai lasciare la zona del dischetto scoperta'
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Marcatura default", "value": "Zona"},
-            {"label": "Marcatura alternativa", "value": "Uomo (se loro hanno saltatori top)"},
-            {"label": "Abilita primaria", "value": "Aerial Defence (DMC/DC)"},
-            {"label": "Abilita secondaria", "value": "Defensive Wall (dischetto)"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Marcatura default',
+                'value': 'Zona'
+            },
+            {
+                'label': 'Marcatura alternativa',
+                'value': 'Uomo (se loro hanno saltatori top)'
+            },
+            {
+                'label': 'Abilità primaria',
+                'value': 'Aerial Defence (DMC/DC)'
+            },
+            {
+                'label': 'Abilità secondaria',
+                'value': 'Defensive Wall (dischetto)'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "throw-in",
-        "order": 5,
-        "category_en": "Long throw-in",
-        "category_it": "Rimesse laterali lunghe",
-        "icon": "hand-right-outline",
-        "summary_it": "Skill Long Throw-in trasforma una rimessa in palla inattiva offensiva.",
-        "summary_en": "",
-        "bullets_it": [
-            "Skill: Long Throw-in su DL o DR",
-            "Effetto: rimessa diventa potenziale occasione da gol in area",
-            "Allenare un solo terzino con questa skill e' sufficiente (il battitore titolare)",
-            "Saltatori in area come per i corner (DC + ST Target Man)",
+        'id': 'throw-in',
+        'order': 5,
+        'category_en': 'Long throw-in',
+        'category_it': 'Rimesse laterali lunghe',
+        'icon': 'hand-right-outline',
+        'summary_it': 'Skill Long Throw-in trasforma una rimessa in palla inattiva offensiva.',
+        'summary_en': '',
+        'bullets_it': [
+            'Skill: Long Throw-in su DL o DR',
+            'Effetto: rimessa diventa potenziale occasione da gol in area',
+            'Allenare un solo terzino con questa skill è sufficiente (il battitore titolare)',
+            'Saltatori in area come per i corner (DC + ST Target Man)'
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Skill", "value": "Long Throw-in"},
-            {"label": "Su chi", "value": "DL o DR (basta uno titolare)"},
-            {"label": "Effetto", "value": "Rimessa = occasione in area"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Skill',
+                'value': 'Long Throw-in'
+            },
+            {
+                'label': 'Su chi',
+                'value': 'DL o DR (basta uno titolare)'
+            },
+            {
+                'label': 'Effetto',
+                'value': 'Rimessa = occasione in area'
+            }
         ],
-        "table_en": None,
-    },
+        'table_en': None
+    }
 ]
 
 # ==================== BATTLE CARDS ====================
@@ -21826,250 +22164,385 @@ SET_PIECE = [
 
 BATTLE_CARDS = [
     {
-        "id": "433-vs-4231-dmc",
-        "order": 1,
-        "category_en": "4-3-3 vs 4-2-3-1 with DMC",
-        "category_it": "4-3-3 vs 4-2-3-1 con DMC",
-        "icon": "shuffle-outline",
-        "summary_it": "Si decide su fasce e cerchio centrocampo. Favorito: 4-2-3-1 con DMC. [Verificato NotebookLM]",
-        "summary_en": "",
-        "bullets_it": [
-            "Mossa vincente A (4-3-3): Focus passaggi sulle Fasce per bypassare il DMC",
-            "Mossa vincente A: Ali AML/AMR larghe con freccia rossa (Dual Position Advantage)",
-            "Mossa vincente A: ST Falso 9 che scende e libera spazio per inserimenti",
-            "Errore A: attaccare per vie centrali (DMC intercetta)",
-            "Errore A: nessuna copertura sull'AMC avversario (assist letali tra le linee)",
+        'id': '433-vs-4231-dmc',
+        'order': 1,
+        'category_en': '4-3-3 vs 4-2-3-1 with DMC',
+        'category_it': '4-3-3 vs 4-2-3-1 con DMC',
+        'icon': 'shuffle-outline',
+        'summary_it': 'Si decide su fasce e cerchio centrocampo. Favorito: 4-2-3-1 con DMC. [Verificato NotebookLM]',
+        'summary_en': '',
+        'bullets_it': [
+            'Mossa vincente A (4-3-3): Focus passaggi sulle Fasce per bypassare il DMC',
+            'Mossa vincente A: Ali AML/AMR larghe con freccia rossa (Dual Position Advantage)',
+            'Mossa vincente A: ST Falso 9 che scende e libera spazio per inserimenti',
+            'Errore A: attaccare per vie centrali (DMC intercetta)',
+            "Errore A: nessuna copertura sull'AMC avversario (assist letali tra le linee)"
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Si decide", "value": "Fasce + cerchio centrocampo"},
-            {"label": "Verdetto", "value": "4-2-3-1 con DMC leggermente favorito"},
-            {"label": "Perche favorito B", "value": "Il loro DMC schermo + 4 mediani vs 3 MC del 4-3-3"},
-            {"label": "Giocatore chiave A", "value": "ST Falso 9"},
-            {"label": "Fonte", "value": "NotebookLM 7b0eba98"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Si decide',
+                'value': 'Fasce + cerchio centrocampo'
+            },
+            {
+                'label': 'Verdetto',
+                'value': '4-2-3-1 con DMC leggermente favorito'
+            },
+            {
+                'label': 'Perché favorito B',
+                'value': 'Il loro DMC schermo + 4 mediani vs 3 MC del 4-3-3'
+            },
+            {
+                'label': 'Giocatore chiave A',
+                'value': 'ST Falso 9'
+            },
+            {
+                'label': 'Fonte',
+                'value': 'NotebookLM 7b0eba98'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "433-vs-541-flat",
-        "order": 2,
-        "category_en": "4-3-3 vs 5-4-1 Flat (bus parking)",
-        "category_it": "4-3-3 vs 5-4-1 Flat (bus parcheggiato)",
-        "icon": "shuffle-outline",
-        "summary_it": "Si decide su fasce e trequarti offensiva. Favorito: 4-3-3 con setup giusto. [Verificato NotebookLM]",
-        "summary_en": "",
-        "bullets_it": [
-            "Mossa vincente A (4-3-3): Mentalita Offensiva da subito",
-            "Mossa vincente A: Focus passaggi sulle Fasce (no centro)",
-            "Mossa vincente A: ST Falso 9 attira fuori DC > varchi per inserimenti ali",
-            "Errore A: attaccare al centro (e' il punto di forza del 5-4-1)",
-            "Errore A: mentalita Normale o Difensiva (asseconda il loro piano 0-0)",
+        'id': '433-vs-541-flat',
+        'order': 2,
+        'category_en': '4-3-3 vs 5-4-1 Flat (bus parking)',
+        'category_it': '4-3-3 vs 5-4-1 Flat (bus parcheggiato)',
+        'icon': 'shuffle-outline',
+        'summary_it': 'Si decide su fasce e trequarti offensiva. Favorito: 4-3-3 con setup giusto. [Verificato NotebookLM]',
+        'summary_en': '',
+        'bullets_it': [
+            'Mossa vincente A (4-3-3): Mentalità Offensiva da subito',
+            'Mossa vincente A: Focus passaggi sulle Fasce (no centro)',
+            'Mossa vincente A: ST Falso 9 attira fuori DC > varchi per inserimenti ali',
+            'Errore A: attaccare al centro (è il punto di forza del 5-4-1)',
+            'Errore A: mentalità Normale o Difensiva (asseconda il loro piano 0-0)'
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Si decide", "value": "Fasce laterali + trequarti offensiva"},
-            {"label": "Verdetto", "value": "4-3-3 favorito"},
-            {"label": "Perche", "value": "5-4-1 ha probabilita di segnare vicine a zero"},
-            {"label": "Giocatore chiave A", "value": "Ala AML/AMR con cross e dribbling"},
-            {"label": "Fonte", "value": "NotebookLM 7b0eba98"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Si decide',
+                'value': 'Fasce laterali + trequarti offensiva'
+            },
+            {
+                'label': 'Verdetto',
+                'value': '4-3-3 favorito'
+            },
+            {
+                'label': 'Perché',
+                'value': '5-4-1 ha probabilita di segnare vicine a zero'
+            },
+            {
+                'label': 'Giocatore chiave A',
+                'value': 'Ala AML/AMR con cross e dribbling'
+            },
+            {
+                'label': 'Fonte',
+                'value': 'NotebookLM 7b0eba98'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "451v-vs-433",
-        "order": 3,
-        "category_en": "4-5-1 V-Style vs 4-3-3",
-        "category_it": "4-5-1 V-Style vs 4-3-3",
-        "icon": "shuffle-outline",
-        "summary_it": "Si decide su fasce e cerchio mediano. Favorito: 4-5-1 V-Style. [Verificato NotebookLM]",
-        "summary_en": "",
-        "bullets_it": [
-            "Mossa vincente A (4-5-1 V): DMC con freccia BLU (stopper avanzato)",
-            "Mossa vincente A: Focus sulle Fasce (4-3-3 manca copertura ML/MR)",
-            "Mossa vincente A: Mentalita Difensiva/Normale + Force Counter-Attack ON",
-            "Errore A: attaccare al centro (3 MC densi del 4-3-3)",
-            "Errore A: non far ripiegare le ali > terzini isolati contro tridente",
+        'id': '451v-vs-433',
+        'order': 3,
+        'category_en': '4-5-1 V-Style vs 4-3-3',
+        'category_it': '4-5-1 V-Style vs 4-3-3',
+        'icon': 'shuffle-outline',
+        'summary_it': 'Si decide su fasce e cerchio mediano. Favorito: 4-5-1 V-Style. [Verificato NotebookLM]',
+        'summary_en': '',
+        'bullets_it': [
+            'Mossa vincente A (4-5-1 V): DMC con freccia BLU (stopper avanzato, intercetta filtranti)',
+            'Mossa vincente A: Focus sulle Fasce (4-3-3 manca copertura ML/MR)',
+            'Mossa vincente A: Mentalità Difensiva/Normale + Force Counter-Attack ON',
+            'Errore A: attaccare al centro (3 MC densi del 4-3-3)',
+            'Errore A: non far ripiegare le ali > terzini isolati contro tridente'
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Si decide", "value": "Fasce + cerchio centrocampo"},
-            {"label": "Verdetto", "value": "4-5-1 V-Style leggermente favorito"},
-            {"label": "Perche", "value": "Tier S 2026, versatile, DMC equilibrio difensivo"},
-            {"label": "Giocatore chiave A", "value": "DMC con freccia blu"},
-            {"label": "Fonte", "value": "NotebookLM 7b0eba98"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Si decide',
+                'value': 'Fasce + cerchio centrocampo'
+            },
+            {
+                'label': 'Verdetto',
+                'value': '4-5-1 V-Style leggermente favorito'
+            },
+            {
+                'label': 'Perché',
+                'value': "Tier S 2026, 'jack of all trades', DMC equilibrio difensivo"
+            },
+            {
+                'label': 'Giocatore chiave A',
+                'value': 'DMC con freccia blu'
+            },
+            {
+                'label': 'Fonte',
+                'value': 'NotebookLM 7b0eba98'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "433-vs-433-mirror",
-        "order": 4,
-        "category_en": "4-3-3 vs 4-3-3 (mirror)",
-        "category_it": "4-3-3 vs 4-3-3 (specchio)",
-        "icon": "swap-horizontal-outline",
-        "summary_it": "Si decide su duelli sulle fasce. Vince chi ha Team Balance migliore. [Verificato NotebookLM]",
-        "summary_en": "",
-        "bullets_it": [
-            "Mossa vincente: ST Falso 9 (rompe la staticita dello specchio)",
-            "Mossa vincente: Sovrapposizione terzini (DL/DR freccia ROSSA su veloci)",
-            "Mossa vincente: gestire morale 'Superb' sui titolari chiave (bonus 2026)",
-            "Errore: Pressing alto immediato (stamina esaurita ultimi 20')",
-            "Errore: Insistere col focus 'Al Centro' (3 MC densi)",
+        'id': '433-vs-433-mirror',
+        'order': 4,
+        'category_en': '4-3-3 vs 4-3-3 (mirror)',
+        'category_it': '4-3-3 vs 4-3-3 (specchio)',
+        'icon': 'swap-horizontal-outline',
+        'summary_it': 'Si decide su duelli sulle fasce. Vince chi ha Team Balance migliore. [Verificato NotebookLM]',
+        'summary_en': '',
+        'bullets_it': [
+            'Mossa vincente: ST Falso 9 (rompe la staticità dello specchio)',
+            'Mossa vincente: Sovrapposizione terzini (DL/DR freccia ROSSA su veloci)',
+            "Mossa vincente: gestire morale 'Superb' sui titolari chiave (bonus performance 2026)",
+            "Errore: Pressing alto immediato (stamina esaurita negli ultimi 20')",
+            "Errore: Insistere col focus 'Al Centro' (3 MC densi)"
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Si decide", "value": "Duelli individuali AML/AMR vs DL/DR"},
-            {"label": "Verdetto", "value": "Vince chi ha Team Balance 9.2-10 + bianchi 150-200%"},
-            {"label": "Cosa NON fare", "value": "Affidarsi a un 'mutante' con balance scarso"},
-            {"label": "Giocatore chiave", "value": "Falso 9 + terzini veloci"},
-            {"label": "Fonte", "value": "NotebookLM 7b0eba98"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Si decide',
+                'value': 'Duelli individuali AML/AMR vs DL/DR'
+            },
+            {
+                'label': 'Verdetto',
+                'value': 'Vince chi ha Team Balance 9.2-10 + bianchi 150-200% nei ruoli chiave'
+            },
+            {
+                'label': 'Cosa NON fare',
+                'value': "Affidarsi a un singolo 'mutante' con balance scarso"
+            },
+            {
+                'label': 'Giocatore chiave',
+                'value': 'Falso 9 + terzini veloci'
+            },
+            {
+                'label': 'Fonte',
+                'value': 'NotebookLM 7b0eba98'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "41212-nd-vs-433",
-        "order": 5,
-        "category_en": "4-1-2-1-2 ND vs 4-3-3",
-        "category_it": "4-1-2-1-2 ND vs 4-3-3",
-        "icon": "shuffle-outline",
-        "summary_it": "Si decide al centro del campo. Favorito: 4-1-2-1-2 ND (controllo mediana).",
-        "summary_en": "",
-        "bullets_it": [
-            "Mossa vincente A: rosso su ST e AMC, passaggi rigorosamente Al Centro",
-            "Mossa vincente A: pressing alto > sfrutta sovraccarico mediana 4v3",
-            "Mossa vincente A: DMC + AMC creano linea verticale rapida",
+        'id': '41212-nd-vs-433',
+        'order': 5,
+        'category_en': '4-1-2-1-2 ND vs 4-3-3',
+        'category_it': '4-1-2-1-2 ND vs 4-3-3',
+        'icon': 'shuffle-outline',
+        'summary_it': 'Si decide al centro del campo. Favorito: 4-1-2-1-2 ND (controllo mediana).',
+        'summary_en': '',
+        'bullets_it': [
+            'Mossa vincente A: rosso su ST e AMC, passaggi rigorosamente Al Centro',
+            'Mossa vincente A: pressing alto > sfrutta sovraccarico mediana 4v3',
+            'Mossa vincente A: DMC + AMC creano linea verticale rapida',
             "Errore A: aprire il gioco sulle fasce (perde l'identita del modulo)",
-            "Errore A: lasciare gli esterni del 4-3-3 liberi su contropiede",
+            'Errore A: lasciare gli esterni del 4-3-3 liberi su contropiede'
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Si decide", "value": "Al centro - mediana 4v3"},
-            {"label": "Verdetto", "value": "4-1-2-1-2 ND favorito (Tier S)"},
-            {"label": "Perche", "value": "4 mediani vs 3 del 4-3-3 = dominio palla"},
-            {"label": "Counter B (4-3-3)", "value": "Apri sulle fasce con AML/AMR larghi"},
-            {"label": "Giocatore chiave A", "value": "AMC creativo"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Si decide',
+                'value': 'Al centro - mediana 4v3'
+            },
+            {
+                'label': 'Verdetto',
+                'value': '4-1-2-1-2 ND favorito (Tier S)'
+            },
+            {
+                'label': 'Perché',
+                'value': '4 mediani vs 3 del 4-3-3 = dominio palla'
+            },
+            {
+                'label': 'Counter B (4-3-3)',
+                'value': 'Apri sulle fasce con AML/AMR larghi'
+            },
+            {
+                'label': 'Giocatore chiave A',
+                'value': 'AMC creativo'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "3151-vs-451v",
-        "order": 6,
-        "category_en": "3-1-5-1 vs 4-5-1 V-Style",
-        "category_it": "3-1-5-1 vs 4-5-1 V-Style",
-        "icon": "shuffle-outline",
-        "summary_it": "Si decide sul controllo centrale. Scontro 'secret formation' vs 'versatile'.",
-        "summary_en": "",
-        "bullets_it": [
-            "Mossa vincente A (3-1-5-1): sovraccarico mediana 5v3",
-            "Mossa vincente A: DMC con freccia BLU + AMC con freccia ROSSA",
-            "Mossa vincente A: pressing alto + mentalita Offensiva",
-            "Errore A: difesa a 3 esposta se l'AMR/AML avversario riceve in profondita",
-            "Errore A: se l'avversario contropiede > retroguardia a rischio",
+        'id': '3151-vs-451v',
+        'order': 6,
+        'category_en': '3-1-5-1 vs 4-5-1 V-Style',
+        'category_it': '3-1-5-1 vs 4-5-1 V-Style',
+        'icon': 'shuffle-outline',
+        'summary_it': "Si decide sul controllo centrale. Scontro 'secret formation' vs 'versatile'.",
+        'summary_en': '',
+        'bullets_it': [
+            'Mossa vincente A (3-1-5-1): sovraccarico mediana 5v3 (5 MC vs DMC+2MC)',
+            'Mossa vincente A: DMC con freccia BLU + AMC con freccia ROSSA',
+            'Mossa vincente A: pressing alto + mentalità Offensiva',
+            "Errore A: difesa a 3 esposta se l'AMR/AML avversario riceve in profondità",
+            "Errore A: se l'avversario gioca contropiede > la mia retroguardia rischia"
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Si decide", "value": "Trequarti offensiva del 3-1-5-1"},
-            {"label": "Verdetto", "value": "3-1-5-1 favorito se l'avversario non contropiede"},
-            {"label": "Rischio A", "value": "Difesa a 3 + DMC unico = vulnerabile 1v1 ali"},
-            {"label": "Giocatore chiave A", "value": "AMC con Shadow Striker"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Si decide',
+                'value': 'Trequarti offensiva del 3-1-5-1 (sovraccarico)'
+            },
+            {
+                'label': 'Verdetto',
+                'value': "3-1-5-1 favorito se l'avversario non contropiede"
+            },
+            {
+                'label': 'Rischio A',
+                'value': 'Difesa a 3 + DMC unico = vulnerabile a 1v1 sulle ali'
+            },
+            {
+                'label': 'Giocatore chiave A',
+                'value': 'AMC con Shadow Striker'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "4231-dmc-vs-442",
-        "order": 7,
-        "category_en": "4-2-3-1 with DMC vs 4-4-2 Classic",
-        "category_it": "4-2-3-1 con DMC vs 4-4-2 Classico",
-        "icon": "shuffle-outline",
-        "summary_it": "Si decide tra le linee. Favorito: 4-2-3-1 (AMC libero tra centrocampo e difesa).",
-        "summary_en": "",
-        "bullets_it": [
-            "Mossa vincente A (4-2-3-1): AMC con Shadow Striker tra le linee del 4-4-2",
-            "Mossa vincente A: passaggi corti + possesso (no DMC avversario)",
+        'id': '4231-dmc-vs-442',
+        'order': 7,
+        'category_en': '4-2-3-1 with DMC vs 4-4-2 Classic',
+        'category_it': '4-2-3-1 con DMC vs 4-4-2 Classico',
+        'icon': 'shuffle-outline',
+        'summary_it': 'Si decide tra le linee. Favorito: 4-2-3-1 (AMC libero tra centrocampo e difesa).',
+        'summary_en': '',
+        'bullets_it': [
+            'Mossa vincente A (4-2-3-1): AMC con Shadow Striker tra le linee del 4-4-2',
+            'Mossa vincente A: passaggi corti + possesso (no DMC avversario)',
             "Mossa vincente A: freccia rossa sull'ala lato debole del 4-4-2",
-            "Errore A: pressing alto > il 4-4-2 lancia lungo sulle due punte",
-            "Errore A: non proteggere i terzini contro ML/MR avversari",
+            'Errore A: pressing alto > il 4-4-2 lancia lungo sulle due punte',
+            'Errore A: non proteggere i terzini contro ML/MR avversari'
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Si decide", "value": "Spazio tra centrocampo e difesa del 4-4-2"},
-            {"label": "Verdetto", "value": "4-2-3-1 favorito"},
-            {"label": "Perche", "value": "AMC libero, 4-4-2 senza DMC non sa marcarlo"},
-            {"label": "Giocatore chiave A", "value": "AMC playmaker + Shadow Striker"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Si decide',
+                'value': 'Spazio tra centrocampo e difesa del 4-4-2'
+            },
+            {
+                'label': 'Verdetto',
+                'value': '4-2-3-1 favorito'
+            },
+            {
+                'label': 'Perché',
+                'value': 'AMC libero, 4-4-2 senza DMC non sa marcarlo'
+            },
+            {
+                'label': 'Giocatore chiave A',
+                'value': 'AMC playmaker + Shadow Striker'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "451v-vs-541-flat",
-        "order": 8,
-        "category_en": "4-5-1 V-Style vs 5-4-1 Flat",
-        "category_it": "4-5-1 V-Style vs 5-4-1 Flat",
-        "icon": "shuffle-outline",
-        "summary_it": "Si decide su pazienza e palle inattive. Match spesso 0-0 o 1-0 di misura.",
-        "summary_en": "",
-        "bullets_it": [
-            "Mossa vincente A (4-5-1 V): AML/AMR larghi con cross alto (Corner Specialist)",
-            "Mossa vincente A: ST Target Man in area su corner e cross",
-            "Mossa vincente A: pazienza > mentalita Normale, non forzare Offensiva subito",
-            "Errore A: forzare attacco centrale (linea a 5 invalicabile)",
-            "Errore A: cambiare modulo a 30 min > perdi struttura",
+        'id': '451v-vs-541-flat',
+        'order': 8,
+        'category_en': '4-5-1 V-Style vs 5-4-1 Flat',
+        'category_it': '4-5-1 V-Style vs 5-4-1 Flat',
+        'icon': 'shuffle-outline',
+        'summary_it': 'Si decide su pazienza e palle inattive. Match spesso 0-0 o 1-0 di misura.',
+        'summary_en': '',
+        'bullets_it': [
+            'Mossa vincente A (4-5-1 V): AML/AMR larghi con cross alto (Corner Specialist)',
+            'Mossa vincente A: ST Target Man in area su corner e cross',
+            'Mossa vincente A: pazienza > mentalità Normale, non forzare Offensiva subito',
+            'Errore A: forzare attacco centrale (linea a 5 invalicabile)',
+            'Errore A: cambiare modulo a 30 min > perdi struttura'
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Si decide", "value": "Palle inattive + cross dalle fasce"},
-            {"label": "Verdetto", "value": "4-5-1 V favorito ma deve essere paziente"},
-            {"label": "Setup", "value": "Mentalita Normale, Sulle Fasce, pressing medio"},
-            {"label": "Giocatore chiave A", "value": "ST Target Man con Aerial Threat"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Si decide',
+                'value': 'Palle inattive + cross dalle fasce'
+            },
+            {
+                'label': 'Verdetto',
+                'value': '4-5-1 V favorito ma deve essere paziente'
+            },
+            {
+                'label': 'Setup',
+                'value': 'Mentalità Normale, Sulle Fasce, pressing medio'
+            },
+            {
+                'label': 'Giocatore chiave A',
+                'value': 'ST Target Man con Aerial Threat'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "343-vs-433",
-        "order": 9,
-        "category_en": "3-4-3 vs 4-3-3",
-        "category_it": "3-4-3 vs 4-3-3",
-        "icon": "shuffle-outline",
-        "summary_it": "Scontro offensivo, partita aperta. Favorito: 3-4-3 se ha terzini fluidificanti.",
-        "summary_en": "",
-        "bullets_it": [
-            "Mossa vincente A (3-4-3): ML/MR con freccia rossa salgono come Wing-Back",
-            "Mossa vincente A: 3 attaccanti vs 2 DC del 4-3-3 = superiorita centrale",
-            "Mossa vincente A: pressing alto > il 4-3-3 ha solo 3 MC per costruire",
-            "Errore A: difesa a 3 esposta se ali avversarie tagliano dentro",
-            "Errore A: contropiede subito sulle fasce > perdo gli esterni alti",
+        'id': '343-vs-433',
+        'order': 9,
+        'category_en': '3-4-3 vs 4-3-3',
+        'category_it': '3-4-3 vs 4-3-3',
+        'icon': 'shuffle-outline',
+        'summary_it': 'Scontro offensivo, partita aperta. Favorito: 3-4-3 se ha terzini fluidificanti.',
+        'summary_en': '',
+        'bullets_it': [
+            'Mossa vincente A (3-4-3): ML/MR con freccia rossa che salgono come Wing-Back',
+            'Mossa vincente A: 3 attaccanti vs 2 DC del 4-3-3 = superiorità centrale',
+            'Mossa vincente A: pressing alto > il 4-3-3 ha solo 3 MC per costruire',
+            'Errore A: difesa a 3 esposta se ali avversarie tagliano dentro',
+            'Errore A: contropiede subito sulle fasce > perdo gli esterni alti'
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Si decide", "value": "Profondita centrale + ali del 4-3-3 vs Wing-Back"},
-            {"label": "Verdetto", "value": "3-4-3 favorito se terzini fluidi"},
-            {"label": "Perche", "value": "3 attaccanti vs 2 DC + Wing-Back larghi"},
-            {"label": "Giocatore chiave A", "value": "ML/MR con Dual Position"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Si decide',
+                'value': 'Profondità centrale, ali del 4-3-3 vs Wing-Back'
+            },
+            {
+                'label': 'Verdetto',
+                'value': '3-4-3 favorito se terzini fluidi'
+            },
+            {
+                'label': 'Perché',
+                'value': '3 attaccanti vs 2 DC + Wing-Back larghi'
+            },
+            {
+                'label': 'Giocatore chiave A',
+                'value': 'ML/MR con Dual Position'
+            }
         ],
-        "table_en": None,
+        'table_en': None
     },
     {
-        "id": "442-vs-433",
-        "order": 10,
-        "category_en": "4-4-2 Classic vs 4-3-3",
-        "category_it": "4-4-2 Classico vs 4-3-3",
-        "icon": "shuffle-outline",
-        "summary_it": "Si decide su rapidita transizioni. Favorito: 4-3-3 (controllo + Falso 9).",
-        "summary_en": "",
-        "bullets_it": [
+        'id': '442-vs-433',
+        'order': 10,
+        'category_en': '4-4-2 Classic vs 4-3-3',
+        'category_it': '4-4-2 Classico vs 4-3-3',
+        'icon': 'shuffle-outline',
+        'summary_it': 'Si decide su rapidita transizioni. Favorito: 4-3-3 (controllo + Falso 9).',
+        'summary_en': '',
+        'bullets_it': [
             "Mossa vincente A (4-4-2): pressing alto sull'uscita palla del 4-3-3",
-            "Mossa vincente A: ML/MR taglio dentro su contropiede",
-            "Mossa vincente A: 2 ST sui DC avversari (sovrapposizione 2v2)",
-            "Errore A: lasciare l'AMC inesistente (4-4-2 non ne ha) = trequarti libera per Falso 9",
-            "Errore A: insistere palla a terra > serve lancio lungo verso le 2 punte",
+            'Mossa vincente A: ML/MR taglio dentro su contropiede',
+            'Mossa vincente A: 2 ST sui DC avversari (sovrapposizione 2v2)',
+            "Errore A: lasciare l'AMC inesistente (4-4-2 non ne ha) - libera il trequarti per il Falso 9",
+            'Errore A: insistere palla a terra - serve lancio lungo verso le 2 punte'
         ],
-        "bullets_en": [],
-        "table_it": [
-            {"label": "Si decide", "value": "Transizioni rapide (4-4-2 deve contropiede)"},
-            {"label": "Verdetto", "value": "4-3-3 favorito (controllo possesso + Falso 9)"},
-            {"label": "Counter A", "value": "Pressing alto + 2 ST verticali"},
-            {"label": "Giocatore chiave A", "value": "Coppia di ST veloci e fisici"},
+        'bullets_en': [],
+        'table_it': [
+            {
+                'label': 'Si decide',
+                'value': 'Transizioni rapide (4-4-2 deve contropiede)'
+            },
+            {
+                'label': 'Verdetto',
+                'value': '4-3-3 favorito (controlla possesso + Falso 9 rompe linea)'
+            },
+            {
+                'label': 'Counter A',
+                'value': 'Pressing alto + 2 ST verticali'
+            },
+            {
+                'label': 'Giocatore chiave A',
+                'value': 'Coppia di ST veloci e fisici'
+            }
         ],
-        "table_en": None,
-    },
+        'table_en': None
+    }
 ]
 
 # ==================== SCOUT TIPS DATA (EXPANDED) ====================
@@ -23269,108 +23742,108 @@ META_TACTICS = [
 
 ABBREVIATIONS = [
     {
-        "code": "F",
-        "name_en": "Flat",
-        "name_it": "Piatto",
-        "example": "4-4-2 F",
-        "description_en": "All midfielders or defenders on a flat line, no diagonal.",
-        "description_it": "Tutti i centrocampisti o difensori su una linea piatta, senza diagonale."
+        'code': 'F',
+        'name_en': 'Flat',
+        'name_it': 'Piatto',
+        'example': '4-4-2 F',
+        'description_en': 'All midfielders or defenders on a flat line, no diagonal.',
+        'description_it': 'Tutti i centrocampisti o difensori su una linea piatta, senza diagonale.'
     },
     {
-        "code": "N",
-        "name_en": "Narrow",
-        "name_it": "Stretto",
-        "example": "3N-5-2",
-        "description_en": "Central positioning, no full-backs or wide midfielders.",
-        "description_it": "Posizionamento centrale, senza terzini o esterni di centrocampo."
+        'code': 'N',
+        'name_en': 'Narrow',
+        'name_it': 'Stretto',
+        'example': '3N-5-2',
+        'description_en': 'Central positioning, no full-backs or wide midfielders.',
+        'description_it': 'Posizionamento centrale, senza terzini o esterni di centrocampo.'
     },
     {
-        "code": "W",
-        "name_en": "Wide",
-        "name_it": "Largo",
-        "example": "3W-4-3",
-        "description_en": "Players positioned on the flanks: full-backs/wing-backs and wide midfielders.",
-        "description_it": "Giocatori posizionati sulle fasce: terzini/esterni e centrocampisti larghi."
+        'code': 'W',
+        'name_en': 'Wide',
+        'name_it': 'Largo',
+        'example': '3W-4-3',
+        'description_en': 'Players positioned on the flanks: full-backs/wing-backs and wide midfielders.',
+        'description_it': 'Giocatori posizionati sulle fasce: terzini/esterni e centrocampisti larghi.'
     },
     {
-        "code": "B",
-        "name_en": "Butterfly",
-        "name_it": "Farfalla",
-        "example": "3N-2W-2N-2W-1",
-        "description_en": "Butterfly shape with alternating narrow/wide lines.",
-        "description_it": "Forma a farfalla con linee alternate strette/larghe."
+        'code': 'B',
+        'name_en': 'Butterfly',
+        'name_it': 'Farfalla',
+        'example': '3N-2W-2N-2W-1',
+        'description_en': 'Butterfly shape with alternating narrow/wide lines.',
+        'description_it': 'Forma a farfalla con linee alternate strette/larghe.'
     },
     {
-        "code": "C",
-        "name_en": "Curved",
-        "name_it": "Curvo",
-        "example": "3 DC + DL/DR avanzati",
-        "description_en": "Three CBs with advanced full-backs forming a curved defensive line.",
-        "description_it": "Tre DC con terzini avanzati che formano una linea difensiva curva."
+        'code': 'C',
+        'name_en': 'Curved',
+        'name_it': 'Curvo',
+        'example': '3 DC + DL/DR avanzati',
+        'description_en': 'Three CBs with advanced full-backs forming a curved defensive line.',
+        'description_it': 'Tre DC con terzini avanzati che formano una linea difensiva curva.'
     },
     {
-        "code": "D",
-        "name_en": "Dandelion",
-        "name_it": "Dente di Leone",
-        "example": "3N-1-3W-1-2",
-        "description_en": "Dandelion shape with narrow central base and wide attacking midfield.",
-        "description_it": "Forma a dente di leone con base centrale stretta e centrocampo offensivo largo."
+        'code': 'D',
+        'name_en': 'Dandelion',
+        'name_it': 'Dente di Leone',
+        'example': '3N-1-3W-1-2',
+        'description_en': 'Dandelion shape with narrow central base and wide attacking midfield.',
+        'description_it': 'Forma a dente di leone con base centrale stretta e centrocampo offensivo largo.'
     },
     {
-        "code": "H",
-        "name_en": "Hexagon",
-        "name_it": "Esagono",
-        "example": "4-0-2N-2W-2",
-        "description_en": "Hexagonal shape with central density and wide attacking midfielders.",
-        "description_it": "Forma esagonale con densita centrale e trequartisti larghi."
+        'code': 'H',
+        'name_en': 'Hexagon',
+        'name_it': 'Esagono',
+        'example': '4-0-2N-2W-2',
+        'description_en': 'Hexagonal shape with central density and wide attacking midfielders.',
+        'description_it': 'Forma esagonale con densità centrale e trequartisti larghi.'
     },
     {
-        "code": "V",
-        "name_en": "V-Style",
-        "name_it": "Stile V",
-        "example": "4-[1-2N-2W]-1",
-        "description_en": "V-shape midfield with DMC anchor, central MCs and high AML/AMR.",
-        "description_it": "Centrocampo a V con DMC ancora, MC al centro e AML/AMR alti."
+        'code': 'V',
+        'name_en': 'V-Style',
+        'name_it': 'Stile V',
+        'example': '4-[1-2N-2W]-1',
+        'description_en': 'V-shape midfield with DMC anchor, central MCs and high AML/AMR.',
+        'description_it': 'Centrocampo a V con DMC ancora, MC al centro e AML/AMR alti.'
     },
     {
-        "code": "ET",
-        "name_en": "Eiffel Tower",
-        "name_it": "Torre Eiffel",
-        "example": "3-2N-3-1-1",
-        "description_en": "Tower-shaped formation: narrow at the top, wide at the base.",
-        "description_it": "Formazione a torre, stretta in alto e larga alla base."
+        'code': 'ET',
+        'name_en': 'Eiffel Tower',
+        'name_it': 'Torre Eiffel',
+        'example': '3-2N-3-1-1',
+        'description_en': 'Tower-shaped formation: narrow at the top, wide at the base.',
+        'description_it': 'Formazione a torre, stretta in alto e larga alla base.'
     },
     {
-        "code": "ML",
-        "name_en": "Maple Leaf",
-        "name_it": "Foglia d'Acero",
-        "example": "3W-2N-3W-1-1",
-        "description_en": "Maple Leaf shape: wide base, narrow midfield core, wide attack.",
-        "description_it": "Forma a foglia d'acero: base larga, centro stretto, attacco largo."
+        'code': 'ML',
+        'name_en': 'Maple Leaf',
+        'name_it': "Foglia d'Acero",
+        'example': '3W-2N-3W-1-1',
+        'description_en': 'Maple Leaf shape: wide base, narrow midfield core, wide attack.',
+        'description_it': "Forma a foglia d'acero: base larga, centro stretto, attacco largo."
     },
     {
-        "code": "ND",
-        "name_en": "Narrow Diamond",
-        "name_it": "Diamante Stretto",
-        "example": "4-1-2N-1-2",
-        "description_en": "Diamond midfield centered: DMC, two narrow MCs, AMC.",
-        "description_it": "Diamante centrale: DMC, due MC stretti, AMC."
+        'code': 'ND',
+        'name_en': 'Narrow Diamond',
+        'name_it': 'Diamante Stretto',
+        'example': '4-1-2N-1-2',
+        'description_en': 'Diamond midfield centered: DMC, two narrow MCs, AMC.',
+        'description_it': 'Diamante centrale: DMC, due MC stretti, AMC.'
     },
     {
-        "code": "WD",
-        "name_en": "Wide Diamond",
-        "name_it": "Diamante Largo",
-        "example": "4-1-2W-1-2",
-        "description_en": "Diamond midfield with two wide MCs (ML/MR) and AMC.",
-        "description_it": "Diamante con due MC larghi (ML/MR) e AMC."
+        'code': 'WD',
+        'name_en': 'Wide Diamond',
+        'name_it': 'Diamante Largo',
+        'example': '4-1-2W-1-2',
+        'description_en': 'Diamond midfield with two wide MCs (ML/MR) and AMC.',
+        'description_it': 'Diamante con due MC larghi (ML/MR) e AMC.'
     },
     {
-        "code": "XT",
-        "name_en": "Xmas Tree",
-        "name_it": "Albero di Natale",
-        "example": "4-0-3W-2N-1",
-        "description_en": "Christmas tree shape: 4 defenders, no DMC, 3 wide MCs, 2 narrow AMCs, 1 ST.",
-        "description_it": "Albero di Natale: 4 difensori, no DMC, 3 MC larghi, 2 AMC stretti, 1 punta."
+        'code': 'XT',
+        'name_en': 'Xmas Tree',
+        'name_it': 'Albero di Natale',
+        'example': '4-0-3W-2N-1',
+        'description_en': 'Christmas tree shape: 4 defenders, no DMC, 3 wide MCs, 2 narrow AMCs, 1 ST.',
+        'description_it': 'Albero di Natale: 4 difensori, no DMC, 3 MC larghi, 2 AMC stretti, 1 punta.'
     }
 ]
 
@@ -23378,214 +23851,214 @@ ABBREVIATIONS = [
 
 SPECIAL_ABILITIES = [
     {
-        "id": 'shadow-striker',
-        "name_en": 'Shadow Striker',
-        "name_it": 'Incursore Ombra',
-        "best_role": 'AMC',
-        "effect_en": 'Lets the player break into empty spaces to score.',
-        "effect_it": 'Permette al giocatore di inserirsi negli spazi vuoti per segnare.',
-        "when_to_use_en": "Use against opponents who don't field a DMC to protect the defense.",
-        "when_to_use_it": 'Da usare contro avversari che non utilizzano un DMC per proteggere la difesa.'
+        'id': 'shadow-striker',
+        'name_en': 'Shadow Striker',
+        'name_it': 'Incursore Ombra',
+        'best_role': 'AMC',
+        'effect_en': 'Lets the player break into empty spaces to score.',
+        'effect_it': 'Permette al giocatore di inserirsi negli spazi vuoti per segnare.',
+        'when_to_use_en': "Use against opponents who don't field a DMC to protect the defense.",
+        'when_to_use_it': 'Da usare contro avversari che non utilizzano un DMC per proteggere la difesa.'
     },
     {
-        "id": 'playmaker',
-        "name_en": 'Playmaker',
-        "name_it": 'Regista',
-        "best_role": 'MC, AMC, DMC',
-        "effect_en": 'Improves vision and the accuracy of decisive passes.',
-        "effect_it": 'Migliora la visione di gioco e la precisione dei passaggi decisivi.',
-        "when_to_use_en": 'Key to dominating possession and providing assists between the lines.',
-        "when_to_use_it": 'Fondamentale per dominare il possesso palla e servire assist tra le linee.'
+        'id': 'playmaker',
+        'name_en': 'Playmaker',
+        'name_it': 'Regista',
+        'best_role': 'MC, AMC, DMC',
+        'effect_en': 'Improves vision and the accuracy of decisive passes.',
+        'effect_it': 'Migliora la visione di gioco e la precisione dei passaggi decisivi.',
+        'when_to_use_en': 'Key to dominating possession and providing assists between the lines.',
+        'when_to_use_it': 'Fondamentale per dominare il possesso palla e servire assist tra le linee.'
     },
     {
-        "id": 'dual-position',
-        "name_en": 'Dual Position',
-        "name_it": 'Ruolo Doppio',
-        "best_role": 'Ogni ruolo',
-        "effect_en": 'Allows the player to perform at full effectiveness in multiple positions.',
-        "effect_it": 'Consente al giocatore di agire con massima efficacia in più posizioni.',
-        "when_to_use_en": "For tactical flexibility and to exploit the opponent's formation weaknesses.",
-        "when_to_use_it": 'Per avere flessibilità tattica e colpire i punti deboli della formazione avversaria.'
+        'id': 'dual-position',
+        'name_en': 'Dual Position',
+        'name_it': 'Ruolo Doppio',
+        'best_role': 'Ogni ruolo',
+        'effect_en': 'Allows the player to perform at full effectiveness in multiple positions.',
+        'effect_it': 'Consente al giocatore di agire con massima efficacia in più posizioni.',
+        'when_to_use_en': "For tactical flexibility and to exploit the opponent's formation weaknesses.",
+        'when_to_use_it': 'Per avere flessibilità tattica e colpire i punti deboli della formazione avversaria.'
     },
     {
-        "id": 'free-kick-specialist',
-        "name_en": 'Free Kick Specialist',
-        "name_it": 'Specialista Punizioni',
-        "best_role": 'ST, AMC, MC',
-        "effect_en": 'Drastically increases the chance of scoring from direct free kicks.',
-        "effect_it": 'Aumenta drasticamente la probabilità di segnare su calcio di punizione diretto.',
-        "when_to_use_en": 'Essential to unlock tight matches through set pieces.',
-        "when_to_use_it": 'Essenziale per sbloccare partite chiuse tramite situazioni di palla inattiva.'
+        'id': 'free-kick-specialist',
+        'name_en': 'Free Kick Specialist',
+        'name_it': 'Specialista Punizioni',
+        'best_role': 'ST, AMC, MC',
+        'effect_en': 'Drastically increases the chance of scoring from direct free kicks.',
+        'effect_it': 'Aumenta drasticamente la probabilità di segnare su calcio di punizione diretto.',
+        'when_to_use_en': 'Essential to unlock tight matches through set pieces.',
+        'when_to_use_it': 'Essenziale per sbloccare partite chiuse tramite situazioni di palla inattiva.'
     },
     {
-        "id": 'corner-specialist',
-        "name_en": 'Corner Specialist',
-        "name_it": 'Specialista Angoli',
-        "best_role": 'ML, MR, AML, AMR',
-        "effect_en": 'Improves the accuracy and curl of corner deliveries.',
-        "effect_it": "Migliora la precisione e l'effetto dei cross effettuati dalla bandierina.",
-        "when_to_use_en": 'Useful to maximize the aerial game if you have strong headers in the box.',
-        "when_to_use_it": 'Utile per massimizzare il gioco aereo se si dispone di saltatori forti in area.'
+        'id': 'corner-specialist',
+        'name_en': 'Corner Specialist',
+        'name_it': 'Specialista Angoli',
+        'best_role': 'ML, MR, AML, AMR',
+        'effect_en': 'Improves the accuracy and curl of corner deliveries.',
+        'effect_it': "Migliora la precisione e l'effetto dei cross effettuati dalla bandierina.",
+        'when_to_use_en': 'Useful to maximize the aerial game if you have strong headers in the box.',
+        'when_to_use_it': 'Utile per massimizzare il gioco aereo se si dispone di saltatori forti in area.'
     },
     {
-        "id": 'penalty-specialist',
-        "name_en": 'Penalty Specialist',
-        "name_it": 'Specialista Rigori',
-        "best_role": 'ST, AMC',
-        "effect_en": 'Ensures near-perfect accuracy when converting penalties.',
-        "effect_it": 'Garantisce una precisione quasi totale nella trasformazione dei tiri dal dischetto.',
-        "when_to_use_en": "Assign to your designated penalty taker so you don't waste spot kicks.",
-        "when_to_use_it": 'Da assegnare al rigorista designato per non sprecare occasioni dagli undici metri.'
+        'id': 'penalty-specialist',
+        'name_en': 'Penalty Specialist',
+        'name_it': 'Specialista Rigori',
+        'best_role': 'ST, AMC',
+        'effect_en': 'Ensures near-perfect accuracy when converting penalties.',
+        'effect_it': 'Garantisce una precisione quasi totale nella trasformazione dei tiri dal dischetto.',
+        'when_to_use_en': "Assign to your designated penalty taker so you don't waste spot kicks.",
+        'when_to_use_it': 'Da assegnare al rigorista designato per non sprecare occasioni dagli undici metri.'
     },
     {
-        "id": 'one-on-one-scoring',
-        "name_en": 'One-on-One Scoring',
-        "name_it": 'Finalizzatore 1v1',
-        "best_role": 'ST, AML, AMR',
-        "effect_en": 'Boosts scoring ability when the player faces the keeper one-on-one.',
-        "effect_it": 'Potenzia la capacità di segnare quando il giocatore affronta il portiere in solitaria.',
-        "when_to_use_en": 'Ideal for fast strikers who often operate on the counter.',
-        "when_to_use_it": 'Ideale per attaccanti veloci che agiscono spesso in contropiede.'
+        'id': 'one-on-one-scoring',
+        'name_en': 'One-on-One Scoring',
+        'name_it': 'Finalizzatore 1v1',
+        'best_role': 'ST, AML, AMR',
+        'effect_en': 'Boosts scoring ability when the player faces the keeper one-on-one.',
+        'effect_it': 'Potenzia la capacità di segnare quando il giocatore affronta il portiere in solitaria.',
+        'when_to_use_en': 'Ideal for fast strikers who often operate on the counter.',
+        'when_to_use_it': 'Ideale per attaccanti veloci che agiscono spesso in contropiede.'
     },
     {
-        "id": 'defensive-wall',
-        "name_en": 'Defensive Wall',
-        "name_it": 'Muro Difensivo',
-        "best_role": 'DC, DMC',
-        "effect_en": 'Increases the chance of blocking or deflecting shots on goal.',
-        "effect_it": 'Aumenta la probabilità di intercettare o respingere i tiri avversari diretti in porta.',
-        "when_to_use_en": 'To turn your box into a fortress against big shooters.',
-        "when_to_use_it": 'Per rendere la propria area di rigore un fortino contro i grandi tiratori.'
+        'id': 'defensive-wall',
+        'name_en': 'Defensive Wall',
+        'name_it': 'Muro Difensivo',
+        'best_role': 'DC, DMC',
+        'effect_en': 'Increases the chance of blocking or deflecting shots on goal.',
+        'effect_it': 'Aumenta la probabilità di intercettare o respingere i tiri avversari diretti in porta.',
+        'when_to_use_en': 'To turn your box into a fortress against big shooters.',
+        'when_to_use_it': 'Per rendere la propria area di rigore un fortino contro i grandi tiratori.'
     },
     {
-        "id": 'aerial-defence',
-        "name_en": 'Aerial Defence',
-        "name_it": 'Difesa Aerea',
-        "best_role": 'DC',
-        "effect_en": 'Improves timing and strength in aerial duels inside the box.',
-        "effect_it": "Migliora il tempismo e la forza nei contrasti aerei all'interno dell'area.",
-        "when_to_use_en": 'Indispensable against opponents using a Target Man or constant crosses.',
-        "when_to_use_it": 'Indispensabile contro avversari che utilizzano Target Man o cross continui.'
+        'id': 'aerial-defence',
+        'name_en': 'Aerial Defence',
+        'name_it': 'Difesa Aerea',
+        'best_role': 'DC',
+        'effect_en': 'Improves timing and strength in aerial duels inside the box.',
+        'effect_it': "Migliora il tempismo e la forza nei contrasti aerei all'interno dell'area.",
+        'when_to_use_en': 'Indispensable against opponents using a Target Man or constant crosses.',
+        'when_to_use_it': 'Indispensabile contro avversari che utilizzano Target Man o cross continui.'
     },
     {
-        "id": 'pacey-dribbler',
-        "name_en": 'Pacey Dribbler',
-        "name_it": 'Dribblatore Veloce',
-        "best_role": 'AML, AMR, ST',
-        "effect_en": 'Increases ball control and speed when dribbling at pace.',
-        "effect_it": 'Incrementa il controllo palla e la velocità durante i dribbling in progressione.',
-        "when_to_use_en": 'To beat your man out wide and create instant numerical advantage.',
-        "when_to_use_it": "Per saltare l'uomo sulle fasce e creare superiorità numerica immediata."
+        'id': 'pacey-dribbler',
+        'name_en': 'Pacey Dribbler',
+        'name_it': 'Dribblatore Veloce',
+        'best_role': 'AML, AMR, ST',
+        'effect_en': 'Increases ball control and speed when dribbling at pace.',
+        'effect_it': 'Incrementa il controllo palla e la velocità durante i dribbling in progressione.',
+        'when_to_use_en': 'To beat your man out wide and create instant numerical advantage.',
+        'when_to_use_it': "Per saltare l'uomo sulle fasce e creare superiorità numerica immediata."
     },
     {
-        "id": 'long-throw-in',
-        "name_en": 'Long Throw-in',
-        "name_it": 'Rimessa Lunga',
-        "best_role": 'DL, DR',
-        "effect_en": 'Allows throwing the ball directly into the box from throw-ins.',
-        "effect_it": 'Permette di lanciare la palla direttamente in area durante le rimesse laterali.',
-        "when_to_use_en": 'Turns a simple throw-in into a potential scoring chance.',
-        "when_to_use_it": 'Trasforma una semplice rimessa laterale in una potenziale occasione da gol.'
+        'id': 'long-throw-in',
+        'name_en': 'Long Throw-in',
+        'name_it': 'Rimessa Lunga',
+        'best_role': 'DL, DR',
+        'effect_en': 'Allows throwing the ball directly into the box from throw-ins.',
+        'effect_it': 'Permette di lanciare la palla direttamente in area durante le rimesse laterali.',
+        'when_to_use_en': 'Turns a simple throw-in into a potential scoring chance.',
+        'when_to_use_it': 'Trasforma una semplice rimessa laterale in una potenziale occasione da gol.'
     },
     {
-        "id": 'ball-magnet',
-        "name_en": 'Ball Magnet',
-        "name_it": 'Calamita di Palla',
-        "best_role": 'MC, AMC, DMC',
-        "effect_en": 'Significantly increases the chance of receiving a pass: opens passing lanes wider than the rest of the team.',
-        "effect_it": 'Aumenta significativamente la probabilità di ricevere un passaggio: apre linee di passaggio più larghe del resto della squadra.',
-        "when_to_use_en": 'On the team playmaker. Multiplies the effectiveness of a Tiki-Taka system.',
-        "when_to_use_it": "Sul regista della squadra. Moltiplica l'efficacia di un sistema Tiki-Taka."
+        'id': 'ball-magnet',
+        'name_en': 'Ball Magnet',
+        'name_it': 'Calamita di Palla',
+        'best_role': 'MC, AMC, DMC',
+        'effect_en': 'Significantly increases the chance of receiving a pass: opens passing lanes wider than the rest of the team.',
+        'effect_it': 'Aumenta significativamente la probabilità di ricevere un passaggio: apre linee di passaggio più larghe del resto della squadra.',
+        'when_to_use_en': 'On the team playmaker. Multiplies the effectiveness of a Tiki-Taka system.',
+        'when_to_use_it': "Sul regista della squadra. Moltiplica l'efficacia di un sistema Tiki-Taka."
     },
     {
-        "id": 'speed-merchant',
-        "name_en": 'Speed Merchant',
-        "name_it": 'Velocista',
-        "best_role": 'AML, AMR, ST',
-        "effect_en": 'Adds a real burst of pace in transitions: leaves slower defenders in his wake.',
-        "effect_it": 'Aggiunge un vero scatto di velocità nelle transizioni: lascia sul posto i difensori più lenti.',
-        "when_to_use_en": 'On the counter-attack winger. Devastating against high defensive lines.',
-        "when_to_use_it": "Sull'ala da contropiede. Devastante contro linee difensive alte."
+        'id': 'speed-merchant',
+        'name_en': 'Speed Merchant',
+        'name_it': 'Velocista',
+        'best_role': 'AML, AMR, ST',
+        'effect_en': 'Adds a real burst of pace in transitions: leaves slower defenders in his wake.',
+        'effect_it': 'Aggiunge un vero scatto di velocità nelle transizioni: lascia sul posto i difensori più lenti.',
+        'when_to_use_en': 'On the counter-attack winger. Devastating against high defensive lines.',
+        'when_to_use_it': "Sull'ala da contropiede. Devastante contro linee difensive alte."
     },
     {
-        "id": 'goal-poacher',
-        "name_en": 'Goal Poacher',
-        "name_it": 'Bomber di Razza',
-        "best_role": 'ST',
-        "effect_en": 'Extreme finishing ability inside the penalty area, even from difficult angles.',
-        "effect_it": "Capacita di finalizzazione estrema dentro l'area, anche da angolazioni difficili.",
-        "when_to_use_en": 'On the main striker. Multiplies the conversion rate from chances.',
-        "when_to_use_it": "Sull'attaccante centrale. Moltiplica il tasso di conversione delle occasioni."
+        'id': 'goal-poacher',
+        'name_en': 'Goal Poacher',
+        'name_it': 'Bomber di Razza',
+        'best_role': 'ST',
+        'effect_en': 'Extreme finishing ability inside the penalty area, even from difficult angles.',
+        'effect_it': "Capacità di finalizzazione estrema dentro l'area, anche da angolazioni difficili.",
+        'when_to_use_en': 'On the main striker. Multiplies the conversion rate from chances.',
+        'when_to_use_it': "Sull'attaccante centrale. Moltiplica il tasso di conversione delle occasioni."
     },
     {
-        "id": 'aerial-threat',
-        "name_en": 'Aerial Threat',
-        "name_it": 'Forza Aerea',
-        "best_role": 'ST, DC',
-        "effect_en": 'Dominates aerial duels on corners and crosses, scoring or defending headed balls.',
-        "effect_it": 'Domina i duelli aerei su corner e cross, segna o difende di testa.',
-        "when_to_use_en": 'Essential for tactics built on crosses or set-piece dominance.',
-        "when_to_use_it": 'Indispensabile per tattiche che vivono di cross o di dominio sui calci piazzati.'
+        'id': 'aerial-threat',
+        'name_en': 'Aerial Threat',
+        'name_it': 'Forza Aerea',
+        'best_role': 'ST, DC',
+        'effect_en': 'Dominates aerial duels on corners and crosses, scoring or defending headed balls.',
+        'effect_it': 'Domina i duelli aerei su corner e cross, segna o difende di testa.',
+        'when_to_use_en': 'Essential for tactics built on crosses or set-piece dominance.',
+        'when_to_use_it': 'Indispensabile per tattiche che vivono di cross o di dominio sui calci piazzati.'
     },
     {
-        "id": 'set-piece-master',
-        "name_en": 'Set-Piece Master',
-        "name_it": 'Specialista delle Palle Inattive',
-        "best_role": 'MC, AMC',
-        "effect_en": 'Combines Free Kick + Corner + Penalty specialist in a single ability. Dead-ball god.',
-        "effect_it": 'Combina Punizioni + Angoli + Rigori in una singola abilita. Dio dei calci piazzati.',
-        "when_to_use_en": 'Rare and expensive. Saves you 3 player slots dedicated to set pieces.',
-        "when_to_use_it": 'Rara e costosa. Ti risparmia 3 slot di giocatori dedicati ai calci piazzati.'
+        'id': 'set-piece-master',
+        'name_en': 'Set-Piece Master',
+        'name_it': 'Specialista delle Palle Inattive',
+        'best_role': 'MC, AMC',
+        'effect_en': 'Combines Free Kick + Corner + Penalty specialist in a single ability. Dead-ball god.',
+        'effect_it': 'Combina Punizioni + Angoli + Rigori in una singola abilità. Dio dei calci piazzati.',
+        'when_to_use_en': 'Rare and expensive. Saves you 3 player slots dedicated to set pieces.',
+        'when_to_use_it': 'Rara e costosa. Ti risparmia 3 slot di giocatori dedicati ai calci piazzati.'
     },
     {
-        "id": 'strong-tackler',
-        "name_en": 'Strong Tackler',
-        "name_it": 'Contrastista',
-        "best_role": 'DC, DMC, MC',
-        "effect_en": 'Tackles with surgical precision, reducing fouls and gaining the ball cleanly.',
-        "effect_it": 'Contrasta con precisione chirurgica, riducendo i falli e guadagnando palla pulita.',
-        "when_to_use_en": 'On the midfield destroyer. Allows hard tackling without yellow card risk.',
-        "when_to_use_it": 'Sul distruttore di centrocampo. Permette contrasti duri senza rischio cartellino.'
+        'id': 'strong-tackler',
+        'name_en': 'Strong Tackler',
+        'name_it': 'Contrastista',
+        'best_role': 'DC, DMC, MC',
+        'effect_en': 'Tackles with surgical precision, reducing fouls and gaining the ball cleanly.',
+        'effect_it': 'Contrasta con precisione chirurgica, riducendo i falli e guadagnando palla pulita.',
+        'when_to_use_en': 'On the midfield destroyer. Allows hard tackling without yellow card risk.',
+        'when_to_use_it': 'Sul distruttore di centrocampo. Permette contrasti duri senza rischio cartellino.'
     },
     {
-        "id": 'anticipation',
-        "name_en": 'Anticipation',
-        "name_it": 'Anticipazione',
-        "best_role": 'DC, DMC',
-        "effect_en": 'Reads opposing passes early, intercepting balls and breaking up attacks before they develop.',
-        "effect_it": 'Legge i passaggi avversari in anticipo, intercettando le palle e spezzando gli attacchi sul nascere.',
-        "when_to_use_en": 'On the central CB. Worth more than +20% Tackling against creative opponents.',
-        "when_to_use_it": 'Sul DC centrale. Vale piu di +20% di Contrasto contro avversari creativi.'
+        'id': 'anticipation',
+        'name_en': 'Anticipation',
+        'name_it': 'Anticipazione',
+        'best_role': 'DC, DMC',
+        'effect_en': 'Reads opposing passes early, intercepting balls and breaking up attacks before they develop.',
+        'effect_it': 'Legge i passaggi avversari in anticipo, intercettando le palle e spezzando gli attacchi sul nascere.',
+        'when_to_use_en': 'On the central CB. Worth more than +20% Tackling against creative opponents.',
+        'when_to_use_it': 'Sul DC centrale. Vale più di +20% di Contrasto contro avversari creativi.'
     },
     {
-        "id": 'crosser',
-        "name_en": 'Crosser',
-        "name_it": 'Crossatore',
-        "best_role": 'ML, MR, DL, DR',
-        "effect_en": 'High-quality crosses with curl and pace, always finding the head of the strikers.',
-        "effect_it": 'Cross di alta qualita con effetto e velocita, trovano sempre la testa degli attaccanti.',
-        "when_to_use_en": 'On full-backs or wide MCs in formations that play on the flanks.',
-        "when_to_use_it": 'Sui terzini o MC larghi nei moduli che giocano sulle fasce.'
+        'id': 'crosser',
+        'name_en': 'Crosser',
+        'name_it': 'Crossatore',
+        'best_role': 'ML, MR, DL, DR',
+        'effect_en': 'High-quality crosses with curl and pace, always finding the head of the strikers.',
+        'effect_it': 'Cross di alta qualità con effetto e velocità, trovano sempre la testa degli attaccanti.',
+        'when_to_use_en': 'On full-backs or wide MCs in formations that play on the flanks.',
+        'when_to_use_it': 'Sui terzini o MC larghi nei moduli che giocano sulle fasce.'
     },
     {
-        "id": 'wall-pass-master',
-        "name_en": 'Wall-Pass Master',
-        "name_it": 'Maestro dei Triangoli',
-        "best_role": 'MC, AMC',
-        "effect_en": 'Specialist in one-twos: launches and receives back the ball quickly to break the lines.',
-        "effect_it": 'Specialista del uno-due: rilancia e riceve velocemente per spezzare le linee.',
-        "when_to_use_en": 'On the offensive MC. Devastating in possession-based systems.',
-        "when_to_use_it": 'Sul MC offensivo. Devastante nei sistemi basati sul possesso.'
+        'id': 'wall-pass-master',
+        'name_en': 'Wall-Pass Master',
+        'name_it': 'Maestro dei Triangoli',
+        'best_role': 'MC, AMC',
+        'effect_en': 'Specialist in one-twos: launches and receives back the ball quickly to break the lines.',
+        'effect_it': 'Specialista del uno-due: rilancia e riceve velocemente per spezzare le linee.',
+        'when_to_use_en': 'On the offensive MC. Devastating in possession-based systems.',
+        'when_to_use_it': 'Sul MC offensivo. Devastante nei sistemi basati sul possesso.'
     },
     {
-        "id": 'long-shot-specialist',
-        "name_en": 'Long-Shot Specialist',
-        "name_it": 'Specialista Tiro da Fuori',
-        "best_role": 'MC, AMC, AML, AMR',
-        "effect_en": 'Lethal shots from outside the box, breaking compact and deep defenses.',
-        "effect_it": 'Tiri letali da fuori area, scardinano difese compatte e basse.',
-        "when_to_use_en": "Against teams that 'park the bus' (5-4-1 Flat, 4-5-1 V-Style defensive).",
-        "when_to_use_it": "Contro squadre che 'parcheggiano l'autobus' (5-4-1 Flat, 4-5-1 V difensivo)."
+        'id': 'long-shot-specialist',
+        'name_en': 'Long-Shot Specialist',
+        'name_it': 'Specialista Tiro da Fuori',
+        'best_role': 'MC, AMC, AML, AMR',
+        'effect_en': 'Lethal shots from outside the box, breaking compact and deep defenses.',
+        'effect_it': 'Tiri letali da fuori area, scardinano difese compatte e basse.',
+        'when_to_use_en': "Against teams that 'park the bus' (5-4-1 Flat, 4-5-1 V-Style defensive).",
+        'when_to_use_it': "Contro squadre che 'parcheggiano l'autobus' (5-4-1 Flat, 4-5-1 V difensivo)."
     }
 ]
 
@@ -24173,220 +24646,220 @@ FAQ = [
 
 ARROW_TACTICS = [
     {
-        "formation_id": "442c",
-        "formation": "4-4-2",
-        "arrows": "ML↑ MR↑",
-        "key_movements_en": "The wide midfielders push up the flanks.",
-        "key_movements_it": "Gli esterni di centrocampo spingono sulle fasce.",
-        "explanation_en": "Uses wide pace to bypass central defenses and cross.",
-        "explanation_it": "Sfrutta la velocità laterale per aggirare le difese centrali e crossare."
+        'formation_id': '442c',
+        'formation': '4-4-2',
+        'arrows': 'ML↑ MR↑',
+        'key_movements_en': 'The wide midfielders push up the flanks.',
+        'key_movements_it': 'Gli esterni di centrocampo spingono sulle fasce.',
+        'explanation_en': 'Uses wide pace to bypass central defenses and cross.',
+        'explanation_it': 'Sfrutta la velocità laterale per aggirare le difese centrali e crossare.'
     },
     {
-        "formation_id": "433",
-        "formation": "4-3-3",
-        "arrows": "DL↑ DR↑ AML↑ AMR↑",
-        "key_movements_en": "Full-backs and wingers push up to create overloads.",
-        "key_movements_it": "Terzini e ali salgono per creare superiorità numerica.",
-        "explanation_en": "Overloads the opponent's flanks, exploiting weak full-backs.",
-        "explanation_it": "Sovraccarica i fianchi dell'avversario sfruttando la debolezza dei difensori laterali."
+        'formation_id': '433',
+        'formation': '4-3-3',
+        'arrows': 'DL↑ DR↑ AML↑ AMR↑',
+        'key_movements_en': 'Full-backs and wingers push up to create overloads.',
+        'key_movements_it': 'Terzini e ali salgono per creare superiorità numerica.',
+        'explanation_en': "Overloads the opponent's flanks, exploiting weak full-backs.",
+        'explanation_it': "Sovraccarica i fianchi dell'avversario sfruttando la debolezza dei difensori laterali."
     },
     {
-        "formation_id": "4231",
-        "formation": "4-2-3-1",
-        "arrows": "AMC↑ AML↑ AMR↑",
-        "key_movements_en": "The attacking trio constantly attacks the space.",
-        "key_movements_it": "Il trio sulla trequarti attacca costantemente lo spazio.",
-        "explanation_en": "Maximizes attacking output when the opponent fields no protective DMC.",
-        "explanation_it": "Massimizza la produzione offensiva se l'avversario non schiera un DMC protettivo."
+        'formation_id': '4231',
+        'formation': '4-2-3-1',
+        'arrows': 'AMC↑ AML↑ AMR↑',
+        'key_movements_en': 'The attacking trio constantly attacks the space.',
+        'key_movements_it': 'Il trio sulla trequarti attacca costantemente lo spazio.',
+        'explanation_en': 'Maximizes attacking output when the opponent fields no protective DMC.',
+        'explanation_it': "Massimizza la produzione offensiva se l'avversario non schiera un DMC protettivo."
     },
     {
-        "formation_id": "451v",
-        "formation": "4-5-1 V-Style",
-        "arrows": "AML↑ AMR↑ DMC↓",
-        "key_movements_en": "The wingers push up while the DMC screens the defense.",
-        "key_movements_it": "Le ali spingono, il DMC scherma la difesa.",
-        "explanation_en": "A versatile shape that attacks the flanks while keeping central cover against counters.",
-        "explanation_it": "Modulo versatile che attacca i fianchi garantendo copertura centrale contro i contropiedi."
+        'formation_id': '451v',
+        'formation': '4-5-1 V-Style',
+        'arrows': 'AML↑ AMR↑ DMC↓',
+        'key_movements_en': 'The wingers push up while the DMC screens the defense.',
+        'key_movements_it': 'Le ali spingono, il DMC scherma la difesa.',
+        'explanation_en': 'A versatile shape that attacks the flanks while keeping central cover against counters.',
+        'explanation_it': 'Modulo versatile che attacca i fianchi garantendo copertura centrale contro i contropiedi.'
     },
     {
-        "formation_id": "4222h",
-        "formation": "4-2-2-2 Hexagon",
-        "arrows": "DMC↓ DMC↓ AML↑ AMR↑",
-        "key_movements_en": "Double shield in front of the CBs, wingers pushing forward.",
-        "key_movements_it": "Doppia protezione davanti ai DC, ali in proiezione.",
-        "explanation_en": "Provides a solid defensive base while enabling lethal breaks down the wings.",
-        "explanation_it": "Fornisce una solida base difensiva permettendo ripartenze letali sulle corsie esterne."
+        'formation_id': '4222h',
+        'formation': '4-2-2-2 Hexagon',
+        'arrows': 'MC↓ MC↓ AML↑ AMR↑',
+        'key_movements_en': 'Double shield in front of the CBs, wingers pushing forward.',
+        'key_movements_it': 'Doppia protezione davanti ai DC, ali in proiezione.',
+        'explanation_en': 'Provides a solid defensive base while enabling lethal breaks down the wings.',
+        'explanation_it': 'Fornisce una solida base difensiva permettendo ripartenze letali sulle corsie esterne.'
     },
     {
-        "formation_id": "41212nd",
-        "formation": "4-1-2-1-2 ND",
-        "arrows": "DL↓ DC↓ DC↓ DR↓ AMC↑ ST↑",
-        "key_movements_en": "Back line held, the AMC and strikers pushed forward.",
-        "key_movements_it": "Difesa bloccata, trequartista e punte avanzati.",
-        "explanation_en": "Protects the center with a deep line while the diamond dominates the final third.",
-        "explanation_it": "Protegge il centro con una linea arretrata mentre il rombo domina la trequarti."
+        'formation_id': '41212nd',
+        'formation': '4-1-2-1-2 ND',
+        'arrows': 'DL↓ DC↓ DC↓ DR↓ AMC↑ ST↑',
+        'key_movements_en': 'Back line held, the AMC and strikers pushed forward.',
+        'key_movements_it': 'Difesa bloccata, trequartista e punte avanzati.',
+        'explanation_en': 'Protects the center with a deep line while the diamond dominates the final third.',
+        'explanation_it': 'Protegge il centro con una linea arretrata mentre il rombo domina la trequarti.'
     },
     {
-        "formation_id": "352f",
-        "formation": "3-5-2",
-        "arrows": "ML↑ MR↑",
-        "key_movements_en": "The wide midfielders cover the whole flank.",
-        "key_movements_it": "I centrocampisti laterali coprono tutta la fascia.",
-        "explanation_en": "Adds width to the build-up and constant support for the two central strikers.",
-        "explanation_it": "Fornisce ampiezza alla manovra e supporto costante alle due punte centrali."
+        'formation_id': '352f',
+        'formation': '3-5-2',
+        'arrows': 'ML↑ MR↑',
+        'key_movements_en': 'The wide midfielders cover the whole flank.',
+        'key_movements_it': 'I centrocampisti laterali coprono tutta la fascia.',
+        'explanation_en': 'Adds width to the build-up and constant support for the two central strikers.',
+        'explanation_it': 'Fornisce ampiezza alla manovra e supporto costante alle due punte centrali.'
     },
     {
-        "formation_id": "541f",
-        "formation": "5-4-1",
-        "arrows": "ST↑",
-        "key_movements_en": "The lone striker chases depth on long balls.",
-        "key_movements_it": "L'unica punta cerca la profondità nei lanci lunghi.",
-        "explanation_en": "Ideal to park the bus, minimizing defensive risk with a single advanced outlet.",
-        "explanation_it": "Ideale per 'parcheggiare l'autobus', minimizzando i rischi difensivi con un solo riferimento avanzato."
+        'formation_id': '541f',
+        'formation': '5-4-1',
+        'arrows': 'ST↑',
+        'key_movements_en': 'The lone striker chases depth on long balls.',
+        'key_movements_it': "L'unica punta cerca la profondità nei lanci lunghi.",
+        'explanation_en': 'Ideal to park the bus, minimizing defensive risk with a single advanced outlet.',
+        'explanation_it': "Ideale per 'parcheggiare l'autobus', minimizzando i rischi difensivi con un solo riferimento avanzato."
     },
     {
-        "formation_id": "343",
-        "formation": "3-4-3",
-        "arrows": "AML↑ AMR↑ ST↑",
-        "key_movements_en": "The whole front three stays high.",
-        "key_movements_it": "L'intero tridente offensivo rimane alto.",
-        "explanation_en": "Applies suffocating pressure on the opponent's three- or four-man defense.",
-        "explanation_it": "Esercita una pressione asfissiante sulla difesa a tre o quattro avversaria."
+        'formation_id': '343',
+        'formation': '3-4-3',
+        'arrows': 'AML↑ AMR↑ ST↑',
+        'key_movements_en': 'The whole front three stays high.',
+        'key_movements_it': "L'intero tridente offensivo rimane alto.",
+        'explanation_en': "Applies suffocating pressure on the opponent's three- or four-man defense.",
+        'explanation_it': 'Esercita una pressione asfissiante sulla difesa a tre o quattro avversaria.'
     },
     {
-        "formation_id": "3151amc",
-        "formation": "3-1-5-1",
-        "arrows": "DMC↓ MC↑",
-        "key_movements_en": "The holding mid stays deep while the half-midfielders break forward.",
-        "key_movements_it": "Il mediano rimane basso, le mezzali si inseriscono.",
-        "explanation_en": "Smothers the opponent with a crowded midfield and runners between the lines.",
-        "explanation_it": "Soffoca il gioco avversario con un centrocampo folto e inserimenti tra le linee."
+        'formation_id': '3151amc',
+        'formation': '3-1-5-1',
+        'arrows': 'DMC↓ MC↑',
+        'key_movements_en': 'The holding mid stays deep while the half-midfielders break forward.',
+        'key_movements_it': 'Il mediano rimane basso, le mezzali si inseriscono.',
+        'explanation_en': 'Smothers the opponent with a crowded midfield and runners between the lines.',
+        'explanation_it': 'Soffoca il gioco avversario con un centrocampo folto e inserimenti tra le linee.'
     },
     {
-        "formation_id": "4141",
-        "formation": "4-1-4-1",
-        "arrows": "DL↓ DC↓ DC↓ DR↓ DMC↓",
-        "key_movements_en": "The entire back line and the holding mid drop deeper.",
-        "key_movements_it": "L'intera retroguardia e il mediano si abbassano.",
-        "explanation_en": "Compresses defensive space to neutralize strong AMCs and win via counters.",
-        "explanation_it": "Soffoca lo spazio difensivo per neutralizzare AMC forti e vincere tramite contropiedi."
+        'formation_id': '4141',
+        'formation': '4-1-4-1',
+        'arrows': 'DL↓ DC↓ DC↓ DR↓ DMC↓',
+        'key_movements_en': 'The entire back line and the holding mid drop deeper.',
+        'key_movements_it': "L'intera retroguardia e il mediano si abbassano.",
+        'explanation_en': 'Compresses defensive space to neutralize strong AMCs and win via counters.',
+        'explanation_it': 'Soffoca lo spazio difensivo per neutralizzare AMC forti e vincere tramite contropiedi.'
     },
     {
-        "formation_id": "41311",
-        "formation": "4-1-3-1-1",
-        "arrows": "DMC↓ MC↓ AMC↓ ST↓",
-        "key_movements_en": "The whole central spine sits deeper.",
-        "key_movements_it": "Tutta la colonna centrale arretrata.",
-        "explanation_en": "Cancels opposing playmakers by removing all space between the defensive and midfield lines.",
-        "explanation_it": "Annulla i trequartisti avversari togliendo loro ogni spazio tra le linee di difesa e centrocampo."
+        'formation_id': '41311',
+        'formation': '4-1-3-1-1',
+        'arrows': 'DMC↓ MC↓ AMC↓ ST↓',
+        'key_movements_en': 'The whole central spine sits deeper.',
+        'key_movements_it': 'Tutta la colonna centrale arretrata.',
+        'explanation_en': 'Cancels opposing playmakers by removing all space between the defensive and midfield lines.',
+        'explanation_it': 'Annulla i trequartisti avversari togliendo loro ogni spazio tra le linee di difesa e centrocampo.'
     },
     {
-        "formation_id": "424",
-        "formation": "4-2-4",
-        "arrows": "ST↑ ST↑ AML↑ AMR↑",
-        "key_movements_en": "All four attackers push forward.",
-        "key_movements_it": "I quattro attaccanti spingono in avanti.",
-        "explanation_en": "Maximizes attacking pressure to score at the expense of defensive cover.",
-        "explanation_it": "Massimizza la pressione offensiva per segnare gol a scapito della copertura difensiva."
+        'formation_id': '424',
+        'formation': '4-2-4',
+        'arrows': 'ST↑ ST↑ AML↑ AMR↑',
+        'key_movements_en': 'All four attackers push forward.',
+        'key_movements_it': 'I quattro attaccanti spingono in avanti.',
+        'explanation_en': 'Maximizes attacking pressure to score at the expense of defensive cover.',
+        'explanation_it': 'Massimizza la pressione offensiva per segnare gol a scapito della copertura difensiva.'
     },
     {
-        "formation_id": "4321xt",
-        "formation": "4-3-2-1 XT (Xmas Tree)",
-        "arrows": "DL↑ DR↑",
-        "key_movements_en": "The full-backs push up to support the build-up.",
-        "key_movements_it": "I terzini salgono per supportare la manovra.",
-        "explanation_en": "Adds width to a dense midfield to feed the wingers and the lone striker.",
-        "explanation_it": "Fornisce ampiezza a un centrocampo denso per alimentare le ali e l'unica punta."
+        'formation_id': '4321xt',
+        'formation': '4-3-2-1 XT (Xmas Tree)',
+        'arrows': 'DL↑ DR↑',
+        'key_movements_en': 'The full-backs push up to support the build-up.',
+        'key_movements_it': 'I terzini salgono per supportare la manovra.',
+        'explanation_en': 'Adds width to a dense midfield to feed the wingers and the lone striker.',
+        'explanation_it': "Fornisce ampiezza a un centrocampo denso per alimentare le ali e l'unica punta."
     },
     {
-        "formation_id": "532",
-        "formation": "5-3-2",
-        "arrows": "ST↑ ST↑",
-        "key_movements_en": "The two strikers chase depth.",
-        "key_movements_it": "Le due punte cercano la profondità.",
-        "explanation_en": "Keeps a solid defensive wall while providing outlets for the counter.",
-        "explanation_it": "Permette di mantenere un muro difensivo solido garantendo riferimenti per il contropiede."
+        'formation_id': '532',
+        'formation': '5-3-2',
+        'arrows': 'ST↑ ST↑',
+        'key_movements_en': 'The two strikers chase depth.',
+        'key_movements_it': 'Le due punte cercano la profondità.',
+        'explanation_en': 'Keeps a solid defensive wall while providing outlets for the counter.',
+        'explanation_it': 'Permette di mantenere un muro difensivo solido garantendo riferimenti per il contropiede.'
     },
     {
-        "formation_id": "413n2",
-        "formation": "4-1-3N-2",
-        "arrows": "MC↑ DMC↓ DL↓ DC↓ DR↓",
-        "key_movements_en": "The central MC pushes up while the defense and holding mid stay deep.",
-        "key_movements_it": "MC centrale sale, difesa e mediano restano bassi.",
-        "explanation_en": "Protects your box and favors central runs to beat formations like the 4-2-3-1.",
-        "explanation_it": "Protegge la propria area e favorisce inserimenti centrali per battere moduli come il 4-2-3-1."
+        'formation_id': '413n2',
+        'formation': '4-1-3N-2',
+        'arrows': 'MC↑ DMC↓ DL↓ DC↓ DR↓',
+        'key_movements_en': 'The central MC pushes up while the defense and holding mid stay deep.',
+        'key_movements_it': 'MC centrale sale, difesa e mediano restano bassi.',
+        'explanation_en': 'Protects your box and favors central runs to beat formations like the 4-2-3-1.',
+        'explanation_it': 'Protegge la propria area e favorisce inserimenti centrali per battere moduli come il 4-2-3-1.'
     },
     {
-        "formation_id": "3412",
-        "formation": "3-4-1-2",
-        "arrows": "ST↑ ST↑ ML↑ MR↑",
-        "key_movements_en": "Strikers and wide midfielders advance.",
-        "key_movements_it": "Punte ed esterni di centrocampo avanzano.",
-        "explanation_en": "Exploits the wide weakness of opposing defenses through the wide midfielders' runs.",
-        "explanation_it": "Sfrutta la debolezza laterale delle difese avversarie tramite la spinta dei centrocampisti laterali."
+        'formation_id': '3412',
+        'formation': '3-4-1-2',
+        'arrows': 'ST↑ ST↑ ML↑ MR↑',
+        'key_movements_en': 'Strikers and wide midfielders advance.',
+        'key_movements_it': 'Punte ed esterni di centrocampo avanzano.',
+        'explanation_en': "Exploits the wide weakness of opposing defenses through the wide midfielders' runs.",
+        'explanation_it': 'Sfrutta la debolezza laterale delle difese avversarie tramite la spinta dei centrocampisti laterali.'
     },
     {
-        "formation_id": "31312",
-        "formation": "3-1-3-1-2",
-        "arrows": "ST↑ ST↑ MC↑",
-        "key_movements_en": "The strikers and a midfielder push forward.",
-        "key_movements_it": "Gli attaccanti e il centrocampista avanzano.",
-        "explanation_en": "Creates constant shooting chances with an all-out attacking setup.",
-        "explanation_it": "Crea costanti opportunità di tiro grazie a un assetto votato totalmente all'attacco."
+        'formation_id': '31312',
+        'formation': '3-1-3-1-2',
+        'arrows': 'ST↑ ST↑ MC↑',
+        'key_movements_en': 'The strikers and a midfielder push forward.',
+        'key_movements_it': 'Gli attaccanti e il centrocampista avanzano.',
+        'explanation_en': 'Creates constant shooting chances with an all-out attacking setup.',
+        'explanation_it': "Crea costanti opportunità di tiro grazie a un assetto votato totalmente all'attacco."
     },
     {
-        "formation_id": "43n3",
-        "formation": "4-3N-3",
-        "arrows": "ST↑ ST↑ ST↑",
-        "key_movements_en": "The front three stays high.",
-        "key_movements_it": "Il tridente offensivo rimane alto.",
-        "explanation_en": "Applies suffocating pressure on the opposing centre-backs.",
-        "explanation_it": "Esercita una pressione asfissiante sui difensori centrali avversari."
+        'formation_id': '43n3',
+        'formation': '4-3N-3',
+        'arrows': 'ST↑ ST↑ ST↑',
+        'key_movements_en': 'The front three stays high.',
+        'key_movements_it': 'Il tridente offensivo rimane alto.',
+        'explanation_en': 'Applies suffocating pressure on the opposing centre-backs.',
+        'explanation_it': 'Esercita una pressione asfissiante sui difensori centrali avversari.'
     },
     {
-        "formation_id": "5212x",
-        "formation": "5-2-1-2 X-Style",
-        "arrows": "ST↑ ST↑",
-        "key_movements_en": "The two strikers push up for the breaks.",
-        "key_movements_it": "Le due punte avanzano per le ripartenze.",
-        "explanation_en": "Provides maximum defensive protection with outlets ready to strike in transition.",
-        "explanation_it": "Garantisce massima protezione difensiva con riferimenti pronti per colpire in transizione."
+        'formation_id': '5212x',
+        'formation': '5-2-1-2 X-Style',
+        'arrows': 'ST↑ ST↑',
+        'key_movements_en': 'The two strikers push up for the breaks.',
+        'key_movements_it': 'Le due punte avanzano per le ripartenze.',
+        'explanation_en': 'Provides maximum defensive protection with outlets ready to strike in transition.',
+        'explanation_it': 'Garantisce massima protezione difensiva con riferimenti pronti per colpire in transizione.'
     },
     {
-        "formation_id": "451f",
-        "formation": "4-5-1 Flat",
-        "arrows": "ML↑ MR↑ DL↑ DR↑",
-        "key_movements_en": "Wide midfielders and full-backs push up the flanks.",
-        "key_movements_it": "Esterni e terzini spingono sulle fasce.",
-        "explanation_en": "Overloads the opponent's flanks to cross constantly into the box.",
-        "explanation_it": "Sovraccarica i fianchi avversari per crossare costantemente verso l'area."
+        'formation_id': '451f',
+        'formation': '4-5-1 Flat',
+        'arrows': 'ML↑ MR↑ DL↑ DR↑',
+        'key_movements_en': 'Wide midfielders and full-backs push up the flanks.',
+        'key_movements_it': 'Esterni e terzini spingono sulle fasce.',
+        'explanation_en': "Overloads the opponent's flanks to cross constantly into the box.",
+        'explanation_it': "Sovraccarica i fianchi avversari per crossare costantemente verso l'area."
     },
     {
-        "formation_id": "41212wd",
-        "formation": "4-1-2-1-2 WD",
-        "arrows": "ST↑ ST↑ ML↑ MR↑ AMC↑",
-        "key_movements_en": "Attack, AMC and wingers push forward.",
-        "key_movements_it": "Attacco, trequartista e ali in proiezione.",
-        "explanation_en": "Uses the width of the diamond to get around centrally-compact defenses.",
-        "explanation_it": "Sfrutta l'ampiezza del diamante per aggirare le difese chiuse centralmente."
+        'formation_id': '41212wd',
+        'formation': '4-1-2-1-2 WD',
+        'arrows': 'ST↑ ST↑ AML↑ AMR↑ AMC↑',
+        'key_movements_en': 'Attack, AMC and wingers push forward.',
+        'key_movements_it': 'Attacco, trequartista e ali in proiezione.',
+        'explanation_en': 'Uses the width of the diamond to get around centrally-compact defenses.',
+        'explanation_it': "Sfrutta l'ampiezza del diamante per aggirare le difese chiuse centralmente."
     },
     {
-        "formation_id": "352v",
-        "formation": "3-5-2 V",
-        "arrows": "ST↑ ST↑ AML↑ AMR↑",
-        "key_movements_en": "Strikers and wingers push toward goal.",
-        "key_movements_it": "Punte e ali spingono verso la porta.",
-        "explanation_en": "Creates instant numerical superiority in both wide and central attacking zones.",
-        "explanation_it": "Crea superiorità numerica immediata nelle zone d'attacco esterne e interne."
+        'formation_id': '352v',
+        'formation': '3-5-2 V',
+        'arrows': 'ST↑ ST↑ AML↑ AMR↑',
+        'key_movements_en': 'Strikers and wingers push toward goal.',
+        'key_movements_it': 'Punte e ali spingono verso la porta.',
+        'explanation_en': 'Creates instant numerical superiority in both wide and central attacking zones.',
+        'explanation_it': "Crea superiorità numerica immediata nelle zone d'attacco esterne e interne."
     },
     {
-        "formation_id": "32221b",
-        "formation": "3-2-2-2-1 Butterfly",
-        "arrows": "ML↑ MR↑ ST↑",
-        "key_movements_en": "The wide players and the striker advance.",
-        "key_movements_it": "Esterni laterali e punta avanzano.",
-        "explanation_en": "Balances the back three by providing continuous support down the flanks.",
-        "explanation_it": "Bilancia la difesa a tre fornendo supporto continuo sulle corsie laterali."
+        'formation_id': '32221b',
+        'formation': '3-2-2-2-1 Butterfly',
+        'arrows': 'AML↑ AMR↑ ST↑',
+        'key_movements_en': 'The wide players and the striker advance.',
+        'key_movements_it': 'Esterni laterali e punta avanzano.',
+        'explanation_en': 'Balances the back three by providing continuous support down the flanks.',
+        'explanation_it': 'Bilancia la difesa a tre fornendo supporto continuo sulle corsie laterali.'
     }
 ]
 

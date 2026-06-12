@@ -19,7 +19,7 @@ App pensata per **Habetamu Bellini** (operatore sociosanitario, account `bellini
 ```
 C:\Users\habet\progetti\app-emergent\
 ├── backend/
-│   └── server.py            # FastAPI + 15 dataset Python in-file
+│   └── server.py            # FastAPI + 18 dataset Python in-file (fonte di verità)
 ├── frontend/                # Expo SDK 54 + React Native + TypeScript
 │   ├── app/(tabs)/          # Tab navigation (expo-router)
 │   │   ├── index.tsx        # Home
@@ -36,22 +36,26 @@ C:\Users\habet\progetti\app-emergent\
 │   ├── app.json             # name, slug, package, updates URL
 │   ├── eas.json             # build profiles + canale OTA
 │   └── package.json
+├── tools/
+│   ├── datasets.py          # estrazione/scrittura dataset in server.py (via ast)
+│   ├── sync_data.py         # rigenera frontend/src/data/*.json + index.ts da server.py
+│   └── validate_data.py     # validatore invarianti (0 errori = si può committare)
 ├── tests/, test_reports/    # Test backend
-└── _gen_*.py                # Script generatori temporanei (NON committare)
+└── _gen_*.py                # Script generatori temporanei (gitignorati, NON committare)
 ```
 
 **Bottom tabs attive**: HOME · FORM · COUNTER · SCOUT · ACADEMY · SET (tab AI rimossa il 04/06).
 
 ---
 
-## 3. Stato attuale dataset (15 totali)
+## 3. Stato attuale dataset (18 totali)
 
 | Dataset Python | Voci | Bundle JSON frontend | Descrizione |
 |---|---|---|---|
-| `FORMATIONS` | 56 | `formations.json` | Moduli con scenari forte/pari/debole + frecce + reverse-lookup (`effective_against`, `vulnerable_to`) + `defense_count` |
-| `COUNTER_ENGINE` | 81 | `counterEngine.json` | Per ogni avversario: 3 scenari completi |
-| `COUNTER_QUICK` | 75 | `counterQuick.json` | Tabella rapida avversario → 3 counter |
-| `MATCHUP_MATRIX` | 117 | `matchupMatrix.json` | Matrice avversario → 3 counter (off/neu/dif) |
+| `FORMATIONS` | 125 | `formations.json` | Moduli con scenari forte/pari/debole + frecce + reverse-lookup (`effective_against`, `vulnerable_to`) + `defense_count` |
+| `COUNTER_ENGINE` | 107 | `counterEngine.json` | Per ogni avversario: 3 scenari completi. **Fonte di verità dei counter** |
+| `COUNTER_QUICK` | 74 | `counterQuick.json` | Tabella rapida avversario → 3 counter (derivata dalla matrice) |
+| `MATCHUP_MATRIX` | 107 | `matchupMatrix.json` | Matrice avversario → 3 counter (derivata dall'engine: off=debole.mod, neu=pari.mod, dif=forte.mod) |
 | `SCOUT_TIPS` | 82 | `scoutTips.json` | Tip per categoria (defense, midfield, attack, tactics, counter, scenario, morale, market, skills, arrows, meta, economy) |
 | `PLAYER_ROLES` | 28 | `playerRoles.json` | Ruoli (Sweeper Keeper → False 9 → Trequartista → Carrilero → Raumdeuter…) |
 | `META_TACTICS` | 13 | `metaTactics.json` | Tier S/A/B + flag `trending`, varianti FMM Vibe |
@@ -63,8 +67,13 @@ C:\Users\habet\progetti\app-emergent\
 | `FAQ` | 17 | `faq.json` | Categorie: app, tactics, training, economy, matchday |
 | `ABBREVIATIONS` | 13 | `abbreviations.json` | F, N, W, B, C, D, H, V, ET, ML, ND, WD, XT |
 | `CAREER_PATHS` | 5 | `careerPaths.json` | Percorsi per livello stelle rosa (3★ → 7★+) |
+| `MY_PLAYBOOK` | 13 | `myPlaybook.json` | Sezione "Mio Stile": il playbook personale tiki-taka |
+| `SET_PIECE` | 5 | `setPiece.json` | Sezione "Piazzati": rigoristi, punizioni, angoli, rimesse |
+| `BATTLE_CARDS` | 10 | `battleCards.json` | Sezione "Scontri": schede scontro diretto tra moduli |
 
-**Totale: 558 voci tattiche strutturate.**
+**Totale: 670 voci tattiche strutturate.**
+
+**Gerarchia dei counter**: `COUNTER_ENGINE` è la fonte di verità; `MATCHUP_MATRIX` e `COUNTER_QUICK` sono derivate e il validatore fallisce se divergono.
 
 **Endpoint API** (32 totali): `/api/{dataset}` + `/api/{dataset}/{filter}` per ognuno.
 
@@ -191,17 +200,28 @@ notebooklm ask "..." --notebook 7b0eba98 2>&1
 ## 9. Pattern ricorrenti
 
 ### Aggiungere/modificare dataset → bundle frontend
-1. Modifica `backend/server.py` (manualmente o via script `_gen_*.py`)
-2. Esegui `_gen_bundle.py` (riscrive tutti i JSON in `frontend/src/data/` + `index.ts`)
-3. Frontend importa dati direttamente da `@/src/data`: `import { FORMATIONS } from '@/src/data'`
-4. Commit + push + `eas update`
+1. Modifica `backend/server.py` (a mano per piccole modifiche, o via `tools/datasets.py`:
+   `extract_assignments()` → modifica l'oggetto Python → `replace_assignment()` → `write_server_text()`)
+2. Esegui `python tools/sync_data.py` (riscrive tutti i JSON in `frontend/src/data/` + `index.ts`)
+3. Esegui `python tools/validate_data.py` — **deve dare 0 errori prima del commit**
+4. Frontend importa dati direttamente da `@/src/data`: `import { FORMATIONS } from '@/src/data'`
+5. Commit + push + `eas update`
+
+### Invarianti verificate dal validatore
+- server.py ⇄ JSON identici; 11 giocatori e 1 GK per modulo; `defense_count` coerente
+- Frecce solo su posizioni esistenti nel modulo (FORMATIONS, COUNTER_ENGINE, ARROW_TACTICS)
+- Vocabolari chiusi EN/IT (mentalità, pressing, passaggi, contrasti, marcatura)
+- Niente fuorigioco ON + pressing basso; niente contropiede ON + mentalità offensiva
+- Riferimenti tra moduli canonici; niente contraddizioni A-batte-B/B-batte-A
+- MATCHUP_MATRIX derivata da COUNTER_ENGINE; COUNTER_QUICK derivata dalla matrice
+- Accenti italiani non strippati (più/è/perché…) nei campi `*_it` e `w`
 
 ### Stesso schema per ogni nuovo dataset
 ```
 1. Aggiungi NEW_DATASET = [...] in server.py
 2. Aggiungi endpoint @api_router.get("/api/<name>")
-3. Aggiungi MAP entry in _gen_bundle.py
-4. Aggiungi import in src/data/index.ts (lo fa _gen_bundle.py)
+3. Aggiungi la entry in DATASETS dentro tools/datasets.py
+4. Esegui tools/sync_data.py (genera JSON + import in index.ts)
 5. Aggiungi sezione in academy.tsx (SECTIONS + LOCAL_DATA + cardTitle/Subtitle + modal block + SectionId + state)
 ```
 
@@ -232,8 +252,9 @@ Idee mie (Claude) per future sessioni:
 
 ## 11. File da NON committare mai
 
-- `_gen_*.py`, `_audit*.py`, `_msg.txt`, `_apply*.py`, `_add_*.py`, `_build_*.py`, `_enrich*.py`, `_fix_*.py`, `_fill_*.py` — script generatori temporanei
-- `preview_server.py` — viewer HTML locale (utile per testare bundle senza emulatore)
+- `_*.py` nella root (script temporanei di sessione) — ora coperti dal `.gitignore`
+- `preview_server.py` — viewer HTML locale (utile per testare bundle senza emulatore) — gitignorato
+- `frontend/package-lock.json` — il lockfile canonico è `yarn.lock` — gitignorato
 - `node_modules/`, `.expo/`, `.metro-cache/`
 
 ---
@@ -260,4 +281,4 @@ Far ricopiare all'utente da `.notebooklm\storage_state.json` (le copie utente ha
 
 ## 13. Numero magico
 
-Il numero che riassume il lavoro fatto: **558 voci tattiche strutturate, 15 dataset, 12 sezioni Academy, 32 endpoint API, 35+ commit su un branch, una stagione di calcio nel telefono**.
+Il numero che riassume il lavoro fatto: **670 voci tattiche strutturate, 18 dataset, 15 sezioni Academy, un validatore che le tiene tutte coerenti, una stagione di calcio nel telefono**.

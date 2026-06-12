@@ -1,674 +1,674 @@
 [
-{
-"id": "sweeper-keeper",
-"position": "GK",
-"name_en": "Sweeper Keeper",
-"name_it": "Portiere Libero",
-"key_attributes_en": [
-"Reflexes",
-"Aerial Ability",
-"Positioning"
-],
-"key_attributes_it": [
-"Riflessi",
-"Uscite",
-"Posizionamento"
-],
-"best_formations": [
-"4-5-1",
-"4-3-3"
-],
-"training_focus_en": "Saving, Reflexes, Aerial Ability",
-"training_focus_it": "Parata, Riflessi, Uscite",
-"description_en": "Participates in build-up and covers the space behind a high defensive line.",
-"description_it": "Partecipa alla manovra e copre lo spazio dietro la difesa alta."
-},
-{
-"id": "ball-playing-defender",
-"position": "DC",
-"name_en": "Ball-Playing Defender",
-"name_it": "Difensore Regista",
-"key_attributes_en": [
-"Passing",
-"Marking",
-"Creativity"
-],
-"key_attributes_it": [
-"Passaggio",
-"Marcatura",
-"Creatività"
-],
-"best_formations": [
-"3-5-2",
-"4-3-3"
-],
-"training_focus_en": "Passing, Marking, Positioning",
-"training_focus_it": "Passaggio, Marcatura, Posizionamento",
-"description_en": "Essential for clean ball progression under opponent pressing.",
-"description_it": "Fondamentale per l'uscita pulita del pallone sotto pressing avversario."
-},
-{
-"id": "no-nonsense-centre-back",
-"position": "DC",
-"name_en": "No-Nonsense Centre-Back",
-"name_it": "Difensore Puro",
-"key_attributes_en": [
-"Tackling",
-"Marking",
-"Strength"
-],
-"key_attributes_it": [
-"Contrasto",
-"Marcatura",
-"Forza"
-],
-"best_formations": [
-"4-4-2",
-"5-4-1"
-],
-"training_focus_en": "Strength, Marking, Tackling",
-"training_focus_it": "Forza, Marcatura, Contrasto",
-"description_en": "Focuses purely on defending without risking difficult passes.",
-"description_it": "Si concentra solo sulla difesa senza rischiare passaggi difficili."
-},
-{
-"id": "full-back",
-"position": "DL/DR",
-"name_en": "Full-Back",
-"name_it": "Terzino",
-"key_attributes_en": [
-"Tackling",
-"Marking",
-"Pace"
-],
-"key_attributes_it": [
-"Contrasto",
-"Marcatura",
-"Velocità"
-],
-"best_formations": [
-"4-1-2-1-2 ND",
-"4-4-2"
-],
-"training_focus_en": "Tackling, Marking, Positioning",
-"training_focus_it": "Contrasto, Marcatura, Posizionamento",
-"description_en": "Provides defensive solidity on the flanks against strong opposing wingers.",
-"description_it": "Garantisce solidità difensiva sulle fasce contro ali avversarie forti."
-},
-{
-"id": "wing-back",
-"position": "DL/DR",
-"name_en": "Wing-Back",
-"name_it": "Terzino Fluidificante",
-"key_attributes_en": [
-"Crossing",
-"Pace",
-"Tackling"
-],
-"key_attributes_it": [
-"Cross",
-"Velocità",
-"Contrasto"
-],
-"best_formations": [
-"3-5-2",
-"4-5-1 V-Style"
-],
-"training_focus_en": "Crossing, Pace, Tackling",
-"training_focus_it": "Cross, Velocità, Contrasto",
-"description_en": "Pushes up with a forward arrow to give width and cross for the strikers.",
-"description_it": "Spinge con freccia SU per dare ampiezza e crossare per le punte."
-},
-{
-"id": "inverted-wing-back",
-"position": "DL/DR",
-"name_en": "Inverted Wing-Back",
-"name_it": "Terzino Invertito",
-"key_attributes_en": [
-"Passing",
-"Tackling",
-"Positioning"
-],
-"key_attributes_it": [
-"Passaggio",
-"Contrasto",
-"Posizionamento"
-],
-"best_formations": [
-"4-3-3",
-"4-1-4-1"
-],
-"training_focus_en": "Passing, Tackling, Dribbling",
-"training_focus_it": "Passaggio, Contrasto, Dribbling",
-"description_en": "Tucks into midfield to help control central possession.",
-"description_it": "Entra in mezzo al campo per aiutare la gestione del possesso centrale."
-},
-{
-"id": "anchor-man",
-"position": "DMC",
-"name_en": "Anchor Man",
-"name_it": "Incontrista Arretrato",
-"key_attributes_en": [
-"Tackling",
-"Positioning",
-"Strength"
-],
-"key_attributes_it": [
-"Contrasto",
-"Posizionamento",
-"Forza"
-],
-"best_formations": [
-"4-1-4-1",
-"4-5-1 V-Style"
-],
-"training_focus_en": "Tackling, Marking, Positioning",
-"training_focus_it": "Contrasto, Marcatura, Posizionamento",
-"description_en": "The 'advanced stopper' vital to shield the defense and earn clean sheets.",
-"description_it": "Lo 'stopper avanzato' vitale per proteggere la difesa e fare clean sheet."
-},
-{
-"id": "deep-lying-playmaker",
-"position": "DMC",
-"name_en": "Deep-Lying Playmaker",
-"name_it": "Regista Arretrato",
-"key_attributes_en": [
-"Passing",
-"Creativity",
-"Tackling"
-],
-"key_attributes_it": [
-"Passaggio",
-"Creatività",
-"Contrasto"
-],
-"best_formations": [
-"4-3-3",
-"4-1-2-1-2 ND"
-],
-"training_focus_en": "Passing, Creativity, Tackling",
-"training_focus_it": "Passaggio, Creatività, Contrasto",
-"description_en": "Deep playmaker who distributes the ball and builds play from the back.",
-"description_it": "Playmaker basso che smista palloni e costruisce gioco dalle retrovie."
-},
-{
-"id": "box-to-box-midfielder",
-"position": "MC",
-"name_en": "Box-to-Box Midfielder",
-"name_it": "Centrocampista Totale",
-"key_attributes_en": [
-"Stamina",
-"Passing",
-"Tackling"
-],
-"key_attributes_it": [
-"Resistenza",
-"Passaggio",
-"Contrasto"
-],
-"best_formations": [
-"4-4-2",
-"4-5-1 Flat"
-],
-"training_focus_en": "Passing, Strength, Stamina",
-"training_focus_it": "Passaggio, Forza, Resistenza",
-"description_en": "Tireless midfield engine operating between both penalty boxes.",
-"description_it": "Instancabile motore del centrocampo che agisce tra le due aree di rigore."
-},
-{
-"id": "mezzala",
-"position": "MC",
-"name_en": "Mezzala",
-"name_it": "Mezzala",
-"key_attributes_en": [
-"Shooting",
-"Pace",
-"Dribbling"
-],
-"key_attributes_it": [
-"Tiro",
-"Velocità",
-"Dribbling"
-],
-"best_formations": [
-"4-3-3",
-"4-1-3-1-1"
-],
-"training_focus_en": "Shooting, Pace, Finishing",
-"training_focus_it": "Tiro, Velocità, Finalizzazione",
-"description_en": "Late-running forward who attacks the half-spaces to finish in the box.",
-"description_it": "Incursore che attacca gli half-spaces per concludere l'azione in porta."
-},
-{
-"id": "advanced-playmaker",
-"position": "AMC",
-"name_en": "Advanced Playmaker",
-"name_it": "Regista Avanzato",
-"key_attributes_en": [
-"Creativity",
-"Passing",
-"Shooting"
-],
-"key_attributes_it": [
-"Creatività",
-"Passaggio",
-"Tiro"
-],
-"best_formations": [
-"4-2-3-1",
-"3-4-1-2"
-],
-"training_focus_en": "Passing, Creativity, Shooting",
-"training_focus_it": "Passaggio, Creatività, Tiro",
-"description_en": "The creative hub who delivers killer assists between the lines.",
-"description_it": "Il faro della manovra offensiva che serve assist letali tra le linee."
-},
-{
-"id": "wide-midfielder",
-"position": "ML/MR",
-"name_en": "Wide Midfielder",
-"name_it": "Esterno di Centrocampo",
-"key_attributes_en": [
-"Crossing",
-"Passing",
-"Stamina"
-],
-"key_attributes_it": [
-"Cross",
-"Passaggio",
-"Resistenza"
-],
-"best_formations": [
-"4-4-2",
-"4-5-1 Flat"
-],
-"training_focus_en": "Crossing, Passing, Marking",
-"training_focus_it": "Cross, Passaggio, Marcatura",
-"description_en": "Provides balance and a constant supply for the strikers.",
-"description_it": "Garantisce equilibrio e rifornimenti costanti per gli attaccanti."
-},
-{
-"id": "classic-winger",
-"position": "AML/AMR",
-"name_en": "Classic Winger",
-"name_it": "Ala Classica",
-"key_attributes_en": [
-"Crossing",
-"Pace",
-"Dribbling"
-],
-"key_attributes_it": [
-"Cross",
-"Velocità",
-"Dribbling"
-],
-"best_formations": [
-"4-3-3",
-"4-5-1 V-Style"
-],
-"training_focus_en": "Crossing, Pace, Dribbling",
-"training_focus_it": "Cross, Velocità, Dribbling",
-"description_en": "Exploits the Dual Position Advantage to beat his man and cross.",
-"description_it": "Sfrutta il Dual Position Advantage per saltare l'uomo e crossare."
-},
-{
-"id": "inverted-winger",
-"position": "AML/AMR",
-"name_en": "Inverted Winger",
-"name_it": "Ala Invertita",
-"key_attributes_en": [
-"Shooting",
-"Dribbling",
-"Pace"
-],
-"key_attributes_it": [
-"Tiro",
-"Dribbling",
-"Velocità"
-],
-"best_formations": [
-"4-2-3-1",
-"4-3-3"
-],
-"training_focus_en": "Shooting, Finishing, Dribbling",
-"training_focus_it": "Tiro, Finalizzazione, Dribbling",
-"description_en": "Cuts inside to shoot with his inverted foot toward goal.",
-"description_it": "Taglia verso il centro per calciare col piede invertito verso la porta."
-},
-{
-"id": "target-man",
-"position": "ST",
-"name_en": "Target Man",
-"name_it": "Centravanti Boa",
-"key_attributes_en": [
-"Heading",
-"Strength",
-"Finishing"
-],
-"key_attributes_it": [
-"Colpo di testa",
-"Forza",
-"Finalizzazione"
-],
-"best_formations": [
-"4-4-2",
-"4-5-1 Flat"
-],
-"training_focus_en": "Heading, Strength, Finishing",
-"training_focus_it": "Colpo di testa, Forza, Finalizzazione",
-"description_en": "Physical reference for crosses; wins aerial duels against defenders.",
-"description_it": "Riferimento fisico per i cross; vince i duelli aerei contro i difensori."
-},
-{
-"id": "poacher",
-"position": "ST",
-"name_en": "Poacher",
-"name_it": "Uomo d'Area",
-"key_attributes_en": [
-"Finishing",
-"Anticipation",
-"Shooting"
-],
-"key_attributes_it": [
-"Finalizzazione",
-"Riflessi",
-"Tiro"
-],
-"best_formations": [
-"4-1-2-1-2 ND",
-"3-5-2"
-],
-"training_focus_en": "Finishing, Shooting, Pace",
-"training_focus_it": "Finalizzazione, Tiro, Velocità",
-"description_en": "Lethal in the final yards, always in the right place at the right time.",
-"description_it": "Letale negli ultimi metri, si fa trovare sempre al posto giusto."
-},
-{
-"id": "complete-forward",
-"position": "ST",
-"name_en": "Complete Forward",
-"name_it": "Attaccante Completo",
-"key_attributes_en": [
-"Finishing",
-"Shooting",
-"Passing"
-],
-"key_attributes_it": [
-"Finalizzazione",
-"Tiro",
-"Passaggio"
-],
-"best_formations": [
-"4-3-3",
-"4-4-2"
-],
-"training_focus_en": "Finishing, Shooting, Heading",
-"training_focus_it": "Finalizzazione, Tiro, Colpo di testa",
-"description_en": "Universal player able to score, assist and hold up the ball.",
-"description_it": "Giocatore universale capace di segnare, assistere e proteggere palla."
-},
-{
-"id": "false-9",
-"position": "ST",
-"name_en": "False 9",
-"name_it": "Falso Nove",
-"key_attributes_en": [
-"Passing",
-"Shooting",
-"Creativity"
-],
-"key_attributes_it": [
-"Passaggio",
-"Tiro",
-"Creatività"
-],
-"best_formations": [
-"4-5-1 V-Style",
-"4-3-3"
-],
-"training_focus_en": "Passing, Shooting, Creativity",
-"training_focus_it": "Passaggio, Tiro, Creatività",
-"description_en": "Strongest playstyle of the 2026 meta: drops deep to free up runners.",
-"description_it": "Playstyle più forte del meta 2026: si abbassa per liberare inserimenti."
-},
-{
-"id": "pressing-forward",
-"position": "ST",
-"name_en": "Pressing Forward",
-"name_it": "Attaccante di Pressing",
-"key_attributes_en": [
-"Stamina",
-"Pace",
-"Tackling"
-],
-"key_attributes_it": [
-"Resistenza",
-"Velocità",
-"Contrasto"
-],
-"best_formations": [
-"4-1-4-1",
-"4-3-3"
-],
-"training_focus_en": "Pace, Strength, Stamina",
-"training_focus_it": "Velocità, Forza, Resistenza",
-"description_en": "The team's first defender; harasses defenders during build-up.",
-"description_it": "Primo difensore della squadra; aggredisce i difensori in costruzione."
-},
-{
-"id": "trequartista",
-"position": "AMC",
-"name_en": "Trequartista",
-"name_it": "Trequartista",
-"key_attributes_en": [
-"Creativity",
-"Passing",
-"Vision"
-],
-"key_attributes_it": [
-"Creativita",
-"Passaggio",
-"Visione"
-],
-"best_formations": [
-"4-3-1-2",
-"3-4-1-2"
-],
-"training_focus_en": "Creativity, Passing, Shooting",
-"training_focus_it": "Creativita, Passaggio, Tiro",
-"description_en": "Italian-style #10: stays high and central, drops between the lines to find the killer pass.",
-"description_it": "Il numero 10 all'italiana: alto e centrale, si abbassa tra le linee per trovare il passaggio decisivo."
-},
-{
-"id": "regista",
-"position": "DMC",
-"name_en": "Regista",
-"name_it": "Regista",
-"key_attributes_en": [
-"Passing",
-"Creativity",
-"Vision"
-],
-"key_attributes_it": [
-"Passaggio",
-"Creativita",
-"Visione"
-],
-"best_formations": [
-"4-3-3",
-"4-1-2-1-2 ND"
-],
-"training_focus_en": "Passing, Creativity, Long-range Passing",
-"training_focus_it": "Passaggio, Creativita, Lanci lunghi",
-"description_en": "The Pirlo role: deep playmaker who orchestrates from in front of the defense.",
-"description_it": "Il ruolo alla Pirlo: regista basso che orchestra il gioco davanti alla difesa."
-},
-{
-"id": "half-back",
-"position": "DMC",
-"name_en": "Half-Back",
-"name_it": "Mediano Arretrato",
-"key_attributes_en": [
-"Tackling",
-"Positioning",
-"Passing"
-],
-"key_attributes_it": [
-"Contrasto",
-"Posizionamento",
-"Passaggio"
-],
-"best_formations": [
-"3-4-3",
-"3-5-2"
-],
-"training_focus_en": "Tackling, Marking, Positioning",
-"training_focus_it": "Contrasto, Marcatura, Posizionamento",
-"description_en": "Drops between the two CBs to form a back three in possession. Modern pivot.",
-"description_it": "Si abbassa tra i due DC per formare una difesa a tre in fase di possesso. Mediano moderno."
-},
-{
-"id": "carrilero",
-"position": "MC",
-"name_en": "Carrilero",
-"name_it": "Carrilero",
-"key_attributes_en": [
-"Stamina",
-"Tackling",
-"Positioning"
-],
-"key_attributes_it": [
-"Resistenza",
-"Contrasto",
-"Posizionamento"
-],
-"best_formations": [
-"4-4-2",
-"4-3-3"
-],
-"training_focus_en": "Stamina, Tackling, Passing",
-"training_focus_it": "Resistenza, Contrasto, Passaggio",
-"description_en": "Spanish-style MC who shuttles between the half-spaces, covers the full-back and supports build-up.",
-"description_it": "MC alla spagnola che fa la spola sugli half-space, copre il terzino e supporta la manovra."
-},
-{
-"id": "raumdeuter",
-"position": "AML/AMR",
-"name_en": "Raumdeuter",
-"name_it": "Raumdeuter",
-"key_attributes_en": [
-"Anticipation",
-"Finishing",
-"Off-ball Movement"
-],
-"key_attributes_it": [
-"Anticipazione",
-"Finalizzazione",
-"Smarcamento"
-],
-"best_formations": [
-"4-2-3-1",
-"4-3-3"
-],
-"training_focus_en": "Finishing, Anticipation, Positioning",
-"training_focus_it": "Finalizzazione, Anticipazione, Posizionamento",
-"description_en": "'Space investigator': wide forward who finds and exploits gaps without the ball. Müller's role.",
-"description_it": "'Investigatore degli spazi': ala che trova e sfrutta i varchi senza palla. Il ruolo di Müller."
-},
-{
-"id": "libero",
-"position": "DC",
-"name_en": "Libero",
-"name_it": "Libero",
-"key_attributes_en": [
-"Passing",
-"Positioning",
-"Tackling"
-],
-"key_attributes_it": [
-"Passaggio",
-"Posizionamento",
-"Contrasto"
-],
-"best_formations": [
-"3-5-2",
-"3-4-3"
-],
-"training_focus_en": "Passing, Positioning, Marking",
-"training_focus_it": "Passaggio, Posizionamento, Marcatura",
-"description_en": "Sweeper-CB who steps forward to break the lines. Beckenbauer's role re-imagined.",
-"description_it": "Difensore centrale libero che esce in conduzione per spezzare le linee. Il ruolo Beckenbauer rivisitato."
-},
-{
-"id": "ball-winning-midfielder",
-"position": "MC",
-"name_en": "Ball-Winning Midfielder",
-"name_it": "Centrocampista da Pressing",
-"key_attributes_en": [
-"Tackling",
-"Stamina",
-"Aggression"
-],
-"key_attributes_it": [
-"Contrasto",
-"Resistenza",
-"Aggressivita"
-],
-"best_formations": [
-"4-3-3",
-"3-4-3"
-],
-"training_focus_en": "Tackling, Stamina, Strength",
-"training_focus_it": "Contrasto, Resistenza, Forza",
-"description_en": "Aggressive MC dedicated to ball recovery. The 'destroyer' next to the playmaker.",
-"description_it": "MC aggressivo dedicato al recupero palla. Il 'distruttore' accanto al regista."
-},
-{
-"id": "defensive-forward",
-"position": "ST",
-"name_en": "Defensive Forward",
-"name_it": "Attaccante Difensivo",
-"key_attributes_en": [
-"Stamina",
-"Marking",
-"Tackling"
-],
-"key_attributes_it": [
-"Resistenza",
-"Marcatura",
-"Contrasto"
-],
-"best_formations": [
-"4-1-4-1",
-"4-5-1 V-Style"
-],
-"training_focus_en": "Stamina, Marking, Anticipation",
-"training_focus_it": "Resistenza, Marcatura, Anticipazione",
-"description_en": "Striker who drops to mark the opponent's DMC. First defender of the team.",
-"description_it": "Attaccante che si abbassa per marcare il DMC avversario. Primo difensore della squadra."
-},
-{
-"id": "wide-target-man",
-"position": "AML/AMR",
-"name_en": "Wide Target Man",
-"name_it": "Boa Largo",
-"key_attributes_en": [
-"Heading",
-"Strength",
-"Crossing"
-],
-"key_attributes_it": [
-"Colpo di testa",
-"Forza",
-"Cross"
-],
-"best_formations": [
-"4-3-3",
-"4-4-2"
-],
-"training_focus_en": "Heading, Strength, Crossing",
-"training_focus_it": "Colpo di testa, Forza, Cross",
-"description_en": "Physical winger who attacks crosses from the opposite side. Inverted target man.",
-"description_it": "Ala fisica che attacca i cross dal lato opposto. Boa atipico sull'esterno."
-}
+  {
+    "id": "sweeper-keeper",
+    "position": "GK",
+    "name_en": "Sweeper Keeper",
+    "name_it": "Portiere Libero",
+    "key_attributes_en": [
+      "Reflexes",
+      "Aerial Ability",
+      "Positioning"
+    ],
+    "key_attributes_it": [
+      "Riflessi",
+      "Uscite",
+      "Posizionamento"
+    ],
+    "best_formations": [
+      "4-5-1",
+      "4-3-3"
+    ],
+    "training_focus_en": "Saving, Reflexes, Aerial Ability",
+    "training_focus_it": "Parata, Riflessi, Uscite",
+    "description_en": "Participates in build-up and covers the space behind a high defensive line.",
+    "description_it": "Partecipa alla manovra e copre lo spazio dietro la difesa alta."
+  },
+  {
+    "id": "ball-playing-defender",
+    "position": "DC",
+    "name_en": "Ball-Playing Defender",
+    "name_it": "Difensore Regista",
+    "key_attributes_en": [
+      "Passing",
+      "Marking",
+      "Creativity"
+    ],
+    "key_attributes_it": [
+      "Passaggio",
+      "Marcatura",
+      "Creatività"
+    ],
+    "best_formations": [
+      "3-5-2",
+      "4-3-3"
+    ],
+    "training_focus_en": "Passing, Marking, Positioning",
+    "training_focus_it": "Passaggio, Marcatura, Posizionamento",
+    "description_en": "Essential for clean ball progression under opponent pressing.",
+    "description_it": "Fondamentale per l'uscita pulita del pallone sotto pressing avversario."
+  },
+  {
+    "id": "no-nonsense-centre-back",
+    "position": "DC",
+    "name_en": "No-Nonsense Centre-Back",
+    "name_it": "Difensore Puro",
+    "key_attributes_en": [
+      "Tackling",
+      "Marking",
+      "Strength"
+    ],
+    "key_attributes_it": [
+      "Contrasto",
+      "Marcatura",
+      "Forza"
+    ],
+    "best_formations": [
+      "4-4-2",
+      "5-4-1"
+    ],
+    "training_focus_en": "Strength, Marking, Tackling",
+    "training_focus_it": "Forza, Marcatura, Contrasto",
+    "description_en": "Focuses purely on defending without risking difficult passes.",
+    "description_it": "Si concentra solo sulla difesa senza rischiare passaggi difficili."
+  },
+  {
+    "id": "full-back",
+    "position": "DL/DR",
+    "name_en": "Full-Back",
+    "name_it": "Terzino",
+    "key_attributes_en": [
+      "Tackling",
+      "Marking",
+      "Pace"
+    ],
+    "key_attributes_it": [
+      "Contrasto",
+      "Marcatura",
+      "Velocità"
+    ],
+    "best_formations": [
+      "4-1-2-1-2 ND",
+      "4-4-2"
+    ],
+    "training_focus_en": "Tackling, Marking, Positioning",
+    "training_focus_it": "Contrasto, Marcatura, Posizionamento",
+    "description_en": "Provides defensive solidity on the flanks against strong opposing wingers.",
+    "description_it": "Garantisce solidità difensiva sulle fasce contro ali avversarie forti."
+  },
+  {
+    "id": "wing-back",
+    "position": "DL/DR",
+    "name_en": "Wing-Back",
+    "name_it": "Terzino Fluidificante",
+    "key_attributes_en": [
+      "Crossing",
+      "Pace",
+      "Tackling"
+    ],
+    "key_attributes_it": [
+      "Cross",
+      "Velocità",
+      "Contrasto"
+    ],
+    "best_formations": [
+      "3-5-2",
+      "4-5-1 V-Style"
+    ],
+    "training_focus_en": "Crossing, Pace, Tackling",
+    "training_focus_it": "Cross, Velocità, Contrasto",
+    "description_en": "Pushes up with a forward arrow to give width and cross for the strikers.",
+    "description_it": "Spinge con freccia SU per dare ampiezza e crossare per le punte."
+  },
+  {
+    "id": "inverted-wing-back",
+    "position": "DL/DR",
+    "name_en": "Inverted Wing-Back",
+    "name_it": "Terzino Invertito",
+    "key_attributes_en": [
+      "Passing",
+      "Tackling",
+      "Positioning"
+    ],
+    "key_attributes_it": [
+      "Passaggio",
+      "Contrasto",
+      "Posizionamento"
+    ],
+    "best_formations": [
+      "4-3-3",
+      "4-1-4-1"
+    ],
+    "training_focus_en": "Passing, Tackling, Dribbling",
+    "training_focus_it": "Passaggio, Contrasto, Dribbling",
+    "description_en": "Tucks into midfield to help control central possession.",
+    "description_it": "Entra in mezzo al campo per aiutare la gestione del possesso centrale."
+  },
+  {
+    "id": "anchor-man",
+    "position": "DMC",
+    "name_en": "Anchor Man",
+    "name_it": "Incontrista Arretrato",
+    "key_attributes_en": [
+      "Tackling",
+      "Positioning",
+      "Strength"
+    ],
+    "key_attributes_it": [
+      "Contrasto",
+      "Posizionamento",
+      "Forza"
+    ],
+    "best_formations": [
+      "4-1-4-1",
+      "4-5-1 V-Style"
+    ],
+    "training_focus_en": "Tackling, Marking, Positioning",
+    "training_focus_it": "Contrasto, Marcatura, Posizionamento",
+    "description_en": "The 'advanced stopper' vital to shield the defense and earn clean sheets.",
+    "description_it": "Lo 'stopper avanzato' vitale per proteggere la difesa e fare clean sheet."
+  },
+  {
+    "id": "deep-lying-playmaker",
+    "position": "DMC",
+    "name_en": "Deep-Lying Playmaker",
+    "name_it": "Regista Arretrato",
+    "key_attributes_en": [
+      "Passing",
+      "Creativity",
+      "Tackling"
+    ],
+    "key_attributes_it": [
+      "Passaggio",
+      "Creatività",
+      "Contrasto"
+    ],
+    "best_formations": [
+      "4-3-3",
+      "4-1-2-1-2 ND"
+    ],
+    "training_focus_en": "Passing, Creativity, Tackling",
+    "training_focus_it": "Passaggio, Creatività, Contrasto",
+    "description_en": "Deep playmaker who distributes the ball and builds play from the back.",
+    "description_it": "Playmaker basso che smista palloni e costruisce gioco dalle retrovie."
+  },
+  {
+    "id": "box-to-box-midfielder",
+    "position": "MC",
+    "name_en": "Box-to-Box Midfielder",
+    "name_it": "Centrocampista Totale",
+    "key_attributes_en": [
+      "Stamina",
+      "Passing",
+      "Tackling"
+    ],
+    "key_attributes_it": [
+      "Resistenza",
+      "Passaggio",
+      "Contrasto"
+    ],
+    "best_formations": [
+      "4-4-2",
+      "4-5-1 Flat"
+    ],
+    "training_focus_en": "Passing, Strength, Stamina",
+    "training_focus_it": "Passaggio, Forza, Resistenza",
+    "description_en": "Tireless midfield engine operating between both penalty boxes.",
+    "description_it": "Instancabile motore del centrocampo che agisce tra le due aree di rigore."
+  },
+  {
+    "id": "mezzala",
+    "position": "MC",
+    "name_en": "Mezzala",
+    "name_it": "Mezzala",
+    "key_attributes_en": [
+      "Shooting",
+      "Pace",
+      "Dribbling"
+    ],
+    "key_attributes_it": [
+      "Tiro",
+      "Velocità",
+      "Dribbling"
+    ],
+    "best_formations": [
+      "4-3-3",
+      "4-1-3-1-1"
+    ],
+    "training_focus_en": "Shooting, Pace, Finishing",
+    "training_focus_it": "Tiro, Velocità, Finalizzazione",
+    "description_en": "Late-running forward who attacks the half-spaces to finish in the box.",
+    "description_it": "Incursore che attacca gli half-spaces per concludere l'azione in porta."
+  },
+  {
+    "id": "advanced-playmaker",
+    "position": "AMC",
+    "name_en": "Advanced Playmaker",
+    "name_it": "Regista Avanzato",
+    "key_attributes_en": [
+      "Creativity",
+      "Passing",
+      "Shooting"
+    ],
+    "key_attributes_it": [
+      "Creatività",
+      "Passaggio",
+      "Tiro"
+    ],
+    "best_formations": [
+      "4-2-3-1",
+      "3-4-1-2"
+    ],
+    "training_focus_en": "Passing, Creativity, Shooting",
+    "training_focus_it": "Passaggio, Creatività, Tiro",
+    "description_en": "The creative hub who delivers killer assists between the lines.",
+    "description_it": "Il faro della manovra offensiva che serve assist letali tra le linee."
+  },
+  {
+    "id": "wide-midfielder",
+    "position": "ML/MR",
+    "name_en": "Wide Midfielder",
+    "name_it": "Esterno di Centrocampo",
+    "key_attributes_en": [
+      "Crossing",
+      "Passing",
+      "Stamina"
+    ],
+    "key_attributes_it": [
+      "Cross",
+      "Passaggio",
+      "Resistenza"
+    ],
+    "best_formations": [
+      "4-4-2",
+      "4-5-1 Flat"
+    ],
+    "training_focus_en": "Crossing, Passing, Marking",
+    "training_focus_it": "Cross, Passaggio, Marcatura",
+    "description_en": "Provides balance and a constant supply for the strikers.",
+    "description_it": "Garantisce equilibrio e rifornimenti costanti per gli attaccanti."
+  },
+  {
+    "id": "classic-winger",
+    "position": "AML/AMR",
+    "name_en": "Classic Winger",
+    "name_it": "Ala Classica",
+    "key_attributes_en": [
+      "Crossing",
+      "Pace",
+      "Dribbling"
+    ],
+    "key_attributes_it": [
+      "Cross",
+      "Velocità",
+      "Dribbling"
+    ],
+    "best_formations": [
+      "4-3-3",
+      "4-5-1 V-Style"
+    ],
+    "training_focus_en": "Crossing, Pace, Dribbling",
+    "training_focus_it": "Cross, Velocità, Dribbling",
+    "description_en": "Exploits the Dual Position Advantage to beat his man and cross.",
+    "description_it": "Sfrutta il Dual Position Advantage per saltare l'uomo e crossare."
+  },
+  {
+    "id": "inverted-winger",
+    "position": "AML/AMR",
+    "name_en": "Inverted Winger",
+    "name_it": "Ala Invertita",
+    "key_attributes_en": [
+      "Shooting",
+      "Dribbling",
+      "Pace"
+    ],
+    "key_attributes_it": [
+      "Tiro",
+      "Dribbling",
+      "Velocità"
+    ],
+    "best_formations": [
+      "4-2-3-1",
+      "4-3-3"
+    ],
+    "training_focus_en": "Shooting, Finishing, Dribbling",
+    "training_focus_it": "Tiro, Finalizzazione, Dribbling",
+    "description_en": "Cuts inside to shoot with his inverted foot toward goal.",
+    "description_it": "Taglia verso il centro per calciare col piede invertito verso la porta."
+  },
+  {
+    "id": "target-man",
+    "position": "ST",
+    "name_en": "Target Man",
+    "name_it": "Centravanti Boa",
+    "key_attributes_en": [
+      "Heading",
+      "Strength",
+      "Finishing"
+    ],
+    "key_attributes_it": [
+      "Colpo di testa",
+      "Forza",
+      "Finalizzazione"
+    ],
+    "best_formations": [
+      "4-4-2",
+      "4-5-1 Flat"
+    ],
+    "training_focus_en": "Heading, Strength, Finishing",
+    "training_focus_it": "Colpo di testa, Forza, Finalizzazione",
+    "description_en": "Physical reference for crosses; wins aerial duels against defenders.",
+    "description_it": "Riferimento fisico per i cross; vince i duelli aerei contro i difensori."
+  },
+  {
+    "id": "poacher",
+    "position": "ST",
+    "name_en": "Poacher",
+    "name_it": "Uomo d'Area",
+    "key_attributes_en": [
+      "Finishing",
+      "Anticipation",
+      "Shooting"
+    ],
+    "key_attributes_it": [
+      "Finalizzazione",
+      "Riflessi",
+      "Tiro"
+    ],
+    "best_formations": [
+      "4-1-2-1-2 ND",
+      "3-5-2"
+    ],
+    "training_focus_en": "Finishing, Shooting, Pace",
+    "training_focus_it": "Finalizzazione, Tiro, Velocità",
+    "description_en": "Lethal in the final yards, always in the right place at the right time.",
+    "description_it": "Letale negli ultimi metri, si fa trovare sempre al posto giusto."
+  },
+  {
+    "id": "complete-forward",
+    "position": "ST",
+    "name_en": "Complete Forward",
+    "name_it": "Attaccante Completo",
+    "key_attributes_en": [
+      "Finishing",
+      "Shooting",
+      "Passing"
+    ],
+    "key_attributes_it": [
+      "Finalizzazione",
+      "Tiro",
+      "Passaggio"
+    ],
+    "best_formations": [
+      "4-3-3",
+      "4-4-2"
+    ],
+    "training_focus_en": "Finishing, Shooting, Heading",
+    "training_focus_it": "Finalizzazione, Tiro, Colpo di testa",
+    "description_en": "Universal player able to score, assist and hold up the ball.",
+    "description_it": "Giocatore universale capace di segnare, assistere e proteggere palla."
+  },
+  {
+    "id": "false-9",
+    "position": "ST",
+    "name_en": "False 9",
+    "name_it": "Falso Nove",
+    "key_attributes_en": [
+      "Passing",
+      "Shooting",
+      "Creativity"
+    ],
+    "key_attributes_it": [
+      "Passaggio",
+      "Tiro",
+      "Creatività"
+    ],
+    "best_formations": [
+      "4-5-1 V-Style",
+      "4-3-3"
+    ],
+    "training_focus_en": "Passing, Shooting, Creativity",
+    "training_focus_it": "Passaggio, Tiro, Creatività",
+    "description_en": "Strongest playstyle of the 2026 meta: drops deep to free up runners.",
+    "description_it": "Playstyle più forte del meta 2026: si abbassa per liberare inserimenti."
+  },
+  {
+    "id": "pressing-forward",
+    "position": "ST",
+    "name_en": "Pressing Forward",
+    "name_it": "Attaccante di Pressing",
+    "key_attributes_en": [
+      "Stamina",
+      "Pace",
+      "Tackling"
+    ],
+    "key_attributes_it": [
+      "Resistenza",
+      "Velocità",
+      "Contrasto"
+    ],
+    "best_formations": [
+      "4-1-4-1",
+      "4-3-3"
+    ],
+    "training_focus_en": "Pace, Strength, Stamina",
+    "training_focus_it": "Velocità, Forza, Resistenza",
+    "description_en": "The team's first defender; harasses defenders during build-up.",
+    "description_it": "Primo difensore della squadra; aggredisce i difensori in costruzione."
+  },
+  {
+    "id": "trequartista",
+    "position": "AMC",
+    "name_en": "Trequartista",
+    "name_it": "Trequartista",
+    "key_attributes_en": [
+      "Creativity",
+      "Passing",
+      "Vision"
+    ],
+    "key_attributes_it": [
+      "Creativita",
+      "Passaggio",
+      "Visione"
+    ],
+    "best_formations": [
+      "4-3-1-2",
+      "3-4-1-2"
+    ],
+    "training_focus_en": "Creativity, Passing, Shooting",
+    "training_focus_it": "Creativita, Passaggio, Tiro",
+    "description_en": "Italian-style #10: stays high and central, drops between the lines to find the killer pass.",
+    "description_it": "Il numero 10 all'italiana: alto e centrale, si abbassa tra le linee per trovare il passaggio decisivo."
+  },
+  {
+    "id": "regista",
+    "position": "DMC",
+    "name_en": "Regista",
+    "name_it": "Regista",
+    "key_attributes_en": [
+      "Passing",
+      "Creativity",
+      "Vision"
+    ],
+    "key_attributes_it": [
+      "Passaggio",
+      "Creativita",
+      "Visione"
+    ],
+    "best_formations": [
+      "4-3-3",
+      "4-1-2-1-2 ND"
+    ],
+    "training_focus_en": "Passing, Creativity, Long-range Passing",
+    "training_focus_it": "Passaggio, Creativita, Lanci lunghi",
+    "description_en": "The Pirlo role: deep playmaker who orchestrates from in front of the defense.",
+    "description_it": "Il ruolo alla Pirlo: regista basso che orchestra il gioco davanti alla difesa."
+  },
+  {
+    "id": "half-back",
+    "position": "DMC",
+    "name_en": "Half-Back",
+    "name_it": "Mediano Arretrato",
+    "key_attributes_en": [
+      "Tackling",
+      "Positioning",
+      "Passing"
+    ],
+    "key_attributes_it": [
+      "Contrasto",
+      "Posizionamento",
+      "Passaggio"
+    ],
+    "best_formations": [
+      "3-4-3",
+      "3-5-2"
+    ],
+    "training_focus_en": "Tackling, Marking, Positioning",
+    "training_focus_it": "Contrasto, Marcatura, Posizionamento",
+    "description_en": "Drops between the two CBs to form a back three in possession. Modern pivot.",
+    "description_it": "Si abbassa tra i due DC per formare una difesa a tre in fase di possesso. Mediano moderno."
+  },
+  {
+    "id": "carrilero",
+    "position": "MC",
+    "name_en": "Carrilero",
+    "name_it": "Carrilero",
+    "key_attributes_en": [
+      "Stamina",
+      "Tackling",
+      "Positioning"
+    ],
+    "key_attributes_it": [
+      "Resistenza",
+      "Contrasto",
+      "Posizionamento"
+    ],
+    "best_formations": [
+      "4-4-2",
+      "4-3-3"
+    ],
+    "training_focus_en": "Stamina, Tackling, Passing",
+    "training_focus_it": "Resistenza, Contrasto, Passaggio",
+    "description_en": "Spanish-style MC who shuttles between the half-spaces, covers the full-back and supports build-up.",
+    "description_it": "MC alla spagnola che fa la spola sugli half-space, copre il terzino e supporta la manovra."
+  },
+  {
+    "id": "raumdeuter",
+    "position": "AML/AMR",
+    "name_en": "Raumdeuter",
+    "name_it": "Raumdeuter",
+    "key_attributes_en": [
+      "Anticipation",
+      "Finishing",
+      "Off-ball Movement"
+    ],
+    "key_attributes_it": [
+      "Anticipazione",
+      "Finalizzazione",
+      "Smarcamento"
+    ],
+    "best_formations": [
+      "4-2-3-1",
+      "4-3-3"
+    ],
+    "training_focus_en": "Finishing, Anticipation, Positioning",
+    "training_focus_it": "Finalizzazione, Anticipazione, Posizionamento",
+    "description_en": "'Space investigator': wide forward who finds and exploits gaps without the ball. Müller's role.",
+    "description_it": "'Investigatore degli spazi': ala che trova e sfrutta i varchi senza palla. Il ruolo di Müller."
+  },
+  {
+    "id": "libero",
+    "position": "DC",
+    "name_en": "Libero",
+    "name_it": "Libero",
+    "key_attributes_en": [
+      "Passing",
+      "Positioning",
+      "Tackling"
+    ],
+    "key_attributes_it": [
+      "Passaggio",
+      "Posizionamento",
+      "Contrasto"
+    ],
+    "best_formations": [
+      "3-5-2",
+      "3-4-3"
+    ],
+    "training_focus_en": "Passing, Positioning, Marking",
+    "training_focus_it": "Passaggio, Posizionamento, Marcatura",
+    "description_en": "Sweeper-CB who steps forward to break the lines. Beckenbauer's role re-imagined.",
+    "description_it": "Difensore centrale libero che esce in conduzione per spezzare le linee. Il ruolo Beckenbauer rivisitato."
+  },
+  {
+    "id": "ball-winning-midfielder",
+    "position": "MC",
+    "name_en": "Ball-Winning Midfielder",
+    "name_it": "Centrocampista da Pressing",
+    "key_attributes_en": [
+      "Tackling",
+      "Stamina",
+      "Aggression"
+    ],
+    "key_attributes_it": [
+      "Contrasto",
+      "Resistenza",
+      "Aggressivita"
+    ],
+    "best_formations": [
+      "4-3-3",
+      "3-4-3"
+    ],
+    "training_focus_en": "Tackling, Stamina, Strength",
+    "training_focus_it": "Contrasto, Resistenza, Forza",
+    "description_en": "Aggressive MC dedicated to ball recovery. The 'destroyer' next to the playmaker.",
+    "description_it": "MC aggressivo dedicato al recupero palla. Il 'distruttore' accanto al regista."
+  },
+  {
+    "id": "defensive-forward",
+    "position": "ST",
+    "name_en": "Defensive Forward",
+    "name_it": "Attaccante Difensivo",
+    "key_attributes_en": [
+      "Stamina",
+      "Marking",
+      "Tackling"
+    ],
+    "key_attributes_it": [
+      "Resistenza",
+      "Marcatura",
+      "Contrasto"
+    ],
+    "best_formations": [
+      "4-1-4-1",
+      "4-5-1 V-Style"
+    ],
+    "training_focus_en": "Stamina, Marking, Anticipation",
+    "training_focus_it": "Resistenza, Marcatura, Anticipazione",
+    "description_en": "Striker who drops to mark the opponent's DMC. First defender of the team.",
+    "description_it": "Attaccante che si abbassa per marcare il DMC avversario. Primo difensore della squadra."
+  },
+  {
+    "id": "wide-target-man",
+    "position": "AML/AMR",
+    "name_en": "Wide Target Man",
+    "name_it": "Boa Largo",
+    "key_attributes_en": [
+      "Heading",
+      "Strength",
+      "Crossing"
+    ],
+    "key_attributes_it": [
+      "Colpo di testa",
+      "Forza",
+      "Cross"
+    ],
+    "best_formations": [
+      "4-3-3",
+      "4-4-2"
+    ],
+    "training_focus_en": "Heading, Strength, Crossing",
+    "training_focus_it": "Colpo di testa, Forza, Cross",
+    "description_en": "Physical winger who attacks crosses from the opposite side. Inverted target man.",
+    "description_it": "Ala fisica che attacca i cross dal lato opposto. Boa atipico sull'esterno."
+  }
 ]

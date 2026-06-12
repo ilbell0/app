@@ -1,212 +1,212 @@
 [
-{
-"id": "shadow-striker",
-"name_en": "Shadow Striker",
-"name_it": "Incursore Ombra",
-"best_role": "AMC",
-"effect_en": "Lets the player break into empty spaces to score.",
-"effect_it": "Permette al giocatore di inserirsi negli spazi vuoti per segnare.",
-"when_to_use_en": "Use against opponents who don't field a DMC to protect the defense.",
-"when_to_use_it": "Da usare contro avversari che non utilizzano un DMC per proteggere la difesa."
-},
-{
-"id": "playmaker",
-"name_en": "Playmaker",
-"name_it": "Regista",
-"best_role": "MC, AMC, DMC",
-"effect_en": "Improves vision and the accuracy of decisive passes.",
-"effect_it": "Migliora la visione di gioco e la precisione dei passaggi decisivi.",
-"when_to_use_en": "Key to dominating possession and providing assists between the lines.",
-"when_to_use_it": "Fondamentale per dominare il possesso palla e servire assist tra le linee."
-},
-{
-"id": "dual-position",
-"name_en": "Dual Position",
-"name_it": "Ruolo Doppio",
-"best_role": "Ogni ruolo",
-"effect_en": "Allows the player to perform at full effectiveness in multiple positions.",
-"effect_it": "Consente al giocatore di agire con massima efficacia in più posizioni.",
-"when_to_use_en": "For tactical flexibility and to exploit the opponent's formation weaknesses.",
-"when_to_use_it": "Per avere flessibilità tattica e colpire i punti deboli della formazione avversaria."
-},
-{
-"id": "free-kick-specialist",
-"name_en": "Free Kick Specialist",
-"name_it": "Specialista Punizioni",
-"best_role": "ST, AMC, MC",
-"effect_en": "Drastically increases the chance of scoring from direct free kicks.",
-"effect_it": "Aumenta drasticamente la probabilità di segnare su calcio di punizione diretto.",
-"when_to_use_en": "Essential to unlock tight matches through set pieces.",
-"when_to_use_it": "Essenziale per sbloccare partite chiuse tramite situazioni di palla inattiva."
-},
-{
-"id": "corner-specialist",
-"name_en": "Corner Specialist",
-"name_it": "Specialista Angoli",
-"best_role": "ML, MR, AML, AMR",
-"effect_en": "Improves the accuracy and curl of corner deliveries.",
-"effect_it": "Migliora la precisione e l'effetto dei cross effettuati dalla bandierina.",
-"when_to_use_en": "Useful to maximize the aerial game if you have strong headers in the box.",
-"when_to_use_it": "Utile per massimizzare il gioco aereo se si dispone di saltatori forti in area."
-},
-{
-"id": "penalty-specialist",
-"name_en": "Penalty Specialist",
-"name_it": "Specialista Rigori",
-"best_role": "ST, AMC",
-"effect_en": "Ensures near-perfect accuracy when converting penalties.",
-"effect_it": "Garantisce una precisione quasi totale nella trasformazione dei tiri dal dischetto.",
-"when_to_use_en": "Assign to your designated penalty taker so you don't waste spot kicks.",
-"when_to_use_it": "Da assegnare al rigorista designato per non sprecare occasioni dagli undici metri."
-},
-{
-"id": "one-on-one-scoring",
-"name_en": "One-on-One Scoring",
-"name_it": "Finalizzatore 1v1",
-"best_role": "ST, AML, AMR",
-"effect_en": "Boosts scoring ability when the player faces the keeper one-on-one.",
-"effect_it": "Potenzia la capacità di segnare quando il giocatore affronta il portiere in solitaria.",
-"when_to_use_en": "Ideal for fast strikers who often operate on the counter.",
-"when_to_use_it": "Ideale per attaccanti veloci che agiscono spesso in contropiede."
-},
-{
-"id": "defensive-wall",
-"name_en": "Defensive Wall",
-"name_it": "Muro Difensivo",
-"best_role": "DC, DMC",
-"effect_en": "Increases the chance of blocking or deflecting shots on goal.",
-"effect_it": "Aumenta la probabilità di intercettare o respingere i tiri avversari diretti in porta.",
-"when_to_use_en": "To turn your box into a fortress against big shooters.",
-"when_to_use_it": "Per rendere la propria area di rigore un fortino contro i grandi tiratori."
-},
-{
-"id": "aerial-defence",
-"name_en": "Aerial Defence",
-"name_it": "Difesa Aerea",
-"best_role": "DC",
-"effect_en": "Improves timing and strength in aerial duels inside the box.",
-"effect_it": "Migliora il tempismo e la forza nei contrasti aerei all'interno dell'area.",
-"when_to_use_en": "Indispensable against opponents using a Target Man or constant crosses.",
-"when_to_use_it": "Indispensabile contro avversari che utilizzano Target Man o cross continui."
-},
-{
-"id": "pacey-dribbler",
-"name_en": "Pacey Dribbler",
-"name_it": "Dribblatore Veloce",
-"best_role": "AML, AMR, ST",
-"effect_en": "Increases ball control and speed when dribbling at pace.",
-"effect_it": "Incrementa il controllo palla e la velocità durante i dribbling in progressione.",
-"when_to_use_en": "To beat your man out wide and create instant numerical advantage.",
-"when_to_use_it": "Per saltare l'uomo sulle fasce e creare superiorità numerica immediata."
-},
-{
-"id": "long-throw-in",
-"name_en": "Long Throw-in",
-"name_it": "Rimessa Lunga",
-"best_role": "DL, DR",
-"effect_en": "Allows throwing the ball directly into the box from throw-ins.",
-"effect_it": "Permette di lanciare la palla direttamente in area durante le rimesse laterali.",
-"when_to_use_en": "Turns a simple throw-in into a potential scoring chance.",
-"when_to_use_it": "Trasforma una semplice rimessa laterale in una potenziale occasione da gol."
-},
-{
-"id": "ball-magnet",
-"name_en": "Ball Magnet",
-"name_it": "Calamita di Palla",
-"best_role": "MC, AMC, DMC",
-"effect_en": "Significantly increases the chance of receiving a pass: opens passing lanes wider than the rest of the team.",
-"effect_it": "Aumenta significativamente la probabilità di ricevere un passaggio: apre linee di passaggio più larghe del resto della squadra.",
-"when_to_use_en": "On the team playmaker. Multiplies the effectiveness of a Tiki-Taka system.",
-"when_to_use_it": "Sul regista della squadra. Moltiplica l'efficacia di un sistema Tiki-Taka."
-},
-{
-"id": "speed-merchant",
-"name_en": "Speed Merchant",
-"name_it": "Velocista",
-"best_role": "AML, AMR, ST",
-"effect_en": "Adds a real burst of pace in transitions: leaves slower defenders in his wake.",
-"effect_it": "Aggiunge un vero scatto di velocità nelle transizioni: lascia sul posto i difensori più lenti.",
-"when_to_use_en": "On the counter-attack winger. Devastating against high defensive lines.",
-"when_to_use_it": "Sull'ala da contropiede. Devastante contro linee difensive alte."
-},
-{
-"id": "goal-poacher",
-"name_en": "Goal Poacher",
-"name_it": "Bomber di Razza",
-"best_role": "ST",
-"effect_en": "Extreme finishing ability inside the penalty area, even from difficult angles.",
-"effect_it": "Capacita di finalizzazione estrema dentro l'area, anche da angolazioni difficili.",
-"when_to_use_en": "On the main striker. Multiplies the conversion rate from chances.",
-"when_to_use_it": "Sull'attaccante centrale. Moltiplica il tasso di conversione delle occasioni."
-},
-{
-"id": "aerial-threat",
-"name_en": "Aerial Threat",
-"name_it": "Forza Aerea",
-"best_role": "ST, DC",
-"effect_en": "Dominates aerial duels on corners and crosses, scoring or defending headed balls.",
-"effect_it": "Domina i duelli aerei su corner e cross, segna o difende di testa.",
-"when_to_use_en": "Essential for tactics built on crosses or set-piece dominance.",
-"when_to_use_it": "Indispensabile per tattiche che vivono di cross o di dominio sui calci piazzati."
-},
-{
-"id": "set-piece-master",
-"name_en": "Set-Piece Master",
-"name_it": "Specialista delle Palle Inattive",
-"best_role": "MC, AMC",
-"effect_en": "Combines Free Kick + Corner + Penalty specialist in a single ability. Dead-ball god.",
-"effect_it": "Combina Punizioni + Angoli + Rigori in una singola abilita. Dio dei calci piazzati.",
-"when_to_use_en": "Rare and expensive. Saves you 3 player slots dedicated to set pieces.",
-"when_to_use_it": "Rara e costosa. Ti risparmia 3 slot di giocatori dedicati ai calci piazzati."
-},
-{
-"id": "strong-tackler",
-"name_en": "Strong Tackler",
-"name_it": "Contrastista",
-"best_role": "DC, DMC, MC",
-"effect_en": "Tackles with surgical precision, reducing fouls and gaining the ball cleanly.",
-"effect_it": "Contrasta con precisione chirurgica, riducendo i falli e guadagnando palla pulita.",
-"when_to_use_en": "On the midfield destroyer. Allows hard tackling without yellow card risk.",
-"when_to_use_it": "Sul distruttore di centrocampo. Permette contrasti duri senza rischio cartellino."
-},
-{
-"id": "anticipation",
-"name_en": "Anticipation",
-"name_it": "Anticipazione",
-"best_role": "DC, DMC",
-"effect_en": "Reads opposing passes early, intercepting balls and breaking up attacks before they develop.",
-"effect_it": "Legge i passaggi avversari in anticipo, intercettando le palle e spezzando gli attacchi sul nascere.",
-"when_to_use_en": "On the central CB. Worth more than +20% Tackling against creative opponents.",
-"when_to_use_it": "Sul DC centrale. Vale piu di +20% di Contrasto contro avversari creativi."
-},
-{
-"id": "crosser",
-"name_en": "Crosser",
-"name_it": "Crossatore",
-"best_role": "ML, MR, DL, DR",
-"effect_en": "High-quality crosses with curl and pace, always finding the head of the strikers.",
-"effect_it": "Cross di alta qualita con effetto e velocita, trovano sempre la testa degli attaccanti.",
-"when_to_use_en": "On full-backs or wide MCs in formations that play on the flanks.",
-"when_to_use_it": "Sui terzini o MC larghi nei moduli che giocano sulle fasce."
-},
-{
-"id": "wall-pass-master",
-"name_en": "Wall-Pass Master",
-"name_it": "Maestro dei Triangoli",
-"best_role": "MC, AMC",
-"effect_en": "Specialist in one-twos: launches and receives back the ball quickly to break the lines.",
-"effect_it": "Specialista del uno-due: rilancia e riceve velocemente per spezzare le linee.",
-"when_to_use_en": "On the offensive MC. Devastating in possession-based systems.",
-"when_to_use_it": "Sul MC offensivo. Devastante nei sistemi basati sul possesso."
-},
-{
-"id": "long-shot-specialist",
-"name_en": "Long-Shot Specialist",
-"name_it": "Specialista Tiro da Fuori",
-"best_role": "MC, AMC, AML, AMR",
-"effect_en": "Lethal shots from outside the box, breaking compact and deep defenses.",
-"effect_it": "Tiri letali da fuori area, scardinano difese compatte e basse.",
-"when_to_use_en": "Against teams that 'park the bus' (5-4-1 Flat, 4-5-1 V-Style defensive).",
-"when_to_use_it": "Contro squadre che 'parcheggiano l'autobus' (5-4-1 Flat, 4-5-1 V difensivo)."
-}
+  {
+    "id": "shadow-striker",
+    "name_en": "Shadow Striker",
+    "name_it": "Incursore Ombra",
+    "best_role": "AMC",
+    "effect_en": "Lets the player break into empty spaces to score.",
+    "effect_it": "Permette al giocatore di inserirsi negli spazi vuoti per segnare.",
+    "when_to_use_en": "Use against opponents who don't field a DMC to protect the defense.",
+    "when_to_use_it": "Da usare contro avversari che non utilizzano un DMC per proteggere la difesa."
+  },
+  {
+    "id": "playmaker",
+    "name_en": "Playmaker",
+    "name_it": "Regista",
+    "best_role": "MC, AMC, DMC",
+    "effect_en": "Improves vision and the accuracy of decisive passes.",
+    "effect_it": "Migliora la visione di gioco e la precisione dei passaggi decisivi.",
+    "when_to_use_en": "Key to dominating possession and providing assists between the lines.",
+    "when_to_use_it": "Fondamentale per dominare il possesso palla e servire assist tra le linee."
+  },
+  {
+    "id": "dual-position",
+    "name_en": "Dual Position",
+    "name_it": "Ruolo Doppio",
+    "best_role": "Ogni ruolo",
+    "effect_en": "Allows the player to perform at full effectiveness in multiple positions.",
+    "effect_it": "Consente al giocatore di agire con massima efficacia in più posizioni.",
+    "when_to_use_en": "For tactical flexibility and to exploit the opponent's formation weaknesses.",
+    "when_to_use_it": "Per avere flessibilità tattica e colpire i punti deboli della formazione avversaria."
+  },
+  {
+    "id": "free-kick-specialist",
+    "name_en": "Free Kick Specialist",
+    "name_it": "Specialista Punizioni",
+    "best_role": "ST, AMC, MC",
+    "effect_en": "Drastically increases the chance of scoring from direct free kicks.",
+    "effect_it": "Aumenta drasticamente la probabilità di segnare su calcio di punizione diretto.",
+    "when_to_use_en": "Essential to unlock tight matches through set pieces.",
+    "when_to_use_it": "Essenziale per sbloccare partite chiuse tramite situazioni di palla inattiva."
+  },
+  {
+    "id": "corner-specialist",
+    "name_en": "Corner Specialist",
+    "name_it": "Specialista Angoli",
+    "best_role": "ML, MR, AML, AMR",
+    "effect_en": "Improves the accuracy and curl of corner deliveries.",
+    "effect_it": "Migliora la precisione e l'effetto dei cross effettuati dalla bandierina.",
+    "when_to_use_en": "Useful to maximize the aerial game if you have strong headers in the box.",
+    "when_to_use_it": "Utile per massimizzare il gioco aereo se si dispone di saltatori forti in area."
+  },
+  {
+    "id": "penalty-specialist",
+    "name_en": "Penalty Specialist",
+    "name_it": "Specialista Rigori",
+    "best_role": "ST, AMC",
+    "effect_en": "Ensures near-perfect accuracy when converting penalties.",
+    "effect_it": "Garantisce una precisione quasi totale nella trasformazione dei tiri dal dischetto.",
+    "when_to_use_en": "Assign to your designated penalty taker so you don't waste spot kicks.",
+    "when_to_use_it": "Da assegnare al rigorista designato per non sprecare occasioni dagli undici metri."
+  },
+  {
+    "id": "one-on-one-scoring",
+    "name_en": "One-on-One Scoring",
+    "name_it": "Finalizzatore 1v1",
+    "best_role": "ST, AML, AMR",
+    "effect_en": "Boosts scoring ability when the player faces the keeper one-on-one.",
+    "effect_it": "Potenzia la capacità di segnare quando il giocatore affronta il portiere in solitaria.",
+    "when_to_use_en": "Ideal for fast strikers who often operate on the counter.",
+    "when_to_use_it": "Ideale per attaccanti veloci che agiscono spesso in contropiede."
+  },
+  {
+    "id": "defensive-wall",
+    "name_en": "Defensive Wall",
+    "name_it": "Muro Difensivo",
+    "best_role": "DC, DMC",
+    "effect_en": "Increases the chance of blocking or deflecting shots on goal.",
+    "effect_it": "Aumenta la probabilità di intercettare o respingere i tiri avversari diretti in porta.",
+    "when_to_use_en": "To turn your box into a fortress against big shooters.",
+    "when_to_use_it": "Per rendere la propria area di rigore un fortino contro i grandi tiratori."
+  },
+  {
+    "id": "aerial-defence",
+    "name_en": "Aerial Defence",
+    "name_it": "Difesa Aerea",
+    "best_role": "DC",
+    "effect_en": "Improves timing and strength in aerial duels inside the box.",
+    "effect_it": "Migliora il tempismo e la forza nei contrasti aerei all'interno dell'area.",
+    "when_to_use_en": "Indispensable against opponents using a Target Man or constant crosses.",
+    "when_to_use_it": "Indispensabile contro avversari che utilizzano Target Man o cross continui."
+  },
+  {
+    "id": "pacey-dribbler",
+    "name_en": "Pacey Dribbler",
+    "name_it": "Dribblatore Veloce",
+    "best_role": "AML, AMR, ST",
+    "effect_en": "Increases ball control and speed when dribbling at pace.",
+    "effect_it": "Incrementa il controllo palla e la velocità durante i dribbling in progressione.",
+    "when_to_use_en": "To beat your man out wide and create instant numerical advantage.",
+    "when_to_use_it": "Per saltare l'uomo sulle fasce e creare superiorità numerica immediata."
+  },
+  {
+    "id": "long-throw-in",
+    "name_en": "Long Throw-in",
+    "name_it": "Rimessa Lunga",
+    "best_role": "DL, DR",
+    "effect_en": "Allows throwing the ball directly into the box from throw-ins.",
+    "effect_it": "Permette di lanciare la palla direttamente in area durante le rimesse laterali.",
+    "when_to_use_en": "Turns a simple throw-in into a potential scoring chance.",
+    "when_to_use_it": "Trasforma una semplice rimessa laterale in una potenziale occasione da gol."
+  },
+  {
+    "id": "ball-magnet",
+    "name_en": "Ball Magnet",
+    "name_it": "Calamita di Palla",
+    "best_role": "MC, AMC, DMC",
+    "effect_en": "Significantly increases the chance of receiving a pass: opens passing lanes wider than the rest of the team.",
+    "effect_it": "Aumenta significativamente la probabilità di ricevere un passaggio: apre linee di passaggio più larghe del resto della squadra.",
+    "when_to_use_en": "On the team playmaker. Multiplies the effectiveness of a Tiki-Taka system.",
+    "when_to_use_it": "Sul regista della squadra. Moltiplica l'efficacia di un sistema Tiki-Taka."
+  },
+  {
+    "id": "speed-merchant",
+    "name_en": "Speed Merchant",
+    "name_it": "Velocista",
+    "best_role": "AML, AMR, ST",
+    "effect_en": "Adds a real burst of pace in transitions: leaves slower defenders in his wake.",
+    "effect_it": "Aggiunge un vero scatto di velocità nelle transizioni: lascia sul posto i difensori più lenti.",
+    "when_to_use_en": "On the counter-attack winger. Devastating against high defensive lines.",
+    "when_to_use_it": "Sull'ala da contropiede. Devastante contro linee difensive alte."
+  },
+  {
+    "id": "goal-poacher",
+    "name_en": "Goal Poacher",
+    "name_it": "Bomber di Razza",
+    "best_role": "ST",
+    "effect_en": "Extreme finishing ability inside the penalty area, even from difficult angles.",
+    "effect_it": "Capacità di finalizzazione estrema dentro l'area, anche da angolazioni difficili.",
+    "when_to_use_en": "On the main striker. Multiplies the conversion rate from chances.",
+    "when_to_use_it": "Sull'attaccante centrale. Moltiplica il tasso di conversione delle occasioni."
+  },
+  {
+    "id": "aerial-threat",
+    "name_en": "Aerial Threat",
+    "name_it": "Forza Aerea",
+    "best_role": "ST, DC",
+    "effect_en": "Dominates aerial duels on corners and crosses, scoring or defending headed balls.",
+    "effect_it": "Domina i duelli aerei su corner e cross, segna o difende di testa.",
+    "when_to_use_en": "Essential for tactics built on crosses or set-piece dominance.",
+    "when_to_use_it": "Indispensabile per tattiche che vivono di cross o di dominio sui calci piazzati."
+  },
+  {
+    "id": "set-piece-master",
+    "name_en": "Set-Piece Master",
+    "name_it": "Specialista delle Palle Inattive",
+    "best_role": "MC, AMC",
+    "effect_en": "Combines Free Kick + Corner + Penalty specialist in a single ability. Dead-ball god.",
+    "effect_it": "Combina Punizioni + Angoli + Rigori in una singola abilità. Dio dei calci piazzati.",
+    "when_to_use_en": "Rare and expensive. Saves you 3 player slots dedicated to set pieces.",
+    "when_to_use_it": "Rara e costosa. Ti risparmia 3 slot di giocatori dedicati ai calci piazzati."
+  },
+  {
+    "id": "strong-tackler",
+    "name_en": "Strong Tackler",
+    "name_it": "Contrastista",
+    "best_role": "DC, DMC, MC",
+    "effect_en": "Tackles with surgical precision, reducing fouls and gaining the ball cleanly.",
+    "effect_it": "Contrasta con precisione chirurgica, riducendo i falli e guadagnando palla pulita.",
+    "when_to_use_en": "On the midfield destroyer. Allows hard tackling without yellow card risk.",
+    "when_to_use_it": "Sul distruttore di centrocampo. Permette contrasti duri senza rischio cartellino."
+  },
+  {
+    "id": "anticipation",
+    "name_en": "Anticipation",
+    "name_it": "Anticipazione",
+    "best_role": "DC, DMC",
+    "effect_en": "Reads opposing passes early, intercepting balls and breaking up attacks before they develop.",
+    "effect_it": "Legge i passaggi avversari in anticipo, intercettando le palle e spezzando gli attacchi sul nascere.",
+    "when_to_use_en": "On the central CB. Worth more than +20% Tackling against creative opponents.",
+    "when_to_use_it": "Sul DC centrale. Vale più di +20% di Contrasto contro avversari creativi."
+  },
+  {
+    "id": "crosser",
+    "name_en": "Crosser",
+    "name_it": "Crossatore",
+    "best_role": "ML, MR, DL, DR",
+    "effect_en": "High-quality crosses with curl and pace, always finding the head of the strikers.",
+    "effect_it": "Cross di alta qualità con effetto e velocità, trovano sempre la testa degli attaccanti.",
+    "when_to_use_en": "On full-backs or wide MCs in formations that play on the flanks.",
+    "when_to_use_it": "Sui terzini o MC larghi nei moduli che giocano sulle fasce."
+  },
+  {
+    "id": "wall-pass-master",
+    "name_en": "Wall-Pass Master",
+    "name_it": "Maestro dei Triangoli",
+    "best_role": "MC, AMC",
+    "effect_en": "Specialist in one-twos: launches and receives back the ball quickly to break the lines.",
+    "effect_it": "Specialista del uno-due: rilancia e riceve velocemente per spezzare le linee.",
+    "when_to_use_en": "On the offensive MC. Devastating in possession-based systems.",
+    "when_to_use_it": "Sul MC offensivo. Devastante nei sistemi basati sul possesso."
+  },
+  {
+    "id": "long-shot-specialist",
+    "name_en": "Long-Shot Specialist",
+    "name_it": "Specialista Tiro da Fuori",
+    "best_role": "MC, AMC, AML, AMR",
+    "effect_en": "Lethal shots from outside the box, breaking compact and deep defenses.",
+    "effect_it": "Tiri letali da fuori area, scardinano difese compatte e basse.",
+    "when_to_use_en": "Against teams that 'park the bus' (5-4-1 Flat, 4-5-1 V-Style defensive).",
+    "when_to_use_it": "Contro squadre che 'parcheggiano l'autobus' (5-4-1 Flat, 4-5-1 V difensivo)."
+  }
 ]

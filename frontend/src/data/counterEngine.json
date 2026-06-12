@@ -10,7 +10,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -33,7 +33,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -55,7 +55,7 @@
       "stile": "Corti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -80,7 +80,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -103,7 +103,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -126,7 +126,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -151,7 +151,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -173,7 +173,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "SI",
       "fr": {
@@ -195,7 +195,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Hard",
+      "cont": "Duro",
       "marc": "Uomo",
       "fuo": "SI",
       "fr": {
@@ -219,7 +219,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -242,7 +242,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -264,7 +264,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -288,7 +288,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -310,9 +310,9 @@
       "stile": "Corti",
       "ctrl": "NO",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "—",
         "DC": "↓",
@@ -332,7 +332,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -357,7 +357,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -380,7 +380,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -403,7 +403,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -427,7 +427,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -448,7 +448,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -470,7 +470,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Hard",
+      "cont": "Duro",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -493,7 +493,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -516,7 +516,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -538,7 +538,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -562,7 +562,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -582,7 +582,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -604,7 +604,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Hard",
+      "cont": "Duro",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -628,7 +628,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -649,7 +649,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -668,7 +668,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -693,7 +693,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -714,7 +714,7 @@
       "stile": "Corti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -736,7 +736,7 @@
       "stile": "Corti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Hard",
+      "cont": "Duro",
       "marc": "Uomo",
       "fuo": "SI",
       "fr": {
@@ -762,7 +762,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -785,7 +785,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -805,7 +805,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -828,7 +828,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -851,7 +851,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -871,7 +871,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -895,7 +895,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -918,7 +918,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -938,7 +938,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Hard",
+      "cont": "Duro",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -962,7 +962,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -985,7 +985,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -1005,7 +1005,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1029,7 +1029,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -1051,7 +1051,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -1073,7 +1073,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1099,7 +1099,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -1122,7 +1122,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -1144,7 +1144,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1168,7 +1168,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -1191,7 +1191,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -1211,7 +1211,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1235,7 +1235,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -1257,7 +1257,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -1280,7 +1280,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1305,7 +1305,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -1327,7 +1327,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -1351,7 +1351,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1376,7 +1376,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -1399,9 +1399,9 @@
       "stile": "Corti",
       "ctrl": "NO",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "—",
         "DC": "↓",
@@ -1421,7 +1421,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1448,7 +1448,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -1468,7 +1468,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -1491,7 +1491,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1516,7 +1516,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -1539,7 +1539,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -1561,7 +1561,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1587,7 +1587,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -1609,7 +1609,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -1631,7 +1631,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1658,7 +1658,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -1681,7 +1681,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -1703,7 +1703,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1728,9 +1728,9 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DC": "↓",
         "ML": "—",
@@ -1748,9 +1748,9 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "—",
         "DC": "↓",
@@ -1771,7 +1771,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1795,7 +1795,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1817,7 +1817,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1839,7 +1839,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1863,7 +1863,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1885,7 +1885,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1905,7 +1905,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1929,7 +1929,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1951,7 +1951,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1971,7 +1971,7 @@
       "stile": "Corti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Hard",
+      "cont": "Duro",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -1995,7 +1995,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "SI",
       "fr": {
@@ -2017,7 +2017,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -2038,7 +2038,7 @@
       "stile": "Corti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Hard",
+      "cont": "Duro",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -2063,7 +2063,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -2083,9 +2083,9 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DC": "↓",
         "DMC": "↓",
@@ -2104,7 +2104,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -2130,9 +2130,9 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -2152,7 +2152,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Medio",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -2202,9 +2202,9 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -2224,7 +2224,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Medio",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -2246,7 +2246,7 @@
       "stile": "Corti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Uomo",
       "fuo": "SI",
       "fr": {
@@ -2270,7 +2270,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -2292,7 +2292,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Medio",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -2336,9 +2336,9 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -2358,7 +2358,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Medio",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -2400,9 +2400,9 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -2420,7 +2420,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Medio",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -2460,9 +2460,9 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -2482,7 +2482,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Medio",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -2524,7 +2524,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -2586,7 +2586,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -2648,7 +2648,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -2710,7 +2710,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -2773,7 +2773,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -2835,7 +2835,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -2855,7 +2855,7 @@
       "press": "Basso",
       "cont": "Normale",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "MC": "↑",
         "DMC": "↓",
@@ -2895,7 +2895,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -2955,7 +2955,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3017,7 +3017,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3037,7 +3037,7 @@
       "press": "Basso",
       "cont": "Normale",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "MC": "↑",
         "DMC": "↓",
@@ -3077,7 +3077,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3139,7 +3139,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3201,7 +3201,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3263,7 +3263,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3325,7 +3325,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3387,7 +3387,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3449,7 +3449,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3511,7 +3511,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3519,7 +3519,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 4-5-1 V-Style e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 4-5-1 V-Style e riparti in contropiede"
     },
     "pari": {
       "mod": "4-5-1 V-Style",
@@ -3558,7 +3558,7 @@
         "AMR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 4-5-1 V-Style con pressing e ritmo"
+      "w": "Contro avversari più deboli, spingi alto col 4-5-1 V-Style con pressing e ritmo"
     }
   },
   {
@@ -3574,7 +3574,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3582,7 +3582,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 4-1-3-1-1 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 4-1-3-1-1 e riparti in contropiede"
     },
     "pari": {
       "mod": "4-1-3-1-1",
@@ -3620,7 +3620,7 @@
         "AMC": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 4-1-3-1-1 con pressing e ritmo"
+      "w": "Contro avversari più deboli, spingi alto col 4-1-3-1-1 con pressing e ritmo"
     }
   },
   {
@@ -3636,7 +3636,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3644,7 +3644,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 4-3-3 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 4-3-3 e riparti in contropiede"
     },
     "pari": {
       "mod": "4-3-3",
@@ -3683,7 +3683,7 @@
         "AMR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 4-3-3 con pressing e ritmo"
+      "w": "Contro avversari più deboli, spingi alto col 4-3-3 con pressing e ritmo"
     }
   },
   {
@@ -3699,7 +3699,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3707,7 +3707,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 4-3-3 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 4-3-3 e riparti in contropiede"
     },
     "pari": {
       "mod": "4-3-3",
@@ -3746,7 +3746,7 @@
         "AMR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 4-3-3 con pressing e ritmo"
+      "w": "Contro avversari più deboli, spingi alto col 4-3-3 con pressing e ritmo"
     }
   },
   {
@@ -3762,7 +3762,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3770,7 +3770,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 4-3-3 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 4-3-3 e riparti in contropiede"
     },
     "pari": {
       "mod": "4-3-3",
@@ -3809,7 +3809,7 @@
         "AMR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 4-3-3 con pressing e ritmo"
+      "w": "Contro avversari più deboli, spingi alto col 4-3-3 con pressing e ritmo"
     }
   },
   {
@@ -3825,7 +3825,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3833,7 +3833,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 4-2-3-1 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 4-2-3-1 e riparti in contropiede"
     },
     "pari": {
       "mod": "4-2-3-1",
@@ -3872,7 +3872,7 @@
         "AMR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 4-2-3-1 con pressing e ritmo"
+      "w": "Contro avversari più deboli, spingi alto col 4-2-3-1 con pressing e ritmo"
     }
   },
   {
@@ -3888,7 +3888,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3896,7 +3896,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 4-1-3N-2 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 4-1-3N-2 e riparti in contropiede"
     },
     "pari": {
       "mod": "4-1-3N-2",
@@ -3933,7 +3933,7 @@
         "MC": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 4-1-3N-2 con pressing e ritmo"
+      "w": "Contro avversari più deboli, spingi alto col 4-1-3N-2 con pressing e ritmo"
     }
   },
   {
@@ -3949,7 +3949,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -3957,7 +3957,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 4-3-3 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 4-3-3 e riparti in contropiede"
     },
     "pari": {
       "mod": "4-3-3",
@@ -3996,7 +3996,7 @@
         "AMR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 4-3-3 con pressing e ritmo"
+      "w": "Contro avversari più deboli, spingi alto col 4-3-3 con pressing e ritmo"
     }
   },
   {
@@ -4012,7 +4012,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -4020,7 +4020,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 4-3W-1-2 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 4-3W-1-2 e riparti in contropiede"
     },
     "pari": {
       "mod": "4-3W-1-2",
@@ -4059,7 +4059,7 @@
         "MR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 4-3W-1-2 con pressing e marcatura aggressiva"
+      "w": "Contro avversari più deboli, spingi alto col 4-3W-1-2 con pressing e marcatura aggressiva"
     }
   },
   {
@@ -4075,7 +4075,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "ML": "↓",
         "DC": "↓",
@@ -4083,7 +4083,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 3-4-1-2 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 3-4-1-2 e riparti in contropiede"
     },
     "pari": {
       "mod": "3-4-1-2",
@@ -4120,7 +4120,7 @@
         "MR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 3-4-1-2 con pressing e marcatura aggressiva"
+      "w": "Contro avversari più deboli, spingi alto col 3-4-1-2 con pressing e marcatura aggressiva"
     }
   },
   {
@@ -4136,7 +4136,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "AML": "↓",
         "DC": "↓",
@@ -4144,7 +4144,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 3-1-3N-2W-1 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 3-1-3N-2W-1 e riparti in contropiede"
     },
     "pari": {
       "mod": "3-1-3N-2W-1",
@@ -4181,7 +4181,7 @@
         "AMR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 3-1-3N-2W-1 con pressing e marcatura aggressiva"
+      "w": "Contro avversari più deboli, spingi alto col 3-1-3N-2W-1 con pressing e marcatura aggressiva"
     }
   },
   {
@@ -4197,7 +4197,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "ML": "↓",
         "DC": "↓",
@@ -4205,7 +4205,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 3-4-1-2 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 3-4-1-2 e riparti in contropiede"
     },
     "pari": {
       "mod": "3-4-1-2",
@@ -4242,7 +4242,7 @@
         "MR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 3-4-1-2 con pressing e marcatura aggressiva"
+      "w": "Contro avversari più deboli, spingi alto col 3-4-1-2 con pressing e marcatura aggressiva"
     }
   },
   {
@@ -4258,13 +4258,13 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DC": "↓",
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 3-1-3N-1-2 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 3-1-3N-1-2 e riparti in contropiede"
     },
     "pari": {
       "mod": "3-1-3N-1-2",
@@ -4300,7 +4300,7 @@
         "AMC": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 3-1-3N-1-2 con pressing e marcatura aggressiva"
+      "w": "Contro avversari più deboli, spingi alto col 3-1-3N-1-2 con pressing e marcatura aggressiva"
     }
   },
   {
@@ -4316,7 +4316,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "AML": "↓",
         "DC": "↓",
@@ -4324,7 +4324,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 3-1-3N-2W-1 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 3-1-3N-2W-1 e riparti in contropiede"
     },
     "pari": {
       "mod": "3-1-3N-2W-1",
@@ -4361,7 +4361,7 @@
         "AMR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 3-1-3N-2W-1 con pressing e marcatura aggressiva"
+      "w": "Contro avversari più deboli, spingi alto col 3-1-3N-2W-1 con pressing e marcatura aggressiva"
     }
   },
   {
@@ -4377,7 +4377,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "DL": "↓",
         "DC": "↓",
@@ -4385,7 +4385,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 3W-2N-1-3W-1 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 3W-2N-1-3W-1 e riparti in contropiede"
     },
     "pari": {
       "mod": "3W-2N-1-3W-1",
@@ -4424,7 +4424,7 @@
         "AMR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 3W-2N-1-3W-1 con pressing e marcatura aggressiva"
+      "w": "Contro avversari più deboli, spingi alto col 3W-2N-1-3W-1 con pressing e marcatura aggressiva"
     }
   },
   {
@@ -4440,7 +4440,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "AML": "↓",
         "DC": "↓",
@@ -4448,7 +4448,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 3-5-2 V e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 3-5-2 V e riparti in contropiede"
     },
     "pari": {
       "mod": "3-5-2 V (V-Style)",
@@ -4485,7 +4485,7 @@
         "AMR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 3-5-2 V con pressing e marcatura aggressiva"
+      "w": "Contro avversari più deboli, spingi alto col 3-5-2 V con pressing e marcatura aggressiva"
     }
   },
   {
@@ -4501,7 +4501,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "ML": "↓",
         "DC": "↓",
@@ -4509,7 +4509,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 3N-1-4-1-1 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 3N-1-4-1-1 e riparti in contropiede"
     },
     "pari": {
       "mod": "3N-1-4-1-1",
@@ -4546,7 +4546,7 @@
         "MR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 3N-1-4-1-1 con pressing e marcatura aggressiva"
+      "w": "Contro avversari più deboli, spingi alto col 3N-1-4-1-1 con pressing e marcatura aggressiva"
     }
   },
   {
@@ -4562,7 +4562,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "ML": "↓",
         "DC": "↓",
@@ -4570,7 +4570,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 3N-5-2 V e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 3N-5-2 V e riparti in contropiede"
     },
     "pari": {
       "mod": "3N-5-2 V",
@@ -4607,7 +4607,7 @@
         "MR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 3N-5-2 V con pressing e marcatura aggressiva"
+      "w": "Contro avversari più deboli, spingi alto col 3N-5-2 V con pressing e marcatura aggressiva"
     }
   },
   {
@@ -4623,7 +4623,7 @@
       "press": "Basso",
       "cont": "Facile",
       "marc": "Zona",
-      "fuo": "SI",
+      "fuo": "NO",
       "fr": {
         "ML": "↓",
         "DC": "↓",
@@ -4631,7 +4631,7 @@
         "MC": "↓",
         "ST": "—"
       },
-      "w": "Contro avversari piu' forti, resta compatto col 3N-1-3W-1-2 e riparti in contropiede"
+      "w": "Contro avversari più forti, resta compatto col 3N-1-3W-1-2 e riparti in contropiede"
     },
     "pari": {
       "mod": "3N-1-3W-1-2",
@@ -4668,7 +4668,7 @@
         "MR": "↑",
         "ST": "↑"
       },
-      "w": "Contro avversari piu' deboli, spingi alto col 3N-1-3W-1-2 con pressing e marcatura aggressiva"
+      "w": "Contro avversari più deboli, spingi alto col 3N-1-3W-1-2 con pressing e marcatura aggressiva"
     }
   },
   {
@@ -4682,7 +4682,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -4703,7 +4703,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -4725,7 +4725,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -4749,7 +4749,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -4770,7 +4770,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -4792,7 +4792,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -4817,7 +4817,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -4837,7 +4837,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -4859,7 +4859,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -4883,7 +4883,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -4905,7 +4905,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -4927,7 +4927,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -4951,7 +4951,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -4971,7 +4971,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -4993,7 +4993,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -5018,7 +5018,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -5038,7 +5038,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5060,7 +5060,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -5085,7 +5085,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -5105,7 +5105,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5127,7 +5127,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -5152,7 +5152,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -5172,7 +5172,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5194,7 +5194,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -5218,7 +5218,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -5238,7 +5238,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5260,7 +5260,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -5285,7 +5285,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -5305,7 +5305,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5327,7 +5327,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -5353,7 +5353,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -5373,7 +5373,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5395,7 +5395,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -5420,7 +5420,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -5440,7 +5440,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5462,7 +5462,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -5486,7 +5486,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -5506,7 +5506,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5528,7 +5528,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -5553,7 +5553,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -5572,7 +5572,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5594,7 +5594,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -5618,7 +5618,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -5639,7 +5639,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5661,7 +5661,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -5686,7 +5686,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
@@ -5707,7 +5707,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5729,7 +5729,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -5753,7 +5753,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5763,7 +5763,7 @@
         "MC": "—",
         "ST": "—"
       },
-      "w": "Avversario piu' forte: blocco ordinato, zona, e contropiede sulle fasce"
+      "w": "Avversario più forte: blocco ordinato, zona, e contropiede sulle fasce"
     },
     "pari": {
       "mod": "4-1-4-1",
@@ -5773,7 +5773,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5796,7 +5796,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -5821,7 +5821,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5843,7 +5843,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5866,7 +5866,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -5890,7 +5890,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5912,7 +5912,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5934,7 +5934,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -5960,7 +5960,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -5982,7 +5982,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6004,7 +6004,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -6029,7 +6029,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6049,7 +6049,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6072,7 +6072,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -6097,7 +6097,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6118,7 +6118,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6140,7 +6140,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -6165,7 +6165,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6187,7 +6187,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6209,7 +6209,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -6235,7 +6235,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6255,7 +6255,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6277,7 +6277,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -6302,7 +6302,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6321,7 +6321,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6344,7 +6344,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -6369,7 +6369,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6390,7 +6390,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6414,7 +6414,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -6440,7 +6440,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6453,7 +6453,7 @@
         "MR": "↑",
         "ST": "—"
       },
-      "w": "Avversario piu' forte: blocco ordinato, zona, e contropiede sulle fasce"
+      "w": "Avversario più forte: blocco ordinato, zona, e contropiede sulle fasce"
     },
     "pari": {
       "mod": "4-1-3W-2",
@@ -6463,7 +6463,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6486,7 +6486,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -6511,7 +6511,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6534,7 +6534,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6556,7 +6556,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -6580,7 +6580,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6602,7 +6602,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6624,7 +6624,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -6648,7 +6648,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6670,7 +6670,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6691,7 +6691,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -6715,7 +6715,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6737,7 +6737,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6758,7 +6758,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -6782,7 +6782,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6802,7 +6802,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6824,7 +6824,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -6850,7 +6850,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6871,7 +6871,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6892,7 +6892,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -6918,7 +6918,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6940,7 +6940,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -6962,7 +6962,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {
@@ -6986,7 +6986,7 @@
       "stile": "Lunghi",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Easy",
+      "cont": "Facile",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -7007,7 +7007,7 @@
       "stile": "Misti",
       "ctrl": "SI",
       "press": "Basso",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
@@ -7029,7 +7029,7 @@
       "stile": "Misti",
       "ctrl": "NO",
       "press": "Alto",
-      "cont": "Norm",
+      "cont": "Normale",
       "marc": "Zona",
       "fuo": "SI",
       "fr": {

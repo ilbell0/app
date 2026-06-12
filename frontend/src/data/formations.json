@@ -191,7 +191,7 @@
       "focus_passing": "Through the Middle",
       "passing_style": "Short",
       "counter_attack": false,
-      "pressing": "Normal",
+      "pressing": "Medium",
       "tackling": "Normal",
       "marking": "Zonal",
       "offside_trap": false
@@ -228,8 +228,8 @@
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
-        "pressing": "Normal",
-        "pressing_it": "Normale",
+        "pressing": "Medium",
+        "pressing_it": "Medio",
         "tackling": "Normal",
         "tackling_it": "Normale",
         "marking": "Zonal",
@@ -385,7 +385,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Short",
@@ -479,7 +479,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Down Both Flanks",
-        "focus_passing_it": "Sulle Fasce",
+        "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -488,7 +488,7 @@
         "tackling": "Easy",
         "tackling_it": "Facile",
         "marking": "Zonal",
-        "marking_it": "A Zona",
+        "marking_it": "Zonale",
         "offside_trap": false,
         "tip_en": "Park the bus! Let them attack, hit on counter with AML/AMR speed. DMC↓ to shield DCs.",
         "tip_it": "Parcheggia il bus! Lascia che attacchino, colpisci in contropiede con velocità AML/AMR. DMC↓ per schermare DC.",
@@ -506,12 +506,12 @@
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
-        "pressing": "Normal",
-        "pressing_it": "Normale",
+        "pressing": "Medium",
+        "pressing_it": "Medio",
         "tackling": "Normal",
         "tackling_it": "Normale",
         "marking": "Zonal",
-        "marking_it": "A Zona",
+        "marking_it": "Zonale",
         "offside_trap": true,
         "tip_en": "V-shape gives control. Push AML/AMR↑ for attack width. Counter when they overcommit.",
         "tip_it": "La forma a V dà controllo. Spingi AML/AMR↑ per ampiezza. Contropiede quando si sbilanciano.",
@@ -525,7 +525,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Down Both Flanks",
-        "focus_passing_it": "Sulle Fasce",
+        "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -622,7 +622,7 @@
     "opponent_settings": {
       "strong": {
         "mentality": "Hard Defending",
-        "mentality_it": "Molto Difensivo",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Mixed",
         "focus_passing_it": "Misto",
         "passing_style": "Long",
@@ -1076,7 +1076,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Mixed",
         "focus_passing_it": "Misto",
         "passing_style": "Mixed",
@@ -1211,7 +1211,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Short",
@@ -1436,7 +1436,7 @@
     "opponent_settings": {
       "strong": {
         "mentality": "Hard Defending",
-        "mentality_it": "Molto Difensivo",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Long",
@@ -1581,7 +1581,7 @@
     "opponent_settings": {
       "strong": {
         "mentality": "Hard Defending",
-        "mentality_it": "Molto Difensivo",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Mixed",
         "focus_passing_it": "Misto",
         "passing_style": "Long",
@@ -1846,7 +1846,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Down Both Flanks",
-        "focus_passing_it": "Sulle Fasce",
+        "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -1855,7 +1855,7 @@
         "tackling": "Easy",
         "tackling_it": "Facile",
         "marking": "Zonal",
-        "marking_it": "A Zona",
+        "marking_it": "Zonale",
         "offside_trap": false,
         "tip_en": "Defend deep! DMC↓ always. ML/MR track back. Quick long balls to ST on counter.",
         "tip_it": "Difendi basso! DMC↓ sempre. ML/MR rientrano. Lanci lunghi rapidi a ST in contropiede.",
@@ -1873,12 +1873,12 @@
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
-        "pressing": "Normal",
-        "pressing_it": "Normale",
+        "pressing": "Medium",
+        "pressing_it": "Medio",
         "tackling": "Normal",
         "tackling_it": "Normale",
         "marking": "Zonal",
-        "marking_it": "A Zona",
+        "marking_it": "Zonale",
         "offside_trap": false,
         "tip_en": "Control the game. DMC anchors defense. Push MC forward if winning.",
         "tip_it": "Controlla la partita. DMC ancora la difesa. Spingi MC avanti se in vantaggio.",
@@ -1893,7 +1893,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Per il Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -2049,7 +2049,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Short",
@@ -2163,7 +2163,7 @@
     "opponent_settings": {
       "strong": {
         "mentality": "Hard Defending",
-        "mentality_it": "Molto Difensivo",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Through the Middle",
         "focus_passing_it": "Per il centro",
         "passing_style": "Long",
@@ -2335,7 +2335,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Short",
@@ -2487,7 +2487,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Short",
@@ -2567,7 +2567,7 @@
       "focus_passing": "Through the Middle",
       "passing_style": "Short",
       "counter_attack": false,
-      "pressing": "Normal",
+      "pressing": "Medium",
       "tackling": "Normal",
       "marking": "Zonal",
       "offside_trap": false
@@ -2602,8 +2602,8 @@
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
-        "pressing": "Normal",
-        "pressing_it": "Normale",
+        "pressing": "Medium",
+        "pressing_it": "Medio",
         "tackling": "Normal",
         "tackling_it": "Normale",
         "marking": "Zonal",
@@ -2705,7 +2705,7 @@
     "opponent_settings": {
       "strong": {
         "mentality": "Hard Defending",
-        "mentality_it": "Molto Difensivo",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Long",
@@ -2840,7 +2840,7 @@
     "opponent_settings": {
       "strong": {
         "mentality": "Hard Defending",
-        "mentality_it": "Molto Difensivo",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Through the Middle",
         "focus_passing_it": "Per il centro",
         "passing_style": "Long",
@@ -2966,7 +2966,7 @@
     "opponent_settings": {
       "strong": {
         "mentality": "Hard Defending",
-        "mentality_it": "Molto Difensivo",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Long",
@@ -3143,7 +3143,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Right Flank",
         "focus_passing_it": "Fascia destra",
         "passing_style": "Short",
@@ -3275,7 +3275,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Short",
@@ -3356,7 +3356,7 @@
       "focus_passing": "Down Both Flanks",
       "passing_style": "Mixed",
       "counter_attack": false,
-      "pressing": "Normal",
+      "pressing": "Medium",
       "tackling": "Normal",
       "marking": "Zonal",
       "offside_trap": false
@@ -3392,8 +3392,8 @@
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": false,
-        "pressing": "Normal",
-        "pressing_it": "Normale",
+        "pressing": "Medium",
+        "pressing_it": "Medio",
         "tackling": "Normal",
         "tackling_it": "Normale",
         "marking": "Zonal",
@@ -3408,7 +3408,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Short",
@@ -3592,7 +3592,7 @@
         "tackling": "Easy",
         "tackling_it": "Facile",
         "marking": "Zonal",
-        "marking_it": "A Zona",
+        "marking_it": "Zonale",
         "offside_trap": false,
         "variant": "C",
         "tip_en": "Use Variant C (Quick Transition). Stay compact, counter with AMC-ST speed. MR/ML with backward arrows.",
@@ -3609,12 +3609,12 @@
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
-        "pressing": "Normal",
-        "pressing_it": "Normale",
+        "pressing": "Medium",
+        "pressing_it": "Medio",
         "tackling": "Normal",
         "tackling_it": "Normale",
         "marking": "Zonal",
-        "marking_it": "A Zona",
+        "marking_it": "Zonale",
         "offside_trap": true,
         "variant": "B",
         "tip_en": "Use Variant B (Balanced). Safer at the back, AMC and ST have freedom to create.",
@@ -3628,7 +3628,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Per il Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -3719,7 +3719,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Down Both Flanks",
-        "focus_passing_it": "Sulle Fasce",
+        "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -3728,7 +3728,7 @@
         "tackling": "Easy",
         "tackling_it": "Facile",
         "marking": "Zonal",
-        "marking_it": "A Zona",
+        "marking_it": "Zonale",
         "offside_trap": false,
         "tip_en": "Stay compact! DMC↓ to protect DCs. Counter through flanks. Don't chase the ball, let them come.",
         "tip_it": "Resta compatto! DMC↓ per proteggere i DC. Contropiede sulle fasce. Non rincorrere, lascia che vengano.",
@@ -3744,12 +3744,12 @@
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
-        "pressing": "Normal",
-        "pressing_it": "Normale",
+        "pressing": "Medium",
+        "pressing_it": "Medio",
         "tackling": "Normal",
         "tackling_it": "Normale",
         "marking": "Zonal",
-        "marking_it": "A Zona",
+        "marking_it": "Zonale",
         "offside_trap": true,
         "tip_en": "Balance attack and defense. AMC↑ for extra goal threat. Use ML/MR for width.",
         "tip_it": "Equilibra attacco e difesa. AMC↑ per minaccia extra. Usa ML/MR per ampiezza.",
@@ -3763,7 +3763,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Per il Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -3854,9 +3854,9 @@
     "opponent_settings": {
       "strong": {
         "mentality": "Hard Defending",
-        "mentality_it": "Ultra Difensiva",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Down Both Flanks",
-        "focus_passing_it": "Sulle Fasce",
+        "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -3865,7 +3865,7 @@
         "tackling": "Hard",
         "tackling_it": "Duro",
         "marking": "Zonal",
-        "marking_it": "A Zona",
+        "marking_it": "Zonale",
         "offside_trap": false,
         "tip_en": "PARK THE BUS! Everyone defends. Only AML/AMR and ST go forward on counters. Pray for 0-0.",
         "tip_it": "PARCHEGGIA IL BUS! Tutti difendono. Solo AML/AMR e ST avanti in contropiede. Prega per lo 0-0.",
@@ -3879,7 +3879,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Down Both Flanks",
-        "focus_passing_it": "Sulle Fasce",
+        "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -3888,7 +3888,7 @@
         "tackling": "Normal",
         "tackling_it": "Normale",
         "marking": "Zonal",
-        "marking_it": "A Zona",
+        "marking_it": "Zonale",
         "offside_trap": false,
         "tip_en": "Stay solid. Let them have the ball. Strike fast on counter with AML/AMR pace.",
         "tip_it": "Resta solido. Lascia che abbiano palla. Colpisci veloce in contropiede con velocità AML/AMR.",
@@ -3906,12 +3906,12 @@
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
-        "pressing": "Normal",
-        "pressing_it": "Normale",
+        "pressing": "Medium",
+        "pressing_it": "Medio",
         "tackling": "Normal",
         "tackling_it": "Normale",
         "marking": "Zonal",
-        "marking_it": "A Zona",
+        "marking_it": "Zonale",
         "offside_trap": true,
         "tip_en": "Push MC forward slightly. Still counter-focused but more possession.",
         "tip_it": "Spingi MC leggermente avanti. Ancora focus contropiede ma più possesso.",
@@ -3999,12 +3999,12 @@
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
-        "pressing": "Normal",
-        "pressing_it": "Normale",
+        "pressing": "Medium",
+        "pressing_it": "Medio",
         "tackling": "Normal",
         "tackling_it": "Normale",
         "marking": "Zonal",
-        "marking_it": "A Zona",
+        "marking_it": "Zonale",
         "offside_trap": false,
         "tip_en": "False Nine drops, AML/AMR run into space. Quick 1-2s in the middle. Don't force it.",
         "tip_it": "Falso Nove arretra, AML/AMR corrono negli spazi. Rapidi 1-2 al centro. Non forzare.",
@@ -4017,7 +4017,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Per il Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -4026,7 +4026,7 @@
         "tackling": "Normal",
         "tackling_it": "Normale",
         "marking": "Zonal",
-        "marking_it": "A Zona",
+        "marking_it": "Zonale",
         "offside_trap": false,
         "tip_en": "Full False Nine system. AMC drops, AML/AMR attack. Confuse their defense!",
         "tip_it": "Sistema Falso Nove completo. AMC arretra, AML/AMR attaccano. Confondi la loro difesa!",
@@ -4039,7 +4039,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Per il Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -4143,7 +4143,7 @@
       },
       "equal": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Mixed",
         "focus_passing_it": "Misto",
         "passing_style": "Long",
@@ -4166,7 +4166,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Mixed",
         "focus_passing_it": "Misto",
         "passing_style": "Long",
@@ -4250,7 +4250,7 @@
     "opponent_settings": {
       "strong": {
         "mentality": "Hard Defending",
-        "mentality_it": "Molto Difensivo",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Mixed",
         "focus_passing_it": "Misto",
         "passing_style": "Mixed",
@@ -4386,7 +4386,7 @@
     "opponent_settings": {
       "strong": {
         "mentality": "Hard Defending",
-        "mentality_it": "Molto Difensivo",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Mixed",
@@ -4515,7 +4515,7 @@
     "opponent_settings": {
       "strong": {
         "mentality": "Hard Defending",
-        "mentality_it": "Molto Difensivo",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Through the Middle",
         "focus_passing_it": "Per il centro",
         "passing_style": "Long",
@@ -4537,7 +4537,7 @@
       },
       "equal": {
         "mentality": "Hard Defending",
-        "mentality_it": "Molto Difensivo",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Through the Middle",
         "focus_passing_it": "Per il centro",
         "passing_style": "Long",
@@ -4817,7 +4817,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Through the Middle",
         "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
@@ -4945,7 +4945,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Through the Middle",
         "focus_passing_it": "Per il centro",
         "passing_style": "Short",
@@ -5199,7 +5199,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Mixed",
@@ -5304,7 +5304,7 @@
       },
       "equal": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Through the Middle",
         "focus_passing_it": "Per il centro",
         "passing_style": "Short",
@@ -5325,7 +5325,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Through the Middle",
         "focus_passing_it": "Per il centro",
         "passing_style": "Short",
@@ -5450,7 +5450,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Short",
@@ -5810,7 +5810,7 @@
       },
       "equal": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Short",
@@ -5832,7 +5832,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Short",
@@ -6042,7 +6042,7 @@
     "opponent_settings": {
       "strong": {
         "mentality": "Hard Defending",
-        "mentality_it": "Molto Difensivo",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Through the Middle",
         "focus_passing_it": "Per il centro",
         "passing_style": "Long",
@@ -6170,7 +6170,7 @@
     "opponent_settings": {
       "strong": {
         "mentality": "Hard Defending",
-        "mentality_it": "Molto Difensivo",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Mixed",
@@ -6298,7 +6298,7 @@
     "opponent_settings": {
       "strong": {
         "mentality": "Hard Defending",
-        "mentality_it": "Molto Difensivo",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Mixed",
         "focus_passing_it": "Misto",
         "passing_style": "Mixed",
@@ -6473,7 +6473,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Through the Middle",
         "focus_passing_it": "Per il centro",
         "passing_style": "Short",
@@ -6710,7 +6710,7 @@
       },
       "equal": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Through the Middle",
         "focus_passing_it": "Per il centro",
         "passing_style": "Short",
@@ -6733,7 +6733,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Through the Middle",
         "focus_passing_it": "Per il centro",
         "passing_style": "Short",
@@ -6947,7 +6947,7 @@
     "opponent_settings": {
       "strong": {
         "mentality": "Hard Defending",
-        "mentality_it": "Molto Difensivo",
+        "mentality_it": "Molto Difensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Long",
@@ -7251,7 +7251,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Down Both Flanks",
         "focus_passing_it": "Per entrambe le fasce",
         "passing_style": "Mixed",
@@ -7381,7 +7381,7 @@
       },
       "weak": {
         "mentality": "Hard Attacking",
-        "mentality_it": "Molto Attaccante",
+        "mentality_it": "Molto Offensiva",
         "focus_passing": "Mixed",
         "focus_passing_it": "Misto",
         "passing_style": "Short",
@@ -7569,7 +7569,7 @@
     ],
     "strengths_it": [
       "Eccelle nello sfruttare le fasce contro difese a tre.",
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa"
     ],
     "weaknesses_en": [
@@ -7677,7 +7677,7 @@
     "id": "3n142",
     "name": "3N-1-4-2",
     "description_en": "3N-1-4-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-1-4-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-1-4-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -7700,7 +7700,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa",
       "Controllo del possesso in mediana",
       "Coppia d'attacco"
@@ -7830,7 +7830,7 @@
     ],
     "strengths_it": [
       "Forza il possesso centrale e sovraccarica la trequarti avversaria.",
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa",
       "Coppia d'attacco"
     ],
@@ -7860,7 +7860,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -7881,7 +7881,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -7902,7 +7902,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -7933,7 +7933,7 @@
     "id": "3n412",
     "name": "3N-4-1-2",
     "description_en": "3N-4-1-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-4-1-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-4-1-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -7954,7 +7954,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Coppia d'attacco"
     ],
     "weaknesses_en": [
@@ -8212,7 +8212,7 @@
       "Lacks width: vulnerable to opposition wingers"
     ],
     "weaknesses_it": [
-      "Puo soffrire la mancanza di ampiezza contro ali molto larghe.",
+      "Può soffrire la mancanza di ampiezza contro ali molto larghe.",
       "Manca ampiezza: vulnerabile alle ali avversarie"
     ],
     "tactic_type_en": "Balanced",
@@ -8232,7 +8232,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -8254,7 +8254,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -8275,7 +8275,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -8306,7 +8306,7 @@
     "id": "3511v",
     "name": "3-5-1-1 V",
     "description_en": "3-5-1-1 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3-5-1-1 con difesa a 3. Densita centrale insuperabile per annullare moduli stretti.",
+    "description_it": "Modulo 3-5-1-1 con difesa a 3. Densità centrale insuperabile per annullare moduli stretti.",
     "positions": [
       "GK",
       "DC",
@@ -8327,8 +8327,8 @@
       "Possession control in midfield"
     ],
     "strengths_it": [
-      "Densita centrale insuperabile per annullare moduli stretti.",
-      "Superiorita numerica a centrocampo",
+      "Densità centrale insuperabile per annullare moduli stretti.",
+      "Superiorità numerica a centrocampo",
       "Controllo del possesso in mediana"
     ],
     "weaknesses_en": [
@@ -8432,7 +8432,7 @@
     "id": "3n2w2n12",
     "name": "3N-2W-2N-1-2",
     "description_en": "3N-2W-2N-1-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-2W-2N-1-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-2W-2N-1-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -8454,7 +8454,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Doppio schermo davanti alla difesa",
       "Coppia d'attacco"
     ],
@@ -8483,7 +8483,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -8504,7 +8504,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -8525,7 +8525,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -8676,7 +8676,7 @@
     "id": "3n52f",
     "name": "3N-5-2 F",
     "description_en": "3N-5-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-5-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-5-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -8698,7 +8698,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Controllo del possesso in mediana",
       "Coppia d'attacco"
     ],
@@ -8803,7 +8803,7 @@
     "id": "313w12",
     "name": "3-1-3W-1-2",
     "description_en": "3-1-3W-1-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3-1-3W-1-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3-1-3W-1-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -8825,7 +8825,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa",
       "Coppia d'attacco"
     ],
@@ -9056,7 +9056,7 @@
     "id": "3n13w12",
     "name": "3N-1-3W-1-2",
     "description_en": "3N-1-3W-1-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-1-3W-1-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-1-3W-1-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -9078,7 +9078,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa",
       "Coppia d'attacco"
     ],
@@ -9180,7 +9180,7 @@
     "id": "3n2w3n2",
     "name": "3N-2W-3N-2",
     "description_en": "3N-2W-3N-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-2W-3N-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-2W-3N-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -9201,7 +9201,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Coppia d'attacco"
     ],
     "weaknesses_en": [
@@ -9306,7 +9306,7 @@
     "id": "3n1411",
     "name": "3N-1-4-1-1",
     "description_en": "3N-1-4-1-1 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-1-4-1-1 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-1-4-1-1 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -9328,7 +9328,7 @@
       "Possession control in midfield"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa",
       "Controllo del possesso in mediana"
     ],
@@ -9679,7 +9679,7 @@
     "id": "3w52f",
     "name": "3W-5-2 F",
     "description_en": "3W-5-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-5-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-5-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -9702,7 +9702,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Controllo del possesso in mediana",
       "Buona ampiezza di gioco",
       "Coppia d'attacco"
@@ -9808,7 +9808,7 @@
     "id": "3w123w1",
     "name": "3W-1-2-3W-1",
     "description_en": "3W-1-2-3W-1 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-1-2-3W-1 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-1-2-3W-1 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -9830,7 +9830,7 @@
       "Good width"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa",
       "Buona ampiezza di gioco"
     ],
@@ -9933,7 +9933,7 @@
     "id": "3w1411",
     "name": "3W-1-4-1-1",
     "description_en": "3W-1-4-1-1 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-1-4-1-1 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-1-4-1-1 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -9956,7 +9956,7 @@
       "Good width"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa",
       "Controllo del possesso in mediana",
       "Buona ampiezza di gioco"
@@ -10062,7 +10062,7 @@
     "id": "3w52v",
     "name": "3W-5-2 V",
     "description_en": "3W-5-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-5-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-5-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -10085,7 +10085,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Controllo del possesso in mediana",
       "Buona ampiezza di gioco",
       "Coppia d'attacco"
@@ -10192,7 +10192,7 @@
     "id": "3n2n12w2",
     "name": "3N-2N-1-2W-2",
     "description_en": "3N-2N-1-2W-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-2N-1-2W-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-2N-1-2W-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -10214,7 +10214,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Doppio schermo davanti alla difesa",
       "Coppia d'attacco"
     ],
@@ -10319,7 +10319,7 @@
     "id": "3n43",
     "name": "3N-4-3",
     "description_en": "3N-4-3 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-4-3 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-4-3 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -10340,7 +10340,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Coppia d'attacco"
     ],
     "weaknesses_en": [
@@ -10444,7 +10444,7 @@
     "id": "3w2n3w2",
     "name": "3W-2N-3W-2",
     "description_en": "3W-2N-3W-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-2N-3W-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-2N-3W-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -10466,7 +10466,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Buona ampiezza di gioco",
       "Coppia d'attacco"
     ],
@@ -10702,7 +10702,7 @@
     "id": "3n2w2n2w1",
     "name": "3N-2W-2N-2W-1",
     "description_en": "3N-2W-2N-2W-1 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-2W-2N-2W-1 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-2W-2N-2W-1 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -10723,7 +10723,7 @@
       "Double screen in front of defence"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Doppio schermo davanti alla difesa"
     ],
     "weaknesses_en": [
@@ -10826,7 +10826,7 @@
     "id": "3w2n13w1",
     "name": "3W-2N-1-3W-1",
     "description_en": "3W-2N-1-3W-1 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-2N-1-3W-1 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-2N-1-3W-1 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -10848,7 +10848,7 @@
       "Good width"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Doppio schermo davanti alla difesa",
       "Buona ampiezza di gioco"
     ],
@@ -10950,7 +10950,7 @@
     "id": "3w43",
     "name": "3W-4-3",
     "description_en": "3W-4-3 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-4-3 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-4-3 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -10972,7 +10972,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Buona ampiezza di gioco",
       "Coppia d'attacco"
     ],
@@ -11123,7 +11123,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -11145,7 +11145,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -11166,7 +11166,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -11195,7 +11195,7 @@
     "id": "33n3w1",
     "name": "3-3N-3W-1",
     "description_en": "3-3N-3W-1 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3-3N-3W-1 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3-3N-3W-1 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -11215,7 +11215,7 @@
       "Midfield numerical advantage"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo"
+      "Superiorità numerica a centrocampo"
     ],
     "weaknesses_en": [
       "Defensive flanks exposed to counters",
@@ -11314,7 +11314,7 @@
     "id": "3w142",
     "name": "3W-1-4-2",
     "description_en": "3W-1-4-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-1-4-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-1-4-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -11337,7 +11337,7 @@
       "Good width"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa",
       "Controllo del possesso in mediana",
       "Buona ampiezza di gioco"
@@ -11441,7 +11441,7 @@
     "id": "313n3",
     "name": "3-1-3N-3",
     "description_en": "3-1-3N-3 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3-1-3N-3 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3-1-3N-3 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -11463,7 +11463,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa",
       "Coppia d'attacco"
     ],
@@ -11492,7 +11492,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -11513,7 +11513,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -11534,7 +11534,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -11562,7 +11562,7 @@
     "id": "3n13w12ddandelion",
     "name": "3N-1-3W-1-2 D (Dandelion)",
     "description_en": "3N-1-3W-1-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-1-3W-1-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-1-3W-1-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -11584,7 +11584,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa",
       "Coppia d'attacco"
     ],
@@ -11732,7 +11732,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -11754,7 +11754,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -11775,7 +11775,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -11806,7 +11806,7 @@
     "id": "3n511",
     "name": "3N-5-1-1",
     "description_en": "3N-5-1-1 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-5-1-1 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-5-1-1 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -11827,7 +11827,7 @@
       "Possession control in midfield"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Controllo del possesso in mediana"
     ],
     "weaknesses_en": [
@@ -11929,7 +11929,7 @@
     "id": "3w511",
     "name": "3W-5-1-1",
     "description_en": "3W-5-1-1 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-5-1-1 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-5-1-1 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -11951,7 +11951,7 @@
       "Good width"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Controllo del possesso in mediana",
       "Buona ampiezza di gioco"
     ],
@@ -12055,7 +12055,7 @@
     "id": "3n2dmcmc3w2",
     "name": "3N-2(DMC/MC)-3W-2",
     "description_en": "3N-2(DMC/MC)-3W-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-2(DMC/MC)-3W-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-2(DMC/MC)-3W-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -12078,7 +12078,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Doppio schermo davanti alla difesa",
       "Controllo del possesso in mediana",
       "Coppia d'attacco"
@@ -12182,7 +12182,7 @@
     "id": "3w2dmcmc3w2",
     "name": "3W-2(DMC/MC)-3W-2",
     "description_en": "3W-2(DMC/MC)-3W-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-2(DMC/MC)-3W-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-2(DMC/MC)-3W-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -12205,7 +12205,7 @@
       "Good width"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Doppio schermo davanti alla difesa",
       "Controllo del possesso in mediana",
       "Buona ampiezza di gioco"
@@ -12310,7 +12310,7 @@
     "id": "3n3dmcmc2w2",
     "name": "3N-3(DMC/MC)-2W-2",
     "description_en": "3N-3(DMC/MC)-2W-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-3(DMC/MC)-2W-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-3(DMC/MC)-2W-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -12332,7 +12332,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Doppio schermo davanti alla difesa",
       "Coppia d'attacco"
     ],
@@ -12435,7 +12435,7 @@
     "id": "3w2n2w12",
     "name": "3W-2N-2W-1-2",
     "description_en": "3W-2N-2W-1-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-2N-2W-1-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-2N-2W-1-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -12458,7 +12458,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Doppio schermo davanti alla difesa",
       "Buona ampiezza di gioco",
       "Coppia d'attacco"
@@ -12563,7 +12563,7 @@
     "id": "3w2n2n2w1",
     "name": "3W-2N-2N-2W-1",
     "description_en": "3W-2N-2N-2W-1 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-2N-2N-2W-1 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-2N-2N-2W-1 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -12585,7 +12585,7 @@
       "Good width"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Doppio schermo davanti alla difesa",
       "Buona ampiezza di gioco"
     ],
@@ -12691,7 +12691,7 @@
     "id": "3w151",
     "name": "3W-1-5-1",
     "description_en": "3W-1-5-1 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-1-5-1 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-1-5-1 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -12714,7 +12714,7 @@
       "Good width"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa",
       "Controllo del possesso in mediana",
       "Buona ampiezza di gioco"
@@ -12821,7 +12821,7 @@
     "id": "3w13w2n1",
     "name": "3W-1-3W-2N-1",
     "description_en": "3W-1-3W-2N-1 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-1-3W-2N-1 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-1-3W-2N-1 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -12843,7 +12843,7 @@
       "Good width"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa",
       "Buona ampiezza di gioco"
     ],
@@ -12947,7 +12947,7 @@
     "id": "3n13w2n1",
     "name": "3N-1-3W-2N-1",
     "description_en": "3N-1-3W-2N-1 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-1-3W-2N-1 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-1-3W-2N-1 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -12968,7 +12968,7 @@
       "DMC shielding the defence"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa"
     ],
     "weaknesses_en": [
@@ -13070,7 +13070,7 @@
     "id": "3w13w12",
     "name": "3W-1-3W-1-2",
     "description_en": "3W-1-3W-1-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-1-3W-1-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-1-3W-1-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -13093,7 +13093,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa",
       "Buona ampiezza di gioco",
       "Coppia d'attacco"
@@ -13198,7 +13198,7 @@
     "id": "3w412",
     "name": "3W-4-1-2",
     "description_en": "3W-4-1-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-4-1-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-4-1-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -13220,7 +13220,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Buona ampiezza di gioco",
       "Coppia d'attacco"
     ],
@@ -13371,7 +13371,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -13393,7 +13393,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -13414,7 +13414,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -13567,7 +13567,7 @@
     "id": "3n3w22",
     "name": "3N-3W-2-2",
     "description_en": "3N-3W-2-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-3W-2-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-3W-2-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -13589,7 +13589,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Buona ampiezza di gioco",
       "Coppia d'attacco"
     ],
@@ -14223,7 +14223,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -14245,7 +14245,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -14266,7 +14266,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -14338,7 +14338,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -14360,7 +14360,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -14381,7 +14381,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -14459,7 +14459,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -14481,7 +14481,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -14502,7 +14502,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -14584,7 +14584,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -14606,7 +14606,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -14627,7 +14627,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -14658,7 +14658,7 @@
     "id": "3n3w3w1",
     "name": "3N-3W-3W-1",
     "description_en": "3N-3W-3W-1 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-3W-3W-1 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-3W-3W-1 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -14679,7 +14679,7 @@
       "Good width"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Buona ampiezza di gioco"
     ],
     "weaknesses_en": [
@@ -14779,7 +14779,7 @@
     "id": "3n2w3w2",
     "name": "3N-2W-3W-2",
     "description_en": "3N-2W-3W-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-2W-3W-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-2W-3W-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -14801,7 +14801,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Buona ampiezza di gioco",
       "Coppia d'attacco"
     ],
@@ -14951,7 +14951,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -14973,7 +14973,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -14994,7 +14994,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -15324,7 +15324,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -15346,7 +15346,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -15367,7 +15367,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -15398,7 +15398,7 @@
     "id": "3w23w2",
     "name": "3W-2-3W-2",
     "description_en": "3W-2-3W-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-2-3W-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-2-3W-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -15420,7 +15420,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Buona ampiezza di gioco",
       "Coppia d'attacco"
     ],
@@ -15522,7 +15522,7 @@
     "id": "3n2w212",
     "name": "3N-2W-2-1-2",
     "description_en": "3N-2W-2-1-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3N-2W-2-1-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3N-2W-2-1-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DC",
@@ -15544,7 +15544,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Doppio schermo davanti alla difesa",
       "Coppia d'attacco"
     ],
@@ -15573,7 +15573,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -15594,7 +15594,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -15615,7 +15615,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -15645,7 +15645,7 @@
     "id": "3w3n3w1",
     "name": "3W-3N-3W-1",
     "description_en": "3W-3N-3W-1 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-3N-3W-1 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-3N-3W-1 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -15666,7 +15666,7 @@
       "Good width"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Buona ampiezza di gioco"
     ],
     "weaknesses_en": [
@@ -15789,7 +15789,7 @@
     ],
     "strengths_it": [
       "Massimizza il possesso palla e la creativita tra le linee.",
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "DMC a protezione della difesa"
     ],
     "weaknesses_en": [
@@ -15893,7 +15893,7 @@
     "id": "3w2n3n2",
     "name": "3W-2N-3N-2",
     "description_en": "3W-2N-3N-2 shape with a back 3. Midfield numerical advantage",
-    "description_it": "Modulo 3W-2N-3N-2 con difesa a 3. Superiorita numerica a centrocampo",
+    "description_it": "Modulo 3W-2N-3N-2 con difesa a 3. Superiorità numerica a centrocampo",
     "positions": [
       "GK",
       "DL",
@@ -15914,7 +15914,7 @@
       "Strike partnership"
     ],
     "strengths_it": [
-      "Superiorita numerica a centrocampo",
+      "Superiorità numerica a centrocampo",
       "Coppia d'attacco"
     ],
     "weaknesses_en": [
@@ -15942,7 +15942,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -15964,7 +15964,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -15985,7 +15985,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
@@ -16065,7 +16065,7 @@
         "mentality": "Defensive",
         "mentality_it": "Difensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Long",
         "passing_style_it": "Lunghi",
         "counter_attack": true,
@@ -16086,7 +16086,7 @@
         "mentality": "Normal",
         "mentality_it": "Normale",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Mixed",
         "passing_style_it": "Misti",
         "counter_attack": true,
@@ -16107,7 +16107,7 @@
         "mentality": "Attacking",
         "mentality_it": "Offensiva",
         "focus_passing": "Through the Middle",
-        "focus_passing_it": "Al Centro",
+        "focus_passing_it": "Per il centro",
         "passing_style": "Short",
         "passing_style_it": "Corti",
         "counter_attack": false,
