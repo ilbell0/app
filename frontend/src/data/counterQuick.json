@@ -212,7 +212,7 @@
   {
     "av": "4-5-1 V-Style",
     "cat": "neu",
-    "off": "3-3-1-3",
+    "off": "3-4-3",
     "neu": "4-3N-3",
     "dif": "4-5-1 V-Style"
   },
@@ -359,7 +359,7 @@
   {
     "av": "4-3-2-1 XT (Xmas Tree)",
     "cat": "neu",
-    "off": "3-1-5-1 AMC",
+    "off": "3-4-3",
     "neu": "3-1-5-1 AMC",
     "dif": "3W-2DMC-3N-1-1 Tower (Eiffel Tower)"
   },
@@ -403,7 +403,7 @@
     "cat": "neu",
     "off": "3-5-2 V (V-Style)",
     "neu": "4-2-2-2 H (Hexagon)",
-    "dif": "4-2-3-1"
+    "dif": "4-2-2-2 H (Hexagon)"
   },
   {
     "av": "4-4-1-1",

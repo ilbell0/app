@@ -130,6 +130,15 @@ def check_engine(E, names, byname):
             for field in ("mod", "alt"):
                 if s.get(field) and s[field] not in names:
                     err(f"ENGINE {av}/{sc}: {field}={s[field]!r} non è un modulo canonico")
+                elif s.get(field) and av in (byname[s[field]].get("vulnerable_to") or []):
+                    err(f"ENGINE {av}/{sc}: {field}={s[field]!r} è dichiarato VULNERABILE a {av}: counter contraddetto")
+            # il counter offensivo dovrebbe essere confermato dal reverse-lookup
+            if sc == "debole" and s.get("mod") in byname:
+                m2 = byname[s["mod"]]
+                supported = (av in (m2.get("effective_against") or [])
+                             or s["mod"] in (byname.get(av, {}).get("vulnerable_to") or []))
+                if not supported:
+                    warn(f"ENGINE {av}/debole: counter {s['mod']!r} non confermato dal reverse-lookup")
             mod = byname.get(s.get("mod"))
             if mod:
                 pos = set(mod["positions"])

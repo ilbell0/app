@@ -13725,8 +13725,8 @@ COUNTER_ENGINE = [
             'w': 'Sfrutta fasce libere. Il Butterfly non ha terzini'
         },
         'debole': {
-            'mod': '3N-5-2 F',
-            'alt': '3-5-2 V (V-Style)',
+            'mod': '4-3N-2W-1',
+            'alt': '3N-5-2 F',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -13736,13 +13736,12 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
-                'DC': '↓',
-                'ML': '↑',
                 'MC': '↑',
-                'MR': '↑',
+                'AML': '↑',
+                'AMR': '↑',
                 'ST': '—'
             },
-            'w': '5 MF attaccante vs loro 2 DMC: dominio assoluto'
+            'w': 'Counter confermato: 3 MC vincono il centro contro i 2 MC del Butterfly, AML/AMR attaccano i lati della difesa a 3'
         }
     },
     {
@@ -13926,8 +13925,8 @@ COUNTER_ENGINE = [
             'w': '3 attaccanti contro DMC+2MC: premi sulle fasce dove sono scoperti'
         },
         'debole': {
-            'mod': '3-3-1-3',
-            'alt': '3W-1-2-3W-1',
+            'mod': '3-4-3',
+            'alt': '3-3-1-3',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -13937,12 +13936,11 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
-                'DC': '↓',
-                'MC': '↑',
-                'AMC': '↑',
+                'ML': '↑',
+                'MR': '↑',
                 'ST': '—'
             },
-            'w': '3 attaccanti fanno saltare la loro linea difensiva a 4. AMC tra le linee'
+            'w': 'Counter confermato: 3 punte contro il loro unico ST, ML/MR alti schiacciano i terzini del 4-5-1'
         }
     },
     {
@@ -14127,7 +14125,7 @@ COUNTER_ENGINE = [
         },
         'debole': {
             'mod': '3N-4-3',
-            'alt': '3-4-3',
+            'alt': '3N-4-1-2',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -14220,8 +14218,8 @@ COUNTER_ENGINE = [
         'av': '4-1-4-1',
         'cat': 'neu',
         'forte': {
-            'mod': '4-2-3-1',
-            'alt': '4-5-1 V-Style',
+            'mod': '4-2-2-2 H (Hexagon)',
+            'alt': '4-1-4-1',
             'men': 'Difensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -14234,13 +14232,12 @@ COUNTER_ENGINE = [
                 'DL': '↓',
                 'DC': '↓',
                 'DR': '↓',
-                'MC': '—',
+                'MC': '↓',
                 'AML': '↑',
-                'AMC': '↑',
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': '4-1-4-1 è solido: DMC+4MF controllano. Sfrutta le fasce in contropiede'
+            'w': 'Hexagon difensivo: 2 MC schermano il centro, AML/AMR ripartono nello spazio dietro ML/MR avversari'
         },
         'pari': {
             'mod': '4-2-2-2 H (Hexagon)',
@@ -14266,7 +14263,7 @@ COUNTER_ENGINE = [
         },
         'debole': {
             'mod': '3-5-2 V (V-Style)',
-            'alt': '4-3N-3',
+            'alt': '4-2-2-2 H (Hexagon)',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -15225,8 +15222,8 @@ COUNTER_ENGINE = [
             'w': '5 MF affolla il centro vs loro 3N+2AMC. Nessun DMC avversario'
         },
         'debole': {
-            'mod': '3-1-5-1 AMC',
-            'alt': '4-3N-3',
+            'mod': '3-4-3',
+            'alt': '3-1-5-1 AMC',
             'men': 'Offensiva',
             'pass': 'Centro',
             'stile': 'Misti',
@@ -15236,14 +15233,11 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
-                'DC': '↓',
-                'DMC': '↑',
                 'ML': '↑',
-                'MC': '↑',
                 'MR': '↑',
                 'ST': '—'
             },
-            'w': 'XT senza DMC: il centro è completamente aperto. Sfonda con tutto'
+            'w': "Counter confermato: l'albero di Natale è strettissimo, il 3-4-3 allarga il campo con ML/MR senza opposizione"
         }
     },
     {
@@ -15892,8 +15886,8 @@ COUNTER_ENGINE = [
         'av': '5-1DMC-2-2',
         'cat': 'dif',
         'forte': {
-            'mod': '4-1-3W-1-1',
-            'alt': '4-1-4-1',
+            'mod': '4-4-2 C (Classic)',
+            'alt': '4-3-3',
             'men': 'Difensiva',
             'pass': 'Misto',
             'stile': 'Corti',
@@ -15904,16 +15898,16 @@ COUNTER_ENGINE = [
             'fuo': 'NO',
             'fr': {
                 'DL': '↓',
-                'DC': '↓',
                 'DR': '↓',
-                'MC': '↓',
+                'ML': '—',
+                'MR': '—',
                 'ST': '—'
             },
-            'w': 'Resta compatto col 4-1-3W-1-1 e riparti in contropiede'
+            'w': 'Blocco basso col 4-4-2: la difesa a 5 esce male, ML/MR pronti a ripartire in contropiede'
         },
         'pari': {
-            'mod': '4-1-3W-1-1',
-            'alt': '4-1-4-1',
+            'mod': '4-4-2 C (Classic)',
+            'alt': '4-3-3',
             'men': 'Normale',
             'pass': 'Misto',
             'stile': 'Corti',
@@ -15925,14 +15919,13 @@ COUNTER_ENGINE = [
             'fr': {
                 'ML': '↑',
                 'MR': '↑',
-                'DMC': '↓',
                 'ST': '—'
             },
-            'w': 'Centrocampo versatile per scardinare la densità della difesa a 5'
+            'w': 'Ampiezza di ML/MR contro la difesa a 5 stretta; il loro centrocampo è il solo DMC: 2 MC dominano'
         },
         'debole': {
-            'mod': '4-1-3W-1-1',
-            'alt': '4-1-4-1',
+            'mod': '4-3-3',
+            'alt': '4-4-2 C (Classic)',
             'men': 'Offensiva',
             'pass': 'Misto',
             'stile': 'Corti',
@@ -15942,12 +15935,12 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
-                'DMC': '↓',
+                'MC': '↑',
+                'AML': '↑',
+                'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Spingi alto col 4-1-3W-1-1 e domina con pressing aggressivo'
+            'w': 'Centrocampo avversario inesistente (solo DMC): 3 MC comandano, ali e Falso 9 smontano i 3 DC'
         }
     },
     {
@@ -20409,7 +20402,7 @@ COUNTER_QUICK = [
     {
         'av': '4-5-1 V-Style',
         'cat': 'neu',
-        'off': '3-3-1-3',
+        'off': '3-4-3',
         'neu': '4-3N-3',
         'dif': '4-5-1 V-Style'
     },
@@ -20556,7 +20549,7 @@ COUNTER_QUICK = [
     {
         'av': '4-3-2-1 XT (Xmas Tree)',
         'cat': 'neu',
-        'off': '3-1-5-1 AMC',
+        'off': '3-4-3',
         'neu': '3-1-5-1 AMC',
         'dif': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'
     },
@@ -20600,7 +20593,7 @@ COUNTER_QUICK = [
         'cat': 'neu',
         'off': '3-5-2 V (V-Style)',
         'neu': '4-2-2-2 H (Hexagon)',
-        'dif': '4-2-3-1'
+        'dif': '4-2-2-2 H (Hexagon)'
     },
     {
         'av': '4-4-1-1',
@@ -20780,7 +20773,7 @@ MATCHUP_MATRIX = [
     {
         'opponent': '3N-2-2-2-1 B (Butterfly 3N)',
         'category': 'att',
-        'counter_offensive': '3N-5-2 F',
+        'counter_offensive': '4-3N-2W-1',
         'counter_neutral': '4-3N-2W-1',
         'counter_defensive': '3N-5-2 F'
     },
@@ -20801,7 +20794,7 @@ MATCHUP_MATRIX = [
     {
         'opponent': '4-5-1 V-Style',
         'category': 'neu',
-        'counter_offensive': '3-3-1-3',
+        'counter_offensive': '3-4-3',
         'counter_neutral': '4-3N-3',
         'counter_defensive': '4-5-1 V-Style'
     },
@@ -20838,7 +20831,7 @@ MATCHUP_MATRIX = [
         'category': 'neu',
         'counter_offensive': '3-5-2 V (V-Style)',
         'counter_neutral': '4-2-2-2 H (Hexagon)',
-        'counter_defensive': '4-2-3-1'
+        'counter_defensive': '4-2-2-2 H (Hexagon)'
     },
     {
         'opponent': '4-4-1-1',
@@ -20934,7 +20927,7 @@ MATCHUP_MATRIX = [
     {
         'opponent': '4-3-2-1 XT (Xmas Tree)',
         'category': 'neu',
-        'counter_offensive': '3-1-5-1 AMC',
+        'counter_offensive': '3-4-3',
         'counter_neutral': '3-1-5-1 AMC',
         'counter_defensive': '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'
     },
@@ -21011,9 +21004,9 @@ MATCHUP_MATRIX = [
     {
         'opponent': '5-1DMC-2-2',
         'category': 'dif',
-        'counter_offensive': '4-1-3W-1-1',
-        'counter_neutral': '4-1-3W-1-1',
-        'counter_defensive': '4-1-3W-1-1'
+        'counter_offensive': '4-3-3',
+        'counter_neutral': '4-4-2 C (Classic)',
+        'counter_defensive': '4-4-2 C (Classic)'
     },
     {
         'opponent': '4-1-3-1W-1',
