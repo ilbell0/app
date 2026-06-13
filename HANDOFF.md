@@ -39,7 +39,8 @@ C:\Users\habet\progetti\app-emergent\
 ├── tools/
 │   ├── datasets.py          # estrazione/scrittura dataset in server.py (via ast)
 │   ├── sync_data.py         # rigenera frontend/src/data/*.json + index.ts da server.py
-│   └── validate_data.py     # validatore invarianti (0 errori = si può committare)
+│   ├── validate_data.py     # validatore invarianti (0 errori = si può committare)
+│   └── tactical_audit.py    # report QUALITÀ tattica dei counter (non bloccante)
 ├── tests/, test_reports/    # Test backend
 └── _gen_*.py                # Script generatori temporanei (gitignorati, NON committare)
 ```
@@ -215,6 +216,14 @@ notebooklm ask "..." --notebook 7b0eba98 2>&1
 - Riferimenti tra moduli canonici; niente contraddizioni A-batte-B/B-batte-A
 - MATCHUP_MATRIX derivata da COUNTER_ENGINE; COUNTER_QUICK derivata dalla matrice
 - Accenti italiani non strippati (più/è/perché…) nei campi `*_it` e `w`
+- Counter offensivo confermato dal reverse-lookup; counter mai `vulnerable_to` l'avversario
+
+### Audit tattico (qualità, non bloccante)
+`python tools/tactical_audit.py [--severity ALTA|MEDIA|INFO]` valuta la sensatezza
+di ogni counter coi principi di Top Eleven (dominio del centrocampo con eccezioni
+per difese a 3 e per lo scenario difensivo; mentalità coerente con lo scenario,
+con eccezione per le difese a 5; struttura off/dif). Stato al 13/06: **0 ALTA,
+0 MEDIA, 45 INFO** su 107 voci — nessun problema tattico di sostanza.
 
 ### Stesso schema per ogni nuovo dataset
 ```
@@ -241,7 +250,7 @@ Già proposte all'utente, non ancora implementate:
 - **+5 SEASON_STORIES** (ne abbiamo solo 6, dataset poco popolato)
 - **Aggiornamento TRAINING_GUIDE** (ferma a 9 voci - una per posizione, potrebbe arrivare a 20+ con dettagli per ruolo specifico)
 - **Riempimento ARROW_TACTICS** — coprire tutte le 125 formazioni (attualmente 24)
-- **32 voci engine con "tripletta pigra"** (off=neu=dif identici) su moduli rari: vanno verificate con le fonti NotebookLM una a una e diversificate. I 7 moduli meta più giocati (4-4-2, 4-3-3, 4-2-3-1, 4-1-4-1, 4-5-1 V-Style, Butterfly, Hexagon) sono già stati verificati con le fonti il 13/06 e hanno 3 scenari distinti. Elenco delle 32: vedi `python tools/validate_data.py` o filtra l'engine per `len({forte.mod, pari.mod, debole.mod})==1`
+- **45 INFO dell'audit tattico** (`python tools/tactical_audit.py`) — migliorie opzionali su moduli rari: counter molto stretti contro difese a 3, inversioni di struttura offensivo/difensivo, 5 coppie residue (off=neu) dove l'avversario ha una sola alternativa nel reverse-lookup. Non sono errori: il modulo consigliato è sempre un counter validato. Per perfezionarle servono le fonti NotebookLM una a una.
 
 Idee mie (Claude) per future sessioni:
 - **Pulsante Feedback in-app** → Google Form
