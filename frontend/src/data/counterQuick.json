@@ -2,9 +2,9 @@
   {
     "av": "3N-5-2 F",
     "cat": "att",
-    "off": "3-1-4-2",
+    "off": "4-2-3-1",
     "neu": "4-3N-2W-1",
-    "dif": "4-2-3-1"
+    "dif": "3-1-4-2"
   },
   {
     "av": "3W-5-2 F",
@@ -23,9 +23,9 @@
   {
     "av": "3W-5-1-1",
     "cat": "att",
-    "off": "3-1-3N-2W-1",
+    "off": "3N-2W-2N-1-2",
     "neu": "4-1-2-1-2 ND (Narrow Diamond)",
-    "dif": "3N-2W-2N-1-2"
+    "dif": "3-1-3N-2W-1"
   },
   {
     "av": "3W-4-3",
@@ -53,7 +53,7 @@
     "cat": "att",
     "off": "3-5-2 V (V-Style)",
     "neu": "4-5-1 V-Style",
-    "dif": "3-5-2 V (V-Style)"
+    "dif": "4-5-1 V-Style"
   },
   {
     "av": "3N-1-4-2",
@@ -66,15 +66,15 @@
     "av": "3N-5-2 V",
     "cat": "att",
     "off": "3-1-3N-3",
-    "neu": "4-3N-2W-1",
-    "dif": "3-2-2-2-1 B (Butterfly)"
+    "neu": "4-2-2-2 H (Hexagon)",
+    "dif": "4-3N-2W-1"
   },
   {
     "av": "3W-5-2 V",
     "cat": "att",
-    "off": "3-1-3N-1-2",
-    "neu": "4-2-2-2 H (Hexagon)",
-    "dif": "3-2-2-2-1 B (Butterfly)"
+    "off": "4-2-2-2 H (Hexagon)",
+    "neu": "3-2-2-2-1 B (Butterfly)",
+    "dif": "3-1-3N-1-2"
   },
   {
     "av": "3W-2N-3W-2",
@@ -86,16 +86,16 @@
   {
     "av": "3N-2(DMC/MC)-3W-2",
     "cat": "att",
-    "off": "3-1-4-2",
+    "off": "3-2-2-2-1 B (Butterfly)",
     "neu": "4-1-2-1-2 ND (Narrow Diamond)",
-    "dif": "3-2-2-2-1 B (Butterfly)"
+    "dif": "3-1-4-2"
   },
   {
     "av": "3W-2(DMC/MC)-3W-2",
     "cat": "att",
-    "off": "3-1-4-2",
+    "off": "3-2-2-2-1 B (Butterfly)",
     "neu": "4-4-2 C (Classic)",
-    "dif": "3-2-2-2-1 B (Butterfly)"
+    "dif": "3-1-4-2"
   },
   {
     "av": "3N-3(DMC/MC)-2W-2",
@@ -107,23 +107,23 @@
   {
     "av": "3W-2DMC-3W-1-1 ML (Maple Leaf)",
     "cat": "att",
-    "off": "3N-1-4-2",
+    "off": "3-2-2-2-1 B (Butterfly)",
     "neu": "4-5-1 V-Style",
-    "dif": "3-2-2-2-1 B (Butterfly)"
+    "dif": "3N-1-4-2"
   },
   {
     "av": "3W-2N-2W-1-2",
     "cat": "att",
-    "off": "3W-5-2 V",
+    "off": "3-2-2-2-1 B (Butterfly)",
     "neu": "4-5-1 V-Style",
-    "dif": "3-2-2-2-1 B (Butterfly)"
+    "dif": "3W-5-2 V"
   },
   {
     "av": "3W-2N-2N-2W-1",
     "cat": "att",
-    "off": "3-4-1-2",
+    "off": "3N-2W-3N-2",
     "neu": "4-4-2 C (Classic)",
-    "dif": "3N-2W-3N-2"
+    "dif": "3-4-1-2"
   },
   {
     "av": "3N-2N-1-2W-2",
@@ -156,9 +156,9 @@
   {
     "av": "3N-1-3W-2N-1",
     "cat": "att",
-    "off": "3-5-1-1 V",
+    "off": "3-2-2-2-1 B (Butterfly)",
     "neu": "4-5-1 V-Style",
-    "dif": "3-2-2-2-1 B (Butterfly)"
+    "dif": "3-5-1-1 V"
   },
   {
     "av": "3W-1-3W-1-2",
@@ -171,15 +171,15 @@
     "av": "3N-1-3W-1-2 D (Dandelion)",
     "cat": "att",
     "off": "3-5-1-1 V",
-    "neu": "4-4-2 C (Classic)",
-    "dif": "4-5-1 V-Style"
+    "neu": "4-5-1 V-Style",
+    "dif": "4-4-2 C (Classic)"
   },
   {
     "av": "3N-1-4-1-1",
     "cat": "att",
-    "off": "3-1-4-1-1",
+    "off": "4-5-1 V-Style",
     "neu": "4-1-2-1-2 ND (Narrow Diamond)",
-    "dif": "4-5-1 V-Style"
+    "dif": "3-1-4-1-1"
   },
   {
     "av": "3W-1-3N-1-2",
@@ -191,9 +191,9 @@
   {
     "av": "3N-4-1-2",
     "cat": "att",
-    "off": "3-1-3N-2W-1",
+    "off": "3N-2W-2N-1-2",
     "neu": "4-1-2-1-2 ND (Narrow Diamond)",
-    "dif": "3N-2W-2N-1-2"
+    "dif": "3-1-3N-2W-1"
   },
   {
     "av": "3W-4-1-2",
@@ -205,9 +205,9 @@
   {
     "av": "4-5-1 F (Flat)",
     "cat": "neu",
-    "off": "3-5-2 F (Flat)",
-    "neu": "3-5-2 V (V-Style)",
-    "dif": "4-1-4-1"
+    "off": "3-5-2 V (V-Style)",
+    "neu": "4-1-4-1",
+    "dif": "3-5-2 F (Flat)"
   },
   {
     "av": "4-5-1 V-Style",
@@ -234,7 +234,7 @@
     "av": "4-1-2-1-2 ND (Narrow Diamond)",
     "cat": "neu",
     "off": "3N-5-2 V",
-    "neu": "3N-5-2 V",
+    "neu": "4-5-1 V-Style",
     "dif": "4-5-1 V-Style"
   },
   {
@@ -275,9 +275,9 @@
   {
     "av": "4-2N-1-2W-1",
     "cat": "neu",
-    "off": "3W-1-4-1-1",
+    "off": "5-2-2(AML-AMR)-1",
     "neu": "4-4-2 C (Classic)",
-    "dif": "5-2-2(AML-AMR)-1"
+    "dif": "3W-1-4-1-1"
   },
   {
     "av": "4-3W-3",
@@ -304,8 +304,8 @@
     "av": "4-1-3N-1-1",
     "cat": "neu",
     "off": "3-1-4-2",
-    "neu": "3-1-4-1-1",
-    "dif": "4-5-1 V-Style"
+    "neu": "4-5-1 V-Style",
+    "dif": "3-1-4-1-1"
   },
   {
     "av": "4-1-3W-2",
@@ -318,22 +318,22 @@
     "av": "4-1-3W-1-1",
     "cat": "neu",
     "off": "3-1-4-1-1",
-    "neu": "4-4-1-1",
-    "dif": "5-1DMC-2-2"
+    "neu": "5-1DMC-2-2",
+    "dif": "4-4-1-1"
   },
   {
     "av": "4-2(DMC)-3W-1",
     "cat": "neu",
     "off": "3-1-3-2W-1",
-    "neu": "4-1-4-1",
-    "dif": "3-2-2-2-1 B (Butterfly)"
+    "neu": "3-2-2-2-1 B (Butterfly)",
+    "dif": "4-1-4-1"
   },
   {
     "av": "4-2-3N(AMC)-1",
     "cat": "neu",
-    "off": "3-1-4-2",
+    "off": "3W-2N-3W-2",
     "neu": "4-4-2 C (Classic)",
-    "dif": "3W-2N-3W-2"
+    "dif": "3-1-4-2"
   },
   {
     "av": "4-2-3W-1",
@@ -360,8 +360,8 @@
     "av": "4-3-2-1 XT (Xmas Tree)",
     "cat": "neu",
     "off": "3-4-3",
-    "neu": "3-1-5-1 AMC",
-    "dif": "3W-2DMC-3N-1-1 Tower (Eiffel Tower)"
+    "neu": "4-5-1 F (Flat)",
+    "dif": "4-1-4-1"
   },
   {
     "av": "4-3N-2N-1",
@@ -374,7 +374,7 @@
     "av": "4-3N-2W-1",
     "cat": "neu",
     "off": "3-1-4-1-1",
-    "neu": "3-1-4-1-1",
+    "neu": "4-4-1-1",
     "dif": "4-4-1-1"
   },
   {
@@ -409,64 +409,64 @@
     "av": "4-4-1-1",
     "cat": "neu",
     "off": "3-5-2 F (Flat)",
-    "neu": "3-5-2 F (Flat)",
+    "neu": "4-5-1 V-Style",
     "dif": "4-5-1 V-Style"
   },
   {
     "av": "5-4-1 F (Flat)",
     "cat": "dif",
-    "off": "3-5-2 F (Flat)",
+    "off": "4-3N-2W-1",
     "neu": "4-4-2 C (Classic)",
-    "dif": "4-3N-2W-1"
+    "dif": "3-5-2 F (Flat)"
   },
   {
     "av": "5-3N-2",
     "cat": "dif",
     "off": "3N-4-1-2",
-    "neu": "3N-4-1-2",
+    "neu": "4-4-2 C (Classic)",
     "dif": "4-4-2 C (Classic)"
   },
   {
     "av": "5-3W-2",
     "cat": "dif",
-    "off": "3N-5-2 V",
-    "neu": "3N-4-1-2",
-    "dif": "4-4-2 C (Classic)"
+    "off": "3N-4-1-2",
+    "neu": "4-4-2 C (Classic)",
+    "dif": "3N-5-2 V"
   },
   {
     "av": "5-1-3N-1",
     "cat": "dif",
-    "off": "3N-5-2 V",
+    "off": "3N-3W-3W-1",
     "neu": "4-1-3-1-1",
-    "dif": "3N-3W-3W-1"
+    "dif": "3N-5-2 V"
   },
   {
     "av": "5-1-3W-1",
     "cat": "dif",
-    "off": "3N-5-2 V",
+    "off": "3N-2W-3W-2",
     "neu": "4-5-1 F (Flat)",
-    "dif": "3N-2W-3W-2"
+    "dif": "3N-5-2 V"
   },
   {
     "av": "5-1-2N-1-1",
     "cat": "dif",
-    "off": "3N-5-2 V",
+    "off": "3N-2W-2N-2W-1",
     "neu": "4-1-3-2",
-    "dif": "3N-2W-2N-2W-1"
+    "dif": "3N-5-2 V"
   },
   {
     "av": "5-1-2W-1-1",
     "cat": "dif",
-    "off": "3N-5-2 V",
+    "off": "3N-2W-2N-2W-1",
     "neu": "4-1-3-2",
-    "dif": "3N-2W-2N-2W-1"
+    "dif": "3N-5-2 V"
   },
   {
     "av": "5-2-2W-1",
     "cat": "dif",
-    "off": "3W-1-2-3W-1",
+    "off": "3N-2W-3N-2",
     "neu": "4-4-2 C (Classic)",
-    "dif": "3N-2W-3N-2"
+    "dif": "3W-1-2-3W-1"
   },
   {
     "av": "5-2W-2N-1",
@@ -478,16 +478,16 @@
   {
     "av": "5-2-2N-1",
     "cat": "dif",
-    "off": "3N-1-3W-1-2",
+    "off": "3W-2-3W-2",
     "neu": "4-2-2-1-1",
-    "dif": "3W-2-3W-2"
+    "dif": "3N-1-3W-1-2"
   },
   {
     "av": "5-2-1-2 X (X-Style)",
     "cat": "dif",
-    "off": "3N-1-4-2",
+    "off": "4-1-2N-1-2",
     "neu": "3N-1-4-2",
-    "dif": "4-1-2N-1-2"
+    "dif": "3N-1-4-2"
   },
   {
     "av": "5-1-1-1-2",
@@ -506,9 +506,9 @@
   {
     "av": "3N-2W-2-1-2",
     "cat": "dif",
-    "off": "3-4-1-2",
-    "neu": "4-4-2 C (Classic)",
-    "dif": "3W-3N-3W-1"
+    "off": "3W-3N-3W-1",
+    "neu": "4-1-2-1-2 ND (Narrow Diamond)",
+    "dif": "4-4-2 C (Classic)"
   },
   {
     "av": "3-2-2-2-1 B (Butterfly)",

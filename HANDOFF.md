@@ -226,11 +226,13 @@ con eccezione per le difese a 5; struttura off/dif). Stato al 13/06: **0 ALTA,
 0 MEDIA, 47 INFO** su 107 voci — nessun problema tattico di sostanza.
 
 ### Verifica con le fonti (13/06)
-Tutti i counter dei moduli a rischio (32 ex-triplette + 7 meta) verificati col
-notebook NotebookLM `7b0eba98` in 4 batch. Dove le fonti indicano un counter
-principale, questo è collocato nello scenario **neutro** (risposta standard);
-off/dif prendono le alternative dal reverse-lookup. I moduli non trattati dalle
-fonti mantengono la diversificazione automatica (comunque counter validati).
+**84 dei 107 moduli** hanno il counter principale verificato col notebook
+NotebookLM `7b0eba98` (11 batch totali): è collocato nello scenario **neutro**
+(risposta standard) con la nota `w` che cita la motivazione tattica dalle fonti
+(`"Counter standard (fonte): … , <perché>"`); off/dif prendono le alternative
+dal reverse-lookup. I 5 moduli che le fonti non trattano (3-1-3-1-2, 3-1-3-2-1
+Tiki-taka, 3-1-5-1 AMC, 3W-2N-3N-2, 5-1DMC-2-2) mantengono counter validati dal
+reverse-lookup. Le motivazioni grezze delle fonti sono nel log di sessione.
 
 ### Stesso schema per ogni nuovo dataset
 ```

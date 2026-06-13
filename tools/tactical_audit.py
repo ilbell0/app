@@ -57,9 +57,11 @@ def audit():
             # ci si chiude di proposito, non si contende il centrocampo.
             cdiff = cp["central"] - ap["central"]
             # contro una difesa a 3 bastano 2 giocatori larghi (anche ML/MR) per
-            # sfruttare le corsie scoperte dai braccetti
+            # sfruttare le corsie scoperte dai braccetti; e un counter a difesa 5
+            # rinuncia di proposito al centro per chiudersi e ripartire
             wins_on_flanks = ap["dif"] == 3 and cp["wide"] >= 2
-            if cdiff <= -2 and cp["wide"] <= ap["wide"] and label != "DIF" and not wins_on_flanks:
+            low_block = cp["dif"] >= 5
+            if cdiff <= -2 and cp["wide"] <= ap["wide"] and label != "DIF" and not wins_on_flanks and not low_block:
                 findings.append(("ALTA", av, label,
                     f"counter {mod}: centro {cp['central']} vs {ap['central']} dell'avversario "
                     f"(-{abs(cdiff)}) e nessun vantaggio sulle fasce -> rischia di perdere il centrocampo"))
