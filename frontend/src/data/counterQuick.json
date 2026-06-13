@@ -213,14 +213,14 @@
     "av": "4-5-1 V-Style",
     "cat": "neu",
     "off": "3-4-3",
-    "neu": "4-3N-3",
-    "dif": "4-5-1 V-Style"
+    "neu": "4-3N-2W-1",
+    "dif": "3N-2W-3N-2"
   },
   {
     "av": "4-4-2 C (Classic)",
     "cat": "neu",
-    "off": "4-1-2-1-2 ND (Narrow Diamond)",
-    "neu": "4-1-2-1-2 ND (Narrow Diamond)",
+    "off": "3N-4-1-2",
+    "neu": "4-3W-1-2",
     "dif": "3-2-2-2-1 B (Butterfly)"
   },
   {
@@ -381,8 +381,8 @@
     "av": "4-2-2-2 H (Hexagon)",
     "cat": "neu",
     "off": "3N-4-3",
-    "neu": "3N-4-1-2",
-    "dif": "4-5-1 V-Style"
+    "neu": "4-5-1 V-Style",
+    "dif": "3-2-2-2-1 B (Butterfly)"
   },
   {
     "av": "4-1-2(AMC)-3",
@@ -403,7 +403,7 @@
     "cat": "neu",
     "off": "3-5-2 V (V-Style)",
     "neu": "4-2-2-2 H (Hexagon)",
-    "dif": "4-2-2-2 H (Hexagon)"
+    "dif": "3-2-2-2-1 B (Butterfly)"
   },
   {
     "av": "4-4-1-1",
@@ -514,7 +514,7 @@
     "av": "3-2-2-2-1 B (Butterfly)",
     "cat": "dif",
     "off": "3-4-1-2",
-    "neu": "3-4-1-2",
-    "dif": "3-4-1-2"
+    "neu": "4-2-2-2 H (Hexagon)",
+    "dif": "4-3N-2W-1"
   }
 ]

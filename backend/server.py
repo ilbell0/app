@@ -331,7 +331,7 @@ FORMATIONS = [
             }
         },
         'defense_count': 4,
-        'vulnerable_to': ['3-2-2-2-1 B (Butterfly)', '4-1-2-1-2 ND (Narrow Diamond)'],
+        'vulnerable_to': ['3-2-2-2-1 B (Butterfly)', '3N-4-1-2', '4-1-2-1-2 ND (Narrow Diamond)'],
         'effective_against': [
             '3-1-4-2',
             '4-2-2-1-1',
@@ -6496,7 +6496,7 @@ FORMATIONS = [
                 }
             }
         },
-        'effective_against': ['4-2-2-2 H (Hexagon)', '5-3N-2', '5-3W-2'],
+        'effective_against': ['4-2-2-2 H (Hexagon)', '4-4-2 C (Classic)', '5-3N-2', '5-3W-2'],
         'vulnerable_to': ['3-1-3N-2W-1', '4-1-2-1-2 ND (Narrow Diamond)', '3N-2W-2N-1-2'],
         'defense_count': 3
     },
@@ -13834,8 +13834,8 @@ COUNTER_ENGINE = [
             'w': '4-4-2 forte in ampiezza: Butterfly copre tutto. Evita di allargare il gioco'
         },
         'pari': {
-            'mod': '4-1-2-1-2 ND (Narrow Diamond)',
-            'alt': '4-3N-2W-1',
+            'mod': '4-3W-1-2',
+            'alt': '4-1-2-1-2 ND (Narrow Diamond)',
             'men': 'Offensiva',
             'pass': 'Centro',
             'stile': 'Corti',
@@ -13845,19 +13845,16 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'SI',
             'fr': {
-                'DL': '↓',
-                'DC': '↓',
-                'DR': '↓',
-                'DMC': '↓',
-                'MC': '—',
-                'AMC': '↑',
-                'ST': '↑'
+                'ML': '↑',
+                'MR': '↑',
+                'AMC': '—',
+                'ST': '—'
             },
-            'w': 'ND attacca il centro debole del 4-4-2. AMC e ST con frecce avanti'
+            'w': 'Fonte: il 4-3W-1-2 è il counter neutro del 4-4-2'
         },
         'debole': {
-            'mod': '4-1-2-1-2 ND (Narrow Diamond)',
-            'alt': '3-5-2 F (Flat)',
+            'mod': '3N-4-1-2',
+            'alt': '4-1-2-1-2 ND (Narrow Diamond)',
             'men': 'Molto Offensiva',
             'pass': 'Centro',
             'stile': 'Corti',
@@ -13867,23 +13864,20 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'SI',
             'fr': {
-                'DL': '↑',
-                'DC': '↓',
-                'DR': '↑',
-                'DMC': '—',
-                'MC': '↑',
+                'ML': '↑',
+                'MR': '↑',
                 'AMC': '↑',
-                'ST': '↑'
+                'ST': '—'
             },
-            'w': 'Schiaccia il centro: il 4-4-2 non ha AMC. DMC neutro per trasformarsi in MC'
+            'w': 'Fonte: il 3N-4-1-2 è il counter offensivo del 4-4-2'
         }
     },
     {
         'av': '4-5-1 V-Style',
         'cat': 'neu',
         'forte': {
-            'mod': '4-5-1 V-Style',
-            'alt': '4-2-3-1',
+            'mod': '3N-2W-3N-2',
+            'alt': '3-2-2-2-1 B (Butterfly)',
             'men': 'Difensiva',
             'pass': 'Fasce',
             'stile': 'Lunghi',
@@ -13893,20 +13887,16 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'DL': '↓',
                 'DC': '↓',
-                'DR': '↓',
-                'DMC': '↓',
-                'MC': '—',
-                'AML': '↑',
-                'AMR': '↑',
+                'ML': '—',
+                'MR': '—',
                 'ST': '—'
             },
-            'w': "Speculare: chi sbaglia primo perde. Sii paziente, aspetta l'errore avversario"
+            'w': 'Fonte: il 3N-2W-3N-2 è il counter difensivo del 4-5-1 V-Style (Butterfly valida alternativa)'
         },
         'pari': {
-            'mod': '4-3N-3',
-            'alt': '4-3N-2W-1',
+            'mod': '4-3N-2W-1',
+            'alt': '4-3N-3',
             'men': 'Normale',
             'pass': 'Misto',
             'stile': 'Misti',
@@ -13916,13 +13906,12 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'DL': '—',
-                'DC': '↓',
-                'DR': '—',
-                'MC': '—',
+                'MC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
                 'ST': '—'
             },
-            'w': '3 attaccanti contro DMC+2MC: premi sulle fasce dove sono scoperti'
+            'w': 'Fonte: il 4-3N-2W-1 è il counter neutro del 4-5-1 V-Style'
         },
         'debole': {
             'mod': '3-4-3',
@@ -14081,8 +14070,8 @@ COUNTER_ENGINE = [
         'av': '4-2-2-2 H (Hexagon)',
         'cat': 'neu',
         'forte': {
-            'mod': '4-5-1 V-Style',
-            'alt': '3-2-2-2-1 B (Butterfly)',
+            'mod': '3-2-2-2-1 B (Butterfly)',
+            'alt': '4-5-1 V-Style',
             'men': 'Difensiva',
             'pass': 'Centro',
             'stile': 'Lunghi',
@@ -14092,20 +14081,17 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'DL': '↓',
                 'DC': '↓',
-                'DR': '↓',
                 'DMC': '↓',
-                'MC': '—',
                 'AML': '↑',
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Hexagon con AML/AMR alti: DMC fondamentale schermo al centro'
+            'w': "Fonte: il Butterfly è il counter difensivo dell'Hexagon"
         },
         'pari': {
-            'mod': '3N-4-1-2',
-            'alt': '4-5-1 V-Style',
+            'mod': '4-5-1 V-Style',
+            'alt': '3N-4-1-2',
             'men': 'Normale',
             'pass': 'Centro',
             'stile': 'Misti',
@@ -14115,13 +14101,13 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'DC': '↓',
+                'DMC': '↓',
                 'MC': '↓',
-                'ML': '—',
-                'MR': '—',
+                'AML': '↑',
+                'AMR': '↑',
                 'ST': '—'
             },
-            'w': '4 MC vs loro 2 MC: sovraffolla il centro e bypassa le loro ali'
+            'w': "Fonte: il 4-5-1 V-Style è la risposta neutra standard all'Hexagon, DMC a schermo del centro"
         },
         'debole': {
             'mod': '3N-4-3',
@@ -14218,8 +14204,8 @@ COUNTER_ENGINE = [
         'av': '4-1-4-1',
         'cat': 'neu',
         'forte': {
-            'mod': '4-2-2-2 H (Hexagon)',
-            'alt': '4-1-4-1',
+            'mod': '3-2-2-2-1 B (Butterfly)',
+            'alt': '4-2-2-2 H (Hexagon)',
             'men': 'Difensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -14229,15 +14215,13 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'DL': '↓',
                 'DC': '↓',
-                'DR': '↓',
-                'MC': '↓',
+                'DMC': '↓',
                 'AML': '↑',
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Hexagon difensivo: 2 MC schermano il centro, AML/AMR ripartono nello spazio dietro ML/MR avversari'
+            'w': 'Fonte: il Butterfly è il counter difensivo del 4-1-4-1. I DMC schermano, AML/AMR ripartono'
         },
         'pari': {
             'mod': '4-2-2-2 H (Hexagon)',
@@ -15317,8 +15301,8 @@ COUNTER_ENGINE = [
         'cat': 'neu',
         'meta': True,
         'forte': {
-            'mod': '4-4-2 C (Classic)',
-            'alt': '4-1-3-1-1',
+            'mod': '4-1-3-1-1',
+            'alt': '4-4-2 C (Classic)',
             'men': 'Difensiva',
             'pass': 'Misto',
             'stile': 'Lunghi',
@@ -15328,19 +15312,16 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'DL': '↓',
-                'DC': '↓',
-                'DR': '↓',
+                'DMC': '↓',
                 'MC': '↓',
-                'ML': '—',
-                'MR': '—',
+                'AMC': '—',
                 'ST': '—'
             },
-            'w': "Compatto col 4-4-2. Lanci lunghi alla coppia d'attacco contro tridenti veloci"
+            'w': 'Fonte: il 4-1-3-1-1 arretra DMC e MC per togliere lo spazio tra le linee al tridente'
         },
         'pari': {
-            'mod': '4-4-2 C (Classic)',
-            'alt': '4-1-3-1-1',
+            'mod': '4-2-3-1',
+            'alt': '4-4-2 C (Classic)',
             'men': 'Normale',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -15350,18 +15331,16 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'DL': '—',
-                'DC': '—',
-                'DR': '—',
-                'ML': '↑',
-                'MC': '—',
-                'MR': '↑',
+                'MC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
+                'AMC': '—',
                 'ST': '—'
             },
-            'w': 'Densità centrale a 4 in mediana. Le tue fasce attaccano i loro terzini'
+            'w': 'Fonte: il 4-2-3-1 con DMC domina i 3 MC del 4-3-3 (4 centrocampisti contro 3)'
         },
         'debole': {
-            'mod': '4-1-3-2',
+            'mod': '4-4-2 C (Classic)',
             'alt': '4-2-3-1',
             'men': 'Offensiva',
             'pass': 'Centro',
@@ -15372,13 +15351,11 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'SI',
             'fr': {
-                'DL': '↑',
-                'DR': '↑',
-                'DMC': '—',
-                'MC': '↑',
+                'ML': '↑',
+                'MR': '↑',
                 'ST': '↑'
             },
-            'w': 'Sovraccarica il centro col DMC ancora. Pressing alto sui loro DC'
+            'w': 'Fonte: il 4-4-2 è il counter offensivo del 4-3-3, può segnare di più sfruttando le fasce'
         }
     },
     {
@@ -17187,8 +17164,8 @@ COUNTER_ENGINE = [
         'av': '3-2-2-2-1 B (Butterfly)',
         'cat': 'dif',
         'forte': {
-            'mod': '3-4-1-2',
-            'alt': '4-2-2-2 H (Hexagon)',
+            'mod': '4-3N-2W-1',
+            'alt': '3-4-1-2',
             'men': 'Difensiva',
             'pass': 'Misto',
             'stile': 'Lunghi',
@@ -17198,17 +17175,16 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↓',
-                'DC': '↓',
-                'MR': '↓',
                 'MC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Contro avversari più forti, resta compatto col 3-4-1-2 e riparti in contropiede'
+            'w': 'Fonte: blocco a 3 MC per schermare il centro del Butterfly e colpire sulle corsie'
         },
         'pari': {
-            'mod': '3-4-1-2',
-            'alt': '4-2-2-2 H (Hexagon)',
+            'mod': '4-2-2-2 H (Hexagon)',
+            'alt': '4-3N-2W-1',
             'men': 'Normale',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -17218,12 +17194,12 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
                 'MC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Aggressivita centrale per superare il doppio schermo difensivo'
+            'w': "Fonte: l'Hexagon è il counter neutro del Butterfly (AML/AMR sfruttano i lati della difesa a 3)"
         },
         'debole': {
             'mod': '3-4-1-2',
@@ -20403,14 +20379,14 @@ COUNTER_QUICK = [
         'av': '4-5-1 V-Style',
         'cat': 'neu',
         'off': '3-4-3',
-        'neu': '4-3N-3',
-        'dif': '4-5-1 V-Style'
+        'neu': '4-3N-2W-1',
+        'dif': '3N-2W-3N-2'
     },
     {
         'av': '4-4-2 C (Classic)',
         'cat': 'neu',
-        'off': '4-1-2-1-2 ND (Narrow Diamond)',
-        'neu': '4-1-2-1-2 ND (Narrow Diamond)',
+        'off': '3N-4-1-2',
+        'neu': '4-3W-1-2',
         'dif': '3-2-2-2-1 B (Butterfly)'
     },
     {
@@ -20571,8 +20547,8 @@ COUNTER_QUICK = [
         'av': '4-2-2-2 H (Hexagon)',
         'cat': 'neu',
         'off': '3N-4-3',
-        'neu': '3N-4-1-2',
-        'dif': '4-5-1 V-Style'
+        'neu': '4-5-1 V-Style',
+        'dif': '3-2-2-2-1 B (Butterfly)'
     },
     {
         'av': '4-1-2(AMC)-3',
@@ -20593,7 +20569,7 @@ COUNTER_QUICK = [
         'cat': 'neu',
         'off': '3-5-2 V (V-Style)',
         'neu': '4-2-2-2 H (Hexagon)',
-        'dif': '4-2-2-2 H (Hexagon)'
+        'dif': '3-2-2-2-1 B (Butterfly)'
     },
     {
         'av': '4-4-1-1',
@@ -20704,8 +20680,8 @@ COUNTER_QUICK = [
         'av': '3-2-2-2-1 B (Butterfly)',
         'cat': 'dif',
         'off': '3-4-1-2',
-        'neu': '3-4-1-2',
-        'dif': '3-4-1-2'
+        'neu': '4-2-2-2 H (Hexagon)',
+        'dif': '4-3N-2W-1'
     }
 ]
 
@@ -20787,16 +20763,16 @@ MATCHUP_MATRIX = [
     {
         'opponent': '4-4-2 C (Classic)',
         'category': 'neu',
-        'counter_offensive': '4-1-2-1-2 ND (Narrow Diamond)',
-        'counter_neutral': '4-1-2-1-2 ND (Narrow Diamond)',
+        'counter_offensive': '3N-4-1-2',
+        'counter_neutral': '4-3W-1-2',
         'counter_defensive': '3-2-2-2-1 B (Butterfly)'
     },
     {
         'opponent': '4-5-1 V-Style',
         'category': 'neu',
         'counter_offensive': '3-4-3',
-        'counter_neutral': '4-3N-3',
-        'counter_defensive': '4-5-1 V-Style'
+        'counter_neutral': '4-3N-2W-1',
+        'counter_defensive': '3N-2W-3N-2'
     },
     {
         'opponent': '4-5-1 F (Flat)',
@@ -20816,8 +20792,8 @@ MATCHUP_MATRIX = [
         'opponent': '4-2-2-2 H (Hexagon)',
         'category': 'neu',
         'counter_offensive': '3N-4-3',
-        'counter_neutral': '3N-4-1-2',
-        'counter_defensive': '4-5-1 V-Style'
+        'counter_neutral': '4-5-1 V-Style',
+        'counter_defensive': '3-2-2-2-1 B (Butterfly)'
     },
     {
         'opponent': '4-3N-2W-1',
@@ -20831,7 +20807,7 @@ MATCHUP_MATRIX = [
         'category': 'neu',
         'counter_offensive': '3-5-2 V (V-Style)',
         'counter_neutral': '4-2-2-2 H (Hexagon)',
-        'counter_defensive': '4-2-2-2 H (Hexagon)'
+        'counter_defensive': '3-2-2-2-1 B (Butterfly)'
     },
     {
         'opponent': '4-4-1-1',
@@ -20941,9 +20917,9 @@ MATCHUP_MATRIX = [
     {
         'opponent': '4-3-3',
         'category': 'neu',
-        'counter_offensive': '4-1-3-2',
-        'counter_neutral': '4-4-2 C (Classic)',
-        'counter_defensive': '4-4-2 C (Classic)'
+        'counter_offensive': '4-4-2 C (Classic)',
+        'counter_neutral': '4-2-3-1',
+        'counter_defensive': '4-1-3-1-1'
     },
     {
         'opponent': '5-2-2(AML-AMR)-1',
@@ -21152,8 +21128,8 @@ MATCHUP_MATRIX = [
         'opponent': '3-2-2-2-1 B (Butterfly)',
         'category': 'dif',
         'counter_offensive': '3-4-1-2',
-        'counter_neutral': '3-4-1-2',
-        'counter_defensive': '3-4-1-2'
+        'counter_neutral': '4-2-2-2 H (Hexagon)',
+        'counter_defensive': '4-3N-2W-1'
     },
     {
         'opponent': '4-1-3N-2',

@@ -240,7 +240,8 @@ Già proposte all'utente, non ancora implementate:
 - **Achievement / Sfide** — obiettivi da completare per stagione
 - **+5 SEASON_STORIES** (ne abbiamo solo 6, dataset poco popolato)
 - **Aggiornamento TRAINING_GUIDE** (ferma a 9 voci - una per posizione, potrebbe arrivare a 20+ con dettagli per ruolo specifico)
-- **Riempimento ARROW_TACTICS** — coprire tutte le 56 formazioni (attualmente 24)
+- **Riempimento ARROW_TACTICS** — coprire tutte le 125 formazioni (attualmente 24)
+- **32 voci engine con "tripletta pigra"** (off=neu=dif identici) su moduli rari: vanno verificate con le fonti NotebookLM una a una e diversificate. I 7 moduli meta più giocati (4-4-2, 4-3-3, 4-2-3-1, 4-1-4-1, 4-5-1 V-Style, Butterfly, Hexagon) sono già stati verificati con le fonti il 13/06 e hanno 3 scenari distinti. Elenco delle 32: vedi `python tools/validate_data.py` o filtra l'engine per `len({forte.mod, pari.mod, debole.mod})==1`
 
 Idee mie (Claude) per future sessioni:
 - **Pulsante Feedback in-app** → Google Form

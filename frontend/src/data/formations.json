@@ -125,6 +125,7 @@
     "defense_count": 4,
     "vulnerable_to": [
       "3-2-2-2-1 B (Butterfly)",
+      "3N-4-1-2",
       "4-1-2-1-2 ND (Narrow Diamond)"
     ],
     "effective_against": [
@@ -8046,6 +8047,7 @@
     },
     "effective_against": [
       "4-2-2-2 H (Hexagon)",
+      "4-4-2 C (Classic)",
       "5-3N-2",
       "5-3W-2"
     ],
