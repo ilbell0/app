@@ -223,7 +223,14 @@ notebooklm ask "..." --notebook 7b0eba98 2>&1
 di ogni counter coi principi di Top Eleven (dominio del centrocampo con eccezioni
 per difese a 3 e per lo scenario difensivo; mentalità coerente con lo scenario,
 con eccezione per le difese a 5; struttura off/dif). Stato al 13/06: **0 ALTA,
-0 MEDIA, 45 INFO** su 107 voci — nessun problema tattico di sostanza.
+0 MEDIA, 47 INFO** su 107 voci — nessun problema tattico di sostanza.
+
+### Verifica con le fonti (13/06)
+Tutti i counter dei moduli a rischio (32 ex-triplette + 7 meta) verificati col
+notebook NotebookLM `7b0eba98` in 4 batch. Dove le fonti indicano un counter
+principale, questo è collocato nello scenario **neutro** (risposta standard);
+off/dif prendono le alternative dal reverse-lookup. I moduli non trattati dalle
+fonti mantengono la diversificazione automatica (comunque counter validati).
 
 ### Stesso schema per ogni nuovo dataset
 ```

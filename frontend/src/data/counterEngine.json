@@ -2564,8 +2564,8 @@
       "w": "Scenario difensivo: 5-4-1 F (Flat), attacca le corsie scoperte dalla difesa a 3"
     },
     "pari": {
-      "mod": "4-3-3",
-      "alt": "4-2-2-2 H (Hexagon)",
+      "mod": "4-2-2-2 H (Hexagon)",
+      "alt": "4-3-3",
       "men": "Normale",
       "pass": "Fasce",
       "stile": "Misti",
@@ -2579,11 +2579,11 @@
         "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 4-3-3, attacca le corsie scoperte dalla difesa a 3"
+      "w": "Counter standard (fonte): 4-2-2-2 H (Hexagon), attacca le corsie scoperte dalla difesa a 3"
     },
     "debole": {
-      "mod": "4-2-2-2 H (Hexagon)",
-      "alt": "4-3-3",
+      "mod": "4-3-3",
+      "alt": "4-2-2-2 H (Hexagon)",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Misti",
@@ -2597,7 +2597,7 @@
         "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 4-2-2-2 H (Hexagon), attacca le corsie scoperte dalla difesa a 3"
+      "w": "Scenario offensivo: 4-3-3, attacca le corsie scoperte dalla difesa a 3"
     }
   },
   {
@@ -2622,8 +2622,8 @@
       "w": "Scenario difensivo: 5-4-1 F (Flat), attacca le corsie scoperte dalla difesa a 3"
     },
     "pari": {
-      "mod": "4-3-3",
-      "alt": "4-2-2-2 H (Hexagon)",
+      "mod": "4-2-2-2 H (Hexagon)",
+      "alt": "4-3-3",
       "men": "Difensiva",
       "pass": "Fasce",
       "stile": "Misti",
@@ -2637,11 +2637,11 @@
         "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 4-3-3, attacca le corsie scoperte dalla difesa a 3"
+      "w": "Counter standard (fonte): 4-2-2-2 H (Hexagon), attacca le corsie scoperte dalla difesa a 3"
     },
     "debole": {
-      "mod": "4-2-2-2 H (Hexagon)",
-      "alt": "4-3-3",
+      "mod": "4-3-3",
+      "alt": "4-2-2-2 H (Hexagon)",
       "men": "Normale",
       "pass": "Fasce",
       "stile": "Misti",
@@ -2655,7 +2655,7 @@
         "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 4-2-2-2 H (Hexagon), attacca le corsie scoperte dalla difesa a 3"
+      "w": "Scenario offensivo: 4-3-3, attacca le corsie scoperte dalla difesa a 3"
     }
   },
   {
@@ -2787,7 +2787,7 @@
     "cat": "neu",
     "forte": {
       "mod": "4-1-4-1",
-      "alt": "3-4-3",
+      "alt": "4-4-1-1",
       "men": "Molto Difensiva",
       "pass": "Misto",
       "stile": "Misti",
@@ -2802,10 +2802,10 @@
         "DMC": "↓",
         "ST": "—"
       },
-      "w": "Scenario difensivo: 4-1-4-1, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario difensivo: 4-1-4-1, blocco e ripartenza"
     },
     "pari": {
-      "mod": "4-1-3-1-1",
+      "mod": "4-4-1-1",
       "alt": "3-4-3",
       "men": "Difensiva",
       "pass": "Misto",
@@ -2816,13 +2816,15 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
+        "ML": "↑",
+        "MR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 4-1-3-1-1, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Counter standard (fonte): 4-4-1-1, contendi il centrocampo e riparti"
     },
     "debole": {
       "mod": "3-4-3",
-      "alt": "4-1-3-1-1",
+      "alt": "4-4-1-1",
       "men": "Normale",
       "pass": "Misto",
       "stile": "Misti",
@@ -2838,7 +2840,7 @@
         "MR": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 3-4-3, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario offensivo: 3-4-3, contendi il centrocampo e riparti"
     }
   },
   {
@@ -2863,8 +2865,8 @@
       "w": "Scenario difensivo: 5-4-1 F (Flat), attacca le corsie scoperte dalla difesa a 3"
     },
     "pari": {
-      "mod": "4-3-3",
-      "alt": "4-1-2-1-2 ND (Narrow Diamond)",
+      "mod": "4-1-2-1-2 ND (Narrow Diamond)",
+      "alt": "4-3-3",
       "men": "Normale",
       "pass": "Centro",
       "stile": "Corti",
@@ -2874,15 +2876,13 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
-        "AML": "↑",
-        "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 4-3-3, attacca le corsie scoperte dalla difesa a 3"
+      "w": "Counter standard (fonte): 4-1-2-1-2 ND (Narrow Diamond), attacca le corsie scoperte dalla difesa a 3"
     },
     "debole": {
-      "mod": "4-1-2-1-2 ND (Narrow Diamond)",
-      "alt": "4-3-3",
+      "mod": "4-3-3",
+      "alt": "4-1-2-1-2 ND (Narrow Diamond)",
       "men": "Offensiva",
       "pass": "Centro",
       "stile": "Corti",
@@ -2892,10 +2892,11 @@
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
-        "AMC": "↑",
+        "AML": "↑",
+        "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 4-1-2-1-2 ND (Narrow Diamond), attacca le corsie scoperte dalla difesa a 3"
+      "w": "Scenario offensivo: 4-3-3, attacca le corsie scoperte dalla difesa a 3"
     }
   },
   {
@@ -2918,11 +2919,11 @@
         "DMC": "↓",
         "ST": "—"
       },
-      "w": "Scenario difensivo: 4-1-4-1, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario difensivo: 4-1-4-1, blocco e ripartenza"
     },
     "pari": {
-      "mod": "3-4-3",
-      "alt": "4-2-2-2 H (Hexagon)",
+      "mod": "4-2-2-2 H (Hexagon)",
+      "alt": "3-4-3",
       "men": "Normale",
       "pass": "Fasce",
       "stile": "Misti",
@@ -2934,15 +2935,13 @@
       "fr": {
         "AML": "↑",
         "AMR": "↑",
-        "ML": "↑",
-        "MR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 3-4-3, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Counter standard (fonte): 4-2-2-2 H (Hexagon), contendi il centrocampo e riparti"
     },
     "debole": {
-      "mod": "4-2-2-2 H (Hexagon)",
-      "alt": "3-4-3",
+      "mod": "3-4-3",
+      "alt": "4-2-2-2 H (Hexagon)",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Misti",
@@ -2954,9 +2953,11 @@
       "fr": {
         "AML": "↑",
         "AMR": "↑",
+        "ML": "↑",
+        "MR": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 4-2-2-2 H (Hexagon), contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario offensivo: 3-4-3, contendi il centrocampo e riparti"
     }
   },
   {
@@ -3034,11 +3035,11 @@
         "DR": "↓",
         "ST": "—"
       },
-      "w": "Scenario difensivo: 5-4-1 F (Flat), contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario difensivo: 5-4-1 F (Flat), blocco e ripartenza"
     },
     "pari": {
-      "mod": "4-3-3",
-      "alt": "5-4-1 F (Flat)",
+      "mod": "5-4-1 F (Flat)",
+      "alt": "4-3-3",
       "men": "Difensiva",
       "pass": "Misto",
       "stile": "Lunghi",
@@ -3048,11 +3049,11 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
-        "AML": "↑",
-        "AMR": "↑",
+        "ML": "↑",
+        "MR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 4-3-3, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Counter standard (fonte): 5-4-1 F (Flat), contendi il centrocampo e riparti"
     },
     "debole": {
       "mod": "4-3-3",
@@ -3070,7 +3071,7 @@
         "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 4-3-3, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario offensivo: 4-3-3, contendi il centrocampo e riparti"
     }
   },
   {
@@ -3153,11 +3154,11 @@
         "DR": "↓",
         "ST": "—"
       },
-      "w": "Scenario difensivo: 4-4-2 C (Classic), blocco e ripartenza contro la difesa chiusa"
+      "w": "Scenario difensivo: 4-4-2 C (Classic), blocco e ripartenza"
     },
     "pari": {
-      "mod": "4-3-3",
-      "alt": "4-4-2 C (Classic)",
+      "mod": "4-4-2 C (Classic)",
+      "alt": "4-3-3",
       "men": "Offensiva",
       "pass": "Misto",
       "stile": "Corti",
@@ -3167,11 +3168,11 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
-        "AML": "↑",
-        "AMR": "↑",
+        "ML": "↑",
+        "MR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 4-3-3, scardina la difesa a 5 con ampiezza e inserimenti"
+      "w": "Counter standard (fonte): 4-4-2 C (Classic), scardina la difesa a 5 con ampiezza"
     },
     "debole": {
       "mod": "4-3-3",
@@ -3189,7 +3190,7 @@
         "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 4-3-3, scardina la difesa a 5 con ampiezza e inserimenti"
+      "w": "Scenario offensivo: 4-3-3, scardina la difesa a 5 con ampiezza"
     }
   },
   {
@@ -3255,7 +3256,7 @@
     "cat": "att",
     "forte": {
       "mod": "5-4-1 F (Flat)",
-      "alt": "4-3-3",
+      "alt": "4-1-4-1",
       "men": "Molto Difensiva",
       "pass": "Misto",
       "stile": "Lunghi",
@@ -3287,7 +3288,7 @@
         "MR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 4-1-4-1, attacca le corsie scoperte dalla difesa a 3"
+      "w": "Counter standard (fonte): 4-1-4-1, attacca le corsie scoperte dalla difesa a 3"
     },
     "debole": {
       "mod": "4-3-3",
@@ -3327,11 +3328,11 @@
         "DR": "↓",
         "ST": "—"
       },
-      "w": "Scenario difensivo: 4-4-2 C (Classic), contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario difensivo: 4-4-2 C (Classic), blocco e ripartenza"
     },
     "pari": {
-      "mod": "4-3-3",
-      "alt": "4-4-2 C (Classic)",
+      "mod": "4-4-2 C (Classic)",
+      "alt": "4-3-3",
       "men": "Offensiva",
       "pass": "Misto",
       "stile": "Corti",
@@ -3341,11 +3342,11 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
-        "AML": "↑",
-        "AMR": "↑",
+        "ML": "↑",
+        "MR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 4-3-3, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Counter standard (fonte): 4-4-2 C (Classic), contendi il centrocampo e riparti"
     },
     "debole": {
       "mod": "4-3-3",
@@ -3363,7 +3364,7 @@
         "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 4-3-3, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario offensivo: 4-3-3, contendi il centrocampo e riparti"
     }
   },
   {
@@ -3385,11 +3386,11 @@
         "DR": "↓",
         "ST": "—"
       },
-      "w": "Scenario difensivo: 5-4-1 F (Flat), contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario difensivo: 5-4-1 F (Flat), blocco e ripartenza"
     },
     "pari": {
-      "mod": "4-3-3",
-      "alt": "4-5-1 V-Style",
+      "mod": "4-5-1 V-Style",
+      "alt": "4-3-3",
       "men": "Normale",
       "pass": "Fasce",
       "stile": "Misti",
@@ -3403,11 +3404,11 @@
         "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 4-3-3, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Counter standard (fonte): 4-5-1 V-Style, contendi il centrocampo e riparti"
     },
     "debole": {
-      "mod": "4-5-1 V-Style",
-      "alt": "4-3-3",
+      "mod": "4-3-3",
+      "alt": "4-5-1 V-Style",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Misti",
@@ -3421,7 +3422,7 @@
         "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 4-5-1 V-Style, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario offensivo: 4-3-3, contendi il centrocampo e riparti"
     }
   },
   {
@@ -3490,7 +3491,7 @@
     "cat": "att",
     "forte": {
       "mod": "5-4-1 F (Flat)",
-      "alt": "4-3-3",
+      "alt": "4-1-3N-2",
       "men": "Difensiva",
       "pass": "Fasce",
       "stile": "Misti",
@@ -3507,7 +3508,7 @@
       "w": "Scenario difensivo: 5-4-1 F (Flat), attacca le corsie scoperte dalla difesa a 3"
     },
     "pari": {
-      "mod": "4-1-3-1-1",
+      "mod": "4-1-3N-2",
       "alt": "4-3-3",
       "men": "Normale",
       "pass": "Fasce",
@@ -3520,11 +3521,11 @@
       "fr": {
         "ST": "—"
       },
-      "w": "Scenario neutro: 4-1-3-1-1, attacca le corsie scoperte dalla difesa a 3"
+      "w": "Counter standard (fonte): 4-1-3N-2, attacca le corsie scoperte dalla difesa a 3"
     },
     "debole": {
       "mod": "4-3-3",
-      "alt": "4-1-3-1-1",
+      "alt": "4-1-3N-2",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Misti",
@@ -3726,7 +3727,7 @@
     "cat": "att",
     "forte": {
       "mod": "5-4-1 F (Flat)",
-      "alt": "4-2-3-1",
+      "alt": "4-1-2-1-2 ND (Narrow Diamond)",
       "men": "Difensiva",
       "pass": "Fasce",
       "stile": "Misti",
@@ -3743,7 +3744,7 @@
       "w": "Scenario difensivo: 5-4-1 F (Flat), attacca le corsie scoperte dalla difesa a 3"
     },
     "pari": {
-      "mod": "4-3-3",
+      "mod": "4-1-2-1-2 ND (Narrow Diamond)",
       "alt": "4-2-3-1",
       "men": "Normale",
       "pass": "Fasce",
@@ -3754,15 +3755,13 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
-        "AML": "↑",
-        "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 4-3-3, attacca le corsie scoperte dalla difesa a 3"
+      "w": "Counter standard (fonte): 4-1-2-1-2 ND (Narrow Diamond), attacca le corsie scoperte dalla difesa a 3"
     },
     "debole": {
       "mod": "4-2-3-1",
-      "alt": "4-3-3",
+      "alt": "4-1-2-1-2 ND (Narrow Diamond)",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Misti",
@@ -3917,11 +3916,11 @@
         "DMC": "↓",
         "ST": "—"
       },
-      "w": "Scenario difensivo: 4-1-4-1, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario difensivo: 4-1-4-1, blocco e ripartenza"
     },
     "pari": {
-      "mod": "3-4-3",
-      "alt": "4-3W-1-2",
+      "mod": "4-3W-1-2",
+      "alt": "3-4-3",
       "men": "Normale",
       "pass": "Fasce",
       "stile": "Misti",
@@ -3931,17 +3930,15 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
-        "AML": "↑",
-        "AMR": "↑",
         "ML": "↑",
         "MR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 3-4-3, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Counter standard (fonte): 4-3W-1-2, contendi il centrocampo e riparti"
     },
     "debole": {
-      "mod": "4-3W-1-2",
-      "alt": "3-4-3",
+      "mod": "3-4-3",
+      "alt": "4-3W-1-2",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Corti",
@@ -3951,12 +3948,13 @@
       "marc": "Uomo",
       "fuo": "NO",
       "fr": {
+        "AML": "↑",
+        "AMR": "↑",
         "ML": "↑",
         "MR": "↑",
-        "AMC": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 4-3W-1-2, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario offensivo: 3-4-3, contendi il centrocampo e riparti"
     }
   },
   {
@@ -4024,7 +4022,7 @@
     "cat": "neu",
     "forte": {
       "mod": "4-1-4-1",
-      "alt": "3-1-3N-2W-1",
+      "alt": "4-3N-2W-1",
       "men": "Difensiva",
       "pass": "Misto",
       "stile": "Lunghi",
@@ -4039,10 +4037,10 @@
         "DMC": "↓",
         "ST": "—"
       },
-      "w": "Scenario difensivo: 4-1-4-1, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario difensivo: 4-1-4-1, blocco e ripartenza"
     },
     "pari": {
-      "mod": "3-4-3",
+      "mod": "4-3N-2W-1",
       "alt": "3-1-3N-2W-1",
       "men": "Normale",
       "pass": "Fasce",
@@ -4055,15 +4053,13 @@
       "fr": {
         "AML": "↑",
         "AMR": "↑",
-        "ML": "↑",
-        "MR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 3-4-3, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Counter standard (fonte): 4-3N-2W-1, contendi il centrocampo e riparti"
     },
     "debole": {
       "mod": "3-1-3N-2W-1",
-      "alt": "3-4-3",
+      "alt": "4-3N-2W-1",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Corti",
@@ -4077,15 +4073,15 @@
         "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 3-1-3N-2W-1, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario offensivo: 3-1-3N-2W-1, contendi il centrocampo e riparti"
     }
   },
   {
     "av": "4-3N-3",
     "cat": "neu",
     "forte": {
-      "mod": "4-1-4-1",
-      "alt": "3-4-1-2",
+      "mod": "3-4-3",
+      "alt": "4-1-4-1",
       "men": "Difensiva",
       "pass": "Misto",
       "stile": "Lunghi",
@@ -4095,15 +4091,14 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
-        "DL": "↓",
-        "DR": "↓",
-        "DMC": "↓",
+        "AML": "↑",
+        "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario difensivo: 4-1-4-1, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario difensivo: 3-4-3, blocco e ripartenza"
     },
     "pari": {
-      "mod": "3-4-3",
+      "mod": "4-1-4-1",
       "alt": "3-4-1-2",
       "men": "Normale",
       "pass": "Fasce",
@@ -4114,17 +4109,15 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
-        "AML": "↑",
-        "AMR": "↑",
         "ML": "↑",
         "MR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 3-4-3, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Counter standard (fonte): 4-1-4-1, contendi il centrocampo e riparti"
     },
     "debole": {
       "mod": "3-4-1-2",
-      "alt": "3-4-3",
+      "alt": "4-1-4-1",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Corti",
@@ -4139,7 +4132,7 @@
         "AMC": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 3-4-1-2, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario offensivo: 3-4-1-2, contendi il centrocampo e riparti"
     }
   },
   {
@@ -4147,7 +4140,7 @@
     "cat": "att",
     "forte": {
       "mod": "5-4-1 F (Flat)",
-      "alt": "3-1-3N-1-2",
+      "alt": "4-1-3N-2",
       "men": "Difensiva",
       "pass": "Misto",
       "stile": "Lunghi",
@@ -4164,7 +4157,7 @@
       "w": "Scenario difensivo: 5-4-1 F (Flat), attacca le corsie scoperte dalla difesa a 3"
     },
     "pari": {
-      "mod": "4-3-3",
+      "mod": "4-1-3N-2",
       "alt": "3-1-3N-1-2",
       "men": "Normale",
       "pass": "Fasce",
@@ -4175,15 +4168,13 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
-        "AML": "↑",
-        "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 4-3-3, attacca le corsie scoperte dalla difesa a 3"
+      "w": "Counter standard (fonte): 4-1-3N-2, attacca le corsie scoperte dalla difesa a 3"
     },
     "debole": {
       "mod": "3-1-3N-1-2",
-      "alt": "4-3-3",
+      "alt": "4-1-3N-2",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Corti",
@@ -4204,7 +4195,7 @@
     "cat": "att",
     "forte": {
       "mod": "5-4-1 F (Flat)",
-      "alt": "3-1-3N-2W-1",
+      "alt": "4-5-1 V-Style",
       "men": "Difensiva",
       "pass": "Misto",
       "stile": "Lunghi",
@@ -4218,10 +4209,10 @@
         "DR": "↓",
         "ST": "—"
       },
-      "w": "Scenario difensivo: 5-4-1 F (Flat), contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario difensivo: 5-4-1 F (Flat), blocco e ripartenza"
     },
     "pari": {
-      "mod": "4-3-3",
+      "mod": "4-5-1 V-Style",
       "alt": "3-1-3N-2W-1",
       "men": "Normale",
       "pass": "Fasce",
@@ -4236,11 +4227,11 @@
         "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 4-3-3, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Counter standard (fonte): 4-5-1 V-Style, contendi il centrocampo e riparti"
     },
     "debole": {
       "mod": "3-1-3N-2W-1",
-      "alt": "4-3-3",
+      "alt": "4-5-1 V-Style",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Corti",
@@ -4254,7 +4245,7 @@
         "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 3-1-3N-2W-1, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario offensivo: 3-1-3N-2W-1, contendi il centrocampo e riparti"
     }
   },
   {
@@ -4262,7 +4253,7 @@
     "cat": "neu",
     "forte": {
       "mod": "4-1-4-1",
-      "alt": "3W-2N-1-3W-1",
+      "alt": "4-5-1 V-Style",
       "men": "Difensiva",
       "pass": "Misto",
       "stile": "Lunghi",
@@ -4277,10 +4268,10 @@
         "DMC": "↓",
         "ST": "—"
       },
-      "w": "Scenario difensivo: 4-1-4-1, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario difensivo: 4-1-4-1, blocco e ripartenza"
     },
     "pari": {
-      "mod": "3-4-3",
+      "mod": "4-5-1 V-Style",
       "alt": "3W-2N-1-3W-1",
       "men": "Normale",
       "pass": "Fasce",
@@ -4293,15 +4284,13 @@
       "fr": {
         "AML": "↑",
         "AMR": "↑",
-        "ML": "↑",
-        "MR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 3-4-3, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Counter standard (fonte): 4-5-1 V-Style, contendi il centrocampo e riparti"
     },
     "debole": {
       "mod": "3W-2N-1-3W-1",
-      "alt": "3-4-3",
+      "alt": "4-5-1 V-Style",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Corti",
@@ -4316,7 +4305,7 @@
         "AMC": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 3W-2N-1-3W-1, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario offensivo: 3W-2N-1-3W-1, contendi il centrocampo e riparti"
     }
   },
   {
@@ -4385,7 +4374,7 @@
     "cat": "neu",
     "forte": {
       "mod": "4-1-4-1",
-      "alt": "3-4-3",
+      "alt": "4-1-3-2",
       "men": "Difensiva",
       "pass": "Misto",
       "stile": "Lunghi",
@@ -4400,10 +4389,10 @@
         "DMC": "↓",
         "ST": "—"
       },
-      "w": "Scenario difensivo: 4-1-4-1, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario difensivo: 4-1-4-1, blocco e ripartenza"
     },
     "pari": {
-      "mod": "3N-1-4-1-1",
+      "mod": "4-1-3-2",
       "alt": "3-4-3",
       "men": "Normale",
       "pass": "Fasce",
@@ -4414,15 +4403,13 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
-        "ML": "↑",
-        "MR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 3N-1-4-1-1, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Counter standard (fonte): 4-1-3-2, contendi il centrocampo e riparti"
     },
     "debole": {
       "mod": "3-4-3",
-      "alt": "3N-1-4-1-1",
+      "alt": "4-1-3-2",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Corti",
@@ -4438,7 +4425,7 @@
         "MR": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 3-4-3, contendi il centrocampo e sfrutta le transizioni"
+      "w": "Scenario offensivo: 3-4-3, contendi il centrocampo e riparti"
     }
   },
   {
@@ -4446,7 +4433,7 @@
     "cat": "dif",
     "forte": {
       "mod": "4-4-2 C (Classic)",
-      "alt": "4-3-3",
+      "alt": "4-3N-3",
       "men": "Difensiva",
       "pass": "Misto",
       "stile": "Lunghi",
@@ -4460,10 +4447,10 @@
         "DR": "↓",
         "ST": "—"
       },
-      "w": "Scenario difensivo: 4-4-2 C (Classic), blocco e ripartenza contro la difesa chiusa"
+      "w": "Scenario difensivo: 4-4-2 C (Classic), blocco e ripartenza"
     },
     "pari": {
-      "mod": "3N-5-2 V",
+      "mod": "4-3N-3",
       "alt": "4-3-3",
       "men": "Normale",
       "pass": "Fasce",
@@ -4474,15 +4461,15 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
-        "ML": "↑",
-        "MR": "↑",
+        "AML": "↑",
+        "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 3N-5-2 V, scardina la difesa a 5 con ampiezza e inserimenti"
+      "w": "Counter standard (fonte): 4-3N-3, scardina la difesa a 5 con ampiezza"
     },
     "debole": {
       "mod": "4-3-3",
-      "alt": "3N-5-2 V",
+      "alt": "4-3N-3",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Corti",
@@ -4496,7 +4483,7 @@
         "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 4-3-3, scardina la difesa a 5 con ampiezza e inserimenti"
+      "w": "Scenario offensivo: 4-3-3, scardina la difesa a 5 con ampiezza"
     }
   },
   {
@@ -4504,7 +4491,7 @@
     "cat": "dif",
     "forte": {
       "mod": "4-4-2 C (Classic)",
-      "alt": "3N-1-3W-1-2",
+      "alt": "4-2-2-2 H (Hexagon)",
       "men": "Difensiva",
       "pass": "Misto",
       "stile": "Lunghi",
@@ -4518,10 +4505,10 @@
         "DR": "↓",
         "ST": "—"
       },
-      "w": "Scenario difensivo: 4-4-2 C (Classic), blocco e ripartenza contro la difesa chiusa"
+      "w": "Scenario difensivo: 4-4-2 C (Classic), blocco e ripartenza"
     },
     "pari": {
-      "mod": "4-3-3",
+      "mod": "4-2-2-2 H (Hexagon)",
       "alt": "3N-1-3W-1-2",
       "men": "Normale",
       "pass": "Fasce",
@@ -4536,11 +4523,11 @@
         "AMR": "↑",
         "ST": "—"
       },
-      "w": "Scenario neutro: 4-3-3, scardina la difesa a 5 con ampiezza e inserimenti"
+      "w": "Counter standard (fonte): 4-2-2-2 H (Hexagon), scardina la difesa a 5 con ampiezza"
     },
     "debole": {
       "mod": "3N-1-3W-1-2",
-      "alt": "4-3-3",
+      "alt": "4-2-2-2 H (Hexagon)",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Corti",
@@ -4555,7 +4542,7 @@
         "AMC": "↑",
         "ST": "—"
       },
-      "w": "Scenario offensivo: 3N-1-3W-1-2, scardina la difesa a 5 con ampiezza e inserimenti"
+      "w": "Scenario offensivo: 3N-1-3W-1-2, scardina la difesa a 5 con ampiezza"
     }
   },
   {

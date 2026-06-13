@@ -452,7 +452,7 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3N-5-2 V', '4-5-1 V-Style'],
-        'effective_against': ['3-1-4-1-1', '3-4-1-2', '4-4-2 C (Classic)']
+        'effective_against': ['3-1-4-1-1', '3-1-4-2 W', '3-4-1-2', '4-4-2 C (Classic)']
     },
     {
         'id': '41212wd',
@@ -554,7 +554,7 @@ FORMATIONS = [
             }
         },
         'defense_count': 4,
-        'vulnerable_to': ['3-4-3', '4-1-4-1'],
+        'vulnerable_to': ['3-4-3', '4-1-4-1', '4-3W-1-2'],
         'effective_against': []
     },
     {
@@ -678,9 +678,11 @@ FORMATIONS = [
             '3-1-3-1-2',
             '3W-2DMC-3N-1-1 Tower (Eiffel Tower)',
             '3W-2DMC-3W-1-1 ML (Maple Leaf)',
+            '4-1-1-2N-2',
             '4-1-1-3-1',
             '4-1-2-1-2 ND (Narrow Diamond)',
             '4-1-3-1-1',
+            '4-2-1-3',
             '4-2-2-2 H (Hexagon)',
             '4-3-1-2'
         ]
@@ -986,7 +988,7 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['4-5-1 V-Style'],
-        'effective_against': ['3-4-3', '3-5-2 V (V-Style)', '4-1-2-2-1', '4-1-4-1']
+        'effective_against': ['3-4-3', '3-5-2 V (V-Style)', '4-1-2-2-1', '4-1-4-1', '5-2W-2N-1']
     },
     {
         'id': '352f',
@@ -2672,7 +2674,7 @@ FORMATIONS = [
             }
         },
         'defense_count': 4,
-        'vulnerable_to': ['3-4-3', '4-1-3-1-1', '4-1-4-1'],
+        'vulnerable_to': ['3-4-3', '4-1-3-1-1', '4-1-4-1', '4-4-1-1'],
         'effective_against': []
     },
     {
@@ -2872,7 +2874,13 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-1-4-1-1'],
-        'effective_against': ['3-5-2 F (Flat)', '3N-2-2-2-1 B (Butterfly 3N)', '3N-5-2 V', '5-4-1 F (Flat)']
+        'effective_against': [
+            '3-5-2 F (Flat)',
+            '3N-2-2-2-1 B (Butterfly 3N)',
+            '3N-5-2 V',
+            '4-1-3N-2',
+            '5-4-1 F (Flat)'
+        ]
     },
     {
         'id': '3151amc',
@@ -3905,8 +3913,8 @@ FORMATIONS = [
             }
         },
         'defense_count': 4,
-        'vulnerable_to': ['3-4-3', '4-1-4-1'],
-        'effective_against': ['4-2-3-1 Attack']
+        'vulnerable_to': ['3-4-3', '4-1-4-1', '4-3N-2W-1'],
+        'effective_against': ['3-1-2-1-3', '3N-1-2-1-3', '4-2-3-1 Attack']
     },
     {
         'id': '3412',
@@ -4194,7 +4202,7 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-4-1-2', '3-4-3', '4-1-4-1'],
-        'effective_against': ['4-5-1 V-Style']
+        'effective_against': ['4-5-1 V-Style', '5-1-1-1-2']
     },
     {
         'id': '3132w1',
@@ -4385,7 +4393,7 @@ FORMATIONS = [
             }
         },
         'defense_count': 3,
-        'vulnerable_to': ['4-3-3', '5-4-1 F (Flat)'],
+        'vulnerable_to': ['4-1-3N-2', '4-3-3', '5-4-1 F (Flat)'],
         'effective_against': []
     },
     {
@@ -4484,7 +4492,7 @@ FORMATIONS = [
             }
         },
         'defense_count': 4,
-        'vulnerable_to': ['4-3-3', '5-4-1 F (Flat)'],
+        'vulnerable_to': ['4-3-3', '4-5-1 V-Style', '5-4-1 F (Flat)'],
         'effective_against': []
     },
     {
@@ -4582,7 +4590,7 @@ FORMATIONS = [
             }
         },
         'defense_count': 4,
-        'vulnerable_to': ['3-4-3', '4-1-4-1'],
+        'vulnerable_to': ['3-4-3', '4-1-4-1', '4-5-1 V-Style'],
         'effective_against': []
     },
     {
@@ -4874,7 +4882,7 @@ FORMATIONS = [
             }
         },
         'defense_count': 4,
-        'vulnerable_to': ['3-4-3', '4-1-4-1'],
+        'vulnerable_to': ['3-4-3', '4-1-3-2', '4-1-4-1'],
         'effective_against': []
     },
     {
@@ -4972,7 +4980,7 @@ FORMATIONS = [
             }
         },
         'defense_count': 5,
-        'vulnerable_to': ['3N-5-2 V', '4-3-3', '4-4-2 C (Classic)'],
+        'vulnerable_to': ['3N-5-2 V', '4-3-3', '4-3N-3', '4-4-2 C (Classic)'],
         'effective_against': []
     },
     {
@@ -5071,7 +5079,7 @@ FORMATIONS = [
             }
         },
         'defense_count': 5,
-        'vulnerable_to': ['4-3-3', '4-4-2 C (Classic)'],
+        'vulnerable_to': ['4-2-2-2 H (Hexagon)', '4-3-3', '4-4-2 C (Classic)'],
         'effective_against': []
     },
     {
@@ -5465,7 +5473,7 @@ FORMATIONS = [
             }
         },
         'defense_count': 3,
-        'vulnerable_to': ['4-1-3-1-1', '4-3-3', '5-4-1 F (Flat)'],
+        'vulnerable_to': ['4-1-3-1-1', '4-1-3N-2', '4-3-3', '5-4-1 F (Flat)'],
         'effective_against': []
     },
     {
@@ -5876,7 +5884,7 @@ FORMATIONS = [
             }
         },
         'defense_count': 3,
-        'vulnerable_to': ['4-2-3-1', '4-3-3', '5-4-1 F (Flat)'],
+        'vulnerable_to': ['4-1-2-1-2 ND (Narrow Diamond)', '4-2-3-1', '4-3-3', '5-4-1 F (Flat)'],
         'effective_against': []
     },
     {
@@ -6696,7 +6704,7 @@ FORMATIONS = [
                 }
             }
         },
-        'effective_against': ['4-3-3', '5-1-2N-1-1', '5-1-2W-1-1'],
+        'effective_against': ['4-2N-1-2N-1', '4-3-3', '5-1-2N-1-1', '5-1-2W-1-1'],
         'vulnerable_to': [],
         'defense_count': 4
     },
@@ -7007,7 +7015,7 @@ FORMATIONS = [
                 }
             }
         },
-        'effective_against': ['4-1-3W-1-1', '4-3N-2W-1'],
+        'effective_against': ['4-1-3-1W-1', '4-1-3W-1-1', '4-3N-2W-1'],
         'vulnerable_to': ['3-5-2 F (Flat)', '4-5-1 V-Style'],
         'defense_count': 4
     },
@@ -15692,8 +15700,8 @@ COUNTER_ENGINE = [
             'w': 'Scenario difensivo: 5-4-1 F (Flat), attacca le corsie scoperte dalla difesa a 3'
         },
         'pari': {
-            'mod': '4-3-3',
-            'alt': '4-2-2-2 H (Hexagon)',
+            'mod': '4-2-2-2 H (Hexagon)',
+            'alt': '4-3-3',
             'men': 'Normale',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -15707,11 +15715,11 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 4-3-3, attacca le corsie scoperte dalla difesa a 3'
+            'w': 'Counter standard (fonte): 4-2-2-2 H (Hexagon), attacca le corsie scoperte dalla difesa a 3'
         },
         'debole': {
-            'mod': '4-2-2-2 H (Hexagon)',
-            'alt': '4-3-3',
+            'mod': '4-3-3',
+            'alt': '4-2-2-2 H (Hexagon)',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -15725,7 +15733,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 4-2-2-2 H (Hexagon), attacca le corsie scoperte dalla difesa a 3'
+            'w': 'Scenario offensivo: 4-3-3, attacca le corsie scoperte dalla difesa a 3'
         }
     },
     {
@@ -15750,8 +15758,8 @@ COUNTER_ENGINE = [
             'w': 'Scenario difensivo: 5-4-1 F (Flat), attacca le corsie scoperte dalla difesa a 3'
         },
         'pari': {
-            'mod': '4-3-3',
-            'alt': '4-2-2-2 H (Hexagon)',
+            'mod': '4-2-2-2 H (Hexagon)',
+            'alt': '4-3-3',
             'men': 'Difensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -15765,11 +15773,11 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 4-3-3, attacca le corsie scoperte dalla difesa a 3'
+            'w': 'Counter standard (fonte): 4-2-2-2 H (Hexagon), attacca le corsie scoperte dalla difesa a 3'
         },
         'debole': {
-            'mod': '4-2-2-2 H (Hexagon)',
-            'alt': '4-3-3',
+            'mod': '4-3-3',
+            'alt': '4-2-2-2 H (Hexagon)',
             'men': 'Normale',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -15783,7 +15791,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 4-2-2-2 H (Hexagon), attacca le corsie scoperte dalla difesa a 3'
+            'w': 'Scenario offensivo: 4-3-3, attacca le corsie scoperte dalla difesa a 3'
         }
     },
     {
@@ -15915,7 +15923,7 @@ COUNTER_ENGINE = [
         'cat': 'neu',
         'forte': {
             'mod': '4-1-4-1',
-            'alt': '3-4-3',
+            'alt': '4-4-1-1',
             'men': 'Molto Difensiva',
             'pass': 'Misto',
             'stile': 'Misti',
@@ -15930,10 +15938,10 @@ COUNTER_ENGINE = [
                 'DMC': '↓',
                 'ST': '—'
             },
-            'w': 'Scenario difensivo: 4-1-4-1, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario difensivo: 4-1-4-1, blocco e ripartenza'
         },
         'pari': {
-            'mod': '4-1-3-1-1',
+            'mod': '4-4-1-1',
             'alt': '3-4-3',
             'men': 'Difensiva',
             'pass': 'Misto',
@@ -15944,13 +15952,15 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
+                'ML': '↑',
+                'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 4-1-3-1-1, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Counter standard (fonte): 4-4-1-1, contendi il centrocampo e riparti'
         },
         'debole': {
             'mod': '3-4-3',
-            'alt': '4-1-3-1-1',
+            'alt': '4-4-1-1',
             'men': 'Normale',
             'pass': 'Misto',
             'stile': 'Misti',
@@ -15966,7 +15976,7 @@ COUNTER_ENGINE = [
                 'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 3-4-3, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario offensivo: 3-4-3, contendi il centrocampo e riparti'
         }
     },
     {
@@ -15991,8 +16001,8 @@ COUNTER_ENGINE = [
             'w': 'Scenario difensivo: 5-4-1 F (Flat), attacca le corsie scoperte dalla difesa a 3'
         },
         'pari': {
-            'mod': '4-3-3',
-            'alt': '4-1-2-1-2 ND (Narrow Diamond)',
+            'mod': '4-1-2-1-2 ND (Narrow Diamond)',
+            'alt': '4-3-3',
             'men': 'Normale',
             'pass': 'Centro',
             'stile': 'Corti',
@@ -16002,15 +16012,13 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 4-3-3, attacca le corsie scoperte dalla difesa a 3'
+            'w': 'Counter standard (fonte): 4-1-2-1-2 ND (Narrow Diamond), attacca le corsie scoperte dalla difesa a 3'
         },
         'debole': {
-            'mod': '4-1-2-1-2 ND (Narrow Diamond)',
-            'alt': '4-3-3',
+            'mod': '4-3-3',
+            'alt': '4-1-2-1-2 ND (Narrow Diamond)',
             'men': 'Offensiva',
             'pass': 'Centro',
             'stile': 'Corti',
@@ -16020,10 +16028,11 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
-                'AMC': '↑',
+                'AML': '↑',
+                'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 4-1-2-1-2 ND (Narrow Diamond), attacca le corsie scoperte dalla difesa a 3'
+            'w': 'Scenario offensivo: 4-3-3, attacca le corsie scoperte dalla difesa a 3'
         }
     },
     {
@@ -16046,11 +16055,11 @@ COUNTER_ENGINE = [
                 'DMC': '↓',
                 'ST': '—'
             },
-            'w': 'Scenario difensivo: 4-1-4-1, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario difensivo: 4-1-4-1, blocco e ripartenza'
         },
         'pari': {
-            'mod': '3-4-3',
-            'alt': '4-2-2-2 H (Hexagon)',
+            'mod': '4-2-2-2 H (Hexagon)',
+            'alt': '3-4-3',
             'men': 'Normale',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -16062,15 +16071,13 @@ COUNTER_ENGINE = [
             'fr': {
                 'AML': '↑',
                 'AMR': '↑',
-                'ML': '↑',
-                'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 3-4-3, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Counter standard (fonte): 4-2-2-2 H (Hexagon), contendi il centrocampo e riparti'
         },
         'debole': {
-            'mod': '4-2-2-2 H (Hexagon)',
-            'alt': '3-4-3',
+            'mod': '3-4-3',
+            'alt': '4-2-2-2 H (Hexagon)',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -16082,9 +16089,11 @@ COUNTER_ENGINE = [
             'fr': {
                 'AML': '↑',
                 'AMR': '↑',
+                'ML': '↑',
+                'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 4-2-2-2 H (Hexagon), contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario offensivo: 3-4-3, contendi il centrocampo e riparti'
         }
     },
     {
@@ -16162,11 +16171,11 @@ COUNTER_ENGINE = [
                 'DR': '↓',
                 'ST': '—'
             },
-            'w': 'Scenario difensivo: 5-4-1 F (Flat), contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario difensivo: 5-4-1 F (Flat), blocco e ripartenza'
         },
         'pari': {
-            'mod': '4-3-3',
-            'alt': '5-4-1 F (Flat)',
+            'mod': '5-4-1 F (Flat)',
+            'alt': '4-3-3',
             'men': 'Difensiva',
             'pass': 'Misto',
             'stile': 'Lunghi',
@@ -16176,11 +16185,11 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'AML': '↑',
-                'AMR': '↑',
+                'ML': '↑',
+                'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 4-3-3, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Counter standard (fonte): 5-4-1 F (Flat), contendi il centrocampo e riparti'
         },
         'debole': {
             'mod': '4-3-3',
@@ -16198,7 +16207,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 4-3-3, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario offensivo: 4-3-3, contendi il centrocampo e riparti'
         }
     },
     {
@@ -16281,11 +16290,11 @@ COUNTER_ENGINE = [
                 'DR': '↓',
                 'ST': '—'
             },
-            'w': 'Scenario difensivo: 4-4-2 C (Classic), blocco e ripartenza contro la difesa chiusa'
+            'w': 'Scenario difensivo: 4-4-2 C (Classic), blocco e ripartenza'
         },
         'pari': {
-            'mod': '4-3-3',
-            'alt': '4-4-2 C (Classic)',
+            'mod': '4-4-2 C (Classic)',
+            'alt': '4-3-3',
             'men': 'Offensiva',
             'pass': 'Misto',
             'stile': 'Corti',
@@ -16295,11 +16304,11 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'AML': '↑',
-                'AMR': '↑',
+                'ML': '↑',
+                'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 4-3-3, scardina la difesa a 5 con ampiezza e inserimenti'
+            'w': 'Counter standard (fonte): 4-4-2 C (Classic), scardina la difesa a 5 con ampiezza'
         },
         'debole': {
             'mod': '4-3-3',
@@ -16317,7 +16326,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 4-3-3, scardina la difesa a 5 con ampiezza e inserimenti'
+            'w': 'Scenario offensivo: 4-3-3, scardina la difesa a 5 con ampiezza'
         }
     },
     {
@@ -16383,7 +16392,7 @@ COUNTER_ENGINE = [
         'cat': 'att',
         'forte': {
             'mod': '5-4-1 F (Flat)',
-            'alt': '4-3-3',
+            'alt': '4-1-4-1',
             'men': 'Molto Difensiva',
             'pass': 'Misto',
             'stile': 'Lunghi',
@@ -16415,7 +16424,7 @@ COUNTER_ENGINE = [
                 'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 4-1-4-1, attacca le corsie scoperte dalla difesa a 3'
+            'w': 'Counter standard (fonte): 4-1-4-1, attacca le corsie scoperte dalla difesa a 3'
         },
         'debole': {
             'mod': '4-3-3',
@@ -16455,11 +16464,11 @@ COUNTER_ENGINE = [
                 'DR': '↓',
                 'ST': '—'
             },
-            'w': 'Scenario difensivo: 4-4-2 C (Classic), contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario difensivo: 4-4-2 C (Classic), blocco e ripartenza'
         },
         'pari': {
-            'mod': '4-3-3',
-            'alt': '4-4-2 C (Classic)',
+            'mod': '4-4-2 C (Classic)',
+            'alt': '4-3-3',
             'men': 'Offensiva',
             'pass': 'Misto',
             'stile': 'Corti',
@@ -16469,11 +16478,11 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'AML': '↑',
-                'AMR': '↑',
+                'ML': '↑',
+                'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 4-3-3, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Counter standard (fonte): 4-4-2 C (Classic), contendi il centrocampo e riparti'
         },
         'debole': {
             'mod': '4-3-3',
@@ -16491,7 +16500,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 4-3-3, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario offensivo: 4-3-3, contendi il centrocampo e riparti'
         }
     },
     {
@@ -16513,11 +16522,11 @@ COUNTER_ENGINE = [
                 'DR': '↓',
                 'ST': '—'
             },
-            'w': 'Scenario difensivo: 5-4-1 F (Flat), contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario difensivo: 5-4-1 F (Flat), blocco e ripartenza'
         },
         'pari': {
-            'mod': '4-3-3',
-            'alt': '4-5-1 V-Style',
+            'mod': '4-5-1 V-Style',
+            'alt': '4-3-3',
             'men': 'Normale',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -16531,11 +16540,11 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 4-3-3, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Counter standard (fonte): 4-5-1 V-Style, contendi il centrocampo e riparti'
         },
         'debole': {
-            'mod': '4-5-1 V-Style',
-            'alt': '4-3-3',
+            'mod': '4-3-3',
+            'alt': '4-5-1 V-Style',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -16549,7 +16558,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 4-5-1 V-Style, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario offensivo: 4-3-3, contendi il centrocampo e riparti'
         }
     },
     {
@@ -16618,7 +16627,7 @@ COUNTER_ENGINE = [
         'cat': 'att',
         'forte': {
             'mod': '5-4-1 F (Flat)',
-            'alt': '4-3-3',
+            'alt': '4-1-3N-2',
             'men': 'Difensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -16635,7 +16644,7 @@ COUNTER_ENGINE = [
             'w': 'Scenario difensivo: 5-4-1 F (Flat), attacca le corsie scoperte dalla difesa a 3'
         },
         'pari': {
-            'mod': '4-1-3-1-1',
+            'mod': '4-1-3N-2',
             'alt': '4-3-3',
             'men': 'Normale',
             'pass': 'Fasce',
@@ -16648,11 +16657,11 @@ COUNTER_ENGINE = [
             'fr': {
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 4-1-3-1-1, attacca le corsie scoperte dalla difesa a 3'
+            'w': 'Counter standard (fonte): 4-1-3N-2, attacca le corsie scoperte dalla difesa a 3'
         },
         'debole': {
             'mod': '4-3-3',
-            'alt': '4-1-3-1-1',
+            'alt': '4-1-3N-2',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -16854,7 +16863,7 @@ COUNTER_ENGINE = [
         'cat': 'att',
         'forte': {
             'mod': '5-4-1 F (Flat)',
-            'alt': '4-2-3-1',
+            'alt': '4-1-2-1-2 ND (Narrow Diamond)',
             'men': 'Difensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -16871,7 +16880,7 @@ COUNTER_ENGINE = [
             'w': 'Scenario difensivo: 5-4-1 F (Flat), attacca le corsie scoperte dalla difesa a 3'
         },
         'pari': {
-            'mod': '4-3-3',
+            'mod': '4-1-2-1-2 ND (Narrow Diamond)',
             'alt': '4-2-3-1',
             'men': 'Normale',
             'pass': 'Fasce',
@@ -16882,15 +16891,13 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 4-3-3, attacca le corsie scoperte dalla difesa a 3'
+            'w': 'Counter standard (fonte): 4-1-2-1-2 ND (Narrow Diamond), attacca le corsie scoperte dalla difesa a 3'
         },
         'debole': {
             'mod': '4-2-3-1',
-            'alt': '4-3-3',
+            'alt': '4-1-2-1-2 ND (Narrow Diamond)',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -17045,11 +17052,11 @@ COUNTER_ENGINE = [
                 'DMC': '↓',
                 'ST': '—'
             },
-            'w': 'Scenario difensivo: 4-1-4-1, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario difensivo: 4-1-4-1, blocco e ripartenza'
         },
         'pari': {
-            'mod': '3-4-3',
-            'alt': '4-3W-1-2',
+            'mod': '4-3W-1-2',
+            'alt': '3-4-3',
             'men': 'Normale',
             'pass': 'Fasce',
             'stile': 'Misti',
@@ -17059,17 +17066,15 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'AML': '↑',
-                'AMR': '↑',
                 'ML': '↑',
                 'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 3-4-3, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Counter standard (fonte): 4-3W-1-2, contendi il centrocampo e riparti'
         },
         'debole': {
-            'mod': '4-3W-1-2',
-            'alt': '3-4-3',
+            'mod': '3-4-3',
+            'alt': '4-3W-1-2',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Corti',
@@ -17079,12 +17084,13 @@ COUNTER_ENGINE = [
             'marc': 'Uomo',
             'fuo': 'NO',
             'fr': {
+                'AML': '↑',
+                'AMR': '↑',
                 'ML': '↑',
                 'MR': '↑',
-                'AMC': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 4-3W-1-2, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario offensivo: 3-4-3, contendi il centrocampo e riparti'
         }
     },
     {
@@ -17152,7 +17158,7 @@ COUNTER_ENGINE = [
         'cat': 'neu',
         'forte': {
             'mod': '4-1-4-1',
-            'alt': '3-1-3N-2W-1',
+            'alt': '4-3N-2W-1',
             'men': 'Difensiva',
             'pass': 'Misto',
             'stile': 'Lunghi',
@@ -17167,10 +17173,10 @@ COUNTER_ENGINE = [
                 'DMC': '↓',
                 'ST': '—'
             },
-            'w': 'Scenario difensivo: 4-1-4-1, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario difensivo: 4-1-4-1, blocco e ripartenza'
         },
         'pari': {
-            'mod': '3-4-3',
+            'mod': '4-3N-2W-1',
             'alt': '3-1-3N-2W-1',
             'men': 'Normale',
             'pass': 'Fasce',
@@ -17183,15 +17189,13 @@ COUNTER_ENGINE = [
             'fr': {
                 'AML': '↑',
                 'AMR': '↑',
-                'ML': '↑',
-                'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 3-4-3, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Counter standard (fonte): 4-3N-2W-1, contendi il centrocampo e riparti'
         },
         'debole': {
             'mod': '3-1-3N-2W-1',
-            'alt': '3-4-3',
+            'alt': '4-3N-2W-1',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Corti',
@@ -17205,15 +17209,15 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 3-1-3N-2W-1, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario offensivo: 3-1-3N-2W-1, contendi il centrocampo e riparti'
         }
     },
     {
         'av': '4-3N-3',
         'cat': 'neu',
         'forte': {
-            'mod': '4-1-4-1',
-            'alt': '3-4-1-2',
+            'mod': '3-4-3',
+            'alt': '4-1-4-1',
             'men': 'Difensiva',
             'pass': 'Misto',
             'stile': 'Lunghi',
@@ -17223,15 +17227,14 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'DL': '↓',
-                'DR': '↓',
-                'DMC': '↓',
+                'AML': '↑',
+                'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario difensivo: 4-1-4-1, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario difensivo: 3-4-3, blocco e ripartenza'
         },
         'pari': {
-            'mod': '3-4-3',
+            'mod': '4-1-4-1',
             'alt': '3-4-1-2',
             'men': 'Normale',
             'pass': 'Fasce',
@@ -17242,17 +17245,15 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'AML': '↑',
-                'AMR': '↑',
                 'ML': '↑',
                 'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 3-4-3, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Counter standard (fonte): 4-1-4-1, contendi il centrocampo e riparti'
         },
         'debole': {
             'mod': '3-4-1-2',
-            'alt': '3-4-3',
+            'alt': '4-1-4-1',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Corti',
@@ -17267,7 +17268,7 @@ COUNTER_ENGINE = [
                 'AMC': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 3-4-1-2, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario offensivo: 3-4-1-2, contendi il centrocampo e riparti'
         }
     },
     {
@@ -17275,7 +17276,7 @@ COUNTER_ENGINE = [
         'cat': 'att',
         'forte': {
             'mod': '5-4-1 F (Flat)',
-            'alt': '3-1-3N-1-2',
+            'alt': '4-1-3N-2',
             'men': 'Difensiva',
             'pass': 'Misto',
             'stile': 'Lunghi',
@@ -17292,7 +17293,7 @@ COUNTER_ENGINE = [
             'w': 'Scenario difensivo: 5-4-1 F (Flat), attacca le corsie scoperte dalla difesa a 3'
         },
         'pari': {
-            'mod': '4-3-3',
+            'mod': '4-1-3N-2',
             'alt': '3-1-3N-1-2',
             'men': 'Normale',
             'pass': 'Fasce',
@@ -17303,15 +17304,13 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'AML': '↑',
-                'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 4-3-3, attacca le corsie scoperte dalla difesa a 3'
+            'w': 'Counter standard (fonte): 4-1-3N-2, attacca le corsie scoperte dalla difesa a 3'
         },
         'debole': {
             'mod': '3-1-3N-1-2',
-            'alt': '4-3-3',
+            'alt': '4-1-3N-2',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Corti',
@@ -17332,7 +17331,7 @@ COUNTER_ENGINE = [
         'cat': 'att',
         'forte': {
             'mod': '5-4-1 F (Flat)',
-            'alt': '3-1-3N-2W-1',
+            'alt': '4-5-1 V-Style',
             'men': 'Difensiva',
             'pass': 'Misto',
             'stile': 'Lunghi',
@@ -17346,10 +17345,10 @@ COUNTER_ENGINE = [
                 'DR': '↓',
                 'ST': '—'
             },
-            'w': 'Scenario difensivo: 5-4-1 F (Flat), contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario difensivo: 5-4-1 F (Flat), blocco e ripartenza'
         },
         'pari': {
-            'mod': '4-3-3',
+            'mod': '4-5-1 V-Style',
             'alt': '3-1-3N-2W-1',
             'men': 'Normale',
             'pass': 'Fasce',
@@ -17364,11 +17363,11 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 4-3-3, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Counter standard (fonte): 4-5-1 V-Style, contendi il centrocampo e riparti'
         },
         'debole': {
             'mod': '3-1-3N-2W-1',
-            'alt': '4-3-3',
+            'alt': '4-5-1 V-Style',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Corti',
@@ -17382,7 +17381,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 3-1-3N-2W-1, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario offensivo: 3-1-3N-2W-1, contendi il centrocampo e riparti'
         }
     },
     {
@@ -17390,7 +17389,7 @@ COUNTER_ENGINE = [
         'cat': 'neu',
         'forte': {
             'mod': '4-1-4-1',
-            'alt': '3W-2N-1-3W-1',
+            'alt': '4-5-1 V-Style',
             'men': 'Difensiva',
             'pass': 'Misto',
             'stile': 'Lunghi',
@@ -17405,10 +17404,10 @@ COUNTER_ENGINE = [
                 'DMC': '↓',
                 'ST': '—'
             },
-            'w': 'Scenario difensivo: 4-1-4-1, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario difensivo: 4-1-4-1, blocco e ripartenza'
         },
         'pari': {
-            'mod': '3-4-3',
+            'mod': '4-5-1 V-Style',
             'alt': '3W-2N-1-3W-1',
             'men': 'Normale',
             'pass': 'Fasce',
@@ -17421,15 +17420,13 @@ COUNTER_ENGINE = [
             'fr': {
                 'AML': '↑',
                 'AMR': '↑',
-                'ML': '↑',
-                'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 3-4-3, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Counter standard (fonte): 4-5-1 V-Style, contendi il centrocampo e riparti'
         },
         'debole': {
             'mod': '3W-2N-1-3W-1',
-            'alt': '3-4-3',
+            'alt': '4-5-1 V-Style',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Corti',
@@ -17444,7 +17441,7 @@ COUNTER_ENGINE = [
                 'AMC': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 3W-2N-1-3W-1, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario offensivo: 3W-2N-1-3W-1, contendi il centrocampo e riparti'
         }
     },
     {
@@ -17513,7 +17510,7 @@ COUNTER_ENGINE = [
         'cat': 'neu',
         'forte': {
             'mod': '4-1-4-1',
-            'alt': '3-4-3',
+            'alt': '4-1-3-2',
             'men': 'Difensiva',
             'pass': 'Misto',
             'stile': 'Lunghi',
@@ -17528,10 +17525,10 @@ COUNTER_ENGINE = [
                 'DMC': '↓',
                 'ST': '—'
             },
-            'w': 'Scenario difensivo: 4-1-4-1, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario difensivo: 4-1-4-1, blocco e ripartenza'
         },
         'pari': {
-            'mod': '3N-1-4-1-1',
+            'mod': '4-1-3-2',
             'alt': '3-4-3',
             'men': 'Normale',
             'pass': 'Fasce',
@@ -17542,15 +17539,13 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 3N-1-4-1-1, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Counter standard (fonte): 4-1-3-2, contendi il centrocampo e riparti'
         },
         'debole': {
             'mod': '3-4-3',
-            'alt': '3N-1-4-1-1',
+            'alt': '4-1-3-2',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Corti',
@@ -17566,7 +17561,7 @@ COUNTER_ENGINE = [
                 'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 3-4-3, contendi il centrocampo e sfrutta le transizioni'
+            'w': 'Scenario offensivo: 3-4-3, contendi il centrocampo e riparti'
         }
     },
     {
@@ -17574,7 +17569,7 @@ COUNTER_ENGINE = [
         'cat': 'dif',
         'forte': {
             'mod': '4-4-2 C (Classic)',
-            'alt': '4-3-3',
+            'alt': '4-3N-3',
             'men': 'Difensiva',
             'pass': 'Misto',
             'stile': 'Lunghi',
@@ -17588,10 +17583,10 @@ COUNTER_ENGINE = [
                 'DR': '↓',
                 'ST': '—'
             },
-            'w': 'Scenario difensivo: 4-4-2 C (Classic), blocco e ripartenza contro la difesa chiusa'
+            'w': 'Scenario difensivo: 4-4-2 C (Classic), blocco e ripartenza'
         },
         'pari': {
-            'mod': '3N-5-2 V',
+            'mod': '4-3N-3',
             'alt': '4-3-3',
             'men': 'Normale',
             'pass': 'Fasce',
@@ -17602,15 +17597,15 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
+                'AML': '↑',
+                'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 3N-5-2 V, scardina la difesa a 5 con ampiezza e inserimenti'
+            'w': 'Counter standard (fonte): 4-3N-3, scardina la difesa a 5 con ampiezza'
         },
         'debole': {
             'mod': '4-3-3',
-            'alt': '3N-5-2 V',
+            'alt': '4-3N-3',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Corti',
@@ -17624,7 +17619,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 4-3-3, scardina la difesa a 5 con ampiezza e inserimenti'
+            'w': 'Scenario offensivo: 4-3-3, scardina la difesa a 5 con ampiezza'
         }
     },
     {
@@ -17632,7 +17627,7 @@ COUNTER_ENGINE = [
         'cat': 'dif',
         'forte': {
             'mod': '4-4-2 C (Classic)',
-            'alt': '3N-1-3W-1-2',
+            'alt': '4-2-2-2 H (Hexagon)',
             'men': 'Difensiva',
             'pass': 'Misto',
             'stile': 'Lunghi',
@@ -17646,10 +17641,10 @@ COUNTER_ENGINE = [
                 'DR': '↓',
                 'ST': '—'
             },
-            'w': 'Scenario difensivo: 4-4-2 C (Classic), blocco e ripartenza contro la difesa chiusa'
+            'w': 'Scenario difensivo: 4-4-2 C (Classic), blocco e ripartenza'
         },
         'pari': {
-            'mod': '4-3-3',
+            'mod': '4-2-2-2 H (Hexagon)',
             'alt': '3N-1-3W-1-2',
             'men': 'Normale',
             'pass': 'Fasce',
@@ -17664,11 +17659,11 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario neutro: 4-3-3, scardina la difesa a 5 con ampiezza e inserimenti'
+            'w': 'Counter standard (fonte): 4-2-2-2 H (Hexagon), scardina la difesa a 5 con ampiezza'
         },
         'debole': {
             'mod': '3N-1-3W-1-2',
-            'alt': '4-3-3',
+            'alt': '4-2-2-2 H (Hexagon)',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Corti',
@@ -17683,7 +17678,7 @@ COUNTER_ENGINE = [
                 'AMC': '↑',
                 'ST': '—'
             },
-            'w': 'Scenario offensivo: 3N-1-3W-1-2, scardina la difesa a 5 con ampiezza e inserimenti'
+            'w': 'Scenario offensivo: 3N-1-3W-1-2, scardina la difesa a 5 con ampiezza'
         }
     },
     {
@@ -20220,7 +20215,7 @@ COUNTER_QUICK = [
         'av': '3N-1-2-1-3',
         'cat': 'att',
         'off': '3-1-3N-1-2',
-        'neu': '4-3-3',
+        'neu': '4-1-3N-2',
         'dif': '5-4-1 F (Flat)'
     },
     {
@@ -20324,15 +20319,15 @@ COUNTER_QUICK = [
     {
         'av': '4-1-2-1-2 WD (Wide Diamond)',
         'cat': 'neu',
-        'off': '4-3W-1-2',
-        'neu': '3-4-3',
+        'off': '3-4-3',
+        'neu': '4-3W-1-2',
         'dif': '4-1-4-1'
     },
     {
         'av': '4-1-2-2-1',
         'cat': 'neu',
-        'off': '4-2-2-2 H (Hexagon)',
-        'neu': '3-4-3',
+        'off': '3-4-3',
+        'neu': '4-2-2-2 H (Hexagon)',
         'dif': '4-1-4-1'
     },
     {
@@ -20346,14 +20341,14 @@ COUNTER_QUICK = [
         'av': '4-1-1-2N-2',
         'cat': 'neu',
         'off': '3W-2N-1-3W-1',
-        'neu': '3-4-3',
+        'neu': '4-5-1 V-Style',
         'dif': '4-1-4-1'
     },
     {
         'av': '4-2N-1-2N-1',
         'cat': 'neu',
         'off': '3-4-3',
-        'neu': '3N-1-4-1-1',
+        'neu': '4-1-3-2',
         'dif': '4-1-4-1'
     },
     {
@@ -20374,14 +20369,14 @@ COUNTER_QUICK = [
         'av': '4-3N-3',
         'cat': 'neu',
         'off': '3-4-1-2',
-        'neu': '3-4-3',
-        'dif': '4-1-4-1'
+        'neu': '4-1-4-1',
+        'dif': '3-4-3'
     },
     {
         'av': '4-1-3N-2',
         'cat': 'neu',
         'off': '3-1-3N-2W-1',
-        'neu': '3-4-3',
+        'neu': '4-3N-2W-1',
         'dif': '4-1-4-1'
     },
     {
@@ -20479,7 +20474,7 @@ COUNTER_QUICK = [
         'av': '4-2-1-3',
         'cat': 'att',
         'off': '3-1-3N-2W-1',
-        'neu': '4-3-3',
+        'neu': '4-5-1 V-Style',
         'dif': '5-4-1 F (Flat)'
     },
     {
@@ -20556,7 +20551,7 @@ COUNTER_QUICK = [
         'av': '5-2W-2N-1',
         'cat': 'dif',
         'off': '3N-1-3W-1-2',
-        'neu': '4-3-3',
+        'neu': '4-2-2-2 H (Hexagon)',
         'dif': '4-4-2 C (Classic)'
     },
     {
@@ -20577,7 +20572,7 @@ COUNTER_QUICK = [
         'av': '5-1-1-1-2',
         'cat': 'dif',
         'off': '4-3-3',
-        'neu': '3N-5-2 V',
+        'neu': '4-3N-3',
         'dif': '4-4-2 C (Classic)'
     },
     {
@@ -20877,15 +20872,15 @@ MATCHUP_MATRIX = [
     {
         'opponent': '3-5-2 V (V-Style)',
         'category': 'att',
-        'counter_offensive': '4-2-2-2 H (Hexagon)',
-        'counter_neutral': '4-3-3',
+        'counter_offensive': '4-3-3',
+        'counter_neutral': '4-2-2-2 H (Hexagon)',
         'counter_defensive': '5-4-1 F (Flat)'
     },
     {
         'opponent': '3-4-3',
         'category': 'att',
-        'counter_offensive': '4-2-2-2 H (Hexagon)',
-        'counter_neutral': '4-3-3',
+        'counter_offensive': '4-3-3',
+        'counter_neutral': '4-2-2-2 H (Hexagon)',
         'counter_defensive': '5-4-1 F (Flat)'
     },
     {
@@ -20906,21 +20901,21 @@ MATCHUP_MATRIX = [
         'opponent': '4-1-3-1W-1',
         'category': 'neu',
         'counter_offensive': '3-4-3',
-        'counter_neutral': '4-1-3-1-1',
+        'counter_neutral': '4-4-1-1',
         'counter_defensive': '4-1-4-1'
     },
     {
         'opponent': '3-1-4-1-1',
         'category': 'att',
-        'counter_offensive': '4-1-2-1-2 ND (Narrow Diamond)',
-        'counter_neutral': '4-3-3',
+        'counter_offensive': '4-3-3',
+        'counter_neutral': '4-1-2-1-2 ND (Narrow Diamond)',
         'counter_defensive': '5-4-1 F (Flat)'
     },
     {
         'opponent': '4-1-2-2-1',
         'category': 'neu',
-        'counter_offensive': '4-2-2-2 H (Hexagon)',
-        'counter_neutral': '3-4-3',
+        'counter_offensive': '3-4-3',
+        'counter_neutral': '4-2-2-2 H (Hexagon)',
         'counter_defensive': '4-1-4-1'
     },
     {
@@ -20934,7 +20929,7 @@ MATCHUP_MATRIX = [
         'opponent': '4-2-4',
         'category': 'att',
         'counter_offensive': '4-3-3',
-        'counter_neutral': '4-3-3',
+        'counter_neutral': '5-4-1 F (Flat)',
         'counter_defensive': '5-4-1 F (Flat)'
     },
     {
@@ -20948,7 +20943,7 @@ MATCHUP_MATRIX = [
         'opponent': '5-3-2',
         'category': 'dif',
         'counter_offensive': '4-3-3',
-        'counter_neutral': '4-3-3',
+        'counter_neutral': '4-4-2 C (Classic)',
         'counter_defensive': '4-4-2 C (Classic)'
     },
     {
@@ -20969,14 +20964,14 @@ MATCHUP_MATRIX = [
         'opponent': '4-2-2-1-1',
         'category': 'dif',
         'counter_offensive': '4-3-3',
-        'counter_neutral': '4-3-3',
+        'counter_neutral': '4-4-2 C (Classic)',
         'counter_defensive': '4-4-2 C (Classic)'
     },
     {
         'opponent': '4-1-1-3-1',
         'category': 'att',
-        'counter_offensive': '4-5-1 V-Style',
-        'counter_neutral': '4-3-3',
+        'counter_offensive': '4-3-3',
+        'counter_neutral': '4-5-1 V-Style',
         'counter_defensive': '5-4-1 F (Flat)'
     },
     {
@@ -20990,7 +20985,7 @@ MATCHUP_MATRIX = [
         'opponent': '3-1-2-1-3',
         'category': 'att',
         'counter_offensive': '4-3-3',
-        'counter_neutral': '4-1-3-1-1',
+        'counter_neutral': '4-1-3N-2',
         'counter_defensive': '5-4-1 F (Flat)'
     },
     {
@@ -21018,7 +21013,7 @@ MATCHUP_MATRIX = [
         'opponent': '3-1-4-2 W',
         'category': 'att',
         'counter_offensive': '4-2-3-1',
-        'counter_neutral': '4-3-3',
+        'counter_neutral': '4-1-2-1-2 ND (Narrow Diamond)',
         'counter_defensive': '5-4-1 F (Flat)'
     },
     {
@@ -21038,8 +21033,8 @@ MATCHUP_MATRIX = [
     {
         'opponent': '4-1-2-1-2 WD (Wide Diamond)',
         'category': 'neu',
-        'counter_offensive': '4-3W-1-2',
-        'counter_neutral': '3-4-3',
+        'counter_offensive': '3-4-3',
+        'counter_neutral': '4-3W-1-2',
         'counter_defensive': '4-1-4-1'
     },
     {
@@ -21053,35 +21048,35 @@ MATCHUP_MATRIX = [
         'opponent': '4-1-3N-2',
         'category': 'neu',
         'counter_offensive': '3-1-3N-2W-1',
-        'counter_neutral': '3-4-3',
+        'counter_neutral': '4-3N-2W-1',
         'counter_defensive': '4-1-4-1'
     },
     {
         'opponent': '4-3N-3',
         'category': 'neu',
         'counter_offensive': '3-4-1-2',
-        'counter_neutral': '3-4-3',
-        'counter_defensive': '4-1-4-1'
+        'counter_neutral': '4-1-4-1',
+        'counter_defensive': '3-4-3'
     },
     {
         'opponent': '3N-1-2-1-3',
         'category': 'att',
         'counter_offensive': '3-1-3N-1-2',
-        'counter_neutral': '4-3-3',
+        'counter_neutral': '4-1-3N-2',
         'counter_defensive': '5-4-1 F (Flat)'
     },
     {
         'opponent': '4-2-1-3',
         'category': 'att',
         'counter_offensive': '3-1-3N-2W-1',
-        'counter_neutral': '4-3-3',
+        'counter_neutral': '4-5-1 V-Style',
         'counter_defensive': '5-4-1 F (Flat)'
     },
     {
         'opponent': '4-1-1-2N-2',
         'category': 'neu',
         'counter_offensive': '3W-2N-1-3W-1',
-        'counter_neutral': '3-4-3',
+        'counter_neutral': '4-5-1 V-Style',
         'counter_defensive': '4-1-4-1'
     },
     {
@@ -21095,21 +21090,21 @@ MATCHUP_MATRIX = [
         'opponent': '4-2N-1-2N-1',
         'category': 'neu',
         'counter_offensive': '3-4-3',
-        'counter_neutral': '3N-1-4-1-1',
+        'counter_neutral': '4-1-3-2',
         'counter_defensive': '4-1-4-1'
     },
     {
         'opponent': '5-1-1-1-2',
         'category': 'dif',
         'counter_offensive': '4-3-3',
-        'counter_neutral': '3N-5-2 V',
+        'counter_neutral': '4-3N-3',
         'counter_defensive': '4-4-2 C (Classic)'
     },
     {
         'opponent': '5-2W-2N-1',
         'category': 'dif',
         'counter_offensive': '3N-1-3W-1-2',
-        'counter_neutral': '4-3-3',
+        'counter_neutral': '4-2-2-2 H (Hexagon)',
         'counter_defensive': '4-4-2 C (Classic)'
     },
     {
