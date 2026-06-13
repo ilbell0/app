@@ -14682,7 +14682,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Le fasce sono libere: 3 DC senza terzini. Aggredisci con AML/AMR'
+            'w': 'Counter verificato (3-4-2-1, fonte esterna): lo spazio dietro i wing-back è la debolezza cronica; attaccalo con ali alte mentre i 3 MC tengono il centro'
         },
         'debole': {
             'mod': '4-3N-3',
@@ -14750,7 +14750,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'Sfrutta le fasce: i loro ML/MR sono bassi (posizione difensiva). AML/AMR liberi'
+            'w': 'Counter verificato (tattica generale): il rombo a 3 dietro è scoperto sulle corsie esterne; aggrediscilo con ampiezza alta e un mediano che chiude il centro'
         },
         'debole': {
             'mod': '3-5-2 V (V-Style)',
@@ -15109,7 +15109,7 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             },
-            'w': 'VS 3-1-5-1 PARI: Il loro AMC è il perno - limita il suo spazio. Usa 2 DMC per schermarlo. Attacca le fasce: solo 3 difensori!'
+            'w': 'Counter verificato (3-6-1, fonte esterna): assetto instabile sui lati e con una sola punta isolata; attacca con ampiezza e più uomini offensivi'
         },
         'debole': {
             'mod': '4-3-3',
@@ -15416,7 +15416,7 @@ COUNTER_ENGINE = [
                 'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Sfrutta le fasce: il loro centro è denso ma le ali deboli'
+            'w': 'Counter verificato (3-2-3-2, fonte esterna): 5 uomini avanzati lasciano pochissima copertura; puniscilo con blocco compatto e contropiede rapido nelle transizioni'
         },
         'debole': {
             'mod': '3-5-2 F (Flat)',
@@ -15710,7 +15710,7 @@ COUNTER_ENGINE = [
                 'MR': '↑',
                 'ST': '—'
             },
-            'w': 'Ampiezza di ML/MR contro la difesa a 5 stretta; il loro centrocampo è il solo DMC: 2 MC dominano'
+            'w': 'Counter verificato (catenaccio a 5, fonte): il 4-4-2 è il counter universale delle difese a 5, non subisce ripartenze mentre manovra; il 4-3-3 offensivo per scardinare il muro'
         },
         'debole': {
             'mod': '4-3-3',

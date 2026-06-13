@@ -230,9 +230,13 @@ con eccezione per le difese a 5; struttura off/dif). Stato al 13/06: **0 ALTA,
 NotebookLM `7b0eba98` (11 batch totali): è collocato nello scenario **neutro**
 (risposta standard) con la nota `w` che cita la motivazione tattica dalle fonti
 (`"Counter standard (fonte): … , <perché>"`); off/dif prendono le alternative
-dal reverse-lookup. I 5 moduli che le fonti non trattano (3-1-3-1-2, 3-1-3-2-1
-Tiki-taka, 3-1-5-1 AMC, 3W-2N-3N-2, 5-1DMC-2-2) mantengono counter validati dal
-reverse-lookup. Le motivazioni grezze delle fonti sono nel log di sessione.
+dal reverse-lookup. I 5 moduli che il notebook Top Eleven non trattava
+(3-1-3-1-2, 3-1-3-2-1 Tiki-taka, 3-1-5-1 AMC, 3W-2N-3N-2, 5-1DMC-2-2) sono stati
+verificati con ricerca calcistica generale (NotebookLM con angolazione generica
++ web: jobsinfootball, spielverlagerung) traducendoli nelle formazioni reali
+(3-4-1-2, 3-4-2-1, 3-6-1, 3-2-3-2, catenaccio 5-1-2-2). I counter erano già
+corretti: la nota neutro ora cita la debolezza ("Counter verificato …").
+**Copertura totale: 107/107 moduli con counter motivato da fonte.**
 
 ### Stesso schema per ogni nuovo dataset
 ```
