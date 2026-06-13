@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   View,
   Text,
@@ -95,6 +95,7 @@ export default function FormationsScreen() {
   const [modalVisible, setModalVisible] = useState(false);
   const [fadeAnim] = useState(new Animated.Value(0));
   const [defenseFilter, setDefenseFilter] = useState<'all' | 3 | 4 | 5>('all');
+  const modalScrollRef = useRef<ScrollView>(null);
 
   useEffect(() => {
     fetchData();
@@ -130,6 +131,16 @@ export default function FormationsScreen() {
     setSelectedFormation(formation);
     setSelectedLevel('equal');
     setModalVisible(true);
+  };
+
+  // Naviga alla scheda di un modulo citato (BATTE / VULNERABILE A) cliccandolo.
+  // Riporta lo scroll in cima per mostrare la nuova formazione dall'inizio.
+  const openByName = (name: string) => {
+    const target = formations.find((f) => f.name === name);
+    if (!target) return;
+    setSelectedFormation(target);
+    setSelectedLevel('equal');
+    modalScrollRef.current?.scrollTo({ y: 0, animated: false });
   };
 
   const currentSettings = selectedFormation?.opponent_settings?.[selectedLevel];
@@ -255,7 +266,7 @@ export default function FormationsScreen() {
               ))}
             </View>
 
-            <ScrollView style={styles.modalScroll} showsVerticalScrollIndicator={false}>
+            <ScrollView ref={modalScrollRef} style={styles.modalScroll} showsVerticalScrollIndicator={false}>
               {/* Description */}
               <View style={styles.descriptionSection}>
                 <Text style={styles.sectionLabel}>
@@ -424,11 +435,21 @@ export default function FormationsScreen() {
                         {language === 'it' ? `BATTE (${selectedFormation.effective_against.length})` : `BEATS (${selectedFormation.effective_against.length})`}
                       </Text>
                       <View style={{flexDirection: 'row', flexWrap: 'wrap', gap: 6}}>
-                        {selectedFormation.effective_against.map((opp: string, i: number) => (
-                          <View key={i} style={[styles.tipBox, {paddingHorizontal: 10, paddingVertical: 6, borderLeftColor: '#FFFFFF'}]}>
-                            <Text style={[styles.tipText, {fontSize: 11}]}>{opp}</Text>
-                          </View>
-                        ))}
+                        {selectedFormation.effective_against.map((opp: string, i: number) => {
+                          const exists = formations.some((f) => f.name === opp);
+                          return (
+                            <TouchableOpacity
+                              key={i}
+                              style={[styles.tipBox, styles.linkChip, {borderLeftColor: '#FFFFFF'}]}
+                              onPress={() => openByName(opp)}
+                              disabled={!exists}
+                              activeOpacity={0.6}
+                            >
+                              <Text style={[styles.tipText, {fontSize: 11}]}>{opp}</Text>
+                              {exists && <Ionicons name="chevron-forward" size={12} color={NothingTheme.colors.textTertiary} />}
+                            </TouchableOpacity>
+                          );
+                        })}
                       </View>
                     </View>
                   )}
@@ -438,11 +459,21 @@ export default function FormationsScreen() {
                         {language === 'it' ? `VULNERABILE A (${selectedFormation.vulnerable_to.length})` : `WEAK TO (${selectedFormation.vulnerable_to.length})`}
                       </Text>
                       <View style={{flexDirection: 'row', flexWrap: 'wrap', gap: 6}}>
-                        {selectedFormation.vulnerable_to.map((opp: string, i: number) => (
-                          <View key={i} style={[styles.tipBox, {paddingHorizontal: 10, paddingVertical: 6}]}>
-                            <Text style={[styles.tipText, {fontSize: 11}]}>{opp}</Text>
-                          </View>
-                        ))}
+                        {selectedFormation.vulnerable_to.map((opp: string, i: number) => {
+                          const exists = formations.some((f) => f.name === opp);
+                          return (
+                            <TouchableOpacity
+                              key={i}
+                              style={[styles.tipBox, styles.linkChip]}
+                              onPress={() => openByName(opp)}
+                              disabled={!exists}
+                              activeOpacity={0.6}
+                            >
+                              <Text style={[styles.tipText, {fontSize: 11}]}>{opp}</Text>
+                              {exists && <Ionicons name="chevron-forward" size={12} color={NothingTheme.colors.textTertiary} />}
+                            </TouchableOpacity>
+                          );
+                        })}
                       </View>
                     </View>
                   )}
@@ -826,6 +857,13 @@ const styles = StyleSheet.create({
     color: NothingTheme.colors.textSecondary,
     fontSize: 13,
     lineHeight: 20,
+  },
+  linkChip: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    paddingHorizontal: 10,
+    paddingVertical: 6,
   },
   prosConsSection: {
     marginBottom: 40,
