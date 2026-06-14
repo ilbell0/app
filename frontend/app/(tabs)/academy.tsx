@@ -60,6 +60,26 @@ const SECTIONS: SectionDef[] = [
   { id: 'battles', endpoint: '/api/battle-cards', label_en: 'Battles', label_it: 'Scontri', icon: 'shuffle-outline' },
 ];
 
+// Macro-aree: le 15 sezioni raggruppate in 4 gruppi logici (selettore a 2 livelli)
+interface GroupDef {
+  id: string;
+  label_en: string;
+  label_it: string;
+  icon: string;
+  sections: SectionId[];
+}
+
+const GROUPS: GroupDef[] = [
+  { id: 'tactics', label_en: 'Tactics', label_it: 'Tattica', icon: 'analytics-outline',
+    sections: ['meta', 'matrix', 'quick', 'arrows', 'battles'] },
+  { id: 'players', label_en: 'Players', label_it: 'Giocatori', icon: 'people-outline',
+    sections: ['roles', 'skills', 'training'] },
+  { id: 'strategy', label_en: 'Strategy', label_it: 'Strategia', icon: 'compass-outline',
+    sections: ['mystyle', 'setpiece', 'paths'] },
+  { id: 'reference', label_en: 'Reference', label_it: 'Riferimento', icon: 'library-outline',
+    sections: ['teams', 'stories', 'faq', 'abbr'] },
+];
+
 const TIER_COLORS: Record<string, string> = {
   S: NothingTheme.colors.accent,
   A: NothingTheme.colors.textPrimary,
@@ -71,7 +91,8 @@ export default function AcademyScreen() {
   const { language } = useLanguage();
   const isIt = language === 'it';
 
-  const [section, setSection] = useState<SectionId>('roles');
+  const [group, setGroup] = useState<string>('tactics');
+  const [section, setSection] = useState<SectionId>('meta');
   const [data, setData] = useState<Record<SectionId, any[]>>({
     roles: [], meta: [], skills: [], training: [], arrows: [], teams: [], stories: [], faq: [], quick: [], abbr: [], matrix: [], paths: [], mystyle: [], setpiece: [], battles: [],
   });
@@ -158,14 +179,43 @@ export default function AcademyScreen() {
 
       <View style={styles.divider} />
 
-      {/* Section selector */}
+      {/* Group selector (macro-aree) */}
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
         style={styles.filterScroll}
         contentContainerStyle={styles.filterContainer}
       >
-        {SECTIONS.map((s) => (
+        {GROUPS.map((g) => (
+          <TouchableOpacity
+            key={g.id}
+            style={[styles.groupButton, group === g.id && styles.groupButtonActive]}
+            onPress={() => {
+              setGroup(g.id);
+              setSection(g.sections[0]);
+            }}
+          >
+            <Ionicons
+              name={g.icon as any}
+              size={14}
+              color={group === g.id ? NothingTheme.colors.background : NothingTheme.colors.textSecondary}
+              style={{ marginRight: 6 }}
+            />
+            <Text style={[styles.groupButtonText, group === g.id && styles.groupButtonTextActive]}>
+              {(isIt ? g.label_it : g.label_en).toUpperCase()}
+            </Text>
+          </TouchableOpacity>
+        ))}
+      </ScrollView>
+
+      {/* Section selector (sezioni del gruppo attivo) */}
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={styles.filterScroll}
+        contentContainerStyle={styles.filterContainer}
+      >
+        {SECTIONS.filter((s) => GROUPS.find((g) => g.id === group)?.sections.includes(s.id)).map((s) => (
           <TouchableOpacity
             key={s.id}
             style={[styles.filterButton, section === s.id && styles.filterButtonActive]}
@@ -468,6 +518,28 @@ const styles = StyleSheet.create({
   filterButtonActive: { backgroundColor: NothingTheme.colors.accentMuted, borderColor: NothingTheme.colors.accent },
   filterButtonText: { color: NothingTheme.colors.textSecondary, fontSize: 11, fontWeight: '600', letterSpacing: 1 },
   filterButtonTextActive: { color: NothingTheme.colors.accent },
+  groupButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 9,
+    borderRadius: 4,
+    backgroundColor: NothingTheme.colors.surface,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+    marginRight: 8,
+  },
+  groupButtonActive: {
+    backgroundColor: NothingTheme.colors.accent,
+    borderColor: NothingTheme.colors.accent,
+  },
+  groupButtonText: {
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 11,
+    fontWeight: '700',
+    letterSpacing: 1,
+  },
+  groupButtonTextActive: { color: NothingTheme.colors.background },
   countRow: { paddingHorizontal: 24, paddingVertical: 12 },
   countText: { color: NothingTheme.colors.textTertiary, fontSize: 10, fontWeight: '600', letterSpacing: 2 },
   scrollView: { flex: 1 },

@@ -24,13 +24,24 @@ interface ScoutTip {
   content_it: string;
 }
 
+// Macro-gruppi: ogni categoria fine dei dati confluisce in una delle 3 aree,
+// così tutti gli 82 consigli sono raggiungibili (prima il filtro ne copriva ~5).
 const CATEGORIES = [
-  { id: 'all', icon: 'list-outline', label_en: 'All', label_it: 'Tutti' },
-  { id: 'goalkeeper', icon: 'hand-left-outline', label_en: 'GK', label_it: 'POR' },
-  { id: 'defense', icon: 'shield-outline', label_en: 'DEF', label_it: 'DIF' },
-  { id: 'midfield', icon: 'football-outline', label_en: 'MID', label_it: 'CEN' },
-  { id: 'attack', icon: 'flame-outline', label_en: 'ATT', label_it: 'ATT' },
+  { id: 'all', icon: 'apps-outline', label_en: 'All', label_it: 'Tutti' },
+  { id: 'tactics', icon: 'git-compare-outline', label_en: 'Tactics', label_it: 'Tattica' },
+  { id: 'squad', icon: 'people-outline', label_en: 'Squad', label_it: 'Reparti' },
+  { id: 'club', icon: 'briefcase-outline', label_en: 'Club', label_it: 'Gestione' },
 ];
+
+const MACRO_OF: Record<string, string> = {
+  tactics: 'tactics', counter: 'tactics', scenario: 'tactics', arrows: 'tactics', meta: 'tactics',
+  defense: 'squad', midfield: 'squad', attack: 'squad', skills: 'squad', training: 'squad',
+  economy: 'club', market: 'club', budget: 'club', morale: 'club', general: 'club',
+};
+
+const MACRO_ICON: Record<string, string> = {
+  tactics: 'git-compare-outline', squad: 'people-outline', club: 'briefcase-outline',
+};
 
 export default function ScoutScreen() {
   const insets = useSafeAreaInsets();
@@ -65,7 +76,7 @@ export default function ScoutScreen() {
 
   const filteredTips = selectedCategory === 'all'
     ? tips
-    : tips.filter((tip) => tip.category === selectedCategory);
+    : tips.filter((tip) => MACRO_OF[tip.category] === selectedCategory);
 
   const openTip = (tip: ScoutTip) => {
     setSelectedTip(tip);
@@ -73,8 +84,7 @@ export default function ScoutScreen() {
   };
 
   const getCategoryIcon = (category: string) => {
-    const cat = CATEGORIES.find(c => c.id === category);
-    return cat?.icon || 'document-outline';
+    return MACRO_ICON[MACRO_OF[category]] || 'document-outline';
   };
 
   if (loading) {
@@ -111,6 +121,12 @@ export default function ScoutScreen() {
             ]}
             onPress={() => setSelectedCategory(cat.id)}
           >
+            <Ionicons
+              name={cat.icon as any}
+              size={14}
+              color={selectedCategory === cat.id ? NothingTheme.colors.accent : NothingTheme.colors.textSecondary}
+              style={{ marginRight: 6 }}
+            />
             <Text style={[
               styles.filterButtonText,
               selectedCategory === cat.id && styles.filterButtonTextActive,
@@ -271,6 +287,8 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   filterButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
     paddingHorizontal: 16,
     paddingVertical: 8,
     borderRadius: 4,

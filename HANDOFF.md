@@ -30,6 +30,7 @@ C:\Users\habet\progetti\app-emergent\
 │   │   ├── settings.tsx     # Tab SET
 │   │   └── _layout.tsx      # Bottom tab bar (6 tab, no AI)
 │   ├── src/
+│   │   ├── components/      # PitchDiagram.tsx (mini-campo formazioni, no SVG)
 │   │   ├── data/            # JSON estratti da server.py (offline)
 │   │   ├── context/         # AuthContext, LanguageContext (IT/EN)
 │   │   └── theme/           # NothingTheme (nero/rosso)
@@ -46,6 +47,16 @@ C:\Users\habet\progetti\app-emergent\
 ```
 
 **Bottom tabs attive**: HOME · FORM · COUNTER · SCOUT · ACADEMY · SET (tab AI rimossa il 04/06).
+
+### UI/UX riordino (13/06)
+- **FORM**: ogni scheda mostra un mini-campo (`PitchDiagram`) con i giocatori
+  nelle posizioni reali e le frecce dello scenario; filtro **COMUNI** di default
+  (37 moduli reali, campo `FORMATIONS.common`) vs TUTTE/DIF; badge COMUNE/VARIANTE;
+  i moduli in BATTE/VULNERABILE A sono cliccabili (navigazione wiki).
+- **SCOUT**: filtro a 3 macro-aree (Tattica/Reparti/Gestione, mappa `MACRO_OF`)
+  che copre tutti gli 82 consigli (prima il filtro ne raggiungeva ~5).
+- **ACADEMY**: selettore a 2 livelli — 4 gruppi (Tattica/Giocatori/Strategia/
+  Riferimento, `GROUPS`) sopra le 15 sezioni, invece della lista piatta.
 
 ---
 
