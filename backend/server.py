@@ -356,7 +356,8 @@ FORMATIONS = [
             '5-3N-2',
             '5-3W-2',
             '5-4-1 F (Flat)'
-        ]
+        ],
+        'common': True
     },
     {
         'id': '41212nd',
@@ -476,7 +477,8 @@ FORMATIONS = [
             '3W-4-1-2',
             '3W-5-1-1',
             '4-4-2 C (Classic)'
-        ]
+        ],
+        'common': True
     },
     {
         'id': '41212wd',
@@ -579,7 +581,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-4-3', '4-1-4-1', '4-3W-1-2'],
-        'effective_against': []
+        'effective_against': [],
+        'common': True
     },
     {
         'id': '451v',
@@ -722,7 +725,8 @@ FORMATIONS = [
             '4-3N-1-2',
             '4-3W-3',
             '4-4-1-1'
-        ]
+        ],
+        'common': True
     },
     {
         'id': '451f',
@@ -823,7 +827,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-5-2 F (Flat)', '3-5-2 V (V-Style)', '4-1-4-1'],
-        'effective_against': ['3N-2W-3N-2', '4-3-2-1 XT (Xmas Tree)', '5-1-3W-1']
+        'effective_against': ['3N-2W-3N-2', '4-3-2-1 XT (Xmas Tree)', '5-1-3W-1'],
+        'common': True
     },
     {
         'id': '4231',
@@ -924,7 +929,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-1-4-2', '4-1-4-1', '5-4-1 F (Flat)'],
-        'effective_against': ['3-1-4-2 W', '3-1-5-1 AMC', '4-1-1-2W-2']
+        'effective_against': ['3-1-4-2 W', '3-1-5-1 AMC', '4-1-1-2W-2'],
+        'common': True
     },
     {
         'id': '4222h',
@@ -1034,7 +1040,8 @@ FORMATIONS = [
             '4-1-2-2-1',
             '4-1-4-1',
             '5-2W-2N-1'
-        ]
+        ],
+        'common': True
     },
     {
         'id': '352f',
@@ -1134,7 +1141,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['4-3-3', '4-3N-2W-1'],
-        'effective_against': ['3-1-3-1-2', '3-4-1-2', '4-5-1 F (Flat)', '5-4-1 F (Flat)']
+        'effective_against': ['3-1-3-1-2', '3-4-1-2', '4-5-1 F (Flat)', '5-4-1 F (Flat)'],
+        'common': True
     },
     {
         'id': '352v',
@@ -1231,7 +1239,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['4-2-2-2 H (Hexagon)', '4-3-3', '5-4-1 F (Flat)'],
-        'effective_against': ['3-1-3-1-2', '3W-1-3N-1-2', '4-1-4-1', '4-5-1 F (Flat)']
+        'effective_against': ['3-1-3-1-2', '3W-1-3N-1-2', '4-1-4-1', '4-5-1 F (Flat)'],
+        'common': True
     },
     {
         'id': '3142',
@@ -1329,7 +1338,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['3-4-3', '4-4-2 C (Classic)', '4-5-1 V-Style'],
-        'effective_against': ['4-2-3-1']
+        'effective_against': ['4-2-3-1'],
+        'common': True
     },
     {
         'id': '541f',
@@ -1442,7 +1452,8 @@ FORMATIONS = [
             '4-2-3-1 Attack',
             '4-2-4',
             'False Nine + Wingers'
-        ]
+        ],
+        'common': True
     },
     {
         'id': '32221b',
@@ -1543,7 +1554,8 @@ FORMATIONS = [
             '3W-5-2 V',
             '4-2(DMC)-3W-1',
             '4-4-2 C (Classic)'
-        ]
+        ],
+        'common': True
     },
     {
         'id': '3n2221b',
@@ -1641,7 +1653,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['4-2-2-2 H (Hexagon)', '4-3N-2W-1'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '4141',
@@ -1781,7 +1794,8 @@ FORMATIONS = [
             '4-3W-1-2',
             '4-5-1 F (Flat)',
             '4-5-1 V-Style'
-        ]
+        ],
+        'common': True
     },
     {
         'id': '433',
@@ -1919,7 +1933,8 @@ FORMATIONS = [
             '5-2W-2N-1',
             '5-3-2',
             'False Nine + Wingers'
-        ]
+        ],
+        'common': True
     },
     {
         'id': '53n2',
@@ -2015,7 +2030,8 @@ FORMATIONS = [
         },
         'defense_count': 5,
         'vulnerable_to': ['4-4-2 C (Classic)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': True
     },
     {
         'id': '343',
@@ -2133,7 +2149,8 @@ FORMATIONS = [
             '4-3-2-1 XT (Xmas Tree)',
             '4-3N-3',
             '4-5-1 V-Style'
-        ]
+        ],
+        'common': True
     },
     {
         'id': '3w2dmc3w11ml',
@@ -2231,7 +2248,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['3N-1-4-2', '4-5-1 V-Style', '3-2-2-2-1 B (Butterfly)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '3w2dmc3n11tower',
@@ -2327,7 +2345,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['4-4-2 C (Classic)', '4-5-1 V-Style', '5-4-1 F (Flat)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '51dmc22',
@@ -2429,7 +2448,8 @@ FORMATIONS = [
         },
         'defense_count': 5,
         'vulnerable_to': ['4-3-3', '4-4-2 C (Classic)'],
-        'effective_against': ['4-1-3W-1-1']
+        'effective_against': ['4-1-3W-1-1'],
+        'common': False
     },
     {
         'id': '5212x',
@@ -2525,7 +2545,8 @@ FORMATIONS = [
         },
         'defense_count': 5,
         'vulnerable_to': ['3N-1-4-2'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '522amlamr1',
@@ -2624,7 +2645,8 @@ FORMATIONS = [
         },
         'defense_count': 5,
         'vulnerable_to': ['4-3-3', '4-4-2 C (Classic)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': True
     },
     {
         'id': '4131w1',
@@ -2729,7 +2751,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-4-3', '4-1-3-1-1', '4-1-4-1', '4-4-1-1'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '3n52v',
@@ -2825,7 +2848,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['3-2-2-2-1 B (Butterfly)', '4-2-2-2 H (Hexagon)', '4-3N-2W-1'],
-        'effective_against': ['4-1-2-1-2 ND (Narrow Diamond)', '5-1-1-1-2']
+        'effective_against': ['4-1-2-1-2 ND (Narrow Diamond)', '5-1-1-1-2'],
+        'common': False
     },
     {
         'id': '43n2w1',
@@ -2937,7 +2961,8 @@ FORMATIONS = [
             '3W-1-5-1',
             '4-1-3N-2',
             '5-4-1 F (Flat)'
-        ]
+        ],
+        'common': True
     },
     {
         'id': '3151amc',
@@ -3119,7 +3144,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['4-2-3-1', '4-3-3'],
-        'effective_against': []
+        'effective_against': [],
+        'common': True
     },
     {
         'id': '31411',
@@ -3238,7 +3264,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['4-1-2-1-2 ND (Narrow Diamond)', '4-3-3', '5-4-1 F (Flat)'],
-        'effective_against': ['4-3N-2W-1']
+        'effective_against': ['4-3N-2W-1'],
+        'common': True
     },
     {
         'id': '41221',
@@ -3357,7 +3384,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-4-3', '4-1-4-1', '4-2-2-2 H (Hexagon)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': 'fn9w',
@@ -3472,7 +3500,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['4-1-3-1-1', '4-3-3', '5-4-1 F (Flat)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '424',
@@ -3572,7 +3601,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['4-3-3', '5-4-1 F (Flat)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': True
     },
     {
         'id': '41311',
@@ -3674,7 +3704,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-4-3', '4-1-4-1', '4-5-1 V-Style'],
-        'effective_against': ['3-1-2-1-3', '4-1-3-1W-1', '5-1-3N-1', 'False Nine + Wingers']
+        'effective_against': ['3-1-2-1-3', '4-1-3-1W-1', '5-1-3N-1', 'False Nine + Wingers'],
+        'common': True
     },
     {
         'id': '4321xt',
@@ -3773,7 +3804,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-4-3', '4-1-4-1', '4-5-1 F (Flat)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': True
     },
     {
         'id': '532',
@@ -3869,7 +3901,8 @@ FORMATIONS = [
         },
         'defense_count': 5,
         'vulnerable_to': ['4-3-3', '4-4-2 C (Classic)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': True
     },
     {
         'id': '413n2',
@@ -3971,7 +4004,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-4-3', '4-1-4-1', '4-3N-2W-1'],
-        'effective_against': ['3-1-2-1-3', '3N-1-2-1-3', '4-2-3-1 Attack']
+        'effective_against': ['3-1-2-1-3', '3N-1-2-1-3', '4-2-3-1 Attack'],
+        'common': False
     },
     {
         'id': '3412',
@@ -4068,7 +4102,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['3-5-2 F (Flat)', '4-1-2-1-2 ND (Narrow Diamond)'],
-        'effective_against': ['3-2-2-2-1 B (Butterfly)', '4-3N-3']
+        'effective_against': ['3-2-2-2-1 B (Butterfly)', '4-3N-3'],
+        'common': True
     },
     {
         'id': '31312',
@@ -4163,7 +4198,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['3-5-2 F (Flat)', '3-5-2 V (V-Style)', '4-5-1 V-Style'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '43n3',
@@ -4259,7 +4295,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-4-1-2', '3-4-3', '4-1-4-1'],
-        'effective_against': ['4-5-1 V-Style', '5-1-1-1-2']
+        'effective_against': ['4-5-1 V-Style', '5-1-1-1-2'],
+        'common': True
     },
     {
         'id': '3132w1',
@@ -4357,7 +4394,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['4-1-4-1', '4-3-3', '5-4-1 F (Flat)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '3n1213',
@@ -4451,7 +4489,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['4-1-3N-2', '4-3-3', '5-4-1 F (Flat)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '4213',
@@ -4550,7 +4589,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['4-3-3', '4-5-1 V-Style', '5-4-1 F (Flat)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': True
     },
     {
         'id': '4112n2',
@@ -4648,7 +4688,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-4-3', '4-1-4-1', '4-5-1 V-Style'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '3w13n12',
@@ -4746,7 +4787,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['3-4-3', '3-5-2 V (V-Style)', '4-1-4-1'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '3313',
@@ -4842,7 +4884,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['4-1-4-1', '4-3-3', '5-4-1 F (Flat)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': True
     },
     {
         'id': '42n12n1',
@@ -4940,7 +4983,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-4-3', '4-1-3-2', '4-1-4-1'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '51112',
@@ -5038,7 +5082,8 @@ FORMATIONS = [
         },
         'defense_count': 5,
         'vulnerable_to': ['3N-5-2 V', '4-3-3', '4-3N-3', '4-4-2 C (Classic)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': True
     },
     {
         'id': '52w2n1',
@@ -5137,7 +5182,8 @@ FORMATIONS = [
         },
         'defense_count': 5,
         'vulnerable_to': ['4-2-2-2 H (Hexagon)', '4-3-3', '4-4-2 C (Classic)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '42211',
@@ -5235,7 +5281,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['4-3-3', '4-4-2 C (Classic)'],
-        'effective_against': ['5-2-2N-1']
+        'effective_against': ['5-2-2N-1'],
+        'common': False
     },
     {
         'id': '41131',
@@ -5337,7 +5384,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['4-3-3', '4-5-1 V-Style', '5-4-1 F (Flat)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '4312',
@@ -5433,7 +5481,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-4-3', '4-1-4-1', '4-5-1 V-Style'],
-        'effective_against': []
+        'effective_against': [],
+        'common': True
     },
     {
         'id': '31213',
@@ -5531,7 +5580,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['4-1-3-1-1', '4-1-3N-2', '4-3-3', '5-4-1 F (Flat)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '3421',
@@ -5632,7 +5682,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['3-4-3', '4-1-4-1', '4-3-3'],
-        'effective_against': []
+        'effective_against': [],
+        'common': True
     },
     {
         'id': '523',
@@ -5741,7 +5792,8 @@ FORMATIONS = [
         },
         'defense_count': 5,
         'vulnerable_to': ['4-3-3', '4-4-2 C (Classic)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': True
     },
     {
         'id': '222n22',
@@ -5844,7 +5896,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-4-3', '4-1-4-1', '4-3-3'],
-        'effective_against': []
+        'effective_against': [],
+        'common': True
     },
     {
         'id': '3142w',
@@ -5942,7 +5995,8 @@ FORMATIONS = [
         },
         'defense_count': 3,
         'vulnerable_to': ['4-1-2-1-2 ND (Narrow Diamond)', '4-2-3-1', '4-3-3', '5-4-1 F (Flat)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '4231a',
@@ -6041,7 +6095,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['4-1-3N-2', '4-3-3', '5-4-1 F (Flat)'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '42312',
@@ -6139,7 +6194,8 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-4-3', '4-1-4-1', '4-3-3'],
-        'effective_against': []
+        'effective_against': [],
+        'common': False
     },
     {
         'id': '313n2w1',
@@ -6246,7 +6302,8 @@ FORMATIONS = [
         },
         'effective_against': ['3N-3(DMC/MC)-2W-2', '3N-4-1-2', '3W-5-1-1', '3W-5-2 F', '4-1-3N-2', '4-2-1-3', '4-3N-1-2'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3n142',
@@ -6357,7 +6414,8 @@ FORMATIONS = [
         },
         'effective_against': ['3W-2DMC-3W-1-1 ML (Maple Leaf)', '4-3W-1-2', '5-2-1-2 X (X-Style)'],
         'vulnerable_to': ['3-5-1-1 V', '4-5-1 V-Style'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '313n12',
@@ -6462,7 +6520,8 @@ FORMATIONS = [
         },
         'effective_against': ['3N-1-2-1-3', '3N-5-1-1', '3W-4-1-2', '3W-5-2 V'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3n412',
@@ -6563,7 +6622,8 @@ FORMATIONS = [
         },
         'effective_against': ['4-2-2-2 H (Hexagon)', '4-4-2 C (Classic)', '5-3N-2', '5-3W-2'],
         'vulnerable_to': ['3-1-3N-2W-1', '4-1-2-1-2 ND (Narrow Diamond)', '3N-2W-2N-1-2'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '413w11',
@@ -6661,7 +6721,8 @@ FORMATIONS = [
         },
         'effective_against': ['3-4-1-2', '4-3N-2N-1'],
         'vulnerable_to': ['3-1-4-1-1', '4-4-1-1', '5-1DMC-2-2'],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': True
     },
     {
         'id': '4132',
@@ -6763,7 +6824,8 @@ FORMATIONS = [
         },
         'effective_against': ['4-2N-1-2N-1', '4-3-3', '5-1-2N-1-1', '5-1-2W-1-1'],
         'vulnerable_to': [],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': True
     },
     {
         'id': '3511v',
@@ -6869,7 +6931,8 @@ FORMATIONS = [
         },
         'effective_against': ['3N-1-3W-1-2 D (Dandelion)', '3N-1-3W-2N-1', '3N-1-4-2', '4-3W-3'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3n2w2n12',
@@ -6976,7 +7039,8 @@ FORMATIONS = [
         },
         'effective_against': ['3N-4-1-2', '3N-5-1-1', '3W-4-1-2', '3W-5-1-1'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '4411',
@@ -7074,7 +7138,8 @@ FORMATIONS = [
         },
         'effective_against': ['4-1-3-1W-1', '4-1-3W-1-1', '4-3N-2W-1'],
         'vulnerable_to': ['3-5-2 F (Flat)', '4-5-1 V-Style'],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': True
     },
     {
         'id': '3n52f',
@@ -7183,7 +7248,8 @@ FORMATIONS = [
         },
         'effective_against': ['3W-1-3W-1-2'],
         'vulnerable_to': ['3-1-4-2', '4-3N-2W-1', '4-2-3-1'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '313w12',
@@ -7288,7 +7354,8 @@ FORMATIONS = [
         },
         'effective_against': ['3N-2N-1-2W-2', '4-2-3W-1'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '53w2',
@@ -7386,7 +7453,8 @@ FORMATIONS = [
         },
         'effective_against': ['3-1-4-2', '4-2-3W-1'],
         'vulnerable_to': ['3N-5-2 V', '3N-4-1-2', '4-4-2 C (Classic)'],
-        'defense_count': 5
+        'defense_count': 5,
+        'common': True
     },
     {
         'id': '3n13w12',
@@ -7491,7 +7559,8 @@ FORMATIONS = [
         },
         'effective_against': ['5-2-2N-1', '5-2W-2N-1'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3n2w3n2',
@@ -7592,7 +7661,8 @@ FORMATIONS = [
         },
         'effective_against': ['3W-2N-2N-2W-1', '5-2-2W-1'],
         'vulnerable_to': ['3-5-2 F (Flat)', '4-5-1 F (Flat)', '5-4-1 F (Flat)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3n1411',
@@ -7701,7 +7771,8 @@ FORMATIONS = [
         },
         'effective_against': ['4-2N-1-2N-1'],
         'vulnerable_to': ['3-1-4-1-1', '4-1-2-1-2 ND (Narrow Diamond)', '4-5-1 V-Style'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '413w2',
@@ -7799,7 +7870,8 @@ FORMATIONS = [
         },
         'effective_against': ['4-1-2(AMC)-3'],
         'vulnerable_to': ['3-1-4-2', '4-5-1 V-Style', '5-4-1 F (Flat)'],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': False
     },
     {
         'id': '43w12',
@@ -7897,7 +7969,8 @@ FORMATIONS = [
         },
         'effective_against': ['4-1-2-1-2 WD (Wide Diamond)'],
         'vulnerable_to': ['3N-1-4-2', '4-1-4-1', '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': False
     },
     {
         'id': '3w52f',
@@ -8005,7 +8078,8 @@ FORMATIONS = [
         },
         'effective_against': ['3W-2N-3W-2'],
         'vulnerable_to': ['3-1-3N-2W-1', '4-5-1 V-Style'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w123w1',
@@ -8107,7 +8181,8 @@ FORMATIONS = [
         },
         'effective_against': ['5-2-2(AML-AMR)-1', '5-2-2W-1'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w1411',
@@ -8215,7 +8290,8 @@ FORMATIONS = [
         },
         'effective_against': ['4-2N-1-2W-1'],
         'vulnerable_to': ['3-5-2 V (V-Style)', '4-5-1 V-Style'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w52v',
@@ -8323,7 +8399,8 @@ FORMATIONS = [
         },
         'effective_against': ['3W-2N-2W-1-2'],
         'vulnerable_to': ['3-1-3N-1-2', '4-2-2-2 H (Hexagon)', '3-2-2-2-1 B (Butterfly)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3n2n12w2',
@@ -8432,7 +8509,8 @@ FORMATIONS = [
         },
         'effective_against': ['4-1-1-2W-2'],
         'vulnerable_to': ['3-1-3W-1-2', '4-4-2 C (Classic)', '3-2-2-2-1 B (Butterfly)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3n43',
@@ -8533,7 +8611,8 @@ FORMATIONS = [
         },
         'effective_against': ['4-2-2-2 H (Hexagon)'],
         'vulnerable_to': ['3-5-2 F (Flat)', '4-4-2 C (Classic)', '5-4-1 F (Flat)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w2n3w2',
@@ -8631,7 +8710,8 @@ FORMATIONS = [
         },
         'effective_against': ['4-2-3N(AMC)-1'],
         'vulnerable_to': ['3W-5-2 F', '4-4-2 C (Classic)', '5-4-1 F (Flat)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '513w1',
@@ -8736,7 +8816,8 @@ FORMATIONS = [
         },
         'effective_against': ['4-1-2(AMC)-3'],
         'vulnerable_to': ['3N-5-2 V', '4-5-1 F (Flat)', '3N-2W-3W-2'],
-        'defense_count': 5
+        'defense_count': 5,
+        'common': False
     },
     {
         'id': '3n2w2n2w1',
@@ -8839,7 +8920,8 @@ FORMATIONS = [
         },
         'effective_against': ['5-1-2N-1-1', '5-1-2W-1-1'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w2n13w1',
@@ -8941,7 +9023,8 @@ FORMATIONS = [
         },
         'effective_against': ['4-1-1-2N-2'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w43',
@@ -9039,7 +9122,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-5-2 V (V-Style)', '4-2-2-2 H (Hexagon)', '4-5-1 V-Style'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '412n12',
@@ -9134,7 +9218,8 @@ FORMATIONS = [
         },
         'effective_against': ['5-2-1-2 X (X-Style)'],
         'vulnerable_to': [],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': False
     },
     {
         'id': '33n3w1',
@@ -9235,7 +9320,8 @@ FORMATIONS = [
         },
         'effective_against': ['3W-1-5-1'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w142',
@@ -9343,7 +9429,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-4-1-2', '4-1-2-1-2 ND (Narrow Diamond)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '313n3',
@@ -9446,7 +9533,8 @@ FORMATIONS = [
         },
         'effective_against': ['3N-5-2 V'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3n13w12ddandelion',
@@ -9551,7 +9639,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-5-1-1 V', '4-4-2 C (Classic)', '4-5-1 V-Style'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '413n11',
@@ -9646,7 +9735,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-1-4-2', '3-1-4-1-1', '4-5-1 V-Style'],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': False
     },
     {
         'id': '3n511',
@@ -9747,7 +9837,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-1-3N-1-2', '4-1-2-1-2 ND (Narrow Diamond)', '3N-2W-2N-1-2'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w511',
@@ -9849,7 +9940,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-1-3N-2W-1', '4-1-2-1-2 ND (Narrow Diamond)', '3N-2W-2N-1-2'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3n2dmcmc3w2',
@@ -9960,7 +10052,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-1-4-2', '4-1-2-1-2 ND (Narrow Diamond)', '3-2-2-2-1 B (Butterfly)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w2dmcmc3w2',
@@ -10068,7 +10161,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-1-4-2', '4-4-2 C (Classic)', '3-2-2-2-1 B (Butterfly)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3n3dmcmc2w2',
@@ -10177,7 +10271,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-1-3N-2W-1', '4-3N-2W-1', '3-2-2-2-1 B (Butterfly)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w2n2w12',
@@ -10285,7 +10380,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3W-5-2 V', '4-5-1 V-Style', '3-2-2-2-1 B (Butterfly)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w2n2n2w1',
@@ -10387,7 +10483,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-4-1-2', '4-4-2 C (Classic)', '3N-2W-3N-2'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w151',
@@ -10495,7 +10592,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-3N-3W-1', '4-3N-2W-1', '3-2-2-2-1 B (Butterfly)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w13w2n1',
@@ -10597,7 +10695,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-5-2 V (V-Style)', '4-5-1 V-Style', '3-2-2-2-1 B (Butterfly)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3n13w2n1',
@@ -10698,7 +10797,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-5-1-1 V', '4-5-1 V-Style', '3-2-2-2-1 B (Butterfly)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w13w12',
@@ -10806,7 +10906,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3N-5-2 F', '4-4-2 C (Classic)', '3W-2DMC-3N-1-1 Tower (Eiffel Tower)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w412',
@@ -10904,7 +11005,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-1-3N-1-2', '4-1-2-1-2 ND (Narrow Diamond)', '3N-2W-2N-1-2'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '41dmc23',
@@ -10999,7 +11101,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-1-4-2', '4-1-4-1', '5-3N-2'],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': False
     },
     {
         'id': '4112w2',
@@ -11097,7 +11200,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3N-2N-1-2W-2', '4-2-3-1', '3N-3W-2-2'],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': False
     },
     {
         'id': '3n3w22',
@@ -11194,7 +11298,8 @@ FORMATIONS = [
         },
         'effective_against': ['4-1-1-2W-2'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '42n12w1',
@@ -11292,7 +11397,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3W-1-4-1-1', '4-4-2 C (Classic)', '5-2-2(AML-AMR)-1'],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': False
     },
     {
         'id': '43w3',
@@ -11390,7 +11496,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-5-1-1 V', '4-5-1 V-Style', '5-4-1 F (Flat)'],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': False
     },
     {
         'id': '42dmc3w1',
@@ -11492,7 +11599,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-1-3-2W-1', '4-1-4-1', '3-2-2-2-1 B (Butterfly)'],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': False
     },
     {
         'id': '423w1',
@@ -11590,7 +11698,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-1-3W-1-2', '4-4-2 C (Classic)', '5-3W-2'],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': False
     },
     {
         'id': '43n12',
@@ -11685,7 +11794,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-1-3N-2W-1', '4-5-1 V-Style', '3-2-2-2-1 B (Butterfly)'],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': False
     },
     {
         'id': '43n2n1',
@@ -11780,7 +11890,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-1-4-1-1', '4-1-3W-1-1', '3W-2DMC-3W-1-1 ML (Maple Leaf)'],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': False
     },
     {
         'id': '412amc3',
@@ -11875,7 +11986,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-1-4-2', '4-1-3W-2', '5-1-3W-1'],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': False
     },
     {
         'id': '513n1',
@@ -11978,7 +12090,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3N-5-2 V', '4-1-3-1-1', '3N-3W-3W-1'],
-        'defense_count': 5
+        'defense_count': 5,
+        'common': False
     },
     {
         'id': '3n3w3w1',
@@ -12075,7 +12188,8 @@ FORMATIONS = [
         },
         'effective_against': ['5-1-3N-1'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3n2w3w2',
@@ -12172,7 +12286,8 @@ FORMATIONS = [
         },
         'effective_against': ['5-1-3W-1'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '512n11',
@@ -12273,7 +12388,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3N-5-2 V', '4-1-3-2', '3N-2W-2N-2W-1'],
-        'defense_count': 5
+        'defense_count': 5,
+        'common': False
     },
     {
         'id': '512w11',
@@ -12375,7 +12491,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3N-5-2 V', '4-1-3-2', '3N-2W-2N-2W-1'],
-        'defense_count': 5
+        'defense_count': 5,
+        'common': False
     },
     {
         'id': '522w1',
@@ -12476,7 +12593,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3W-1-2-3W-1', '4-4-2 C (Classic)', '3N-2W-3N-2'],
-        'defense_count': 5
+        'defense_count': 5,
+        'common': False
     },
     {
         'id': '522n1',
@@ -12577,7 +12695,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3N-1-3W-1-2', '4-2-2-1-1', '3W-2-3W-2'],
-        'defense_count': 5
+        'defense_count': 5,
+        'common': False
     },
     {
         'id': '3w23w2',
@@ -12675,7 +12794,8 @@ FORMATIONS = [
         },
         'effective_against': ['5-2-2N-1'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3n2w212',
@@ -12782,7 +12902,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-4-1-2', '3W-3N-3W-1', '4-1-2-1-2 ND (Narrow Diamond)', '4-4-2 C (Classic)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w3n3w1',
@@ -12880,7 +13001,8 @@ FORMATIONS = [
         },
         'effective_against': ['3N-2W-2-1-2'],
         'vulnerable_to': [],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '31321tikitaka',
@@ -12987,7 +13109,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['4-3N-3', '4-3N-2W-1', '4-5-1 V-Style'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '3w2n3n2',
@@ -13088,7 +13211,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-5-2 F (Flat)', '4-4-2 C (Classic)', '5-4-1 F (Flat)'],
-        'defense_count': 3
+        'defense_count': 3,
+        'common': False
     },
     {
         'id': '423namc1',
@@ -13182,7 +13306,8 @@ FORMATIONS = [
         },
         'effective_against': [],
         'vulnerable_to': ['3-1-4-2', '4-4-2 C (Classic)', '3W-2N-3W-2'],
-        'defense_count': 4
+        'defense_count': 4,
+        'common': False
     }
 ]
 

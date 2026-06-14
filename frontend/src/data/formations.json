@@ -152,7 +152,8 @@
       "5-3N-2",
       "5-3W-2",
       "5-4-1 F (Flat)"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "41212nd",
@@ -300,7 +301,8 @@
       "3W-4-1-2",
       "3W-5-1-1",
       "4-4-2 C (Classic)"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "41212wd",
@@ -437,7 +439,8 @@
       "4-1-4-1",
       "4-3W-1-2"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": true
   },
   {
     "id": "451v",
@@ -600,7 +603,8 @@
       "4-3N-1-2",
       "4-3W-3",
       "4-4-1-1"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "451f",
@@ -739,7 +743,8 @@
       "3N-2W-3N-2",
       "4-3-2-1 XT (Xmas Tree)",
       "5-1-3W-1"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "4231",
@@ -878,7 +883,8 @@
       "3-1-4-2 W",
       "3-1-5-1 AMC",
       "4-1-1-2W-2"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "4222h",
@@ -1020,7 +1026,8 @@
       "4-1-2-2-1",
       "4-1-4-1",
       "5-2W-2N-1"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "352f",
@@ -1152,7 +1159,8 @@
       "3-4-1-2",
       "4-5-1 F (Flat)",
       "5-4-1 F (Flat)"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "352v",
@@ -1288,7 +1296,8 @@
       "3W-1-3N-1-2",
       "4-1-4-1",
       "4-5-1 F (Flat)"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "3142",
@@ -1422,7 +1431,8 @@
     ],
     "effective_against": [
       "4-2-3-1"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "541f",
@@ -1569,7 +1579,8 @@
       "4-2-3-1 Attack",
       "4-2-4",
       "False Nine + Wingers"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "32221b",
@@ -1701,7 +1712,8 @@
       "3W-5-2 V",
       "4-2(DMC)-3W-1",
       "4-4-2 C (Classic)"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "3n2221b",
@@ -1830,7 +1842,8 @@
       "4-2-2-2 H (Hexagon)",
       "4-3N-2W-1"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "4141",
@@ -1993,7 +2006,8 @@
       "4-3W-1-2",
       "4-5-1 F (Flat)",
       "4-5-1 V-Style"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "433",
@@ -2154,7 +2168,8 @@
       "5-2W-2N-1",
       "5-3-2",
       "False Nine + Wingers"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "53n2",
@@ -2282,7 +2297,8 @@
     "vulnerable_to": [
       "4-4-2 C (Classic)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": true
   },
   {
     "id": "343",
@@ -2434,7 +2450,8 @@
       "4-3-2-1 XT (Xmas Tree)",
       "4-3N-3",
       "4-5-1 V-Style"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "3w2dmc3w11ml",
@@ -2566,7 +2583,8 @@
       "4-5-1 V-Style",
       "3-2-2-2-1 B (Butterfly)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "3w2dmc3n11tower",
@@ -2696,7 +2714,8 @@
       "4-5-1 V-Style",
       "5-4-1 F (Flat)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "51dmc22",
@@ -2833,7 +2852,8 @@
     ],
     "effective_against": [
       "4-1-3W-1-1"
-    ]
+    ],
+    "common": false
   },
   {
     "id": "5212x",
@@ -2961,7 +2981,8 @@
     "vulnerable_to": [
       "3N-1-4-2"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "522amlamr1",
@@ -3093,7 +3114,8 @@
       "4-3-3",
       "4-4-2 C (Classic)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": true
   },
   {
     "id": "4131w1",
@@ -3228,7 +3250,8 @@
       "4-1-4-1",
       "4-4-1-1"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "3n52v",
@@ -3361,7 +3384,8 @@
     "effective_against": [
       "4-1-2-1-2 ND (Narrow Diamond)",
       "5-1-1-1-2"
-    ]
+    ],
+    "common": false
   },
   {
     "id": "43n2w1",
@@ -3502,7 +3526,8 @@
       "3W-1-5-1",
       "4-1-3N-2",
       "5-4-1 F (Flat)"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "3151amc",
@@ -3716,7 +3741,8 @@
       "4-2-3-1",
       "4-3-3"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": true
   },
   {
     "id": "31411",
@@ -3853,7 +3879,8 @@
     ],
     "effective_against": [
       "4-3N-2W-1"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "41221",
@@ -3992,7 +4019,8 @@
       "4-1-4-1",
       "4-2-2-2 H (Hexagon)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "fn9w",
@@ -4127,7 +4155,8 @@
       "4-3-3",
       "5-4-1 F (Flat)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "424",
@@ -4256,7 +4285,8 @@
       "4-3-3",
       "5-4-1 F (Flat)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": true
   },
   {
     "id": "41311",
@@ -4393,7 +4423,8 @@
       "4-1-3-1W-1",
       "5-1-3N-1",
       "False Nine + Wingers"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "4321xt",
@@ -4522,7 +4553,8 @@
       "4-1-4-1",
       "4-5-1 F (Flat)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": true
   },
   {
     "id": "532",
@@ -4647,7 +4679,8 @@
       "4-3-3",
       "4-4-2 C (Classic)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": true
   },
   {
     "id": "413n2",
@@ -4783,7 +4816,8 @@
       "3-1-2-1-3",
       "3N-1-2-1-3",
       "4-2-3-1 Attack"
-    ]
+    ],
+    "common": false
   },
   {
     "id": "3412",
@@ -4912,7 +4946,8 @@
     "effective_against": [
       "3-2-2-2-1 B (Butterfly)",
       "4-3N-3"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "31312",
@@ -5037,7 +5072,8 @@
       "3-5-2 V (V-Style)",
       "4-5-1 V-Style"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "43n3",
@@ -5166,7 +5202,8 @@
     "effective_against": [
       "4-5-1 V-Style",
       "5-1-1-1-2"
-    ]
+    ],
+    "common": true
   },
   {
     "id": "3132w1",
@@ -5294,7 +5331,8 @@
       "4-3-3",
       "5-4-1 F (Flat)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "3n1213",
@@ -5418,7 +5456,8 @@
       "4-3-3",
       "5-4-1 F (Flat)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "4213",
@@ -5547,7 +5586,8 @@
       "4-5-1 V-Style",
       "5-4-1 F (Flat)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": true
   },
   {
     "id": "4112n2",
@@ -5675,7 +5715,8 @@
       "4-1-4-1",
       "4-5-1 V-Style"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "3w13n12",
@@ -5803,7 +5844,8 @@
       "3-5-2 V (V-Style)",
       "4-1-4-1"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "3313",
@@ -5929,7 +5971,8 @@
       "4-3-3",
       "5-4-1 F (Flat)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": true
   },
   {
     "id": "42n12n1",
@@ -6057,7 +6100,8 @@
       "4-1-3-2",
       "4-1-4-1"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "51112",
@@ -6186,7 +6230,8 @@
       "4-3N-3",
       "4-4-2 C (Classic)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": true
   },
   {
     "id": "52w2n1",
@@ -6315,7 +6360,8 @@
       "4-3-3",
       "4-4-2 C (Classic)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "42211",
@@ -6444,7 +6490,8 @@
     ],
     "effective_against": [
       "5-2-2N-1"
-    ]
+    ],
+    "common": false
   },
   {
     "id": "41131",
@@ -6578,7 +6625,8 @@
       "4-5-1 V-Style",
       "5-4-1 F (Flat)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "4312",
@@ -6706,7 +6754,8 @@
       "4-1-4-1",
       "4-5-1 V-Style"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": true
   },
   {
     "id": "31213",
@@ -6837,7 +6886,8 @@
       "4-3-3",
       "5-4-1 F (Flat)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "3421",
@@ -6965,7 +7015,8 @@
       "4-1-4-1",
       "4-3-3"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": true
   },
   {
     "id": "523",
@@ -7095,7 +7146,8 @@
       "4-3-3",
       "4-4-2 C (Classic)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": true
   },
   {
     "id": "222n22",
@@ -7225,7 +7277,8 @@
       "4-1-4-1",
       "4-3-3"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": true
   },
   {
     "id": "3142w",
@@ -7356,7 +7409,8 @@
       "4-3-3",
       "5-4-1 F (Flat)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "4231a",
@@ -7487,7 +7541,8 @@
       "4-3-3",
       "5-4-1 F (Flat)"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "42312",
@@ -7617,7 +7672,8 @@
       "4-1-4-1",
       "4-3-3"
     ],
-    "effective_against": []
+    "effective_against": [],
+    "common": false
   },
   {
     "id": "313n2w1",
@@ -7747,7 +7803,8 @@
       "4-3N-1-2"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3n142",
@@ -7877,7 +7934,8 @@
       "3-5-1-1 V",
       "4-5-1 V-Style"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "313n12",
@@ -8003,7 +8061,8 @@
       "3W-5-2 V"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3n412",
@@ -8131,7 +8190,8 @@
       "4-1-2-1-2 ND (Narrow Diamond)",
       "3N-2W-2N-1-2"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "413w11",
@@ -8254,7 +8314,8 @@
       "4-4-1-1",
       "5-1DMC-2-2"
     ],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": true
   },
   {
     "id": "4132",
@@ -8378,7 +8439,8 @@
       "5-1-2W-1-1"
     ],
     "vulnerable_to": [],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": true
   },
   {
     "id": "3511v",
@@ -8504,7 +8566,8 @@
       "4-3W-3"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3n2w2n12",
@@ -8628,7 +8691,8 @@
       "3W-5-1-1"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "4411",
@@ -8749,7 +8813,8 @@
       "3-5-2 F (Flat)",
       "4-5-1 V-Style"
     ],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": true
   },
   {
     "id": "3n52f",
@@ -8876,7 +8941,8 @@
       "4-3N-2W-1",
       "4-2-3-1"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "313w12",
@@ -9000,7 +9066,8 @@
       "4-2-3W-1"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "53w2",
@@ -9129,7 +9196,8 @@
       "3N-4-1-2",
       "4-4-2 C (Classic)"
     ],
-    "defense_count": 5
+    "defense_count": 5,
+    "common": true
   },
   {
     "id": "3n13w12",
@@ -9253,7 +9321,8 @@
       "5-2W-2N-1"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3n2w3n2",
@@ -9379,7 +9448,8 @@
       "4-5-1 F (Flat)",
       "5-4-1 F (Flat)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3n1411",
@@ -9506,7 +9576,8 @@
       "4-1-2-1-2 ND (Narrow Diamond)",
       "4-5-1 V-Style"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "413w2",
@@ -9630,7 +9701,8 @@
       "4-5-1 V-Style",
       "5-4-1 F (Flat)"
     ],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": false
   },
   {
     "id": "43w12",
@@ -9752,7 +9824,8 @@
       "4-1-4-1",
       "3W-2DMC-3N-1-1 Tower (Eiffel Tower)"
     ],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": false
   },
   {
     "id": "3w52f",
@@ -9881,7 +9954,8 @@
       "3-1-3N-2W-1",
       "4-5-1 V-Style"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w123w1",
@@ -10006,7 +10080,8 @@
       "5-2-2W-1"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w1411",
@@ -10135,7 +10210,8 @@
       "3-5-2 V (V-Style)",
       "4-5-1 V-Style"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w52v",
@@ -10265,7 +10341,8 @@
       "4-2-2-2 H (Hexagon)",
       "3-2-2-2-1 B (Butterfly)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3n2n12w2",
@@ -10392,7 +10469,8 @@
       "4-4-2 C (Classic)",
       "3-2-2-2-1 B (Butterfly)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3n43",
@@ -10517,7 +10595,8 @@
       "4-4-2 C (Classic)",
       "5-4-1 F (Flat)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w2n3w2",
@@ -10645,7 +10724,8 @@
       "4-4-2 C (Classic)",
       "5-4-1 F (Flat)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "513w1",
@@ -10775,7 +10855,8 @@
       "4-5-1 F (Flat)",
       "3N-2W-3W-2"
     ],
-    "defense_count": 5
+    "defense_count": 5,
+    "common": false
   },
   {
     "id": "3n2w2n2w1",
@@ -10899,7 +10980,8 @@
       "5-1-2W-1-1"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w2n13w1",
@@ -11023,7 +11105,8 @@
       "4-1-1-2N-2"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w43",
@@ -11149,7 +11232,8 @@
       "4-2-2-2 H (Hexagon)",
       "4-5-1 V-Style"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "412n12",
@@ -11268,7 +11352,8 @@
       "5-2-1-2 X (X-Style)"
     ],
     "vulnerable_to": [],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": false
   },
   {
     "id": "33n3w1",
@@ -11387,7 +11472,8 @@
       "3W-1-5-1"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w142",
@@ -11514,7 +11600,8 @@
       "3-4-1-2",
       "4-1-2-1-2 ND (Narrow Diamond)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "313n3",
@@ -11635,7 +11722,8 @@
       "3N-5-2 V"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3n13w12ddandelion",
@@ -11760,7 +11848,8 @@
       "4-4-2 C (Classic)",
       "4-5-1 V-Style"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "413n11",
@@ -11879,7 +11968,8 @@
       "3-1-4-1-1",
       "4-5-1 V-Style"
     ],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": false
   },
   {
     "id": "3n511",
@@ -12002,7 +12092,8 @@
       "4-1-2-1-2 ND (Narrow Diamond)",
       "3N-2W-2N-1-2"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w511",
@@ -12128,7 +12219,8 @@
       "4-1-2-1-2 ND (Narrow Diamond)",
       "3N-2W-2N-1-2"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3n2dmcmc3w2",
@@ -12255,7 +12347,8 @@
       "4-1-2-1-2 ND (Narrow Diamond)",
       "3-2-2-2-1 B (Butterfly)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w2dmcmc3w2",
@@ -12383,7 +12476,8 @@
       "4-4-2 C (Classic)",
       "3-2-2-2-1 B (Butterfly)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3n3dmcmc2w2",
@@ -12508,7 +12602,8 @@
       "4-3N-2W-1",
       "3-2-2-2-1 B (Butterfly)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w2n2w12",
@@ -12636,7 +12731,8 @@
       "4-5-1 V-Style",
       "3-2-2-2-1 B (Butterfly)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w2n2n2w1",
@@ -12764,7 +12860,8 @@
       "4-4-2 C (Classic)",
       "3N-2W-3N-2"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w151",
@@ -12894,7 +12991,8 @@
       "4-3N-2W-1",
       "3-2-2-2-1 B (Butterfly)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w13w2n1",
@@ -13020,7 +13118,8 @@
       "4-5-1 V-Style",
       "3-2-2-2-1 B (Butterfly)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3n13w2n1",
@@ -13143,7 +13242,8 @@
       "4-5-1 V-Style",
       "3-2-2-2-1 B (Butterfly)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w13w12",
@@ -13271,7 +13371,8 @@
       "4-4-2 C (Classic)",
       "3W-2DMC-3N-1-1 Tower (Eiffel Tower)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w412",
@@ -13397,7 +13498,8 @@
       "4-1-2-1-2 ND (Narrow Diamond)",
       "3N-2W-2N-1-2"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "41dmc23",
@@ -13518,7 +13620,8 @@
       "4-1-4-1",
       "5-3N-2"
     ],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": false
   },
   {
     "id": "4112w2",
@@ -13640,7 +13743,8 @@
       "4-2-3-1",
       "3N-3W-2-2"
     ],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": false
   },
   {
     "id": "3n3w22",
@@ -13763,7 +13867,8 @@
       "4-1-1-2W-2"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "42n12w1",
@@ -13887,7 +13992,8 @@
       "4-4-2 C (Classic)",
       "5-2-2(AML-AMR)-1"
     ],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": false
   },
   {
     "id": "43w3",
@@ -14007,7 +14113,8 @@
       "4-5-1 V-Style",
       "5-4-1 F (Flat)"
     ],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": false
   },
   {
     "id": "42dmc3w1",
@@ -14133,7 +14240,8 @@
       "4-1-4-1",
       "3-2-2-2-1 B (Butterfly)"
     ],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": false
   },
   {
     "id": "423w1",
@@ -14251,7 +14359,8 @@
       "4-4-2 C (Classic)",
       "5-3W-2"
     ],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": false
   },
   {
     "id": "43n12",
@@ -14370,7 +14479,8 @@
       "4-5-1 V-Style",
       "3-2-2-2-1 B (Butterfly)"
     ],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": false
   },
   {
     "id": "43n2n1",
@@ -14485,7 +14595,8 @@
       "4-1-3W-1-1",
       "3W-2DMC-3W-1-1 ML (Maple Leaf)"
     ],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": false
   },
   {
     "id": "412amc3",
@@ -14606,7 +14717,8 @@
       "4-1-3W-2",
       "5-1-3W-1"
     ],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": false
   },
   {
     "id": "513n1",
@@ -14731,7 +14843,8 @@
       "4-1-3-1-1",
       "3N-3W-3W-1"
     ],
-    "defense_count": 5
+    "defense_count": 5,
+    "common": false
   },
   {
     "id": "3n3w3w1",
@@ -14852,7 +14965,8 @@
       "5-1-3N-1"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3n2w3w2",
@@ -14975,7 +15089,8 @@
       "5-1-3W-1"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "512n11",
@@ -15098,7 +15213,8 @@
       "4-1-3-2",
       "3N-2W-2N-2W-1"
     ],
-    "defense_count": 5
+    "defense_count": 5,
+    "common": false
   },
   {
     "id": "512w11",
@@ -15224,7 +15340,8 @@
       "4-1-3-2",
       "3N-2W-2N-2W-1"
     ],
-    "defense_count": 5
+    "defense_count": 5,
+    "common": false
   },
   {
     "id": "522w1",
@@ -15350,7 +15467,8 @@
       "4-4-2 C (Classic)",
       "3N-2W-3N-2"
     ],
-    "defense_count": 5
+    "defense_count": 5,
+    "common": false
   },
   {
     "id": "522n1",
@@ -15471,7 +15589,8 @@
       "4-2-2-1-1",
       "3W-2-3W-2"
     ],
-    "defense_count": 5
+    "defense_count": 5,
+    "common": false
   },
   {
     "id": "3w23w2",
@@ -15595,7 +15714,8 @@
       "5-2-2N-1"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3n2w212",
@@ -15719,7 +15839,8 @@
       "4-1-2-1-2 ND (Narrow Diamond)",
       "4-4-2 C (Classic)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w3n3w1",
@@ -15841,7 +15962,8 @@
       "3N-2W-2-1-2"
     ],
     "vulnerable_to": [],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "31321tikitaka",
@@ -15967,7 +16089,8 @@
       "4-3N-2W-1",
       "4-5-1 V-Style"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "3w2n3n2",
@@ -16090,7 +16213,8 @@
       "4-4-2 C (Classic)",
       "5-4-1 F (Flat)"
     ],
-    "defense_count": 3
+    "defense_count": 3,
+    "common": false
   },
   {
     "id": "423namc1",
@@ -16212,6 +16336,7 @@
       "4-4-2 C (Classic)",
       "3W-2N-3W-2"
     ],
-    "defense_count": 4
+    "defense_count": 4,
+    "common": false
   }
 ]

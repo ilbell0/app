@@ -14,6 +14,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
 import { FORMATIONS } from '@/src/data';
+import PitchDiagram from '@/src/components/PitchDiagram';
 
 interface Variant {
   name_en: string;
@@ -71,6 +72,7 @@ interface Formation {
   tactic_type_it?: string;
   arrows?: string;
   defense_count?: number;
+  common?: boolean;
   effective_against?: string[];
   vulnerable_to?: string[];
   variants?: {
@@ -94,8 +96,19 @@ export default function FormationsScreen() {
   const [selectedLevel, setSelectedLevel] = useState<'strong' | 'equal' | 'weak'>('equal');
   const [modalVisible, setModalVisible] = useState(false);
   const [fadeAnim] = useState(new Animated.Value(0));
-  const [defenseFilter, setDefenseFilter] = useState<'all' | 3 | 4 | 5>('all');
+  const [defenseFilter, setDefenseFilter] = useState<'common' | 'all' | 3 | 4 | 5>('common');
   const modalScrollRef = useRef<ScrollView>(null);
+
+  // filtro + ordinamento: i moduli comuni vengono mostrati per primi
+  const visibleFormations = formations
+    .filter((f) =>
+      defenseFilter === 'common'
+        ? f.common
+        : defenseFilter === 'all'
+          ? true
+          : f.defense_count === defenseFilter
+    )
+    .sort((a, b) => Number(b.common) - Number(a.common));
 
   useEffect(() => {
     fetchData();
@@ -159,14 +172,14 @@ export default function FormationsScreen() {
       <View style={styles.header}>
         <Text style={styles.headerTitle}>FORMA</Text>
         <Text style={styles.headerSubtitle}>TIONS</Text>
-        <Text style={styles.headerCount}>{formations.filter(f => defenseFilter === 'all' || f.defense_count === defenseFilter).length}</Text>
+        <Text style={styles.headerCount}>{visibleFormations.length}</Text>
       </View>
 
       <View style={styles.divider} />
 
       {/* Defense Filter */}
       <View style={styles.defFilter}>
-        {([['all', language === 'it' ? 'TUTTE' : 'ALL'], [3, 'DIF 3'], [4, 'DIF 4'], [5, 'DIF 5']] as const).map(([val, lab]) => (
+        {([['common', language === 'it' ? 'COMUNI' : 'COMMON'], ['all', language === 'it' ? 'TUTTE' : 'ALL'], [3, 'DIF 3'], [4, 'DIF 4'], [5, 'DIF 5']] as const).map(([val, lab]) => (
           <TouchableOpacity
             key={String(val)}
             style={[styles.defBtn, defenseFilter === val && styles.defBtnActive]}
@@ -185,7 +198,7 @@ export default function FormationsScreen() {
         showsVerticalScrollIndicator={false}
       >
         {/* Formation List */}
-        {formations.filter(f => defenseFilter === 'all' || f.defense_count === defenseFilter).map((formation, index) => (
+        {visibleFormations.map((formation, index) => (
           <TouchableOpacity
             key={formation.id || index}
             style={styles.formationCard}
@@ -195,9 +208,13 @@ export default function FormationsScreen() {
             <View style={styles.formationInfo}>
               <View style={styles.formationHeader}>
                 <Text style={styles.formationName}>{formation.name}</Text>
-                {formation.tactic_type_en?.includes('META') && (
-                  <View style={styles.metaBadge}>
-                    <Text style={styles.metaBadgeText}>META</Text>
+                {formation.common ? (
+                  <View style={styles.commonBadge}>
+                    <Text style={styles.commonBadgeText}>{language === 'it' ? 'COMUNE' : 'COMMON'}</Text>
+                  </View>
+                ) : (
+                  <View style={styles.rareBadge}>
+                    <Text style={styles.rareBadgeText}>{language === 'it' ? 'VARIANTE' : 'VARIANT'}</Text>
                   </View>
                 )}
               </View>
@@ -267,6 +284,26 @@ export default function FormationsScreen() {
             </View>
 
             <ScrollView ref={modalScrollRef} style={styles.modalScroll} showsVerticalScrollIndicator={false}>
+              {/* Mini-campo: posizioni del modulo + frecce dello scenario */}
+              {selectedFormation?.positions && (
+                <View style={styles.pitchSection}>
+                  <PitchDiagram
+                    positions={selectedFormation.positions}
+                    arrows={currentSettings?.arrows}
+                  />
+                  <View style={styles.pitchLegend}>
+                    <View style={styles.legendItem}>
+                      <View style={[styles.legendDot, { borderColor: '#FFFFFF' }]} />
+                      <Text style={styles.legendText}>{language === 'it' ? 'Avanza ↑' : 'Push up ↑'}</Text>
+                    </View>
+                    <View style={styles.legendItem}>
+                      <View style={[styles.legendDot, { borderColor: NothingTheme.colors.accent }]} />
+                      <Text style={styles.legendText}>{language === 'it' ? 'Arretra ↓' : 'Drop ↓'}</Text>
+                    </View>
+                  </View>
+                </View>
+              )}
+
               {/* Description */}
               <View style={styles.descriptionSection}>
                 <Text style={styles.sectionLabel}>
@@ -636,6 +673,32 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     letterSpacing: 1,
   },
+  commonBadge: {
+    backgroundColor: NothingTheme.colors.accentMuted,
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 2,
+  },
+  commonBadgeText: {
+    color: NothingTheme.colors.accent,
+    fontSize: 9,
+    fontWeight: '700',
+    letterSpacing: 1,
+  },
+  rareBadge: {
+    backgroundColor: 'transparent',
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 2,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+  },
+  rareBadgeText: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 9,
+    fontWeight: '700',
+    letterSpacing: 1,
+  },
   formationPositions: {
     color: NothingTheme.colors.textTertiary,
     fontSize: 11,
@@ -724,6 +787,33 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     letterSpacing: 2,
     marginBottom: 12,
+  },
+  pitchSection: {
+    marginBottom: 24,
+    marginTop: 4,
+  },
+  pitchLegend: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 20,
+    marginTop: 10,
+  },
+  legendItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  legendDot: {
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    borderWidth: 1.5,
+    backgroundColor: NothingTheme.colors.background,
+  },
+  legendText: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 10,
+    letterSpacing: 0.5,
   },
   descriptionSection: {
     marginBottom: 24,
