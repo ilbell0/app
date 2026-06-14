@@ -26,7 +26,7 @@ const ROW_Y: Record<string, number> = {
 const ROW_OF: Record<string, keyof typeof ROW_Y> = {
   GK: 'GK',
   DL: 'DEF', DC: 'DEF', DR: 'DEF',
-  DMC: 'DMC',
+  DML: 'DMC', DMC: 'DMC', DMR: 'DMC',
   ML: 'MID', MC: 'MID', MR: 'MID',
   AML: 'AM', AMC: 'AM', AMR: 'AM',
   ST: 'ST',
@@ -34,9 +34,9 @@ const ROW_OF: Record<string, keyof typeof ROW_Y> = {
 
 // peso orizzontale: sinistra < centro < destra (per ordinare la riga)
 const SIDE_WEIGHT: Record<string, number> = {
-  DL: 0, ML: 0, AML: 0,
+  DL: 0, DML: 0, ML: 0, AML: 0,
   GK: 2, DC: 2, DMC: 2, MC: 2, AMC: 2, ST: 2,
-  DR: 4, MR: 4, AMR: 4,
+  DR: 4, DMR: 4, MR: 4, AMR: 4,
 };
 
 interface PlacedPlayer {
