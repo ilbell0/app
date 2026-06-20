@@ -12,16 +12,14 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS, SEASON_STORIES, FAQ, COUNTER_QUICK, ABBREVIATIONS, MATCHUP_MATRIX, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, FORMATIONS } from '@/src/data';
+import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, REAL_TEAMS, SEASON_STORIES, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, FORMATIONS } from '@/src/data';
 import PitchDiagram from '@/src/components/PitchDiagram';
 
-// lookup nome/id modulo -> posizioni, per disegnare il mini-campo
-const BY_ID: Record<string, string[]> = {};
+// lookup nome modulo -> posizioni, per disegnare il mini-campo nella sezione Meta
 const BY_NAME: Record<string, string[]> = {};
-(FORMATIONS as any[]).forEach((f) => { BY_ID[f.id] = f.positions; BY_NAME[f.name] = f.positions; });
+(FORMATIONS as any[]).forEach((f) => { BY_NAME[f.name] = f.positions; });
 const digitsOf = (s: string) => (s || '').replace(/\D/g, '');
-function findPositions(name?: string, id?: string): string[] | null {
-  if (id && BY_ID[id]) return BY_ID[id];
+function findPositions(name?: string): string[] | null {
   if (!name) return null;
   if (BY_NAME[name]) return BY_NAME[name];
   // fallback: stessa sequenza numerica (es. "4-4-2" -> "4-4-2 C (Classic)")
@@ -29,36 +27,23 @@ function findPositions(name?: string, id?: string): string[] | null {
   const hit = (FORMATIONS as any[]).find((f) => digitsOf(f.name) === d);
   return hit ? hit.positions : null;
 }
-// "ML↑ MR↑ DL↓" -> { ML:'↑', MR:'↑', DL:'↓' }
-function parseArrows(s?: string): Record<string, string> {
-  const out: Record<string, string> = {};
-  if (!s) return out;
-  s.split(/\s+/).forEach((tok) => {
-    const m = tok.match(/^([A-Z]+)\s*([↑↓—])$/);
-    if (m) out[m[1]] = m[2];
-  });
-  return out;
-}
 
 const LOCAL_DATA: Record<string, any[]> = {
   roles: PLAYER_ROLES,
   meta: META_TACTICS,
   skills: SPECIAL_ABILITIES,
   training: TRAINING_GUIDE,
-  arrows: ARROW_TACTICS,
   teams: REAL_TEAMS,
   stories: SEASON_STORIES,
   faq: FAQ,
-  quick: COUNTER_QUICK,
   abbr: ABBREVIATIONS,
-  matrix: MATCHUP_MATRIX,
   paths: CAREER_PATHS,
   mystyle: MY_PLAYBOOK,
   setpiece: SET_PIECE,
   battles: BATTLE_CARDS,
 };
 
-type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'arrows' | 'teams' | 'stories' | 'faq' | 'quick' | 'abbr' | 'matrix' | 'paths' | 'mystyle' | 'setpiece' | 'battles';
+type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'teams' | 'stories' | 'faq' | 'abbr' | 'paths' | 'mystyle' | 'setpiece' | 'battles';
 
 interface SectionDef {
   id: SectionId;
@@ -73,13 +58,10 @@ const SECTIONS: SectionDef[] = [
   { id: 'meta', endpoint: '/api/meta-tactics', label_en: 'Meta', label_it: 'Meta', icon: 'trophy-outline' },
   { id: 'skills', endpoint: '/api/special-abilities', label_en: 'Skills', label_it: 'Abilità', icon: 'flash-outline' },
   { id: 'training', endpoint: '/api/training-guide', label_en: 'Training', label_it: 'Allenam.', icon: 'barbell-outline' },
-  { id: 'arrows', endpoint: '/api/arrow-tactics', label_en: 'Arrows', label_it: 'Frecce', icon: 'swap-vertical-outline' },
   { id: 'teams', endpoint: '/api/real-teams', label_en: 'Teams', label_it: 'Squadre', icon: 'shield-half-outline' },
   { id: 'stories', endpoint: '/api/season-stories', label_en: 'Stories', label_it: 'Storie', icon: 'book-outline' },
   { id: 'faq', endpoint: '/api/faq', label_en: 'FAQ', label_it: 'FAQ', icon: 'help-circle-outline' },
-  { id: 'quick', endpoint: '/api/counter-quick', label_en: 'Quick', label_it: 'Rapido', icon: 'flash-outline' },
   { id: 'abbr', endpoint: '/api/abbreviations', label_en: 'Legend', label_it: 'Leggenda', icon: 'list-outline' },
-  { id: 'matrix', endpoint: '/api/matchup-matrix', label_en: 'Matrix', label_it: 'Matrice', icon: 'grid-outline' },
   { id: 'paths', endpoint: '/api/career-paths', label_en: 'Paths', label_it: 'Percorsi', icon: 'trending-up-outline' },
   { id: 'mystyle', endpoint: '/api/my-playbook', label_en: 'My Style', label_it: 'Mio Stile', icon: 'compass-outline' },
   { id: 'setpiece', endpoint: '/api/set-piece', label_en: 'Set Piece', label_it: 'Piazzati', icon: 'football-outline' },
@@ -97,7 +79,7 @@ interface GroupDef {
 
 const GROUPS: GroupDef[] = [
   { id: 'tactics', label_en: 'Tactics', label_it: 'Tattica', icon: 'analytics-outline',
-    sections: ['meta', 'matrix', 'quick', 'arrows', 'battles'] },
+    sections: ['meta', 'battles'] },
   { id: 'players', label_en: 'Players', label_it: 'Giocatori', icon: 'people-outline',
     sections: ['roles', 'skills', 'training'] },
   { id: 'strategy', label_en: 'Strategy', label_it: 'Strategia', icon: 'compass-outline',
@@ -120,10 +102,10 @@ export default function AcademyScreen() {
   const [group, setGroup] = useState<string>('tactics');
   const [section, setSection] = useState<SectionId>('meta');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], meta: [], skills: [], training: [], arrows: [], teams: [], stories: [], faq: [], quick: [], abbr: [], matrix: [], paths: [], mystyle: [], setpiece: [], battles: [],
+    roles: [], meta: [], skills: [], training: [], teams: [], stories: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, meta: false, skills: false, training: false, arrows: false, teams: false, stories: false, faq: false, quick: false, abbr: false, matrix: false, paths: false, mystyle: false, setpiece: false, battles: false,
+    roles: false, meta: false, skills: false, training: false, teams: false, stories: false, faq: false, abbr: false, paths: false, mystyle: false, setpiece: false, battles: false,
   });
   const [selected, setSelected] = useState<any | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
@@ -160,13 +142,10 @@ export default function AcademyScreen() {
       case 'meta': return item.formation;
       case 'skills': return isIt ? item.name_it : item.name_en;
       case 'training': return item.position;
-      case 'arrows': return item.formation;
       case 'teams': return item.team;
       case 'stories': return isIt ? item.title_it : item.title_en;
       case 'faq': return isIt ? item.question_it : item.question_en;
-      case 'quick': return item.av;
       case 'abbr': return `${item.code}  ·  ${isIt ? item.name_it : item.name_en}`;
-      case 'matrix': return item.opponent;
       case 'paths': return `${item.label}  ·  ${isIt ? item.title_it : item.title_en}`;
       case 'mystyle': return `${item.order}. ${isIt ? item.category_it : item.category_en}`;
       case 'setpiece': return `${item.order}. ${isIt ? item.category_it : item.category_en}`;
@@ -180,13 +159,10 @@ export default function AcademyScreen() {
       case 'meta': return `TIER ${item.tier}` + (item.trending ? (isIt ? ' · DI MODA' : ' · TRENDING') : '');
       case 'skills': return item.best_role;
       case 'training': return (isIt ? item.priority_attributes_it : item.priority_attributes_en).join(' · ');
-      case 'arrows': return item.arrows;
       case 'teams': return `${item.manager} · ${item.te_formation}`;
       case 'stories': return isIt ? item.subtitle_it : item.subtitle_en;
       case 'faq': return (item.category || '').toUpperCase();
-      case 'quick': return `→ ${item.neu}`;
       case 'abbr': return item.example;
-      case 'matrix': return `→ ${item.counter_neutral || '—'}`;
       case 'paths': return isIt ? item.subtitle_it : item.subtitle_en;
       case 'mystyle': return isIt ? item.summary_it : item.summary_en;
       case 'setpiece': return isIt ? item.summary_it : item.summary_en;
@@ -376,26 +352,6 @@ export default function AcademyScreen() {
                   <DetailBlock label={isIt ? 'NOTA' : 'NOTE'} value={isIt ? selected.note_it : selected.note_en} />
                 </>
               )}
-              {selected && section === 'arrows' && (
-                <>
-                  {findPositions(selected.formation, selected.formation_id) && (
-                    <View style={styles.pitchBlock}>
-                      <PitchDiagram
-                        positions={findPositions(selected.formation, selected.formation_id)!}
-                        arrows={parseArrows(selected.arrows)}
-                      />
-                    </View>
-                  )}
-                  <View style={styles.detailBlock}>
-                    <Text style={styles.detailLabel}>{isIt ? 'FRECCE' : 'ARROWS'}</Text>
-                    <View style={styles.arrowsBox}>
-                      <Text style={styles.arrowsText}>{selected.arrows}</Text>
-                    </View>
-                  </View>
-                  <DetailBlock label={isIt ? 'MOVIMENTI CHIAVE' : 'KEY MOVEMENTS'} value={isIt ? selected.key_movements_it : selected.key_movements_en} />
-                  <DetailBlock label={isIt ? 'PERCHÉ FUNZIONA' : 'WHY IT WORKS'} value={isIt ? selected.explanation_it : selected.explanation_en} />
-                </>
-              )}
               {selected && section === 'stories' && (
                 <>
                   <DetailBlock label={isIt ? 'MODULO USATO' : 'FORMATION USED'} value={selected.formation_used} />
@@ -409,14 +365,6 @@ export default function AcademyScreen() {
                   <DetailBlock label={isIt ? 'RISPOSTA' : 'ANSWER'} value={isIt ? selected.answer_it : selected.answer_en} />
                 </>
               )}
-              {selected && section === 'quick' && (
-                <>
-                  <DetailBlock label={isIt ? 'AVVERSARIO' : 'OPPONENT'} value={selected.av} />
-                  <DetailBlock label={isIt ? 'SE GIOCHI OFFENSIVO' : 'OFFENSIVE COUNTER'} value={selected.off} />
-                  <DetailBlock label={isIt ? 'SE GIOCHI BILANCIATO' : 'NEUTRAL COUNTER'} value={selected.neu} />
-                  <DetailBlock label={isIt ? 'SE GIOCHI DIFENSIVO' : 'DEFENSIVE COUNTER'} value={selected.dif} />
-                </>
-              )}
               {selected && section === 'abbr' && (
                 <>
                   <View style={styles.detailBlock}>
@@ -428,15 +376,6 @@ export default function AcademyScreen() {
                   <DetailBlock label={isIt ? 'NOME' : 'NAME'} value={isIt ? selected.name_it : selected.name_en} />
                   <DetailBlock label={isIt ? 'ESEMPIO' : 'EXAMPLE'} value={selected.example} />
                   <DetailBlock label={isIt ? 'DESCRIZIONE' : 'DESCRIPTION'} value={isIt ? selected.description_it : selected.description_en} />
-                </>
-              )}
-              {selected && section === 'matrix' && (
-                <>
-                  <DetailBlock label={isIt ? 'AVVERSARIO' : 'OPPONENT'} value={selected.opponent} />
-                  <DetailBlock label={isIt ? 'CATEGORIA' : 'CATEGORY'} value={(selected.category || '').toUpperCase()} />
-                  <DetailBlock label={isIt ? 'SE GIOCHI OFFENSIVO' : 'OFFENSIVE COUNTER'} value={selected.counter_offensive || '—'} />
-                  <DetailBlock label={isIt ? 'SE GIOCHI BILANCIATO' : 'NEUTRAL COUNTER'} value={selected.counter_neutral || '—'} />
-                  <DetailBlock label={isIt ? 'SE GIOCHI DIFENSIVO' : 'DEFENSIVE COUNTER'} value={selected.counter_defensive || '—'} />
                 </>
               )}
               {selected && section === 'paths' && (

@@ -79,7 +79,10 @@ C:\Users\habet\progetti\app-emergent\
 - **SCOUT**: filtro a 3 macro-aree (Tattica/Reparti/Gestione, mappa `MACRO_OF`)
   che copre tutti gli 82 consigli (prima il filtro ne raggiungeva ~5).
 - **ACADEMY**: selettore a 2 livelli — 4 gruppi (Tattica/Giocatori/Strategia/
-  Riferimento, `GROUPS`) sopra le 15 sezioni, invece della lista piatta.
+  Riferimento, `GROUPS`) sopra le 12 sezioni, invece della lista piatta.
+  Rimosse Rapido/Matrice/Frecce (doppioni della tab Counter e del mini-campo):
+  i dataset COUNTER_QUICK, MATCHUP_MATRIX, ARROW_TACTICS restano nel backend
+  ma non sono più sezioni Academy.
 
 ---
 

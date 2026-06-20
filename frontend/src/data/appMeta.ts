@@ -1,5 +1,4 @@
 import abbreviations from './abbreviations.json';
-import arrowTactics from './arrowTactics.json';
 import battleCards from './battleCards.json';
 import careerPaths from './careerPaths.json';
 import counterEngine from './counterEngine.json';
@@ -23,7 +22,6 @@ const academyItems =
   metaTactics.length +
   specialAbilities.length +
   trainingGuide.length +
-  arrowTactics.length +
   realTeams.length +
   seasonStories.length +
   faq.length +
@@ -39,12 +37,12 @@ export const APP_META = {
   counters: counterEngine.length,
   quickCounters: counterQuick.length,
   matrixEntries: matchupMatrix.length,
-  academySections: 15,
+  academySections: 12,
   academyItems,
   settingsBadge: 'OFFLINE · META 2026',
   footerLabel: 'DATASET OFFLINE',
   academySummary: {
-    it: 'Ruoli · Frecce · Meta · Abilità · Allenam. · Squadre · Storie · FAQ · Rapido · Leggenda · Matrice · Percorsi · Mio Stile · Piazzati · Scontri',
-    en: 'Roles · Arrows · Meta · Skills · Training · Teams · Stories · FAQ · Quick · Legend · Matrix · Paths · My Style · Set Piece · Battles',
+    it: 'Ruoli · Meta · Abilità · Allenam. · Squadre · Storie · FAQ · Leggenda · Percorsi · Mio Stile · Piazzati · Scontri',
+    en: 'Roles · Meta · Skills · Training · Teams · Stories · FAQ · Legend · Paths · My Style · Set Piece · Battles',
   },
 } as const;
