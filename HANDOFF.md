@@ -41,7 +41,8 @@ C:\Users\habet\progetti\app-emergent\
 │   ├── datasets.py          # estrazione/scrittura dataset in server.py (via ast)
 │   ├── sync_data.py         # rigenera frontend/src/data/*.json + index.ts da server.py
 │   ├── validate_data.py     # validatore invarianti (0 errori = si può committare)
-│   └── tactical_audit.py    # report QUALITÀ tattica dei counter (non bloccante)
+│   ├── tactical_audit.py    # report QUALITÀ tattica dei counter (non bloccante)
+│   └── arrows_engine.py     # motore frecce: unica fonte di verità per fr e alt_fr
 ├── tests/, test_reports/    # Test backend
 └── _gen_*.py                # Script generatori temporanei (gitignorati, NON committare)
 ```
@@ -55,8 +56,11 @@ C:\Users\habet\progetti\app-emergent\
   i moduli in BATTE/VULNERABILE A sono cliccabili (navigazione wiki).
 - **COUNTER**: nel modal il modulo principale e l'alternativa sono selezionabili
   (toggle PRINCIPALE/ALTERNATIVA); ognuno mostra il proprio mini-campo e le proprie
-  frecce (`alt_fr`, precalcolate per le posizioni dell'alt). Le impostazioni di
-  atteggiamento restano condivise (stesso scenario/avversario).
+  frecce. Le impostazioni di atteggiamento restano condivise (stesso scenario/avversario).
+  **Frecce**: sia `fr` (principale) sia `alt_fr` (alternativa) sono prodotte dallo
+  stesso `tools/arrows_engine.py` (principi tattici dalle fonti: DMC↓ schermo,
+  ali AML/AMR↑, terzini↓ in difesa, ecc.) — stessa qualità per entrambi, niente
+  asimmetria. Rigenerabili con `_apply_arrows.py`-style su tutto l'engine.
 - **SCOUT**: filtro a 3 macro-aree (Tattica/Reparti/Gestione, mappa `MACRO_OF`)
   che copre tutti gli 82 consigli (prima il filtro ne raggiungeva ~5).
 - **ACADEMY**: selettore a 2 livelli — 4 gruppi (Tattica/Giocatori/Strategia/
