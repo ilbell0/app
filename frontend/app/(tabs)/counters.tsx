@@ -8,6 +8,7 @@ import {
   ActivityIndicator,
   Modal,
   Animated,
+  TextInput,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
@@ -56,6 +57,7 @@ export default function CountersScreen() {
   const [loading, setLoading] = useState(true);
   const [modalVisible, setModalVisible] = useState(false);
   const [searchCategory, setSearchCategory] = useState<string>('all');
+  const [search, setSearch] = useState('');
   const [showAlt, setShowAlt] = useState(false);
   const [fadeAnim] = useState(new Animated.Value(0));
 
@@ -104,9 +106,16 @@ export default function CountersScreen() {
     return NothingTheme.colors.textTertiary;
   };
 
-  const filteredFormations = searchCategory === 'all'
-    ? counterEngine
-    : counterEngine.filter((ce) => ce.cat === searchCategory);
+  // cerca per nome o per numero: "3-3-2-2" trova anche notazioni avanzate
+  const qDigits = search.replace(/\D/g, '');
+  const matchesSearch = (ce: CounterEngine) => {
+    if (!search.trim()) return true;
+    if (ce.av.toLowerCase().includes(search.toLowerCase().trim())) return true;
+    return qDigits.length > 0 && ce.av.replace(/\D/g, '').includes(qDigits);
+  };
+  const filteredFormations = counterEngine.filter((ce) =>
+    matchesSearch(ce) && (search.trim() ? true : searchCategory === 'all' || ce.cat === searchCategory)
+  );
 
   const openModal = (formation: CounterEngine) => {
     setSelectedFormation(formation);
@@ -140,6 +149,25 @@ export default function CountersScreen() {
       </View>
 
       <View style={styles.divider} />
+
+      {/* Search */}
+      <View style={styles.searchRow}>
+        <Ionicons name="search" size={16} color={NothingTheme.colors.textTertiary} />
+        <TextInput
+          style={styles.searchInput}
+          value={search}
+          onChangeText={setSearch}
+          placeholder={language === 'it' ? 'Cerca avversario (es. 3-3-2-2)' : 'Search opponent (e.g. 3-3-2-2)'}
+          placeholderTextColor={NothingTheme.colors.textTertiary}
+          autoCapitalize="none"
+          autoCorrect={false}
+        />
+        {search.length > 0 && (
+          <TouchableOpacity onPress={() => setSearch('')}>
+            <Ionicons name="close-circle" size={16} color={NothingTheme.colors.textTertiary} />
+          </TouchableOpacity>
+        )}
+      </View>
 
       {/* Category Filter */}
       <View style={styles.filterContainer}>
@@ -461,6 +489,25 @@ const styles = StyleSheet.create({
   dividerModal: {
     height: 1,
     backgroundColor: NothingTheme.colors.divider,
+  },
+  searchRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginHorizontal: 24,
+    marginTop: 14,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderRadius: 8,
+    backgroundColor: NothingTheme.colors.surface,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+  },
+  searchInput: {
+    flex: 1,
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 14,
+    padding: 0,
   },
   filterContainer: {
     flexDirection: 'row',

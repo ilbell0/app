@@ -8,6 +8,7 @@ import {
   ActivityIndicator,
   Modal,
   Animated,
+  TextInput,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
@@ -97,16 +98,28 @@ export default function FormationsScreen() {
   const [modalVisible, setModalVisible] = useState(false);
   const [fadeAnim] = useState(new Animated.Value(0));
   const [defenseFilter, setDefenseFilter] = useState<'common' | 'all' | 3 | 4 | 5>('common');
+  const [search, setSearch] = useState('');
   const modalScrollRef = useRef<ScrollView>(null);
 
-  // filtro + ordinamento: i moduli comuni vengono mostrati per primi
+  // cerca per nome o per numero: "3-3-2-2" trova anche moduli con notazione avanzata
+  const qDigits = search.replace(/\D/g, '');
+  const matchesSearch = (f: Formation) => {
+    if (!search.trim()) return true;
+    if (f.name.toLowerCase().includes(search.toLowerCase().trim())) return true;
+    return qDigits.length > 0 && f.name.replace(/\D/g, '').includes(qDigits);
+  };
+
+  // filtro + ordinamento: i moduli comuni vengono mostrati per primi.
+  // Con una ricerca attiva si ignora il filtro difesa (cerca tra tutti).
   const visibleFormations = formations
     .filter((f) =>
-      defenseFilter === 'common'
-        ? f.common
-        : defenseFilter === 'all'
-          ? true
-          : f.defense_count === defenseFilter
+      search.trim()
+        ? matchesSearch(f)
+        : defenseFilter === 'common'
+          ? f.common
+          : defenseFilter === 'all'
+            ? true
+            : f.defense_count === defenseFilter
     )
     .sort((a, b) => Number(b.common) - Number(a.common));
 
@@ -176,6 +189,25 @@ export default function FormationsScreen() {
       </View>
 
       <View style={styles.divider} />
+
+      {/* Search */}
+      <View style={styles.searchRow}>
+        <Ionicons name="search" size={16} color={NothingTheme.colors.textTertiary} />
+        <TextInput
+          style={styles.searchInput}
+          value={search}
+          onChangeText={setSearch}
+          placeholder={language === 'it' ? 'Cerca modulo (es. 3-3-2-2)' : 'Search formation (e.g. 3-3-2-2)'}
+          placeholderTextColor={NothingTheme.colors.textTertiary}
+          autoCapitalize="none"
+          autoCorrect={false}
+        />
+        {search.length > 0 && (
+          <TouchableOpacity onPress={() => setSearch('')}>
+            <Ionicons name="close-circle" size={16} color={NothingTheme.colors.textTertiary} />
+          </TouchableOpacity>
+        )}
+      </View>
 
       {/* Defense Filter */}
       <View style={styles.defFilter}>
@@ -595,6 +627,25 @@ const styles = StyleSheet.create({
     height: 1,
     backgroundColor: NothingTheme.colors.divider,
     marginHorizontal: 24,
+  },
+  searchRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginHorizontal: 24,
+    marginTop: 14,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderRadius: 8,
+    backgroundColor: NothingTheme.colors.surface,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+  },
+  searchInput: {
+    flex: 1,
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 14,
+    padding: 0,
   },
   defFilter: {
     flexDirection: 'row',

@@ -54,6 +54,13 @@ C:\Users\habet\progetti\app-emergent\
   nelle posizioni reali e le frecce dello scenario; filtro **COMUNI** di default
   (37 moduli reali, campo `FORMATIONS.common`) vs TUTTE/DIF; badge COMUNE/VARIANTE;
   i moduli in BATTE/VULNERABILE A sono cliccabili (navigazione wiki).
+- **Ricerca per numero (FORM + COUNTER)**: barra di ricerca che matcha il nome
+  o la sequenza numerica (cifre): digitando "3-3-2-2" o "3-2-3-2" si trovano anche
+  i moduli con notazione avanzata (es. "3N-2W-3N-2"). Risolve il problema dei nomi
+  che Top Eleven mostra in forma numerica pulita ma che nel DB hanno notazione N/W.
+  Audit completezza (13/06): tutte le formazioni base di difesa 4/5 delle fonti
+  sono presenti, e tutte le strutture di difesa 3 — il dataset è completo, mancava
+  solo la trovabilità per nome numerico.
 - **COUNTER**: nel modal il modulo principale e l'alternativa sono selezionabili
   (toggle PRINCIPALE/ALTERNATIVA); ognuno mostra il proprio mini-campo e le proprie
   frecce. Le impostazioni di atteggiamento restano condivise (stesso scenario/avversario).
