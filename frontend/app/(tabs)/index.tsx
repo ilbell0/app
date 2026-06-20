@@ -13,6 +13,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
 import { APP_META, SCOUT_TIPS } from '@/src/data';
+import CounterWizard from '@/src/components/CounterWizard';
 
 interface ScoutTip {
   id: string;
@@ -29,6 +30,7 @@ export default function HomeScreen() {
   const { language } = useLanguage();
   const [tips, setTips] = useState<ScoutTip[]>([]);
   const [refreshing, setRefreshing] = useState(false);
+  const [wizardVisible, setWizardVisible] = useState(false);
 
   useEffect(() => {
     fetchTips();
@@ -104,6 +106,22 @@ export default function HomeScreen() {
 
         {/* Divider */}
         <View style={styles.divider} />
+
+        {/* Trova counter — azione principale */}
+        <View style={styles.section}>
+          <TouchableOpacity style={styles.wizardCard} onPress={() => setWizardVisible(true)} activeOpacity={0.85}>
+            <View style={styles.wizardIcon}>
+              <Ionicons name="navigate" size={24} color={NothingTheme.colors.accent} />
+            </View>
+            <View style={styles.wizardContent}>
+              <Text style={styles.wizardTitle}>{language === 'it' ? 'TROVA IL MIO COUNTER' : 'FIND MY COUNTER'}</Text>
+              <Text style={styles.wizardSub}>
+                {language === 'it' ? 'Modulo avversario → setup pronto' : 'Opponent formation → ready setup'}
+              </Text>
+            </View>
+            <Ionicons name="chevron-forward" size={20} color={NothingTheme.colors.textTertiary} />
+          </TouchableOpacity>
+        </View>
 
         {/* Quick Access */}
         <View style={styles.section}>
@@ -222,6 +240,8 @@ export default function HomeScreen() {
           <Text style={styles.footerVersion}>{APP_META.datasets} DATASET</Text>
         </View>
       </ScrollView>
+
+      <CounterWizard visible={wizardVisible} onClose={() => setWizardVisible(false)} />
     </View>
   );
 }
@@ -466,6 +486,36 @@ const styles = StyleSheet.create({
   },
   academySub: {
     color: NothingTheme.colors.textTertiary,
+    fontSize: 12,
+    marginTop: 2,
+  },
+  wizardCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: NothingTheme.colors.accentMuted,
+    borderRadius: 12,
+    padding: 18,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.accent,
+  },
+  wizardIcon: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: NothingTheme.colors.background,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 14,
+  },
+  wizardContent: { flex: 1 },
+  wizardTitle: {
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 15,
+    fontWeight: '700',
+    letterSpacing: 1,
+  },
+  wizardSub: {
+    color: NothingTheme.colors.textSecondary,
     fontSize: 12,
     marginTop: 2,
   },
