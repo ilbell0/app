@@ -930,7 +930,7 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-1-4-2', '4-1-4-1', '5-4-1 F (Flat)'],
-        'effective_against': ['3-1-4-2 W', '3-1-5-1 AMC', '3-3-2-2', '4-1-1-2W-2'],
+        'effective_against': ['3-1-4-2 W', '3-1-5-1 AMC', '4-1-1-2W-2'],
         'common': True
     },
     {
@@ -1444,7 +1444,6 @@ FORMATIONS = [
             '3-1-4-1-1',
             '3-1-4-2 W',
             '3-3-1-3',
-            '3-3-2-2',
             '3-4-3',
             '3-5-2 V (V-Style)',
             '3N-1-2-1-3',
@@ -1775,6 +1774,7 @@ FORMATIONS = [
         'effective_against': [
             '3-1-3-2W-1',
             '3-3-1-3',
+            '3-3-2-2',
             '3-4-2-1',
             '3W-1-3N-1-2',
             '3W-2DMC-3N-1-1 Tower (Eiffel Tower)',
@@ -1916,6 +1916,7 @@ FORMATIONS = [
             '3-1-5-1 AMC',
             '3-2-2-2-1 B (Butterfly)',
             '3-3-1-3',
+            '3-3-2-2',
             '3-4-2-1',
             '3-4-3',
             '3-5-2 F (Flat)',
@@ -13444,7 +13445,7 @@ FORMATIONS = [
         'defense_count': 3,
         'common': True,
         'effective_against': [],
-        'vulnerable_to': ['4-2-3-1', '4-4-2 C (Classic)', '5-4-1 F (Flat)']
+        'vulnerable_to': ['4-1-4-1', '4-3-3', '4-4-2 C (Classic)']
     }
 ]
 
@@ -23147,8 +23148,8 @@ COUNTER_ENGINE = [
         'av': '3-3-2-2',
         'cat': 'neu',
         'forte': {
-            'mod': '5-4-1 F (Flat)',
-            'alt': '4-4-2 C (Classic)',
+            'mod': '4-1-4-1',
+            'alt': '5-4-1 F (Flat)',
             'men': 'Difensiva',
             'pass': 'Fasce',
             'stile': 'Lunghi',
@@ -23158,22 +23159,23 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '—',
-                'MR': '—',
                 'DL': '↓',
+                'DMC': '↓',
+                'ML': '—',
                 'ST': '—',
                 'MC': '—',
-                'DR': '↓'
+                'DR': '↓',
+                'MR': '—'
             },
             'alt_fr': {
-                'ML': '—',
-                'MR': '—',
                 'DL': '↓',
+                'ML': '—',
                 'ST': '—',
                 'MC': '—',
-                'DR': '↓'
+                'DR': '↓',
+                'MR': '—'
             },
-            'w': 'Il 3-3-2-2 è iper-offensivo: terzini e ali spingono. Chiuditi col 5-4-1 e riparti veloce negli enormi spazi dietro le fasce'
+            'w': "Fonte: il 4-1-4-1 controlla il centro col DMC e le mezzali coprono le fasce contro l'iper-attacco"
         },
         'pari': {
             'mod': '4-4-2 C (Classic)',
@@ -23187,26 +23189,26 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'ML': '↑',
-                'MR': '↑',
                 'DL': '—',
+                'ML': '↑',
                 'ST': '—',
                 'MC': '—',
-                'DR': '—'
+                'DR': '—',
+                'MR': '↑'
             },
             'alt_fr': {
-                'DL': '—',
                 'AML': '↑',
+                'DL': '—',
                 'ST': '—',
                 'MC': '—',
-                'AMR': '↑',
-                'DR': '—'
+                'DR': '—',
+                'AMR': '↑'
             },
-            'w': 'Counter standard: il 4-4-2 attacca i 3 DC con due punte e sfrutta con ML/MR le corsie lasciate dai terzini avversari'
+            'w': 'Counter standard (fonte): il 4-4-2 gestisce le ali avversarie e riparte senza scoprirsi'
         },
         'debole': {
-            'mod': '4-2-3-1',
-            'alt': '4-3-3',
+            'mod': '4-3-3',
+            'alt': '4-1-3-1W-1',
             'men': 'Offensiva',
             'pass': 'Fasce',
             'stile': 'Corti',
@@ -23216,23 +23218,22 @@ COUNTER_ENGINE = [
             'marc': 'Zona',
             'fuo': 'NO',
             'fr': {
-                'DL': '—',
                 'AML': '↑',
+                'DL': '—',
                 'ST': '—',
                 'MC': '—',
-                'AMC': '↑',
-                'AMR': '↑',
-                'DR': '—'
+                'DR': '—',
+                'AMR': '↑'
             },
             'alt_fr': {
                 'DL': '—',
-                'AML': '↑',
+                'DMC': '↓',
                 'ST': '—',
                 'MC': '—',
-                'AMR': '↑',
-                'DR': '—'
+                'DR': '—',
+                'AMR': '↑'
             },
-            'w': 'Da favorito aggredisci: difesa a 3 senza schermo, AML/AMR attaccano le fasce e i varchi dietro i terzini sganciati'
+            'w': "Fonte: il 4-3-3 colpisce le fasce con le ali mentre lo ST fissa l'unico DC di ruolo del 3-3-2-2"
         }
     }
 ]
@@ -23781,9 +23782,9 @@ COUNTER_QUICK = [
     {
         'av': '3-3-2-2',
         'cat': 'neu',
-        'off': '4-2-3-1',
+        'off': '4-3-3',
         'neu': '4-4-2 C (Classic)',
-        'dif': '5-4-1 F (Flat)'
+        'dif': '4-1-4-1'
     }
 ]
 
@@ -24544,9 +24545,9 @@ MATCHUP_MATRIX = [
     {
         'opponent': '3-3-2-2',
         'category': 'neu',
-        'counter_offensive': '4-2-3-1',
+        'counter_offensive': '4-3-3',
         'counter_neutral': '4-4-2 C (Classic)',
-        'counter_defensive': '5-4-1 F (Flat)'
+        'counter_defensive': '4-1-4-1'
     }
 ]
 

@@ -9692,8 +9692,8 @@
     "av": "3-3-2-2",
     "cat": "neu",
     "forte": {
-      "mod": "5-4-1 F (Flat)",
-      "alt": "4-4-2 C (Classic)",
+      "mod": "4-1-4-1",
+      "alt": "5-4-1 F (Flat)",
       "men": "Difensiva",
       "pass": "Fasce",
       "stile": "Lunghi",
@@ -9703,22 +9703,23 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
-        "ML": "—",
-        "MR": "—",
         "DL": "↓",
+        "DMC": "↓",
+        "ML": "—",
         "ST": "—",
         "MC": "—",
-        "DR": "↓"
+        "DR": "↓",
+        "MR": "—"
       },
       "alt_fr": {
-        "ML": "—",
-        "MR": "—",
         "DL": "↓",
+        "ML": "—",
         "ST": "—",
         "MC": "—",
-        "DR": "↓"
+        "DR": "↓",
+        "MR": "—"
       },
-      "w": "Il 3-3-2-2 è iper-offensivo: terzini e ali spingono. Chiuditi col 5-4-1 e riparti veloce negli enormi spazi dietro le fasce"
+      "w": "Fonte: il 4-1-4-1 controlla il centro col DMC e le mezzali coprono le fasce contro l'iper-attacco"
     },
     "pari": {
       "mod": "4-4-2 C (Classic)",
@@ -9732,26 +9733,26 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
-        "ML": "↑",
-        "MR": "↑",
         "DL": "—",
+        "ML": "↑",
         "ST": "—",
         "MC": "—",
-        "DR": "—"
+        "DR": "—",
+        "MR": "↑"
       },
       "alt_fr": {
-        "DL": "—",
         "AML": "↑",
+        "DL": "—",
         "ST": "—",
         "MC": "—",
-        "AMR": "↑",
-        "DR": "—"
+        "DR": "—",
+        "AMR": "↑"
       },
-      "w": "Counter standard: il 4-4-2 attacca i 3 DC con due punte e sfrutta con ML/MR le corsie lasciate dai terzini avversari"
+      "w": "Counter standard (fonte): il 4-4-2 gestisce le ali avversarie e riparte senza scoprirsi"
     },
     "debole": {
-      "mod": "4-2-3-1",
-      "alt": "4-3-3",
+      "mod": "4-3-3",
+      "alt": "4-1-3-1W-1",
       "men": "Offensiva",
       "pass": "Fasce",
       "stile": "Corti",
@@ -9761,23 +9762,22 @@
       "marc": "Zona",
       "fuo": "NO",
       "fr": {
-        "DL": "—",
         "AML": "↑",
+        "DL": "—",
         "ST": "—",
         "MC": "—",
-        "AMC": "↑",
-        "AMR": "↑",
-        "DR": "—"
+        "DR": "—",
+        "AMR": "↑"
       },
       "alt_fr": {
         "DL": "—",
-        "AML": "↑",
+        "DMC": "↓",
         "ST": "—",
         "MC": "—",
-        "AMR": "↑",
-        "DR": "—"
+        "DR": "—",
+        "AMR": "↑"
       },
-      "w": "Da favorito aggredisci: difesa a 3 senza schermo, AML/AMR attaccano le fasce e i varchi dietro i terzini sganciati"
+      "w": "Fonte: il 4-3-3 colpisce le fasce con le ali mentre lo ST fissa l'unico DC di ruolo del 3-3-2-2"
     }
   }
 ]
