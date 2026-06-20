@@ -35,7 +35,13 @@ export default function HomeScreen() {
   }, []);
 
   const fetchTips = async () => {
-    setTips((SCOUT_TIPS as ScoutTip[]).slice(0, 3));
+    // 3 consigli casuali, così il pull-to-refresh mostra contenuti diversi
+    const all = [...(SCOUT_TIPS as ScoutTip[])];
+    for (let i = all.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [all[i], all[j]] = [all[j], all[i]];
+    }
+    setTips(all.slice(0, 3));
   };
 
   const onRefresh = async () => {
