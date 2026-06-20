@@ -72,7 +72,7 @@ C:\Users\habet\progetti\app-emergent\
 
 | Dataset Python | Voci | Bundle JSON frontend | Descrizione |
 |---|---|---|---|
-| `FORMATIONS` | 125 | `formations.json` | Moduli con scenari forte/pari/debole + frecce + reverse-lookup (`effective_against`, `vulnerable_to`) + `defense_count` |
+| `FORMATIONS` | 126 | `formations.json` | Moduli con scenari forte/pari/debole + frecce + reverse-lookup (`effective_against`, `vulnerable_to`) + `defense_count` + `common` |
 | `COUNTER_ENGINE` | 107 | `counterEngine.json` | Per ogni avversario: 3 scenari completi. **Fonte di verità dei counter** |
 | `COUNTER_QUICK` | 74 | `counterQuick.json` | Tabella rapida avversario → 3 counter (derivata dalla matrice) |
 | `MATCHUP_MATRIX` | 107 | `matchupMatrix.json` | Matrice avversario → 3 counter (derivata dall'engine: off=debole.mod, neu=pari.mod, dif=forte.mod) |

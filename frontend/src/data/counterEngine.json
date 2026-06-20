@@ -9687,5 +9687,97 @@
         "DL": "↑"
       }
     }
+  },
+  {
+    "av": "3-3-2-2",
+    "cat": "neu",
+    "forte": {
+      "mod": "5-4-1 F (Flat)",
+      "alt": "4-4-2 C (Classic)",
+      "men": "Difensiva",
+      "pass": "Fasce",
+      "stile": "Lunghi",
+      "ctrl": "SI",
+      "press": "Basso",
+      "cont": "Normale",
+      "marc": "Zona",
+      "fuo": "NO",
+      "fr": {
+        "ML": "—",
+        "MR": "—",
+        "DL": "↓",
+        "ST": "—",
+        "MC": "—",
+        "DR": "↓"
+      },
+      "alt_fr": {
+        "ML": "—",
+        "MR": "—",
+        "DL": "↓",
+        "ST": "—",
+        "MC": "—",
+        "DR": "↓"
+      },
+      "w": "Il 3-3-2-2 è iper-offensivo: terzini e ali spingono. Chiuditi col 5-4-1 e riparti veloce negli enormi spazi dietro le fasce"
+    },
+    "pari": {
+      "mod": "4-4-2 C (Classic)",
+      "alt": "4-3N-2W-1",
+      "men": "Normale",
+      "pass": "Fasce",
+      "stile": "Misti",
+      "ctrl": "SI",
+      "press": "Basso",
+      "cont": "Normale",
+      "marc": "Zona",
+      "fuo": "NO",
+      "fr": {
+        "ML": "↑",
+        "MR": "↑",
+        "DL": "—",
+        "ST": "—",
+        "MC": "—",
+        "DR": "—"
+      },
+      "alt_fr": {
+        "DL": "—",
+        "AML": "↑",
+        "ST": "—",
+        "MC": "—",
+        "AMR": "↑",
+        "DR": "—"
+      },
+      "w": "Counter standard: il 4-4-2 attacca i 3 DC con due punte e sfrutta con ML/MR le corsie lasciate dai terzini avversari"
+    },
+    "debole": {
+      "mod": "4-2-3-1",
+      "alt": "4-3-3",
+      "men": "Offensiva",
+      "pass": "Fasce",
+      "stile": "Corti",
+      "ctrl": "NO",
+      "press": "Alto",
+      "cont": "Duro",
+      "marc": "Zona",
+      "fuo": "NO",
+      "fr": {
+        "DL": "—",
+        "AML": "↑",
+        "ST": "—",
+        "MC": "—",
+        "AMC": "↑",
+        "AMR": "↑",
+        "DR": "—"
+      },
+      "alt_fr": {
+        "DL": "—",
+        "AML": "↑",
+        "ST": "—",
+        "MC": "—",
+        "AMR": "↑",
+        "DR": "—"
+      },
+      "w": "Da favorito aggredisci: difesa a 3 senza schermo, AML/AMR attaccano le fasce e i varchi dietro i terzini sganciati"
+    }
   }
 ]

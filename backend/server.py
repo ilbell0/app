@@ -334,6 +334,7 @@ FORMATIONS = [
         'vulnerable_to': ['3-2-2-2-1 B (Butterfly)', '3N-4-1-2', '4-1-2-1-2 ND (Narrow Diamond)'],
         'effective_against': [
             '3-1-4-2',
+            '3-3-2-2',
             '3N-2N-1-2W-2',
             '3N-4-3',
             '3W-1-3W-1-2',
@@ -929,7 +930,7 @@ FORMATIONS = [
         },
         'defense_count': 4,
         'vulnerable_to': ['3-1-4-2', '4-1-4-1', '5-4-1 F (Flat)'],
-        'effective_against': ['3-1-4-2 W', '3-1-5-1 AMC', '4-1-1-2W-2'],
+        'effective_against': ['3-1-4-2 W', '3-1-5-1 AMC', '3-3-2-2', '4-1-1-2W-2'],
         'common': True
     },
     {
@@ -1443,6 +1444,7 @@ FORMATIONS = [
             '3-1-4-1-1',
             '3-1-4-2 W',
             '3-3-1-3',
+            '3-3-2-2',
             '3-4-3',
             '3-5-2 V (V-Style)',
             '3N-1-2-1-3',
@@ -13308,6 +13310,141 @@ FORMATIONS = [
         'vulnerable_to': ['3-1-4-2', '4-4-2 C (Classic)', '3W-2N-3W-2'],
         'defense_count': 4,
         'common': False
+    },
+    {
+        'id': '3322',
+        'name': '3-3-2-2',
+        'description_en': 'Hyper-offensive back-three system with overlapping full-backs, two wide forwards and two strikers. Five-plus players join the attack, leaving large spaces on the flanks and on the break.',
+        'description_it': 'Sistema iper-offensivo a difesa tre con terzini che si sovrappongono, due ali e due punte. Cinque e più giocatori in fase offensiva, lasciando ampi spazi sulle fasce e in contropiede.',
+        'positions': ['GK', 'DL', 'DC', 'DR', 'ML', 'MC', 'MR', 'AML', 'AMR', 'ST', 'ST'],
+        'category_en': 'Offensive',
+        'category_it': 'Offensiva',
+        'strengths_en': [
+            'Overloads the attack',
+            'Width from full-backs and wingers',
+            'Two strikers pin the defenders',
+            'Dangerous when chasing a goal'
+        ],
+        'strengths_it': [
+            "Sovraccarica l'attacco",
+            'Ampiezza da terzini e ali',
+            'Due punte fissano i difensori',
+            'Pericoloso quando insegue il risultato'
+        ],
+        'weaknesses_en': [
+            'Huge space behind the full-backs',
+            'No defensive midfielder shield',
+            'Exposed to fast counters',
+            'Only three at the back'
+        ],
+        'weaknesses_it': [
+            'Enorme spazio dietro i terzini',
+            'Nessun mediano a schermo',
+            'Esposto ai contropiedi veloci',
+            'Solo tre dietro'
+        ],
+        'tactic_type_en': 'Offensive',
+        'tactic_type_it': 'Offensivo',
+        'recommended_tactics': {
+            'mentality': 'Attacking',
+            'focus_passing': 'Down Both Flanks',
+            'passing_style': 'Short',
+            'counter_attack': False,
+            'pressing': 'High',
+            'tackling': 'Hard',
+            'marking': 'Zonal',
+            'offside_trap': False
+        },
+        'opponent_settings': {
+            'strong': {
+                'mentality': 'Normal',
+                'mentality_it': 'Normale',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Mixed',
+                'passing_style_it': 'Misti',
+                'counter_attack': True,
+                'pressing': 'Low',
+                'pressing_it': 'Basso',
+                'tackling': 'Normal',
+                'tackling_it': 'Normale',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': "Against a stronger side don't over-commit: keep the full-backs honest and hit on the counter through your wide forwards.",
+                'tip_it': 'Contro una squadra più forte non sbilanciarti: tieni i terzini più bassi e colpisci in contropiede con le ali.',
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑',
+                    'DL': '—',
+                    'AML': '↑',
+                    'ST': '—',
+                    'MC': '—',
+                    'AMR': '↑',
+                    'DR': '—'
+                }
+            },
+            'equal': {
+                'mentality': 'Attacking',
+                'mentality_it': 'Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Zonal',
+                'marking_it': 'Zonale',
+                'offside_trap': False,
+                'tip_en': 'Use your width: full-backs and wingers stretch the pitch, the two strikers attack the box.',
+                'tip_it': "Sfrutta l'ampiezza: terzini e ali allargano il campo, le due punte attaccano l'area.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑',
+                    'DL': '—',
+                    'AML': '↑',
+                    'ST': '—',
+                    'MC': '—',
+                    'AMR': '↑',
+                    'DR': '—'
+                }
+            },
+            'weak': {
+                'mentality': 'Hard Attacking',
+                'mentality_it': 'Molto Offensiva',
+                'focus_passing': 'Down Both Flanks',
+                'focus_passing_it': 'Per entrambe le fasce',
+                'passing_style': 'Short',
+                'passing_style_it': 'Corti',
+                'counter_attack': False,
+                'pressing': 'High',
+                'pressing_it': 'Alto',
+                'tackling': 'Hard',
+                'tackling_it': 'Duro',
+                'marking': 'Man-to-Man',
+                'marking_it': 'Uomo a Uomo',
+                'offside_trap': False,
+                'tip_en': 'Overwhelm a weaker side: push everyone forward, the back three is enough against a passive opponent.',
+                'tip_it': "Travolgi l'avversario più debole: spingi tutti in avanti, la difesa a tre basta contro chi non attacca.",
+                'arrows': {
+                    'ML': '↑',
+                    'MR': '↑',
+                    'DL': '—',
+                    'AML': '↑',
+                    'ST': '—',
+                    'MC': '—',
+                    'AMR': '↑',
+                    'DR': '—'
+                }
+            }
+        },
+        'defense_count': 3,
+        'common': True,
+        'effective_against': [],
+        'vulnerable_to': ['4-2-3-1', '4-4-2 C (Classic)', '5-4-1 F (Flat)']
     }
 ]
 
@@ -23005,6 +23142,98 @@ COUNTER_ENGINE = [
                 'DL': '↑'
             }
         }
+    },
+    {
+        'av': '3-3-2-2',
+        'cat': 'neu',
+        'forte': {
+            'mod': '5-4-1 F (Flat)',
+            'alt': '4-4-2 C (Classic)',
+            'men': 'Difensiva',
+            'pass': 'Fasce',
+            'stile': 'Lunghi',
+            'ctrl': 'SI',
+            'press': 'Basso',
+            'cont': 'Normale',
+            'marc': 'Zona',
+            'fuo': 'NO',
+            'fr': {
+                'ML': '—',
+                'MR': '—',
+                'DL': '↓',
+                'ST': '—',
+                'MC': '—',
+                'DR': '↓'
+            },
+            'alt_fr': {
+                'ML': '—',
+                'MR': '—',
+                'DL': '↓',
+                'ST': '—',
+                'MC': '—',
+                'DR': '↓'
+            },
+            'w': 'Il 3-3-2-2 è iper-offensivo: terzini e ali spingono. Chiuditi col 5-4-1 e riparti veloce negli enormi spazi dietro le fasce'
+        },
+        'pari': {
+            'mod': '4-4-2 C (Classic)',
+            'alt': '4-3N-2W-1',
+            'men': 'Normale',
+            'pass': 'Fasce',
+            'stile': 'Misti',
+            'ctrl': 'SI',
+            'press': 'Basso',
+            'cont': 'Normale',
+            'marc': 'Zona',
+            'fuo': 'NO',
+            'fr': {
+                'ML': '↑',
+                'MR': '↑',
+                'DL': '—',
+                'ST': '—',
+                'MC': '—',
+                'DR': '—'
+            },
+            'alt_fr': {
+                'DL': '—',
+                'AML': '↑',
+                'ST': '—',
+                'MC': '—',
+                'AMR': '↑',
+                'DR': '—'
+            },
+            'w': 'Counter standard: il 4-4-2 attacca i 3 DC con due punte e sfrutta con ML/MR le corsie lasciate dai terzini avversari'
+        },
+        'debole': {
+            'mod': '4-2-3-1',
+            'alt': '4-3-3',
+            'men': 'Offensiva',
+            'pass': 'Fasce',
+            'stile': 'Corti',
+            'ctrl': 'NO',
+            'press': 'Alto',
+            'cont': 'Duro',
+            'marc': 'Zona',
+            'fuo': 'NO',
+            'fr': {
+                'DL': '—',
+                'AML': '↑',
+                'ST': '—',
+                'MC': '—',
+                'AMC': '↑',
+                'AMR': '↑',
+                'DR': '—'
+            },
+            'alt_fr': {
+                'DL': '—',
+                'AML': '↑',
+                'ST': '—',
+                'MC': '—',
+                'AMR': '↑',
+                'DR': '—'
+            },
+            'w': 'Da favorito aggredisci: difesa a 3 senza schermo, AML/AMR attaccano le fasce e i varchi dietro i terzini sganciati'
+        }
     }
 ]
 
@@ -23548,6 +23777,13 @@ COUNTER_QUICK = [
         'off': '3-4-1-2',
         'neu': '4-2-2-2 H (Hexagon)',
         'dif': '4-3N-2W-1'
+    },
+    {
+        'av': '3-3-2-2',
+        'cat': 'neu',
+        'off': '4-2-3-1',
+        'neu': '4-4-2 C (Classic)',
+        'dif': '5-4-1 F (Flat)'
     }
 ]
 
@@ -24304,6 +24540,13 @@ MATCHUP_MATRIX = [
         'counter_offensive': '3W-3N-3W-1',
         'counter_neutral': '4-1-2-1-2 ND (Narrow Diamond)',
         'counter_defensive': '4-4-2 C (Classic)'
+    },
+    {
+        'opponent': '3-3-2-2',
+        'category': 'neu',
+        'counter_offensive': '4-2-3-1',
+        'counter_neutral': '4-4-2 C (Classic)',
+        'counter_defensive': '5-4-1 F (Flat)'
     }
 ]
 
