@@ -30,9 +30,9 @@ C:\Users\habet\progetti\app-emergent\
 │   │   ├── settings.tsx     # Tab SET
 │   │   └── _layout.tsx      # Bottom tab bar (6 tab, no AI)
 │   ├── src/
-│   │   ├── components/      # PitchDiagram.tsx (mini-campo formazioni, no SVG)
+│   │   ├── components/      # PitchDiagram (mini-campo) · CounterWizard · CompareModal
 │   │   ├── data/            # JSON estratti da server.py (offline)
-│   │   ├── context/         # AuthContext, LanguageContext (IT/EN)
+│   │   ├── context/         # LanguageContext (IT/EN) · FavoritesContext (AsyncStorage)
 │   │   └── theme/           # NothingTheme (nero/rosso)
 │   ├── app.json             # name, slug, package, updates URL
 │   ├── eas.json             # build profiles + canale OTA
@@ -48,6 +48,14 @@ C:\Users\habet\progetti\app-emergent\
 ```
 
 **Bottom tabs attive**: HOME · FORM · COUNTER · SCOUT · ACADEMY · SET (tab AI rimossa il 04/06).
+
+### Strumenti Home (13/06)
+- **Trova il mio counter** (`CounterWizard`): wizard a 3 step — avversario →
+  livello rosa → setup completo (modulo+alt, mini-campo, impostazioni, tip).
+- **Confronta moduli** (`CompareModal`): due moduli a confronto, verdetto dal
+  reverse-lookup (chi batte chi) + mini-campi affiancati.
+- **Preferiti** (`FavoritesContext`, AsyncStorage): stella nella scheda FORM +
+  filtro ★ nella lista; persistono tra sessioni.
 
 ### UI/UX riordino (13/06)
 - **FORM**: ogni scheda mostra un mini-campo (`PitchDiagram`) con i giocatori

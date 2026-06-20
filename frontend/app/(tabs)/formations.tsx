@@ -13,6 +13,7 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
+import { useFavorites } from '@/src/context/FavoritesContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
 import { FORMATIONS } from '@/src/data';
 import PitchDiagram from '@/src/components/PitchDiagram';
@@ -91,13 +92,14 @@ interface Formation {
 export default function FormationsScreen() {
   const insets = useSafeAreaInsets();
   const { language } = useLanguage();
+  const { isFavorite, toggleFavorite } = useFavorites();
   const [formations, setFormations] = useState<Formation[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedFormation, setSelectedFormation] = useState<Formation | null>(null);
   const [selectedLevel, setSelectedLevel] = useState<'strong' | 'equal' | 'weak'>('equal');
   const [modalVisible, setModalVisible] = useState(false);
   const [fadeAnim] = useState(new Animated.Value(0));
-  const [defenseFilter, setDefenseFilter] = useState<'common' | 'all' | 3 | 4 | 5>('common');
+  const [defenseFilter, setDefenseFilter] = useState<'fav' | 'common' | 'all' | 3 | 4 | 5>('common');
   const [search, setSearch] = useState('');
   const [history, setHistory] = useState<Formation[]>([]);
   const modalScrollRef = useRef<ScrollView>(null);
@@ -116,11 +118,13 @@ export default function FormationsScreen() {
     .filter((f) =>
       search.trim()
         ? matchesSearch(f)
-        : defenseFilter === 'common'
-          ? f.common
-          : defenseFilter === 'all'
-            ? true
-            : f.defense_count === defenseFilter
+        : defenseFilter === 'fav'
+          ? isFavorite(f.id)
+          : defenseFilter === 'common'
+            ? f.common
+            : defenseFilter === 'all'
+              ? true
+              : f.defense_count === defenseFilter
     )
     .sort((a, b) => Number(b.common) - Number(a.common));
 
@@ -226,6 +230,16 @@ export default function FormationsScreen() {
 
       {/* Defense Filter */}
       <View style={styles.defFilter}>
+        <TouchableOpacity
+          style={[styles.defBtn, styles.favBtn, defenseFilter === 'fav' && styles.defBtnActive]}
+          onPress={() => setDefenseFilter('fav')}
+        >
+          <Ionicons
+            name={defenseFilter === 'fav' ? 'star' : 'star-outline'}
+            size={14}
+            color={defenseFilter === 'fav' ? NothingTheme.colors.accent : NothingTheme.colors.textSecondary}
+          />
+        </TouchableOpacity>
         {([['common', language === 'it' ? 'COMUNI' : 'COMMON'], ['all', language === 'it' ? 'TUTTE' : 'ALL'], [3, 'DIF 3'], [4, 'DIF 4'], [5, 'DIF 5']] as const).map(([val, lab]) => (
           <TouchableOpacity
             key={String(val)}
@@ -300,6 +314,18 @@ export default function FormationsScreen() {
               >
                 <Ionicons name="close" size={24} color={NothingTheme.colors.textPrimary} />
               </TouchableOpacity>
+              {selectedFormation && (
+                <TouchableOpacity
+                  style={styles.favModalButton}
+                  onPress={() => toggleFavorite(selectedFormation.id)}
+                >
+                  <Ionicons
+                    name={isFavorite(selectedFormation.id) ? 'star' : 'star-outline'}
+                    size={20}
+                    color={isFavorite(selectedFormation.id) ? NothingTheme.colors.accent : NothingTheme.colors.textPrimary}
+                  />
+                </TouchableOpacity>
+              )}
               <Text style={styles.modalTitle}>{selectedFormation?.name}</Text>
               {selectedFormation?.tactic_type_en && (
                 <View style={styles.tacticTypeBadge}>
@@ -682,6 +708,11 @@ const styles = StyleSheet.create({
     borderColor: NothingTheme.colors.border,
     alignItems: 'center',
   },
+  favBtn: {
+    flex: 0,
+    paddingHorizontal: 12,
+    justifyContent: 'center',
+  },
   defBtnActive: {
     backgroundColor: NothingTheme.colors.accentMuted,
     borderColor: NothingTheme.colors.accent,
@@ -803,6 +834,20 @@ const styles = StyleSheet.create({
   backButton: {
     position: 'absolute',
     left: 24,
+    top: 24,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: NothingTheme.colors.surface,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 1,
+  },
+  favModalButton: {
+    position: 'absolute',
+    right: 72,
     top: 24,
     width: 40,
     height: 40,

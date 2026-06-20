@@ -14,6 +14,7 @@ import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
 import { APP_META, SCOUT_TIPS } from '@/src/data';
 import CounterWizard from '@/src/components/CounterWizard';
+import CompareModal from '@/src/components/CompareModal';
 
 interface ScoutTip {
   id: string;
@@ -31,6 +32,7 @@ export default function HomeScreen() {
   const [tips, setTips] = useState<ScoutTip[]>([]);
   const [refreshing, setRefreshing] = useState(false);
   const [wizardVisible, setWizardVisible] = useState(false);
+  const [compareVisible, setCompareVisible] = useState(false);
 
   useEffect(() => {
     fetchTips();
@@ -117,6 +119,19 @@ export default function HomeScreen() {
               <Text style={styles.wizardTitle}>{language === 'it' ? 'TROVA IL MIO COUNTER' : 'FIND MY COUNTER'}</Text>
               <Text style={styles.wizardSub}>
                 {language === 'it' ? 'Modulo avversario → setup pronto' : 'Opponent formation → ready setup'}
+              </Text>
+            </View>
+            <Ionicons name="chevron-forward" size={20} color={NothingTheme.colors.textTertiary} />
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.compareCard} onPress={() => setCompareVisible(true)} activeOpacity={0.85}>
+            <View style={styles.compareIcon}>
+              <Ionicons name="git-compare" size={22} color={NothingTheme.colors.textPrimary} />
+            </View>
+            <View style={styles.wizardContent}>
+              <Text style={styles.compareTitle}>{language === 'it' ? 'CONFRONTA MODULI' : 'COMPARE FORMATIONS'}</Text>
+              <Text style={styles.wizardSub}>
+                {language === 'it' ? 'Due moduli a confronto → chi vince' : 'Two formations head-to-head'}
               </Text>
             </View>
             <Ionicons name="chevron-forward" size={20} color={NothingTheme.colors.textTertiary} />
@@ -242,6 +257,7 @@ export default function HomeScreen() {
       </ScrollView>
 
       <CounterWizard visible={wizardVisible} onClose={() => setWizardVisible(false)} />
+      <CompareModal visible={compareVisible} onClose={() => setCompareVisible(false)} />
     </View>
   );
 }
@@ -518,5 +534,32 @@ const styles = StyleSheet.create({
     color: NothingTheme.colors.textSecondary,
     fontSize: 12,
     marginTop: 2,
+  },
+  compareCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 12,
+    padding: 18,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+    marginTop: 10,
+  },
+  compareIcon: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: NothingTheme.colors.background,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 14,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+  },
+  compareTitle: {
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 15,
+    fontWeight: '700',
+    letterSpacing: 1,
   },
 });

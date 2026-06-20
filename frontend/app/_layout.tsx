@@ -3,11 +3,13 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { LanguageProvider } from '@/src/context/LanguageContext';
+import { FavoritesProvider } from '@/src/context/FavoritesContext';
 
 export default function RootLayout() {
   return (
     <SafeAreaProvider>
       <LanguageProvider>
+        <FavoritesProvider>
         <StatusBar style="light" />
         <Stack
           screenOptions={{
@@ -19,6 +21,7 @@ export default function RootLayout() {
           <Stack.Screen name="index" />
           <Stack.Screen name="(tabs)" />
         </Stack>
+        </FavoritesProvider>
       </LanguageProvider>
     </SafeAreaProvider>
   );
