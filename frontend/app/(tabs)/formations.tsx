@@ -99,6 +99,7 @@ export default function FormationsScreen() {
   const [fadeAnim] = useState(new Animated.Value(0));
   const [defenseFilter, setDefenseFilter] = useState<'common' | 'all' | 3 | 4 | 5>('common');
   const [search, setSearch] = useState('');
+  const [history, setHistory] = useState<Formation[]>([]);
   const modalScrollRef = useRef<ScrollView>(null);
 
   // cerca per nome o per numero: "3-3-2-2" trova anche moduli con notazione avanzata
@@ -156,17 +157,31 @@ export default function FormationsScreen() {
   const openModal = (formation: Formation) => {
     setSelectedFormation(formation);
     setSelectedLevel('equal');
+    setHistory([]);
     setModalVisible(true);
   };
 
   // Naviga alla scheda di un modulo citato (BATTE / VULNERABILE A) cliccandolo.
-  // Riporta lo scroll in cima per mostrare la nuova formazione dall'inizio.
+  // Spinge quello corrente nello stack per poter tornare indietro.
   const openByName = (name: string) => {
     const target = formations.find((f) => f.name === name);
     if (!target) return;
+    if (selectedFormation) setHistory((h) => [...h, selectedFormation]);
     setSelectedFormation(target);
     setSelectedLevel('equal');
     modalScrollRef.current?.scrollTo({ y: 0, animated: false });
+  };
+
+  // Torna alla scheda precedente nella catena di navigazione.
+  const goBack = () => {
+    setHistory((h) => {
+      if (h.length === 0) return h;
+      const prev = h[h.length - 1];
+      setSelectedFormation(prev);
+      setSelectedLevel('equal');
+      modalScrollRef.current?.scrollTo({ y: 0, animated: false });
+      return h.slice(0, -1);
+    });
   };
 
   const currentSettings = selectedFormation?.opponent_settings?.[selectedLevel];
@@ -274,6 +289,11 @@ export default function FormationsScreen() {
           <View style={[styles.modalContent, { paddingTop: insets.top + 10 }]}>
             {/* Modal Header */}
             <View style={styles.modalHeader}>
+              {history.length > 0 && (
+                <TouchableOpacity style={styles.backButton} onPress={goBack}>
+                  <Ionicons name="arrow-back" size={22} color={NothingTheme.colors.textPrimary} />
+                </TouchableOpacity>
+              )}
               <TouchableOpacity
                 style={styles.closeButton}
                 onPress={() => setModalVisible(false)}
@@ -779,6 +799,20 @@ const styles = StyleSheet.create({
     borderColor: NothingTheme.colors.border,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  backButton: {
+    position: 'absolute',
+    left: 24,
+    top: 24,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: NothingTheme.colors.surface,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 1,
   },
   modalTitle: {
     color: NothingTheme.colors.textPrimary,

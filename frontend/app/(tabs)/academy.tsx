@@ -12,7 +12,33 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS, SEASON_STORIES, FAQ, COUNTER_QUICK, ABBREVIATIONS, MATCHUP_MATRIX, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS } from '@/src/data';
+import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, ARROW_TACTICS, REAL_TEAMS, SEASON_STORIES, FAQ, COUNTER_QUICK, ABBREVIATIONS, MATCHUP_MATRIX, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, FORMATIONS } from '@/src/data';
+import PitchDiagram from '@/src/components/PitchDiagram';
+
+// lookup nome/id modulo -> posizioni, per disegnare il mini-campo
+const BY_ID: Record<string, string[]> = {};
+const BY_NAME: Record<string, string[]> = {};
+(FORMATIONS as any[]).forEach((f) => { BY_ID[f.id] = f.positions; BY_NAME[f.name] = f.positions; });
+const digitsOf = (s: string) => (s || '').replace(/\D/g, '');
+function findPositions(name?: string, id?: string): string[] | null {
+  if (id && BY_ID[id]) return BY_ID[id];
+  if (!name) return null;
+  if (BY_NAME[name]) return BY_NAME[name];
+  // fallback: stessa sequenza numerica (es. "4-4-2" -> "4-4-2 C (Classic)")
+  const d = digitsOf(name);
+  const hit = (FORMATIONS as any[]).find((f) => digitsOf(f.name) === d);
+  return hit ? hit.positions : null;
+}
+// "ML↑ MR↑ DL↓" -> { ML:'↑', MR:'↑', DL:'↓' }
+function parseArrows(s?: string): Record<string, string> {
+  const out: Record<string, string> = {};
+  if (!s) return out;
+  s.split(/\s+/).forEach((tok) => {
+    const m = tok.match(/^([A-Z]+)\s*([↑↓—])$/);
+    if (m) out[m[1]] = m[2];
+  });
+  return out;
+}
 
 const LOCAL_DATA: Record<string, any[]> = {
   roles: PLAYER_ROLES,
@@ -325,6 +351,11 @@ export default function AcademyScreen() {
               )}
               {selected && section === 'meta' && (
                 <>
+                  {findPositions(selected.formation) && (
+                    <View style={styles.pitchBlock}>
+                      <PitchDiagram positions={findPositions(selected.formation)!} />
+                    </View>
+                  )}
                   <DetailBlock label={isIt ? 'TREND 2026' : '2026 TREND'} value={selected.trending ? (isIt ? '★ Di moda adesso' : '★ Trending now') : (isIt ? 'Stabile' : 'Stable')} />
                   <DetailBlock label={isIt ? 'PERCHÉ FUNZIONA' : 'WHY IT WORKS'} value={isIt ? selected.why_it_works_it : selected.why_it_works_en} />
                   <DetailBlock label={isIt ? 'SETUP' : 'SETUP'} value={isIt ? selected.setup_it : selected.setup_en} />
@@ -347,6 +378,14 @@ export default function AcademyScreen() {
               )}
               {selected && section === 'arrows' && (
                 <>
+                  {findPositions(selected.formation, selected.formation_id) && (
+                    <View style={styles.pitchBlock}>
+                      <PitchDiagram
+                        positions={findPositions(selected.formation, selected.formation_id)!}
+                        arrows={parseArrows(selected.arrows)}
+                      />
+                    </View>
+                  )}
                   <View style={styles.detailBlock}>
                     <Text style={styles.detailLabel}>{isIt ? 'FRECCE' : 'ARROWS'}</Text>
                     <View style={styles.arrowsBox}>
@@ -584,6 +623,7 @@ const styles = StyleSheet.create({
   categoryBadgeText: { color: NothingTheme.colors.textSecondary, fontSize: 10, fontWeight: '600', letterSpacing: 2 },
   modalScroll: { flex: 1, padding: 24 },
   detailBlock: { marginBottom: 24 },
+  pitchBlock: { marginBottom: 24, marginTop: 4 },
   detailLabel: { color: NothingTheme.colors.textTertiary, fontSize: 10, fontWeight: '700', letterSpacing: 2, marginBottom: 8 },
   detailValue: { color: NothingTheme.colors.textSecondary, fontSize: 15, lineHeight: 24 },
   chipRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },

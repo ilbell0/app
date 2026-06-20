@@ -77,7 +77,13 @@ interface Props {
 
 export default function PitchDiagram({ positions, arrows, height = 240 }: Props) {
   const players = useMemo(() => layout(positions), [positions]);
-  const DOT = 30;
+  // pallino più piccolo se una linea è affollata, per evitare sovrapposizioni
+  const maxPerRow = useMemo(() => {
+    const rows: Record<number, number> = {};
+    players.forEach((p) => { rows[p.y] = (rows[p.y] || 0) + 1; });
+    return Math.max(1, ...Object.values(rows));
+  }, [players]);
+  const DOT = maxPerRow >= 5 ? 24 : maxPerRow >= 4 ? 27 : 30;
 
   return (
     <View style={[styles.pitch, { height }]}>

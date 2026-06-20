@@ -16,6 +16,8 @@ import setPiece from './setPiece.json';
 import specialAbilities from './specialAbilities.json';
 import trainingGuide from './trainingGuide.json';
 
+// schede didattiche dell'Academy: esclude Rapido e Matrice (sono counter,
+// già conteggiati nella stat COUNTER) per non gonfiare il numero.
 const academyItems =
   playerRoles.length +
   metaTactics.length +
@@ -25,9 +27,7 @@ const academyItems =
   realTeams.length +
   seasonStories.length +
   faq.length +
-  counterQuick.length +
   abbreviations.length +
-  matchupMatrix.length +
   careerPaths.length +
   myPlaybook.length +
   setPiece.length +
