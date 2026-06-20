@@ -147,6 +147,15 @@ def check_engine(E, names, byname):
                         err(f"ENGINE {av}/{sc}: freccia {k} non esiste nel {s['mod']}")
                     if v not in ARROW_VALUES:
                         err(f"ENGINE {av}/{sc}: valore freccia anomalo {v!r}")
+            # frecce dell'alternativa coerenti con le posizioni dell'alt
+            alt = byname.get(s.get("alt"))
+            if "alt_fr" in s and alt:
+                apos = set(alt["positions"])
+                for k, v in (s.get("alt_fr") or {}).items():
+                    if k not in apos:
+                        err(f"ENGINE {av}/{sc}: alt_fr {k} non esiste nel {s['alt']}")
+                    if v not in ARROW_VALUES:
+                        err(f"ENGINE {av}/{sc}: valore alt_fr anomalo {v!r}")
             for field, vocab in ENG_VOCAB.items():
                 if s.get(field) not in vocab:
                     err(f"ENGINE {av}/{sc}: {field}={s.get(field)!r} fuori vocabolario")

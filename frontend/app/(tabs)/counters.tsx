@@ -13,7 +13,12 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { COUNTER_ENGINE } from '@/src/data';
+import { COUNTER_ENGINE, FORMATIONS } from '@/src/data';
+import PitchDiagram from '@/src/components/PitchDiagram';
+
+// mappa nome modulo -> posizioni, per disegnare il mini-campo del counter
+const POSITIONS: Record<string, string[]> = {};
+(FORMATIONS as any[]).forEach((f) => { POSITIONS[f.name] = f.positions; });
 
 interface CounterScenario {
   mod: string;
@@ -27,6 +32,7 @@ interface CounterScenario {
   marc: string;
   fuo: string;
   fr: Record<string, string>;
+  alt_fr?: Record<string, string>;
   w: string;
 }
 
@@ -50,6 +56,7 @@ export default function CountersScreen() {
   const [loading, setLoading] = useState(true);
   const [modalVisible, setModalVisible] = useState(false);
   const [searchCategory, setSearchCategory] = useState<string>('all');
+  const [showAlt, setShowAlt] = useState(false);
   const [fadeAnim] = useState(new Animated.Value(0));
 
   useEffect(() => {
@@ -104,10 +111,17 @@ export default function CountersScreen() {
   const openModal = (formation: CounterEngine) => {
     setSelectedFormation(formation);
     setSelectedLevel('pari');
+    setShowAlt(false);
     setModalVisible(true);
   };
 
   const currentScenario = selectedFormation?.[selectedLevel];
+  // modulo/frecce attivi: principale o alternativa, in base alla selezione
+  const hasAlt = !!currentScenario && !!currentScenario.alt && currentScenario.alt !== currentScenario.mod;
+  const activeMod = currentScenario ? (showAlt && hasAlt ? currentScenario.alt : currentScenario.mod) : '';
+  const activeFr = currentScenario
+    ? (showAlt && hasAlt ? (currentScenario.alt_fr || currentScenario.fr) : currentScenario.fr)
+    : {};
 
   if (loading) {
     return (
@@ -230,7 +244,7 @@ export default function CountersScreen() {
                     styles.levelTab,
                     selectedLevel === level && styles.levelTabActive,
                   ]}
-                  onPress={() => setSelectedLevel(level)}
+                  onPress={() => { setSelectedLevel(level); setShowAlt(false); }}
                 >
                   <Text style={[
                     styles.levelTabText,
@@ -245,24 +259,64 @@ export default function CountersScreen() {
             <ScrollView style={styles.modalScroll} showsVerticalScrollIndicator={false}>
               {currentScenario && (
                 <>
-                  {/* Recommended Formation */}
+                  {/* Recommended Formation + alternativa selezionabile */}
                   <View style={styles.recommendedSection}>
                     <Text style={styles.sectionLabel}>
                       {language === 'it' ? 'FORMAZIONE' : 'FORMATION'}
                     </Text>
-                    <View style={styles.formationBox}>
-                      <Text style={styles.recommendedFormation}>{currentScenario.mod}</Text>
-                      <Text style={styles.alternativeFormation}>
-                        ALT: {currentScenario.alt}
-                      </Text>
-                    </View>
+                    {hasAlt ? (
+                      <View style={styles.modSwitch}>
+                        <TouchableOpacity
+                          style={[styles.modSwitchBtn, !showAlt && styles.modSwitchBtnActive]}
+                          onPress={() => setShowAlt(false)}
+                          activeOpacity={0.7}
+                        >
+                          <Text style={[styles.modSwitchLabel, !showAlt && styles.modSwitchLabelActive]}>
+                            {language === 'it' ? 'PRINCIPALE' : 'MAIN'}
+                          </Text>
+                          <Text style={[styles.modSwitchName, !showAlt && styles.modSwitchNameActive]}>
+                            {currentScenario.mod}
+                          </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                          style={[styles.modSwitchBtn, showAlt && styles.modSwitchBtnActive]}
+                          onPress={() => setShowAlt(true)}
+                          activeOpacity={0.7}
+                        >
+                          <Text style={[styles.modSwitchLabel, showAlt && styles.modSwitchLabelActive]}>
+                            {language === 'it' ? 'ALTERNATIVA' : 'ALTERNATIVE'}
+                          </Text>
+                          <Text style={[styles.modSwitchName, showAlt && styles.modSwitchNameActive]}>
+                            {currentScenario.alt}
+                          </Text>
+                        </TouchableOpacity>
+                      </View>
+                    ) : (
+                      <View style={styles.formationBox}>
+                        <Text style={styles.recommendedFormation}>{currentScenario.mod}</Text>
+                      </View>
+                    )}
                   </View>
+
+                  {/* Mini-campo del modulo attivo (principale o alternativa) */}
+                  {POSITIONS[activeMod] && (
+                    <View style={styles.pitchSection}>
+                      <PitchDiagram positions={POSITIONS[activeMod]} arrows={activeFr} />
+                    </View>
+                  )}
 
                   {/* Tactical Settings Grid */}
                   <View style={styles.tacticsSection}>
                     <Text style={styles.sectionLabel}>
                       {language === 'it' ? 'IMPOSTAZIONI' : 'SETTINGS'}
                     </Text>
+                    {hasAlt && (
+                      <Text style={styles.sharedNote}>
+                        {language === 'it'
+                          ? 'Valide per entrambi i moduli · cambiano solo le frecce'
+                          : 'Same for both formations · only arrows differ'}
+                      </Text>
+                    )}
                     <View style={styles.tacticsGrid}>
                       <View style={styles.tacticRow}>
                         <Text style={styles.tacticLabel}>
@@ -339,13 +393,13 @@ export default function CountersScreen() {
                     </View>
                   </View>
 
-                  {/* Position Arrows */}
+                  {/* Position Arrows (del modulo attivo) */}
                   <View style={styles.arrowsSection}>
                     <Text style={styles.sectionLabel}>
-                      {language === 'it' ? 'FRECCE' : 'ARROWS'}
+                      {language === 'it' ? `FRECCE · ${activeMod}` : `ARROWS · ${activeMod}`}
                     </Text>
                     <View style={styles.arrowsGrid}>
-                      {Object.entries(currentScenario.fr).map(([position, arrow]) => (
+                      {Object.entries(activeFr).map(([position, arrow]) => (
                         <View key={position} style={styles.arrowItem}>
                           <Text style={styles.positionLabel}>{position}</Text>
                           <Text style={[styles.arrowIcon, { color: getArrowColor(arrow) }]}>
@@ -601,6 +655,54 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1,
     borderColor: NothingTheme.colors.border,
+  },
+  modSwitch: {
+    flexDirection: 'row',
+    gap: 8,
+  },
+  modSwitchBtn: {
+    flex: 1,
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    paddingVertical: 14,
+    paddingHorizontal: 10,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+  },
+  modSwitchBtnActive: {
+    backgroundColor: NothingTheme.colors.accentMuted,
+    borderColor: NothingTheme.colors.accent,
+  },
+  modSwitchLabel: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 9,
+    fontWeight: '700',
+    letterSpacing: 1,
+    marginBottom: 6,
+  },
+  modSwitchLabelActive: {
+    color: NothingTheme.colors.accent,
+  },
+  modSwitchName: {
+    color: NothingTheme.colors.textSecondary,
+    fontSize: 17,
+    fontWeight: '700',
+    letterSpacing: 0.5,
+    textAlign: 'center',
+  },
+  modSwitchNameActive: {
+    color: NothingTheme.colors.textPrimary,
+  },
+  pitchSection: {
+    marginBottom: 24,
+  },
+  sharedNote: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 11,
+    fontStyle: 'italic',
+    marginTop: -6,
+    marginBottom: 12,
   },
   recommendedFormation: {
     color: NothingTheme.colors.textPrimary,

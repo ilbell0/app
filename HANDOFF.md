@@ -53,6 +53,10 @@ C:\Users\habet\progetti\app-emergent\
   nelle posizioni reali e le frecce dello scenario; filtro **COMUNI** di default
   (37 moduli reali, campo `FORMATIONS.common`) vs TUTTE/DIF; badge COMUNE/VARIANTE;
   i moduli in BATTE/VULNERABILE A sono cliccabili (navigazione wiki).
+- **COUNTER**: nel modal il modulo principale e l'alternativa sono selezionabili
+  (toggle PRINCIPALE/ALTERNATIVA); ognuno mostra il proprio mini-campo e le proprie
+  frecce (`alt_fr`, precalcolate per le posizioni dell'alt). Le impostazioni di
+  atteggiamento restano condivise (stesso scenario/avversario).
 - **SCOUT**: filtro a 3 macro-aree (Tattica/Reparti/Gestione, mappa `MACRO_OF`)
   che copre tutti gli 82 consigli (prima il filtro ne raggiungeva ~5).
 - **ACADEMY**: selettore a 2 livelli — 4 gruppi (Tattica/Giocatori/Strategia/
