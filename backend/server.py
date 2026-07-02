@@ -13545,6 +13545,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 3v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-3N-2W-1 non morde, passa al 4-2-3-1',
+                "in vantaggio all'80': chiudi col 3-1-4-2 e contropiede ON"
+            ]
         }
     },
     {
@@ -13636,6 +13649,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo; terzini che si sovrappongono',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 3v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-1-3N-2W-1',
+                'sotto di un gol: 3-1-3N-2W-1, mentalità offensiva e pressing alto'
+            ]
         }
     },
     {
@@ -13723,6 +13749,15 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': ["un DC sulla punta, l'altro a coprire lo spazio"],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 3-5-2 F (Flat)',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -13811,6 +13846,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro; terzini che si sovrappongono',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 2v4: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-2-2-2 H (Hexagon) non morde, passa al 3-5-2 V (V-Style)',
+                "in vantaggio all'80': chiudi col 4-5-1 V-Style e contropiede ON"
+            ]
         }
     },
     {
@@ -13899,6 +13947,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo; terzini che si sovrappongono',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'centrocampo 3v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-1-2-1-2 ND (Narrow Diamond) non morde, passa al 3-4-1-2',
+                'sotto di un gol: 3-4-1-2, mentalità offensiva e pressing alto'
+            ]
         }
     },
     {
@@ -13990,6 +14050,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 3v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-5-1-1 V',
+                'sotto di un gol: 3-5-1-1 V, mentalità offensiva e pressing alto'
+            ]
         }
     },
     {
@@ -14079,6 +14152,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': '3 DC esposti — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 2v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-2-2-2 H (Hexagon) non morde, passa al 3-1-3N-3',
+                "in vantaggio all'80': chiudi col 4-3N-2W-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -14171,6 +14257,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-5-1-1 V',
+                "in vantaggio all'80': chiudi col 4-4-2 C (Classic) e contropiede ON"
+            ]
         }
     },
     {
@@ -14260,6 +14359,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': '3 DC stretti — fasce completamente scoperte: nessun terzino né esterno',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 2v4: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-2-2-2 H (Hexagon) non morde, passa al 4-3N-2W-1',
+                "in vantaggio all'80': chiudi col 3N-5-2 F e contropiede ON"
+            ]
         }
     },
     {
@@ -14351,6 +14463,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; spinta degli esterni di centrocampo; terzini che si sovrappongono',
+            'zona': '3 DC esposti — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-2-2-2-1 B (Butterfly)',
+                "in vantaggio all'80': chiudi col 3N-1-4-2 e contropiede ON"
+            ]
         }
     },
     {
@@ -14442,6 +14567,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': 'Può essere superata numericamente a centrocampo — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'centrocampo 3v4: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-3W-1-2 non morde, passa al 4-1-2-1-2 ND (Narrow Diamond)',
+                "in vantaggio all'80': chiudi col 3-2-2-2-1 B (Butterfly) e contropiede ON"
+            ]
         }
     },
     {
@@ -14529,6 +14666,18 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Attaccante solitario isolato — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 4-3N-2W-1 non morde, passa al 4-3N-3',
+                "in vantaggio all'80': chiudi col 3N-2W-3N-2 e contropiede ON"
+            ]
         }
     },
     {
@@ -14617,6 +14766,15 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; spinta degli esterni di centrocampo',
+            'zona': 'Attaccante isolato — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': ["un DC sulla punta, l'altro a coprire lo spazio"],
+            'piano_b': [
+                'se il 4-1-4-1 non morde, passa al 3-5-2 V (V-Style)',
+                "in vantaggio all'80': chiudi col 3-5-2 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -14705,6 +14863,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area',
+            'zona': 'Nessuna ala naturale — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3N-5-2 V',
+                'sotto di un gol: 3N-5-2 V, mentalità offensiva e pressing alto'
+            ]
         }
     },
     {
@@ -14795,6 +14966,19 @@ COUNTER_ENGINE = [
                 'MR': '↑',
                 'ST': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; ali alte che tagliano dentro',
+            'zona': 'Manca ampiezza — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'ali veloci sui loro terzini: costringili a restare bassi',
+                'centrocampo 3v2: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3N-4-1-2',
+                "in vantaggio all'80': chiudi col 3-2-2-2-1 B (Butterfly) e contropiede ON"
+            ]
         }
     },
     {
@@ -14889,6 +15073,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Attaccante solitario — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'centrocampo 4v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-4-1-1 non morde, passa al 3-1-4-1-1',
+                'sotto di un gol: 3-1-4-1-1, mentalità offensiva e pressing alto'
+            ]
         }
     },
     {
@@ -14979,6 +15175,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; spinta degli esterni di centrocampo',
+            'zona': 'Problema attaccante solitario — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'ali veloci sui loro terzini: costringili a restare bassi',
+                'centrocampo 2v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-2-2-2 H (Hexagon) non morde, passa al 3W-4-3',
+                "in vantaggio all'80': chiudi col 3-2-2-2-1 B (Butterfly) e contropiede ON"
+            ]
         }
     },
     {
@@ -15067,6 +15276,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; spinta degli esterni di centrocampo',
+            'zona': 'Niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-5-2 F (Flat)',
+                'sotto di un gol: 3-5-2 F (Flat), mentalità offensiva e pressing alto'
+            ]
         }
     },
     {
@@ -15159,6 +15381,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; ali alte che tagliano dentro',
+            'zona': 'Attaccante solitario isolato — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 5v2: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-1-4-1 non morde, passa al 4-3N-2W-1',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -15248,6 +15483,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': 'Difesa laterale debole — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 3v4: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-1-2-1-2 ND (Narrow Diamond) non morde, passa al 3-5-2 F (Flat)',
+                "in vantaggio all'80': chiudi col 4-1-3W-1-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -15342,6 +15590,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; spinta degli esterni di centrocampo',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 3v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-1-2-1-2 ND (Narrow Diamond) non morde, passa al 4-5-1 V-Style',
+                "in vantaggio all'80': chiudi col 3-1-4-1-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -15431,6 +15692,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; spinta degli esterni di centrocampo; terzini che si sovrappongono',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-5-2 V (V-Style)',
+                'sotto di un gol: 3-5-2 V (V-Style), mentalità offensiva e pressing alto'
+            ]
         }
     },
     {
@@ -15524,6 +15798,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee',
+            'zona': 'Manca ampiezza: vulnerabile alle ali avversarie — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-1-4-2',
+                "in vantaggio all'80': chiudi col 3-1-4-1-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -15617,6 +15904,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; spinta degli esterni di centrocampo',
+            'zona': 'Modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 5-1DMC-2-2 non morde, passa al 3-1-4-1-1',
+                "in vantaggio all'80': chiudi col 4-4-1-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -15711,6 +16011,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Richiede Team Balance 9.2-10 per non crollare fisicamente — fasce completamente scoperte: nessun terzino né esterno',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 3v4: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-3N-2W-1 non morde, passa al 4-5-1 V-Style',
+                "in vantaggio all'80': chiudi col 4-5-1 V-Style e contropiede ON"
+            ]
         }
     },
     {
@@ -15799,6 +16112,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area',
+            'zona': 'Esposta ai contropiedi — fasce completamente scoperte: nessun terzino né esterno',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-5-2 F (Flat)',
+                "in vantaggio all'80': chiudi col 3-5-2 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -15888,6 +16214,15 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; spinta degli esterni di centrocampo',
+            'zona': 'Attacco molto limitato — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'duelli': ["un DC sulla punta, l'altro a coprire lo spazio"],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 4-3N-2W-1',
+                "in vantaggio all'80': chiudi col 3-5-2 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -15976,6 +16311,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area',
+            'zona': 'Nessuna ampiezza — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'centrocampo 4v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 3N-4-1-2',
+                'sotto di un gol: 3N-4-1-2, mentalità offensiva e pressing alto'
+            ]
         }
     },
     {
@@ -16063,6 +16410,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': 'Poca spinta offensiva se le ali non salgono — nessuno schermo davanti alla difesa: trequarti libera; nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'centrocampo 4v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 3N-4-1-2',
+                "in vantaggio all'80': chiudi col 3N-5-2 V e contropiede ON"
+            ]
         }
     },
     {
@@ -16151,6 +16510,19 @@ COUNTER_ENGINE = [
                 'MR': '↑',
                 'ST': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area',
+            'zona': 'Molto difensiva — centrocampo in inferiorità numerica',
+            'duelli': [
+                'i tuoi 3 DC contro le loro 2 punte: tieni un uomo libero',
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 5v2: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 3N-1-4-2 non morde, passa al 4-1-2N-1-2',
+                'sotto di un gol: 4-1-2N-1-2, mentalità offensiva e pressing alto'
+            ]
         }
     },
     {
@@ -16243,6 +16615,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Punte isolate — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'centrocampo 5v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-5-1 F (Flat) non morde, passa al 3-4-3',
+                "in vantaggio all'80': chiudi col 4-1-4-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -16335,6 +16719,19 @@ COUNTER_ENGINE = [
                 'MR': '↑',
                 'ST': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; spinta degli esterni di centrocampo',
+            'zona': 'Richiede AMC di qualità (135+) — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 2v6: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-2-3-1 non morde, passa al 4-4-2 C (Classic)',
+                "in vantaggio all'80': chiudi col 4-3-3 e contropiede ON"
+            ]
         }
     },
     {
@@ -16429,6 +16826,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Vulnerabile ai contropiedi — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'ali veloci sui loro terzini: costringili a restare bassi',
+                'centrocampo 2v3: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-2-3-1 non morde, passa al 4-4-2 C (Classic)',
+                "in vantaggio all'80': chiudi col 4-1-3-1-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -16524,6 +16934,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Attaccante solitario — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'centrocampo 4v2: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 3W-1-2-3W-1',
+                "in vantaggio all'80': chiudi col 4-3-3 e contropiede ON"
+            ]
         }
     },
     {
@@ -16616,6 +17038,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': 'Modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'ali veloci sui loro terzini: costringili a restare bassi',
+                'centrocampo 3v4: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-1-4-2',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -16710,6 +17145,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': '3 DC esposti — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 3v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-4-3',
+                "in vantaggio all'80': chiudi col 5-3W-2 e contropiede ON"
+            ]
         }
     },
     {
@@ -16800,6 +17248,19 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; 3 amc che affollano la trequarti; terzini che si sovrappongono',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'nessuno schermo sul loro AMC: un MC deve abbassarsi',
+                'centrocampo 4v2: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 4-5-1 F (Flat)',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -16891,6 +17352,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': 'Fianchi esposti — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 3v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-3N-2W-1 non morde, passa al 4-3-3',
+                "in vantaggio all'80': chiudi col 4-3-3 e contropiede ON"
+            ]
         }
     },
     {
@@ -16982,6 +17456,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; ali alte che tagliano dentro',
+            'zona': '3 DC esposti — fasce completamente scoperte: nessun terzino né esterno; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 2v3: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-2-2-2 H (Hexagon) non morde, passa al 4-3-3',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -17073,6 +17560,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Solo 3 DC — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 2v4: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-2-2-2 H (Hexagon) non morde, passa al 4-3-3',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -17167,6 +17667,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; terzini che si sovrappongono',
+            'zona': '3 DC esposti — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 4-4-2 C (Classic)',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -17258,6 +17771,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; ali alte che tagliano dentro',
+            'zona': 'Molto difensiva — centrocampo in inferiorità numerica',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'centrocampo 4v1: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 4-3-3',
+                'sotto di un gol: 4-3-3, mentalità offensiva e pressing alto'
+            ]
         }
     },
     {
@@ -17353,6 +17878,15 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': "Punta unica di riferimento; un'ala alta da raddoppiare",
+            'zona': 'Sbilanciata — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': ["un DC sulla punta, l'altro a coprire lo spazio"],
+            'piano_b': [
+                'se il 4-4-1-1 non morde, passa al 3-4-3',
+                "in vantaggio all'80': chiudi col 4-1-4-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -17444,6 +17978,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; spinta degli esterni di centrocampo',
+            'zona': 'Vulnerabile a formazioni con 3 attaccanti — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 3v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-1-2-1-2 ND (Narrow Diamond) non morde, passa al 4-3-3',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -17536,6 +18083,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Attacco molto limitato — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'ali veloci sui loro terzini: costringili a restare bassi',
+                'centrocampo 2v3: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-2-2-2 H (Hexagon) non morde, passa al 3-4-3',
+                "in vantaggio all'80': chiudi col 4-1-4-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -17627,6 +18187,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Nessuna punta fissa: inserimenti dei trequartisti; ali alte che tagliano dentro',
+            'zona': 'Richiede giocatori molto specifici — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; area piccola difendibile: nessuna punta da marcare',
+            'duelli': [
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 4v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-1-3-1-1 non morde, passa al 4-3-3',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -17718,6 +18290,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; ali alte che tagliano dentro',
+            'zona': 'Centrocampo assente — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'duelli': [
+                'i tuoi 3 DC contro le loro 2 punte: tieni un uomo libero',
+                'centrocampo 4v2: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 5-4-1 F (Flat) non morde, passa al 4-3-3',
+                'sotto di un gol: 4-3-3, mentalità offensiva e pressing alto'
+            ]
         }
     },
     {
@@ -17812,6 +18396,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee',
+            'zona': 'Vittorie di misura — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-4-3',
+                "in vantaggio all'80': chiudi col 4-1-4-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -17903,6 +18500,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area',
+            'zona': 'Poche occasioni da gol — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'centrocampo 4v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 4-3-3',
+                'sotto di un gol: 4-3-3, mentalità offensiva e pressing alto'
+            ]
         }
     },
     {
@@ -17996,6 +18605,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': '3 DC esposti — fasce completamente scoperte: nessun terzino né esterno',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'centrocampo 5v4: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-1-4-1 non morde, passa al 4-3-3',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -18090,6 +18711,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; ali alte che tagliano dentro',
+            'zona': 'Solo 3 DC — fasce completamente scoperte: nessun terzino né esterno; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 5v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-1-4-1 non morde, passa al 4-3-3',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -18181,6 +18815,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee',
+            'zona': 'Attaccante solitario — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'nessuno schermo sul loro AMC: un MC deve abbassarsi'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 4-3-3',
+                'sotto di un gol: 4-3-3, mentalità offensiva e pressing alto'
+            ]
         }
     },
     {
@@ -18275,6 +18921,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; ali alte che tagliano dentro',
+            'zona': 'Solo il DMC difende — centrocampo in inferiorità numerica',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 4-3-3',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -18369,6 +19028,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area',
+            'zona': 'Nessuna ala naturale — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-4-3',
+                "in vantaggio all'80': chiudi col 4-1-4-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -18457,6 +19129,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; ali alte che tagliano dentro',
+            'zona': 'Solo 3 DC — fasce completamente scoperte: nessun terzino né esterno',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 4v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-1-3N-2 non morde, passa al 4-3-3',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -18549,6 +19234,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Vulnerabile contro ali veloci — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 3v4: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-3-3 non morde, passa al 3-4-3',
+                "in vantaggio all'80': chiudi col 4-1-4-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -18640,6 +19338,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Solo 2 MC — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'ali veloci sui loro terzini: costringili a restare bassi',
+                'centrocampo 3v2: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-3-3 non morde, passa al 4-4-2 C (Classic)',
+                "in vantaggio all'80': chiudi col 4-4-2 C (Classic) e contropiede ON"
+            ]
         }
     },
     {
@@ -18732,6 +19443,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area',
+            'zona': 'Niente attacco largo — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'ali veloci sui loro terzini: costringili a restare bassi',
+                'centrocampo 3v4: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-3-3 non morde, passa al 3-4-3',
+                "in vantaggio all'80': chiudi col 4-1-4-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -18825,6 +19549,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': 'Solo 3 DC — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'centrocampo 3v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-1-2-1-2 ND (Narrow Diamond) non morde, passa al 4-2-3-1',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -18914,6 +19650,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; ali alte che tagliano dentro',
+            'zona': 'Punta solitaria — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 4v2: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-1-3N-2 non morde, passa al 4-3-3',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -19006,6 +19755,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area',
+            'zona': 'Molto centrale — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'nessuno schermo sul loro AMC: un MC deve abbassarsi',
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 4-3-3 non morde, passa al 3-4-3',
+                "in vantaggio all'80': chiudi col 4-1-4-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -19101,6 +19863,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; ali alte che tagliano dentro',
+            'zona': 'Centro vulnerabile — centrocampo in inferiorità numerica',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'nessuno schermo sul loro AMC: un MC deve abbassarsi',
+                'centrocampo 3v1: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-3W-1-2 non morde, passa al 3-4-3',
+                "in vantaggio all'80': chiudi col 4-1-4-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -19190,6 +19965,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Nessuna ampiezza — fasce completamente scoperte: nessun terzino né esterno',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 2v4: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-2-2-2 H (Hexagon) non morde, passa al 4-3N-2W-1',
+                "in vantaggio all'80': chiudi col 4-3N-2W-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -19280,6 +20068,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area',
+            'zona': 'Soffre il gioco laterale — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'ali veloci sui loro terzini: costringili a restare bassi',
+                'centrocampo 3v4: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-3N-2W-1 non morde, passa al 3-1-3N-2W-1',
+                "in vantaggio all'80': chiudi col 4-1-4-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -19372,6 +20173,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Manca di ampiezza — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'centrocampo 5v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-1-4-1 non morde, passa al 3-4-1-2',
+                "in vantaggio all'80': chiudi col 3-4-3 e contropiede ON"
+            ]
         }
     },
     {
@@ -19456,6 +20269,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; ali alte che tagliano dentro',
+            'zona': 'Solo 3 DC e 2 MC — fasce completamente scoperte: nessun terzino né esterno',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 4v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-1-3N-2 non morde, passa al 3-1-3N-1-2',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -19548,6 +20374,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; ali alte che tagliano dentro',
+            'zona': 'Richiede MC tecnici — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-1-3N-2W-1',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -19647,6 +20486,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; 2 amc che affollano la trequarti',
+            'zona': 'Nessuna ala naturale — centrocampo in inferiorità numerica',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3W-2N-1-3W-1',
+                "in vantaggio all'80': chiudi col 4-1-4-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -19733,6 +20585,19 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; terzini che si sovrappongono',
+            'zona': 'Difficile da bilanciare — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                'i tuoi 3 DC contro le loro 2 punte: tieni un uomo libero',
+                'nessuno schermo sul loro AMC: un MC deve abbassarsi',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre'
+            ],
+            'piano_b': [
+                'se il 3-4-3 non morde, passa al 3-5-2 V (V-Style)',
+                "in vantaggio all'80': chiudi col 4-1-4-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -19822,6 +20687,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; 2 amc che affollano la trequarti',
+            'zona': 'Niente gioco largo — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 4v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-1-3-2 non morde, passa al 3-4-3',
+                "in vantaggio all'80': chiudi col 4-1-4-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -19913,6 +20791,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area',
+            'zona': 'Nessun esterno — centrocampo in inferiorità numerica',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'nessuno schermo sul loro AMC: un MC deve abbassarsi',
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 4-3N-3 non morde, passa al 4-3-3',
+                "in vantaggio all'80': chiudi col 4-4-2 C (Classic) e contropiede ON"
+            ]
         }
     },
     {
@@ -20004,6 +20895,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; 2 amc che affollano la trequarti; spinta degli esterni di centrocampo',
+            'zona': 'Punta isolata — nessuno schermo davanti alla difesa: trequarti libera; centrocampo in inferiorità numerica',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'nessuno schermo sul loro AMC: un MC deve abbassarsi',
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 4-2-2-2 H (Hexagon) non morde, passa al 3N-1-3W-1-2',
+                "in vantaggio all'80': chiudi col 4-4-2 C (Classic) e contropiede ON"
+            ]
         }
     },
     {
@@ -20090,6 +20994,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; spinta degli esterni di centrocampo',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 3v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-1-2-1-2 ND (Narrow Diamond) non morde, passa al 3-1-3N-1-2',
+                "in vantaggio all'80': chiudi col 3N-2W-2N-1-2 e contropiede ON"
+            ]
         }
     },
     {
@@ -20178,6 +21095,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; spinta degli esterni di centrocampo; terzini che si sovrappongono',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 3v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-1-2-1-2 ND (Narrow Diamond) non morde, passa al 3N-2W-2N-1-2',
+                "in vantaggio all'80': chiudi col 3-1-3N-2W-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -20264,6 +21194,19 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo; terzini che si sovrappongono',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                'i tuoi 3 DC contro le loro 2 punte: tieni un uomo libero',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 4v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 3-2-2-2-1 B (Butterfly) non morde, passa al 4-2-2-2 H (Hexagon)',
+                "in vantaggio all'80': chiudi col 3-1-3N-1-2 e contropiede ON"
+            ]
         }
     },
     {
@@ -20355,6 +21298,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; ali alte che tagliano dentro; terzini che si sovrappongono',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'nessuno schermo sul loro AMC: un MC deve abbassarsi',
+                'centrocampo 4v2: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 3W-5-2 F',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -20443,6 +21399,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'centrocampo 3v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-1-2-1-2 ND (Narrow Diamond) non morde, passa al 3-2-2-2-1 B (Butterfly)',
+                "in vantaggio all'80': chiudi col 3-1-4-2 e contropiede ON"
+            ]
         }
     },
     {
@@ -20531,6 +21499,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo; terzini che si sovrappongono',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'centrocampo 4v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 3-2-2-2-1 B (Butterfly)',
+                "in vantaggio all'80': chiudi col 3-1-4-2 e contropiede ON"
+            ]
         }
     },
     {
@@ -20619,6 +21599,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 3v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-3N-2W-1 non morde, passa al 3-1-3N-2W-1',
+                "in vantaggio all'80': chiudi col 3-2-2-2-1 B (Butterfly) e contropiede ON"
+            ]
         }
     },
     {
@@ -20711,6 +21704,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo; terzini che si sovrappongono',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-2-2-2-1 B (Butterfly)',
+                "in vantaggio all'80': chiudi col 3W-5-2 V e contropiede ON"
+            ]
         }
     },
     {
@@ -20797,6 +21803,15 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro; terzini che si sovrappongono',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
+            'duelli': ["un DC sulla punta, l'altro a coprire lo spazio"],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 3N-2W-3N-2',
+                "in vantaggio all'80': chiudi col 3-4-1-2 e contropiede ON"
+            ]
         }
     },
     {
@@ -20887,6 +21902,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; ali alte che tagliano dentro',
+            'zona': 'Fasce difensive esposte ai contropiedi — fasce completamente scoperte: nessun terzino né esterno',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'centrocampo 4v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 3-1-3W-1-2',
+                "in vantaggio all'80': chiudi col 3-2-2-2-1 B (Butterfly) e contropiede ON"
+            ]
         }
     },
     {
@@ -20975,6 +22002,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; spinta degli esterni di centrocampo; terzini che si sovrappongono',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
+                'centrocampo 3v6: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-3N-2W-1 non morde, passa al 3-3N-3W-1',
+                "in vantaggio all'80': chiudi col 3-2-2-2-1 B (Butterfly) e contropiede ON"
+            ]
         }
     },
     {
@@ -21064,6 +22104,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; 2 amc che affollano la trequarti; spinta degli esterni di centrocampo',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-5-2 V (V-Style)',
+                "in vantaggio all'80': chiudi col 3-2-2-2-1 B (Butterfly) e contropiede ON"
+            ]
         }
     },
     {
@@ -21155,6 +22208,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; 2 amc che affollano la trequarti; spinta degli esterni di centrocampo',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'le tue ali contro i braccetti larghi: 1v1 da vincere sempre'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-2-2-2-1 B (Butterfly)',
+                "in vantaggio all'80': chiudi col 3-5-1-1 V e contropiede ON"
+            ]
         }
     },
     {
@@ -21242,6 +22308,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo; terzini che si sovrappongono',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'nessuno schermo sul loro AMC: un MC deve abbassarsi'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 3N-5-2 F',
+                "in vantaggio all'80': chiudi col 3W-2DMC-3N-1-1 Tower (Eiffel Tower) e contropiede ON"
+            ]
         }
     },
     {
@@ -21330,6 +22408,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 3v4: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-1-2-1-2 ND (Narrow Diamond) non morde, passa al 3N-2W-2N-1-2',
+                "in vantaggio all'80': chiudi col 3-1-3N-2W-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -21416,6 +22507,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo; terzini che si sovrappongono',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 3v4: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-1-2-1-2 ND (Narrow Diamond) non morde, passa al 3-1-3N-1-2',
+                "in vantaggio all'80': chiudi col 3N-2W-2N-1-2 e contropiede ON"
+            ]
         }
     },
     {
@@ -21506,6 +22610,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Manca ampiezza: vulnerabile alle ali avversarie — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'centrocampo 5v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-1-4-1 non morde, passa al 3-1-4-2',
+                "in vantaggio all'80': chiudi col 5-3N-2 e contropiede ON"
+            ]
         }
     },
     {
@@ -21598,6 +22714,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; ali alte che tagliano dentro',
+            'zona': 'Centrocampo in inferiorità numerica',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 4-2-3-1 non morde, passa al 3N-2N-1-2W-2',
+                "in vantaggio all'80': chiudi col 3N-3W-2-2 e contropiede ON"
+            ]
         }
     },
     {
@@ -21691,6 +22819,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Punta isolata senza rifinitore — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'centrocampo 4v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 5-2-2(AML-AMR)-1',
+                "in vantaggio all'80': chiudi col 3W-1-4-1-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -21783,6 +22923,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Nessuno schermo davanti alla difesa: trequarti libera',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-5-1-1 V',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -21870,6 +23022,19 @@ COUNTER_ENGINE = [
                 'AMR': '↑',
                 'ST': '—'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; spinta degli esterni di centrocampo',
+            'zona': 'Punta isolata senza rifinitore — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'ali veloci sui loro terzini: costringili a restare bassi',
+                'centrocampo 4v5: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 3-2-2-2-1 B (Butterfly) non morde, passa al 3-1-3-2W-1',
+                "in vantaggio all'80': chiudi col 4-1-4-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -21962,6 +23127,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; 3 amc che affollano la trequarti',
+            'zona': 'Nessuna ampiezza naturale — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'nessuno schermo sul loro AMC: un MC deve abbassarsi',
+                'centrocampo 4v2: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 3W-2N-3W-2',
+                "in vantaggio all'80': chiudi col 3-1-4-2 e contropiede ON"
+            ]
         }
     },
     {
@@ -22053,6 +23231,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; ali alte che tagliano dentro',
+            'zona': 'Niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'nessuno schermo sul loro AMC: un MC deve abbassarsi',
+                'centrocampo 4v2: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 3-1-3W-1-2',
+                "in vantaggio all'80': chiudi col 5-3W-2 e contropiede ON"
+            ]
         }
     },
     {
@@ -22144,6 +23335,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '—'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area',
+            'zona': 'Manca ampiezza: vulnerabile alle ali avversarie — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'ali veloci sui loro terzini: costringili a restare bassi'
+            ],
+            'piano_b': [
+                'se il 4-5-1 V-Style non morde, passa al 3-1-3N-2W-1',
+                "in vantaggio all'80': chiudi col 3-2-2-2-1 B (Butterfly) e contropiede ON"
+            ]
         }
     },
     {
@@ -22236,6 +23440,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': 'Nessuno schermo davanti alla difesa: trequarti libera',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 5v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-1-4-1 non morde, passa al 3N-1-4-2',
+                "in vantaggio all'80': chiudi col 3W-2DMC-3N-1-1 Tower (Eiffel Tower) e contropiede ON"
+            ]
         }
     },
     {
@@ -22335,6 +23552,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; 2 amc che affollano la trequarti',
+            'zona': 'Manca ampiezza: vulnerabile alle ali avversarie — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 4v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-1-3W-1-1 non morde, passa al 3-1-4-1-1',
+                "in vantaggio all'80': chiudi col 3W-2DMC-3W-1-1 ML (Maple Leaf) e contropiede ON"
+            ]
         }
     },
     {
@@ -22428,6 +23658,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Manca ampiezza: vulnerabile alle ali avversarie — modulo equilibrato: colpisci nelle transizioni, non in posizione',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'centrocampo 4v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-1-3W-2 non morde, passa al 3-1-4-2',
+                "in vantaggio all'80': chiudi col 5-1-3W-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -22519,6 +23761,15 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento',
+            'zona': 'Poca spinta offensiva se le ali non salgono — nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'duelli': ["un DC sulla punta, l'altro a coprire lo spazio"],
+            'piano_b': [
+                'se il 4-1-3-1-1 non morde, passa al 3N-3W-3W-1',
+                "in vantaggio all'80': chiudi col 3N-5-2 V e contropiede ON"
+            ]
         }
     },
     {
@@ -22608,6 +23859,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; spinta degli esterni di centrocampo',
+            'zona': 'Poca spinta offensiva se le ali non salgono — nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'centrocampo 5v4: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-5-1 F (Flat) non morde, passa al 3N-2W-3W-2',
+                "in vantaggio all'80': chiudi col 3N-5-2 V e contropiede ON"
+            ]
         }
     },
     {
@@ -22694,6 +23957,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee',
+            'zona': 'Poca spinta offensiva se le ali non salgono — nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 4v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-1-3-2 non morde, passa al 3N-2W-2N-2W-1',
+                "in vantaggio all'80': chiudi col 3N-5-2 V e contropiede ON"
+            ]
         }
     },
     {
@@ -22780,6 +24056,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; spinta degli esterni di centrocampo',
+            'zona': 'Poca spinta offensiva se le ali non salgono — nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 4v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-1-3-2 non morde, passa al 3N-2W-2N-2W-1',
+                "in vantaggio all'80': chiudi col 3N-5-2 V e contropiede ON"
+            ]
         }
     },
     {
@@ -22869,6 +24158,18 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
+            'zona': 'Poca spinta offensiva se le ali non salgono — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'centrocampo 4v2: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 3N-2W-3N-2',
+                "in vantaggio all'80': chiudi col 3W-1-2-3W-1 e contropiede ON"
+            ]
         }
     },
     {
@@ -22962,6 +24263,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': 'Punta + trequartista tra le linee; 2 amc che affollano la trequarti',
+            'zona': 'Poca spinta offensiva se le ali non salgono — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'duelli': [
+                "un DC sulla punta, l'altro a coprire lo spazio",
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 4v2: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-2-2-1-1 non morde, passa al 3W-2-3W-2',
+                "in vantaggio all'80': chiudi col 3N-1-3W-1-2 e contropiede ON"
+            ]
         }
     },
     {
@@ -23049,6 +24363,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; 3 amc che affollano la trequarti; spinta degli esterni di centrocampo',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; nessuno schermo davanti alla difesa: trequarti libera',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'nessuno schermo sul loro AMC: un MC deve abbassarsi',
+                'centrocampo 5v2: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-5-1 F (Flat) non morde, passa al 3-5-2 F (Flat)',
+                "in vantaggio all'80': chiudi col 5-4-1 F (Flat) e contropiede ON"
+            ]
         }
     },
     {
@@ -23142,6 +24469,19 @@ COUNTER_ENGINE = [
                 'ST': '—',
                 'DL': '↑'
             }
+        },
+        'brief': {
+            'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
+                'centrocampo 3v4: non palleggiare, verticalizza subito'
+            ],
+            'piano_b': [
+                'se il 4-1-2-1-2 ND (Narrow Diamond) non morde, passa al 3W-3N-3W-1',
+                "in vantaggio all'80': chiudi col 4-4-2 C (Classic) e contropiede ON"
+            ]
         }
     },
     {
@@ -23234,6 +24574,18 @@ COUNTER_ENGINE = [
                 'AMR': '↑'
             },
             'w': "Fonte: il 4-3-3 colpisce le fasce con le ali mentre lo ST fissa l'unico DC di ruolo del 3-3-2-2"
+        },
+        'brief': {
+            'minaccia': '2 punte in area; ali alte che tagliano dentro; terzini che si sovrappongono',
+            'zona': 'Enorme spazio dietro i terzini — corsie esterne dietro i laterali che salgono; nessuno schermo davanti alla difesa: trequarti libera',
+            'duelli': [
+                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                'centrocampo 4v3: fai girare palla, il possesso è tuo'
+            ],
+            'piano_b': [
+                'se il 4-4-2 C (Classic) non morde, passa al 4-3N-2W-1',
+                "in vantaggio all'80': chiudi col 4-1-4-1 e contropiede ON"
+            ]
         }
     }
 ]

@@ -37,10 +37,18 @@ interface CounterScenario {
   w: string;
 }
 
+interface CoachBrief {
+  minaccia: string;
+  zona: string;
+  duelli: string[];
+  piano_b: string[];
+}
+
 interface CounterEngine {
   av: string;
   cat: string;
   meta?: boolean;
+  brief?: CoachBrief;
   forte: CounterScenario;
   pari: CounterScenario;
   debole: CounterScenario;
@@ -287,6 +295,49 @@ export default function CountersScreen() {
             <ScrollView style={styles.modalScroll} showsVerticalScrollIndicator={false}>
               {currentScenario && (
                 <>
+                  {/* Scheda allenatore: le 4 informazioni decisive, subito */}
+                  {selectedFormation?.brief && (
+                    <View style={styles.briefSection}>
+                      <Text style={styles.sectionLabel}>
+                        {language === 'it' ? 'SCHEDA ALLENATORE' : 'COACH BRIEF'}
+                      </Text>
+                      <View style={styles.briefCard}>
+                        <View style={styles.briefRow}>
+                          <Ionicons name="warning-outline" size={16} color={NothingTheme.colors.accent} style={styles.briefIcon} />
+                          <View style={styles.briefBody}>
+                            <Text style={styles.briefLabel}>{language === 'it' ? 'MINACCIA' : 'THREAT'}</Text>
+                            <Text style={styles.briefText}>{selectedFormation.brief.minaccia}</Text>
+                          </View>
+                        </View>
+                        <View style={styles.briefRow}>
+                          <Ionicons name="locate-outline" size={16} color="#FFFFFF" style={styles.briefIcon} />
+                          <View style={styles.briefBody}>
+                            <Text style={styles.briefLabel}>{language === 'it' ? 'DOVE COLPIRE' : 'WHERE TO STRIKE'}</Text>
+                            <Text style={styles.briefText}>{selectedFormation.brief.zona}</Text>
+                          </View>
+                        </View>
+                        <View style={styles.briefRow}>
+                          <Ionicons name="people-outline" size={16} color="#FFFFFF" style={styles.briefIcon} />
+                          <View style={styles.briefBody}>
+                            <Text style={styles.briefLabel}>{language === 'it' ? 'DUELLI CHIAVE' : 'KEY DUELS'}</Text>
+                            {selectedFormation.brief.duelli.map((d, i) => (
+                              <Text key={i} style={styles.briefText}>· {d}</Text>
+                            ))}
+                          </View>
+                        </View>
+                        <View style={[styles.briefRow, styles.briefRowLast]}>
+                          <Ionicons name="swap-horizontal-outline" size={16} color={NothingTheme.colors.textSecondary} style={styles.briefIcon} />
+                          <View style={styles.briefBody}>
+                            <Text style={styles.briefLabel}>PIANO B</Text>
+                            {selectedFormation.brief.piano_b.map((p, i) => (
+                              <Text key={i} style={styles.briefText}>· {p}</Text>
+                            ))}
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  )}
+
                   {/* Recommended Formation + alternativa selezionabile */}
                   <View style={styles.recommendedSection}>
                     <Text style={styles.sectionLabel}>
@@ -691,6 +742,44 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     letterSpacing: 2,
     marginBottom: 12,
+  },
+  briefSection: {
+    marginBottom: 24,
+  },
+  briefCard: {
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.accent,
+    overflow: 'hidden',
+  },
+  briefRow: {
+    flexDirection: 'row',
+    padding: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: NothingTheme.colors.border,
+  },
+  briefRowLast: {
+    borderBottomWidth: 0,
+  },
+  briefIcon: {
+    marginTop: 2,
+    marginRight: 10,
+  },
+  briefBody: {
+    flex: 1,
+  },
+  briefLabel: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 9,
+    fontWeight: '700',
+    letterSpacing: 1.5,
+    marginBottom: 3,
+  },
+  briefText: {
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 12.5,
+    lineHeight: 18,
   },
   recommendedSection: {
     marginBottom: 24,

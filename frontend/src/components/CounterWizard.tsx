@@ -120,6 +120,18 @@ export default function CounterWizard({ visible, onClose }: Props) {
         {step === 3 && scenario && (
           <ScrollView style={styles.flex} contentContainerStyle={styles.resultPad} showsVerticalScrollIndicator={false}>
             <Text style={styles.resultVs}>{isIt ? 'CONTRO' : 'VS'} {av.av}</Text>
+            {av.brief && (
+              <View style={styles.briefCard}>
+                <View style={styles.briefRow}>
+                  <Ionicons name="warning-outline" size={15} color={NothingTheme.colors.accent} style={styles.briefIcon} />
+                  <Text style={styles.briefText}>{av.brief.minaccia}</Text>
+                </View>
+                <View style={[styles.briefRow, styles.briefRowLast]}>
+                  <Ionicons name="locate-outline" size={15} color="#FFFFFF" style={styles.briefIcon} />
+                  <Text style={styles.briefText}>{av.brief.zona}</Text>
+                </View>
+              </View>
+            )}
             <View style={styles.formationBox}>
               <Text style={styles.formationName}>{scenario.mod}</Text>
               {scenario.alt && scenario.alt !== scenario.mod && (
@@ -184,6 +196,11 @@ const styles = StyleSheet.create({
   levelSub: { color: NothingTheme.colors.textTertiary, fontSize: 12, marginTop: 2 },
   resultPad: { padding: 24, paddingBottom: 60 },
   resultVs: { color: NothingTheme.colors.textTertiary, fontSize: 11, fontWeight: '700', letterSpacing: 2, marginBottom: 12 },
+  briefCard: { backgroundColor: NothingTheme.colors.surface, borderRadius: 8, borderWidth: 1, borderColor: NothingTheme.colors.accent, overflow: 'hidden', marginBottom: 16 },
+  briefRow: { flexDirection: 'row', alignItems: 'flex-start', padding: 12, borderBottomWidth: 1, borderBottomColor: NothingTheme.colors.border },
+  briefRowLast: { borderBottomWidth: 0 },
+  briefIcon: { marginTop: 1, marginRight: 10 },
+  briefText: { flex: 1, color: NothingTheme.colors.textPrimary, fontSize: 12.5, lineHeight: 18 },
   formationBox: { backgroundColor: NothingTheme.colors.surface, borderRadius: 8, padding: 20, alignItems: 'center', borderWidth: 1, borderColor: NothingTheme.colors.border, marginBottom: 16 },
   formationName: { color: NothingTheme.colors.textPrimary, fontSize: 26, fontWeight: '700', letterSpacing: 1 },
   altName: { color: NothingTheme.colors.textTertiary, fontSize: 12, marginTop: 6 },
