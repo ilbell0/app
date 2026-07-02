@@ -53,7 +53,8 @@ def minaccia(op):
         parts.append("spinta degli esterni di centrocampo")
     if op["fullbacks"] >= 2 and op["dif"] == 3:
         parts.append("terzini che si sovrappongono")
-    return "; ".join(parts[:3]).capitalize()
+    s = "; ".join(parts[:3])
+    return s[:1].upper() + s[1:]
 
 
 def zona(op):
@@ -69,22 +70,28 @@ def zona(op):
         zones.append("niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee")
     if op["mid"] + op["dmc"] <= 2:
         zones.append("centrocampo in inferiorità numerica")
+    # fonte: contro il bus non pressare alto (consuma condizione) — aggirare
     if op["dif"] >= 5 and op["am"] + op["st"] <= 2:
-        zones.append("nessuna uscita palla: pressa alto e recuperi in zona gol")
+        zones.append("muro centrale: aggiralo con passaggi sulle fasce e mentalità offensiva, senza pressing alto prolungato")
     if op["dif"] == 4 and op["dc"] == 2 and op["st"] == 0:
         zones.append("area piccola difendibile: nessuna punta da marcare")
     if not zones:
         zones.append("modulo equilibrato: colpisci nelle transizioni, non in posizione")
-    return "; ".join(zones[:2]).capitalize()
+    s = "; ".join(zones[:2])
+    return s[:1].upper() + s[1:]
 
 
 def duelli(op, cn):
     """I duelli individuali che decidono la partita (counter vs avversario)."""
     d = []
-    # i miei difensori vs le loro punte
+    # i miei difensori vs le loro punte (fonte: mai 2v2 secco, scala un terzino per il 3v2)
     if op["st"] >= 2:
-        d.append(f"i tuoi {cn['dc']} DC contro le loro {op['st']} punte" + (
-            ": tieni un uomo libero" if cn["dc"] > op["st"] else ": marcatura stretta, niente 1v1"))
+        if cn["dc"] > op["st"]:
+            d.append(f"i tuoi {cn['dc']} DC contro le loro {op['st']} punte: tieni un uomo libero")
+        elif cn["fullbacks"] >= 1:
+            d.append(f"{cn['dc']} DC contro {op['st']} punte: scala un terzino in linea per il 3v2, mai 2v2 secco")
+        else:
+            d.append(f"{cn['dc']} DC contro {op['st']} punte: marcatura stretta, niente 1v1")
     elif op["st"] == 1:
         d.append("un DC sulla punta, l'altro a coprire lo spazio")
     # il mio schermo vs il loro trequartista

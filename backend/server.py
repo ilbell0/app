@@ -13548,9 +13548,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
-            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
                 'centrocampo 3v5: non palleggiare, verticalizza subito'
             ],
@@ -13652,9 +13652,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo; terzini che si sovrappongono',
-            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
                 'centrocampo 3v5: non palleggiare, verticalizza subito'
             ],
@@ -13752,7 +13752,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
-            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': ["un DC sulla punta, l'altro a coprire lo spazio"],
             'piano_b': [
                 'se il 4-4-2 C (Classic) non morde, passa al 3-5-2 F (Flat)',
@@ -13849,7 +13849,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro; terzini che si sovrappongono',
-            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
@@ -13952,7 +13952,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo; terzini che si sovrappongono',
             'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'centrocampo 3v5: non palleggiare, verticalizza subito'
             ],
             'piano_b': [
@@ -14055,7 +14055,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
             'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
                 'centrocampo 3v5: non palleggiare, verticalizza subito'
             ],
@@ -14155,9 +14155,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
-            'zona': '3 DC esposti — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': '3 DC esposti — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
                 'centrocampo 2v5: non palleggiare, verticalizza subito'
             ],
@@ -14262,7 +14262,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
             'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
                 'le tue ali contro i braccetti larghi: 1v1 da vincere sempre'
             ],
@@ -14570,9 +14570,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
-            'zona': 'Può essere superata numericamente a centrocampo — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Può essere superata numericamente a centrocampo — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'centrocampo 3v4: non palleggiare, verticalizza subito'
             ],
             'piano_b': [
@@ -14769,7 +14769,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta unica di riferimento; spinta degli esterni di centrocampo',
-            'zona': 'Attaccante isolato — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Attaccante isolato — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': ["un DC sulla punta, l'altro a coprire lo spazio"],
             'piano_b': [
                 'se il 4-1-4-1 non morde, passa al 3-5-2 V (V-Style)',
@@ -14868,7 +14868,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area',
             'zona': 'Nessuna ala naturale — modulo equilibrato: colpisci nelle transizioni, non in posizione',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
                 'ali veloci sui loro terzini: costringili a restare bassi'
             ],
@@ -14969,9 +14969,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area; ali alte che tagliano dentro',
-            'zona': 'Manca ampiezza — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'zona': 'Manca ampiezza — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee; centrocampo in inferiorità numerica',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'ali veloci sui loro terzini: costringili a restare bassi',
                 'centrocampo 3v2: fai girare palla, il possesso è tuo'
             ],
@@ -15076,7 +15076,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
-            'zona': 'Attaccante solitario — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Attaccante solitario — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'centrocampo 4v3: fai girare palla, il possesso è tuo'
@@ -15279,7 +15279,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta + trequartista tra le linee; spinta degli esterni di centrocampo',
-            'zona': 'Niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
@@ -15384,7 +15384,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta + trequartista tra le linee; ali alte che tagliano dentro',
-            'zona': 'Attaccante solitario isolato — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'zona': 'Attaccante solitario isolato — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee; centrocampo in inferiorità numerica',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
@@ -15486,9 +15486,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
-            'zona': 'Difesa laterale debole — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Difesa laterale debole — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
                 'centrocampo 3v4: non palleggiare, verticalizza subito'
             ],
@@ -16117,7 +16117,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area',
             'zona': 'Esposta ai contropiedi — fasce completamente scoperte: nessun terzino né esterno',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
                 'le tue ali contro i braccetti larghi: 1v1 da vincere sempre'
             ],
@@ -16217,7 +16217,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta unica di riferimento; spinta degli esterni di centrocampo',
-            'zona': 'Attacco molto limitato — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'zona': 'Attacco molto limitato — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee; muro centrale: aggiralo con passaggi sulle fasce e mentalità offensiva, senza pressing alto prolungato',
             'duelli': ["un DC sulla punta, l'altro a coprire lo spazio"],
             'piano_b': [
                 'se il 4-4-2 C (Classic) non morde, passa al 4-3N-2W-1',
@@ -16314,9 +16314,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area',
-            'zona': 'Nessuna ampiezza — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'zona': 'Nessuna ampiezza — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee; muro centrale: aggiralo con passaggi sulle fasce e mentalità offensiva, senza pressing alto prolungato',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'centrocampo 4v3: fai girare palla, il possesso è tuo'
             ],
             'piano_b': [
@@ -16413,9 +16413,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
-            'zona': 'Poca spinta offensiva se le ali non salgono — nessuno schermo davanti alla difesa: trequarti libera; nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'zona': 'Poca spinta offensiva se le ali non salgono — nessuno schermo davanti alla difesa: trequarti libera; muro centrale: aggiralo con passaggi sulle fasce e mentalità offensiva, senza pressing alto prolungato',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'centrocampo 4v3: fai girare palla, il possesso è tuo'
             ],
             'piano_b': [
@@ -16618,7 +16618,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
-            'zona': 'Punte isolate — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Punte isolate — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'centrocampo 5v3: fai girare palla, il possesso è tuo'
@@ -16829,7 +16829,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
-            'zona': 'Vulnerabile ai contropiedi — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Vulnerabile ai contropiedi — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'ali veloci sui loro terzini: costringili a restare bassi',
@@ -16937,7 +16937,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
-            'zona': 'Attaccante solitario — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'zona': 'Attaccante solitario — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee; centrocampo in inferiorità numerica',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'centrocampo 4v2: fai girare palla, il possesso è tuo'
@@ -17043,7 +17043,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
             'zona': 'Modulo equilibrato: colpisci nelle transizioni, non in posizione',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'ali veloci sui loro terzini: costringili a restare bassi',
                 'centrocampo 3v4: non palleggiare, verticalizza subito'
             ],
@@ -17150,7 +17150,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
             'zona': '3 DC esposti — corsie esterne dietro i laterali che salgono',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
                 'centrocampo 3v5: non palleggiare, verticalizza subito'
             ],
@@ -17250,10 +17250,10 @@ COUNTER_ENGINE = [
             }
         },
         'brief': {
-            'minaccia': '2 punte in area; 3 amc che affollano la trequarti; terzini che si sovrappongono',
-            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'minaccia': '2 punte in area; 3 AMC che affollano la trequarti; terzini che si sovrappongono',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'nessuno schermo sul loro AMC: un MC deve abbassarsi',
                 'centrocampo 4v2: fai girare palla, il possesso è tuo'
             ],
@@ -17355,9 +17355,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
-            'zona': 'Fianchi esposti — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Fianchi esposti — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
                 'centrocampo 3v5: non palleggiare, verticalizza subito'
             ],
@@ -17459,9 +17459,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area; ali alte che tagliano dentro',
-            'zona': '3 DC esposti — fasce completamente scoperte: nessun terzino né esterno; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': '3 DC esposti — fasce completamente scoperte: nessun terzino né esterno; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
                 'centrocampo 2v3: non palleggiare, verticalizza subito'
             ],
@@ -17563,7 +17563,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
-            'zona': 'Solo 3 DC — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Solo 3 DC — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
@@ -17776,7 +17776,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; ali alte che tagliano dentro',
             'zona': 'Molto difensiva — centrocampo in inferiorità numerica',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'centrocampo 4v1: fai girare palla, il possesso è tuo'
             ],
             'piano_b': [
@@ -18190,7 +18190,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Nessuna punta fissa: inserimenti dei trequartisti; ali alte che tagliano dentro',
-            'zona': 'Richiede giocatori molto specifici — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; area piccola difendibile: nessuna punta da marcare',
+            'zona': 'Richiede giocatori molto specifici — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee; area piccola difendibile: nessuna punta da marcare',
             'duelli': [
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
                 'centrocampo 4v3: fai girare palla, il possesso è tuo'
@@ -18293,7 +18293,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area; ali alte che tagliano dentro',
-            'zona': 'Centrocampo assente — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'zona': 'Centrocampo assente — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee; centrocampo in inferiorità numerica',
             'duelli': [
                 'i tuoi 3 DC contro le loro 2 punte: tieni un uomo libero',
                 'centrocampo 4v2: fai girare palla, il possesso è tuo'
@@ -18503,9 +18503,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area',
-            'zona': 'Poche occasioni da gol — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'zona': 'Poche occasioni da gol — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee; muro centrale: aggiralo con passaggi sulle fasce e mentalità offensiva, senza pressing alto prolungato',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'centrocampo 4v3: fai girare palla, il possesso è tuo'
             ],
             'piano_b': [
@@ -18714,7 +18714,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta + trequartista tra le linee; ali alte che tagliano dentro',
-            'zona': 'Solo 3 DC — fasce completamente scoperte: nessun terzino né esterno; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Solo 3 DC — fasce completamente scoperte: nessun terzino né esterno; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
@@ -19031,9 +19031,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area',
-            'zona': 'Nessuna ala naturale — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Nessuna ala naturale — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
                 'ali veloci sui loro terzini: costringili a restare bassi'
             ],
@@ -19237,7 +19237,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
-            'zona': 'Vulnerabile contro ali veloci — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Vulnerabile contro ali veloci — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
@@ -19341,7 +19341,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
-            'zona': 'Solo 2 MC — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'zona': 'Solo 2 MC — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee; centrocampo in inferiorità numerica',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'ali veloci sui loro terzini: costringili a restare bassi',
@@ -19448,7 +19448,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area',
             'zona': 'Niente attacco largo — modulo equilibrato: colpisci nelle transizioni, non in posizione',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'ali veloci sui loro terzini: costringili a restare bassi',
                 'centrocampo 3v4: non palleggiare, verticalizza subito'
             ],
@@ -19554,7 +19554,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
             'zona': 'Solo 3 DC — corsie esterne dietro i laterali che salgono',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'centrocampo 3v5: non palleggiare, verticalizza subito'
             ],
             'piano_b': [
@@ -19653,7 +19653,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta + trequartista tra le linee; ali alte che tagliano dentro',
-            'zona': 'Punta solitaria — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'zona': 'Punta solitaria — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee; centrocampo in inferiorità numerica',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
@@ -19760,7 +19760,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area',
             'zona': 'Molto centrale — modulo equilibrato: colpisci nelle transizioni, non in posizione',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'nessuno schermo sul loro AMC: un MC deve abbassarsi',
                 'ali veloci sui loro terzini: costringili a restare bassi'
             ],
@@ -19868,7 +19868,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; ali alte che tagliano dentro',
             'zona': 'Centro vulnerabile — centrocampo in inferiorità numerica',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'nessuno schermo sul loro AMC: un MC deve abbassarsi',
                 'centrocampo 3v1: fai girare palla, il possesso è tuo'
             ],
@@ -20073,7 +20073,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area',
             'zona': 'Soffre il gioco laterale — modulo equilibrato: colpisci nelle transizioni, non in posizione',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'ali veloci sui loro terzini: costringili a restare bassi',
                 'centrocampo 3v4: non palleggiare, verticalizza subito'
             ],
@@ -20176,7 +20176,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
-            'zona': 'Manca di ampiezza — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Manca di ampiezza — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'centrocampo 5v3: fai girare palla, il possesso è tuo'
@@ -20377,7 +20377,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta + trequartista tra le linee; ali alte che tagliano dentro',
-            'zona': 'Richiede MC tecnici — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'zona': 'Richiede MC tecnici — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee; centrocampo in inferiorità numerica',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
@@ -20488,10 +20488,10 @@ COUNTER_ENGINE = [
             }
         },
         'brief': {
-            'minaccia': '2 punte in area; 2 amc che affollano la trequarti',
+            'minaccia': '2 punte in area; 2 AMC che affollano la trequarti',
             'zona': 'Nessuna ala naturale — centrocampo in inferiorità numerica',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
                 'ali veloci sui loro terzini: costringili a restare bassi'
             ],
@@ -20689,7 +20689,7 @@ COUNTER_ENGINE = [
             }
         },
         'brief': {
-            'minaccia': 'Punta + trequartista tra le linee; 2 amc che affollano la trequarti',
+            'minaccia': 'Punta + trequartista tra le linee; 2 AMC che affollano la trequarti',
             'zona': 'Niente gioco largo — modulo equilibrato: colpisci nelle transizioni, non in posizione',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
@@ -20796,7 +20796,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area',
             'zona': 'Nessun esterno — centrocampo in inferiorità numerica',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'nessuno schermo sul loro AMC: un MC deve abbassarsi',
                 'ali veloci sui loro terzini: costringili a restare bassi'
             ],
@@ -20897,7 +20897,7 @@ COUNTER_ENGINE = [
             }
         },
         'brief': {
-            'minaccia': 'Punta + trequartista tra le linee; 2 amc che affollano la trequarti; spinta degli esterni di centrocampo',
+            'minaccia': 'Punta + trequartista tra le linee; 2 AMC che affollano la trequarti; spinta degli esterni di centrocampo',
             'zona': 'Punta isolata — nessuno schermo davanti alla difesa: trequarti libera; centrocampo in inferiorità numerica',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
@@ -20997,7 +20997,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta + trequartista tra le linee; spinta degli esterni di centrocampo',
-            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
@@ -21098,7 +21098,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta + trequartista tra le linee; spinta degli esterni di centrocampo; terzini che si sovrappongono',
-            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
@@ -21197,7 +21197,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo; terzini che si sovrappongono',
-            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
                 'i tuoi 3 DC contro le loro 2 punte: tieni un uomo libero',
                 'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
@@ -21301,9 +21301,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area; ali alte che tagliano dentro; terzini che si sovrappongono',
-            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'nessuno schermo sul loro AMC: un MC deve abbassarsi',
                 'centrocampo 4v2: fai girare palla, il possesso è tuo'
             ],
@@ -21404,7 +21404,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
             'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'centrocampo 3v5: non palleggiare, verticalizza subito'
             ],
             'piano_b': [
@@ -21504,7 +21504,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo; terzini che si sovrappongono',
             'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'centrocampo 4v5: non palleggiare, verticalizza subito'
             ],
             'piano_b': [
@@ -21604,7 +21604,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
             'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'le tue ali contro i braccetti larghi: 1v1 da vincere sempre',
                 'centrocampo 3v5: non palleggiare, verticalizza subito'
             ],
@@ -21709,7 +21709,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo; terzini che si sovrappongono',
             'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
                 'le tue ali contro i braccetti larghi: 1v1 da vincere sempre'
             ],
@@ -21907,7 +21907,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; ali alte che tagliano dentro',
             'zona': 'Fasce difensive esposte ai contropiedi — fasce completamente scoperte: nessun terzino né esterno',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'centrocampo 4v3: fai girare palla, il possesso è tuo'
             ],
             'piano_b': [
@@ -22106,7 +22106,7 @@ COUNTER_ENGINE = [
             }
         },
         'brief': {
-            'minaccia': 'Punta + trequartista tra le linee; 2 amc che affollano la trequarti; spinta degli esterni di centrocampo',
+            'minaccia': 'Punta + trequartista tra le linee; 2 AMC che affollano la trequarti; spinta degli esterni di centrocampo',
             'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
@@ -22210,7 +22210,7 @@ COUNTER_ENGINE = [
             }
         },
         'brief': {
-            'minaccia': 'Punta + trequartista tra le linee; 2 amc che affollano la trequarti; spinta degli esterni di centrocampo',
+            'minaccia': 'Punta + trequartista tra le linee; 2 AMC che affollano la trequarti; spinta degli esterni di centrocampo',
             'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
@@ -22313,7 +22313,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo; terzini che si sovrappongono',
             'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'nessuno schermo sul loro AMC: un MC deve abbassarsi'
             ],
             'piano_b': [
@@ -22411,9 +22411,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
-            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
                 'centrocampo 3v4: non palleggiare, verticalizza subito'
             ],
@@ -22510,9 +22510,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo; terzini che si sovrappongono',
-            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
                 'centrocampo 3v4: non palleggiare, verticalizza subito'
             ],
@@ -22719,7 +22719,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; ali alte che tagliano dentro',
             'zona': 'Centrocampo in inferiorità numerica',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'ali veloci sui loro terzini: costringili a restare bassi'
             ],
             'piano_b': [
@@ -23129,8 +23129,8 @@ COUNTER_ENGINE = [
             }
         },
         'brief': {
-            'minaccia': 'Punta + trequartista tra le linee; 3 amc che affollano la trequarti',
-            'zona': 'Nessuna ampiezza naturale — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'minaccia': 'Punta + trequartista tra le linee; 3 AMC che affollano la trequarti',
+            'zona': 'Nessuna ampiezza naturale — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee; centrocampo in inferiorità numerica',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'nessuno schermo sul loro AMC: un MC deve abbassarsi',
@@ -23234,7 +23234,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta + trequartista tra le linee; ali alte che tagliano dentro',
-            'zona': 'Niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'zona': 'Niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee; centrocampo in inferiorità numerica',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'nessuno schermo sul loro AMC: un MC deve abbassarsi',
@@ -23338,9 +23338,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area',
-            'zona': 'Manca ampiezza: vulnerabile alle ali avversarie — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Manca ampiezza: vulnerabile alle ali avversarie — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
                 'ali veloci sui loro terzini: costringili a restare bassi'
             ],
@@ -23445,7 +23445,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
             'zona': 'Nessuno schermo davanti alla difesa: trequarti libera',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
                 'centrocampo 5v3: fai girare palla, il possesso è tuo'
             ],
@@ -23554,8 +23554,8 @@ COUNTER_ENGINE = [
             }
         },
         'brief': {
-            'minaccia': 'Punta + trequartista tra le linee; 2 amc che affollano la trequarti',
-            'zona': 'Manca ampiezza: vulnerabile alle ali avversarie — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'minaccia': 'Punta + trequartista tra le linee; 2 AMC che affollano la trequarti',
+            'zona': 'Manca ampiezza: vulnerabile alle ali avversarie — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
@@ -23764,7 +23764,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta unica di riferimento',
-            'zona': 'Poca spinta offensiva se le ali non salgono — nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'zona': 'Poca spinta offensiva se le ali non salgono — muro centrale: aggiralo con passaggi sulle fasce e mentalità offensiva, senza pressing alto prolungato',
             'duelli': ["un DC sulla punta, l'altro a coprire lo spazio"],
             'piano_b': [
                 'se il 4-1-3-1-1 non morde, passa al 3N-3W-3W-1',
@@ -23862,7 +23862,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta unica di riferimento; spinta degli esterni di centrocampo',
-            'zona': 'Poca spinta offensiva se le ali non salgono — nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'zona': 'Poca spinta offensiva se le ali non salgono — muro centrale: aggiralo con passaggi sulle fasce e mentalità offensiva, senza pressing alto prolungato',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'centrocampo 5v4: fai girare palla, il possesso è tuo'
@@ -23960,7 +23960,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta + trequartista tra le linee',
-            'zona': 'Poca spinta offensiva se le ali non salgono — nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'zona': 'Poca spinta offensiva se le ali non salgono — muro centrale: aggiralo con passaggi sulle fasce e mentalità offensiva, senza pressing alto prolungato',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
@@ -24059,7 +24059,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta + trequartista tra le linee; spinta degli esterni di centrocampo',
-            'zona': 'Poca spinta offensiva se le ali non salgono — nessuna uscita palla: pressa alto e recuperi in zona gol',
+            'zona': 'Poca spinta offensiva se le ali non salgono — muro centrale: aggiralo con passaggi sulle fasce e mentalità offensiva, senza pressing alto prolungato',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
@@ -24161,7 +24161,7 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': 'Punta unica di riferimento; ali alte che tagliano dentro',
-            'zona': 'Poca spinta offensiva se le ali non salgono — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'zona': 'Poca spinta offensiva se le ali non salgono — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee; centrocampo in inferiorità numerica',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'centrocampo 4v2: fai girare palla, il possesso è tuo'
@@ -24265,8 +24265,8 @@ COUNTER_ENGINE = [
             }
         },
         'brief': {
-            'minaccia': 'Punta + trequartista tra le linee; 2 amc che affollano la trequarti',
-            'zona': 'Poca spinta offensiva se le ali non salgono — niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee; centrocampo in inferiorità numerica',
+            'minaccia': 'Punta + trequartista tra le linee; 2 AMC che affollano la trequarti',
+            'zona': 'Poca spinta offensiva se le ali non salgono — niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee; centrocampo in inferiorità numerica',
             'duelli': [
                 "un DC sulla punta, l'altro a coprire lo spazio",
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
@@ -24365,10 +24365,10 @@ COUNTER_ENGINE = [
             }
         },
         'brief': {
-            'minaccia': '2 punte in area; 3 amc che affollano la trequarti; spinta degli esterni di centrocampo',
+            'minaccia': '2 punte in area; 3 AMC che affollano la trequarti; spinta degli esterni di centrocampo',
             'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; nessuno schermo davanti alla difesa: trequarti libera',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'nessuno schermo sul loro AMC: un MC deve abbassarsi',
                 'centrocampo 5v2: fai girare palla, il possesso è tuo'
             ],
@@ -24472,9 +24472,9 @@ COUNTER_ENGINE = [
         },
         'brief': {
             'minaccia': '2 punte in area; spinta degli esterni di centrocampo',
-            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente dmc di ruolo: porta fuori i loro mc e attacca tra le linee',
+            'zona': 'Fasce difensive esposte ai contropiedi — corsie esterne dietro i laterali che salgono; niente DMC di ruolo: porta fuori i loro MC e attacca tra le linee',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'il tuo DMC sul loro AMC: vincere questo duello spegne la manovra',
                 'centrocampo 3v4: non palleggiare, verticalizza subito'
             ],
@@ -24579,7 +24579,7 @@ COUNTER_ENGINE = [
             'minaccia': '2 punte in area; ali alte che tagliano dentro; terzini che si sovrappongono',
             'zona': 'Enorme spazio dietro i terzini — corsie esterne dietro i laterali che salgono; nessuno schermo davanti alla difesa: trequarti libera',
             'duelli': [
-                'i tuoi 2 DC contro le loro 2 punte: marcatura stretta, niente 1v1',
+                '2 DC contro 2 punte: scala un terzino in linea per il 3v2, mai 2v2 secco',
                 'centrocampo 4v3: fai girare palla, il possesso è tuo'
             ],
             'piano_b': [
