@@ -38,10 +38,10 @@
   {
     "id": "3-1-5-1",
     "formation": "3-1-5-1",
-    "tier": "A",
+    "tier": "S",
     "trending": true,
-    "why_it_works_en": "A 'secret' formation that overloads midfield, making the opponent's build-up impossible.",
-    "why_it_works_it": "Formazione 'segreta' che sovraccarica la mediana rendendo impossibile la manovra nemica.",
+    "why_it_works_en": "Community-rated best formation in the game (2026): 5 midfielders suffocate any build-up, the AMC finishes what the wall creates.",
+    "why_it_works_it": "Per la community è la formazione più forte del gioco (2026): 5 centrocampisti soffocano ogni manovra, l'AMC rifinisce quello che il muro crea.",
     "setup_en": "Requires high pressing, an attacking mentality and a solid DMC to screen the back three.",
     "setup_it": "Richiede pressing alto, mentalità offensiva e un DMC solido per schermare la difesa a tre.",
     "counter_en": "Countered with direct attacks down the flanks or with the 3-5-2 V.",
@@ -154,5 +154,29 @@
     "setup_it": "Mentalità Molto Offensiva, passaggi corti al centro, pressing alto, contrasti duri, tutto l'attacco con freccia rossa.",
     "counter_en": "5-3-2 with offside trap ON: park the bus and exploit the empty back when they over-commit.",
     "counter_it": "5-3-2 con fuorigioco ON: parcheggia l'autobus e sfrutta le spalle scoperte quando si sbilanciano."
+  },
+  {
+    "id": "3-1-4-1-1",
+    "formation": "3-1-4-1-1",
+    "tier": "A",
+    "trending": true,
+    "why_it_works_en": "In the top-2 of spring 2026: back three plus DMC screen, four midfielders for control, AMC and striker linking quickly in transition.",
+    "why_it_works_it": "Nella top-2 della primavera 2026: difesa a tre con schermo DMC, quattro centrocampisti per il controllo, AMC e punta che si legano rapidi in transizione.",
+    "setup_en": "Normal/attacking mentality, mixed passing, arrows up on the wide midfielders; the DMC stays back.",
+    "setup_it": "Mentalità normale/offensiva, passaggi misti, frecce rosse sugli esterni di centrocampo; il DMC resta basso.",
+    "counter_en": "Wide attacks behind the wing midfielders; a 4-1-2-1-2 ND dominates it centrally.",
+    "counter_it": "Attacchi larghi alle spalle degli esterni; il 4-1-2-1-2 ND lo domina centralmente."
+  },
+  {
+    "id": "false-nine-wingers",
+    "formation": "False Nine + Wingers",
+    "tier": "A",
+    "trending": true,
+    "why_it_works_en": "The 3-attacker setup winning in 2026 (community breakdown): the false nine drops and drags the CBs out, the wingers attack the space behind.",
+    "why_it_works_it": "Il tridente che sta vincendo nel 2026 (breakdown della community): il falso nove si abbassa e porta fuori i DC, le ali attaccano lo spazio alle spalle.",
+    "setup_en": "AMC as false nine with One-on-One or Playmaker skill, fast wingers with red arrows, short passing.",
+    "setup_it": "AMC falso nove con abilità One-on-One o Playmaker, ali veloci con frecce rosse, passaggi corti.",
+    "counter_en": "A disciplined DMC that follows the false nine kills the whole idea; 4-1-3-1-1 works well.",
+    "counter_it": "Un DMC disciplinato che segue il falso nove spegne tutta l'idea; il 4-1-3-1-1 funziona bene."
   }
 ]

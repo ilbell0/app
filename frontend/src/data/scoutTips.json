@@ -654,5 +654,13 @@
     "title_it": "Prima leggi la difesa avversaria",
     "content_en": "Look at the opponent's formation: how many defenders? 3, 4 or 5? This is the FIRST question. Against 3-back you press the flanks; against 5-back you crowd the center.",
     "content_it": "Guarda la formazione avversaria: quanti difensori? 3, 4 o 5? È la PRIMA domanda. Contro difesa a 3 pressi le fasce; contro difesa a 5 affolli il centro."
+  },
+  {
+    "id": "tip-live-match",
+    "category": "scenario",
+    "title_en": "Why you lose when you don't watch",
+    "title_it": "Perché perdi quando non guardi",
+    "content_en": "There is no hidden penalty for being absent: what you lose is the ability to react. Live you can fix a wrong counter, change mentality after a goal, make subs at 60'. If you can't attend, set the SAFEST setup against that opponent (neutral counter, balanced mentality), not the most aggressive one.",
+    "content_it": "Non esiste una penalità nascosta per l'assenza: quello che perdi è la possibilità di reagire. In diretta puoi correggere un counter sbagliato, cambiare mentalità dopo un gol, fare i cambi al 60'. Se non puoi esserci, imposta il setup più SICURO contro quell'avversario (counter neutro, mentalità bilanciata), non il più aggressivo."
   }
 ]
