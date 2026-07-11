@@ -40,8 +40,8 @@
     "recommended_drills_it": [
       "Pressa il gioco"
     ],
-    "note_en": "Train defenders with the 'Press the Play' drill to maximize white defensive attributes.",
-    "note_it": "Allena i difensori con il drill 'Pressa il gioco' per massimizzare gli attributi bianchi difensivi."
+    "note_en": "Train defenders with the 'Press the Play' drill to maximize white defensive attributes. Meta 2026 method: train 'Press the play' only — from 90% to 130–150% whites in one season.",
+    "note_it": "Allena i difensori con il drill 'Pressa il gioco' per massimizzare gli attributi bianchi difensivi. Metodo meta 2026: allena solo 'Press the play' — da 90% a 130–150% di white in una stagione."
   },
   {
     "position": "DL/DR",
@@ -163,8 +163,8 @@
       "Skill d'attacco",
       "Creatività"
     ],
-    "note_en": "An AMC with high creativity and passing is key to feeding lethal assists to the striker.",
-    "note_it": "Un AMC con alta creatività e passaggio è fondamentale per servire assist letali alla punta."
+    "note_en": "An AMC with high creativity and passing is key to feeding lethal assists to the striker. Meta 2026 target: offensive all-rounder with every white above 220%.",
+    "note_it": "Un AMC con alta creatività e passaggio è fondamentale per servire assist letali alla punta. Target meta 2026: tuttocampista offensivo con ogni white oltre il 220%."
   },
   {
     "position": "AML/AMR",
@@ -188,8 +188,8 @@
       "Contrattacco veloce",
       "Slalom"
     ],
-    "note_en": "Wingers exploit the 'Dual Position Advantage' to create overloads and cross.",
-    "note_it": "Le ali sfruttano il 'Dual Position Advantage' per creare superiorità numerica e crossare."
+    "note_en": "Wingers exploit the 'Dual Position Advantage' to create overloads and cross. Meta 2026 target: Passing and Crossing above 200% — the wings are your assist engine.",
+    "note_it": "Le ali sfruttano il 'Dual Position Advantage' per creare superiorità numerica e crossare. Target meta 2026: Passaggio e Cross oltre il 200% — le ali sono il motore degli assist."
   },
   {
     "position": "ST",
@@ -213,7 +213,7 @@
       "Finalizzazione",
       "Skill d'attacco"
     ],
-    "note_en": "A striker with very high white attributes outperforms one with more stars but high grey stats.",
-    "note_it": "Un attaccante con attributi bianchi altissimi performa meglio di uno con più stelle ma statistiche grigie elevate."
+    "note_en": "A striker with very high white attributes outperforms one with more stars but high grey stats. Meta 2026 target: Finishing 240–280% on the key striker; whites in position beat grey quality.",
+    "note_it": "Un attaccante con attributi bianchi altissimi performa meglio di uno con più stelle ma statistiche grigie elevate. Target meta 2026: Finalizzazione 240–280% sulla punta chiave; le white nella posizione battono la qualità grigia."
   }
 ]

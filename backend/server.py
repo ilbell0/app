@@ -27156,16 +27156,38 @@ GAME_GUIDE = [
         'summary_en': 'Position-specific (white) skills move performance far more than general quality: train them beyond 200% on key roles.',
         'summary_it': 'Le abilità specifiche del ruolo (white) muovono la prestazione molto più della qualità generale: allenale oltre il 200% sui ruoli chiave.',
         'bullets_en': [
-            'Strikers: Finishing and Passing above 200% on your key forwards',
-            'Defenders: from 90% to 130–150% whites in the first month of the season',
-            'Whites in the played position count; greys pad the average',
-            'Combine with the right special ability (see SKILLS section)'
+            'ST: Finishing 240–280% on your key striker (plus Shooting, Passing, Creativity)',
+            'Wingers (AML/AMR/ML/MR): assist-men — Passing and Crossing above 200%, Finishing ~200% if they score',
+            'AMC: offensive all-rounder — every white skill above 220%',
+            "DC: buy cheap and train only 'Press the play' → 90% to 130–150% whites in a season",
+            'Whites in the played position count; greys just pad the average'
         ],
         'bullets_it': [
-            'Attaccanti: Finishing e Passing oltre il 200% sulle punte chiave',
-            'Difensori: da 90% a 130–150% di white nel primo mese di stagione',
-            'Contano le white nella posizione giocata; i grigi gonfiano solo la media',
-            "Abbinale all'abilità speciale giusta (vedi sezione ABILITÀ)"
+            'ST: Finalizzazione 240–280% sulla punta chiave (più Tiro, Passaggio, Creatività)',
+            'Ali (AML/AMR/ML/MR): uomini-assist — Passaggio e Cross oltre il 200%, Finalizzazione ~200% se segnano',
+            'AMC: tuttocampista offensivo — ogni white skill oltre il 220%',
+            "DC: compra base e allena solo 'Press the play' → da 90% a 130–150% di white in una stagione",
+            'Contano le white nella posizione giocata; i grigi gonfiano solo la media'
+        ],
+        'table_en': [
+            {
+                'label': 'Role targets',
+                'value': 'ST 240–280% Fin · Wings 200%+ Pass/Cross · AMC 220%+ all · DC 130–150%'
+            },
+            {
+                'label': 'Source',
+                'value': '2026 meta analysis (NotebookLM)'
+            }
+        ],
+        'table_it': [
+            {
+                'label': 'Target per ruolo',
+                'value': 'ST 240–280% Fin · Ali 200%+ Pass/Cross · AMC 220%+ tutte · DC 130–150%'
+            },
+            {
+                'label': 'Fonte',
+                'value': 'Analisi meta 2026 (NotebookLM)'
+            }
         ]
     },
     {
@@ -27180,13 +27202,13 @@ GAME_GUIDE = [
             'Start every important match at MAX condition',
             'Plan training so players recover naturally between matches',
             'Convert excess Treatment packs (red) into Rest packs (green)',
-            'Daily training without losing condition: light drills on non-match days'
+            'Daily training without losing condition: keep intensity at MINIMUM on non-match days (recharges bonuses, spares the greens)'
         ],
         'bullets_it': [
             'Inizia ogni match importante con condizione al MASSIMO',
             'Pianifica gli allenamenti così che i giocatori recuperino naturalmente tra i match',
             'Converti i pacchetti Trattamento (rossi) in eccesso in pacchetti Riposo (verdi)',
-            'Allenamento quotidiano senza perdere condizione: drill leggeri nei giorni senza partita'
+            'Allenamento quotidiano senza perdere condizione: intensità al MINIMO nei giorni senza partita (ricarica i bonus, risparmia i verdi)'
         ]
     },
     {
@@ -28786,85 +28808,85 @@ SPECIAL_ABILITIES = [
 
 TRAINING_GUIDE = [
     {
-        "position": "GK",
-        "priority_attributes_en": ["Saving", "Reflexes", "Aerial Ability", "Positioning"],
-        "priority_attributes_it": ["Parata", "Riflessi", "Uscite", "Posizionamento"],
-        "recommended_drills_en": ["GK Training"],
-        "recommended_drills_it": ["Allenamento GK"],
-        "note_en": "You can turn 3-star keepers into 10-star superstars with specific training.",
-        "note_it": "È possibile trasformare portieri da 3 stelle in superstar da 10 stelle con allenamenti specifici."
+        'position': 'GK',
+        'priority_attributes_en': ['Saving', 'Reflexes', 'Aerial Ability', 'Positioning'],
+        'priority_attributes_it': ['Parata', 'Riflessi', 'Uscite', 'Posizionamento'],
+        'recommended_drills_en': ['GK Training'],
+        'recommended_drills_it': ['Allenamento GK'],
+        'note_en': 'You can turn 3-star keepers into 10-star superstars with specific training.',
+        'note_it': 'È possibile trasformare portieri da 3 stelle in superstar da 10 stelle con allenamenti specifici.'
     },
     {
-        "position": "DC",
-        "priority_attributes_en": ["Marking", "Tackling", "Positioning"],
-        "priority_attributes_it": ["Marcatura", "Contrasto", "Posizionamento"],
-        "recommended_drills_en": ["Press the Play"],
-        "recommended_drills_it": ["Pressa il gioco"],
-        "note_en": "Train defenders with the 'Press the Play' drill to maximize white defensive attributes.",
-        "note_it": "Allena i difensori con il drill 'Pressa il gioco' per massimizzare gli attributi bianchi difensivi."
+        'position': 'DC',
+        'priority_attributes_en': ['Marking', 'Tackling', 'Positioning'],
+        'priority_attributes_it': ['Marcatura', 'Contrasto', 'Posizionamento'],
+        'recommended_drills_en': ['Press the Play'],
+        'recommended_drills_it': ['Pressa il gioco'],
+        'note_en': "Train defenders with the 'Press the Play' drill to maximize white defensive attributes. Meta 2026 method: train 'Press the play' only — from 90% to 130–150% whites in one season.",
+        'note_it': "Allena i difensori con il drill 'Pressa il gioco' per massimizzare gli attributi bianchi difensivi. Metodo meta 2026: allena solo 'Press the play' — da 90% a 130–150% di white in una stagione."
     },
     {
-        "position": "DL/DR",
-        "priority_attributes_en": ["Pace", "Tackling", "Marking", "Crossing"],
-        "priority_attributes_it": ["Velocità", "Contrasto", "Marcatura", "Cross"],
-        "recommended_drills_en": ["Defense", "Wings"],
-        "recommended_drills_it": ["Difesa", "Ali"],
-        "note_en": "Pace is a key attribute when deciding whether to use tactical arrows on full-backs.",
-        "note_it": "La velocità è un attributo chiave per decidere l'uso delle frecce tattiche sui difensori laterali."
+        'position': 'DL/DR',
+        'priority_attributes_en': ['Pace', 'Tackling', 'Marking', 'Crossing'],
+        'priority_attributes_it': ['Velocità', 'Contrasto', 'Marcatura', 'Cross'],
+        'recommended_drills_en': ['Defense', 'Wings'],
+        'recommended_drills_it': ['Difesa', 'Ali'],
+        'note_en': 'Pace is a key attribute when deciding whether to use tactical arrows on full-backs.',
+        'note_it': "La velocità è un attributo chiave per decidere l'uso delle frecce tattiche sui difensori laterali."
     },
     {
-        "position": "DMC",
-        "priority_attributes_en": ["Tackling", "Marking", "Positioning", "Passing"],
-        "priority_attributes_it": ["Contrasto", "Marcatura", "Posizionamento", "Passaggio"],
-        "recommended_drills_en": ["Pressing", "Defense"],
-        "recommended_drills_it": ["Pressing", "Difesa"],
-        "note_en": "The DMC is vital in almost every formation to earn more clean sheets.",
-        "note_it": "Il DMC è vitale in quasi ogni modulo per ottenere un maggior numero di clean sheet."
+        'position': 'DMC',
+        'priority_attributes_en': ['Tackling', 'Marking', 'Positioning', 'Passing'],
+        'priority_attributes_it': ['Contrasto', 'Marcatura', 'Posizionamento', 'Passaggio'],
+        'recommended_drills_en': ['Pressing', 'Defense'],
+        'recommended_drills_it': ['Pressing', 'Difesa'],
+        'note_en': 'The DMC is vital in almost every formation to earn more clean sheets.',
+        'note_it': 'Il DMC è vitale in quasi ogni modulo per ottenere un maggior numero di clean sheet.'
     },
     {
-        "position": "MC",
-        "priority_attributes_en": ["Passing", "Creativity", "Dribbling", "Stamina"],
-        "priority_attributes_it": ["Passaggio", "Creatività", "Dribbling", "Resistenza"],
-        "recommended_drills_en": ["Possession"],
-        "recommended_drills_it": ["Possesso palla"],
-        "note_en": "Central midfielders must balance defense and attack to dominate the middle.",
-        "note_it": "I centrocampisti centrali devono bilanciare difesa e attacco per dominare la zona mediana."
+        'position': 'MC',
+        'priority_attributes_en': ['Passing', 'Creativity', 'Dribbling', 'Stamina'],
+        'priority_attributes_it': ['Passaggio', 'Creatività', 'Dribbling', 'Resistenza'],
+        'recommended_drills_en': ['Possession'],
+        'recommended_drills_it': ['Possesso palla'],
+        'note_en': 'Central midfielders must balance defense and attack to dominate the middle.',
+        'note_it': 'I centrocampisti centrali devono bilanciare difesa e attacco per dominare la zona mediana.'
     },
     {
-        "position": "ML/MR",
-        "priority_attributes_en": ["Crossing", "Passing", "Pace", "Dribbling"],
-        "priority_attributes_it": ["Cross", "Passaggio", "Velocità", "Dribbling"],
-        "recommended_drills_en": ["Wings", "Slalom"],
-        "recommended_drills_it": ["Ali", "Slalom"],
-        "note_en": "Having wide players with too-low quality (-70%) makes flank-based formations ineffective.",
-        "note_it": "Avere esterni con qualità troppo bassa (-70%) rende inefficaci i moduli che sfruttano le fasce."
+        'position': 'ML/MR',
+        'priority_attributes_en': ['Crossing', 'Passing', 'Pace', 'Dribbling'],
+        'priority_attributes_it': ['Cross', 'Passaggio', 'Velocità', 'Dribbling'],
+        'recommended_drills_en': ['Wings', 'Slalom'],
+        'recommended_drills_it': ['Ali', 'Slalom'],
+        'note_en': 'Having wide players with too-low quality (-70%) makes flank-based formations ineffective.',
+        'note_it': 'Avere esterni con qualità troppo bassa (-70%) rende inefficaci i moduli che sfruttano le fasce.'
     },
     {
-        "position": "AMC",
-        "priority_attributes_en": ["Passing", "Creativity", "Shooting", "Finishing"],
-        "priority_attributes_it": ["Passaggio", "Creatività", "Tiro", "Finalizzazione"],
-        "recommended_drills_en": ["Attacking Skills", "Creativity"],
-        "recommended_drills_it": ["Skill d'attacco", "Creatività"],
-        "note_en": "An AMC with high creativity and passing is key to feeding lethal assists to the striker.",
-        "note_it": "Un AMC con alta creatività e passaggio è fondamentale per servire assist letali alla punta."
+        'position': 'AMC',
+        'priority_attributes_en': ['Passing', 'Creativity', 'Shooting', 'Finishing'],
+        'priority_attributes_it': ['Passaggio', 'Creatività', 'Tiro', 'Finalizzazione'],
+        'recommended_drills_en': ['Attacking Skills', 'Creativity'],
+        'recommended_drills_it': ["Skill d'attacco", 'Creatività'],
+        'note_en': 'An AMC with high creativity and passing is key to feeding lethal assists to the striker. Meta 2026 target: offensive all-rounder with every white above 220%.',
+        'note_it': 'Un AMC con alta creatività e passaggio è fondamentale per servire assist letali alla punta. Target meta 2026: tuttocampista offensivo con ogni white oltre il 220%.'
     },
     {
-        "position": "AML/AMR",
-        "priority_attributes_en": ["Crossing", "Pace", "Finishing", "Passing"],
-        "priority_attributes_it": ["Cross", "Velocità", "Finalizzazione", "Passaggio"],
-        "recommended_drills_en": ["Fast Counter", "Slalom"],
-        "recommended_drills_it": ["Contrattacco veloce", "Slalom"],
-        "note_en": "Wingers exploit the 'Dual Position Advantage' to create overloads and cross.",
-        "note_it": "Le ali sfruttano il 'Dual Position Advantage' per creare superiorità numerica e crossare."
+        'position': 'AML/AMR',
+        'priority_attributes_en': ['Crossing', 'Pace', 'Finishing', 'Passing'],
+        'priority_attributes_it': ['Cross', 'Velocità', 'Finalizzazione', 'Passaggio'],
+        'recommended_drills_en': ['Fast Counter', 'Slalom'],
+        'recommended_drills_it': ['Contrattacco veloce', 'Slalom'],
+        'note_en': "Wingers exploit the 'Dual Position Advantage' to create overloads and cross. Meta 2026 target: Passing and Crossing above 200% — the wings are your assist engine.",
+        'note_it': "Le ali sfruttano il 'Dual Position Advantage' per creare superiorità numerica e crossare. Target meta 2026: Passaggio e Cross oltre il 200% — le ali sono il motore degli assist."
     },
     {
-        "position": "ST",
-        "priority_attributes_en": ["Finishing", "Shooting", "Pace", "Dribbling"],
-        "priority_attributes_it": ["Finalizzazione", "Tiro", "Velocità", "Dribbling"],
-        "recommended_drills_en": ["Finishing", "Attacking Skills"],
-        "recommended_drills_it": ["Finalizzazione", "Skill d'attacco"],
-        "note_en": "A striker with very high white attributes outperforms one with more stars but high grey stats.",
-        "note_it": "Un attaccante con attributi bianchi altissimi performa meglio di uno con più stelle ma statistiche grigie elevate."
+        'position': 'ST',
+        'priority_attributes_en': ['Finishing', 'Shooting', 'Pace', 'Dribbling'],
+        'priority_attributes_it': ['Finalizzazione', 'Tiro', 'Velocità', 'Dribbling'],
+        'recommended_drills_en': ['Finishing', 'Attacking Skills'],
+        'recommended_drills_it': ['Finalizzazione', "Skill d'attacco"],
+        'note_en': 'A striker with very high white attributes outperforms one with more stars but high grey stats. Meta 2026 target: Finishing 240–280% on the key striker; whites in position beat grey quality.',
+        'note_it': 'Un attaccante con attributi bianchi altissimi performa meglio di uno con più stelle ma statistiche grigie elevate. Target meta 2026: Finalizzazione 240–280% sulla punta chiave; le white nella posizione battono la qualità grigia.'
     }
 ]
 
