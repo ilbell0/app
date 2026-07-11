@@ -26976,6 +26976,263 @@ BATTLE_CARDS = [
     }
 ]
 
+
+GAME_GUIDE = [
+    {
+        'id': 'gg-checklist',
+        'order': 1,
+        'category_en': 'Pre-match checklist',
+        'category_it': 'Checklist pre-partita',
+        'icon': 'checkbox-outline',
+        'summary_en': 'The 5 checks before every competitive match. Two minutes that decide more than any formation tweak.',
+        'summary_it': 'I 5 controlli prima di ogni partita competitiva. Due minuti che decidono più di qualsiasi ritocco al modulo.',
+        'bullets_en': [
+            '1. Condition at MAX for every starter (greens if needed)',
+            '2. Preparation bonuses at max in all 4 categories',
+            '3. Morale at least Good on the key players',
+            '4. Counter checked: open the opponent in the COUNTER tab',
+            '5. Arrows set for the chosen scenario (stronger/equal/weaker)'
+        ],
+        'bullets_it': [
+            '1. Condizione al MASSIMO per ogni titolare (verdi se serve)',
+            '2. Bonus preparazione al massimo in tutte e 4 le categorie',
+            '3. Morale almeno Buono sui giocatori chiave',
+            "4. Counter controllato: apri l'avversario nel tab COUNTER",
+            '5. Frecce impostate per lo scenario scelto (forte/pari/debole)'
+        ],
+        'table_en': [
+            {
+                'label': 'When',
+                'value': 'Every league/cup/CL match, mandatory for finals'
+            },
+            {
+                'label': 'Time needed',
+                'value': '2 minutes'
+            }
+        ],
+        'table_it': [
+            {
+                'label': 'Quando',
+                'value': 'Ogni match di campionato/coppa/CL, obbligatoria per le finali'
+            },
+            {
+                'label': 'Tempo richiesto',
+                'value': '2 minuti'
+            }
+        ]
+    },
+    {
+        'id': 'gg-bonus',
+        'order': 2,
+        'category_en': 'Preparation bonuses',
+        'category_it': 'Bonus preparazione',
+        'icon': 'trending-up-outline',
+        'summary_en': 'The 4 collective bonuses (attack, defense, possession, condition) are daily fuel: recharge them every day, cap them before big matches.',
+        'summary_it': 'I 4 bonus collettivi (attacco, difesa, possesso, condizione) sono benzina quotidiana: ricaricali ogni giorno, portali al massimo prima dei match importanti.',
+        'bullets_en': [
+            'Recharge DAILY with training drills: each drill feeds a category',
+            "Target: 10% (or your association's max) in every category",
+            'Never enter a final or Kings Challenge without max bonuses',
+            'Against equal-level opponents, max bonuses ARE the difference'
+        ],
+        'bullets_it': [
+            'Ricarica OGNI GIORNO con i drill di allenamento: ogni esercizio alimenta una categoria',
+            'Obiettivo: 10% (o il massimo del tuo livello associazione) in ogni categoria',
+            'Mai entrare in una finale o Kings Challenge senza bonus al massimo',
+            'Contro avversari di pari livello, i bonus al massimo SONO la differenza'
+        ],
+        'table_en': [
+            {
+                'label': 'Categories',
+                'value': 'Attack · Defense · Possession · Condition'
+            },
+            {
+                'label': 'Duration',
+                'value': 'Daily validity: recharge every day'
+            }
+        ],
+        'table_it': [
+            {
+                'label': 'Categorie',
+                'value': 'Attacco · Difesa · Possesso · Condizione'
+            },
+            {
+                'label': 'Durata',
+                'value': 'Validità giornaliera: ricarica ogni giorno'
+            }
+        ]
+    },
+    {
+        'id': 'gg-live',
+        'order': 3,
+        'category_en': 'Live match management',
+        'category_it': 'Gestione partita live',
+        'icon': 'play-circle-outline',
+        'summary_en': 'Watching live has no hidden bonus, but it lets you react: that is where matches are won.',
+        'summary_it': 'Guardare in diretta non dà bonus nascosti, ma ti permette di reagire: è lì che si vincono le partite.',
+        'bullets_en': [
+            'High pressing only from the second half: earlier it burns condition before the decisive minutes',
+            "Subs around 60' for tired key players (condition drops → performance drops)",
+            "Losing at 70'? Switch to the offensive counter (see PLAN B in the coach brief)",
+            "Winning at 80'? Defensive module + Force Counter-attack ON",
+            "Can't watch? Set the SAFEST setup, not the most aggressive"
+        ],
+        'bullets_it': [
+            'Pressing alto solo dal secondo tempo: prima brucia condizione nei minuti che non contano',
+            "Cambi verso il 60' per i titolari stanchi (condizione giù → prestazione giù)",
+            "Sotto al 70'? Passa al counter offensivo (vedi PIANO B nella scheda allenatore)",
+            "In vantaggio all'80'? Modulo difensivo + Contropiede ON",
+            'Non puoi guardare? Imposta il setup più SICURO, non il più aggressivo'
+        ]
+    },
+    {
+        'id': 'gg-balance',
+        'order': 4,
+        'category_en': 'Team Balance',
+        'category_it': 'Bilanciamento rosa',
+        'icon': 'scale-outline',
+        'summary_en': 'Meta 2026: how quality is distributed matters more than raw power. Top managers keep the balance score between 9.2 and 10.',
+        'summary_it': 'Meta 2026: come è distribuita la qualità conta più della potenza pura. I top manager tengono il punteggio di bilanciamento tra 9.2 e 10.',
+        'bullets_en': [
+            'Target: Team Balance score 9.2–10',
+            "One 'mutant' (e.g. a 180% striker) can WORSEN results if it breaks the balance",
+            'Loan players much stronger than your starters: use them as impact subs, not starters',
+            'Upgrade the weakest starters first, not the strongest'
+        ],
+        'bullets_it': [
+            'Obiettivo: punteggio Team Balance 9.2–10',
+            "Un solo 'mutante' (es. punta al 180%) può PEGGIORARE i risultati se rompe il bilanciamento",
+            "Prestiti molto più forti dei tuoi titolari: usali come subentranti d'impatto, non dall'inizio",
+            'Potenzia prima i titolari più deboli, non i più forti'
+        ]
+    },
+    {
+        'id': 'gg-fasttrainers',
+        'order': 5,
+        'category_en': 'Fast Trainers',
+        'category_it': 'Fast Trainers',
+        'icon': 'rocket-outline',
+        'summary_en': 'Players who grow much faster in training: the free-to-play engine of a top squad.',
+        'summary_it': 'Giocatori che crescono molto più in fretta in allenamento: il motore free-to-play di una rosa da vertice.',
+        'bullets_en': [
+            'Profile: very young (18–19), low price, high stars for their age',
+            'After buying: test with one intensive session and count the skill points gained',
+            'A real FT goes from ~90% whites in week 1 to 130–150% by week 4',
+            'Focused drills on white skills, not general quality (greys)'
+        ],
+        'bullets_it': [
+            "Profilo: giovanissimo (18–19 anni), prezzo basso, stelle alte per l'età",
+            "Dopo l'acquisto: test con una sessione intensiva contando i punti abilità guadagnati",
+            'Un vero FT passa da ~90% di white skills in settimana 1 a 130–150% entro la settimana 4',
+            'Drill mirati sulle white skills, non sulla qualità generale (grigi)'
+        ],
+        'table_en': [
+            {
+                'label': 'Growth target',
+                'value': '90% → 130–150% whites in 4 weeks'
+            },
+            {
+                'label': 'Key drill (DEF)',
+                'value': 'Press the play'
+            }
+        ],
+        'table_it': [
+            {
+                'label': 'Obiettivo crescita',
+                'value': '90% → 130–150% white in 4 settimane'
+            },
+            {
+                'label': 'Drill chiave (DIF)',
+                'value': 'Press the play'
+            }
+        ]
+    },
+    {
+        'id': 'gg-whiteskills',
+        'order': 6,
+        'category_en': 'White skills > grey quality',
+        'category_it': 'White skills > qualità grigia',
+        'icon': 'star-outline',
+        'summary_en': 'Position-specific (white) skills move performance far more than general quality: train them beyond 200% on key roles.',
+        'summary_it': 'Le abilità specifiche del ruolo (white) muovono la prestazione molto più della qualità generale: allenale oltre il 200% sui ruoli chiave.',
+        'bullets_en': [
+            'Strikers: Finishing and Passing above 200% on your key forwards',
+            'Defenders: from 90% to 130–150% whites in the first month of the season',
+            'Whites in the played position count; greys pad the average',
+            'Combine with the right special ability (see SKILLS section)'
+        ],
+        'bullets_it': [
+            'Attaccanti: Finishing e Passing oltre il 200% sulle punte chiave',
+            'Difensori: da 90% a 130–150% di white nel primo mese di stagione',
+            'Contano le white nella posizione giocata; i grigi gonfiano solo la media',
+            "Abbinale all'abilità speciale giusta (vedi sezione ABILITÀ)"
+        ]
+    },
+    {
+        'id': 'gg-condition',
+        'order': 7,
+        'category_en': 'Condition management',
+        'category_it': 'Gestione condizione',
+        'icon': 'battery-charging-outline',
+        'summary_en': 'Max condition at kick-off is non-negotiable for finals. Manage greens like currency.',
+        'summary_it': "Condizione al massimo al fischio d'inizio: non negoziabile per le finali. Gestisci i verdi come una valuta.",
+        'bullets_en': [
+            'Start every important match at MAX condition',
+            'Plan training so players recover naturally between matches',
+            'Convert excess Treatment packs (red) into Rest packs (green)',
+            'Daily training without losing condition: light drills on non-match days'
+        ],
+        'bullets_it': [
+            'Inizia ogni match importante con condizione al MASSIMO',
+            'Pianifica gli allenamenti così che i giocatori recuperino naturalmente tra i match',
+            'Converti i pacchetti Trattamento (rossi) in eccesso in pacchetti Riposo (verdi)',
+            'Allenamento quotidiano senza perdere condizione: drill leggeri nei giorni senza partita'
+        ]
+    },
+    {
+        'id': 'gg-morale',
+        'order': 8,
+        'category_en': 'Dynamic morale',
+        'category_it': 'Morale dinamico',
+        'icon': 'happy-outline',
+        'summary_en': "The 2026 morale system reacts to your choices: 'Good' is the new baseline and it weighs more than the old Superb.",
+        'summary_it': "Il morale 2026 reagisce alle tue scelte: 'Buono' è la nuova base e pesa più del vecchio Superb.",
+        'bullets_en': [
+            'It rises with: playing time, goals/assists, high league position',
+            'Low morale = bad performances and nervous behaviour on the pitch',
+            'Only COMPETITIVE matches move morale: friendlies give no feedback',
+            'Rotate benchwarmers into cup matches to keep their morale up'
+        ],
+        'bullets_it': [
+            'Sale con: tempo di gioco, gol/assist, posizione alta in classifica',
+            'Morale basso = prestazioni scadenti e nervosismo in campo',
+            'Solo i match COMPETITIVI muovono il morale: le amichevoli non danno feedback',
+            'Ruota le riserve nelle coppe per tenere alto il loro morale'
+        ]
+    },
+    {
+        'id': 'gg-tokens',
+        'order': 9,
+        'category_en': 'Tokens without spending',
+        'category_it': 'Token senza spendere',
+        'icon': 'cash-outline',
+        'summary_en': 'Free-to-play managers accumulate 1000+ tokens with method: events, videos and smart auctions.',
+        'summary_it': 'I manager free-to-play accumulano 1000+ token con metodo: eventi, video e aste intelligenti.',
+        'bullets_en': [
+            'Draw Frenzy: pushing to level 60–70 gives the best token return',
+            'Use every free source daily (videos, sponsors, events)',
+            'Never burn tokens on bidding wars: set a ceiling before the auction',
+            'Save for fast trainers and key roles, not for shirts'
+        ],
+        'bullets_it': [
+            'Draw Frenzy: arrivare al livello 60–70 dà il miglior ritorno di token',
+            'Sfrutta ogni fonte gratuita quotidiana (video, sponsor, eventi)',
+            "Mai bruciare token in aste al rialzo: fissa un tetto prima dell'asta",
+            'Risparmia per fast trainer e ruoli chiave, non per le maglie'
+        ]
+    }
+]
+
 # ==================== SCOUT TIPS DATA (EXPANDED) ====================
 
 SCOUT_TIPS = [
@@ -29415,6 +29672,11 @@ async def get_career_path_for_stars(stars: int):
     raise HTTPException(status_code=404, detail="Career path not found")
 
 # ==================== MY PLAYBOOK ENDPOINTS ====================
+
+@api_router.get("/game-guide")
+async def get_game_guide():
+    return GAME_GUIDE
+
 
 @api_router.get("/my-playbook")
 async def get_my_playbook():

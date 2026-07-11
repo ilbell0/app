@@ -12,7 +12,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, REAL_TEAMS, SEASON_STORIES, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, FORMATIONS } from '@/src/data';
+import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, REAL_TEAMS, SEASON_STORIES, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, GAME_GUIDE, FORMATIONS } from '@/src/data';
 import PitchDiagram from '@/src/components/PitchDiagram';
 
 // lookup nome modulo -> posizioni, per disegnare il mini-campo nella sezione Meta
@@ -41,9 +41,10 @@ const LOCAL_DATA: Record<string, any[]> = {
   mystyle: MY_PLAYBOOK,
   setpiece: SET_PIECE,
   battles: BATTLE_CARDS,
+  guide: GAME_GUIDE,
 };
 
-type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'teams' | 'stories' | 'faq' | 'abbr' | 'paths' | 'mystyle' | 'setpiece' | 'battles';
+type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'teams' | 'stories' | 'faq' | 'abbr' | 'paths' | 'mystyle' | 'setpiece' | 'battles' | 'guide';
 
 interface SectionDef {
   id: SectionId;
@@ -66,6 +67,7 @@ const SECTIONS: SectionDef[] = [
   { id: 'mystyle', endpoint: '/api/my-playbook', label_en: 'My Style', label_it: 'Mio Stile', icon: 'compass-outline' },
   { id: 'setpiece', endpoint: '/api/set-piece', label_en: 'Set Piece', label_it: 'Piazzati', icon: 'football-outline' },
   { id: 'battles', endpoint: '/api/battle-cards', label_en: 'Battles', label_it: 'Scontri', icon: 'shuffle-outline' },
+  { id: 'guide', endpoint: '/api/game-guide', label_en: 'Club Guide', label_it: 'Gestione', icon: 'briefcase-outline' },
 ];
 
 // Macro-aree: le 15 sezioni raggruppate in 4 gruppi logici (selettore a 2 livelli)
@@ -83,7 +85,7 @@ const GROUPS: GroupDef[] = [
   { id: 'players', label_en: 'Players', label_it: 'Giocatori', icon: 'people-outline',
     sections: ['roles', 'skills', 'training'] },
   { id: 'strategy', label_en: 'Strategy', label_it: 'Strategia', icon: 'compass-outline',
-    sections: ['mystyle', 'setpiece', 'paths'] },
+    sections: ['guide', 'mystyle', 'setpiece', 'paths'] },
   { id: 'reference', label_en: 'Reference', label_it: 'Riferimento', icon: 'library-outline',
     sections: ['teams', 'stories', 'faq', 'abbr'] },
 ];
@@ -102,10 +104,10 @@ export default function AcademyScreen() {
   const [group, setGroup] = useState<string>('tactics');
   const [section, setSection] = useState<SectionId>('meta');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], meta: [], skills: [], training: [], teams: [], stories: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [],
+    roles: [], meta: [], skills: [], training: [], teams: [], stories: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [], guide: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, meta: false, skills: false, training: false, teams: false, stories: false, faq: false, abbr: false, paths: false, mystyle: false, setpiece: false, battles: false,
+    roles: false, meta: false, skills: false, training: false, teams: false, stories: false, faq: false, abbr: false, paths: false, mystyle: false, setpiece: false, battles: false, guide: false,
   });
   const [selected, setSelected] = useState<any | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
@@ -150,6 +152,7 @@ export default function AcademyScreen() {
       case 'mystyle': return `${item.order}. ${isIt ? item.category_it : item.category_en}`;
       case 'setpiece': return `${item.order}. ${isIt ? item.category_it : item.category_en}`;
       case 'battles': return isIt ? item.category_it : item.category_en;
+      case 'guide': return isIt ? item.category_it : item.category_en;
       default: return '';
     }
   };
@@ -167,6 +170,7 @@ export default function AcademyScreen() {
       case 'mystyle': return isIt ? item.summary_it : item.summary_en;
       case 'setpiece': return isIt ? item.summary_it : item.summary_en;
       case 'battles': return isIt ? item.summary_it : item.summary_en;
+      case 'guide': return isIt ? item.summary_it : item.summary_en;
       default: return '';
     }
   };
@@ -415,7 +419,7 @@ export default function AcademyScreen() {
                   <DetailBlock label={isIt ? 'COME IMITARLA IN TOP ELEVEN' : 'HOW TO COPY IT IN TOP ELEVEN'} value={isIt ? selected.how_to_copy_it : selected.how_to_copy_en} />
                 </>
               )}
-              {selected && (section === 'mystyle' || section === 'setpiece' || section === 'battles') && (
+              {selected && (section === 'mystyle' || section === 'setpiece' || section === 'battles' || section === 'guide') && (
                 <>
                   <DetailBlock label={isIt ? 'SINTESI' : 'SUMMARY'} value={isIt ? selected.summary_it : selected.summary_en} />
                   {((isIt ? selected.bullets_it : selected.bullets_en) || []).length > 0 && (

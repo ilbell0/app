@@ -32,7 +32,13 @@ DATASETS = {
     "MY_PLAYBOOK": "myPlaybook",
     "SET_PIECE": "setPiece",
     "BATTLE_CARDS": "battleCards",
+    "GAME_GUIDE": "gameGuide",
 }
+
+# dataset derivati/di servizio: restano in server.py e nei JSON (per validatore e
+# motore counter) ma NON vengono esportati in index.ts, quindi Metro non li
+# include nel bundle dell'app (nessuna schermata li usa piu').
+FRONTEND_EXCLUDE = {"COUNTER_QUICK", "MATCHUP_MATRIX", "ARROW_TACTICS"}
 
 
 def read_server_text():

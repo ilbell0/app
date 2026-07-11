@@ -8,7 +8,7 @@ dataset in server.py eseguire questo script e poi tools/validate_data.py.
 import json
 import os
 
-from datasets import DATA_DIR, DATASETS, load_datasets_from_server
+from datasets import DATA_DIR, DATASETS, FRONTEND_EXCLUDE, load_datasets_from_server
 
 
 def main():
@@ -20,11 +20,12 @@ def main():
             fh.write("\n")
         print(f"{fname}.json: {len(data[var])} voci")
 
+    bundled = {v: f for v, f in DATASETS.items() if v not in FRONTEND_EXCLUDE}
     lines = ["// AUTO-GENERATO da tools/sync_data.py — non modificare a mano", ""]
-    for _, fname in DATASETS.items():
+    for _, fname in bundled.items():
         lines.append(f"import {fname} from './{fname}.json';")
     lines.append("")
-    for var, fname in DATASETS.items():
+    for var, fname in bundled.items():
         lines.append(f"export const {var} = {fname} as any[];")
     lines.append("")
     lines.append("export { APP_META } from './appMeta';")

@@ -105,6 +105,7 @@ C:\Users\habet\progetti\app-emergent\
 | `FAQ` | 17 | `faq.json` | Categorie: app, tactics, training, economy, matchday |
 | `ABBREVIATIONS` | 13 | `abbreviations.json` | F, N, W, B, C, D, H, V, ET, ML, ND, WD, XT |
 | `CAREER_PATHS` | 5 | `careerPaths.json` | Percorsi per livello stelle rosa (3★ → 7★+) |
+| `GAME_GUIDE` | 9 | `gameGuide.json` | Sezione "Gestione": checklist pre-partita, bonus preparazione, gestione live, Team Balance, Fast Trainers, white skills, condizione, morale, token (fonti NotebookLM 03/07) |
 | `MY_PLAYBOOK` | 13 | `myPlaybook.json` | Sezione "Mio Stile": il playbook personale tiki-taka |
 | `SET_PIECE` | 5 | `setPiece.json` | Sezione "Piazzati": rigoristi, punizioni, angoli, rimesse |
 | `BATTLE_CARDS` | 10 | `battleCards.json` | Sezione "Scontri": schede scontro diretto tra moduli |
@@ -112,6 +113,11 @@ C:\Users\habet\progetti\app-emergent\
 **Totale: 670 voci tattiche strutturate.**
 
 **Gerarchia dei counter**: `COUNTER_ENGINE` è la fonte di verità; `MATCHUP_MATRIX` e `COUNTER_QUICK` sono derivate e il validatore fallisce se divergono.
+
+**Bundle frontend**: `FRONTEND_EXCLUDE` in `tools/datasets.py` elenca i dataset
+di servizio (COUNTER_QUICK, MATCHUP_MATRIX, ARROW_TACTICS) che restano in
+server.py e nei JSON per validatore/motore ma NON vengono esportati da index.ts
+(nessuna schermata li usa: Metro non li impacchetta nell'app).
 
 **Endpoint API** (32 totali): `/api/{dataset}` + `/api/{dataset}/{filter}` per ognuno.
 
