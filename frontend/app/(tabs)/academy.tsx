@@ -12,7 +12,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, REAL_TEAMS, SEASON_STORIES, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, GAME_GUIDE, FORMATIONS } from '@/src/data';
+import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, REAL_TEAMS, SEASON_STORIES, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, GAME_GUIDE, FORMATION_LAB, FORMATIONS } from '@/src/data';
 import PitchDiagram from '@/src/components/PitchDiagram';
 
 // lookup nome modulo -> posizioni, per disegnare il mini-campo nella sezione Meta
@@ -42,9 +42,10 @@ const LOCAL_DATA: Record<string, any[]> = {
   setpiece: SET_PIECE,
   battles: BATTLE_CARDS,
   guide: GAME_GUIDE,
+  lab: FORMATION_LAB,
 };
 
-type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'teams' | 'stories' | 'faq' | 'abbr' | 'paths' | 'mystyle' | 'setpiece' | 'battles' | 'guide';
+type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'teams' | 'stories' | 'faq' | 'abbr' | 'paths' | 'mystyle' | 'setpiece' | 'battles' | 'guide' | 'lab';
 
 interface SectionDef {
   id: SectionId;
@@ -68,6 +69,7 @@ const SECTIONS: SectionDef[] = [
   { id: 'setpiece', endpoint: '/api/set-piece', label_en: 'Set Piece', label_it: 'Piazzati', icon: 'football-outline' },
   { id: 'battles', endpoint: '/api/battle-cards', label_en: 'Battles', label_it: 'Scontri', icon: 'shuffle-outline' },
   { id: 'guide', endpoint: '/api/game-guide', label_en: 'Club Guide', label_it: 'Gestione', icon: 'briefcase-outline' },
+  { id: 'lab', endpoint: '/api/formation-lab', label_en: 'Formation Lab', label_it: 'Lab Moduli', icon: 'flask-outline' },
 ];
 
 // Macro-aree: le 15 sezioni raggruppate in 4 gruppi logici (selettore a 2 livelli)
@@ -81,7 +83,7 @@ interface GroupDef {
 
 const GROUPS: GroupDef[] = [
   { id: 'tactics', label_en: 'Tactics', label_it: 'Tattica', icon: 'analytics-outline',
-    sections: ['meta', 'battles'] },
+    sections: ['meta', 'battles', 'lab'] },
   { id: 'players', label_en: 'Players', label_it: 'Giocatori', icon: 'people-outline',
     sections: ['roles', 'skills', 'training'] },
   { id: 'strategy', label_en: 'Strategy', label_it: 'Strategia', icon: 'compass-outline',
@@ -104,10 +106,10 @@ export default function AcademyScreen() {
   const [group, setGroup] = useState<string>('tactics');
   const [section, setSection] = useState<SectionId>('meta');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], meta: [], skills: [], training: [], teams: [], stories: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [], guide: [],
+    roles: [], meta: [], skills: [], training: [], teams: [], stories: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [], guide: [], lab: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, meta: false, skills: false, training: false, teams: false, stories: false, faq: false, abbr: false, paths: false, mystyle: false, setpiece: false, battles: false, guide: false,
+    roles: false, meta: false, skills: false, training: false, teams: false, stories: false, faq: false, abbr: false, paths: false, mystyle: false, setpiece: false, battles: false, guide: false, lab: false,
   });
   const [selected, setSelected] = useState<any | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
@@ -153,6 +155,7 @@ export default function AcademyScreen() {
       case 'setpiece': return `${item.order}. ${isIt ? item.category_it : item.category_en}`;
       case 'battles': return isIt ? item.category_it : item.category_en;
       case 'guide': return isIt ? item.category_it : item.category_en;
+      case 'lab': return item.formation;
       default: return '';
     }
   };
@@ -171,6 +174,7 @@ export default function AcademyScreen() {
       case 'setpiece': return isIt ? item.summary_it : item.summary_en;
       case 'battles': return isIt ? item.summary_it : item.summary_en;
       case 'guide': return isIt ? item.summary_it : item.summary_en;
+      case 'lab': return isIt ? item.style_it : item.style_en;
       default: return '';
     }
   };
@@ -431,6 +435,17 @@ export default function AcademyScreen() {
                   {(isIt ? selected.source_it : selected.source_en) && (
                     <DetailBlock label={isIt ? 'FONTE' : 'SOURCE'} value={isIt ? selected.source_it : selected.source_en} />
                   )}
+                </>
+              )}
+              {selected && section === 'lab' && (
+                <>
+                  <View style={styles.pitchBlock}>
+                    <PitchDiagram positions={selected.positions} />
+                  </View>
+                  <DetailBlock label={isIt ? 'IDENTITÀ TATTICA' : 'TACTICAL IDENTITY'} value={isIt ? selected.style_it : selected.style_en} />
+                  <DetailBlock label={isIt ? 'QUANDO PROVARLA' : 'WHEN TO TRY IT'} value={isIt ? selected.use_it : selected.use_en} />
+                  <DetailBlock label={isIt ? 'RISCHIO PRINCIPALE' : 'MAIN RISK'} value={isIt ? selected.risk_it : selected.risk_en} />
+                  <DetailBlock label={isIt ? 'FONTE E STATO' : 'SOURCE AND STATUS'} value={isIt ? selected.source_it : selected.source_en} />
                 </>
               )}
             </ScrollView>

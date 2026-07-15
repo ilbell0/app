@@ -26977,6 +26977,65 @@ BATTLE_CARDS = [
 ]
 
 
+FORMATION_LAB = [
+    {
+        'id': 'lab-3232-wingbacks',
+        'formation': '3-2(DML/DMR)-3N-2',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DML', 'DMR', 'MC', 'MC', 'MC', 'ST', 'ST'],
+        'style_en': 'Three centre-backs, two wing-backs, a dense three-man midfield and two strikers. An aggressive 3-2-3-2 built to own the centre without giving up flank coverage.',
+        'style_it': 'Tre centrali, due quinti, un centrocampo denso a tre e due punte. Un 3-2-3-2 aggressivo per dominare il centro senza regalare del tutto le fasce.',
+        'use_en': 'Use only with athletic DML/DMR and three real MCs. It is a specialist answer when you want two strikers but the opponent also attacks through midfield.',
+        'use_it': "Usalo solo con DML/DMR atletici e tre MC veri. È una risposta specialistica quando vuoi due punte ma l'avversario attacca anche in mezzo al campo.",
+        'risk_en': 'The wing-backs must cover huge distances. It becomes fragile against fast AML/AMR pairs or when condition drops.',
+        'risk_it': 'I quinti devono coprire distanze enormi. Diventa fragile contro coppie AML/AMR veloci o quando cala la condizione.',
+        'source_en': 'Top Eleven Forum and a dedicated 3-2-3-2 community guide; historical community evidence, not a universal counter.',
+        'source_it': 'Forum Top Eleven e guida community dedicata al 3-2-3-2; evidenza storica della community, non un counter universale.',
+        'source_url': 'https://mohamadrezkyramdani.blogspot.com/p/blog-page_16.html'
+    },
+    {
+        'id': 'lab-3321-dmc',
+        'formation': '3N-3(DML/DMC/DMR)-1-2-1',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DML', 'DMC', 'DMR', 'MC', 'AMC', 'AMC', 'ST'],
+        'style_en': 'A three-centre-back shell with a DML-DMC-DMR screen, one MC, two AMCs and one striker. It resembles a butterfly but moves one midfielder into a second attacking midfield lane.',
+        'style_it': 'Blocco a tre centrali con schermo DML-DMC-DMR, un MC, due AMC e una punta. Ricorda la Butterfly ma sposta un centrocampista nella seconda corsia da trequartista.',
+        'use_en': 'A surprise option for teams with two creative AMCs and a strong screening DMC. Keep the fullbacks conservative unless chasing the match.',
+        'use_it': 'Opzione sorpresa per rose con due AMC creativi e un DMC forte in protezione. Tieni prudenti gli esterni finche non devi rincorrere la partita.',
+        'risk_en': 'Only one central midfielder links the lines. Losing the DMC duel exposes both centre-backs and the two AMCs.',
+        'risk_it': 'Un solo centrocampista centrale collega i reparti. Se perdi il duello del DMC, esponi sia i centrali sia i due AMC.',
+        'source_en': 'Top Eleven Forum thread describing the exact lineup and a flank-based counter proposal; community-tested, historical.',
+        'source_it': 'Discussione del Forum Top Eleven che descrive esattamente la disposizione e un counter sulle fasce; test community, storico.',
+        'source_url': 'https://forum.topeleven.com/tutorials-guides/52119-help-3n-3-dml-dmc-dmr-1-2-1-orders.html'
+    },
+    {
+        'id': 'lab-32131-wide-am',
+        'formation': '3N-2W-1MC-3WAM-1',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DML', 'DMR', 'MC', 'AML', 'AMC', 'AMR', 'ST'],
+        'style_en': 'A 3-2 base that launches a full AML-AMC-AMR line behind one striker. It creates five immediate attacking lanes without abandoning the wing-backs.',
+        'style_it': 'Base 3-2 che lancia una linea completa AML-AMC-AMR dietro una punta. Crea cinque corsie offensive immediate senza rinunciare ai quinti.',
+        'use_en': 'Use as a high-variance attacking switch when your three attacking midfielders are your best players and the opponent has no dominant DMC.',
+        'use_it': "Usalo come cambio offensivo ad alta varianza quando i tre trequartisti sono i tuoi giocatori migliori e l'avversario non ha un DMC dominante.",
+        'risk_en': 'There is a large gap between the MC and attack. It can be disconnected by a compact 4-5-1 or aggressive central marking.',
+        'risk_it': "C'è un grande vuoto tra MC e attacco. Un 4-5-1 compatto o una marcatura centrale aggressiva possono scollegarlo.",
+        'source_en': 'Top Eleven Forum archive lists this exact unusual shape as a counter question; it is a discovery candidate, not a verified meta claim.',
+        'source_it': 'L archivio del Forum Top Eleven elenca questa forma insolita in una richiesta counter; è un candidato da esplorare, non una meta verificata.',
+        'source_url': 'https://forum.topeleven.com/sitemap/f-181-p-5.html'
+    },
+    {
+        'id': 'lab-32311-wingbacks',
+        'formation': '3N-2W-3N-1-1',
+        'positions': ['GK', 'DC', 'DC', 'DC', 'DML', 'DMR', 'MC', 'MC', 'MC', 'AMC', 'ST'],
+        'style_en': 'Three centre-backs, two wing-backs, three MCs, one AMC and one striker. A patient central-overload shape with real width supplied from deep.',
+        'style_it': 'Tre centrali, due quinti, tre MC, un AMC e una punta. Struttura paziente che sovraccarica il centro e ottiene ampiezza dagli esterni bassi.',
+        'use_en': 'Useful for a possession-minded squad that has one elite AMC but lacks natural wingers. Build through the MC triangle before releasing the AMC.',
+        'use_it': 'Utile per una rosa da possesso con un AMC di livello ma senza ali naturali. Costruisci dal triangolo di MC prima di liberare l AMC.',
+        'risk_en': 'It has only one direct finisher and depends on wing-back stamina. Do not use it to chase a large deficit late in the match.',
+        'risk_it': 'Ha un solo finalizzatore diretto e dipende dalla resistenza dei quinti. Non usarlo per rimontare un grosso svantaggio nel finale.',
+        'source_en': 'Top Eleven Forum archive records this exact configuration in a counter discussion; historical community evidence.',
+        'source_it': 'L archivio del Forum Top Eleven registra questa configurazione esatta in una discussione counter; evidenza storica della community.',
+        'source_url': 'https://forum.topeleven.com/sitemap/f-181-p-5.html'
+    }
+]
+
 GAME_GUIDE = [
     {
         'id': 'gg-checklist',
@@ -29790,6 +29849,11 @@ async def get_career_path_for_stars(stars: int):
 @api_router.get("/game-guide")
 async def get_game_guide():
     return GAME_GUIDE
+
+
+@api_router.get("/formation-lab")
+async def get_formation_lab():
+    return FORMATION_LAB
 
 
 @api_router.get("/my-playbook")
