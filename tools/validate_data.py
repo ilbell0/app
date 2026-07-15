@@ -48,7 +48,8 @@ MOJIBAKE_RX = re.compile(r"Ã|â€|Â°|Å")
 # parole italiane con accento perso (regressione tipica dei generatori)
 ACCENT_RX = re.compile(
     r"\b(piu|perche|puo|cosi|mentalita|abilita|velocita|qualita|superiorita|"
-    r"staticita|profondita|difficolta|intensita|capacita|possibilita|densita)\b|"
+    r"staticita|profondita|difficolta|intensita|capacita|possibilita|densita|"
+    r"priorita|disponibilita|novita|proprieta|attivita|liberta)\b|"
     r"\b[eE]'(?=[\s,.;:!?)\]]|$)", re.IGNORECASE)
 
 

@@ -428,6 +428,9 @@ export default function AcademyScreen() {
                   {(isIt ? selected.table_it : selected.table_en) && (
                     <DetailTable label={isIt ? 'DETTAGLI' : 'DETAILS'} rows={isIt ? selected.table_it : selected.table_en} />
                   )}
+                  {(isIt ? selected.source_it : selected.source_en) && (
+                    <DetailBlock label={isIt ? 'FONTE' : 'SOURCE'} value={isIt ? selected.source_it : selected.source_en} />
+                  )}
                 </>
               )}
             </ScrollView>

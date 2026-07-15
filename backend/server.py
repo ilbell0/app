@@ -26314,7 +26314,7 @@ MY_PLAYBOOK = [
             'Gio: partita campionato, undici titolare',
             'Ven-Sab: condizione/morale, NO Allenamenti Rapidi',
             'Dom: knockout/Coppa, qui uso eventuali Rapidi',
-            'Asta priorita: 1) DMC playmaker giovane 2) MC creativa under 21 3) AML/AMR dribbler piede inverso 4) DC Ball-Playing 5) ST False Nine se libero',
+            'Asta priorità: 1) DMC playmaker giovane 2) MC creativa under 21 3) AML/AMR dribbler piede inverso 4) DC Ball-Playing 5) ST False Nine se libero',
             'Token: 80% riservati a knockout Champions. 0 token su attaccanti puri. Prima rosa sana, poi asta.'
         ],
         'bullets_en': [],
@@ -27252,6 +27252,98 @@ GAME_GUIDE = [
             "Mai bruciare token in aste al rialzo: fissa un tetto prima dell'asta",
             'Risparmia per fast trainer e ruoli chiave, non per le maglie'
         ]
+    },
+    {
+        'id': 'gg-drills-official',
+        'order': 10,
+        'category_en': 'Training drills: what changes',
+        'category_it': 'Drill: cosa migliorano',
+        'icon': 'barbell-outline',
+        'summary_en': 'Use regular drills to develop player attributes; use Teamplay drills when the priority is collective match readiness.',
+        'summary_it': 'Usa i drill normali per sviluppare gli attributi dei giocatori; usa i drill Teamplay quando la priorità è la preparazione collettiva alla partita.',
+        'bullets_en': [
+            'Regular drills improve attributes and also contribute to Teamplay Form',
+            'Regular drill families: Attack, Defence, Possession, Physical & Mental',
+            'Teamplay drills raise Teamplay Form faster but do not improve attributes',
+            'Teamplay drills are consumable and have Starter, Expert and Ultimate tiers'
+        ],
+        'bullets_it': [
+            'I drill normali migliorano gli attributi e contribuiscono anche alla Teamplay Form',
+            'Le famiglie di drill normali sono: Attacco, Difesa, Possesso, Fisico e Mentale',
+            'I drill Teamplay alzano più velocemente la Teamplay Form ma non migliorano gli attributi',
+            'I drill Teamplay sono consumabili e hanno livelli Starter, Expert e Ultimate'
+        ],
+        'source_en': 'Official Top Eleven Help Center: Regular Training Drills and Teamplay Drills',
+        'source_it': 'Fonte ufficiale: Centro assistenza Top Eleven, drill normali e Teamplay'
+    },
+    {
+        'id': 'gg-teamplay-cap-official',
+        'order': 11,
+        'category_en': 'Teamplay Form: daily target',
+        'category_it': 'Teamplay Form: obiettivo quotidiano',
+        'icon': 'people-outline',
+        'summary_en': 'Keep all four Teamplay Form areas high every day; the basic cap can be raised during the season through Advancement points.',
+        'summary_it': 'Mantieni alte ogni giorno tutte e quattro le aree della Teamplay Form; il limite base può salire durante la stagione grazie ai punti Avanzamento.',
+        'bullets_en': [
+            'The four areas are Attack, Defence, Possession and Condition',
+            'At least 4 players are required in a session to gain Teamplay Form and Sharpness',
+            'After reaching 10, further gains fill the Excel bar and earn Advancement points',
+            'Each area can reach a cap of 20 in-season; caps reset to 10 next season'
+        ],
+        'bullets_it': [
+            'Le quattro aree sono Attacco, Difesa, Possesso e Condizione',
+            'Servono almeno 4 giocatori in una sessione per ottenere Teamplay Form e forma partita',
+            'Dopo il valore 10, i progressi riempiono la barra Excel e danno punti Avanzamento',
+            'Ogni area può arrivare a un limite di 20 in stagione; nella stagione successiva torna a 10'
+        ],
+        'source_en': 'Official Top Eleven Help Center: What is Teamplay Form?',
+        'source_it': "Fonte ufficiale: Centro assistenza Top Eleven, cos'è la Teamplay Form"
+    },
+    {
+        'id': 'gg-academy-official',
+        'order': 12,
+        'category_en': 'Player Academy: plan around absences',
+        'category_it': 'Player Academy: pianifica le assenze',
+        'icon': 'school-outline',
+        'summary_en': 'The Player Academy is targeted development, but a player assigned to a coach is unavailable until the session ends.',
+        'summary_it': 'La Player Academy serve allo sviluppo mirato, ma un giocatore assegnato a un coach non è disponibile fino alla fine della sessione.',
+        'bullets_en': [
+            'Available from Training level 3',
+            'Coaches refresh every two days and have a defined session duration',
+            'An academy player cannot play matches or join team activities until returning',
+            'Academy training does not grant Playstyle points'
+        ],
+        'bullets_it': [
+            'Disponibile dal livello Allenamento 3',
+            'I coach si rinnovano ogni due giorni e ogni sessione ha una durata definita',
+            'Un giocatore in Academy non può giocare partite né partecipare alle attività di squadra',
+            "L'allenamento in Academy non assegna punti Playstyle"
+        ],
+        'source_en': 'Official Top Eleven Help Center: What is the Player Academy?',
+        'source_it': 'Fonte ufficiale: Centro assistenza Top Eleven, Player Academy'
+    },
+    {
+        'id': 'gg-injury-prevention-official',
+        'order': 13,
+        'category_en': 'Lowering injury risk',
+        'category_it': 'Ridurre il rischio infortuni',
+        'icon': 'medkit-outline',
+        'summary_en': 'Injuries cannot be removed entirely, but workload, condition and tackling choices are controllable risk factors.',
+        'summary_it': 'Gli infortuni non si possono eliminare del tutto, ma carico di lavoro, condizione e scelte nei contrasti sono fattori controllabili.',
+        'bullets_en': [
+            'Avoid excessive training and too many self-arranged friendlies',
+            'Bring starters to full condition before the match',
+            'Avoid overly aggressive tackling when protecting a fragile squad',
+            'Give recently injured players time to recover to reduce relapse risk'
+        ],
+        'bullets_it': [
+            'Evita allenamenti eccessivi e troppe amichevoli organizzate in proprio',
+            'Porta i titolari a condizione piena prima della partita',
+            'Evita contrasti troppo aggressivi quando devi proteggere una rosa fragile',
+            'Dai tempo di recuperare a chi rientra da un infortunio per ridurre il rischio di ricaduta'
+        ],
+        'source_en': 'Official Top Eleven Help Center: My players are often injured. Why?',
+        'source_it': 'Fonte ufficiale: Centro assistenza Top Eleven, perché i giocatori si infortunano'
     }
 ]
 
