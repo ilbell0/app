@@ -27406,6 +27406,162 @@ GAME_GUIDE = [
     }
 ]
 
+
+REAL_TACTICS = [
+    {
+        'id': 'rt-liverpool',
+        'team': 'Liverpool',
+        'league': 'Premier League',
+        'season': '2024/25',
+        'main_formation': '4-2-3-1',
+        'main_played': 36,
+        'matches': 38,
+        'record': '25V 9P 4S',
+        'alternates': ['4-3-3 (2)'],
+        'goals_for': 86,
+        'goals_against': 41,
+        'clean_sheets': 14,
+        'te_formation': '4-2-3-1',
+        'lesson_en': 'Champions with almost total tactical stability: the same 4-2-3-1 in 36 of 38 matches. Mastering one shape beats rotating five.',
+        'lesson_it': 'Campioni con stabilità tattica quasi totale: lo stesso 4-2-3-1 in 36 partite su 38. Padroneggiare un modulo batte ruotarne cinque.',
+        'source_en': 'API-Sports (api-football), team statistics 2024/25 — real lineups counted per match.',
+        'source_it': 'API-Sports (api-football), statistiche squadra 2024/25 — formazioni reali contate partita per partita.'
+    },
+    {
+        'id': 'rt-inter',
+        'team': 'Inter',
+        'league': 'Serie A',
+        'season': '2024/25',
+        'main_formation': '3-5-2',
+        'main_played': 31,
+        'matches': 38,
+        'record': '24V 9P 5S',
+        'alternates': ['3-1-4-2 (5)', '3-4-2-1 (2)'],
+        'goals_for': 79,
+        'goals_against': 35,
+        'clean_sheets': 16,
+        'te_formation': '3-5-2 V (V-Style)',
+        'lesson_en': 'The back-three benchmark: 16 clean sheets and 2.1 goals per game. Wing-backs make the 3-5-2 work at both ends.',
+        'lesson_it': 'Il riferimento della difesa a 3: 16 clean sheet e 2.1 gol a partita. Sono i quinti a far funzionare il 3-5-2 in entrambe le fasi.',
+        'source_en': 'API-Sports (api-football), team statistics 2024/25 — real lineups counted per match.',
+        'source_it': 'API-Sports (api-football), statistiche squadra 2024/25 — formazioni reali contate partita per partita.'
+    },
+    {
+        'id': 'rt-napoli',
+        'team': 'Napoli',
+        'league': 'Serie A',
+        'season': '2024/25',
+        'main_formation': '4-3-3',
+        'main_played': 26,
+        'matches': 38,
+        'record': '24V 10P 4S',
+        'alternates': ['3-4-2-1 (4)', '4-2-3-1 (4)', '3-5-2 (4)'],
+        'goals_for': 59,
+        'goals_against': 27,
+        'clean_sheets': 19,
+        'te_formation': '4-3-3',
+        'lesson_en': 'Champions who won by conceding least (27 goals, 19 clean sheets) with a 4-3-3, not by scoring most. Solidity wins leagues.',
+        'lesson_it': 'Campioni vinti subendo meno di tutti (27 gol, 19 clean sheet) col 4-3-3, non segnando di più. La solidità vince i campionati.',
+        'source_en': 'API-Sports (api-football), team statistics 2024/25 — real lineups counted per match.',
+        'source_it': 'API-Sports (api-football), statistiche squadra 2024/25 — formazioni reali contate partita per partita.'
+    },
+    {
+        'id': 'rt-atalanta',
+        'team': 'Atalanta',
+        'league': 'Serie A',
+        'season': '2024/25',
+        'main_formation': '3-4-2-1',
+        'main_played': 23,
+        'matches': 38,
+        'record': '22V 8P 8S',
+        'alternates': ['3-4-1-2 (14)', '3-4-3 (1)'],
+        'goals_for': 78,
+        'goals_against': 37,
+        'clean_sheets': 15,
+        'te_formation': '3-4-2-1',
+        'lesson_en': 'The aggressive back three: 78 goals with two attacking midfielders behind a lone striker. High risk, high reward.',
+        'lesson_it': "La difesa a 3 aggressiva: 78 gol con due trequartisti dietro l'unica punta. Alto rischio, alta resa.",
+        'source_en': 'API-Sports (api-football), team statistics 2024/25 — real lineups counted per match.',
+        'source_it': 'API-Sports (api-football), statistiche squadra 2024/25 — formazioni reali contate partita per partita.'
+    },
+    {
+        'id': 'rt-barcelona',
+        'team': 'Barcelona',
+        'league': 'La Liga',
+        'season': '2024/25',
+        'main_formation': '4-2-3-1',
+        'main_played': 29,
+        'matches': 38,
+        'record': '28V 4P 6S',
+        'alternates': ['4-3-3 (8)', '4-1-4-1 (1)'],
+        'goals_for': 102,
+        'goals_against': 39,
+        'clean_sheets': 13,
+        'te_formation': '4-2-3-1',
+        'lesson_en': '102 goals — 2.7 per game — with a 4-2-3-1, not the classic 4-3-3. Even the possession school moved to the double pivot.',
+        'lesson_it': '102 gol — 2.7 a partita — col 4-2-3-1, non col classico 4-3-3. Anche la scuola del possesso è passata al doppio mediano.',
+        'source_en': 'API-Sports (api-football), team statistics 2024/25 — real lineups counted per match.',
+        'source_it': 'API-Sports (api-football), statistiche squadra 2024/25 — formazioni reali contate partita per partita.'
+    },
+    {
+        'id': 'rt-arsenal',
+        'team': 'Arsenal',
+        'league': 'Premier League',
+        'season': '2024/25',
+        'main_formation': '4-3-3',
+        'main_played': 31,
+        'matches': 38,
+        'record': '20V 14P 4S',
+        'alternates': ['4-4-2 (5)', '4-2-3-1 (2)'],
+        'goals_for': 69,
+        'goals_against': 34,
+        'clean_sheets': 13,
+        'te_formation': '4-3-3',
+        'lesson_en': 'Only 4 defeats but 14 draws: a solid 4-3-3 that struggled to break down parked buses. Solidity is not enough without a plan B.',
+        'lesson_it': 'Solo 4 sconfitte ma 14 pareggi: un 4-3-3 solido che faticava a scardinare i pullman. La solidità non basta senza un piano B.',
+        'source_en': 'API-Sports (api-football), team statistics 2024/25 — real lineups counted per match.',
+        'source_it': 'API-Sports (api-football), statistiche squadra 2024/25 — formazioni reali contate partita per partita.'
+    },
+    {
+        'id': 'rt-realmadrid',
+        'team': 'Real Madrid',
+        'league': 'La Liga',
+        'season': '2024/25',
+        'main_formation': '4-2-3-1',
+        'main_played': 15,
+        'matches': 38,
+        'record': '26V 6P 6S',
+        'alternates': ['4-4-2 (11)', '4-3-3 (8)', '3-4-2-1 (1)', '4-2-2-2 (1)'],
+        'goals_for': 78,
+        'goals_against': 38,
+        'clean_sheets': 15,
+        'te_formation': '4-2-3-1',
+        'lesson_en': 'The most eclectic side: seven different shapes in one season. Works only with a squad of top individuals, not for most managers.',
+        'lesson_it': 'La squadra più eclettica: sette moduli diversi in una stagione. Funziona solo con individualità top, non per la maggior parte dei manager.',
+        'source_en': 'API-Sports (api-football), team statistics 2024/25 — real lineups counted per match.',
+        'source_it': 'API-Sports (api-football), statistiche squadra 2024/25 — formazioni reali contate partita per partita.'
+    },
+    {
+        'id': 'rt-mancity',
+        'team': 'Manchester City',
+        'league': 'Premier League',
+        'season': '2024/25',
+        'main_formation': '4-2-3-1',
+        'main_played': 19,
+        'matches': 38,
+        'record': '21V 8P 9S',
+        'alternates': ['4-1-4-1 (12)', '3-2-4-1 (3)', '4-3-3 (3)', '4-3-1-2 (1)'],
+        'goals_for': 72,
+        'goals_against': 44,
+        'clean_sheets': 13,
+        'te_formation': '4-2-3-1',
+        'lesson_en': 'The season of doubt: five shapes, 44 goals conceded and 9 defeats. Changing formation every week is a symptom, not a cure.',
+        'lesson_it': 'La stagione dei dubbi: cinque moduli, 44 gol subiti e 9 sconfitte. Cambiare modulo ogni settimana è un sintomo, non una cura.',
+        'source_en': 'API-Sports (api-football), team statistics 2024/25 — real lineups counted per match.',
+        'source_it': 'API-Sports (api-football), statistiche squadra 2024/25 — formazioni reali contate partita per partita.'
+    }
+]
+
 # ==================== SCOUT TIPS DATA (EXPANDED) ====================
 
 SCOUT_TIPS = [
@@ -29845,6 +30001,11 @@ async def get_career_path_for_stars(stars: int):
     raise HTTPException(status_code=404, detail="Career path not found")
 
 # ==================== MY PLAYBOOK ENDPOINTS ====================
+
+@api_router.get("/real-tactics")
+async def get_real_tactics():
+    return REAL_TACTICS
+
 
 @api_router.get("/game-guide")
 async def get_game_guide():

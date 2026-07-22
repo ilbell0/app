@@ -8,6 +8,7 @@ import gameGuide from './gameGuide.json';
 import metaTactics from './metaTactics.json';
 import myPlaybook from './myPlaybook.json';
 import playerRoles from './playerRoles.json';
+import realTactics from './realTactics.json';
 import realTeams from './realTeams.json';
 import scoutTips from './scoutTips.json';
 import seasonStories from './seasonStories.json';
@@ -29,19 +30,20 @@ const academyItems =
   myPlaybook.length +
   setPiece.length +
   battleCards.length +
-  gameGuide.length;
+  gameGuide.length +
+  realTactics.length;
 
 export const APP_META = {
-  datasets: 19,
+  datasets: 21,
   formations: formations.length,
   counters: counterEngine.length,
   scoutTips: scoutTips.length,
-  academySections: 13,
+  academySections: 15,
   academyItems,
   settingsBadge: 'OFFLINE · META 2026',
   footerLabel: 'DATASET OFFLINE',
   academySummary: {
-    it: 'Ruoli · Meta · Abilità · Allenam. · Squadre · Storie · FAQ · Leggenda · Percorsi · Mio Stile · Piazzati · Scontri · Gestione',
-    en: 'Roles · Meta · Skills · Training · Teams · Stories · FAQ · Legend · Paths · My Style · Set Piece · Battles · Club Guide',
+    it: 'Ruoli · Meta · Abilità · Allenam. · Calcio Reale · Squadre · Storie · FAQ · Leggenda · Percorsi · Mio Stile · Piazzati · Scontri · Gestione · Lab',
+    en: 'Roles · Meta · Skills · Training · Real Football · Teams · Stories · FAQ · Legend · Paths · My Style · Set Piece · Battles · Club Guide · Lab',
   },
 } as const;

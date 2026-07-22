@@ -12,7 +12,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, REAL_TEAMS, SEASON_STORIES, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, GAME_GUIDE, FORMATION_LAB, FORMATIONS } from '@/src/data';
+import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, REAL_TEAMS, SEASON_STORIES, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, GAME_GUIDE, FORMATION_LAB, REAL_TACTICS, FORMATIONS } from '@/src/data';
 import PitchDiagram from '@/src/components/PitchDiagram';
 
 // lookup nome modulo -> posizioni, per disegnare il mini-campo nella sezione Meta
@@ -43,9 +43,10 @@ const LOCAL_DATA: Record<string, any[]> = {
   battles: BATTLE_CARDS,
   guide: GAME_GUIDE,
   lab: FORMATION_LAB,
+  realtactics: REAL_TACTICS,
 };
 
-type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'teams' | 'stories' | 'faq' | 'abbr' | 'paths' | 'mystyle' | 'setpiece' | 'battles' | 'guide' | 'lab';
+type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'teams' | 'stories' | 'faq' | 'abbr' | 'paths' | 'mystyle' | 'setpiece' | 'battles' | 'guide' | 'lab' | 'realtactics';
 
 interface SectionDef {
   id: SectionId;
@@ -70,6 +71,7 @@ const SECTIONS: SectionDef[] = [
   { id: 'battles', endpoint: '/api/battle-cards', label_en: 'Battles', label_it: 'Scontri', icon: 'shuffle-outline' },
   { id: 'guide', endpoint: '/api/game-guide', label_en: 'Club Guide', label_it: 'Gestione', icon: 'briefcase-outline' },
   { id: 'lab', endpoint: '/api/formation-lab', label_en: 'Formation Lab', label_it: 'Lab Moduli', icon: 'flask-outline' },
+  { id: 'realtactics', endpoint: '/api/real-tactics', label_en: 'Real Football', label_it: 'Calcio Reale', icon: 'earth-outline' },
 ];
 
 // Macro-aree: le 15 sezioni raggruppate in 4 gruppi logici (selettore a 2 livelli)
@@ -89,7 +91,7 @@ const GROUPS: GroupDef[] = [
   { id: 'strategy', label_en: 'Strategy', label_it: 'Strategia', icon: 'compass-outline',
     sections: ['guide', 'mystyle', 'setpiece', 'paths'] },
   { id: 'reference', label_en: 'Reference', label_it: 'Riferimento', icon: 'library-outline',
-    sections: ['teams', 'stories', 'faq', 'abbr'] },
+    sections: ['realtactics', 'teams', 'stories', 'faq', 'abbr'] },
 ];
 
 const TIER_COLORS: Record<string, string> = {
@@ -106,10 +108,10 @@ export default function AcademyScreen() {
   const [group, setGroup] = useState<string>('tactics');
   const [section, setSection] = useState<SectionId>('meta');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], meta: [], skills: [], training: [], teams: [], stories: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [], guide: [], lab: [],
+    roles: [], meta: [], skills: [], training: [], teams: [], stories: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [], guide: [], lab: [], realtactics: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, meta: false, skills: false, training: false, teams: false, stories: false, faq: false, abbr: false, paths: false, mystyle: false, setpiece: false, battles: false, guide: false, lab: false,
+    roles: false, meta: false, skills: false, training: false, teams: false, stories: false, faq: false, abbr: false, paths: false, mystyle: false, setpiece: false, battles: false, guide: false, lab: false, realtactics: false,
   });
   const [selected, setSelected] = useState<any | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
@@ -156,6 +158,7 @@ export default function AcademyScreen() {
       case 'battles': return isIt ? item.category_it : item.category_en;
       case 'guide': return isIt ? item.category_it : item.category_en;
       case 'lab': return item.formation;
+      case 'realtactics': return `${item.team}  ·  ${item.main_formation}`;
       default: return '';
     }
   };
@@ -175,6 +178,7 @@ export default function AcademyScreen() {
       case 'battles': return isIt ? item.summary_it : item.summary_en;
       case 'guide': return isIt ? item.summary_it : item.summary_en;
       case 'lab': return isIt ? item.style_it : item.style_en;
+      case 'realtactics': return `${item.league} ${item.season} · ${item.record}`;
       default: return '';
     }
   };
@@ -435,6 +439,34 @@ export default function AcademyScreen() {
                   {(isIt ? selected.source_it : selected.source_en) && (
                     <DetailBlock label={isIt ? 'FONTE' : 'SOURCE'} value={isIt ? selected.source_it : selected.source_en} />
                   )}
+                </>
+              )}
+              {selected && section === 'realtactics' && (
+                <>
+                  {findPositions(selected.te_formation) && (
+                    <View style={styles.pitchBlock}>
+                      <PitchDiagram positions={findPositions(selected.te_formation)!} />
+                    </View>
+                  )}
+                  <DetailBlock
+                    label={isIt ? 'MODULO PIÙ USATO' : 'MOST USED FORMATION'}
+                    value={`${selected.main_formation} — ${selected.main_played}/${selected.matches} ${isIt ? 'partite' : 'matches'}`}
+                  />
+                  {(selected.alternates || []).length > 0 && (
+                    <DetailChips label={isIt ? 'ALTERNATIVE USATE' : 'ALTERNATIVES USED'} values={selected.alternates} />
+                  )}
+                  <DetailTable
+                    label={isIt ? 'STAGIONE' : 'SEASON'}
+                    rows={[
+                      { label: isIt ? 'Bilancio' : 'Record', value: selected.record },
+                      { label: isIt ? 'Gol fatti' : 'Goals for', value: String(selected.goals_for) },
+                      { label: isIt ? 'Gol subiti' : 'Goals against', value: String(selected.goals_against) },
+                      { label: isIt ? 'Porta inviolata' : 'Clean sheets', value: String(selected.clean_sheets) },
+                    ]}
+                  />
+                  <DetailBlock label={isIt ? 'COSA IMPARARNE' : 'WHAT TO LEARN'} value={isIt ? selected.lesson_it : selected.lesson_en} />
+                  <DetailBlock label={isIt ? 'MODULO EQUIVALENTE IN TOP ELEVEN' : 'TOP ELEVEN EQUIVALENT'} value={selected.te_formation} />
+                  <DetailBlock label={isIt ? 'FONTE' : 'SOURCE'} value={isIt ? selected.source_it : selected.source_en} />
                 </>
               )}
               {selected && section === 'lab' && (

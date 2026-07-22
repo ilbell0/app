@@ -17,6 +17,7 @@ import setPiece from './setPiece.json';
 import battleCards from './battleCards.json';
 import gameGuide from './gameGuide.json';
 import formationLab from './formationLab.json';
+import realTactics from './realTactics.json';
 
 export const FORMATIONS = formations as any[];
 export const COUNTER_ENGINE = counterEngine as any[];
@@ -35,5 +36,6 @@ export const SET_PIECE = setPiece as any[];
 export const BATTLE_CARDS = battleCards as any[];
 export const GAME_GUIDE = gameGuide as any[];
 export const FORMATION_LAB = formationLab as any[];
+export const REAL_TACTICS = realTactics as any[];
 
 export { APP_META } from './appMeta';

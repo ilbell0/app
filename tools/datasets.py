@@ -34,6 +34,7 @@ DATASETS = {
     "BATTLE_CARDS": "battleCards",
     "GAME_GUIDE": "gameGuide",
     "FORMATION_LAB": "formationLab",
+    "REAL_TACTICS": "realTactics",
 }
 
 # dataset derivati/di servizio: restano in server.py e nei JSON (per validatore e
