@@ -365,5 +365,222 @@
     ],
     "source_en": "Official Top Eleven Help Center: My players are often injured. Why?",
     "source_it": "Fonte ufficiale: Centro assistenza Top Eleven, perché i giocatori si infortunano"
+  },
+  {
+    "id": "gg-comeback-live",
+    "order": 14,
+    "category_en": "Comeback protocol (you are behind)",
+    "category_it": "Protocollo rimonta (sei sotto)",
+    "icon": "trending-up-outline",
+    "summary_en": "Being stronger is not enough: matches turn on formation, mentality and possession. When trailing, escalate one step at a time instead of throwing everyone forward.",
+    "summary_it": "Essere più forti non basta: le partite girano su modulo, atteggiamento e possesso. Quando sei sotto, alza di un gradino alla volta invece di buttare tutti in avanti.",
+    "bullets_en": [
+      "Behind before 60': raise mentality one notch (to Normal/Attacking), never all-out attack, which unbalances you and invites counters",
+      "Switch to the WEAKER-scenario setup of your counter (COUNTER tab): a more offensive module already prepared, not improvised",
+      "High pressing only from the second half, when you need the ball back: earlier it just burns condition",
+      "Force Counter-attack ON only when you must gamble in the final minutes (from ~75'): more chances but you lose more balls",
+      "Substitutions around 60'-70': fresh attacker for starters whose condition is dropping"
+    ],
+    "bullets_it": [
+      "Sotto prima del 60': alza la mentalità di un gradino (a Normale/Offensiva), mai attacco totale, che ti sbilancia e concede contropiedi",
+      "Passa al setup dello scenario PIÙ DEBOLE del tuo counter (tab COUNTER): modulo più offensivo già pronto, non improvvisato",
+      "Pressing alto solo dal secondo tempo, quando devi recuperare palla: prima brucia solo condizione",
+      "Contropiede ON solo se devi rischiare nel finale (dal 75' circa): più occasioni ma perdi più palloni",
+      "Cambi verso il 60'-70': attaccante fresco per i titolari con condizione in calo"
+    ],
+    "table_en": [
+      {
+        "label": "0'-60' behind",
+        "value": "Normal->Attacking one step, weaker-scenario counter"
+      },
+      {
+        "label": "60'-75'",
+        "value": "Fresh subs, high pressing"
+      },
+      {
+        "label": "75'-90'",
+        "value": "Force Counter-attack ON, calculated risk"
+      }
+    ],
+    "table_it": [
+      {
+        "label": "0'-60' sotto",
+        "value": "Normale->Offensiva di un gradino, counter scenario debole"
+      },
+      {
+        "label": "60'-75'",
+        "value": "Cambi freschi, pressing alto"
+      },
+      {
+        "label": "75'-90'",
+        "value": "Contropiede ON, rischio calcolato"
+      }
+    ],
+    "source_en": "BlueStacks Top Eleven tactics guide + Top Eleven Help Center (I lost but my team was stronger)",
+    "source_it": "Guida tattica BlueStacks Top Eleven + Centro assistenza Top Eleven (ho perso pur essendo più forte)"
+  },
+  {
+    "id": "gg-hold-lead",
+    "order": 15,
+    "category_en": "Locking down the lead",
+    "category_it": "Blindare il vantaggio",
+    "icon": "shield-checkmark-outline",
+    "summary_en": "Protecting a lead is not sitting still: shift down one gear and hit the space the chasing opponent leaves behind.",
+    "summary_it": "Difendere il vantaggio non è restare fermi: scendi di un gradino e colpisci lo spazio che lascia l'avversario che spinge.",
+    "bullets_en": [
+      "Leading from 75'-80': drop mentality one notch to Defensive, not fully passive (too passive invites a siege)",
+      "Force Counter-attack ON: with a deep line, break into the space the pushing opponent leaves",
+      "Low pressing and zonal marking: save condition and keep the lines compact",
+      "Short passing to keep the ball and run down the clock",
+      "Defensive subs: fresh midfielder/defender in for an attacker",
+      "Arrows: full-backs and wingers back (down) to shut the flanks"
+    ],
+    "bullets_it": [
+      "In vantaggio dal 75'-80': scendi di un gradino a Difensiva, non del tutto passivo (troppo passivo invita l'assedio)",
+      "Contropiede ON: con la linea bassa, riparti sullo spazio lasciato dall'avversario che spinge",
+      "Pressing basso e marcatura a zona: risparmi condizione e tieni le linee compatte",
+      "Passaggi corti per tenere il pallone e far scorrere il tempo",
+      "Cambi difensivi: centrocampista/difensore fresco al posto di un attaccante",
+      "Frecce: terzini e ali indietro per chiudere le fasce"
+    ],
+    "table_en": [
+      {
+        "label": "75'+ leading",
+        "value": "Defensive, Counter-attack ON, low pressing"
+      },
+      {
+        "label": "Subs",
+        "value": "Defender/midfielder for attacker"
+      }
+    ],
+    "table_it": [
+      {
+        "label": "75'+ in vantaggio",
+        "value": "Difensiva, Contropiede ON, pressing basso"
+      },
+      {
+        "label": "Cambi",
+        "value": "Difensore/centrocampista per attaccante"
+      }
+    ],
+    "source_en": "BlueStacks Top Eleven tactics guide (defensive mentality, counter-attack, pressing/marking)",
+    "source_it": "Guida tattica BlueStacks Top Eleven (mentalità difensiva, contropiede, pressing/marcatura)"
+  },
+  {
+    "id": "gg-possession-control",
+    "order": 16,
+    "category_en": "Regaining ball control",
+    "category_it": "Riprendere il controllo del pallone",
+    "icon": "sync-outline",
+    "summary_en": "Losing possession too often is fixable live: the forced long ball is usually the culprit. Toggle it and rebuild from the back.",
+    "summary_it": "Perdere troppo il possesso si aggiusta in corsa: quasi sempre la colpa è il lancio lungo forzato. Fai il toggle e ricostruisci dal basso.",
+    "bullets_en": [
+      "Losing too many balls? Turn Force Counter-attack OFF: forced long balls give away possession",
+      "Switch to Short passing and Normal mentality: lower the risk and rebuild play",
+      "If possession does not return, try Counter-attack ON again later: toggle by match flow",
+      "Focus passing on the opponent weak zone, not generic Mixed, when you dominate a flank",
+      "Man marking to keep players active across the pitch and contest the ball",
+      "Under high pressing? Widen play to the flanks to escape the pressure"
+    ],
+    "bullets_it": [
+      "Perdi troppi palloni? Spegni il Contropiede: i lanci lunghi forzati regalano possesso",
+      "Passa a passaggi Corti e mentalità Normale: abbassi il rischio e ricostruisci il gioco",
+      "Se il possesso non torna, riprova ad accendere il Contropiede più tardi: toggle in base al flusso",
+      "Focus passaggi sulla zona debole dell'avversario, non 'Misto' generico, quando domini una fascia",
+      "Marcatura a uomo per tenere i giocatori attivi su tutto il campo e contendere il pallone",
+      "Sotto pressing alto? Allarga il gioco sulle fasce per uscire dalla pressione"
+    ],
+    "source_en": "BlueStacks Top Eleven tactics guide + Top Eleven community forums (force counter-attack toggle when losing possession)",
+    "source_it": "Guida tattica BlueStacks Top Eleven + forum community Top Eleven (toggle contropiede quando perdi possesso)"
+  },
+  {
+    "id": "gg-read-opponent",
+    "order": 17,
+    "category_en": "Reading the opponent (pre-match)",
+    "category_it": "Leggere l'avversario (pre-partita)",
+    "icon": "eye-outline",
+    "summary_en": "The opponent is readable before kick-off: count the defenders, see where the width is, and who screens midfield. Three reads pick the counter for you.",
+    "summary_it": "L'avversario è leggibile già prima del fischio: conta i difensori, guarda dov'è l'ampiezza e chi scherma il centrocampo. Tre letture scelgono il counter al posto tuo.",
+    "bullets_en": [
+      "1. Count the defensive line (3/4/5): the first read, it decides whether to attack the flanks or be patient",
+      "2. Width: does he have wingers/attacking full-backs (flanks covered) or is he narrow (flanks free to attack)?",
+      "3. Screen: a DMC in front of the defence shuts the centre -> play wide and switch the play",
+      "4. High line or high pressing? -> space behind for through balls and pacey strikers",
+      "5. Open the opponent in the COUNTER tab: your read tells you which scenario (stronger/equal/weaker) to pick"
+    ],
+    "bullets_it": [
+      "1. Conta la linea difensiva (3/4/5): è la prima lettura, decide se attaccare le fasce o avere pazienza",
+      "2. Ampiezza: ha ali/terzini offensivi (fasce coperte) o è stretto (fasce libere da attaccare)?",
+      "3. Schermo: un DMC davanti alla difesa chiude il centro -> gioca largo e cambia gioco",
+      "4. Linea alta o pressing alto? -> spazio dietro per lanci filtranti e attaccanti rapidi",
+      "5. Apri l'avversario nel tab COUNTER: la lettura ti dice quale scenario (forte/pari/debole) scegliere"
+    ],
+    "source_en": "GamingOnPhone Top Eleven counter formations guide + BlueStacks tactics guide + app COUNTER_ENGINE (source-verified counters)",
+    "source_it": "Guida counter GamingOnPhone Top Eleven + guida tattica BlueStacks + COUNTER_ENGINE dell'app (counter verificati da fonte)"
+  },
+  {
+    "id": "gg-read-defense-lines",
+    "order": 18,
+    "category_en": "Defence 3/4/5: recognise and beat it",
+    "category_it": "Difesa a 3/4/5: riconoscerla e batterla",
+    "icon": "grid-outline",
+    "summary_en": "The opponent defensive line is the strongest reading cue: it radically changes how you attack it.",
+    "summary_it": "La linea difensiva avversaria è la chiave di lettura più forte: cambia radicalmente come attaccarla.",
+    "bullets_en": [
+      "3-defence: flanks exposed (no full-backs), the classic weak point",
+      "5-defence (park the bus): no space behind, you must open it from the sides",
+      "A high line trades compactness for depth: punish it in behind, not in front"
+    ],
+    "bullets_it": [
+      "Difesa a 3: fasce scoperte (niente terzini), il punto debole classico",
+      "Difesa a 5 (autobus): nessuno spazio dietro, va aperta dai lati",
+      "La linea alta baratta compattezza con profondità: puniscila alle spalle, non davanti"
+    ],
+    "table_en": [
+      {
+        "label": "3-defence",
+        "value": "Flanks open: attack wide with wingers/W, 3-5-2 or 4-3-3"
+      },
+      {
+        "label": "4-defence",
+        "value": "Balanced: standard counter, choose by the opponent midfield"
+      },
+      {
+        "label": "5-defence",
+        "value": "Bus: patience, width and crosses; wide modules, slow build-up"
+      },
+      {
+        "label": "High line",
+        "value": "Space behind: through balls and pacey strikers in depth"
+      },
+      {
+        "label": "DMC screen",
+        "value": "Centre shut: switch play, wide attackers, lateral game"
+      }
+    ],
+    "table_it": [
+      {
+        "label": "Difesa a 3",
+        "value": "Fasce scoperte: attacca largo con ali/W, 3-5-2 o 4-3-3"
+      },
+      {
+        "label": "Difesa a 4",
+        "value": "Bilanciata: counter standard, scegli in base al centrocampo avversario"
+      },
+      {
+        "label": "Difesa a 5",
+        "value": "Autobus: pazienza, ampiezza e cross; moduli larghi, costruzione paziente"
+      },
+      {
+        "label": "Linea alta",
+        "value": "Spazio dietro: lanci filtranti e attaccanti rapidi in profondità"
+      },
+      {
+        "label": "Schermo DMC",
+        "value": "Centro chiuso: cambia gioco, ali larghe, gioco laterale"
+      }
+    ],
+    "source_en": "GamingOnPhone Top Eleven counter formations guide + app COUNTER_ENGINE notes (attack the flanks of a back three, etc.)",
+    "source_it": "Guida counter GamingOnPhone Top Eleven + note COUNTER_ENGINE dell'app (attacca le fasce della difesa a 3, ecc.)"
   }
 ]

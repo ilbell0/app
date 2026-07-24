@@ -1,0 +1,661 @@
+[
+  {
+    "id": "pos-gk",
+    "order": 1,
+    "position": "GK",
+    "name_it": "Portiere (GK)",
+    "name_en": "Goalkeeper (GK)",
+    "summary_it": "Chi schierare in questa posizione: ruoli in ordine, il primo è la scelta di default. Le formazioni ideali ti dicono con quale counter abbinarlo.",
+    "summary_en": "Who to field here: roles in order, the first is the default pick. The best formations tell you which counter to pair it with.",
+    "roles": [
+      {
+        "name_it": "Portiere Libero",
+        "name_en": "Sweeper Keeper",
+        "key_attributes_it": [
+          "Riflessi",
+          "Uscite",
+          "Posizionamento"
+        ],
+        "key_attributes_en": [
+          "Reflexes",
+          "Aerial Ability",
+          "Positioning"
+        ],
+        "best_formations": [
+          "4-5-1",
+          "4-3-3"
+        ],
+        "training_focus_it": "Parata, Riflessi, Uscite",
+        "training_focus_en": "Saving, Reflexes, Aerial Ability"
+      }
+    ]
+  },
+  {
+    "id": "pos-dc",
+    "order": 2,
+    "position": "DC",
+    "name_it": "Difensore centrale (DC)",
+    "name_en": "Centre-back (DC)",
+    "summary_it": "Chi schierare in questa posizione: ruoli in ordine, il primo è la scelta di default. Le formazioni ideali ti dicono con quale counter abbinarlo.",
+    "summary_en": "Who to field here: roles in order, the first is the default pick. The best formations tell you which counter to pair it with.",
+    "roles": [
+      {
+        "name_it": "Difensore Regista",
+        "name_en": "Ball-Playing Defender",
+        "key_attributes_it": [
+          "Passaggio",
+          "Marcatura",
+          "Creatività"
+        ],
+        "key_attributes_en": [
+          "Passing",
+          "Marking",
+          "Creativity"
+        ],
+        "best_formations": [
+          "3-5-2",
+          "4-3-3"
+        ],
+        "training_focus_it": "Passaggio, Marcatura, Posizionamento",
+        "training_focus_en": "Passing, Marking, Positioning"
+      },
+      {
+        "name_it": "Difensore Puro",
+        "name_en": "No-Nonsense Centre-Back",
+        "key_attributes_it": [
+          "Contrasto",
+          "Marcatura",
+          "Forza"
+        ],
+        "key_attributes_en": [
+          "Tackling",
+          "Marking",
+          "Strength"
+        ],
+        "best_formations": [
+          "4-4-2",
+          "5-4-1"
+        ],
+        "training_focus_it": "Forza, Marcatura, Contrasto",
+        "training_focus_en": "Strength, Marking, Tackling"
+      },
+      {
+        "name_it": "Libero",
+        "name_en": "Libero",
+        "key_attributes_it": [
+          "Passaggio",
+          "Posizionamento",
+          "Contrasto"
+        ],
+        "key_attributes_en": [
+          "Passing",
+          "Positioning",
+          "Tackling"
+        ],
+        "best_formations": [
+          "3-5-2",
+          "3-4-3"
+        ],
+        "training_focus_it": "Passaggio, Posizionamento, Marcatura",
+        "training_focus_en": "Passing, Positioning, Marking"
+      }
+    ]
+  },
+  {
+    "id": "pos-dl-dr",
+    "order": 3,
+    "position": "DL/DR",
+    "name_it": "Terzino (DL/DR)",
+    "name_en": "Full-back (DL/DR)",
+    "summary_it": "Chi schierare in questa posizione: ruoli in ordine, il primo è la scelta di default. Le formazioni ideali ti dicono con quale counter abbinarlo.",
+    "summary_en": "Who to field here: roles in order, the first is the default pick. The best formations tell you which counter to pair it with.",
+    "roles": [
+      {
+        "name_it": "Terzino",
+        "name_en": "Full-Back",
+        "key_attributes_it": [
+          "Contrasto",
+          "Marcatura",
+          "Velocità"
+        ],
+        "key_attributes_en": [
+          "Tackling",
+          "Marking",
+          "Pace"
+        ],
+        "best_formations": [
+          "4-1-2-1-2 ND",
+          "4-4-2"
+        ],
+        "training_focus_it": "Contrasto, Marcatura, Posizionamento",
+        "training_focus_en": "Tackling, Marking, Positioning"
+      },
+      {
+        "name_it": "Terzino Fluidificante",
+        "name_en": "Wing-Back",
+        "key_attributes_it": [
+          "Cross",
+          "Velocità",
+          "Contrasto"
+        ],
+        "key_attributes_en": [
+          "Crossing",
+          "Pace",
+          "Tackling"
+        ],
+        "best_formations": [
+          "3-5-2",
+          "4-5-1 V-Style"
+        ],
+        "training_focus_it": "Cross, Velocità, Contrasto",
+        "training_focus_en": "Crossing, Pace, Tackling"
+      },
+      {
+        "name_it": "Terzino Invertito",
+        "name_en": "Inverted Wing-Back",
+        "key_attributes_it": [
+          "Passaggio",
+          "Contrasto",
+          "Posizionamento"
+        ],
+        "key_attributes_en": [
+          "Passing",
+          "Tackling",
+          "Positioning"
+        ],
+        "best_formations": [
+          "4-3-3",
+          "4-1-4-1"
+        ],
+        "training_focus_it": "Passaggio, Contrasto, Dribbling",
+        "training_focus_en": "Passing, Tackling, Dribbling"
+      }
+    ]
+  },
+  {
+    "id": "pos-dmc",
+    "order": 4,
+    "position": "DMC",
+    "name_it": "Centrocampista difensivo (DMC)",
+    "name_en": "Defensive midfielder (DMC)",
+    "summary_it": "Chi schierare in questa posizione: ruoli in ordine, il primo è la scelta di default. Le formazioni ideali ti dicono con quale counter abbinarlo.",
+    "summary_en": "Who to field here: roles in order, the first is the default pick. The best formations tell you which counter to pair it with.",
+    "roles": [
+      {
+        "name_it": "Incontrista Arretrato",
+        "name_en": "Anchor Man",
+        "key_attributes_it": [
+          "Contrasto",
+          "Posizionamento",
+          "Forza"
+        ],
+        "key_attributes_en": [
+          "Tackling",
+          "Positioning",
+          "Strength"
+        ],
+        "best_formations": [
+          "4-1-4-1",
+          "4-5-1 V-Style"
+        ],
+        "training_focus_it": "Contrasto, Marcatura, Posizionamento",
+        "training_focus_en": "Tackling, Marking, Positioning"
+      },
+      {
+        "name_it": "Regista Arretrato",
+        "name_en": "Deep-Lying Playmaker",
+        "key_attributes_it": [
+          "Passaggio",
+          "Creatività",
+          "Contrasto"
+        ],
+        "key_attributes_en": [
+          "Passing",
+          "Creativity",
+          "Tackling"
+        ],
+        "best_formations": [
+          "4-3-3",
+          "4-1-2-1-2 ND"
+        ],
+        "training_focus_it": "Passaggio, Creatività, Contrasto",
+        "training_focus_en": "Passing, Creativity, Tackling"
+      },
+      {
+        "name_it": "Regista",
+        "name_en": "Regista",
+        "key_attributes_it": [
+          "Passaggio",
+          "Creativita",
+          "Visione"
+        ],
+        "key_attributes_en": [
+          "Passing",
+          "Creativity",
+          "Vision"
+        ],
+        "best_formations": [
+          "4-3-3",
+          "4-1-2-1-2 ND"
+        ],
+        "training_focus_it": "Passaggio, Creativita, Lanci lunghi",
+        "training_focus_en": "Passing, Creativity, Long-range Passing"
+      },
+      {
+        "name_it": "Mediano Arretrato",
+        "name_en": "Half-Back",
+        "key_attributes_it": [
+          "Contrasto",
+          "Posizionamento",
+          "Passaggio"
+        ],
+        "key_attributes_en": [
+          "Tackling",
+          "Positioning",
+          "Passing"
+        ],
+        "best_formations": [
+          "3-4-3",
+          "3-5-2"
+        ],
+        "training_focus_it": "Contrasto, Marcatura, Posizionamento",
+        "training_focus_en": "Tackling, Marking, Positioning"
+      }
+    ]
+  },
+  {
+    "id": "pos-mc",
+    "order": 5,
+    "position": "MC",
+    "name_it": "Centrocampista centrale (MC)",
+    "name_en": "Central midfielder (MC)",
+    "summary_it": "Chi schierare in questa posizione: ruoli in ordine, il primo è la scelta di default. Le formazioni ideali ti dicono con quale counter abbinarlo.",
+    "summary_en": "Who to field here: roles in order, the first is the default pick. The best formations tell you which counter to pair it with.",
+    "roles": [
+      {
+        "name_it": "Centrocampista Totale",
+        "name_en": "Box-to-Box Midfielder",
+        "key_attributes_it": [
+          "Resistenza",
+          "Passaggio",
+          "Contrasto"
+        ],
+        "key_attributes_en": [
+          "Stamina",
+          "Passing",
+          "Tackling"
+        ],
+        "best_formations": [
+          "4-4-2",
+          "4-5-1 Flat"
+        ],
+        "training_focus_it": "Passaggio, Forza, Resistenza",
+        "training_focus_en": "Passing, Strength, Stamina"
+      },
+      {
+        "name_it": "Mezzala",
+        "name_en": "Mezzala",
+        "key_attributes_it": [
+          "Tiro",
+          "Velocità",
+          "Dribbling"
+        ],
+        "key_attributes_en": [
+          "Shooting",
+          "Pace",
+          "Dribbling"
+        ],
+        "best_formations": [
+          "4-3-3",
+          "4-1-3-1-1"
+        ],
+        "training_focus_it": "Tiro, Velocità, Finalizzazione",
+        "training_focus_en": "Shooting, Pace, Finishing"
+      },
+      {
+        "name_it": "Carrilero",
+        "name_en": "Carrilero",
+        "key_attributes_it": [
+          "Resistenza",
+          "Contrasto",
+          "Posizionamento"
+        ],
+        "key_attributes_en": [
+          "Stamina",
+          "Tackling",
+          "Positioning"
+        ],
+        "best_formations": [
+          "4-4-2",
+          "4-3-3"
+        ],
+        "training_focus_it": "Resistenza, Contrasto, Passaggio",
+        "training_focus_en": "Stamina, Tackling, Passing"
+      },
+      {
+        "name_it": "Centrocampista da Pressing",
+        "name_en": "Ball-Winning Midfielder",
+        "key_attributes_it": [
+          "Contrasto",
+          "Resistenza",
+          "Aggressivita"
+        ],
+        "key_attributes_en": [
+          "Tackling",
+          "Stamina",
+          "Aggression"
+        ],
+        "best_formations": [
+          "4-3-3",
+          "3-4-3"
+        ],
+        "training_focus_it": "Contrasto, Resistenza, Forza",
+        "training_focus_en": "Tackling, Stamina, Strength"
+      }
+    ]
+  },
+  {
+    "id": "pos-ml-mr",
+    "order": 6,
+    "position": "ML/MR",
+    "name_it": "Esterno di centrocampo (ML/MR)",
+    "name_en": "Wide midfielder (ML/MR)",
+    "summary_it": "Chi schierare in questa posizione: ruoli in ordine, il primo è la scelta di default. Le formazioni ideali ti dicono con quale counter abbinarlo.",
+    "summary_en": "Who to field here: roles in order, the first is the default pick. The best formations tell you which counter to pair it with.",
+    "roles": [
+      {
+        "name_it": "Esterno di Centrocampo",
+        "name_en": "Wide Midfielder",
+        "key_attributes_it": [
+          "Cross",
+          "Passaggio",
+          "Resistenza"
+        ],
+        "key_attributes_en": [
+          "Crossing",
+          "Passing",
+          "Stamina"
+        ],
+        "best_formations": [
+          "4-4-2",
+          "4-5-1 Flat"
+        ],
+        "training_focus_it": "Cross, Passaggio, Marcatura",
+        "training_focus_en": "Crossing, Passing, Marking"
+      }
+    ]
+  },
+  {
+    "id": "pos-amc",
+    "order": 7,
+    "position": "AMC",
+    "name_it": "Trequartista (AMC)",
+    "name_en": "Attacking midfielder (AMC)",
+    "summary_it": "Chi schierare in questa posizione: ruoli in ordine, il primo è la scelta di default. Le formazioni ideali ti dicono con quale counter abbinarlo.",
+    "summary_en": "Who to field here: roles in order, the first is the default pick. The best formations tell you which counter to pair it with.",
+    "roles": [
+      {
+        "name_it": "Regista Avanzato",
+        "name_en": "Advanced Playmaker",
+        "key_attributes_it": [
+          "Creatività",
+          "Passaggio",
+          "Tiro"
+        ],
+        "key_attributes_en": [
+          "Creativity",
+          "Passing",
+          "Shooting"
+        ],
+        "best_formations": [
+          "4-2-3-1",
+          "3-4-1-2"
+        ],
+        "training_focus_it": "Passaggio, Creatività, Tiro",
+        "training_focus_en": "Passing, Creativity, Shooting"
+      },
+      {
+        "name_it": "Trequartista",
+        "name_en": "Trequartista",
+        "key_attributes_it": [
+          "Creativita",
+          "Passaggio",
+          "Visione"
+        ],
+        "key_attributes_en": [
+          "Creativity",
+          "Passing",
+          "Vision"
+        ],
+        "best_formations": [
+          "4-3-1-2",
+          "3-4-1-2"
+        ],
+        "training_focus_it": "Creativita, Passaggio, Tiro",
+        "training_focus_en": "Creativity, Passing, Shooting"
+      }
+    ]
+  },
+  {
+    "id": "pos-aml-amr",
+    "order": 8,
+    "position": "AML/AMR",
+    "name_it": "Ala (AML/AMR)",
+    "name_en": "Winger (AML/AMR)",
+    "summary_it": "Chi schierare in questa posizione: ruoli in ordine, il primo è la scelta di default. Le formazioni ideali ti dicono con quale counter abbinarlo.",
+    "summary_en": "Who to field here: roles in order, the first is the default pick. The best formations tell you which counter to pair it with.",
+    "roles": [
+      {
+        "name_it": "Ala Classica",
+        "name_en": "Classic Winger",
+        "key_attributes_it": [
+          "Cross",
+          "Velocità",
+          "Dribbling"
+        ],
+        "key_attributes_en": [
+          "Crossing",
+          "Pace",
+          "Dribbling"
+        ],
+        "best_formations": [
+          "4-3-3",
+          "4-5-1 V-Style"
+        ],
+        "training_focus_it": "Cross, Velocità, Dribbling",
+        "training_focus_en": "Crossing, Pace, Dribbling"
+      },
+      {
+        "name_it": "Ala Invertita",
+        "name_en": "Inverted Winger",
+        "key_attributes_it": [
+          "Tiro",
+          "Dribbling",
+          "Velocità"
+        ],
+        "key_attributes_en": [
+          "Shooting",
+          "Dribbling",
+          "Pace"
+        ],
+        "best_formations": [
+          "4-2-3-1",
+          "4-3-3"
+        ],
+        "training_focus_it": "Tiro, Finalizzazione, Dribbling",
+        "training_focus_en": "Shooting, Finishing, Dribbling"
+      },
+      {
+        "name_it": "Raumdeuter",
+        "name_en": "Raumdeuter",
+        "key_attributes_it": [
+          "Anticipazione",
+          "Finalizzazione",
+          "Smarcamento"
+        ],
+        "key_attributes_en": [
+          "Anticipation",
+          "Finishing",
+          "Off-ball Movement"
+        ],
+        "best_formations": [
+          "4-2-3-1",
+          "4-3-3"
+        ],
+        "training_focus_it": "Finalizzazione, Anticipazione, Posizionamento",
+        "training_focus_en": "Finishing, Anticipation, Positioning"
+      },
+      {
+        "name_it": "Boa Largo",
+        "name_en": "Wide Target Man",
+        "key_attributes_it": [
+          "Colpo di testa",
+          "Forza",
+          "Cross"
+        ],
+        "key_attributes_en": [
+          "Heading",
+          "Strength",
+          "Crossing"
+        ],
+        "best_formations": [
+          "4-3-3",
+          "4-4-2"
+        ],
+        "training_focus_it": "Colpo di testa, Forza, Cross",
+        "training_focus_en": "Heading, Strength, Crossing"
+      }
+    ]
+  },
+  {
+    "id": "pos-st",
+    "order": 9,
+    "position": "ST",
+    "name_it": "Attaccante (ST)",
+    "name_en": "Striker (ST)",
+    "summary_it": "Chi schierare in questa posizione: ruoli in ordine, il primo è la scelta di default. Le formazioni ideali ti dicono con quale counter abbinarlo.",
+    "summary_en": "Who to field here: roles in order, the first is the default pick. The best formations tell you which counter to pair it with.",
+    "roles": [
+      {
+        "name_it": "Centravanti Boa",
+        "name_en": "Target Man",
+        "key_attributes_it": [
+          "Colpo di testa",
+          "Forza",
+          "Finalizzazione"
+        ],
+        "key_attributes_en": [
+          "Heading",
+          "Strength",
+          "Finishing"
+        ],
+        "best_formations": [
+          "4-4-2",
+          "4-5-1 Flat"
+        ],
+        "training_focus_it": "Colpo di testa, Forza, Finalizzazione",
+        "training_focus_en": "Heading, Strength, Finishing"
+      },
+      {
+        "name_it": "Uomo d'Area",
+        "name_en": "Poacher",
+        "key_attributes_it": [
+          "Finalizzazione",
+          "Riflessi",
+          "Tiro"
+        ],
+        "key_attributes_en": [
+          "Finishing",
+          "Anticipation",
+          "Shooting"
+        ],
+        "best_formations": [
+          "4-1-2-1-2 ND",
+          "3-5-2"
+        ],
+        "training_focus_it": "Finalizzazione, Tiro, Velocità",
+        "training_focus_en": "Finishing, Shooting, Pace"
+      },
+      {
+        "name_it": "Attaccante Completo",
+        "name_en": "Complete Forward",
+        "key_attributes_it": [
+          "Finalizzazione",
+          "Tiro",
+          "Passaggio"
+        ],
+        "key_attributes_en": [
+          "Finishing",
+          "Shooting",
+          "Passing"
+        ],
+        "best_formations": [
+          "4-3-3",
+          "4-4-2"
+        ],
+        "training_focus_it": "Finalizzazione, Tiro, Colpo di testa",
+        "training_focus_en": "Finishing, Shooting, Heading"
+      },
+      {
+        "name_it": "Falso Nove",
+        "name_en": "False 9",
+        "key_attributes_it": [
+          "Passaggio",
+          "Tiro",
+          "Creatività"
+        ],
+        "key_attributes_en": [
+          "Passing",
+          "Shooting",
+          "Creativity"
+        ],
+        "best_formations": [
+          "4-5-1 V-Style",
+          "4-3-3"
+        ],
+        "training_focus_it": "Passaggio, Tiro, Creatività",
+        "training_focus_en": "Passing, Shooting, Creativity"
+      },
+      {
+        "name_it": "Attaccante di Pressing",
+        "name_en": "Pressing Forward",
+        "key_attributes_it": [
+          "Resistenza",
+          "Velocità",
+          "Contrasto"
+        ],
+        "key_attributes_en": [
+          "Stamina",
+          "Pace",
+          "Tackling"
+        ],
+        "best_formations": [
+          "4-1-4-1",
+          "4-3-3"
+        ],
+        "training_focus_it": "Velocità, Forza, Resistenza",
+        "training_focus_en": "Pace, Strength, Stamina"
+      },
+      {
+        "name_it": "Attaccante Difensivo",
+        "name_en": "Defensive Forward",
+        "key_attributes_it": [
+          "Resistenza",
+          "Marcatura",
+          "Contrasto"
+        ],
+        "key_attributes_en": [
+          "Stamina",
+          "Marking",
+          "Tackling"
+        ],
+        "best_formations": [
+          "4-1-4-1",
+          "4-5-1 V-Style"
+        ],
+        "training_focus_it": "Resistenza, Marcatura, Anticipazione",
+        "training_focus_en": "Stamina, Marking, Anticipation"
+      }
+    ]
+  }
+]

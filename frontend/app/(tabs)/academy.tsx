@@ -12,7 +12,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, GAME_GUIDE, FORMATION_LAB, REAL_TACTICS, FORMATIONS } from '@/src/data';
+import { PLAYER_ROLES, POSITION_GUIDE, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, GAME_GUIDE, FORMATION_LAB, REAL_TACTICS, FORMATIONS } from '@/src/data';
 import PitchDiagram from '@/src/components/PitchDiagram';
 
 // lookup nome modulo -> posizioni, per disegnare il mini-campo nella sezione Meta
@@ -30,6 +30,7 @@ function findPositions(name?: string): string[] | null {
 
 const LOCAL_DATA: Record<string, any[]> = {
   roles: PLAYER_ROLES,
+  positions: POSITION_GUIDE,
   meta: META_TACTICS,
   skills: SPECIAL_ABILITIES,
   training: TRAINING_GUIDE,
@@ -44,7 +45,7 @@ const LOCAL_DATA: Record<string, any[]> = {
   realtactics: REAL_TACTICS,
 };
 
-type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'faq' | 'abbr' | 'paths' | 'mystyle' | 'setpiece' | 'battles' | 'guide' | 'lab' | 'realtactics';
+type SectionId = 'roles' | 'positions' | 'meta' | 'skills' | 'training' | 'faq' | 'abbr' | 'paths' | 'mystyle' | 'setpiece' | 'battles' | 'guide' | 'lab' | 'realtactics';
 
 interface SectionDef {
   id: SectionId;
@@ -56,6 +57,7 @@ interface SectionDef {
 
 const SECTIONS: SectionDef[] = [
   { id: 'roles', endpoint: '/api/player-roles', label_en: 'Roles', label_it: 'Ruoli', icon: 'person-outline' },
+  { id: 'positions', endpoint: '/api/position-guide', label_en: 'By Position', label_it: 'Posizioni', icon: 'body-outline' },
   { id: 'meta', endpoint: '/api/meta-tactics', label_en: 'Meta', label_it: 'Meta', icon: 'trophy-outline' },
   { id: 'skills', endpoint: '/api/special-abilities', label_en: 'Skills', label_it: 'Abilità', icon: 'flash-outline' },
   { id: 'training', endpoint: '/api/training-guide', label_en: 'Training', label_it: 'Allenam.', icon: 'barbell-outline' },
@@ -83,7 +85,7 @@ const GROUPS: GroupDef[] = [
   { id: 'tactics', label_en: 'Tactics', label_it: 'Tattica', icon: 'analytics-outline',
     sections: ['meta', 'battles', 'lab'] },
   { id: 'players', label_en: 'Players', label_it: 'Giocatori', icon: 'people-outline',
-    sections: ['roles', 'skills', 'training'] },
+    sections: ['roles', 'positions', 'skills', 'training'] },
   { id: 'strategy', label_en: 'Strategy', label_it: 'Strategia', icon: 'compass-outline',
     sections: ['guide', 'mystyle', 'setpiece', 'paths'] },
   { id: 'reference', label_en: 'Reference', label_it: 'Riferimento', icon: 'library-outline',
@@ -104,10 +106,10 @@ export default function AcademyScreen() {
   const [group, setGroup] = useState<string>('tactics');
   const [section, setSection] = useState<SectionId>('meta');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], meta: [], skills: [], training: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [], guide: [], lab: [], realtactics: [],
+    roles: [], positions: [], meta: [], skills: [], training: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [], guide: [], lab: [], realtactics: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, meta: false, skills: false, training: false, faq: false, abbr: false, paths: false, mystyle: false, setpiece: false, battles: false, guide: false, lab: false, realtactics: false,
+    roles: false, positions: false, meta: false, skills: false, training: false, faq: false, abbr: false, paths: false, mystyle: false, setpiece: false, battles: false, guide: false, lab: false, realtactics: false,
   });
   const [selected, setSelected] = useState<any | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
@@ -141,6 +143,7 @@ export default function AcademyScreen() {
   const cardTitle = (item: any): string => {
     switch (section) {
       case 'roles': return isIt ? item.name_it : item.name_en;
+      case 'positions': return isIt ? item.name_it : item.name_en;
       case 'meta': return item.formation;
       case 'skills': return isIt ? item.name_it : item.name_en;
       case 'training': return item.position;
@@ -159,6 +162,7 @@ export default function AcademyScreen() {
   const cardSubtitle = (item: any): string => {
     switch (section) {
       case 'roles': return item.position;
+      case 'positions': return `${item.roles.length} ${isIt ? 'ruoli' : 'roles'}`;
       case 'meta': return `TIER ${item.tier}` + (item.trending ? (isIt ? ' · DI MODA' : ' · TRENDING') : '');
       case 'skills': return item.best_role;
       case 'training': return (isIt ? item.priority_attributes_it : item.priority_attributes_en).join(' · ');
@@ -327,6 +331,26 @@ export default function AcademyScreen() {
                   <DetailChips label={isIt ? 'ATTRIBUTI CHIAVE' : 'KEY ATTRIBUTES'} values={isIt ? selected.key_attributes_it : selected.key_attributes_en} />
                   <DetailChips label={isIt ? 'MODULI MIGLIORI' : 'BEST FORMATIONS'} values={selected.best_formations} />
                   <DetailBlock label={isIt ? 'FOCUS ALLENAMENTO' : 'TRAINING FOCUS'} value={isIt ? selected.training_focus_it : selected.training_focus_en} />
+                </>
+              )}
+              {selected && section === 'positions' && (
+                <>
+                  <DetailBlock label={isIt ? 'COME USARLA' : 'HOW TO USE'} value={isIt ? selected.summary_it : selected.summary_en} />
+                  {(selected.roles || []).map((r: any, i: number) => (
+                    <View key={i} style={styles.detailBlock}>
+                      <Text style={styles.detailLabel}>{`${i + 1}. ${(isIt ? r.name_it : r.name_en).toUpperCase()}`}</Text>
+                      <View style={styles.chipRow}>
+                        {(isIt ? r.key_attributes_it : r.key_attributes_en).map((a: string, j: number) => (
+                          <View key={`a${j}`} style={styles.chip}><Text style={styles.chipText}>{a}</Text></View>
+                        ))}
+                      </View>
+                      <View style={[styles.chipRow, { marginTop: 6 }]}>
+                        {(r.best_formations || []).map((f: string, j: number) => (
+                          <View key={`f${j}`} style={styles.chip}><Text style={styles.chipText}>{f}</Text></View>
+                        ))}
+                      </View>
+                    </View>
+                  ))}
                 </>
               )}
               {selected && section === 'meta' && (

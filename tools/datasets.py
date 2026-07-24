@@ -20,6 +20,7 @@ DATASETS = {
     "MATCHUP_MATRIX": "matchupMatrix",
     "SCOUT_TIPS": "scoutTips",
     "PLAYER_ROLES": "playerRoles",
+    "POSITION_GUIDE": "positionGuide",
     "META_TACTICS": "metaTactics",
     "SPECIAL_ABILITIES": "specialAbilities",
     "TRAINING_GUIDE": "trainingGuide",
