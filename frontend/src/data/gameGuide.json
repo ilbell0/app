@@ -379,14 +379,16 @@
       "Switch to the WEAKER-scenario setup of your counter (COUNTER tab): a more offensive module already prepared, not improvised",
       "High pressing only from the second half, when you need the ball back: earlier it just burns condition",
       "Force Counter-attack ON only when you must gamble in the final minutes (from ~75'): more chances but you lose more balls",
-      "Substitutions around 60'-70': fresh attacker for starters whose condition is dropping"
+      "Substitutions around 60'-70': fresh attacker for starters whose condition is dropping",
+      "Got an overpowered player who unbalances the XI? Use him as an impact sub in the second half to swing the momentum"
     ],
     "bullets_it": [
       "Sotto prima del 60': alza la mentalità di un gradino (a Normale/Offensiva), mai attacco totale, che ti sbilancia e concede contropiedi",
       "Passa al setup dello scenario PIÙ DEBOLE del tuo counter (tab COUNTER): modulo più offensivo già pronto, non improvvisato",
       "Pressing alto solo dal secondo tempo, quando devi recuperare palla: prima brucia solo condizione",
       "Contropiede ON solo se devi rischiare nel finale (dal 75' circa): più occasioni ma perdi più palloni",
-      "Cambi verso il 60'-70': attaccante fresco per i titolari con condizione in calo"
+      "Cambi verso il 60'-70': attaccante fresco per i titolari con condizione in calo",
+      "Hai un fuoriclasse che sbilancia la squadra se titolare? Usalo come impact sub nella ripresa per cambiare l'inerzia"
     ],
     "table_en": [
       {
@@ -416,8 +418,8 @@
         "value": "Contropiede ON, rischio calcolato"
       }
     ],
-    "source_en": "BlueStacks Top Eleven tactics guide + Top Eleven Help Center (I lost but my team was stronger)",
-    "source_it": "Guida tattica BlueStacks Top Eleven + Centro assistenza Top Eleven (ho perso pur essendo più forte)"
+    "source_en": "NotebookLM notebook Top Eleven 2026 (7b0eba98) + BlueStacks tactics guide + Top Eleven Help Center",
+    "source_it": "Notebook NotebookLM Top Eleven 2026 (7b0eba98) + guida tattica BlueStacks + Centro assistenza Top Eleven"
   },
   {
     "id": "gg-hold-lead",
@@ -433,7 +435,8 @@
       "Low pressing and zonal marking: save condition and keep the lines compact",
       "Short passing to keep the ball and run down the clock",
       "Defensive subs: fresh midfielder/defender in for an attacker",
-      "Arrows: full-backs and wingers back (down) to shut the flanks"
+      "Arrows: full-backs and wingers back (down) to shut the flanks",
+      "Full lock-down in the final minutes: park-the-bus modules like 5-4-1 Flat or 5-3-2 to shut every central lane"
     ],
     "bullets_it": [
       "In vantaggio dal 75'-80': scendi di un gradino a Difensiva, non del tutto passivo (troppo passivo invita l'assedio)",
@@ -441,12 +444,17 @@
       "Pressing basso e marcatura a zona: risparmi condizione e tieni le linee compatte",
       "Passaggi corti per tenere il pallone e far scorrere il tempo",
       "Cambi difensivi: centrocampista/difensore fresco al posto di un attaccante",
-      "Frecce: terzini e ali indietro per chiudere le fasce"
+      "Frecce: terzini e ali indietro per chiudere le fasce",
+      "Blocco totale nel finale: moduli park-the-bus come 5-4-1 Flat o 5-3-2 per chiudere ogni varco centrale"
     ],
     "table_en": [
       {
         "label": "75'+ leading",
         "value": "Defensive, Counter-attack ON, low pressing"
+      },
+      {
+        "label": "Bus module",
+        "value": "5-4-1 Flat or 5-3-2 in the final minutes"
       },
       {
         "label": "Subs",
@@ -459,12 +467,16 @@
         "value": "Difensiva, Contropiede ON, pressing basso"
       },
       {
+        "label": "Modulo bus",
+        "value": "5-4-1 Flat o 5-3-2 nel finale"
+      },
+      {
         "label": "Cambi",
         "value": "Difensore/centrocampista per attaccante"
       }
     ],
-    "source_en": "BlueStacks Top Eleven tactics guide (defensive mentality, counter-attack, pressing/marking)",
-    "source_it": "Guida tattica BlueStacks Top Eleven (mentalità difensiva, contropiede, pressing/marcatura)"
+    "source_en": "NotebookLM notebook Top Eleven 2026 (7b0eba98) + BlueStacks tactics guide (park-the-bus 5-4-1/5-3-2, defensive + counter-attack)",
+    "source_it": "Notebook NotebookLM Top Eleven 2026 (7b0eba98) + guida tattica BlueStacks (park-the-bus 5-4-1/5-3-2, difensiva + contropiede)"
   },
   {
     "id": "gg-possession-control",
@@ -515,8 +527,8 @@
       "4. Linea alta o pressing alto? -> spazio dietro per lanci filtranti e attaccanti rapidi",
       "5. Apri l'avversario nel tab COUNTER: la lettura ti dice quale scenario (forte/pari/debole) scegliere"
     ],
-    "source_en": "GamingOnPhone Top Eleven counter formations guide + BlueStacks tactics guide + app COUNTER_ENGINE (source-verified counters)",
-    "source_it": "Guida counter GamingOnPhone Top Eleven + guida tattica BlueStacks + COUNTER_ENGINE dell'app (counter verificati da fonte)"
+    "source_en": "NotebookLM notebook Top Eleven 2026 (7b0eba98) + GamingOnPhone counter guide + BlueStacks tactics guide + app COUNTER_ENGINE",
+    "source_it": "Notebook NotebookLM Top Eleven 2026 (7b0eba98) + guida counter GamingOnPhone + guida tattica BlueStacks + COUNTER_ENGINE dell'app"
   },
   {
     "id": "gg-read-defense-lines",
@@ -539,48 +551,48 @@
     "table_en": [
       {
         "label": "3-defence",
-        "value": "Flanks open: attack wide with wingers/W, 3-5-2 or 4-3-3"
+        "value": "Flanks open: wingers AML/AMR + flank passing; 4-4-2 Classic or 4-5-1 V-Style"
       },
       {
         "label": "4-defence",
-        "value": "Balanced: standard counter, choose by the opponent midfield"
+        "value": "Balanced: overload midfield; 4-5-1 V-Style or 4-1-4-1 to dominate possession"
       },
       {
         "label": "5-defence",
-        "value": "Bus: patience, width and crosses; wide modules, slow build-up"
+        "value": "Bus: offensive mentality + flank passing; 4-4-2 Classic is the universal counter"
       },
       {
         "label": "High line",
-        "value": "Space behind: through balls and pacey strikers in depth"
+        "value": "Space behind: long through balls to release the strikers"
       },
       {
         "label": "DMC screen",
-        "value": "Centre shut: switch play, wide attackers, lateral game"
+        "value": "Centre shut: go wide if he has no ML/MR; if no DMC, force the centre"
       }
     ],
     "table_it": [
       {
         "label": "Difesa a 3",
-        "value": "Fasce scoperte: attacca largo con ali/W, 3-5-2 o 4-3-3"
+        "value": "Fasce scoperte: ali AML/AMR + passaggi sulle fasce; 4-4-2 Classic o 4-5-1 V-Style"
       },
       {
         "label": "Difesa a 4",
-        "value": "Bilanciata: counter standard, scegli in base al centrocampo avversario"
+        "value": "Bilanciata: sovraccarica il centrocampo; 4-5-1 V-Style o 4-1-4-1 per dominare il possesso"
       },
       {
         "label": "Difesa a 5",
-        "value": "Autobus: pazienza, ampiezza e cross; moduli larghi, costruzione paziente"
+        "value": "Autobus: mentalità offensiva + passaggi sulle fasce; 4-4-2 Classic è il counter universale"
       },
       {
         "label": "Linea alta",
-        "value": "Spazio dietro: lanci filtranti e attaccanti rapidi in profondità"
+        "value": "Spazio dietro: passaggi filtranti lunghi per innescare le punte"
       },
       {
         "label": "Schermo DMC",
-        "value": "Centro chiuso: cambia gioco, ali larghe, gioco laterale"
+        "value": "Centro chiuso: gioca largo se non ha ML/MR; se manca il DMC, forza il centro"
       }
     ],
-    "source_en": "GamingOnPhone Top Eleven counter formations guide + app COUNTER_ENGINE notes (attack the flanks of a back three, etc.)",
-    "source_it": "Guida counter GamingOnPhone Top Eleven + note COUNTER_ENGINE dell'app (attacca le fasce della difesa a 3, ecc.)"
+    "source_en": "NotebookLM notebook Top Eleven 2026 (7b0eba98) + GamingOnPhone counter guide + app COUNTER_ENGINE notes",
+    "source_it": "Notebook NotebookLM Top Eleven 2026 (7b0eba98) + guida counter GamingOnPhone + note COUNTER_ENGINE dell'app"
   }
 ]
