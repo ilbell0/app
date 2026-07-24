@@ -12,7 +12,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, REAL_TEAMS, SEASON_STORIES, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, GAME_GUIDE, FORMATION_LAB, REAL_TACTICS, FORMATIONS } from '@/src/data';
+import { PLAYER_ROLES, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, GAME_GUIDE, FORMATION_LAB, REAL_TACTICS, FORMATIONS } from '@/src/data';
 import PitchDiagram from '@/src/components/PitchDiagram';
 
 // lookup nome modulo -> posizioni, per disegnare il mini-campo nella sezione Meta
@@ -33,8 +33,6 @@ const LOCAL_DATA: Record<string, any[]> = {
   meta: META_TACTICS,
   skills: SPECIAL_ABILITIES,
   training: TRAINING_GUIDE,
-  teams: REAL_TEAMS,
-  stories: SEASON_STORIES,
   faq: FAQ,
   abbr: ABBREVIATIONS,
   paths: CAREER_PATHS,
@@ -46,7 +44,7 @@ const LOCAL_DATA: Record<string, any[]> = {
   realtactics: REAL_TACTICS,
 };
 
-type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'teams' | 'stories' | 'faq' | 'abbr' | 'paths' | 'mystyle' | 'setpiece' | 'battles' | 'guide' | 'lab' | 'realtactics';
+type SectionId = 'roles' | 'meta' | 'skills' | 'training' | 'faq' | 'abbr' | 'paths' | 'mystyle' | 'setpiece' | 'battles' | 'guide' | 'lab' | 'realtactics';
 
 interface SectionDef {
   id: SectionId;
@@ -61,8 +59,6 @@ const SECTIONS: SectionDef[] = [
   { id: 'meta', endpoint: '/api/meta-tactics', label_en: 'Meta', label_it: 'Meta', icon: 'trophy-outline' },
   { id: 'skills', endpoint: '/api/special-abilities', label_en: 'Skills', label_it: 'Abilità', icon: 'flash-outline' },
   { id: 'training', endpoint: '/api/training-guide', label_en: 'Training', label_it: 'Allenam.', icon: 'barbell-outline' },
-  { id: 'teams', endpoint: '/api/real-teams', label_en: 'Teams', label_it: 'Squadre', icon: 'shield-half-outline' },
-  { id: 'stories', endpoint: '/api/season-stories', label_en: 'Stories', label_it: 'Storie', icon: 'book-outline' },
   { id: 'faq', endpoint: '/api/faq', label_en: 'FAQ', label_it: 'FAQ', icon: 'help-circle-outline' },
   { id: 'abbr', endpoint: '/api/abbreviations', label_en: 'Legend', label_it: 'Leggenda', icon: 'list-outline' },
   { id: 'paths', endpoint: '/api/career-paths', label_en: 'Paths', label_it: 'Percorsi', icon: 'trending-up-outline' },
@@ -74,7 +70,7 @@ const SECTIONS: SectionDef[] = [
   { id: 'realtactics', endpoint: '/api/real-tactics', label_en: 'Real Football', label_it: 'Calcio Reale', icon: 'earth-outline' },
 ];
 
-// Macro-aree: le 15 sezioni raggruppate in 4 gruppi logici (selettore a 2 livelli)
+// Macro-aree: le 13 sezioni raggruppate in 4 gruppi logici (selettore a 2 livelli)
 interface GroupDef {
   id: string;
   label_en: string;
@@ -91,7 +87,7 @@ const GROUPS: GroupDef[] = [
   { id: 'strategy', label_en: 'Strategy', label_it: 'Strategia', icon: 'compass-outline',
     sections: ['guide', 'mystyle', 'setpiece', 'paths'] },
   { id: 'reference', label_en: 'Reference', label_it: 'Riferimento', icon: 'library-outline',
-    sections: ['realtactics', 'teams', 'stories', 'faq', 'abbr'] },
+    sections: ['realtactics', 'faq', 'abbr'] },
 ];
 
 const TIER_COLORS: Record<string, string> = {
@@ -108,10 +104,10 @@ export default function AcademyScreen() {
   const [group, setGroup] = useState<string>('tactics');
   const [section, setSection] = useState<SectionId>('meta');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], meta: [], skills: [], training: [], teams: [], stories: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [], guide: [], lab: [], realtactics: [],
+    roles: [], meta: [], skills: [], training: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [], guide: [], lab: [], realtactics: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, meta: false, skills: false, training: false, teams: false, stories: false, faq: false, abbr: false, paths: false, mystyle: false, setpiece: false, battles: false, guide: false, lab: false, realtactics: false,
+    roles: false, meta: false, skills: false, training: false, faq: false, abbr: false, paths: false, mystyle: false, setpiece: false, battles: false, guide: false, lab: false, realtactics: false,
   });
   const [selected, setSelected] = useState<any | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
@@ -148,8 +144,6 @@ export default function AcademyScreen() {
       case 'meta': return item.formation;
       case 'skills': return isIt ? item.name_it : item.name_en;
       case 'training': return item.position;
-      case 'teams': return item.team;
-      case 'stories': return isIt ? item.title_it : item.title_en;
       case 'faq': return isIt ? item.question_it : item.question_en;
       case 'abbr': return `${item.code}  ·  ${isIt ? item.name_it : item.name_en}`;
       case 'paths': return `${item.label}  ·  ${isIt ? item.title_it : item.title_en}`;
@@ -168,8 +162,6 @@ export default function AcademyScreen() {
       case 'meta': return `TIER ${item.tier}` + (item.trending ? (isIt ? ' · DI MODA' : ' · TRENDING') : '');
       case 'skills': return item.best_role;
       case 'training': return (isIt ? item.priority_attributes_it : item.priority_attributes_en).join(' · ');
-      case 'teams': return `${item.manager} · ${item.te_formation}`;
-      case 'stories': return isIt ? item.subtitle_it : item.subtitle_en;
       case 'faq': return (item.category || '').toUpperCase();
       case 'abbr': return item.example;
       case 'paths': return isIt ? item.subtitle_it : item.subtitle_en;
@@ -364,14 +356,6 @@ export default function AcademyScreen() {
                   <DetailBlock label={isIt ? 'NOTA' : 'NOTE'} value={isIt ? selected.note_it : selected.note_en} />
                 </>
               )}
-              {selected && section === 'stories' && (
-                <>
-                  <DetailBlock label={isIt ? 'MODULO USATO' : 'FORMATION USED'} value={selected.formation_used} />
-                  <DetailBlock label={isIt ? 'RISULTATO' : 'OUTCOME'} value={isIt ? selected.outcome_it : selected.outcome_en} />
-                  <DetailBlock label={isIt ? 'LA STORIA' : 'THE STORY'} value={isIt ? selected.story_it : selected.story_en} />
-                  <DetailChips label={isIt ? 'LEZIONI CHIAVE' : 'KEY LESSONS'} values={isIt ? selected.key_lessons_it : selected.key_lessons_en} />
-                </>
-              )}
               {selected && section === 'faq' && (
                 <>
                   <DetailBlock label={isIt ? 'RISPOSTA' : 'ANSWER'} value={isIt ? selected.answer_it : selected.answer_en} />
@@ -403,28 +387,6 @@ export default function AcademyScreen() {
                   <DetailBlock label={isIt ? 'PERCHÉ FUNZIONANO' : 'WHY THEY WORK'} value={isIt ? selected.explanation_it : selected.explanation_en} />
                   <DetailChips label={isIt ? 'PRIORITÀ ALLENAMENTO' : 'TRAINING PRIORITY'} values={isIt ? selected.training_priority_it : selected.training_priority_en} />
                   <DetailChips label={isIt ? 'EVITA' : 'AVOID'} values={isIt ? selected.avoid_it : selected.avoid_en} />
-                </>
-              )}
-              {selected && section === 'teams' && (
-                <>
-                  <DetailBlock label={isIt ? 'ALLENATORE' : 'MANAGER'} value={`${selected.manager} (${selected.era})`} />
-                  <DetailBlock label={isIt ? 'STILE' : 'STYLE'} value={isIt ? selected.style_it : selected.style_en} />
-                  <View style={styles.detailBlock}>
-                    <Text style={styles.detailLabel}>{isIt ? 'MODULO TOP ELEVEN' : 'TOP ELEVEN FORMATION'}</Text>
-                    <View style={styles.arrowsBox}>
-                      <Text style={styles.arrowsText}>{selected.te_formation}</Text>
-                    </View>
-                  </View>
-                  <DetailChips label={isIt ? 'ATTRIBUTI CHIAVE' : 'KEY ATTRIBUTES'} values={isIt ? selected.key_attributes_it : selected.key_attributes_en} />
-                  <View style={styles.detailBlock}>
-                    <Text style={styles.detailLabel}>{isIt ? 'FRECCE' : 'ARROWS'}</Text>
-                    <View style={styles.arrowsBox}>
-                      <Text style={styles.arrowsText}>{selected.arrows}</Text>
-                    </View>
-                  </View>
-                  <DetailBlock label={isIt ? 'MENTALITÀ' : 'MENTALITY'} value={selected.mentality} />
-                  <DetailBlock label={isIt ? 'FILOSOFIA' : 'PHILOSOPHY'} value={isIt ? selected.philosophy_it : selected.philosophy_en} />
-                  <DetailBlock label={isIt ? 'COME IMITARLA IN TOP ELEVEN' : 'HOW TO COPY IT IN TOP ELEVEN'} value={isIt ? selected.how_to_copy_it : selected.how_to_copy_en} />
                 </>
               )}
               {selected && (section === 'mystyle' || section === 'setpiece' || section === 'battles' || section === 'guide') && (

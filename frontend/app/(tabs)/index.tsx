@@ -54,13 +54,6 @@ export default function HomeScreen() {
     setRefreshing(false);
   };
 
-  const quickActions = [
-    { icon: 'grid-outline', label: language === 'it' ? 'Formazioni' : 'Formations', route: '/(tabs)/formations' },
-    { icon: 'shield-outline', label: language === 'it' ? 'Counter' : 'Counter', route: '/(tabs)/counters' },
-    { icon: 'search-outline', label: 'Scout', route: '/(tabs)/scout' },
-    { icon: 'school-outline', label: 'Academy', route: '/(tabs)/academy' },
-  ];
-
   return (
     <View style={[styles.container, { paddingTop: insets.top }]}>
       <ScrollView
@@ -133,50 +126,6 @@ export default function HomeScreen() {
               <Text style={styles.wizardSub}>
                 {language === 'it' ? 'Due moduli a confronto → chi vince' : 'Two formations head-to-head'}
               </Text>
-            </View>
-            <Ionicons name="chevron-forward" size={20} color={NothingTheme.colors.textTertiary} />
-          </TouchableOpacity>
-        </View>
-
-        {/* Quick Access */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>
-            {language === 'it' ? 'ACCESSO RAPIDO' : 'QUICK ACCESS'}
-          </Text>
-          <View style={styles.quickActions}>
-            {quickActions.map((action, index) => (
-              <TouchableOpacity
-                key={index}
-                style={styles.actionCard}
-                onPress={() => router.push(action.route as any)}
-                activeOpacity={0.7}
-              >
-                <View style={styles.actionIconContainer}>
-                  <Ionicons 
-                    name={action.icon as any} 
-                    size={24} 
-                    color={NothingTheme.colors.textPrimary} 
-                  />
-                </View>
-                <Text style={styles.actionLabel}>{action.label}</Text>
-              </TouchableOpacity>
-            ))}
-          </View>
-        </View>
-
-        {/* Academy Banner */}
-        <View style={styles.academyWrap}>
-          <TouchableOpacity
-            style={styles.academyCard}
-            onPress={() => router.push('/(tabs)/academy')}
-            activeOpacity={0.8}
-          >
-            <View style={styles.academyIcon}>
-              <Ionicons name="school" size={24} color={NothingTheme.colors.accent} />
-            </View>
-            <View style={styles.academyContent}>
-              <Text style={styles.academyTitle}>ACADEMY 2026</Text>
-              <Text style={styles.academySub}>{APP_META.academySummary[language]}</Text>
             </View>
             <Ionicons name="chevron-forward" size={20} color={NothingTheme.colors.textTertiary} />
           </TouchableOpacity>
