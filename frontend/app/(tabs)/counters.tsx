@@ -384,10 +384,10 @@ export default function CountersScreen() {
                     </View>
                   )}
 
-                  {/* Tactical Settings Grid */}
+                  {/* Tactical Settings Grid - 3 Fasi */}
                   <View style={styles.tacticsSection}>
                     <Text style={styles.sectionLabel}>
-                      {language === 'it' ? 'IMPOSTAZIONI' : 'SETTINGS'}
+                      {language === 'it' ? 'IMPOSTAZIONI TATTICHE' : 'TACTICAL SETTINGS'}
                     </Text>
                     {hasAlt && (
                       <Text style={styles.sharedNote}>
@@ -396,79 +396,96 @@ export default function CountersScreen() {
                           : 'Same for both formations · only arrows differ'}
                       </Text>
                     )}
-                    <View style={styles.tacticsGrid}>
-                      <View style={styles.tacticRow}>
-                        <Text style={styles.tacticLabel}>
-                          {language === 'it' ? 'Mentalità' : 'Mentality'}
-                        </Text>
-                        <Text style={styles.tacticValue}>{currentScenario.men}</Text>
-                      </View>
-                      <View style={styles.tacticRow}>
-                        <Text style={styles.tacticLabel}>
-                          {language === 'it' ? 'Passaggi' : 'Passing'}
-                        </Text>
-                        <Text style={styles.tacticValue}>{currentScenario.pass}</Text>
-                      </View>
-                      <View style={styles.tacticRow}>
-                        <Text style={styles.tacticLabel}>
-                          {language === 'it' ? 'Stile' : 'Style'}
-                        </Text>
-                        <Text style={styles.tacticValue}>{currentScenario.stile}</Text>
-                      </View>
-                      <View style={styles.tacticRow}>
-                        <Text style={styles.tacticLabel}>Pressing</Text>
-                        <Text style={styles.tacticValue}>{currentScenario.press}</Text>
-                      </View>
-                      <View style={styles.tacticRow}>
-                        <Text style={styles.tacticLabel}>
-                          {language === 'it' ? 'Marcatura' : 'Marking'}
-                        </Text>
-                        <Text style={styles.tacticValue}>{currentScenario.marc}</Text>
-                      </View>
-                      <View style={styles.tacticRow}>
-                        <Text style={styles.tacticLabel}>
-                          {language === 'it' ? 'Contrasti' : 'Tackling'}
-                        </Text>
-                        <Text style={styles.tacticValue}>{currentScenario.cont}</Text>
-                      </View>
-                    </View>
-                  </View>
 
-                  {/* Toggle Badges */}
-                  <View style={styles.togglesSection}>
-                    <View style={[
-                      styles.toggleBadge,
-                      currentScenario.ctrl === 'SI' && styles.toggleBadgeActive,
-                    ]}>
-                      <Text style={[
-                        styles.toggleText,
-                        currentScenario.ctrl === 'SI' && styles.toggleTextActive,
-                      ]}>
-                        {language === 'it' ? 'CONTROPIEDE' : 'COUNTER'}
+                    {/* FASE 1: IN POSSESSO */}
+                    <View style={styles.phaseBlock}>
+                      <Text style={styles.phaseHeader}>
+                        {language === 'it' ? '⚽ IN POSSESSO' : '⚽ IN POSSESSION'}
                       </Text>
-                      <Text style={[
-                        styles.toggleValue,
-                        currentScenario.ctrl === 'SI' && styles.toggleValueActive,
-                      ]}>
-                        {currentScenario.ctrl}
-                      </Text>
+                      <View style={styles.tacticsGrid}>
+                        <View style={styles.tacticRow}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Tendenza tiro' : 'Shooting'}
+                          </Text>
+                          <Text style={styles.tacticValue}>{currentScenario.tend_tiro || 'Normale'}</Text>
+                        </View>
+                        <View style={styles.tacticRow}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Stile passaggi' : 'Passing style'}
+                          </Text>
+                          <Text style={styles.tacticValue}>{currentScenario.stile_pass || currentScenario.stile}</Text>
+                        </View>
+                        <View style={styles.tacticRow}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Tipo di passaggi' : 'Passing type'}
+                          </Text>
+                          <Text style={styles.tacticValue}>{currentScenario.tipo_pass || currentScenario.pass}</Text>
+                        </View>
+                        <View style={styles.tacticRow}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Tendenza cross' : 'Crossing'}
+                          </Text>
+                          <Text style={styles.tacticValue}>{currentScenario.tend_cross || 'Normale'}</Text>
+                        </View>
+                      </View>
                     </View>
-                    <View style={[
-                      styles.toggleBadge,
-                      currentScenario.fuo === 'SI' && styles.toggleBadgeActive,
-                    ]}>
-                      <Text style={[
-                        styles.toggleText,
-                        currentScenario.fuo === 'SI' && styles.toggleTextActive,
-                      ]}>
-                        {language === 'it' ? 'FUORIGIOCO' : 'OFFSIDE'}
+
+                    {/* FASE 2: IN TRANSIZIONE */}
+                    <View style={styles.phaseBlock}>
+                      <Text style={styles.phaseHeader}>
+                        {language === 'it' ? '🔄 IN TRANSIZIONE' : '🔄 IN TRANSITION'}
                       </Text>
-                      <Text style={[
-                        styles.toggleValue,
-                        currentScenario.fuo === 'SI' && styles.toggleValueActive,
-                      ]}>
-                        {currentScenario.fuo}
+                      <View style={styles.tacticsGrid}>
+                        <View style={styles.tacticRow}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Possesso perso' : 'Lost possession'}
+                          </Text>
+                          <Text style={styles.tacticValue}>{currentScenario.poss_perso || 'Riaggressione'}</Text>
+                        </View>
+                        <View style={styles.tacticRow}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Possesso ottenuto' : 'Won possession'}
+                          </Text>
+                          <Text style={styles.tacticValue}>{currentScenario.poss_ottenuto || (currentScenario.ctrl === 'SI' ? 'Contropiede' : 'Concentr. azioni')}</Text>
+                        </View>
+                        <View style={styles.tacticRow}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Mentalità' : 'Mentality'}
+                          </Text>
+                          <Text style={styles.tacticValue}>{currentScenario.men}</Text>
+                        </View>
+                      </View>
+                    </View>
+
+                    {/* FASE 3: NON IN POSSESSO */}
+                    <View style={styles.phaseBlock}>
+                      <Text style={styles.phaseHeader}>
+                        {language === 'it' ? '🛡️ NON IN POSSESSO' : '🛡️ OUT OF POSSESSION'}
                       </Text>
+                      <View style={styles.tacticsGrid}>
+                        <View style={styles.tacticRow}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Marcatura' : 'Marking'}
+                          </Text>
+                          <Text style={styles.tacticValue}>{currentScenario.marc}</Text>
+                        </View>
+                        <View style={styles.tacticRow}>
+                          <Text style={styles.tacticLabel}>Pressing</Text>
+                          <Text style={styles.tacticValue}>{currentScenario.press}</Text>
+                        </View>
+                        <View style={styles.tacticRow}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Linea difensiva' : 'Defensive line'}
+                          </Text>
+                          <Text style={styles.tacticValue}>{currentScenario.linea_dif || (currentScenario.fuo === 'SI' ? 'Trapp. fuorig.' : 'Tracc. avvers.')}</Text>
+                        </View>
+                        <View style={styles.tacticRow}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? 'Contrasti' : 'Tackling'}
+                          </Text>
+                          <Text style={styles.tacticValue}>{currentScenario.cont}</Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
 

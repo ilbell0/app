@@ -25,23 +25,37 @@ MENTALITY_EN = {"Normal", "Defensive", "Attacking", "Hard Attacking", "Hard Defe
 MENTALITY_IT = {"Normale", "Difensiva", "Offensiva", "Molto Offensiva", "Molto Difensiva"}
 PRESSING_EN = {"Low", "Medium", "High"}
 PRESSING_IT = {"Basso", "Medio", "Alto"}
-PASSING_EN = {"Short", "Long", "Mixed"}
-PASSING_IT = {"Corti", "Lunghi", "Misti"}
+PASSING_STYLE_EN = {"Short", "Long", "Mixed"}
+PASSING_STYLE_IT = {"Palla corta", "Palla lunga", "Misto", "Corti", "Lunghi", "Misti"}
+PASSING_TYPE_EN = {"Down Both Flanks", "Through the Middle", "Mixed", "Right Flank", "Left Flank"}
+PASSING_TYPE_IT = {"Per entrambe le fasce", "Entrambe fasce", "Per il centro", "Misto", "Fascia destra", "Fascia sinistra", "Fasce", "Centro"}
+SHOOTING_EN = {"Normal", "Shoot on Sight", "Work into Box"}
+SHOOTING_IT = {"Normale", "Tiro a vista", "Strategia in area"}
+CROSSING_EN = {"Normal"}
+CROSSING_IT = {"Normale"}
+LOST_POSS_EN = {"Reaggression", "Regroup"}
+LOST_POSS_IT = {"Riaggressione", "Raggruppamento"}
+WON_POSS_EN = {"Counter-attack", "Concentrate Actions"}
+WON_POSS_IT = {"Contropiede", "Concentr. azioni"}
+DEF_LINE_EN = {"Offside Trap", "Track Opponent"}
+DEF_LINE_IT = {"Trapp. fuorig.", "Tracc. avvers."}
 TACKLING_EN = {"Easy", "Normal", "Hard"}
 TACKLING_IT = {"Facile", "Normale", "Duro"}
 MARKING_EN = {"Zonal", "Man-to-Man"}
 MARKING_IT = {"Zonale", "Uomo a Uomo"}
-FOCUS_EN = {"Down Both Flanks", "Through the Middle", "Mixed", "Right Flank", "Left Flank"}
-FOCUS_IT = {"Per entrambe le fasce", "Per il centro", "Misto", "Fascia destra", "Fascia sinistra"}
+
 ENG_VOCAB = {
+    "tend_tiro": SHOOTING_IT,
+    "stile_pass": PASSING_STYLE_IT,
+    "tipo_pass": PASSING_TYPE_IT,
+    "tend_cross": CROSSING_IT,
+    "poss_perso": LOST_POSS_IT,
+    "poss_ottenuto": WON_POSS_IT,
     "men": MENTALITY_IT,
-    "pass": {"Fasce", "Centro", "Misto"},
-    "stile": PASSING_IT,
-    "ctrl": {"SI", "NO"},
-    "press": PRESSING_IT,
-    "cont": TACKLING_IT,
     "marc": {"Zona", "Uomo"},
-    "fuo": {"SI", "NO"},
+    "press": PRESSING_IT,
+    "linea_dif": DEF_LINE_IT,
+    "cont": TACKLING_IT,
 }
 # mojibake: UTF-8 letto come Latin-1/cp1252 ("Ã¬", "â€"). Mai legittimo nei dati.
 MOJIBAKE_RX = re.compile(r"Ã|â€|Â°|Å")
@@ -71,7 +85,9 @@ def check_formations(F):
         ndef = sum(1 for p in pos if p in ("DL", "DC", "DR"))
         if f.get("defense_count") != ndef:
             err(f"FORMATIONS {n}: defense_count={f.get('defense_count')} ma difensori={ndef}")
-        blocks = [("recommended_tactics", f.get("recommended_tactics") or {})]
+        blocks = []
+        if "recommended_tactics" in f and f["recommended_tactics"]:
+            blocks.append(("recommended_tactics", f["recommended_tactics"]))
         for sc in ("strong", "equal", "weak"):
             s = (f.get("opponent_settings") or {}).get(sc)
             if not s:
@@ -87,16 +103,21 @@ def check_formations(F):
             for field, vocab in [
                 ("mentality", MENTALITY_EN), ("mentality_it", MENTALITY_IT),
                 ("pressing", PRESSING_EN), ("pressing_it", PRESSING_IT),
-                ("passing_style", PASSING_EN), ("passing_style_it", PASSING_IT),
+                ("passing_style", PASSING_STYLE_EN), ("passing_style_it", PASSING_STYLE_IT),
                 ("tackling", TACKLING_EN), ("tackling_it", TACKLING_IT),
                 ("marking", MARKING_EN), ("marking_it", MARKING_IT),
-                ("focus_passing", FOCUS_EN), ("focus_passing_it", FOCUS_IT),
+                ("passing_type", PASSING_TYPE_EN), ("passing_type_it", PASSING_TYPE_IT),
+                ("shooting_tendency", SHOOTING_EN), ("shooting_tendency_it", SHOOTING_IT),
+                ("crossing_tendency", CROSSING_EN), ("crossing_tendency_it", CROSSING_IT),
+                ("lost_possession", LOST_POSS_EN), ("lost_possession_it", LOST_POSS_IT),
+                ("won_possession", WON_POSS_EN), ("won_possession_it", WON_POSS_IT),
+                ("defensive_line", DEF_LINE_EN), ("defensive_line_it", DEF_LINE_IT),
             ]:
                 if field in s and s[field] not in vocab:
                     err(f"FORMATIONS {n}/{sc}: {field}={s[field]!r} fuori vocabolario")
-            if s.get("offside_trap") is True and s.get("pressing") == "Low":
+            if (s.get("defensive_line") == "Offside Trap" or s.get("offside_trap") is True) and s.get("pressing") == "Low":
                 err(f"FORMATIONS {n}/{sc}: fuorigioco ON con pressing basso")
-            if s.get("counter_attack") is True and s.get("mentality") in ("Attacking", "Hard Attacking"):
+            if (s.get("won_possession") == "Counter-attack" or s.get("counter_attack") is True) and s.get("mentality") in ("Attacking", "Hard Attacking"):
                 err(f"FORMATIONS {n}/{sc}: contropiede ON con mentalità offensiva")
     byname = {f["name"]: f for f in F}
     for f in F:
@@ -160,9 +181,9 @@ def check_engine(E, names, byname):
             for field, vocab in ENG_VOCAB.items():
                 if s.get(field) not in vocab:
                     err(f"ENGINE {av}/{sc}: {field}={s.get(field)!r} fuori vocabolario")
-            if s.get("fuo") == "SI" and s.get("press") == "Basso":
+            if s.get("linea_dif") == "Trapp. fuorig." and s.get("press") == "Basso":
                 err(f"ENGINE {av}/{sc}: fuorigioco SI con pressing basso")
-            if s.get("ctrl") == "SI" and s.get("men") in ("Offensiva", "Molto Offensiva"):
+            if s.get("poss_ottenuto") == "Contropiede" and s.get("men") in ("Offensiva", "Molto Offensiva"):
                 err(f"ENGINE {av}/{sc}: contropiede SI con mentalità offensiva")
     return avs
 
