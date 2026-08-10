@@ -7,8 +7,14 @@ import {
   TouchableOpacity,
   ActivityIndicator,
   Modal,
-  Animated,
 } from 'react-native';
+import Animated, {
+  FadeInDown,
+  useSharedValue,
+  useAnimatedStyle,
+  withSpring,
+  withTiming,
+} from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
@@ -43,6 +49,25 @@ const MACRO_ICON: Record<string, string> = {
   tactics: 'git-compare-outline', squad: 'people-outline', club: 'briefcase-outline',
 };
 
+// Wrapper con feedback "vivo" al tocco (scala leggera in pressione/rilascio)
+function Pressy({ onPress, style, children }: { onPress: () => void; style?: any; children: React.ReactNode }) {
+  const scale = useSharedValue(1);
+  const animStyle = useAnimatedStyle(() => ({ transform: [{ scale: scale.value }] }));
+  return (
+    <Animated.View style={[style, animStyle]}>
+      <TouchableOpacity
+        style={styles.pressyInner}
+        activeOpacity={1}
+        onPress={onPress}
+        onPressIn={() => { scale.value = withSpring(0.96, { damping: 15, stiffness: 300 }); }}
+        onPressOut={() => { scale.value = withSpring(1, { damping: 12, stiffness: 200 }); }}
+      >
+        {children}
+      </TouchableOpacity>
+    </Animated.View>
+  );
+}
+
 export default function ScoutScreen() {
   const insets = useSafeAreaInsets();
   const { language } = useLanguage();
@@ -51,7 +76,12 @@ export default function ScoutScreen() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedTip, setSelectedTip] = useState<ScoutTip | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
-  const [fadeAnim] = useState(new Animated.Value(0));
+  const modalOpacity = useSharedValue(0);
+  const modalTranslateY = useSharedValue(24);
+  const modalAnimStyle = useAnimatedStyle(() => ({
+    opacity: modalOpacity.value,
+    transform: [{ translateY: modalTranslateY.value }],
+  }));
 
   useEffect(() => {
     fetchTips();
@@ -59,15 +89,13 @@ export default function ScoutScreen() {
 
   useEffect(() => {
     if (modalVisible) {
-      Animated.timing(fadeAnim, {
-        toValue: 1,
-        duration: 200,
-        useNativeDriver: true,
-      }).start();
+      modalOpacity.value = withTiming(1, { duration: 220 });
+      modalTranslateY.value = withSpring(0, { damping: 16, stiffness: 180 });
     } else {
-      fadeAnim.setValue(0);
+      modalOpacity.value = 0;
+      modalTranslateY.value = 24;
     }
-  }, [fadeAnim, modalVisible]);
+  }, [modalVisible, modalOpacity, modalTranslateY]);
 
   const fetchTips = async () => {
     setTips(SCOUT_TIPS as ScoutTip[]);
@@ -113,7 +141,7 @@ export default function ScoutScreen() {
         contentContainerStyle={styles.filterContainer}
       >
         {CATEGORIES.map((cat) => (
-          <TouchableOpacity
+          <Pressy
             key={cat.id}
             style={[
               styles.filterButton,
@@ -133,7 +161,7 @@ export default function ScoutScreen() {
             ]}>
               {language === 'it' ? cat.label_it : cat.label_en}
             </Text>
-          </TouchableOpacity>
+          </Pressy>
         ))}
       </ScrollView>
 
@@ -141,9 +169,9 @@ export default function ScoutScreen() {
 
       {/* Tips Count */}
       <View style={styles.countRow}>
-        <Text style={styles.countText}>
+        <Animated.Text key={`${selectedCategory}-${filteredTips.length}`} entering={FadeInDown.duration(220)} style={styles.countText}>
           {filteredTips.length} {language === 'it' ? 'CONSIGLI' : 'TIPS'}
-        </Text>
+        </Animated.Text>
       </View>
 
       {/* Tips List */}
@@ -153,33 +181,33 @@ export default function ScoutScreen() {
         showsVerticalScrollIndicator={false}
       >
         {filteredTips.map((tip, index) => (
-          <TouchableOpacity
-            key={tip.id || index}
-            style={styles.tipCard}
-            onPress={() => openTip(tip)}
-            activeOpacity={0.7}
+          <Animated.View
+            key={`${selectedCategory}-${tip.id || index}`}
+            entering={FadeInDown.delay(Math.min(index, 12) * 35).duration(280).springify().damping(18)}
           >
-            <View style={styles.tipIconContainer}>
-              <Ionicons 
-                name={getCategoryIcon(tip.category) as any} 
-                size={20} 
-                color={NothingTheme.colors.textPrimary} 
+            <Pressy style={styles.tipCard} onPress={() => openTip(tip)}>
+              <View style={styles.tipIconContainer}>
+                <Ionicons
+                  name={getCategoryIcon(tip.category) as any}
+                  size={20}
+                  color={NothingTheme.colors.textPrimary}
+                />
+              </View>
+              <View style={styles.tipContent}>
+                <Text style={styles.tipTitle}>
+                  {language === 'it' ? tip.title_it : tip.title_en}
+                </Text>
+                <Text style={styles.tipPreview} numberOfLines={1}>
+                  {language === 'it' ? tip.content_it : tip.content_en}
+                </Text>
+              </View>
+              <Ionicons
+                name="chevron-forward"
+                size={18}
+                color={NothingTheme.colors.textTertiary}
               />
-            </View>
-            <View style={styles.tipContent}>
-              <Text style={styles.tipTitle}>
-                {language === 'it' ? tip.title_it : tip.title_en}
-              </Text>
-              <Text style={styles.tipPreview} numberOfLines={1}>
-                {language === 'it' ? tip.content_it : tip.content_en}
-              </Text>
-            </View>
-            <Ionicons 
-              name="chevron-forward" 
-              size={18} 
-              color={NothingTheme.colors.textTertiary} 
-            />
-          </TouchableOpacity>
+            </Pressy>
+          </Animated.View>
         ))}
 
         {filteredTips.length === 0 && (
@@ -198,8 +226,8 @@ export default function ScoutScreen() {
         visible={modalVisible}
         onRequestClose={() => setModalVisible(false)}
       >
-        <Animated.View style={[styles.modalOverlay, { opacity: fadeAnim }]}>
-          <View style={[styles.modalContent, { paddingTop: insets.top + 10 }]}>
+        <View style={styles.modalOverlay}>
+          <Animated.View style={[styles.modalContent, modalAnimStyle, { paddingTop: insets.top + 10 }]}>
             {/* Modal Header */}
             <View style={styles.modalHeader}>
               <TouchableOpacity
@@ -236,14 +264,18 @@ export default function ScoutScreen() {
                 {language === 'it' ? selectedTip?.content_it : selectedTip?.content_en}
               </Text>
             </ScrollView>
-          </View>
-        </Animated.View>
+          </Animated.View>
+        </View>
       </Modal>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  pressyInner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
   container: {
     flex: 1,
     backgroundColor: NothingTheme.colors.background,

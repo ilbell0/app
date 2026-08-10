@@ -143,22 +143,54 @@ export default function CounterWizard({ visible, onClose }: Props) {
                 <PitchDiagram positions={POS[scenario.mod]} arrows={scenario.fr} />
               </View>
             )}
-            <View style={styles.grid}>
-              {[
-                [isIt ? 'Mentalità' : 'Mentality', scenario.men],
-                [isIt ? 'Passaggi' : 'Passing', scenario.pass],
-                [isIt ? 'Stile' : 'Style', scenario.stile],
-                ['Pressing', scenario.press],
-                [isIt ? 'Marcatura' : 'Marking', scenario.marc],
-                [isIt ? 'Contrasti' : 'Tackling', scenario.cont],
-                [isIt ? 'Contropiede' : 'Counter', scenario.ctrl],
-                [isIt ? 'Fuorigioco' : 'Offside', scenario.fuo],
-              ].map(([k, v]) => (
-                <View key={k} style={styles.gridRow}>
-                  <Text style={styles.gridK}>{k}</Text>
-                  <Text style={styles.gridV}>{v}</Text>
-                </View>
-              ))}
+            <View style={styles.phaseBlock}>
+              <Text style={styles.phaseHeader}>{isIt ? '⚽ IN POSSESSO' : '⚽ IN POSSESSION'}</Text>
+              <View style={styles.grid}>
+                {[
+                  [isIt ? 'Tendenza tiro' : 'Shooting', scenario.tend_tiro || 'Normale'],
+                  [isIt ? 'Stile passaggi' : 'Passing style', scenario.stile_pass || scenario.stile],
+                  [isIt ? 'Tipo di passaggi' : 'Passing type', scenario.tipo_pass || scenario.pass],
+                  [isIt ? 'Tendenza cross' : 'Crossing', scenario.tend_cross || 'Normale'],
+                ].map(([k, v]) => (
+                  <View key={k} style={styles.gridRow}>
+                    <Text style={styles.gridK}>{k}</Text>
+                    <Text style={styles.gridV}>{v}</Text>
+                  </View>
+                ))}
+              </View>
+            </View>
+
+            <View style={styles.phaseBlock}>
+              <Text style={styles.phaseHeader}>{isIt ? '🔄 IN TRANSIZIONE' : '🔄 IN TRANSITION'}</Text>
+              <View style={styles.grid}>
+                {[
+                  [isIt ? 'Possesso perso' : 'Lost possession', scenario.poss_perso || 'Riaggressione'],
+                  [isIt ? 'Possesso ottenuto' : 'Won possession', scenario.poss_ottenuto || (scenario.ctrl === 'SI' ? 'Contropiede' : 'Concentr. azioni')],
+                  [isIt ? 'Mentalità' : 'Mentality', scenario.men],
+                ].map(([k, v]) => (
+                  <View key={k} style={styles.gridRow}>
+                    <Text style={styles.gridK}>{k}</Text>
+                    <Text style={styles.gridV}>{v}</Text>
+                  </View>
+                ))}
+              </View>
+            </View>
+
+            <View style={styles.phaseBlock}>
+              <Text style={styles.phaseHeader}>{isIt ? '🛡️ NON IN POSSESSO' : '🛡️ OUT OF POSSESSION'}</Text>
+              <View style={styles.grid}>
+                {[
+                  [isIt ? 'Marcatura' : 'Marking', scenario.marc],
+                  ['Pressing', scenario.press],
+                  [isIt ? 'Linea difensiva' : 'Defensive line', scenario.linea_dif || (scenario.fuo === 'SI' ? 'Trapp. fuorig.' : 'Tracc. avvers.')],
+                  [isIt ? 'Contrasti' : 'Tackling', scenario.cont],
+                ].map(([k, v]) => (
+                  <View key={k} style={styles.gridRow}>
+                    <Text style={styles.gridK}>{k}</Text>
+                    <Text style={styles.gridV}>{v}</Text>
+                  </View>
+                ))}
+              </View>
             </View>
             <View style={styles.tipBox}><Text style={styles.tipText}>{scenario.w}</Text></View>
             <TouchableOpacity style={styles.restartBtn} onPress={reset} activeOpacity={0.8}>
@@ -205,7 +237,9 @@ const styles = StyleSheet.create({
   formationName: { color: NothingTheme.colors.textPrimary, fontSize: 26, fontWeight: '700', letterSpacing: 1 },
   altName: { color: NothingTheme.colors.textTertiary, fontSize: 12, marginTop: 6 },
   pitchWrap: { marginBottom: 16 },
-  grid: { backgroundColor: NothingTheme.colors.surface, borderRadius: 8, borderWidth: 1, borderColor: NothingTheme.colors.border, overflow: 'hidden', marginBottom: 16 },
+  phaseBlock: { marginBottom: 16 },
+  phaseHeader: { color: NothingTheme.colors.textPrimary, fontSize: 13, fontWeight: '700', marginBottom: 8 },
+  grid: { backgroundColor: NothingTheme.colors.surface, borderRadius: 8, borderWidth: 1, borderColor: NothingTheme.colors.border, overflow: 'hidden' },
   gridRow: { flexDirection: 'row', justifyContent: 'space-between', padding: 14, borderBottomWidth: 1, borderBottomColor: NothingTheme.colors.border },
   gridK: { color: NothingTheme.colors.textTertiary, fontSize: 12 },
   gridV: { color: NothingTheme.colors.textPrimary, fontSize: 12, fontWeight: '600' },
