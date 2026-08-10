@@ -31562,6 +31562,64 @@ GAME_GUIDE = [
         ],
         'source_en': 'NotebookLM notebook Top Eleven 2026 (7b0eba98) + GamingOnPhone counter guide + app COUNTER_ENGINE notes',
         'source_it': "Notebook NotebookLM Top Eleven 2026 (7b0eba98) + guida counter GamingOnPhone + note COUNTER_ENGINE dell'app"
+    },
+    {
+        'id': 'gg-tiers-ovr',
+        'order': 19,
+        'category_en': 'Player Tiers & OVR',
+        'category_it': 'Player Tiers e OVR',
+        'icon': 'ribbon-outline',
+        'summary_en': "Since late 2025, every player has an OVR made of two layers: stars (base quality, can drop on league promotion) plus a Tier (permanent bonus that never decays). The Tier is the one number worth protecting.",
+        'summary_it': "Da fine 2025 ogni giocatore ha un OVR composto da due livelli: le stelle (qualità base, possono scendere con la promozione di lega) più un Tier (bonus permanente che non si deteriora mai). Il Tier è il numero che vale davvero la pena proteggere.",
+        'bullets_en': [
+            '6 Tiers in sequence, each unlocked only after the previous one: Rare (+10 to key attributes), Elite (+30), Stellar (+50), Master (+80), Epic (+120), Legendary (+160)',
+            'Tiers are earned with Tier Points, collected mostly via seasonal events and the Tier Drop Ball',
+            'Stars can fall when you get promoted to a tougher league; the Tier bonus never does — it is your permanent floor',
+            'Lineup OVR (average star+Tier quality of your starting 11) feeds into Lineup Balance: chasing Tiers on your key 5 roles (GK-DC-DMC-AMC-ST) raises the floor without breaking balance',
+            "Don't chase Tiers on backups before your starters: the permanent bonus is wasted on a bench player"
+        ],
+        'bullets_it': [
+            'I 6 Tier vanno sbloccati in sequenza, uno dopo l\'altro: Rare (+10 agli attributi chiave), Elite (+30), Stellar (+50), Master (+80), Epic (+120), Legendary (+160)',
+            'Si ottengono con i Tier Points, raccolti soprattutto con eventi stagionali e il Tier Drop Ball',
+            'Le stelle possono scendere quando sali di lega; il bonus Tier no — è il tuo pavimento permanente',
+            "Il Lineup OVR (qualità media stelle+Tier degli 11 titolari) alimenta il Lineup Balance: punta i Tier sui 5 ruoli chiave (GK-DC-DMC-AMC-ST) per alzare il pavimento senza rompere l'equilibrio",
+            "Non sprecare Tier sulle riserve prima dei titolari: il bonus permanente su un giocatore in panchina è tempo perso"
+        ],
+        'table_en': [
+            {'label': 'Rare -> Legendary', 'value': '+10 / +30 / +50 / +80 / +120 / +160 to key attributes, cumulative and permanent'},
+            {'label': 'How to unlock', 'value': 'Tier Points from seasonal events + Tier Drop Ball; sequential, no skipping'},
+            {'label': 'Replaces stars?', 'value': 'No — it stacks on top of stars, does not replace them'},
+        ],
+        'table_it': [
+            {'label': 'Rare -> Legendary', 'value': '+10 / +30 / +50 / +80 / +120 / +160 agli attributi chiave, cumulativo e permanente'},
+            {'label': 'Come si sblocca', 'value': 'Tier Points da eventi stagionali + Tier Drop Ball; in sequenza, senza saltare livelli'},
+            {'label': 'Sostituisce le stelle?', 'value': 'No — si somma alle stelle, non le sostituisce'},
+        ],
+        'source_en': "Nordeus Help Center — 'OVR explained' and 'Player Tiers explained' (official FAQ, nordeus.helpshift.com), topeleven.com/player-tiers-ovr",
+        'source_it': "Nordeus Help Center — 'OVR explained' e 'Player Tiers explained' (FAQ ufficiale, nordeus.helpshift.com), topeleven.com/player-tiers-ovr"
+    },
+    {
+        'id': 'gg-fan-loyalty',
+        'order': 20,
+        'category_en': 'Campus & Fan Loyalty',
+        'category_it': 'Campus e Fan Loyalty',
+        'icon': 'home-outline',
+        'summary_en': "The club-building revamp (stadium personalization + Fan Loyalty) ties your fans' mood directly to matchday performance — it is not just cosmetic.",
+        'summary_it': "Il rinnovo della gestione club (personalizzazione stadio + Fan Loyalty) lega l'umore dei tifosi direttamente alle prestazioni in campo — non è solo estetica.",
+        'bullets_en': [
+            'Fan Loyalty rises and falls with results and performance, not just attendance',
+            'Low Fan Loyalty pressures stadium income and daily bonuses; treat it like morale, not decoration',
+            'Stadium personalization is part of Campus: oversizing your stadium for your fanbase still hurts income (see the stadium-sizing tip)',
+            'Consistent competitive results are the cheapest way to keep Fan Loyalty — better than any one-off purchase'
+        ],
+        'bullets_it': [
+            'La Fan Loyalty sale e scende con i risultati e le prestazioni, non solo con la presenza allo stadio',
+            'Fan Loyalty basso pesa su incassi stadio e bonus quotidiani: trattala come il morale, non come un orpello estetico',
+            'La personalizzazione stadio fa parte del Campus: uno stadio sovradimensionato per il tuo bacino di tifosi penalizza comunque gli incassi (vedi il consiglio sulla misura giusta dello stadio)',
+            'Risultati competitivi costanti sono il modo più economico per tenere alta la Fan Loyalty — meglio di qualsiasi acquisto singolo'
+        ],
+        'source_en': "Nordeus/Zynga press releases on the 2025 club-building update (zynga.com/corporate, nordeus.com/press-releases)",
+        'source_it': "Comunicati Nordeus/Zynga sull'aggiornamento gestione club 2025 (zynga.com/corporate, nordeus.com/press-releases)"
     }
 ]
 
@@ -32185,8 +32243,8 @@ SCOUT_TIPS = [
         'category': 'economy',
         'title_en': 'Right Stadium Size',
         'title_it': 'Stadio della Misura Giusta',
-        'content_en': "Don't over-grow your stadium. A fully-filled 35,000-seat stadium gives more income (and fan boost) than a half-empty 60,000-seat one.",
-        'content_it': 'Non sovradimensionare lo stadio. Uno stadio da 35.000 posti sempre pieno rende più (anche in bonus tifo) di uno da 60.000 sempre mezzo vuoto.'
+        'content_en': "Don't over-grow your stadium. A fully-filled 35,000-seat stadium gives more income (and Fan Loyalty boost) than a half-empty 60,000-seat one — since Campus, an empty stadium hurts Fan Loyalty too, not just income.",
+        'content_it': "Non sovradimensionare lo stadio. Uno stadio da 35.000 posti sempre pieno rende più (anche in bonus Fan Loyalty) di uno da 60.000 sempre mezzo vuoto — da quando c'è il Campus, uno stadio vuoto penalizza anche la Fan Loyalty, non solo gli incassi."
     },
     {
         'id': '65',

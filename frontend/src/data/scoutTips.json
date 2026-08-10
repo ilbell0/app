@@ -460,8 +460,8 @@
     "category": "economy",
     "title_en": "Right Stadium Size",
     "title_it": "Stadio della Misura Giusta",
-    "content_en": "Don't over-grow your stadium. A fully-filled 35,000-seat stadium gives more income (and fan boost) than a half-empty 60,000-seat one.",
-    "content_it": "Non sovradimensionare lo stadio. Uno stadio da 35.000 posti sempre pieno rende più (anche in bonus tifo) di uno da 60.000 sempre mezzo vuoto."
+    "content_en": "Don't over-grow your stadium. A fully-filled 35,000-seat stadium gives more income (and Fan Loyalty boost) than a half-empty 60,000-seat one — since Campus, an empty stadium hurts Fan Loyalty too, not just income.",
+    "content_it": "Non sovradimensionare lo stadio. Uno stadio da 35.000 posti sempre pieno rende più (anche in bonus Fan Loyalty) di uno da 60.000 sempre mezzo vuoto — da quando c'è il Campus, uno stadio vuoto penalizza anche la Fan Loyalty, non solo gli incassi."
   },
   {
     "id": "65",
