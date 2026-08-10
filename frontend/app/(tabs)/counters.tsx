@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { useLocalSearchParams } from 'expo-router';
 import {
   View,
   Text,
@@ -66,6 +67,8 @@ type ScenarioLevel = 'forte' | 'pari' | 'debole';
 export default function CountersScreen() {
   const insets = useSafeAreaInsets();
   const { language } = useLanguage();
+  const { counterAv, counterLevel } = useLocalSearchParams<{ counterAv?: string; counterLevel?: ScenarioLevel }>();
+  const handledCounter = useRef<string | null>(null);
   const [counterEngine, setCounterEngine] = useState<CounterEngine[]>([]);
   const [selectedFormation, setSelectedFormation] = useState<CounterEngine | null>(null);
   const [selectedLevel, setSelectedLevel] = useState<ScenarioLevel>('pari');
@@ -73,7 +76,6 @@ export default function CountersScreen() {
   const [modalVisible, setModalVisible] = useState(false);
   const [searchCategory, setSearchCategory] = useState<string>('all');
   const [search, setSearch] = useState('');
-  const [showAlt, setShowAlt] = useState(false);
   const [fadeAnim] = useState(new Animated.Value(0));
 
   useEffect(() => {
@@ -135,17 +137,30 @@ export default function CountersScreen() {
   const openModal = (formation: CounterEngine) => {
     setSelectedFormation(formation);
     setSelectedLevel('pari');
-    setShowAlt(false);
     setModalVisible(true);
   };
 
+  useEffect(() => {
+    if (!counterAv || !counterLevel || loading) return;
+    const key = `${counterAv}:${counterLevel}`;
+    if (handledCounter.current === key) return;
+    const formation = counterEngine.find((entry) => entry.av === counterAv);
+    if (!formation || !formation[counterLevel]) return;
+    handledCounter.current = key;
+    setSelectedFormation(formation);
+    setSelectedLevel(counterLevel);
+    setModalVisible(true);
+  }, [counterAv, counterEngine, counterLevel, loading]);
+
   const currentScenario = selectedFormation?.[selectedLevel];
-  // modulo/frecce attivi: principale o alternativa, in base alla selezione
+  // Le tre fasi sono condivise; mini-campo e frecce restano specifici per variante.
   const hasAlt = !!currentScenario && !!currentScenario.alt && currentScenario.alt !== currentScenario.mod;
-  const activeMod = currentScenario ? (showAlt && hasAlt ? currentScenario.alt : currentScenario.mod) : '';
-  const activeFr = currentScenario
-    ? (showAlt && hasAlt ? (currentScenario.alt_fr || currentScenario.fr) : currentScenario.fr)
-    : {};
+  const variants = currentScenario ? [
+    { label: language === 'it' ? 'PRINCIPALE' : 'MAIN', mod: currentScenario.mod, arrows: currentScenario.fr },
+    ...(hasAlt ? [{ label: language === 'it' ? 'ALTERNATIVA' : 'ALTERNATIVE', mod: currentScenario.alt, arrows: currentScenario.alt_fr || currentScenario.fr }] : []),
+  ] : [];
+  const activeMod = variants[0]?.mod || '';
+  const activeFr = variants[0]?.arrows || {};
 
   if (loading) {
     return (
@@ -287,7 +302,7 @@ export default function CountersScreen() {
                     styles.levelTab,
                     selectedLevel === level && styles.levelTabActive,
                   ]}
-                  onPress={() => { setSelectedLevel(level); setShowAlt(false); }}
+                  onPress={() => setSelectedLevel(level)}
                 >
                   <Text style={[
                     styles.levelTabText,
@@ -345,51 +360,34 @@ export default function CountersScreen() {
                     </View>
                   )}
 
-                  {/* Recommended Formation + alternativa selezionabile */}
+                  {/* Ogni variante ha campo e frecce proprie. */}
                   <View style={styles.recommendedSection}>
                     <Text style={styles.sectionLabel}>
-                      {language === 'it' ? 'FORMAZIONE' : 'FORMATION'}
+                      {language === 'it' ? 'MODULI CONSIGLIATI' : 'RECOMMENDED FORMATIONS'}
                     </Text>
-                    {hasAlt ? (
-                      <View style={styles.modSwitch}>
-                        <TouchableOpacity
-                          style={[styles.modSwitchBtn, !showAlt && styles.modSwitchBtnActive]}
-                          onPress={() => setShowAlt(false)}
-                          activeOpacity={0.7}
-                        >
-                          <Text style={[styles.modSwitchLabel, !showAlt && styles.modSwitchLabelActive]}>
-                            {language === 'it' ? 'PRINCIPALE' : 'MAIN'}
-                          </Text>
-                          <Text style={[styles.modSwitchName, !showAlt && styles.modSwitchNameActive]}>
-                            {currentScenario.mod}
-                          </Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity
-                          style={[styles.modSwitchBtn, showAlt && styles.modSwitchBtnActive]}
-                          onPress={() => setShowAlt(true)}
-                          activeOpacity={0.7}
-                        >
-                          <Text style={[styles.modSwitchLabel, showAlt && styles.modSwitchLabelActive]}>
-                            {language === 'it' ? 'ALTERNATIVA' : 'ALTERNATIVE'}
-                          </Text>
-                          <Text style={[styles.modSwitchName, showAlt && styles.modSwitchNameActive]}>
-                            {currentScenario.alt}
-                          </Text>
-                        </TouchableOpacity>
-                      </View>
-                    ) : (
-                      <View style={styles.formationBox}>
-                        <Text style={styles.recommendedFormation}>{currentScenario.mod}</Text>
-                      </View>
-                    )}
+                    <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.variantCards}>
+                      {variants.map((variant) => (
+                        <View key={variant.label} style={styles.variantCard}>
+                          <Text style={styles.variantLabel}>{variant.label}</Text>
+                          <Text style={styles.variantName}>{variant.mod}</Text>
+                          {POSITIONS[variant.mod] && (
+                            <View style={styles.variantPitch}>
+                              <PitchDiagram positions={POSITIONS[variant.mod]} arrows={variant.arrows} />
+                            </View>
+                          )}
+                          <Text style={styles.variantArrowsLabel}>{language === 'it' ? 'FRECCE' : 'ARROWS'}</Text>
+                          <View style={styles.variantArrows}>
+                            {Object.entries(variant.arrows).map(([position, arrow]) => (
+                              <View key={position} style={styles.variantArrowItem}>
+                                <Text style={styles.positionLabel}>{position}</Text>
+                                <Text style={[styles.arrowIcon, { color: getArrowColor(arrow) }]}>{arrow}</Text>
+                              </View>
+                            ))}
+                          </View>
+                        </View>
+                      ))}
+                    </ScrollView>
                   </View>
-
-                  {/* Mini-campo del modulo attivo (principale o alternativa) */}
-                  {POSITIONS[activeMod] && (
-                    <View style={styles.pitchSection}>
-                      <PitchDiagram positions={POSITIONS[activeMod]} arrows={activeFr} />
-                    </View>
-                  )}
 
                   {/* Tactical Settings Grid - 3 Fasi */}
                   <View style={styles.tacticsSection}>
@@ -807,6 +805,57 @@ const styles = StyleSheet.create({
   },
   recommendedSection: {
     marginBottom: 24,
+  },
+  variantCards: {
+    gap: 12,
+    paddingRight: 24,
+  },
+  variantCard: {
+    width: 280,
+    backgroundColor: NothingTheme.colors.surface,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+    padding: 16,
+  },
+  variantLabel: {
+    color: NothingTheme.colors.accent,
+    fontSize: 10,
+    fontWeight: '700',
+    letterSpacing: 1.5,
+    marginBottom: 6,
+  },
+  variantName: {
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 18,
+    fontWeight: '700',
+    letterSpacing: 0.5,
+    marginBottom: 12,
+  },
+  variantPitch: {
+    marginBottom: 14,
+  },
+  variantArrowsLabel: {
+    color: NothingTheme.colors.textTertiary,
+    fontSize: 10,
+    fontWeight: '700',
+    letterSpacing: 1.5,
+    marginBottom: 8,
+  },
+  variantArrows: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 6,
+  },
+  variantArrowItem: {
+    alignItems: 'center',
+    backgroundColor: NothingTheme.colors.background,
+    borderRadius: 6,
+    paddingHorizontal: 8,
+    paddingVertical: 6,
+    minWidth: 48,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
   },
   formationBox: {
     backgroundColor: NothingTheme.colors.surface,

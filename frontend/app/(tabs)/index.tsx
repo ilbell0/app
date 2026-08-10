@@ -205,7 +205,13 @@ export default function HomeScreen() {
         </View>
       </ScrollView>
 
-      <CounterWizard visible={wizardVisible} onClose={() => setWizardVisible(false)} />
+      <CounterWizard
+        visible={wizardVisible}
+        onClose={() => setWizardVisible(false)}
+        onOpenCounter={(counterAv, counterLevel) => {
+          router.push({ pathname: '/(tabs)/counters', params: { counterAv, counterLevel } });
+        }}
+      />
       <CompareModal visible={compareVisible} onClose={() => setCompareVisible(false)} />
     </View>
   );

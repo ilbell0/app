@@ -15,10 +15,11 @@ type Level = 'forte' | 'pari' | 'debole';
 interface Props {
   visible: boolean;
   onClose: () => void;
+  onOpenCounter: (opponent: string, level: Level) => void;
 }
 
 /** Flusso guidato: avversario -> livello rosa -> setup completo del counter. */
-export default function CounterWizard({ visible, onClose }: Props) {
+export default function CounterWizard({ visible, onClose, onOpenCounter }: Props) {
   const insets = useSafeAreaInsets();
   const { language } = useLanguage();
   const isIt = language === 'it';
@@ -29,6 +30,12 @@ export default function CounterWizard({ visible, onClose }: Props) {
 
   const reset = () => { setStep(1); setSearch(''); setAv(null); setLevel(null); };
   const close = () => { reset(); onClose(); };
+  const openCounterCard = () => {
+    if (!av || !level) return;
+    const opponent = av.av;
+    close();
+    onOpenCounter(opponent, level);
+  };
 
   const qDigits = search.replace(/\D/g, '');
   const list = useMemo(() => {
@@ -193,6 +200,12 @@ export default function CounterWizard({ visible, onClose }: Props) {
               </View>
             </View>
             <View style={styles.tipBox}><Text style={styles.tipText}>{scenario.w}</Text></View>
+            <TouchableOpacity style={styles.openCounterBtn} onPress={openCounterCard} activeOpacity={0.8}>
+              <Ionicons name="open-outline" size={16} color={NothingTheme.colors.background} />
+              <Text style={styles.openCounterText}>
+                {isIt ? 'APRI SCHEDA COUNTER COMPLETA' : 'OPEN FULL COUNTER CARD'}
+              </Text>
+            </TouchableOpacity>
             <TouchableOpacity style={styles.restartBtn} onPress={reset} activeOpacity={0.8}>
               <Ionicons name="refresh" size={16} color={NothingTheme.colors.accent} />
               <Text style={styles.restartText}>{isIt ? 'NUOVA RICERCA' : 'NEW SEARCH'}</Text>
@@ -245,6 +258,8 @@ const styles = StyleSheet.create({
   gridV: { color: NothingTheme.colors.textPrimary, fontSize: 12, fontWeight: '600' },
   tipBox: { backgroundColor: NothingTheme.colors.surface, borderRadius: 8, padding: 16, borderWidth: 1, borderColor: NothingTheme.colors.border, borderLeftWidth: 3, borderLeftColor: NothingTheme.colors.accent, marginBottom: 20 },
   tipText: { color: NothingTheme.colors.textSecondary, fontSize: 13, lineHeight: 20 },
+  openCounterBtn: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8, padding: 14, borderRadius: 8, backgroundColor: NothingTheme.colors.accent, marginBottom: 10 },
+  openCounterText: { color: NothingTheme.colors.background, fontSize: 12, fontWeight: '700', letterSpacing: 1 },
   restartBtn: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8, padding: 14, borderRadius: 8, borderWidth: 1, borderColor: NothingTheme.colors.accent },
   restartText: { color: NothingTheme.colors.accent, fontSize: 12, fontWeight: '700', letterSpacing: 1 },
 });
