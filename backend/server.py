@@ -19082,28 +19082,29 @@ COUNTER_ENGINE = [
             'linea_dif': 'Tracc. avvers.'
         },
         'pari': {
-            'mod': '5-1DMC-2-2',
-            'alt': '3-1-4-1-1',
+            'mod': '4-4-1-1',
+            'alt': '5-1DMC-2-2',
             'men': 'Normale',
             'press': 'Basso',
             'cont': 'Normale',
             'marc': 'Zona',
             'fr': {
-                'DMC': '↓',
-                'DR': '—',
-                'AML': '↑',
-                'AMR': '↑',
-                'ST': '—',
-                'DL': '—'
-            },
-            'w': "Counter standard (fonte): 5-1DMC-2-2, la difesa a 5 con mediano scherma l'AMC e le fasce",
-            'alt_fr': {
-                'DMC': '↓',
                 'MC': '—',
-                'ML': '↑',
                 'AMC': '—',
-                'MR': '↑',
-                'ST': '—'
+                'DR': '—',
+                'ST': '—',
+                'DL': '—',
+                'ML': '↑',
+                'MR': '↑'
+            },
+            'w': "Fonte (tabella counter storica): il 4-4-1-1 tiene le fasce e marca l'AMC avversario",
+            'alt_fr': {
+                'AML': '↑',
+                'DR': '—',
+                'DMC': '↓',
+                'DL': '—',
+                'ST': '—',
+                'AMR': '↑'
             },
             'tend_tiro': 'Normale',
             'stile_pass': 'Misto',
@@ -26380,21 +26381,21 @@ COUNTER_ENGINE = [
             'cont': 'Normale',
             'marc': 'Zona',
             'fr': {
-                'DMC': '↓',
+                'MC': '—',
                 'DR': '—',
-                'MC': '—',
-                'ML': '↑',
-                'MR': '↑',
                 'ST': '—',
-                'DL': '—'
-            },
-            'w': 'Counter standard (fonte): 4-1-4-1, schermo e densità per isolare le 3 punte',
-            'alt_fr': {
                 'DMC': '↓',
-                'MC': '—',
+                'DL': '—',
                 'ML': '↑',
-                'MR': '↑',
-                'ST': '—'
+                'MR': '↑'
+            },
+            'w': 'Fonte (tabella counter storica): il 4-1-4-1 isola le 3 punte col DMC e 4 MC',
+            'alt_fr': {
+                'MC': '—',
+                'ST': '—',
+                'DMC': '↓',
+                'ML': '↑',
+                'MR': '↑'
             },
             'tend_tiro': 'Normale',
             'stile_pass': 'Misto',
@@ -26825,26 +26826,28 @@ COUNTER_ENGINE = [
             'linea_dif': 'Tracc. avvers.'
         },
         'pari': {
-            'mod': '3-2-2-2-1 B (Butterfly)',
-            'alt': '3-1-3-2W-1',
+            'mod': '4-1-4-1',
+            'alt': '3-2-2-2-1 B (Butterfly)',
             'men': 'Normale',
             'press': 'Basso',
             'cont': 'Normale',
             'marc': 'Zona',
             'fr': {
-                'DMC': '↓',
                 'MC': '—',
-                'AML': '↑',
-                'AMR': '↑',
-                'ST': '—'
+                'DR': '—',
+                'ST': '—',
+                'DMC': '↓',
+                'DL': '—',
+                'ML': '↑',
+                'MR': '↑'
             },
-            'w': 'Counter standard (fonte): 3-2-2-2-1 B (Butterfly), movimenti asimmetrici contro il doppio schermo',
+            'w': 'Fonte (tabella counter storica): il 4-1-4-1 copre le fasce e schermai il trequartista',
             'alt_fr': {
-                'DMC': '↓',
                 'MC': '—',
                 'AML': '↑',
-                'AMR': '↑',
-                'ST': '—'
+                'DMC': '↓',
+                'ST': '—',
+                'AMR': '↑'
             },
             'tend_tiro': 'Normale',
             'stile_pass': 'Misto',
@@ -28928,14 +28931,14 @@ COUNTER_QUICK = [
         'av': '4-1-3W-1-1',
         'cat': 'neu',
         'off': '3-1-4-1-1',
-        'neu': '5-1DMC-2-2',
+        'neu': '4-4-1-1',
         'dif': '4-4-1-1'
     },
     {
         'av': '4-2(DMC)-3W-1',
         'cat': 'neu',
         'off': '3-1-3-2W-1',
-        'neu': '3-2-2-2-1 B (Butterfly)',
+        'neu': '4-1-4-1',
         'dif': '4-1-4-1'
     },
     {
@@ -29306,7 +29309,7 @@ MATCHUP_MATRIX = [
         'opponent': '4-1-3W-1-1',
         'category': 'neu',
         'counter_offensive': '3-1-4-1-1',
-        'counter_neutral': '5-1DMC-2-2',
+        'counter_neutral': '4-4-1-1',
         'counter_defensive': '4-4-1-1'
     },
     {
@@ -29789,7 +29792,7 @@ MATCHUP_MATRIX = [
         'opponent': '4-2(DMC)-3W-1',
         'category': 'neu',
         'counter_offensive': '3-1-3-2W-1',
-        'counter_neutral': '3-2-2-2-1 B (Butterfly)',
+        'counter_neutral': '4-1-4-1',
         'counter_defensive': '4-1-4-1'
     },
     {
