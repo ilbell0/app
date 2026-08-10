@@ -35,6 +35,13 @@ interface CounterScenario {
   fr: Record<string, string>;
   alt_fr?: Record<string, string>;
   w: string;
+  tend_tiro?: string;
+  stile_pass?: string;
+  tipo_pass?: string;
+  tend_cross?: string;
+  poss_perso?: string;
+  poss_ottenuto?: string;
+  linea_dif?: string;
 }
 
 interface CoachBrief {
@@ -871,6 +878,15 @@ const styles = StyleSheet.create({
   },
   tacticsSection: {
     marginBottom: 24,
+  },
+  phaseBlock: {
+    marginBottom: 16,
+  },
+  phaseHeader: {
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 13,
+    fontWeight: '700',
+    marginBottom: 8,
   },
   tacticsGrid: {
     backgroundColor: NothingTheme.colors.surface,
