@@ -120,14 +120,6 @@
     "content_it": "Gioca calcio di contropiede. Sii forte numericamente in difesa. Marca tutti gli attaccanti avversari. Gioca palle lunghe per contropiedi - non provare a superare centrocampisti più forti. Lasciali attaccare, poi colpisci!"
   },
   {
-    "id": "16",
-    "category": "general",
-    "title_en": "Pre-Match Preparation",
-    "title_it": "Preparazione Pre-Partita",
-    "content_en": "Always provide full Morale Boost and Fitness Condition before important matches. Add friends in Top Eleven - they help you get more possession during matches! Review opponent's formation and adjust tactics.",
-    "content_it": "Fornisci sempre Morale e Condizione al massimo prima di partite importanti. Aggiungi amici in Top Eleven - ti aiutano ad avere più possesso! Rivedi la formazione avversaria e adatta le tattiche."
-  },
-  {
     "id": "17",
     "category": "counter",
     "title_en": "How to Beat 4-4-2 Classic",
@@ -262,38 +254,6 @@
     "title_it": "Cambi Tattici Rapidi",
     "content_en": "Save up to four different formations in the Team menu for instant tactical switches during the live match. This lets you react to the opponent's moves without wasting precious time or unnecessary substitutions.",
     "content_it": "Salva fino a quattro formazioni diverse nel menu Squadra per effettuare cambi tattici istantanei durante il match live. Questa strategia ti permette di reagire alle mosse dell'avversario senza sprecare tempo prezioso o sostituzioni inutili."
-  },
-  {
-    "id": "34",
-    "category": "morale",
-    "title_en": "Morale Baseline",
-    "title_it": "Baseline del Morale",
-    "content_en": "The 'Good' morale level is now the new baseline and is more impactful than the old 'Superb'. Always check the Morale tab to see if players need more game time or if events like a hat-trick have boosted their state.",
-    "content_it": "Il livello di morale 'Buono' è ora il nuovo standard di base ed è più impattante del vecchio 'Superbo'. Controlla sempre il tab Morale per capire se i giocatori necessitano di più minutaggio o se eventi come una tripletta hanno aumentato il loro stato."
-  },
-  {
-    "id": "35",
-    "category": "morale",
-    "title_en": "Condition & Pressing",
-    "title_it": "Condizione e Pressing",
-    "content_en": "Avoid turning on high pressing too early so you don't drain fitness before the last 10 minutes. Condition that drops too low drastically reduces player effectiveness in the crucial phases of the match.",
-    "content_it": "Evita di attivare il pressing alto troppo presto nel match per non esaurire la condizione fisica prima degli ultimi 10 minuti. Una condizione troppo bassa riduce drasticamente l'efficacia dei giocatori nelle fasi cruciali della partita."
-  },
-  {
-    "id": "36",
-    "category": "morale",
-    "title_en": "Team Balance",
-    "title_it": "Equilibrio di Squadra",
-    "content_en": "Keep your Team Balance score between 9.2 and 10 to ensure the team performs at its peak. Having a single overpowered ('mutant') player can paradoxically lower overall quality and lead to losses against weaker teams.",
-    "content_it": "Mantieni il punteggio di 'Team Balance' tra 9.2 e 10 per garantire che la squadra performi al massimo delle sue potenzialità. Avere un singolo giocatore 'overpowered' (mutante) può paradossalmente abbassare la qualità complessiva e portare a sconfitte contro team più deboli."
-  },
-  {
-    "id": "37",
-    "category": "market",
-    "title_en": "Hunting Fast Trainers",
-    "title_it": "Ricerca Fast Trainers",
-    "content_en": "At auctions, focus on buying 'fast trainers' who grow quickly with training. Following specific lists of these talents lets you build a competitive squad while saving tokens and resources.",
-    "content_it": "Durante le aste, concentrati sull'acquisto di giocatori definiti 'fast trainers' che crescono rapidamente con l'allenamento. Seguire liste specifiche di questi talenti ti permette di costruire una squadra competitiva risparmiando token e risorse."
   },
   {
     "id": "38",
@@ -462,14 +422,6 @@
     "title_it": "Eventi Gratuiti Quotidiani",
     "content_en": "Open the game every day for Draw Frenzy, free packs and rewards. Five minutes of activity equal 2-5 free tokens — over a season that's a serious budget.",
     "content_it": "Apri il gioco ogni giorno per Draw Frenzy, pacchetti gratuiti e ricompense. Cinque minuti di attività valgono 2-5 token gratis — sull'arco della stagione è un budget serio."
-  },
-  {
-    "id": "59",
-    "category": "economy",
-    "title_en": "Auction Ceiling",
-    "title_it": "Tetto in Asta",
-    "content_en": "Set yourself a max-token limit per auction (e.g. 30 tokens for a key role, 15 for a backup). Never go beyond, even in the heat of bidding: tomorrow there's a better one.",
-    "content_it": "Datti un limite massimo di token per ogni asta (es. 30 token per un ruolo chiave, 15 per una riserva). Non superarlo mai, anche nella foga: domani ce n'è uno migliore."
   },
   {
     "id": "60",
