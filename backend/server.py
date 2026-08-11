@@ -31636,14 +31636,14 @@ GAME_GUIDE = [
             'Each Mentor is built on 3 things: a Tactic Boost (bonus tied to a playstyle), an Attribute Boost (flat stat bonus to the player he\'s assigned to), and a Signature Move (special in-match effect)',
             'Mentors level up (10 levels) using Mentor XP earned via Mentor Badges; the Signature Move only unlocks at Level 10, after which 3 further Prestige levels keep growing the bonuses',
             'You can swap your Mentor at half-time during a live match to adapt your tactics to how the game is going',
-            'Pick the Mentor first, then set your in-possession and transition tactics to actually use what he boosts (e.g. short passing + buildup focus for a possession-oriented Mentor)',
+            'Pick the Mentor first, then set your in-possession and transition tactics to actually use what he boosts — see the Mentor spotlight entries below for specific pairings',
             "Also scout the opponent's Mentor before kickoff: it tells you what their tactics are likely built around"
         ],
         'bullets_it': [
             'Ogni Mentore si basa su 3 elementi: un Potenziamento Tattico (bonus legato a uno stile di gioco), un Potenziamento Attributo (bonus fisso alle statistiche del giocatore a cui è assegnato) e una Mossa Speciale (effetto in partita)',
             'I Mentori salgono di livello (10 livelli) con PE Mentore ottenuti dai Distintivi Mentore; la Mossa Speciale si sblocca solo al Livello 10, dopo il quale altri 3 livelli Prestigio continuano a far crescere i bonus',
             'Puoi sostituire il Mentore all\'intervallo durante una partita live, per adattare la tattica a come si sta sviluppando il match',
-            'Scegli prima il Mentore, poi imposta le tattiche di possesso e transizione per usare davvero quello che potenzia (es. passaggio corto + costruzione manovra per un Mentore da possesso)',
+            'Scegli prima il Mentore, poi imposta le tattiche di possesso e transizione per usare davvero quello che potenzia — vedi le schede dedicate ai singoli Mentori per gli abbinamenti specifici',
             "Controlla anche il Mentore dell'avversario prima del match: ti dice su cosa è probabilmente costruita la sua tattica"
         ],
         'source_en': "Top Eleven 2027 tactics guide, YouTube channel Mamun Prefer Gaming (published ~9-10 Aug 2026, days after the v27.0 update)",
