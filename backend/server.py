@@ -31623,6 +31623,29 @@ GAME_GUIDE = [
         ],
         'source_en': "Nordeus/Zynga press releases on the 2025 club-building update (zynga.com/corporate, nordeus.com/press-releases)",
         'source_it': "Comunicati Nordeus/Zynga sull'aggiornamento gestione club 2025 (zynga.com/corporate, nordeus.com/press-releases)"
+    },
+    {
+        'id': 'gg-mentors',
+        'order': 21,
+        'category_en': 'Mentors: build tactics around them',
+        'category_it': 'Mentori: costruisci la tattica intorno a loro',
+        'icon': 'person-circle-outline',
+        'summary_en': "Top Eleven 2027 added real ex-players as Mentors. Each one boosts a specific playstyle — pick your tactics to match your Mentor, not the other way around.",
+        'summary_it': "Top Eleven 2027 ha introdotto i Mentori, ex calciatori reali. Ognuno potenzia uno stile di gioco specifico: scegli la tattica in funzione del Mentore che usi, non il contrario.",
+        'bullets_en': [
+            'Each Mentor grants a passive bonus tied to one style (e.g. a passing-focused Mentor boosts short-passing effectiveness and related attributes) plus a signature in-match effect',
+            'Mentor bonuses scale up over time as you use them, so switching Mentor often resets progress — commit to one that matches your squad',
+            'Pick the Mentor first, then set your in-possession and transition tactics to actually use what he boosts (e.g. short passing + buildup focus for a possession-oriented Mentor)',
+            "Also scout the opponent's Mentor before kickoff: it tells you what their tactics are likely built around"
+        ],
+        'bullets_it': [
+            'Ogni Mentore dà un bonus passivo legato a uno stile specifico (es. un Mentore da possesso potenzia i passaggi corti e attributi collegati) più un effetto speciale in partita',
+            "I bonus del Mentore crescono con l'uso: cambiarlo spesso resetta i progressi — meglio impegnarsi su uno coerente con la rosa",
+            'Scegli prima il Mentore, poi imposta le tattiche di possesso e transizione per usare davvero quello che potenzia (es. passaggio corto + costruzione manovra per un Mentore da possesso)',
+            "Controlla anche il Mentore dell'avversario prima del match: ti dice su cosa è probabilmente costruita la sua tattica"
+        ],
+        'source_en': "Top Eleven 2027 tactics guide, YouTube channel Mamun Prefer Gaming (published ~9-10 Aug 2026, days after the v27.0 update)",
+        'source_it': "Guida tattica Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~9-10 ago 2026, giorni dopo l'update v27.0)"
     }
 ]
 
