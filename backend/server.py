@@ -31633,21 +31633,23 @@ GAME_GUIDE = [
         'summary_en': "Top Eleven 2027 added real ex-players as Mentors. Each one boosts a specific playstyle — pick your tactics to match your Mentor, not the other way around.",
         'summary_it': "Top Eleven 2027 ha introdotto i Mentori, ex calciatori reali. Ognuno potenzia uno stile di gioco specifico: scegli la tattica in funzione del Mentore che usi, non il contrario.",
         'bullets_en': [
-            'Each Mentor is built on 3 things: a Tactic Boost (bonus tied to a playstyle), an Attribute Boost (flat stat bonus to the player he\'s assigned to), and a Signature Move (special in-match effect)',
-            'Mentors level up (10 levels) using Mentor XP earned via Mentor Badges; the Signature Move only unlocks at Level 10, after which 3 further Prestige levels keep growing the bonuses',
-            'You can swap your Mentor at half-time during a live match to adapt your tactics to how the game is going',
-            'Pick the Mentor first, then set your in-possession and transition tactics to actually use what he boosts — see the Mentor spotlight entries below for specific pairings',
+            'Recruiting costs a Mentor Badge per attempt: earned occasionally through other game features, or bought for 10 tokens each',
+            'Progression per Mentor: Lv.1-5 unlocks the Tactic Boost, Lv.5-10 unlocks the Attribute Boost, Lv.10 unlocks the Signature Move; beyond Lv.10 there are 3 Prestige levels that keep upgrading the Signature Move using Signature Seals',
+            'Mentor XP is earned by fielding him in official matches (friendlies don\'t count): a win gives the most XP, a draw a medium amount, a loss less — every Mentor you rotate through your games earns XP, so alternating several at once lets them all progress',
+            'Mentor contracts are temporary — he leaves the club after a while, so don\'t sit on a recruited Mentor unused: play him in official matches to bank levels before he\'s gone',
+            'You can swap Mentor at half-time to react to how the match is going (e.g. start possession-oriented, switch to a defensive Mentor to protect a lead) — see the spotlight entries below for what each one actually does',
             "Also scout the opponent's Mentor before kickoff: it tells you what their tactics are likely built around"
         ],
         'bullets_it': [
-            'Ogni Mentore si basa su 3 elementi: un Potenziamento Tattico (bonus legato a uno stile di gioco), un Potenziamento Attributo (bonus fisso alle statistiche del giocatore a cui è assegnato) e una Mossa Speciale (effetto in partita)',
-            'I Mentori salgono di livello (10 livelli) con PE Mentore ottenuti dai Distintivi Mentore; la Mossa Speciale si sblocca solo al Livello 10, dopo il quale altri 3 livelli Prestigio continuano a far crescere i bonus',
-            'Puoi sostituire il Mentore all\'intervallo durante una partita live, per adattare la tattica a come si sta sviluppando il match',
-            'Scegli prima il Mentore, poi imposta le tattiche di possesso e transizione per usare davvero quello che potenzia — vedi le schede dedicate ai singoli Mentori per gli abbinamenti specifici',
+            'Il reclutamento costa un Distintivo Mentore a tentativo: si ottiene di tanto in tanto da altre funzionalità di gioco, oppure si compra a 10 token ciascuno',
+            'Progressione per Mentore: Lv.1-5 sblocca il Potenziamento Tattico, Lv.5-10 sblocca il Potenziamento Attributo, Lv.10 sblocca la Mossa Speciale; oltre il Lv.10 ci sono 3 livelli Prestigio che continuano a potenziare la Mossa Speciale usando i Sigilli Speciali',
+            'I PE Mentore si guadagnano facendolo giocare in partite ufficiali (le amichevoli non contano): vittoria = tanti PE, pareggio = PE medi, sconfitta = meno PE — ogni Mentore che ruoti nelle partite guadagna PE, quindi alternarne più di uno li fa progredire tutti insieme',
+            'I contratti dei Mentori sono temporanei — se ne vanno dal club dopo un po\', quindi non tenerne uno reclutato inutilizzato: fallo giocare in partite ufficiali per accumulare livelli prima che scada',
+            'Puoi sostituire il Mentore all\'intervallo per reagire a come si sta sviluppando il match (es. partire orientato al possesso, passare a un Mentore difensivo per blindare un vantaggio) — vedi le schede dedicate sotto per cosa fa davvero ciascuno',
             "Controlla anche il Mentore dell'avversario prima del match: ti dice su cosa è probabilmente costruita la sua tattica"
         ],
-        'source_en': "Top Eleven 2027 tactics guide, YouTube channel Mamun Prefer Gaming (published ~9-10 Aug 2026, days after the v27.0 update)",
-        'source_it': "Guida tattica Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~9-10 ago 2026, giorni dopo l'update v27.0)"
+        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026, days after the v27.0 update)",
+        'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026, giorni dopo l'update v27.0)"
     },
     {
         'id': 'gg-mentor-fabregas',
@@ -31655,24 +31657,162 @@ GAME_GUIDE = [
         'category_en': "Mentor spotlight: Cesc Fàbregas 'The Architect'",
         'category_it': "Mentore in dettaglio: Cesc Fàbregas 'The Architect'",
         'icon': 'person-outline',
-        'summary_en': "The only Mentor with confirmed numbers so far: a short-passing specialist. Pair him with a possession tactic, not a direct/long-ball one.",
-        'summary_it': "Il solo Mentore con numeri confermati finora: uno specialista del passaggio corto. Abbinalo a una tattica di possesso, non a una diretta/palla lunga.",
+        'summary_en': "For control-and-possession managers built around short passing. Pair him with a possession tactic, not a direct/long-ball one.",
+        'summary_it': "Per chi gioca a controllo e possesso basato sui passaggi corti. Abbinalo a una tattica di possesso, non a una diretta/palla lunga.",
         'bullets_en': [
-            'Passive bonus: short-passing effectiveness +20% at introduction, rising toward +25% with use',
-            'Also grants +5 dribbling and +5 shooting to your players while assigned',
-            'Signature effect: each successful pass makes the next pass harder for the opponent to intercept — rewards patient buildup, not hurried long balls',
+            'Tactic Boost (Lv.1-5): improves short-passing effectiveness',
+            'Attribute Boost (Lv.5): +5 Dribbling and +5 Shooting to the assigned player',
+            'Signature Move (Lv.10): each successful pass makes the next one harder for the opponent to intercept — the longer the passing sequence, the more dangerous the move becomes',
             'Recommended tactical pairing: In Possession — short passing style; In Transition — buildup focus when winning the ball back, not counterattack',
-            "Other Mentors have a confirmed specialty but no exact numbers yet: Alan Shearer boosts strikers' finishing, Claude Makélélé boosts ball-winning (a defensive-transition shield in front of the back line), Nemanja Vidić boosts anchoring the back line"
+            'Not a fit for a counterattacking or long-ball setup — for that see Ruben Herrera or Jonas Brown instead'
         ],
         'bullets_it': [
-            'Bonus passivo: efficacia dei passaggi corti +20% all\'introduzione, in crescita verso il +25% con l\'uso',
-            'Dà anche +5 dribbling e +5 tiro ai giocatori mentre è assegnato',
-            'Effetto speciale: ogni passaggio riuscito rende il successivo più difficile da intercettare per l\'avversario — premia la manovra paziente, non i lanci lunghi frettolosi',
+            'Potenziamento Tattico (Lv.1-5): migliora l\'efficacia dei passaggi corti',
+            'Potenziamento Attributo (Lv.5): +5 Dribbling e +5 Tiro al giocatore assegnato',
+            'Mossa Speciale (Lv.10): ogni passaggio riuscito rende il successivo più difficile da intercettare per l\'avversario — più lunga la sequenza di passaggi, più pericolosa diventa la manovra',
             'Abbinamento tattico consigliato: In Possesso — passaggio corto; In Transizione — costruzione manovra quando si recupera palla, non contropiede',
-            'Gli altri Mentori hanno una specialità confermata ma senza numeri esatti: Alan Shearer potenzia la finalizzazione degli attaccanti, Claude Makélélé il recupero palla (scudo davanti alla difesa in transizione difensiva), Nemanja Vidić il presidio della linea difensiva'
+            'Non adatto a un\'impostazione da contropiede o palla lunga — per quello vedi Ruben Herrera o Jonas Brown'
         ],
-        'source_en': "Top Eleven 2027 tactics guide, YouTube channel Mamun Prefer Gaming (published ~9-10 Aug 2026)",
-        'source_it': "Guida tattica Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~9-10 ago 2026)"
+        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)",
+        'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)"
+    },
+    {
+        'id': 'gg-mentor-jonasbrown',
+        'order': 23,
+        'category_en': "Mentor spotlight: Jonas Brown 'The Analyst'",
+        'category_it': "Mentore in dettaglio: Jonas Brown 'The Analyst'",
+        'icon': 'person-outline',
+        'summary_en': "For long-ball, vertical managers. Instead of a flat squad buff, he reads the opponent's shape and targets its specific weakness.",
+        'summary_it': "Per chi gioca verticale a palla lunga. Invece di un bonus generico alla squadra, legge lo schieramento avversario e colpisce il suo punto debole specifico.",
+        'bullets_en': [
+            'Different from the other Mentors: no flat tactic/attribute numbers — he adapts to whatever weakness the current opponent\'s defensive structure has',
+            'Fits a vertical, long-ball playstyle rather than a possession-based one',
+            'Best paired with tactics you\'d already use to exploit a specific opponent (see the COUNTER tab reading tips) — he sharpens whatever plan you already have against that formation'
+        ],
+        'bullets_it': [
+            'Diverso dagli altri Mentori: nessun numero fisso di tattica/attributo — si adatta al punto debole specifico della struttura difensiva dell\'avversario del momento',
+            'Si adatta a uno stile verticale e di palla lunga più che al possesso',
+            'Va abbinato alle tattiche che useresti già per colpire quello specifico avversario (vedi i consigli di lettura nel tab COUNTER) — rende più efficace il piano che hai già contro quella formazione'
+        ],
+        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)",
+        'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)"
+    },
+    {
+        'id': 'gg-mentor-herrera',
+        'order': 24,
+        'category_en': "Mentor spotlight: Ruben Herrera 'The Saboteur'",
+        'category_it': "Mentore in dettaglio: Ruben Herrera 'The Saboteur'",
+        'icon': 'person-outline',
+        'summary_en': "Built entirely around counterattacking: sit back, win the ball, hit the space immediately. Strong pick against bigger opponents.",
+        'summary_it': "Costruito interamente sul contropiede: difendi, recupera palla, colpisci subito lo spazio. Ottima scelta contro avversari più forti.",
+        'bullets_en': [
+            'Identity is 100% counterattacking — for managers who don\'t want to dominate possession but defend, win the ball, and immediately attack the space the opponent leaves open',
+            'A smart choice specifically when facing bigger/stronger opponents',
+            'Not a fit for a possession-based setup (e.g. 3-1-4-1-1 or 3-1-5-1 style tactics) — use Fàbregas for those instead'
+        ],
+        'bullets_it': [
+            'Identità al 100% da contropiede — per chi non vuole dominare il possesso ma difendere, recuperare palla e attaccare subito lo spazio lasciato dall\'avversario',
+            'Scelta intelligente in particolare contro avversari più forti',
+            'Non adatto a un\'impostazione da possesso (es. tattiche stile 3-1-4-1-1 o 3-1-5-1) — per quelle usa Fàbregas'
+        ],
+        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)",
+        'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)"
+    },
+    {
+        'id': 'gg-mentor-green',
+        'order': 25,
+        'category_en': "Mentor spotlight: Louis Green 'The Wing Commander'",
+        'category_it': "Mentore in dettaglio: Louis Green 'The Wing Commander'",
+        'icon': 'person-outline',
+        'summary_en': "For flank-based attacking with wingers or wide midfielders (ML/MR/AML/AMR) — everything here is about crossing and aerial threat.",
+        'summary_it': "Per l'attacco sulle fasce con ali o centrocampisti esterni (ML/MR/AML/AMR) — tutto qui ruota attorno a cross e gioco aereo.",
+        'bullets_en': [
+            'Tactic Boost: +15% effectiveness on flank attacks',
+            'Attribute Boost (Lv.5): +6 Crossing and +6 Heading to the whole squad',
+            'Signature Move (Lv.10): crosses become far more accurate, and opposing defenders\' aerial-duel effectiveness drops significantly',
+            'Only worth it if your XI actually has real wide players (ML/MR/AML/AMR) or attacking full-backs to deliver the crosses',
+            'Good half-time swap when the opponent sits deep and you need to stretch the pitch and attack from wide'
+        ],
+        'bullets_it': [
+            'Potenziamento Tattico: +15% efficacia sugli attacchi in fascia',
+            'Potenziamento Attributo (Lv.5): +6 Cross e +6 Colpo di Testa a tutta la rosa',
+            'Mossa Speciale (Lv.10): i cross diventano molto più precisi e l\'efficacia dei difensori avversari nei duelli aerei scende parecchio',
+            'Ha senso solo se l\'undici titolare ha davvero giocatori larghi (ML/MR/AML/AMR) o terzini offensivi che possano crossare',
+            'Buon cambio all\'intervallo quando l\'avversario si chiude basso e serve allargare il gioco per attaccare dalle fasce'
+        ],
+        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)",
+        'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)"
+    },
+    {
+        'id': 'gg-mentor-shearer',
+        'order': 26,
+        'category_en': "Mentor spotlight: Alan Shearer 'The Finisher'",
+        'category_it': "Mentore in dettaglio: Alan Shearer 'The Finisher'",
+        'icon': 'person-outline',
+        'summary_en': "Built around finishing and set pieces. A strong half-time swap when you're winning fouls/corners but not converting them.",
+        'summary_it': "Costruito su finalizzazione e palle inattive. Ottimo cambio all'intervallo quando conquisti falli/corner ma non li sfrutti.",
+        'bullets_en': [
+            'Tactic Boost: +15% dribbling effectiveness',
+            'Attribute Boost: +5 Strength and +5 Shooting to the whole squad while assigned',
+            'Signature Move (Lv.10): corners, free kicks and penalties become +25% more effective; if a set piece is missed, the opposing attacker gets a -10% penalty on their next attacking action',
+            'Bring him on at half-time specifically when you\'re winning a lot of fouls/corners but not converting them'
+        ],
+        'bullets_it': [
+            'Potenziamento Tattico: +15% efficacia del dribbling',
+            'Potenziamento Attributo: +5 Forza e +5 Tiro a tutta la rosa mentre è assegnato',
+            'Mossa Speciale (Lv.10): angoli, punizioni e rigori diventano +25% più efficaci; se un calcio piazzato viene sbagliato, l\'attaccante avversario subisce un -10% sulla sua azione d\'attacco successiva',
+            'Fallo entrare all\'intervallo in particolare quando stai conquistando molti falli/corner ma non li stai sfruttando'
+        ],
+        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)",
+        'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)"
+    },
+    {
+        'id': 'gg-mentor-vidic',
+        'order': 27,
+        'category_en': "Mentor spotlight: Nemanja Vidić 'The Iron Guard'",
+        'category_it': "Mentore in dettaglio: Nemanja Vidić 'The Iron Guard'",
+        'icon': 'person-outline',
+        'summary_en': "A pure, high-intensity defensive Mentor — for parking the bus against opponents you can't otherwise beat.",
+        'summary_it': "Mentore puramente difensivo e ad alta intensità — per fare catenaccio contro avversari altrimenti imbattibili.",
+        'bullets_en': [
+            'Tactic Boost: +15% overall effectiveness on defensive actions',
+            'Attribute Boost: +10 Tackling and +10 Bravery to the whole squad while assigned',
+            'Signature Move (Lv.10): every successful defensive action drains 2% condition from the opposing attacker — but the high aggression also raises card risk by +10%',
+            'Trade-off to plan around: more cards means think twice about using him with an already-aggressive tackling setting'
+        ],
+        'bullets_it': [
+            'Potenziamento Tattico: +15% efficacia complessiva sulle azioni difensive',
+            'Potenziamento Attributo: +10 Contrasti e +10 Coraggio a tutta la rosa mentre è assegnato',
+            'Mossa Speciale (Lv.10): ogni intervento difensivo riuscito sottrae il 2% di condizione all\'attaccante avversario — ma l\'alta aggressività aumenta anche il rischio cartellini del +10%',
+            'Compromesso da tenere a mente: più cartellini significa pensarci due volte prima di abbinarlo a contrasti già impostati su aggressivo'
+        ],
+        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)",
+        'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)"
+    },
+    {
+        'id': 'gg-mentor-makelele',
+        'order': 28,
+        'category_en': "Mentor spotlight: Claude Makélélé 'The Enforcer'",
+        'category_it': "Mentore in dettaglio: Claude Makélélé 'The Enforcer'",
+        'icon': 'person-outline',
+        'summary_en': "Specialized in shutting down short-passing, possession-based opponents. His Signature Move is the ultimate lead-protection tool.",
+        'summary_it': "Specializzato nel neutralizzare avversari da possesso e passaggio corto. La sua Mossa Speciale è lo strumento definitivo per blindare un vantaggio.",
+        'bullets_en': [
+            'Tactic Boost: +15% defensive effectiveness specifically against short-passing opponents',
+            'Attribute Boost (Lv.5): +10 Bravery and +10 Positioning to the whole squad',
+            'Signature Move (Lv.10): while your team is leading, defenders get +15 to all defensive attributes — but the whole team takes -10 to offensive attributes',
+            'The clearest "protect the result" Mentor: swap him in when you\'re ahead late and want to sacrifice attack for a clean park-the-bus lockdown',
+            'Great counter-pick when the opponent\'s Mentor or tactics are built around short passing (e.g. against Fàbregas)'
+        ],
+        'bullets_it': [
+            'Potenziamento Tattico: +15% efficacia difensiva specificamente contro avversari che giocano a passaggio corto',
+            'Potenziamento Attributo (Lv.5): +10 Coraggio e +10 Posizionamento a tutta la rosa',
+            'Mossa Speciale (Lv.10): mentre la tua squadra è in vantaggio, i difensori ottengono +15 a tutti gli attributi difensivi — ma tutta la squadra subisce -10 agli attributi offensivi',
+            'Il Mentore più chiaro per "blindare il risultato": fallo entrare quando sei in vantaggio nel finale e vuoi sacrificare l\'attacco per un catenaccio pulito',
+            'Ottima contromossa quando il Mentore o la tattica dell\'avversario sono basati sul passaggio corto (es. contro Fàbregas)'
+        ],
+        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)",
+        'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)"
     }
 ]
 
