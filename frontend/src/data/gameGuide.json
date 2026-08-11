@@ -693,5 +693,30 @@
     ],
     "source_en": "Top Eleven 2027 tactics guide, YouTube channel Mamun Prefer Gaming (published ~9-10 Aug 2026, days after the v27.0 update)",
     "source_it": "Guida tattica Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~9-10 ago 2026, giorni dopo l'update v27.0)"
+  },
+  {
+    "id": "gg-mentor-fabregas",
+    "order": 22,
+    "category_en": "Mentor spotlight: Cesc Fàbregas 'The Architect'",
+    "category_it": "Mentore in dettaglio: Cesc Fàbregas 'The Architect'",
+    "icon": "person-outline",
+    "summary_en": "The only Mentor with confirmed numbers so far: a short-passing specialist. Pair him with a possession tactic, not a direct/long-ball one.",
+    "summary_it": "Il solo Mentore con numeri confermati finora: uno specialista del passaggio corto. Abbinalo a una tattica di possesso, non a una diretta/palla lunga.",
+    "bullets_en": [
+      "Passive bonus: short-passing effectiveness +20% at introduction, rising toward +25% with use",
+      "Also grants +5 dribbling and +5 shooting to your players while assigned",
+      "Signature effect: each successful pass makes the next pass harder for the opponent to intercept — rewards patient buildup, not hurried long balls",
+      "Recommended tactical pairing: In Possession — short passing style; In Transition — buildup focus when winning the ball back, not counterattack",
+      "Other named Mentors so far (Alan Shearer, Claude Makélélé, Nemanja Vidić) have no confirmed bonus numbers yet — will be added once verified"
+    ],
+    "bullets_it": [
+      "Bonus passivo: efficacia dei passaggi corti +20% all'introduzione, in crescita verso il +25% con l'uso",
+      "Dà anche +5 dribbling e +5 tiro ai giocatori mentre è assegnato",
+      "Effetto speciale: ogni passaggio riuscito rende il successivo più difficile da intercettare per l'avversario — premia la manovra paziente, non i lanci lunghi frettolosi",
+      "Abbinamento tattico consigliato: In Possesso — passaggio corto; In Transizione — costruzione manovra quando si recupera palla, non contropiede",
+      "Gli altri Mentori nominati finora (Alan Shearer, Claude Makélélé, Nemanja Vidić) non hanno ancora numeri di bonus confermati — verranno aggiunti quando verificati"
+    ],
+    "source_en": "Top Eleven 2027 tactics guide, YouTube channel Mamun Prefer Gaming (published ~9-10 Aug 2026)",
+    "source_it": "Guida tattica Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~9-10 ago 2026)"
   }
 ]
