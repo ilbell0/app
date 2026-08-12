@@ -32660,6 +32660,14 @@ SCOUT_TIPS = [
         'title_it': 'Allenatore Speciale: alternativa economica ai riposini',
         'content_en': "Reaching a high Teamplay Form (60-70+) mid-season the normal way costs close to 100 rest packs — roughly 100 tokens. It's far cheaper to activate the Special Trainer (about 25 tokens) for a 24h training double-effect, unlocked by watching just 4 ad videos. To climb without tiring your starters: run one full-squad session first, then train only bench and reserve players with Teamplay Drills for the rest of the climb — the team bonus still rises, starters stay fresh.",
         'content_it': "Arrivare a Teamplay Form alta (60-70+) a metà stagione nel modo normale costa quasi 100 pacchetti riposo — circa 100 token. Costa molto meno attivare l'Allenatore Speciale (circa 25 token) per raddoppiare per 24h l'effetto dell'allenamento, sbloccabile guardando solo 4 video pubblicitari. Per salire senza stancare i titolari: fai prima un allenamento completo con tutta la rosa, poi allena solo panchina e riserve con i Teamplay Drills per il resto della salita — il bonus di squadra cresce comunque, i titolari restano freschi."
+    },
+    {
+        'id': '85',
+        'category': 'tactics',
+        'title_en': 'Halftime Mentor combos: 3 practical patterns',
+        'title_it': 'Combo Mentori a metà partita: 3 schemi pratici',
+        'content_en': "Fàbregas → Green: start with Fàbregas to control passing; if by halftime the opponent has parked a low block centrally, switch to Green to stretch play wide and attack with crosses. Fàbregas/Green → Makélélé: 1-2 goals up in the second half, bring on Makélélé to lock the result down (defenders +15, but -10 to attack — worth it when you only need to defend). Herrera → Shearer: behind and winning lots of set pieces, switch to Shearer in the second half for the +25% set-piece bonus.",
+        'content_it': "Fàbregas → Green: parti con Fàbregas per controllare il palleggio; se all'intervallo l'avversario si è chiuso basso al centro, passa a Green per allargare il gioco sulle fasce e attaccare con i cross. Fàbregas/Green → Makélélé: se sei in vantaggio di 1-2 gol nella ripresa, inserisci Makélélé per blindare il risultato (difensori a +15, ma -10 in attacco — vale la pena quando devi solo difendere). Herrera → Shearer: se sei in svantaggio e stai guadagnando molti calci piazzati, passa a Shearer nella ripresa per il bonus +25% sui piazzati."
     }
 ]
 
