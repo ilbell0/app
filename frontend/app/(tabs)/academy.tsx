@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   Modal,
   Animated,
+  TextInput,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
@@ -72,26 +73,6 @@ const SECTIONS: SectionDef[] = [
   { id: 'realtactics', endpoint: '/api/real-tactics', label_en: 'Real Football', label_it: 'Calcio Reale', icon: 'earth-outline' },
 ];
 
-// Macro-aree: le 13 sezioni raggruppate in 4 gruppi logici (selettore a 2 livelli)
-interface GroupDef {
-  id: string;
-  label_en: string;
-  label_it: string;
-  icon: string;
-  sections: SectionId[];
-}
-
-const GROUPS: GroupDef[] = [
-  { id: 'tactics', label_en: 'Tactics', label_it: 'Tattica', icon: 'analytics-outline',
-    sections: ['meta', 'battles', 'lab'] },
-  { id: 'players', label_en: 'Players', label_it: 'Giocatori', icon: 'people-outline',
-    sections: ['roles', 'positions', 'skills', 'training'] },
-  { id: 'strategy', label_en: 'Strategy', label_it: 'Strategia', icon: 'compass-outline',
-    sections: ['guide', 'mystyle', 'setpiece', 'paths'] },
-  { id: 'reference', label_en: 'Reference', label_it: 'Riferimento', icon: 'library-outline',
-    sections: ['realtactics', 'faq', 'abbr'] },
-];
-
 const TIER_COLORS: Record<string, string> = {
   S: NothingTheme.colors.accent,
   A: NothingTheme.colors.textPrimary,
@@ -103,8 +84,8 @@ export default function AcademyScreen() {
   const { language } = useLanguage();
   const isIt = language === 'it';
 
-  const [group, setGroup] = useState<string>('tactics');
   const [section, setSection] = useState<SectionId>('meta');
+  const [search, setSearch] = useState('');
   const [data, setData] = useState<Record<SectionId, any[]>>({
     roles: [], positions: [], meta: [], skills: [], training: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [], guide: [], lab: [], realtactics: [],
   });
@@ -136,8 +117,6 @@ export default function AcademyScreen() {
     setSelected(item);
     setModalVisible(true);
   };
-
-  const items = data[section];
 
   // --- Card title/subtitle per section ---
   const cardTitle = (item: any): string => {
@@ -179,6 +158,12 @@ export default function AcademyScreen() {
     }
   };
 
+  const allItems = data[section];
+  const q = search.trim().toLowerCase();
+  const items = q
+    ? allItems.filter((item) => `${cardTitle(item)} ${cardSubtitle(item)}`.toLowerCase().includes(q))
+    : allItems;
+
   return (
     <View style={[styles.container, { paddingTop: insets.top }]}>
       {/* Header */}
@@ -189,47 +174,21 @@ export default function AcademyScreen() {
 
       <View style={styles.divider} />
 
-      {/* Group selector (macro-aree) */}
+      {/* Section selector: tutte le 14 sezioni in un solo livello, niente doppio menu */}
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
         style={styles.filterScroll}
         contentContainerStyle={styles.filterContainer}
       >
-        {GROUPS.map((g) => (
-          <TouchableOpacity
-            key={g.id}
-            style={[styles.groupButton, group === g.id && styles.groupButtonActive]}
-            onPress={() => {
-              setGroup(g.id);
-              setSection(g.sections[0]);
-            }}
-          >
-            <Ionicons
-              name={g.icon as any}
-              size={14}
-              color={group === g.id ? NothingTheme.colors.background : NothingTheme.colors.textSecondary}
-              style={{ marginRight: 6 }}
-            />
-            <Text style={[styles.groupButtonText, group === g.id && styles.groupButtonTextActive]}>
-              {(isIt ? g.label_it : g.label_en).toUpperCase()}
-            </Text>
-          </TouchableOpacity>
-        ))}
-      </ScrollView>
-
-      {/* Section selector (sezioni del gruppo attivo) */}
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        style={styles.filterScroll}
-        contentContainerStyle={styles.filterContainer}
-      >
-        {SECTIONS.filter((s) => GROUPS.find((g) => g.id === group)?.sections.includes(s.id)).map((s) => (
+        {SECTIONS.map((s) => (
           <TouchableOpacity
             key={s.id}
             style={[styles.filterButton, section === s.id && styles.filterButtonActive]}
-            onPress={() => setSection(s.id)}
+            onPress={() => {
+              setSection(s.id);
+              setSearch('');
+            }}
           >
             <Ionicons
               name={s.icon as any}
@@ -245,6 +204,25 @@ export default function AcademyScreen() {
       </ScrollView>
 
       <View style={styles.divider} />
+
+      {/* Search */}
+      <View style={styles.searchRow}>
+        <Ionicons name="search" size={16} color={NothingTheme.colors.textTertiary} />
+        <TextInput
+          style={styles.searchInput}
+          value={search}
+          onChangeText={setSearch}
+          placeholder={isIt ? 'Cerca in questa sezione' : 'Search this section'}
+          placeholderTextColor={NothingTheme.colors.textTertiary}
+          autoCapitalize="none"
+          autoCorrect={false}
+        />
+        {search.length > 0 && (
+          <TouchableOpacity onPress={() => setSearch('')}>
+            <Ionicons name="close-circle" size={16} color={NothingTheme.colors.textTertiary} />
+          </TouchableOpacity>
+        )}
+      </View>
 
       {/* Count */}
       <View style={styles.countRow}>
@@ -536,28 +514,25 @@ const styles = StyleSheet.create({
   filterButtonActive: { backgroundColor: NothingTheme.colors.accentMuted, borderColor: NothingTheme.colors.accent },
   filterButtonText: { color: NothingTheme.colors.textSecondary, fontSize: 11, fontWeight: '600', letterSpacing: 1 },
   filterButtonTextActive: { color: NothingTheme.colors.accent },
-  groupButton: {
+  searchRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingVertical: 9,
-    borderRadius: 4,
+    gap: 8,
+    marginHorizontal: 24,
+    marginTop: 14,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderRadius: 8,
     backgroundColor: NothingTheme.colors.surface,
     borderWidth: 1,
     borderColor: NothingTheme.colors.border,
-    marginRight: 8,
   },
-  groupButtonActive: {
-    backgroundColor: NothingTheme.colors.accent,
-    borderColor: NothingTheme.colors.accent,
+  searchInput: {
+    flex: 1,
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 14,
+    padding: 0,
   },
-  groupButtonText: {
-    color: NothingTheme.colors.textSecondary,
-    fontSize: 11,
-    fontWeight: '700',
-    letterSpacing: 1,
-  },
-  groupButtonTextActive: { color: NothingTheme.colors.background },
   countRow: { paddingHorizontal: 24, paddingVertical: 12 },
   countText: { color: NothingTheme.colors.textTertiary, fontSize: 10, fontWeight: '600', letterSpacing: 2 },
   scrollView: { flex: 1 },

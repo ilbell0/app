@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   ActivityIndicator,
   Modal,
+  TextInput,
 } from 'react-native';
 import Animated, {
   FadeInDown,
@@ -74,6 +75,7 @@ export default function ScoutScreen() {
   const [tips, setTips] = useState<ScoutTip[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [search, setSearch] = useState('');
   const [selectedTip, setSelectedTip] = useState<ScoutTip | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
   const modalOpacity = useSharedValue(0);
@@ -102,9 +104,16 @@ export default function ScoutScreen() {
     setLoading(false);
   };
 
-  const filteredTips = selectedCategory === 'all'
-    ? tips
-    : tips.filter((tip) => MACRO_OF[tip.category] === selectedCategory);
+  const q = search.trim().toLowerCase();
+  const matchesSearch = (tip: ScoutTip) => {
+    if (!q) return true;
+    const title = (language === 'it' ? tip.title_it : tip.title_en).toLowerCase();
+    const content = (language === 'it' ? tip.content_it : tip.content_en).toLowerCase();
+    return title.includes(q) || content.includes(q);
+  };
+  const filteredTips = tips.filter((tip) =>
+    matchesSearch(tip) && (selectedCategory === 'all' || MACRO_OF[tip.category] === selectedCategory)
+  );
 
   const openTip = (tip: ScoutTip) => {
     setSelectedTip(tip);
@@ -133,9 +142,28 @@ export default function ScoutScreen() {
 
       <View style={styles.divider} />
 
+      {/* Search */}
+      <View style={styles.searchRow}>
+        <Ionicons name="search" size={16} color={NothingTheme.colors.textTertiary} />
+        <TextInput
+          style={styles.searchInput}
+          value={search}
+          onChangeText={setSearch}
+          placeholder={language === 'it' ? 'Cerca un consiglio' : 'Search a tip'}
+          placeholderTextColor={NothingTheme.colors.textTertiary}
+          autoCapitalize="none"
+          autoCorrect={false}
+        />
+        {search.length > 0 && (
+          <TouchableOpacity onPress={() => setSearch('')}>
+            <Ionicons name="close-circle" size={16} color={NothingTheme.colors.textTertiary} />
+          </TouchableOpacity>
+        )}
+      </View>
+
       {/* Category Filter */}
-      <ScrollView 
-        horizontal 
+      <ScrollView
+        horizontal
         showsHorizontalScrollIndicator={false}
         style={styles.filterScroll}
         contentContainerStyle={styles.filterContainer}
@@ -309,6 +337,25 @@ const styles = StyleSheet.create({
   dividerModal: {
     height: 1,
     backgroundColor: NothingTheme.colors.divider,
+  },
+  searchRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginHorizontal: 24,
+    marginTop: 14,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderRadius: 8,
+    backgroundColor: NothingTheme.colors.surface,
+    borderWidth: 1,
+    borderColor: NothingTheme.colors.border,
+  },
+  searchInput: {
+    flex: 1,
+    color: NothingTheme.colors.textPrimary,
+    fontSize: 14,
+    padding: 0,
   },
   filterScroll: {
     flexGrow: 0,
