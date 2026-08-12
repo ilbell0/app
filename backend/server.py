@@ -31842,13 +31842,13 @@ GAME_GUIDE = [
     {
         'id': 'gg-teamplay-form',
         'order': 30,
-        'category_en': "New Training System: Teamplay Form",
-        'category_it': "Nuovo Sistema di Allenamento: Teamplay Form",
+        'category_en': "Teamplay Form: the full training system",
+        'category_it': "Teamplay Form: il sistema di allenamento per intero",
         'icon': 'barbell-outline',
-        'summary_en': "Top Eleven 2027 replaced the old Team Bonuses with Teamplay Form, and added a whole new drill category and a season-long cap-raising system on top of it.",
-        'summary_it': "Top Eleven 2027 ha sostituito i vecchi Bonus di Squadra con la Teamplay Form, aggiungendo una nuova categoria di esercizi e un sistema stagionale per alzare i limiti dei bonus.",
+        'summary_en': "Teamplay Form is the game's team-wide training bonus system (introduced Nov 2023, still current) — not new in 2027, just not documented in the app until now.",
+        'summary_it': "La Teamplay Form è il sistema di bonus di squadra dell'allenamento (introdotto a novembre 2023, ancora attuale) — non è una novità del 2027, semplicemente non era ancora documentata in app.",
         'bullets_en': [
-            "Team Bonuses are renamed and reworked into Teamplay Form, still split into 4 categories: Attack, Defense, Possession, Condition",
+            "The old Team Bonuses were renamed and reworked into Teamplay Form, split into 4 categories: Attack, Defense, Possession, Condition",
             "Possession Drills join Attack, Defense and Physical/Mental as a 4th macro-category of regular training drills; the max Training Level was raised to 111",
             "Teamplay Drills are a new consumable category (Starter / Expert / Ultimate tiers): they don't raise individual player attributes, but generate large Teamplay Form gains in fewer sessions — Ultimate-tier drills can carry extra unique effects",
             "Any training session needs at least 4 players to generate Teamplay Form and Sharpness — a session with 1-2 players won't move the team bonus at all",
@@ -31857,7 +31857,7 @@ GAME_GUIDE = [
             "The training screen's info bar shows expected gains, condition loss and a Session Score in real time — maximize it by fielding players in the roles the drill actually targets and varying drill intensity, not by repeating the same drill on everyone"
         ],
         'bullets_it': [
-            "I Bonus di Squadra vengono rinominati e rilavorati in Teamplay Form, sempre divisa in 4 categorie: Attacco, Difesa, Possesso, Condizione",
+            "I vecchi Bonus di Squadra sono stati rinominati e rilavorati in Teamplay Form, divisa in 4 categorie: Attacco, Difesa, Possesso, Condizione",
             "Gli Esercizi di Possesso si aggiungono ad Attacco, Difesa e Fisico/Mentale come 4ª macro-categoria degli esercizi regolari; il Livello di Allenamento massimo è stato elevato a 111",
             "I Teamplay Drills sono una nuova categoria di esercizi consumabili (livelli Starter / Expert / Ultimate): non alzano gli attributi dei singoli giocatori, ma generano grandi quantità di Teamplay Form in meno sessioni — gli esercizi Ultimate possono avere anche effetti unici extra",
             "Ogni sessione di allenamento richiede almeno 4 giocatori per generare Teamplay Form e Sharpness — una sessione con 1-2 giocatori non muove per niente il bonus di squadra",
@@ -31865,8 +31865,8 @@ GAME_GUIDE = [
             "Tutto (Punti Avanzamento e tetti alzati) si azzera a fine stagione: spendi quello che hai guadagnato prima della chiusura, invece di accumularlo inutilmente",
             "La barra informativa della schermata di allenamento mostra in tempo reale i guadagni previsti, la perdita di condizione e il Session Score — per massimizzarlo usa giocatori nei ruoli che l'esercizio richiede davvero e varia l'intensità, non ripetere lo stesso esercizio su tutti"
         ],
-        'source_en': "\"New Era of Top Eleven Training\" official page, topeleven.com (Aug 2026)",
-        'source_it': "Pagina ufficiale \"New Era of Top Eleven Training\", topeleven.com (ago 2026)"
+        'source_en': "\"New Era of Top Eleven Training\" official page, topeleven.com (dated Nov 5, 2023 — still the current system as of the 2027 season)",
+        'source_it': "Pagina ufficiale \"New Era of Top Eleven Training\", topeleven.com (datata 5 novembre 2023 — sistema ancora attuale nella stagione 2027)"
     }
 ]
 
@@ -32644,6 +32644,22 @@ SCOUT_TIPS = [
         'title_it': 'Perché perdi quando non guardi',
         'content_en': "There is no hidden penalty for being absent: what you lose is the ability to react. Live you can fix a wrong counter, change mentality after a goal, make subs at 60'. If you can't attend, set the SAFEST setup against that opponent (neutral counter, balanced mentality), not the most aggressive one.",
         'content_it': "Non esiste una penalità nascosta per l'assenza: quello che perdi è la possibilità di reagire. In diretta puoi correggere un counter sbagliato, cambiare mentalità dopo un gol, fare i cambi al 60'. Se non puoi esserci, imposta il setup più SICURO contro quell'avversario (counter neutro, mentalità bilanciata), non il più aggressivo."
+    },
+    {
+        'id': '83',
+        'category': 'training',
+        'title_en': 'Teamplay Form Boosts: when to activate which',
+        'title_it': 'Bonus Teamplay Form: quando attivare quale',
+        'content_en': "Attack boost works best early against a stronger opponent: try to score 1-2 goals fast, then switch to defense to protect the lead. Defense boost kicks in the moment you go ahead (or when a draw is enough on the second leg, or to shield a weak defense behind a strong attack). Possession boost works from kickoff when nursing a big first-leg lead, starving a dangerous opponent of the ball. Save the Condition boost for extra time, so legs don't give out late.",
+        'content_it': "Il bonus Attacco rende meglio a inizio partita contro un avversario più forte: provaci a segnare 1-2 gol in fretta, poi passa alla Difesa per blindare il vantaggio. Il bonus Difesa si attiva nel momento in cui passi in vantaggio (o quando ti basta un pareggio nel ritorno, o per proteggere una difesa debole dietro un attacco forte). Il bonus Possesso rende dal fischio d'inizio quando devi gestire un vantaggio ampio dall'andata, togliendo palla a un avversario pericoloso. Il bonus Condizione va riservato ai tempi supplementari, per non far crollare fisicamente la squadra nel finale."
+    },
+    {
+        'id': '84',
+        'category': 'economy',
+        'title_en': 'Special Trainer: the cheap alternative to rest packs',
+        'title_it': 'Allenatore Speciale: alternativa economica ai riposini',
+        'content_en': "Reaching a high Teamplay Form (60-70+) mid-season the normal way costs close to 100 rest packs — roughly 100 tokens. It's far cheaper to activate the Special Trainer (about 25 tokens) for a 24h training double-effect, unlocked by watching just 4 ad videos. To climb without tiring your starters: run one full-squad session first, then train only bench and reserve players with Teamplay Drills for the rest of the climb — the team bonus still rises, starters stay fresh.",
+        'content_it': "Arrivare a Teamplay Form alta (60-70+) a metà stagione nel modo normale costa quasi 100 pacchetti riposo — circa 100 token. Costa molto meno attivare l'Allenatore Speciale (circa 25 token) per raddoppiare per 24h l'effetto dell'allenamento, sbloccabile guardando solo 4 video pubblicitari. Per salire senza stancare i titolari: fai prima un allenamento completo con tutta la rosa, poi allena solo panchina e riserve con i Teamplay Drills per il resto della salita — il bonus di squadra cresce comunque, i titolari restano freschi."
     }
 ]
 

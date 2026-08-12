@@ -614,5 +614,21 @@
     "title_it": "Perché perdi quando non guardi",
     "content_en": "There is no hidden penalty for being absent: what you lose is the ability to react. Live you can fix a wrong counter, change mentality after a goal, make subs at 60'. If you can't attend, set the SAFEST setup against that opponent (neutral counter, balanced mentality), not the most aggressive one.",
     "content_it": "Non esiste una penalità nascosta per l'assenza: quello che perdi è la possibilità di reagire. In diretta puoi correggere un counter sbagliato, cambiare mentalità dopo un gol, fare i cambi al 60'. Se non puoi esserci, imposta il setup più SICURO contro quell'avversario (counter neutro, mentalità bilanciata), non il più aggressivo."
+  },
+  {
+    "id": "83",
+    "category": "training",
+    "title_en": "Teamplay Form Boosts: when to activate which",
+    "title_it": "Bonus Teamplay Form: quando attivare quale",
+    "content_en": "Attack boost works best early against a stronger opponent: try to score 1-2 goals fast, then switch to defense to protect the lead. Defense boost kicks in the moment you go ahead (or when a draw is enough on the second leg, or to shield a weak defense behind a strong attack). Possession boost works from kickoff when nursing a big first-leg lead, starving a dangerous opponent of the ball. Save the Condition boost for extra time, so legs don't give out late.",
+    "content_it": "Il bonus Attacco rende meglio a inizio partita contro un avversario più forte: provaci a segnare 1-2 gol in fretta, poi passa alla Difesa per blindare il vantaggio. Il bonus Difesa si attiva nel momento in cui passi in vantaggio (o quando ti basta un pareggio nel ritorno, o per proteggere una difesa debole dietro un attacco forte). Il bonus Possesso rende dal fischio d'inizio quando devi gestire un vantaggio ampio dall'andata, togliendo palla a un avversario pericoloso. Il bonus Condizione va riservato ai tempi supplementari, per non far crollare fisicamente la squadra nel finale."
+  },
+  {
+    "id": "84",
+    "category": "economy",
+    "title_en": "Special Trainer: the cheap alternative to rest packs",
+    "title_it": "Allenatore Speciale: alternativa economica ai riposini",
+    "content_en": "Reaching a high Teamplay Form (60-70+) mid-season the normal way costs close to 100 rest packs — roughly 100 tokens. It's far cheaper to activate the Special Trainer (about 25 tokens) for a 24h training double-effect, unlocked by watching just 4 ad videos. To climb without tiring your starters: run one full-squad session first, then train only bench and reserve players with Teamplay Drills for the rest of the climb — the team bonus still rises, starters stay fresh.",
+    "content_it": "Arrivare a Teamplay Form alta (60-70+) a metà stagione nel modo normale costa quasi 100 pacchetti riposo — circa 100 token. Costa molto meno attivare l'Allenatore Speciale (circa 25 token) per raddoppiare per 24h l'effetto dell'allenamento, sbloccabile guardando solo 4 video pubblicitari. Per salire senza stancare i titolari: fai prima un allenamento completo con tutta la rosa, poi allena solo panchina e riserve con i Teamplay Drills per il resto della salita — il bonus di squadra cresce comunque, i titolari restano freschi."
   }
 ]
