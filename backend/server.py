@@ -31813,6 +31813,29 @@ GAME_GUIDE = [
         ],
         'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)",
         'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)"
+    },
+    {
+        'id': 'gg-match-report',
+        'order': 29,
+        'category_en': "Reading the 2027 Match Report",
+        'category_it': "Leggere il Match Report 2027",
+        'icon': 'stats-chart-outline',
+        'summary_en': "The 2027 update deepened the post-match report and live in-match feedback. Reading it well tells you what actually went wrong, instead of guessing from the final score alone.",
+        'summary_it': "L'aggiornamento 2027 ha ampliato il report post-partita e il feedback durante la partita live. Saperlo leggere ti dice cosa è andato storto davvero, invece di indovinare dal solo risultato.",
+        'bullets_en': [
+            'The post-match report now gives a deeper breakdown of squad performance, not just the final scoreline',
+            'During live matches, the refreshed interface surfaces more actionable feedback, so you can react with a substitution or a tactic swap while the game is still running, not only at full time',
+            'Use the report to tell a formation problem (e.g. goals conceded repeatedly down one side) apart from an individual problem (e.g. one slow CB beaten for pace)',
+            "Nordeus hasn't published the exact new metrics yet: this entry will get concrete detail once official numbers are confirmed"
+        ],
+        'bullets_it': [
+            'Il report post-partita offre ora una scomposizione più dettagliata delle prestazioni della rosa, non solo il tabellino finale',
+            "Durante la partita live, l'interfaccia rinnovata mostra feedback più diretto, così puoi reagire con una sostituzione o un cambio tattico mentre la gara è ancora in corso, non solo al triplice fischio",
+            'Usa il report per distinguere un problema di modulo (es. gol subiti ripetutamente dallo stesso lato) da un problema di singolo giocatore (es. un DC lento superato in velocità)',
+            'Nordeus non ha ancora pubblicato le metriche esatte del nuovo report: questa scheda verrà aggiornata con dettagli concreti appena saranno confermati ufficialmente'
+        ],
+        'source_en': "Pocket Gamer and GamingOnPhone coverage of the Top Eleven 2027 launch (Aug 2026)",
+        'source_it': "Copertura Pocket Gamer e GamingOnPhone del lancio di Top Eleven 2027 (ago 2026)"
     }
 ]
 
