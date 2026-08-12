@@ -31575,31 +31575,41 @@ GAME_GUIDE = [
         'summary_en': "Since late 2025, every player has an OVR made of two layers: stars (base quality, can drop on league promotion) plus a Tier (permanent bonus that never decays). The Tier is the one number worth protecting.",
         'summary_it': "Da fine 2025 ogni giocatore ha un OVR composto da due livelli: le stelle (qualità base, possono scendere con la promozione di lega) più un Tier (bonus permanente che non si deteriora mai). Il Tier è il numero che vale davvero la pena proteggere.",
         'bullets_en': [
-            '6 Tiers in sequence, each unlocked only after the previous one: Rare (+10 to key attributes), Elite (+30), Stellar (+50), Master (+80), Epic (+120), Legendary (+160)',
+            '6 Tiers in sequence, each unlocked only after the previous one: Rare (+10% to every key attribute), Elite (+30%), Stellar (+50%), Master (+80%), Epic (+120%), Legendary (+160%)',
+            "Without Tiers, classic training/Academy/reward caps are hard limits: 400% on a single attribute, 180% OVR (10 stars). Tiers are the ONLY way past those ceilings",
+            "At Epic, the confirmed absolute ceiling is 520% on a single attribute (400% base + 120%) and 292% OVR (180% base + 112%, with all 14 key attributes) — Legendary should push further but no official number is confirmed yet for it",
             'Tiers are earned with Tier Points, collected mostly via seasonal events and the Tier Drop Ball',
             'Stars can fall when you get promoted to a tougher league; the Tier bonus never does — it is your permanent floor',
+            "Players who already exceeded the caps before Tiers launched got compressed: anything over 400% on an attribute was clamped to 400%, and OVR over 180% was spread down evenly across all attributes until OVR hit 180% — the amount removed became that player's starting Tier",
             'Lineup OVR (average star+Tier quality of your starting 11) feeds into Lineup Balance: chasing Tiers on your key 5 roles (GK-DC-DMC-AMC-ST) raises the floor without breaking balance',
             "Don't chase Tiers on backups before your starters: the permanent bonus is wasted on a bench player"
         ],
         'bullets_it': [
-            'I 6 Tier vanno sbloccati in sequenza, uno dopo l\'altro: Rare (+10 agli attributi chiave), Elite (+30), Stellar (+50), Master (+80), Epic (+120), Legendary (+160)',
+            'I 6 Tier vanno sbloccati in sequenza, uno dopo l\'altro: Rare (+10% su ogni attributo chiave), Elite (+30%), Stellar (+50%), Master (+80%), Epic (+120%), Legendary (+160%)',
+            "Senza Tier, i tetti di allenamento classico/Accademia/ricompense sono invalicabili: 400% su un singolo attributo, 180% di OVR (10 stelle). I Tier sono l'UNICO modo per superarli",
+            "Al Tier Epic il tetto assoluto confermato è 520% su un singolo attributo (400% base + 120%) e 292% di OVR (180% base + 112%, con tutti e 14 gli attributi chiave) — Legendary dovrebbe spingersi oltre ma non c'è ancora un numero ufficiale confermato per quel livello",
             'Si ottengono con i Tier Points, raccolti soprattutto con eventi stagionali e il Tier Drop Ball',
             'Le stelle possono scendere quando sali di lega; il bonus Tier no — è il tuo pavimento permanente',
+            "Chi aveva già giocatori sopra i tetti prima dell'arrivo dei Tier li ha visti \"compressi\": gli attributi oltre 400% sono stati bloccati a 400%, e l'OVR oltre 180% è stato ridistribuito su tutti gli attributi fino a toccare 180% — la quantità tolta è diventata il Tier di partenza di quel giocatore",
             "Il Lineup OVR (qualità media stelle+Tier degli 11 titolari) alimenta il Lineup Balance: punta i Tier sui 5 ruoli chiave (GK-DC-DMC-AMC-ST) per alzare il pavimento senza rompere l'equilibrio",
             "Non sprecare Tier sulle riserve prima dei titolari: il bonus permanente su un giocatore in panchina è tempo perso"
         ],
         'table_en': [
-            {'label': 'Rare -> Legendary', 'value': '+10 / +30 / +50 / +80 / +120 / +160 to key attributes, cumulative and permanent'},
+            {'label': 'Rare -> Legendary', 'value': '+10% / +30% / +50% / +80% / +120% / +160% to key attributes, cumulative and permanent'},
+            {'label': 'Cap without Tiers', 'value': '400% per attribute, 180% OVR (10 stars) — hard limit from classic training/Academy'},
+            {'label': 'Cap at Epic (confirmed)', 'value': '520% per attribute, 292% OVR (with 14 key attributes)'},
             {'label': 'How to unlock', 'value': 'Tier Points from seasonal events + Tier Drop Ball; sequential, no skipping'},
             {'label': 'Replaces stars?', 'value': 'No — it stacks on top of stars, does not replace them'},
         ],
         'table_it': [
-            {'label': 'Rare -> Legendary', 'value': '+10 / +30 / +50 / +80 / +120 / +160 agli attributi chiave, cumulativo e permanente'},
+            {'label': 'Rare -> Legendary', 'value': '+10% / +30% / +50% / +80% / +120% / +160% agli attributi chiave, cumulativo e permanente'},
+            {'label': 'Tetto senza Tier', 'value': '400% per attributo, 180% OVR (10 stelle) — limite invalicabile da allenamento classico/Accademia'},
+            {'label': 'Tetto a Epic (confermato)', 'value': '520% per attributo, 292% OVR (con 14 attributi chiave)'},
             {'label': 'Come si sblocca', 'value': 'Tier Points da eventi stagionali + Tier Drop Ball; in sequenza, senza saltare livelli'},
             {'label': 'Sostituisce le stelle?', 'value': 'No — si somma alle stelle, non le sostituisce'},
         ],
-        'source_en': "Nordeus Help Center — 'OVR explained' and 'Player Tiers explained' (official FAQ, nordeus.helpshift.com), topeleven.com/player-tiers-ovr",
-        'source_it': "Nordeus Help Center — 'OVR explained' e 'Player Tiers explained' (FAQ ufficiale, nordeus.helpshift.com), topeleven.com/player-tiers-ovr"
+        'source_en': "Nordeus Help Center — 'OVR explained' and 'Player Tiers explained' (official FAQ, nordeus.helpshift.com); official announcement \"Player Progression & Tiers\", topeleven.org",
+        'source_it': "Nordeus Help Center — 'OVR explained' e 'Player Tiers explained' (FAQ ufficiale, nordeus.helpshift.com); annuncio ufficiale \"Player Progression & Tiers\", topeleven.org"
     },
     {
         'id': 'gg-fan-loyalty',
@@ -32668,6 +32678,14 @@ SCOUT_TIPS = [
         'title_it': 'Combo Mentori a metà partita: 3 schemi pratici',
         'content_en': "Fàbregas → Green: start with Fàbregas to control passing; if by halftime the opponent has parked a low block centrally, switch to Green to stretch play wide and attack with crosses. Fàbregas/Green → Makélélé: 1-2 goals up in the second half, bring on Makélélé to lock the result down (defenders +15, but -10 to attack — worth it when you only need to defend). Herrera → Shearer: behind and winning lots of set pieces, switch to Shearer in the second half for the +25% set-piece bonus.",
         'content_it': "Fàbregas → Green: parti con Fàbregas per controllare il palleggio; se all'intervallo l'avversario si è chiuso basso al centro, passa a Green per allargare il gioco sulle fasce e attaccare con i cross. Fàbregas/Green → Makélélé: se sei in vantaggio di 1-2 gol nella ripresa, inserisci Makélélé per blindare il risultato (difensori a +15, ma -10 in attacco — vale la pena quando devi solo difendere). Herrera → Shearer: se sei in svantaggio e stai guadagnando molti calci piazzati, passa a Shearer nella ripresa per il bonus +25% sui piazzati."
+    },
+    {
+        'id': '86',
+        'category': 'meta',
+        'title_en': "The secret position: Shadow Striker (not the ability)",
+        'title_it': 'La posizione segreta: Shadow Striker (non è l\'abilità)',
+        'content_en': "Push both wingers (AML/AMR) up onto the same line as your striker and they don't play wider — they tuck inside instead, actually starting their runs from the MC line (hidden behind your central midfielders) and attacking the box from all angles. You lose your width entirely, so only do this with strong attacking full-backs who can cross instead. Spot it in an opponent: if their formation shows AML/AMC/AMR but the game's numeric label reads 4-2-1-3 instead of 4-2-3-1, they're running Shadow Strikers. Counter it by abandoning the flanks, reinforcing the center, and switching to 3 CB instead of a DL-DC-DR back line.",
+        'content_it': "Spingi entrambe le ali (AML/AMR) sulla stessa linea del tuo attaccante e non giocheranno più larghe — si accentrano, partendo di fatto dalla linea dei centrocampisti centrali (nascoste dietro i tuoi MC) e attaccando l'area da tutte le direzioni. Perdi completamente l'ampiezza, quindi usala solo con terzini d'attacco forti che possano crossare al posto delle ali. Per riconoscerla in un avversario: se schiera AML/AMC/AMR ma il gioco indica la formazione numerica come 4-2-1-3 invece di 4-2-3-1, sta usando gli Shadow Strikers. Per contrastarla: abbandona le fasce, rinforza il centro e passa a 3 DC invece della linea DL-DC-DR."
     }
 ]
 
