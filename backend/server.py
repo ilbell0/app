@@ -31046,7 +31046,7 @@ GAME_GUIDE = [
         'summary_it': 'I 5 controlli prima di ogni partita competitiva. Due minuti che decidono più di qualsiasi ritocco al modulo.',
         'bullets_en': [
             '1. Condition at MAX for every starter (greens if needed)',
-            '2. Preparation bonuses at max in all 4 categories',
+            '2. Teamplay Form (formerly Preparation bonuses) at max in all 4 categories',
             '3. Morale at least Good on the key players',
             '4. Counter checked: open the opponent in the COUNTER tab',
             '5. Arrows set for the chosen scenario (stronger/equal/weaker)'
@@ -31824,18 +31824,49 @@ GAME_GUIDE = [
         'summary_it': "L'aggiornamento 2027 ha ampliato il report post-partita e il feedback durante la partita live. Saperlo leggere ti dice cosa è andato storto davvero, invece di indovinare dal solo risultato.",
         'bullets_en': [
             'The post-match report now gives a deeper breakdown of squad performance, not just the final scoreline',
-            'During live matches, the refreshed interface surfaces more actionable feedback, so you can react with a substitution or a tactic swap while the game is still running, not only at full time',
-            'Use the report to tell a formation problem (e.g. goals conceded repeatedly down one side) apart from an individual problem (e.g. one slow CB beaten for pace)',
-            "Nordeus hasn't published the exact new metrics yet: this entry will get concrete detail once official numbers are confirmed"
+            "New during live matches: a pitch-side indicator shows in real time who's winning each individual 1v1 duel against their direct opponent, not just after the fact",
+            "Use that live duel indicator to react immediately — tactic tweak or substitution — instead of waiting for half-time or full time to notice a player getting beaten repeatedly",
+            'Use the post-match report to tell a formation problem (e.g. goals conceded repeatedly down one side) apart from an individual problem (e.g. one slow CB beaten for pace)',
+            "Nordeus hasn't published the exact new report metrics yet: this entry will get concrete detail once official numbers are confirmed"
         ],
         'bullets_it': [
             'Il report post-partita offre ora una scomposizione più dettagliata delle prestazioni della rosa, non solo il tabellino finale',
-            "Durante la partita live, l'interfaccia rinnovata mostra feedback più diretto, così puoi reagire con una sostituzione o un cambio tattico mentre la gara è ancora in corso, non solo al triplice fischio",
-            'Usa il report per distinguere un problema di modulo (es. gol subiti ripetutamente dallo stesso lato) da un problema di singolo giocatore (es. un DC lento superato in velocità)',
+            "Novità nella partita live: un indicatore a bordocampo mostra in tempo reale chi sta vincendo ogni duello individuale 1 contro 1 contro l'avversario diretto, non solo a cose fatte",
+            "Usa questo segnale live per reagire subito — ritocco tattico o sostituzione — invece di scoprire a fine tempo che un giocatore veniva superato ripetutamente",
+            'Usa il report post-partita per distinguere un problema di modulo (es. gol subiti ripetutamente dallo stesso lato) da un problema di singolo giocatore (es. un DC lento superato in velocità)',
             'Nordeus non ha ancora pubblicato le metriche esatte del nuovo report: questa scheda verrà aggiornata con dettagli concreti appena saranno confermati ufficialmente'
         ],
-        'source_en': "Pocket Gamer and GamingOnPhone coverage of the Top Eleven 2027 launch (Aug 2026)",
-        'source_it': "Copertura Pocket Gamer e GamingOnPhone del lancio di Top Eleven 2027 (ago 2026)"
+        'source_en': "Official \"NEW ERA OF TACTICS | TOP ELEVEN 2027\" trailer, plus Pocket Gamer and GamingOnPhone coverage of the launch (Aug 2026)",
+        'source_it': "Trailer ufficiale \"NEW ERA OF TACTICS | TOP ELEVEN 2027\", oltre a copertura Pocket Gamer e GamingOnPhone del lancio (ago 2026)"
+    },
+    {
+        'id': 'gg-teamplay-form',
+        'order': 30,
+        'category_en': "New Training System: Teamplay Form",
+        'category_it': "Nuovo Sistema di Allenamento: Teamplay Form",
+        'icon': 'barbell-outline',
+        'summary_en': "Top Eleven 2027 replaced the old Team Bonuses with Teamplay Form, and added a whole new drill category and a season-long cap-raising system on top of it.",
+        'summary_it': "Top Eleven 2027 ha sostituito i vecchi Bonus di Squadra con la Teamplay Form, aggiungendo una nuova categoria di esercizi e un sistema stagionale per alzare i limiti dei bonus.",
+        'bullets_en': [
+            "Team Bonuses are renamed and reworked into Teamplay Form, still split into 4 categories: Attack, Defense, Possession, Condition",
+            "Possession Drills join Attack, Defense and Physical/Mental as a 4th macro-category of regular training drills; the max Training Level was raised to 111",
+            "Teamplay Drills are a new consumable category (Starter / Expert / Ultimate tiers): they don't raise individual player attributes, but generate large Teamplay Form gains in fewer sessions — Ultimate-tier drills can carry extra unique effects",
+            "Any training session needs at least 4 players to generate Teamplay Form and Sharpness — a session with 1-2 players won't move the team bonus at all",
+            "Each Teamplay Form category is capped at 10 by default. Points earned beyond the cap fill an \"Excel bar\"; completing it grants an Advancement Point, spendable to raise one category's cap by +2 — up to 5 times per season, pushing that category from 10 up to 20",
+            "Everything (Advancement Points and raised caps) resets at the end of the season, so spend what you've earned before the season closes instead of hoarding it",
+            "The training screen's info bar shows expected gains, condition loss and a Session Score in real time — maximize it by fielding players in the roles the drill actually targets and varying drill intensity, not by repeating the same drill on everyone"
+        ],
+        'bullets_it': [
+            "I Bonus di Squadra vengono rinominati e rilavorati in Teamplay Form, sempre divisa in 4 categorie: Attacco, Difesa, Possesso, Condizione",
+            "Gli Esercizi di Possesso si aggiungono ad Attacco, Difesa e Fisico/Mentale come 4ª macro-categoria degli esercizi regolari; il Livello di Allenamento massimo è stato elevato a 111",
+            "I Teamplay Drills sono una nuova categoria di esercizi consumabili (livelli Starter / Expert / Ultimate): non alzano gli attributi dei singoli giocatori, ma generano grandi quantità di Teamplay Form in meno sessioni — gli esercizi Ultimate possono avere anche effetti unici extra",
+            "Ogni sessione di allenamento richiede almeno 4 giocatori per generare Teamplay Form e Sharpness — una sessione con 1-2 giocatori non muove per niente il bonus di squadra",
+            "Ogni categoria di Teamplay Form ha un tetto di 10 di base. I punti guadagnati oltre il tetto riempiono una \"Excel bar\"; completarla dà un Punto Avanzamento, spendibile per alzare il tetto di una categoria di +2 — fino a 5 volte a stagione, portando quella categoria da 10 fino a 20",
+            "Tutto (Punti Avanzamento e tetti alzati) si azzera a fine stagione: spendi quello che hai guadagnato prima della chiusura, invece di accumularlo inutilmente",
+            "La barra informativa della schermata di allenamento mostra in tempo reale i guadagni previsti, la perdita di condizione e il Session Score — per massimizzarlo usa giocatori nei ruoli che l'esercizio richiede davvero e varia l'intensità, non ripetere lo stesso esercizio su tutti"
+        ],
+        'source_en': "\"New Era of Top Eleven Training\" official page, topeleven.com (Aug 2026)",
+        'source_it': "Pagina ufficiale \"New Era of Top Eleven Training\", topeleven.com (ago 2026)"
     }
 ]
 
