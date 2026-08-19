@@ -1,25 +1,37 @@
 {
- "_nota": "Aggregati ricalcolati dai referti persistiti in questa cartella. Base: 8 partite. La sconfitta 0-5 con lo Skogens IF NON e' inclusa: analizzata dagli screenshot ma mai trascritta in referti.json.",
- "partite_analizzate": 8,
+ "_nota": "Ricalcolato da dossier/referti.json. Base: 10 partite.",
+ "partite_analizzate": 10,
  "correlazione_attacco_centrale": {
-  "descrizione": "Percentuale di attacchi del Milan incanalati al centro, confrontata con gol fatti e subiti.",
+  "descrizione": "Percentuale di attacchi del Milan incanalati al centro, contro gol fatti e subiti.",
   "centro_alto": {
    "soglia": ">=60%",
-   "partite": 5,
-   "gol_fatti_media": 3.4,
-   "gol_subiti_media": 1.4,
+   "partite": 6,
+   "gol_fatti_media": 3.83,
+   "gol_subiti_media": 1.33,
    "dettaglio": [
     {
-     "avversario": "SI Benfica",
-     "centro_pct": 68,
-     "fatti": 4,
-     "subiti": 0
+     "avversario": "Efthymis FC",
+     "centro_pct": 93,
+     "fatti": 6,
+     "subiti": 1
+    },
+    {
+     "avversario": "Napoli FC",
+     "centro_pct": 76,
+     "fatti": 5,
+     "subiti": 1
     },
     {
      "avversario": "BITLIS TATVAN",
      "centro_pct": 75,
      "fatti": 4,
      "subiti": 2
+    },
+    {
+     "avversario": "SI Benfica",
+     "centro_pct": 68,
+     "fatti": 4,
+     "subiti": 0
     },
     {
      "avversario": "Ivana FC",
@@ -32,26 +44,20 @@
      "centro_pct": 60,
      "fatti": 1,
      "subiti": 2
-    },
-    {
-     "avversario": "Napoli FC",
-     "centro_pct": 76,
-     "fatti": 5,
-     "subiti": 1
     }
    ]
   },
   "centro_basso": {
    "soglia": "<60%",
-   "partite": 3,
-   "gol_fatti_media": 2.0,
-   "gol_subiti_media": 3.67,
+   "partite": 4,
+   "gol_fatti_media": 1.5,
+   "gol_subiti_media": 4.0,
    "dettaglio": [
     {
-     "avversario": "ManchesterUnited",
-     "centro_pct": 0,
+     "avversario": "Skogens IF",
+     "centro_pct": 40,
      "fatti": 0,
-     "subiti": 7
+     "subiti": 5
     },
     {
      "avversario": "FC Soyyigit",
@@ -64,19 +70,130 @@
      "centro_pct": 35,
      "fatti": 1,
      "subiti": 0
+    },
+    {
+     "avversario": "ManchesterUnited",
+     "centro_pct": 0,
+     "fatti": 0,
+     "subiti": 7
     }
    ]
   }
  },
  "dove_ci_attaccano": {
-  "descrizione": "Distribuzione media degli attacchi avversari, normalizzata sulle fasce del Milan (casa: riga alta = sinistra; trasferta: riga alta = destra). Le tre voci sommano a 100.",
-  "sinistra": 22.0,
-  "centro": 52.0,
-  "destra": 26.2
+  "descrizione": "Distribuzione media degli attacchi avversari normalizzata sulle fasce del Milan (casa: riga alta = sinistra; trasferta: riga alta = destra). Le tre voci sommano a 100.",
+  "media": {
+   "sinistra": 21.4,
+   "centro": 51.3,
+   "destra": 27.5
+  },
+  "per_partita": [
+   {
+    "avversario": "ManchesterUnited",
+    "casa_trasferta": "casa",
+    "ci_attaccano": {
+     "sinistra": 28,
+     "centro": 39,
+     "destra": 33
+    },
+    "subiti": 7
+   },
+   {
+    "avversario": "FC Soyyigit",
+    "casa_trasferta": "trasferta",
+    "ci_attaccano": {
+     "sinistra": 36,
+     "centro": 21,
+     "destra": 43
+    },
+    "subiti": 4
+   },
+   {
+    "avversario": "SI Benfica",
+    "casa_trasferta": "casa",
+    "ci_attaccano": {
+     "sinistra": 31,
+     "centro": 56,
+     "destra": 13
+    },
+    "subiti": 0
+   },
+   {
+    "avversario": "BITLIS TATVAN",
+    "casa_trasferta": "casa",
+    "ci_attaccano": {
+     "sinistra": 24,
+     "centro": 41,
+     "destra": 35
+    },
+    "subiti": 2
+   },
+   {
+    "avversario": "SV Steinbach",
+    "casa_trasferta": "trasferta",
+    "ci_attaccano": {
+     "sinistra": 25,
+     "centro": 38,
+     "destra": 38
+    },
+    "subiti": 0
+   },
+   {
+    "avversario": "Ivana FC",
+    "casa_trasferta": "trasferta",
+    "ci_attaccano": {
+     "sinistra": 14,
+     "centro": 62,
+     "destra": 24
+    },
+    "subiti": 2
+   },
+   {
+    "avversario": "FV L.A.",
+    "casa_trasferta": "casa",
+    "ci_attaccano": {
+     "sinistra": 0,
+     "centro": 100,
+     "destra": 0
+    },
+    "subiti": 2
+   },
+   {
+    "avversario": "Napoli FC",
+    "casa_trasferta": "casa",
+    "ci_attaccano": {
+     "sinistra": 18,
+     "centro": 59,
+     "destra": 24
+    },
+    "subiti": 1
+   },
+   {
+    "avversario": "Efthymis FC",
+    "casa_trasferta": "casa",
+    "ci_attaccano": {
+     "sinistra": 20,
+     "centro": 70,
+     "destra": 10
+    },
+    "subiti": 1
+   },
+   {
+    "avversario": "Skogens IF",
+    "casa_trasferta": "trasferta",
+    "ci_attaccano": {
+     "sinistra": 18,
+     "centro": 27,
+     "destra": 55
+    },
+    "subiti": 5
+   }
+  ],
+  "nota": "La media nasconde la varianza: contro lo Skogens IF la corsia destra ha assorbito il 55% degli attacchi, il valore piu' alto del campione, e la partita e' finita 0-5."
  },
  "avvertenze": [
   "I diagrammi a zone sono DISTRIBUZIONI: le tre corsie sommano a 100, non sono percentuali di successo.",
   "Il referto FV L.A. riporta 0/100/0 sugli attacchi avversari: lettura degenere, da riverificare.",
-  "Nessuna corsia risulta strutturalmente sfondata: il centro assorbe circa meta' degli attacchi in ogni partita."
+  "Skogens IF: scheda OCCASIONI mai fotografata, tiri e corner ignoti."
  ]
 }

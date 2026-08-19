@@ -1,0 +1,34 @@
+Analizza questo avversario di Top Eleven 2027.
+
+PRIMA leggi questi file, contengono la mia squadra reale:
+C:\Users\habet\progetti\app-emergent\dossier\ANALISI.md
+C:\Users\habet\progetti\app-emergent\dossier\rosa.json
+
+Le tattiche 2027 hanno 11 parametri su tre fasi. Dammeli TUTTI, usando SOLO
+questi valori:
+- In possesso: Tendenza tiro (Normale) | Stile passaggi (Palla corta/Misto/
+  Palla lunga) | Tipo di passaggi (Per il centro/Per entrambe le fasce/
+  Fascia destra/Misto) | Tendenza cross (Normale)
+- In transizione: Possesso perso (Raggruppamento/Riaggressione) | Possesso
+  ottenuto (Contropiede/Concentr. azioni) | Mentalita (Molto Difensiva/
+  Difensiva/Normale/Offensiva/Molto Offensiva)
+- Non in possesso: Stile marcatura (Zonale/Uomo a Uomo) | Pressing (Basso/
+  Medio/Alto) | Linea difensiva (Tracc. avvers./Trapp. fuorig.) | Stile
+  contrasti (Facile/Normale/Duro)
+
+VIETATO scrivere "Attacco sulle fasce", "Contropiede attivo", "Marcatura a
+zona", "Linea difensiva media": sono dello schema vecchio, nel gioco non
+esistono e non li trovo nel menu.
+
+Dai dati: il gioco centrale rende (attacco centrale >=60% -> 3,4 gol fatti e
+1,4 subiti; sotto -> 2,0 e 3,7). Default "Per il centro". Se proponi le fasce,
+giustificalo. Non esiste nessun "buco a destra": e' un numero smentito.
+
+Rispondi in questo formato, senza preamboli:
+LETTURA AVVERSARIO - modulo, GEN, media gol fatti/subiti, i 2-3 pericoli
+IL MIO ASSETTO - modulo + frecce, chi va dove (nomi veri da rosa.json)
+IMPOSTAZIONI - le tre fasi, tutti e 11 i parametri
+COSA NON FARE - 1-2 righe
+DA VERIFICARE - cosa non si legge dallo screenshot
+
+Separa quello che leggi da quello che deduci. Se un dato manca, scrivilo.
