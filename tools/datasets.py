@@ -43,7 +43,7 @@ DATASETS = {
 # motore counter) ma NON vengono esportati in index.ts, quindi Metro non li
 # include nel bundle dell'app (nessuna schermata li usa piu').
 FRONTEND_EXCLUDE = {"COUNTER_QUICK", "MATCHUP_MATRIX", "ARROW_TACTICS",
-                    "REAL_TEAMS", "SEASON_STORIES"}
+                    "SEASON_STORIES"}
 
 
 def read_server_text():

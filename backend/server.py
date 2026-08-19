@@ -35006,7 +35006,54 @@ REAL_TEAMS = [
         "philosophy_en": "Two creative midfielders in front of the defense, an Italian-style #10 (Brahim/Pulisic) plus two flank dribblers (Leao). High pressing and quick passing to keep the rivals in their own half.",
         "philosophy_it": "Due centrocampisti creativi davanti alla difesa, un trequartista all'italiana (Brahim/Pulisic) e due saltatori d'uomo larghi (Leao). Pressing alto e palla che gira veloce per tenere i rivali nella propria metà.",
         "how_to_copy_en": "4-2-3-1 Attacking, high pressing, Down Both Flanks passing, short style. AML/AMR with Pace and Dribbling; AMC with Playmaker ability. Ball-playing DCs.",
-        "how_to_copy_it": "4-2-3-1 Offensivo, pressing alto, passaggi sulle fasce, stile corto. AML/AMR con Velocità e Dribbling; AMC con abilità Regista. DC costruttori."
+        "how_to_copy_it": "4-2-3-1 Offensivo, pressing alto, passaggi sulle fasce, stile corto. AML/AMR con Velocità e Dribbling; AMC con abilità Regista. DC costruttori.",
+        "variants": [
+            {
+                "id": "aggressive",
+                "name_en": "4-2-3-1 Aggressive",
+                "name_it": "4-2-3-1 Offensivo",
+                "formation": "4-2-3-1",
+                "mentality_en": "Attacking",
+                "mentality_it": "Offensiva",
+                "arrows": "AML↑ AMC↑ AMR↑",
+                "setup_en": "High pressing, short passing down both flanks, counter-attack OFF. Use when you are stronger or need to take control from the first minute.",
+                "setup_it": "Pressing alto, passaggi corti sulle due fasce, contropiede OFF. Usala quando sei più forte o devi prendere il controllo dall'inizio.",
+                "when_to_use_en": "Against weaker or passive opponents.",
+                "when_to_use_it": "Contro avversari più deboli o passivi.",
+                "risk_en": "The space behind the full-backs and the gap around the double pivot.",
+                "risk_it": "Lo spazio alle spalle dei terzini e il vuoto attorno al doppio mediano."
+            },
+            {
+                "id": "balanced",
+                "name_en": "4-2-3-1 Balanced",
+                "name_it": "4-2-3-1 Equilibrato",
+                "formation": "4-2-3-1",
+                "mentality_en": "Normal",
+                "mentality_it": "Normale",
+                "arrows": "AML↑ AMR↑",
+                "setup_en": "Medium pressing, short or mixed passing, counter-attack ON only if the opponent leaves space. Keep the AMC free and do not push both full-backs together.",
+                "setup_it": "Pressing medio, passaggi corti o misti, contropiede ON solo se l'avversario lascia spazio. Lascia libero l'AMC e non spingere insieme i due terzini.",
+                "when_to_use_en": "As the default setup against an equal opponent.",
+                "when_to_use_it": "Come configurazione base contro un avversario di pari livello.",
+                "risk_en": "The attack can become predictable if both wingers receive the ball too far from the box.",
+                "risk_it": "L'attacco può diventare prevedibile se entrambe le ali ricevono palla troppo lontane dall'area."
+            },
+            {
+                "id": "protect",
+                "name_en": "4-2-3-1 Protect Lead",
+                "name_it": "4-2-3-1 Proteggi il vantaggio",
+                "formation": "4-2-3-1",
+                "mentality_en": "Defensive",
+                "mentality_it": "Difensiva",
+                "arrows": "DL↓ DC↓ DR↓ AML↑ AMR↑",
+                "setup_en": "Low pressing, short passing, counter-attack ON. Lower the defensive line and keep the AMC as the first outlet; use fresh midfielders before the final phase.",
+                "setup_it": "Pressing basso, passaggi corti, contropiede ON. Abbassa la linea difensiva e usa l'AMC come primo sbocco; inserisci centrocampisti freschi prima del finale.",
+                "when_to_use_en": "When leading or facing a stronger opponent who attacks with a high line.",
+                "when_to_use_it": "Quando sei in vantaggio o affronti un avversario più forte con linea alta.",
+                "risk_en": "Too much retreat isolates the striker and gives up the midfield.",
+                "risk_it": "Se arretri troppo, la punta resta isolata e perdi il centrocampo."
+            }
+        ]
     }
 ]
 

@@ -13,7 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, POSITION_GUIDE, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, GAME_GUIDE, FORMATION_LAB, REAL_TACTICS, FORMATIONS } from '@/src/data';
+import { PLAYER_ROLES, POSITION_GUIDE, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, GAME_GUIDE, FORMATION_LAB, REAL_TACTICS, REAL_TEAMS, FORMATIONS } from '@/src/data';
 import PitchDiagram from '@/src/components/PitchDiagram';
 
 // lookup nome modulo -> posizioni, per disegnare il mini-campo nella sezione Meta
@@ -44,9 +44,10 @@ const LOCAL_DATA: Record<string, any[]> = {
   guide: GAME_GUIDE,
   lab: FORMATION_LAB,
   realtactics: REAL_TACTICS,
+  teams: REAL_TEAMS,
 };
 
-type SectionId = 'roles' | 'positions' | 'meta' | 'skills' | 'training' | 'faq' | 'abbr' | 'paths' | 'mystyle' | 'setpiece' | 'battles' | 'guide' | 'lab' | 'realtactics';
+type SectionId = 'roles' | 'positions' | 'meta' | 'skills' | 'training' | 'faq' | 'abbr' | 'paths' | 'mystyle' | 'setpiece' | 'battles' | 'guide' | 'lab' | 'realtactics' | 'teams';
 
 interface SectionDef {
   id: SectionId;
@@ -71,6 +72,7 @@ const SECTIONS: SectionDef[] = [
   { id: 'guide', endpoint: '/api/game-guide', label_en: 'Club Guide', label_it: 'Gestione', icon: 'briefcase-outline' },
   { id: 'lab', endpoint: '/api/formation-lab', label_en: 'Formation Lab', label_it: 'Lab Moduli', icon: 'flask-outline' },
   { id: 'realtactics', endpoint: '/api/real-tactics', label_en: 'Real Football', label_it: 'Calcio Reale', icon: 'earth-outline' },
+  { id: 'teams', endpoint: '/api/real-teams', label_en: 'Team Models', label_it: 'Squadre modello', icon: 'shirt-outline' },
 ];
 
 const TIER_COLORS: Record<string, string> = {
@@ -87,10 +89,10 @@ export default function AcademyScreen() {
   const [section, setSection] = useState<SectionId>('meta');
   const [search, setSearch] = useState('');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], positions: [], meta: [], skills: [], training: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [], guide: [], lab: [], realtactics: [],
+    roles: [], positions: [], meta: [], skills: [], training: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [], guide: [], lab: [], realtactics: [], teams: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, positions: false, meta: false, skills: false, training: false, faq: false, abbr: false, paths: false, mystyle: false, setpiece: false, battles: false, guide: false, lab: false, realtactics: false,
+    roles: false, positions: false, meta: false, skills: false, training: false, faq: false, abbr: false, paths: false, mystyle: false, setpiece: false, battles: false, guide: false, lab: false, realtactics: false, teams: false,
   });
   const [selected, setSelected] = useState<any | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
@@ -135,6 +137,7 @@ export default function AcademyScreen() {
       case 'guide': return isIt ? item.category_it : item.category_en;
       case 'lab': return item.formation;
       case 'realtactics': return `${item.team}  ·  ${item.main_formation}`;
+      case 'teams': return `${item.team}  ·  ${item.te_formation}`;
       default: return '';
     }
   };
@@ -154,6 +157,7 @@ export default function AcademyScreen() {
       case 'guide': return isIt ? item.summary_it : item.summary_en;
       case 'lab': return isIt ? item.style_it : item.style_en;
       case 'realtactics': return `${item.league} ${item.season} · ${item.record}`;
+      case 'teams': return `${item.manager} · ${item.mentality}`;
       default: return '';
     }
   };
@@ -431,6 +435,28 @@ export default function AcademyScreen() {
                   <DetailBlock label={isIt ? 'COSA IMPARARNE' : 'WHAT TO LEARN'} value={isIt ? selected.lesson_it : selected.lesson_en} />
                   <DetailBlock label={isIt ? 'MODULO EQUIVALENTE IN TOP ELEVEN' : 'TOP ELEVEN EQUIVALENT'} value={selected.te_formation} />
                   <DetailBlock label={isIt ? 'FONTE' : 'SOURCE'} value={isIt ? selected.source_it : selected.source_en} />
+                </>
+              )}
+              {selected && section === 'teams' && (
+                <>
+                  {findPositions(selected.te_formation) && (
+                    <View style={styles.pitchBlock}>
+                      <PitchDiagram positions={findPositions(selected.te_formation)!} />
+                    </View>
+                  )}
+                  <DetailBlock label={isIt ? 'STILE' : 'STYLE'} value={isIt ? selected.style_it : selected.style_en} />
+                  <DetailChips label={isIt ? 'ATTRIBUTI CHIAVE' : 'KEY ATTRIBUTES'} values={isIt ? selected.key_attributes_it : selected.key_attributes_en} />
+                  <DetailBlock label={isIt ? 'FRECCE E MENTALITÀ' : 'ARROWS AND MENTALITY'} value={`${selected.arrows} · ${selected.mentality}`} />
+                  <DetailBlock label={isIt ? 'FILOSOFIA' : 'PHILOSOPHY'} value={isIt ? selected.philosophy_it : selected.philosophy_en} />
+                  <DetailBlock label={isIt ? 'CONFIGURAZIONE BASE' : 'BASE SETUP'} value={isIt ? selected.how_to_copy_it : selected.how_to_copy_en} />
+                  {(selected.variants || []).map((variant: any) => (
+                    <View key={variant.id} style={styles.detailBlock}>
+                      <Text style={styles.detailLabel}>{isIt ? variant.name_it.toUpperCase() : variant.name_en.toUpperCase()}</Text>
+                      <DetailBlock label={isIt ? 'SETUP' : 'SETUP'} value={isIt ? variant.setup_it : variant.setup_en} />
+                      <DetailBlock label={isIt ? 'QUANDO USARLA' : 'WHEN TO USE'} value={isIt ? variant.when_to_use_it : variant.when_to_use_en} />
+                      <DetailBlock label={isIt ? 'RISCHIO PRINCIPALE' : 'MAIN RISK'} value={isIt ? variant.risk_it : variant.risk_en} />
+                    </View>
+                  ))}
                 </>
               )}
               {selected && section === 'lab' && (
