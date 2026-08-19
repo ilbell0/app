@@ -1,0 +1,572 @@
+{
+  "_meta": {
+    "gioco": "Top Eleven 2027 (BlueStacks, UI italiana)",
+    "schermata": "Report partita > scheda FORMAZIONI",
+    "struttura_file": "Le 18 immagini sono 9 coppie. Ogni coppia e' la STESSA schermata scrollata orizzontalmente: il primo file mostra gli 11 della squadra di CASA (meta' campo sinistra, portiere all'estrema sinistra), il secondo file gli 11 della squadra in TRASFERTA (meta' campo destra, portiere all'estrema destra).",
+    "criterio_riga_diagramma": "Il campo e' orizzontale, i giocatori sono disposti su 5 corsie orizzontali (riga_griglia 1 = piu' in alto ... 5 = piu' in basso). riga_diagramma mappa: griglia 1-2 = 'alta', 3 = 'centrale', 4-5 = 'bassa'.",
+    "regola_orientamento": "La corsia in alto NON ha sempre lo stesso significato: dipende dal verso di attacco. Squadra di CASA (attacca verso destra) -> riga alta = FASCIA SINISTRA. Squadra in TRASFERTA (attacca verso sinistra) -> riga alta = FASCIA DESTRA. Verificato immagine per immagine con le sigle monolaterali (DL/ML/AML vs DR/MR/AMR).",
+    "campo_ruolo": "'ruolo' = prima sigla mostrata sul cartellino (ruolo primario del giocatore); 'ruoli' = tutte le sigle mostrate. ATTENZIONE: le sigle sono i ruoli GIOCABILI, non lo slot occupato in partita: lo slot reale si legge dalla posizione nel diagramma (riga_griglia).",
+    "campo_gen": "Il GEN per singolo giocatore NON e' mostrato in questa schermata: il numero nel tondo bianco e' il VOTO della partita (campo 'voto'). Il GEN e' solo di squadra (campo 'gen_squadra' / 'gen_avversario').",
+    "frecce": "In questa schermata non esistono frecce su/giu' di forma/morale. L'unico simbolo a freccia e' una freccia rossa ricurva accanto al token = giocatore sostituito. E' riportata in 'note' quando visibile; 'freccia' resta null. Le icone esagonali colorate sono le specialita' del giocatore (es. ancora, ali, mirino), non frecce.",
+    "nomi": "L'interfaccia tronca i cognomi a ~8 caratteri (es. 'Michelto', 'Reynisso', 'Sacchett', 'Boncom', 'Hernand'): i nomi sono trascritti ESATTAMENTE come stampati, senza completarli."
+  },
+  "formazioni": [
+    {
+      "file": "Screenshot 2026-08-19 133017.png",
+      "squadra": "AC Milan",
+      "casa_trasferta": "casa",
+      "avversario": "ManchesterUnited",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 113.7,
+      "gen_avversario": 132.0,
+      "orientamento": {
+        "riga_alta": "sinistra",
+        "prova": "Il Milan gioca da sinistra verso destra (portiere Michelto all'estrema sinistra). Gabay, con sigle tutte di fascia sinistra (DL/ML/AML), e' nella corsia piu' alta (griglia 1); Bone, con sigle tutte di fascia destra (MR/AMR/AMC), e' nella corsia piu' bassa (griglia 5). In difesa Portillo (DL/DC) sta sopra e Reynisso (DR/DC) sotto."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Michelto", "numero": 1, "voto": 4.9, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DL", "ruoli": ["DL", "DC"], "nome": "Portillo", "numero": 16, "voto": 5.1, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC", "DL"], "nome": "Sadin", "numero": 3, "voto": 5.6, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC"], "nome": "Reynisso", "numero": 17, "voto": 4.9, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DL", "ruoli": ["DL", "ML", "AML"], "nome": "Gabay", "numero": 5, "voto": 6.5, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Michos", "numero": 28, "voto": 5.3, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DMC", "ruoli": ["DMC", "MC"], "nome": "Romero", "numero": 8, "voto": 5.3, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "MR", "ruoli": ["MR", "AMR", "AMC"], "nome": "Bone", "numero": 24, "voto": 5.5, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "AMR", "ruoli": ["AMR", "ST", "AML"], "nome": "García", "numero": 14, "voto": 5.7, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "AMC", "ruoli": ["AMC", "ST"], "nome": "Sacchett", "numero": 9, "voto": 6.3, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "MC", "ruoli": ["MC", "AMC", "AMR"], "nome": "Gómez V", "numero": 10, "voto": 5.5, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"}
+      ],
+      "note": "Nessun risultato/punteggio visibile nella schermata. Modulo non stampato a schermo.",
+      "incerti": [
+        "modulo: non scritto a schermo; dal diagramma si leggono 3 difensori + 4 centrocampisti + 3 offensivi, ma non lo affermo con certezza",
+        "García e' AMR/ST/AML ma qui occupa la corsia alta (= sinistra): sta giocando sul lato sinistro, quindi la sua sigla non e' prova di orientamento"
+      ]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133025.png",
+      "squadra": "ManchesterUnited",
+      "casa_trasferta": "trasferta",
+      "avversario": "AC Milan",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 132.0,
+      "gen_avversario": 113.7,
+      "orientamento": {
+        "riga_alta": "destra",
+        "prova": "Lo United attacca verso sinistra (portiere Jeslinek all'estrema destra). Giggs (AMR/MR, sigle solo di destra) e' nella corsia piu' alta; Ronaldo (AML/ML, sigle solo di sinistra) e' nella corsia piu' bassa."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Jeslinek", "numero": 1, "voto": 7.6, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DC", "ruoli": ["DC", "DL", "DR"], "nome": "Patton", "numero": 29, "voto": 7.6, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "DC", "ruoli": ["DC"], "nome": "Szőcs", "numero": 15, "voto": 8.0, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DC", "ruoli": ["DC"], "nome": "Mnguni", "numero": 2, "voto": 8.2, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DC", "ruoli": ["DC", "DR", "DL"], "nome": "Dusek", "numero": 23, "voto": 7.9, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Bures", "numero": 4, "voto": 8.6, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DMC", "ruoli": ["DMC"], "nome": "Scholes", "numero": 20, "voto": 8.8, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Carrick", "numero": 28, "voto": 9.0, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "AMR", "ruoli": ["AMR", "MR"], "nome": "Giggs", "numero": 27, "voto": 9.0, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "ST", "ruoli": ["ST"], "nome": "Van Pers", "numero": 18, "voto": 7.9, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "AML", "ruoli": ["AML", "ML"], "nome": "Ronaldo", "numero": 33, "voto": 10.0, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"}
+      ],
+      "note": "Freccia rossa di sostituzione visibile su Dusek (#23). Nessun punteggio a schermo.",
+      "incerti": [
+        "modulo: non scritto a schermo",
+        "nome 'Szőcs': lettura della o con doppio accento non certa al 100%"
+      ]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133131.png",
+      "squadra": "FC Soyyiğit",
+      "casa_trasferta": "casa",
+      "avversario": "AC Milan",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 111.9,
+      "gen_avversario": 115.0,
+      "orientamento": {
+        "riga_alta": "sinistra",
+        "prova": "Soyyiğit attacca verso destra (portiere Staunstr all'estrema sinistra). Aslantog (DL, sigla unica) e' nella corsia piu' alta; Miesenb (DR, sigla unica) e' nella corsia piu' bassa. Conferma in avanti: Tetteh (AML/AMC/AMR) in alto, Fabián (MR/DR/AMR) in basso."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Staunstr", "numero": 1, "voto": 4.4, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DL", "ruoli": ["DL"], "nome": "Aslantog", "numero": 13, "voto": 5.9, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "DC", "ruoli": ["DC", "DL"], "nome": "Páli", "numero": 3, "voto": 6.4, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DC", "ruoli": ["DC", "DL"], "nome": "Orbán", "numero": 15, "voto": 5.8, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DR", "ruoli": ["DR"], "nome": "Miesenb", "numero": 2, "voto": 8.0, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Yenigün", "numero": 5, "voto": 6.6, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "MC", "ruoli": ["MC", "AMC"], "nome": null, "numero": 8, "voto": 6.4, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Yildirim", "numero": 4, "voto": 7.1, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "AML", "ruoli": ["AML", "AMC", "AMR"], "nome": "Tetteh", "numero": 11, "voto": 7.4, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "ST", "ruoli": ["ST"], "nome": "Çetinkay", "numero": 18, "voto": 8.2, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "MR", "ruoli": ["MR", "DR", "AMR"], "nome": "Fabián", "numero": 16, "voto": 6.9, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"}
+      ],
+      "note": "Freccia rossa di sostituzione su Yildirim (#4).",
+      "incerti": [
+        "giocatore #8 (voto 6,4, MC/AMC): il nome e' coperto dal token del #4, si legge solo la fine '...en' -> nome = null",
+        "modulo: non scritto a schermo"
+      ]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133140.png",
+      "squadra": "AC Milan",
+      "casa_trasferta": "trasferta",
+      "avversario": "FC Soyyiğit",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 115.0,
+      "gen_avversario": 111.9,
+      "orientamento": {
+        "riga_alta": "destra",
+        "prova": "Qui il Milan e' in trasferta e attacca verso sinistra (portiere Michelto all'estrema destra): l'orientamento e' INVERTITO rispetto alle partite in casa. Reynisso (DR/DC) e Bone (MR/AMR/AMC) sono nella corsia piu' alta; Gabay (DL/ML/AML) e' nella corsia piu' bassa."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Michelto", "numero": 1, "voto": 6.2, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC"], "nome": "Reynisso", "numero": 17, "voto": 6.8, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC", "DL"], "nome": "Sadin", "numero": 3, "voto": 7.1, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DL", "ruoli": ["DL", "DC"], "nome": "Portillo", "numero": 16, "voto": 7.0, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DL", "ruoli": ["DL", "ML", "AML"], "nome": "Gabay", "numero": 5, "voto": 7.3, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "MR", "ruoli": ["MR", "AMR", "AMC"], "nome": "Bone", "numero": 24, "voto": 7.7, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "DMC", "ruoli": ["DMC", "MC"], "nome": "Romero", "numero": 8, "voto": 7.1, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "MC", "ruoli": ["MC", "DMC"], "nome": "Michos", "numero": 4, "voto": 7.6, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "MC", "ruoli": ["MC", "AMC", "AMR"], "nome": "Gómez V", "numero": 10, "voto": 8.0, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "AMC", "ruoli": ["AMC", "ST"], "nome": "Sacchett", "numero": 9, "voto": 10.0, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "AMR", "ruoli": ["AMR", "ST", "AML"], "nome": "García", "numero": 14, "voto": 7.3, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"}
+      ],
+      "note": "Cartellino giallo accanto a Sadin (#3). Sacchett voto 10,0 con stella (migliore in campo).",
+      "incerti": ["modulo: non scritto a schermo"]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133213.png",
+      "squadra": "AC Milan",
+      "casa_trasferta": "casa",
+      "avversario": "SI Benfica",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 115.5,
+      "gen_avversario": 110.9,
+      "orientamento": {
+        "riga_alta": "sinistra",
+        "prova": "Milan in casa, attacca verso destra (portiere Michelto all'estrema sinistra). Gabay (DL/ML/AML) e' nella corsia piu' alta, Bone (MR/AMR/AMC) nella piu' bassa; in difesa Portillo (DL/DC) sopra e Reynisso (DR/DC) sotto."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Michelto", "numero": 1, "voto": 7.6, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DL", "ruoli": ["DL", "DC"], "nome": "Portillo", "numero": 16, "voto": 7.8, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DR", "ruoli": ["DR"], "nome": "Sadin", "numero": 3, "voto": 8.0, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC"], "nome": "Reynisso", "numero": 17, "voto": 8.4, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DL", "ruoli": ["DL", "ML", "AML"], "nome": "Gabay", "numero": 5, "voto": 8.2, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Boncom", "numero": 27, "voto": 8.4, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DMC", "ruoli": ["DMC"], "nome": "Romero", "numero": 8, "voto": 8.4, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "MC", "ruoli": ["MC", "DMC"], "nome": "Michos", "numero": 4, "voto": 7.8, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": null, "ruoli": ["AMR"], "nome": "Gómez", "numero": 10, "voto": 8.5, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "MR", "ruoli": ["MR", "AMR", "AMC"], "nome": "Bone", "numero": 24, "voto": 8.3, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "AMC", "ruoli": ["AMC", "ST"], "nome": "Sacchett", "numero": 9, "voto": 8.1, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"}
+      ],
+      "note": "Freccia rossa di sostituzione su Michos (#4).",
+      "incerti": [
+        "Gómez (#10): le prime sigle sono coperte dal token sovrapposto, si legge solo l'ultima 'AMR' -> ruolo primario null",
+        "Sadin (#3): dopo 'DR' un'icona copre le eventuali altre sigle",
+        "Romero (#8): dopo 'DMC' possibile seconda sigla coperta",
+        "modulo: non scritto a schermo"
+      ]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133217.png",
+      "squadra": "SI Benfica",
+      "casa_trasferta": "trasferta",
+      "avversario": "AC Milan",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 110.9,
+      "gen_avversario": 115.5,
+      "orientamento": {
+        "riga_alta": "destra",
+        "prova": "Benfica attacca verso sinistra (portiere Hutching all'estrema destra). Samano (DR, sigla unica) e' nella corsia piu' alta, Hernánd (DL/ML) nella piu' bassa; conferma Kostadin (AMR/MR) in alto ed El Moub (AML) in basso."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Hutching", "numero": 1, "voto": 7.9, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DR", "ruoli": ["DR"], "nome": "Samano", "numero": 13, "voto": 4.1, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "DC", "ruoli": ["DC"], "nome": "Stanisze", "numero": 3, "voto": 4.7, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DC", "ruoli": ["DC"], "nome": "Gonçalve", "numero": 6, "voto": 4.5, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DL", "ruoli": ["DL", "ML"], "nome": "Hernánd", "numero": 2, "voto": 4.3, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Cesar", "numero": 4, "voto": 5.6, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Mendes", "numero": 5, "voto": 5.3, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "AMR", "ruoli": ["AMR", "MR"], "nome": "Kostadin", "numero": 7, "voto": 5.5, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "AMC", "ruoli": ["AMC"], "nome": "Salihu", "numero": 10, "voto": 5.0, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "ST", "ruoli": ["ST"], "nome": "Brito", "numero": 9, "voto": 6.5, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "AML", "ruoli": ["AML"], "nome": "El Moub", "numero": 8, "voto": 5.1, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"}
+      ],
+      "note": "Cartellino giallo accanto a Salihu (#10).",
+      "incerti": ["modulo: non scritto a schermo"]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133245.png",
+      "squadra": "AC Milan",
+      "casa_trasferta": "casa",
+      "avversario": "BİTLİS TATVAN",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 116.4,
+      "gen_avversario": 111.0,
+      "orientamento": {
+        "riga_alta": "sinistra",
+        "prova": "Milan in casa, attacca verso destra (portiere Michelto all'estrema sinistra). Gabay (DL/ML/AML) nella corsia piu' alta, Bone (MR/AMR/AMC) nella piu' bassa; Portillo (DL/DC) sopra, Reynisso (DR/DC) sotto."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Michelto", "numero": 1, "voto": 6.6, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DL", "ruoli": ["DL", "DC"], "nome": "Portillo", "numero": 16, "voto": 7.1, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DR", "ruoli": ["DR"], "nome": "Sadin", "numero": 3, "voto": 7.5, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC"], "nome": "Reynisso", "numero": 17, "voto": 6.9, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DL", "ruoli": ["DL", "ML", "AML"], "nome": "Gabay", "numero": 5, "voto": 6.8, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Boncom", "numero": 27, "voto": 7.4, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DMC", "ruoli": ["DMC"], "nome": "Romero", "numero": 8, "voto": 9.0, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "MC", "ruoli": ["MC", "DMC"], "nome": "Michos", "numero": 4, "voto": 7.5, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": null, "ruoli": ["AMR"], "nome": "Gómez", "numero": 10, "voto": 7.2, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "MR", "ruoli": ["MR", "AMR", "AMC"], "nome": "Bone", "numero": 24, "voto": 8.9, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "AMC", "ruoli": ["AMC", "ST"], "nome": "Sacchett", "numero": 9, "voto": 9.0, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"}
+      ],
+      "note": "Freccia rossa di sostituzione su Sadin (#3). Le barre OVR per zona mostrano 1,0 / 1,0 (dato non disponibile per questa partita).",
+      "incerti": [
+        "Gómez (#10): sigle iniziali coperte, leggibile solo 'AMR'",
+        "Sadin (#3): eventuali sigle successive a 'DR' coperte da un'icona",
+        "modulo: non scritto a schermo"
+      ]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133253.png",
+      "squadra": "BİTLİS TATVAN",
+      "casa_trasferta": "trasferta",
+      "avversario": "AC Milan",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 111.0,
+      "gen_avversario": 116.4,
+      "orientamento": {
+        "riga_alta": "destra",
+        "prova": "Bitlis Tatvan attacca verso sinistra (portiere Taminc all'estrema destra). Çakir (DR, sigla unica) e' nella corsia piu' alta e Mora (DL, sigla unica) nella piu' bassa; conferma Dogan (AMR/MR) in alto e Tomic (AML) in basso."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Taminc", "numero": 1, "voto": 5.2, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DR", "ruoli": ["DR"], "nome": "Çakir", "numero": 39, "voto": 5.4, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DC", "ruoli": ["DC"], "nome": "Andueza", "numero": 23, "voto": 5.3, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DL", "ruoli": ["DL"], "nome": "Mora", "numero": 24, "voto": 5.5, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "DMC", "ruoli": ["DMC"], "nome": "Yilmaz", "numero": 19, "voto": 6.1, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Soiledis", "numero": 42, "voto": 5.9, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Mickal", "numero": 40, "voto": 6.5, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "AMR", "ruoli": ["AMR", "MR"], "nome": "Dogan", "numero": 15, "voto": 6.6, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "AMC", "ruoli": ["AMC", "ST"], "nome": "Greenwo", "numero": 11, "voto": 6.0, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": null, "ruoli": [], "nome": "Olsson", "numero": 25, "voto": 7.5, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "AML", "ruoli": ["AML"], "nome": "Tomic", "numero": 13, "voto": 6.2, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"}
+      ],
+      "note": "Solo 3 difensori visibili (Çakir, Andueza, Mora). Le barre OVR per zona mostrano 1,0 / 1,0.",
+      "incerti": [
+        "Olsson (#25): le sigle di ruolo sono completamente coperte dal cartellino di Greenwo -> ruoli = []",
+        "nome 'Taminc' troncato dall'interfaccia",
+        "modulo: non scritto a schermo"
+      ]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133316.png",
+      "squadra": "SV Steinbach",
+      "casa_trasferta": "casa",
+      "avversario": "AC Milan",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 83.2,
+      "gen_avversario": 95.5,
+      "orientamento": {
+        "riga_alta": "sinistra",
+        "prova": "Steinbach attacca verso destra (portiere Djokovic all'estrema sinistra). Müller (DL/DC) e' nella corsia piu' alta, Zahran (DR/MR) nella piu' bassa; conferma Alanga (AML, sigla unica) in alto ed Estévez (MR, sigla unica) in basso."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Djokovic", "numero": 1, "voto": 6.5, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DL", "ruoli": ["DL", "DC"], "nome": "Müller", "numero": 5, "voto": 7.0, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "DC", "ruoli": ["DC"], "nome": "Larin", "numero": 15, "voto": 8.4, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DR", "ruoli": ["DR", "MR"], "nome": "Zahran", "numero": 21, "voto": 7.4, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Barros", "numero": 8, "voto": 6.0, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "MR", "ruoli": ["MR", "AMR", "AMC"], "nome": "Chávez", "numero": 4, "voto": 6.8, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "AMC", "ruoli": ["AMC", "MC"], "nome": "Wiesner", "numero": 13, "voto": 6.7, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "MR", "ruoli": ["MR"], "nome": "Estévez", "numero": 27, "voto": 6.6, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "AML", "ruoli": ["AML"], "nome": "Alanga", "numero": 11, "voto": 6.7, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "ST", "ruoli": ["ST"], "nome": "Beorlegu", "numero": 9, "voto": 6.7, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "ST", "ruoli": ["ST"], "nome": "Kessels", "numero": 18, "voto": 6.7, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"}
+      ],
+      "note": "Solo 3 difensori puri (Müller, Larin, Zahran).",
+      "incerti": ["modulo: non scritto a schermo"]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133321.png",
+      "squadra": "AC Milan",
+      "casa_trasferta": "trasferta",
+      "avversario": "SV Steinbach",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 95.5,
+      "gen_avversario": 83.2,
+      "orientamento": {
+        "riga_alta": "destra",
+        "prova": "Milan in trasferta, attacca verso sinistra (portiere Matias all'estrema destra): orientamento invertito. Hernánd (MR/DR) e Sadin (DR/DC/DL) sono nelle corsie alte; Kim (DL, sigla unica) e Gabay (DL/ML/AML) nelle corsie basse."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Matias", "numero": 13, "voto": 8.2, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC", "DL"], "nome": "Sadin", "numero": 3, "voto": 7.8, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DL", "ruoli": ["DL", "DC"], "nome": "Portillo", "numero": 16, "voto": 7.6, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DL", "ruoli": ["DL"], "nome": "Kim", "numero": 15, "voto": 7.7, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "MR", "ruoli": ["MR", "DR"], "nome": "Hernánd", "numero": 2, "voto": 7.8, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "DMC", "ruoli": ["DMC", "DC", "MC"], "nome": "Willis", "numero": 6, "voto": 7.6, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Boncom", "numero": 27, "voto": 7.5, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DL", "ruoli": ["DL", "ML", "AML"], "nome": "Gabay", "numero": 5, "voto": 7.7, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "AMR", "ruoli": ["AMR", "ST", "AML"], "nome": "García", "numero": 14, "voto": 8.5, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "AMC", "ruoli": ["AMC"], "nome": "Montaro", "numero": 26, "voto": 7.5, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "AMC", "ruoli": ["AMC", "AML"], "nome": "McLoug", "numero": 11, "voto": 8.6, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"}
+      ],
+      "note": "Portiere diverso dal solito (Matias #13 al posto di Michelto).",
+      "incerti": ["modulo: non scritto a schermo"]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133349.png",
+      "squadra": "AC Milan",
+      "casa_trasferta": "casa",
+      "avversario": "FV L.A.",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 117.3,
+      "gen_avversario": 127.4,
+      "orientamento": {
+        "riga_alta": "sinistra",
+        "prova": "Milan in casa, attacca verso destra (portiere Michelto all'estrema sinistra). Gabay (DL/ML/AML) nella corsia piu' alta, Bone (MR/AMR/AMC) nella piu' bassa; Portillo (DL/DC) sopra, Reynisso (DR/DC) sotto."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Michelto", "numero": 1, "voto": 6.5, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DL", "ruoli": ["DL", "DC"], "nome": "Portillo", "numero": 16, "voto": 7.2, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC", "DL"], "nome": "Sadin", "numero": 3, "voto": 7.4, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC"], "nome": "Reynisso", "numero": 17, "voto": 7.2, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DL", "ruoli": ["DL", "ML", "AML"], "nome": "Gabay", "numero": 5, "voto": 7.0, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "DMC", "ruoli": ["DMC", "MC"], "nome": "Romero", "numero": 8, "voto": 7.3, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "MC", "ruoli": ["MC", "DMC"], "nome": "Michos", "numero": 4, "voto": 8.4, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "MR", "ruoli": ["MR", "AMR", "AMC"], "nome": "Bone", "numero": 24, "voto": 7.2, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "MC", "ruoli": ["MC", "AMC"], "nome": "Gómez V", "numero": 10, "voto": 7.3, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "AMC", "ruoli": ["AMC", "ST"], "nome": "Sacchett", "numero": 9, "voto": 7.8, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "AMR", "ruoli": ["AMR", "ST", "AML"], "nome": "García", "numero": 14, "voto": 7.0, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"}
+      ],
+      "note": null,
+      "incerti": [
+        "Gómez V (#10): la terza sigla e' coperta dal token di García",
+        "modulo: non scritto a schermo"
+      ]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133352.png",
+      "squadra": "FV L.A.",
+      "casa_trasferta": "trasferta",
+      "avversario": "AC Milan",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 127.4,
+      "gen_avversario": 117.3,
+      "orientamento": {
+        "riga_alta": "destra",
+        "prova": "FV L.A. attacca verso sinistra (portiere Taffertsh all'estrema destra). Mynthe (DR/MR) e' nella corsia piu' alta, Koukal (DL/ML) nella piu' bassa."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Taffertsh", "numero": 1, "voto": 6.5, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DR", "ruoli": ["DR", "MR"], "nome": "Mynthe", "numero": 31, "voto": 7.0, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "DC", "ruoli": ["DC"], "nome": "Niemeye", "numero": 3, "voto": 6.7, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DC", "ruoli": ["DC"], "nome": "Koné", "numero": 2, "voto": 7.4, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DL", "ruoli": ["DL", "ML"], "nome": "Koukal", "numero": 19, "voto": 6.8, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "DMC", "ruoli": ["DMC", "DC", "DR"], "nome": "Skarmou", "numero": 6, "voto": 7.7, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Knez", "numero": 7, "voto": 6.9, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "ML", "ruoli": ["ML", "MC"], "nome": "Vasiljev", "numero": 4, "voto": 7.7, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "AMC", "ruoli": ["AMC"], "nome": "Santelice", "numero": 27, "voto": 6.8, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "ST", "ruoli": ["ST", "AML", "AMC"], "nome": "Schröder", "numero": 9, "voto": 7.0, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "ST", "ruoli": ["ST"], "nome": "Ludäsch", "numero": 25, "voto": 6.6, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"}
+      ],
+      "note": null,
+      "incerti": ["modulo: non scritto a schermo"]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133405.png",
+      "squadra": "Ivana FC",
+      "casa_trasferta": "casa",
+      "avversario": "AC Milan",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 111.3,
+      "gen_avversario": 117.0,
+      "orientamento": {
+        "riga_alta": "sinistra",
+        "prova": "Ivana FC attacca verso destra (portiere Chadili all'estrema sinistra). Campos (ST/AML/AMR) e' nella corsia piu' alta e Gholami (ST/AMR) nella piu' bassa; in difesa Retamoz (DC/DMC/DL) sopra e Quintero #15 (DC/DL/DR) sotto."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Chadili", "numero": 12, "voto": 5.7, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DC", "ruoli": ["DC", "DMC", "DL"], "nome": "Retamoz", "numero": 17, "voto": 6.7, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC"], "nome": "Quintero", "numero": 29, "voto": 6.9, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DC", "ruoli": ["DC", "DMC"], "nome": "Arce", "numero": 23, "voto": 6.4, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DC", "ruoli": ["DC", "DL", "DR"], "nome": "Quintero", "numero": 15, "voto": 7.2, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "DMC", "ruoli": ["DMC"], "nome": "Pieprzyk", "numero": 14, "voto": 7.1, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DMC", "ruoli": ["DMC", "DC", "MC"], "nome": "Trinidad", "numero": 6, "voto": 6.6, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "ST", "ruoli": ["ST", "AML", "AMR"], "nome": "Campos", "numero": 26, "voto": 7.5, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "AML", "ruoli": ["AML", "AMC"], "nome": "Jafari", "numero": 39, "voto": 6.6, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "ST", "ruoli": ["ST", "AMC", "MC"], "nome": "Casalino", "numero": 10, "voto": 7.6, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "ST", "ruoli": ["ST", "AMR"], "nome": "Gholami", "numero": 30, "voto": 6.6, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"}
+      ],
+      "note": "Due giocatori omonimi 'Quintero' (#29 e #15). Barra CENTROCAM. 1,0 (dato non disponibile).",
+      "incerti": [
+        "Arce (#23): la terza sigla e' coperta dal cartellino di Trinidad (si intravede una D)",
+        "modulo: non scritto a schermo"
+      ]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133408.png",
+      "squadra": "AC Milan",
+      "casa_trasferta": "trasferta",
+      "avversario": "Ivana FC",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 117.0,
+      "gen_avversario": 111.3,
+      "orientamento": {
+        "riga_alta": "destra",
+        "prova": "Milan in trasferta, attacca verso sinistra (portiere Michelto all'estrema destra): orientamento invertito. Bone (MR/AMR/AMC) e Reynisso (DR/DC) sono nelle corsie alte; Gabay (DL/ML/AML) e Portillo (DL/DC) nelle corsie basse."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Michelto", "numero": 1, "voto": 6.3, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC"], "nome": "Reynisso", "numero": 17, "voto": 6.8, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC", "DL"], "nome": "Sadin", "numero": 3, "voto": 6.5, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DL", "ruoli": ["DL", "DC"], "nome": "Portillo", "numero": 16, "voto": 6.6, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DL", "ruoli": ["DL", "ML", "AML"], "nome": "Gabay", "numero": 5, "voto": 7.8, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "MR", "ruoli": ["MR", "AMR", "AMC"], "nome": "Bone", "numero": 24, "voto": 7.9, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Michos", "numero": 4, "voto": 7.0, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DMC", "ruoli": ["DMC", "MC"], "nome": "Romero", "numero": 8, "voto": 7.3, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "AMR", "ruoli": ["AMR", "ST", "AML"], "nome": "García", "numero": 14, "voto": 7.1, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "MC", "ruoli": ["MC", "AMC", "AMR"], "nome": "Gómez V", "numero": 10, "voto": 7.3, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "AMC", "ruoli": ["AMC", "ST"], "nome": "Sacchett", "numero": 9, "voto": 7.6, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"}
+      ],
+      "note": null,
+      "incerti": [
+        "Michos (#4): dopo 'MC' un'eventuale seconda sigla e' coperta dal cartellino di Sadin",
+        "modulo: non scritto a schermo"
+      ]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133421.png",
+      "squadra": "AC Milan",
+      "casa_trasferta": "casa",
+      "avversario": "Napoli FC",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 119.0,
+      "gen_avversario": 120.5,
+      "orientamento": {
+        "riga_alta": "sinistra",
+        "prova": "Milan in casa, attacca verso destra (portiere Michelto all'estrema sinistra). Gabay (DL/ML/AML) nella corsia piu' alta, Bone (MR/AMR/AMC) nella piu' bassa; Portillo (DL/DC) sopra, Reynisso (DR/DC) sotto."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Michelto", "numero": 1, "voto": 6.8, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DL", "ruoli": ["DL", "DC"], "nome": "Portillo", "numero": 16, "voto": 7.2, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC"], "nome": "Sadin", "numero": 3, "voto": 6.9, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC"], "nome": "Reynisso", "numero": 17, "voto": 7.7, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DL", "ruoli": ["DL", "ML", "AML"], "nome": "Gabay", "numero": 5, "voto": 7.6, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "DMC", "ruoli": ["DMC", "MC"], "nome": "Romero", "numero": 8, "voto": 7.9, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "MC", "ruoli": ["MC", "DMC"], "nome": "Michos", "numero": 4, "voto": 9.8, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "MR", "ruoli": ["MR", "AMR", "AMC"], "nome": "Bone", "numero": 24, "voto": 8.6, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "MC", "ruoli": ["MC", "AMC", "AMR"], "nome": "Gómez V", "numero": 10, "voto": 7.8, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "AMC", "ruoli": ["AMC", "ST"], "nome": "Sacchett", "numero": 9, "voto": 8.9, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "AMR", "ruoli": ["AMR", "ST", "AML"], "nome": "García", "numero": 14, "voto": 7.6, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"}
+      ],
+      "note": "Michos 9,8 con stella (migliore in campo).",
+      "incerti": ["modulo: non scritto a schermo"]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133425.png",
+      "squadra": "Napoli FC",
+      "casa_trasferta": "trasferta",
+      "avversario": "AC Milan",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 120.5,
+      "gen_avversario": 119.0,
+      "orientamento": {
+        "riga_alta": "destra",
+        "prova": "Napoli attacca verso sinistra (portiere Ricciolini all'estrema destra). Marzocc (DR/MR/MC) e' nella corsia piu' alta e Zaro (DL, sigla unica) nella piu' bassa; conferma Bertazzo (AMR/MR) in alto."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Ricciolini", "numero": 12, "voto": 4.6, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DR", "ruoli": ["DR", "MR", "MC"], "nome": "Marzocc", "numero": 23, "voto": 6.3, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DC", "ruoli": ["DC", "DR"], "nome": "De Masi", "numero": 17, "voto": 5.8, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DC", "ruoli": ["DC", "DL"], "nome": "Di Genna", "numero": 5, "voto": 6.4, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DL", "ruoli": ["DL"], "nome": "Zaro", "numero": 3, "voto": 6.3, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "DMC", "ruoli": ["DMC", "MC"], "nome": "Casaros", "numero": 15, "voto": 6.9, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "ML", "ruoli": ["ML", "MR", "MC"], "nome": "Shannon", "numero": 21, "voto": 7.1, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "AMR", "ruoli": ["AMR", "MR"], "nome": "Bertazzo", "numero": 13, "voto": 7.0, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "AMC", "ruoli": ["AMC", "MC"], "nome": "Bartoluc", "numero": 7, "voto": 7.3, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "ST", "ruoli": ["ST"], "nome": "Belinghe", "numero": 9, "voto": 6.5, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "ST", "ruoli": ["ST"], "nome": "Malacca", "numero": 25, "voto": 6.8, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"}
+      ],
+      "note": "Icona infortunio/cerotto accanto a Bartoluc (#7).",
+      "incerti": ["modulo: non scritto a schermo"]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133440.png",
+      "squadra": "Skogens IF",
+      "casa_trasferta": "casa",
+      "avversario": "AC Milan",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 119.9,
+      "gen_avversario": 119.0,
+      "orientamento": {
+        "riga_alta": "sinistra",
+        "prova": "Skogens IF attacca verso destra (portiere Yar Bhou all'estrema sinistra). Anttonen (DL, sigla unica) e' nella corsia piu' alta ed El Maaro (DR/DC) nella piu' bassa; conferma Wahzrii (AML, sigla unica) in alto e Widman (AMR, sigla unica) in basso."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Yar Bhou", "numero": 1, "voto": 9.1, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DL", "ruoli": ["DL"], "nome": "Anttonen", "numero": 5, "voto": 7.3, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "DC", "ruoli": ["DC", "DL", "DR"], "nome": null, "numero": 2, "voto": 6.7, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DC", "ruoli": ["DC"], "nome": "Tudor", "numero": 6, "voto": 6.7, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC"], "nome": "El Maaro", "numero": 6, "voto": 8.1, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "DMC", "ruoli": ["DMC"], "nome": "Benatia", "numero": 7, "voto": 8.1, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Nordenb", "numero": 8, "voto": 6.7, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "MC", "ruoli": ["MC"], "nome": "Mallon", "numero": 4, "voto": 6.7, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "AML", "ruoli": ["AML"], "nome": "Wahzrii", "numero": 33, "voto": 8.5, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "ST", "ruoli": ["ST"], "nome": "Alexand", "numero": 10, "voto": 8.0, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "AMR", "ruoli": ["AMR"], "nome": "Widman", "numero": 7, "voto": 8.2, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"}
+      ],
+      "note": null,
+      "incerti": [
+        "giocatore #2 (voto 6,7, DC/DL/DR): l'inizio del cognome e' coperto dal token soprastante, si legge solo '...ejnullah' -> nome = null",
+        "numeri di maglia: il #6 compare due volte (Tudor e El Maaro) e il #7 due volte (Benatia e Widman); i numeri sono parzialmente coperti dalle maglie, quindi possono essere letti male",
+        "modulo: non scritto a schermo"
+      ]
+    },
+    {
+      "file": "Screenshot 2026-08-19 133444.png",
+      "squadra": "AC Milan",
+      "casa_trasferta": "trasferta",
+      "avversario": "Skogens IF",
+      "risultato": null,
+      "modulo": null,
+      "gen_squadra": 119.0,
+      "gen_avversario": 119.9,
+      "orientamento": {
+        "riga_alta": "destra",
+        "prova": "Milan in trasferta, attacca verso sinistra (portiere Michelto all'estrema destra): orientamento invertito. Reynisso (DR/DC) e Bone (MR/AMR/AMC) sono nella corsia piu' alta; Gabay (DL/ML/AML) e Sadin (schierato come terzino sinistro) nella piu' bassa, con Portillo (DL/DC) nella fascia bassa."
+      },
+      "giocatori": [
+        {"ruolo": "GK", "ruoli": ["GK"], "nome": "Michelto", "numero": 1, "voto": 4.8, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC"], "nome": "Reynisso", "numero": 17, "voto": 6.2, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "DMC", "ruoli": ["DMC", "DC", "MC"], "nome": "Willis", "numero": 6, "voto": 6.3, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "DL", "ruoli": ["DL", "DC"], "nome": "Portillo", "numero": 16, "voto": 6.6, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DR", "ruoli": ["DR", "DC", "DL"], "nome": "Sadin", "numero": 3, "voto": 6.4, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "MR", "ruoli": ["MR", "AMR", "AMC"], "nome": "Bone", "numero": 24, "voto": 6.8, "gen": null, "freccia": null, "riga_griglia": 1, "riga_diagramma": "alta"},
+        {"ruolo": "DMC", "ruoli": ["DMC", "MC"], "nome": "Romero", "numero": 8, "voto": 6.9, "gen": null, "freccia": null, "riga_griglia": 2, "riga_diagramma": "alta"},
+        {"ruolo": "MC", "ruoli": ["MC", "DMC"], "nome": "Michos", "numero": 4, "voto": 7.2, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"},
+        {"ruolo": "MC", "ruoli": ["MC", "AMC", "AMR"], "nome": "Gómez V", "numero": 10, "voto": 6.9, "gen": null, "freccia": null, "riga_griglia": 4, "riga_diagramma": "bassa"},
+        {"ruolo": "DL", "ruoli": ["DL", "ML", "AML"], "nome": "Gabay", "numero": 5, "voto": 5.7, "gen": null, "freccia": null, "riga_griglia": 5, "riga_diagramma": "bassa"},
+        {"ruolo": "AMC", "ruoli": ["AMC", "ST"], "nome": "Sacchett", "numero": 9, "voto": 7.4, "gen": null, "freccia": null, "riga_griglia": 3, "riga_diagramma": "centrale"}
+      ],
+      "note": "Difesa a 4 chiaramente leggibile: Reynisso (DR) in alto, Willis e Portillo centrali, Sadin in basso; davanti Michos come schermo.",
+      "incerti": ["modulo: non scritto a schermo"]
+    }
+  ]
+}

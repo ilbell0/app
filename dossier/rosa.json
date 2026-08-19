@@ -1,0 +1,230 @@
+[
+ {
+  "nome": "Portillo",
+  "ruoli": [
+   "DC",
+   "DL"
+  ],
+  "presenze": 9,
+  "voto_medio": 6.91,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "alta"
+ },
+ {
+  "nome": "Sadin",
+  "ruoli": [
+   "DC",
+   "DL",
+   "DR"
+  ],
+  "presenze": 9,
+  "voto_medio": 7.02,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "centrale"
+ },
+ {
+  "nome": "Gabay",
+  "ruoli": [
+   "AML",
+   "DL",
+   "ML"
+  ],
+  "presenze": 9,
+  "voto_medio": 7.18,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "alta"
+ },
+ {
+  "nome": "Michelto",
+  "ruoli": [
+   "GK"
+  ],
+  "presenze": 8,
+  "voto_medio": 6.21,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "centrale"
+ },
+ {
+  "nome": "Reynisso",
+  "ruoli": [
+   "DC",
+   "DR"
+  ],
+  "presenze": 8,
+  "voto_medio": 6.86,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "bassa"
+ },
+ {
+  "nome": "Michos",
+  "ruoli": [
+   "DMC",
+   "MC"
+  ],
+  "presenze": 8,
+  "voto_medio": 7.58,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "centrale"
+ },
+ {
+  "nome": "Romero",
+  "ruoli": [
+   "DMC",
+   "MC"
+  ],
+  "presenze": 8,
+  "voto_medio": 7.4,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "alta"
+ },
+ {
+  "nome": "Bone",
+  "ruoli": [
+   "AMC",
+   "AMR",
+   "MR"
+  ],
+  "presenze": 8,
+  "voto_medio": 7.61,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "bassa"
+ },
+ {
+  "nome": "Sacchett",
+  "ruoli": [
+   "AMC",
+   "ST"
+  ],
+  "presenze": 8,
+  "voto_medio": 8.14,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "centrale"
+ },
+ {
+  "nome": "García",
+  "ruoli": [
+   "AML",
+   "AMR",
+   "ST"
+  ],
+  "presenze": 6,
+  "voto_medio": 7.2,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "alta"
+ },
+ {
+  "nome": "Gómez V",
+  "ruoli": [
+   "AMC",
+   "AMR",
+   "MC"
+  ],
+  "presenze": 6,
+  "voto_medio": 7.13,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "bassa"
+ },
+ {
+  "nome": "Boncom",
+  "ruoli": [
+   "MC"
+  ],
+  "presenze": 3,
+  "voto_medio": 7.77,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "alta"
+ },
+ {
+  "nome": "Gómez",
+  "ruoli": [
+   "AMR"
+  ],
+  "presenze": 2,
+  "voto_medio": 7.85,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "bassa"
+ },
+ {
+  "nome": "Willis",
+  "ruoli": [
+   "DC",
+   "DMC",
+   "MC"
+  ],
+  "presenze": 2,
+  "voto_medio": 6.95,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "centrale"
+ },
+ {
+  "nome": "Matias",
+  "ruoli": [
+   "GK"
+  ],
+  "presenze": 1,
+  "voto_medio": 8.2,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "centrale"
+ },
+ {
+  "nome": "Kim",
+  "ruoli": [
+   "DL"
+  ],
+  "presenze": 1,
+  "voto_medio": 7.7,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "bassa"
+ },
+ {
+  "nome": "Hernánd",
+  "ruoli": [
+   "DR",
+   "MR"
+  ],
+  "presenze": 1,
+  "voto_medio": 7.8,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "alta"
+ },
+ {
+  "nome": "Montaro",
+  "ruoli": [
+   "AMC"
+  ],
+  "presenze": 1,
+  "voto_medio": 7.5,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "centrale"
+ },
+ {
+  "nome": "McLoug",
+  "ruoli": [
+   "AMC",
+   "AML"
+  ],
+  "presenze": 1,
+  "voto_medio": 8.6,
+  "gen": null,
+  "frecce_usate": null,
+  "riga_prevalente": "bassa"
+ }
+]

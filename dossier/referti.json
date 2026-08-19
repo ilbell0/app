@@ -1,0 +1,495 @@
+[
+  {
+    "file_sorgente": [
+      "Screenshot 2026-08-19 125132.png",
+      "Screenshot 2026-08-19 125143.png",
+      "Screenshot 2026-08-19 125152.png",
+      "Screenshot 2026-08-19 125201.png",
+      "Screenshot 2026-08-19 125321.png"
+    ],
+    "orario_cluster": "12:51",
+    "avversario": "ManchesterUnited",
+    "casa_trasferta": null,
+    "risultato": {"milan": 0, "avversario": 7},
+    "mentore_milan": {"nome": "Cesc Fabregas", "livello": 6},
+    "mentore_avversario": {"nome": "Jonas Braun", "livello": 5},
+    "gol_milan": [],
+    "gol_avversario": [
+      {"marcatore": "C. Ronaldo", "minuto": 16, "assist": "R. Van Persie"},
+      {"marcatore": "R. Giggs", "minuto": 41, "assist": "C. Ronaldo"},
+      {"marcatore": "C. Ronaldo", "minuto": 44, "assist": "P. Scholes"},
+      {"marcatore": "R. Giggs", "minuto": 71, "assist": "M. Carrick"},
+      {"marcatore": "C. Ronaldo", "minuto": 83, "assist": "D. Mnguni"},
+      {"marcatore": "R. Giggs", "minuto": 86, "assist": "M. Bures"}
+    ],
+    "uomo_partita": {"nome": "C. Ronaldo", "ruolo": "AML/ML", "gen": 130, "squadra": "avversario", "valutazione": 10.00, "note": "3 gol, 100% duelli vinti"},
+    "generale": {
+      "possesso": {"milan": 40, "avversario": 60},
+      "zone_attacco_milan": {"alta": 38, "centrale": 0, "bassa": 63},
+      "zone_attacco_avversario": {"alta": 28, "centrale": 39, "bassa": 33},
+      "contatori_milan": {"bandierine": 5, "infortuni": 1, "sostituzioni": 2, "rossi": 0, "gialli": 0},
+      "contatori_avversario": {"bandierine": 2, "infortuni": 0, "sostituzioni": 1, "rossi": 0, "gialli": 0}
+    },
+    "occasioni": {
+      "tiri_totali": {"milan": 0, "avversario": 16},
+      "tiri_in_porta": {"milan": 0, "avversario": 13},
+      "precisione_tiri": {"milan": 0, "avversario": 81},
+      "punizioni": {"milan": 0, "avversario": 0},
+      "corner": {"milan": 6, "avversario": 5},
+      "occasioni_da_cross": {"milan": 0, "avversario": 6},
+      "parate": {"milan": 6, "avversario": 0}
+    },
+    "passaggi": {
+      "precisione": {"milan": 25, "avversario": 81},
+      "combinazione": {"milan": 17, "avversario": 24},
+      "costruzione_equilibrata": {"milan": 83, "avversario": 35},
+      "palloni_lunghi": {"milan": 0, "avversario": 41},
+      "completati_per_zona": {"milan": {"zona_1": 17, "zona_2": 0}, "avversario": null}
+    },
+    "duelli": {
+      "vinti_totale": {"milan": 22, "avversario": 85},
+      "vinti_per_zona_milan": {"alta": 33, "centrale": 22, "bassa": 44},
+      "vinti_per_zona_avversario": {"alta": 20, "centrale": 55, "bassa": 25},
+      "dribbling_riusciti": {"milan": 60, "avversario": 83},
+      "dribbling": {"milan": 3, "avversario": 5},
+      "falli": {"milan": 13, "avversario": 12},
+      "intercetti": {"milan": null, "avversario": null}
+    },
+    "incerti": [
+      "elenco marcatori incompleto: visibili 6 gol su 7 (lista scrollata nello screenshot 125321)",
+      "intercetti tagliati sul bordo inferiore dello screenshot DUELLI",
+      "% passaggi completati per zona: mostrati 17% e 0% con il logo AC Milan a sinistra; non e' certo se le due percentuali si riferiscano alle due meta' campo del Milan o alle due squadre",
+      "lo screenshot riepilogo 125321 e' stato acquisito 80s dopo le schede, ma riporta lo stesso risultato/avversario"
+    ]
+  },
+  {
+    "file_sorgente": [
+      "Screenshot 2026-08-19 125915.png",
+      "Screenshot 2026-08-19 125922.png",
+      "Screenshot 2026-08-19 125927.png",
+      "Screenshot 2026-08-19 125933.png",
+      "Screenshot 2026-08-19 125938.png"
+    ],
+    "orario_cluster": "12:59",
+    "avversario": "FC Soyyigit",
+    "casa_trasferta": null,
+    "risultato": {"milan": 5, "avversario": 4},
+    "mentore_milan": {"nome": "Cesc Fabregas", "livello": 7},
+    "mentore_avversario": {"nome": "Lewis Green", "livello": 6},
+    "gol_milan": [
+      {"marcatore": "S. Sacchetti", "minuto": 1, "assist": null},
+      {"marcatore": "S. Sacchetti", "minuto": 15, "assist": "M. Gomez ..."},
+      {"marcatore": "S. Sacchetti", "minuto": 28, "assist": "R. Garcia"},
+      {"marcatore": "S. Sacchetti", "minuto": 36, "assist": "J. Bone"}
+    ],
+    "gol_avversario": [
+      {"marcatore": "D. Tetteh", "minuto": 19, "assist": "P. Miesenbock"},
+      {"marcatore": "M. Cetinkaya", "minuto": 53, "assist": "D. Tetteh"}
+    ],
+    "uomo_partita": {"nome": "S. Sacchetti", "ruolo": "AMC/ST", "gen": 146, "squadra": "milan", "valutazione": 10.00, "note": "5 gol, 89% duelli vinti"},
+    "generale": {
+      "possesso": {"milan": 49, "avversario": 51},
+      "zone_attacco_milan": {"alta": 22, "centrale": 39, "bassa": 39},
+      "zone_attacco_avversario": {"alta": 43, "centrale": 21, "bassa": 36},
+      "contatori_milan": {"bandierine": 3, "infortuni": 0, "sostituzioni": 0, "rossi": 0, "gialli": 1},
+      "contatori_avversario": {"bandierine": 13, "infortuni": 0, "sostituzioni": 1, "rossi": 0, "gialli": 1}
+    },
+    "occasioni": {
+      "tiri_totali": {"milan": 7, "avversario": 12},
+      "tiri_in_porta": {"milan": 6, "avversario": 10},
+      "precisione_tiri": {"milan": 86, "avversario": 83},
+      "punizioni": {"milan": 1, "avversario": 1},
+      "corner": {"milan": 5, "avversario": 5},
+      "occasioni_da_cross": {"milan": 4, "avversario": 18},
+      "parate": {"milan": 6, "avversario": 1}
+    },
+    "passaggi": {
+      "precisione": {"milan": 76, "avversario": 72},
+      "combinazione": {"milan": 40, "avversario": 0},
+      "costruzione_equilibrata": {"milan": 60, "avversario": 86},
+      "palloni_lunghi": {"milan": 0, "avversario": 14},
+      "completati_per_zona": {"milan": null, "avversario": {"zona_1": 64, "zona_2": 78}}
+    },
+    "duelli": {
+      "vinti_totale": {"milan": 74, "avversario": 70},
+      "vinti_per_zona_milan": {"alta": 13, "centrale": 61, "bassa": 26},
+      "vinti_per_zona_avversario": {"alta": 42, "centrale": 36, "bassa": 21},
+      "dribbling_riusciti": {"milan": 90, "avversario": 71},
+      "dribbling": {"milan": 9, "avversario": 5},
+      "falli": {"milan": 10, "avversario": 10},
+      "intercetti": {"milan": null, "avversario": null}
+    },
+    "incerti": [
+      "elenco marcatori incompleto: visibili 4 gol Milan su 5 e 2 gol avversari su 4 (lista scrollata sopra e sotto)",
+      "assist del gol al 15' troncato: 'M. Gomez ...' (probabile M. Gomez Vara, non confermato)",
+      "riga parziale al 55' in cima alla lista non leggibile",
+      "intercetti tagliati sul bordo inferiore dello screenshot DUELLI",
+      "% passaggi completati per zona: 64% e 78% mostrati con il logo FC Soyyigit; semantica non certa"
+    ]
+  },
+  {
+    "file_sorgente": [
+      "Screenshot 2026-08-19 130023.png",
+      "Screenshot 2026-08-19 130029.png",
+      "Screenshot 2026-08-19 130035.png",
+      "Screenshot 2026-08-19 130039.png",
+      "Screenshot 2026-08-19 130045.png"
+    ],
+    "orario_cluster": "13:00",
+    "avversario": "SI Benfica",
+    "casa_trasferta": null,
+    "risultato": {"milan": 4, "avversario": 0},
+    "mentore_milan": {"nome": "Cesc Fabregas", "livello": 7},
+    "mentore_avversario": null,
+    "gol_milan": [
+      {"marcatore": "J. Bone", "minuto": 10, "assist": "O. Gabay"},
+      {"marcatore": "J. Bone", "minuto": 19, "assist": "P. Boncompagni"},
+      {"marcatore": "R. Garcia", "minuto": 81, "assist": "M. Gomez Vara"},
+      {"marcatore": "A. Montaroup", "minuto": 84, "assist": "R. Garcia"}
+    ],
+    "gol_avversario": [],
+    "uomo_partita": {"nome": "M. Gomez Vara", "ruolo": "MC/AMC/AMR", "gen": 114, "squadra": "milan", "valutazione": 8.54, "note": "17 passaggi, 80% duelli vinti"},
+    "generale": {
+      "possesso": {"milan": 60, "avversario": 40},
+      "zone_attacco_milan": {"alta": 14, "centrale": 68, "bassa": 19},
+      "zone_attacco_avversario": {"alta": 31, "centrale": 56, "bassa": 13},
+      "contatori_milan": {"bandierine": 0, "infortuni": 0, "sostituzioni": 2, "rossi": 0, "gialli": 0},
+      "contatori_avversario": {"bandierine": 6, "infortuni": 0, "sostituzioni": 0, "rossi": 0, "gialli": 1}
+    },
+    "occasioni": {
+      "tiri_totali": {"milan": 18, "avversario": 2},
+      "tiri_in_porta": {"milan": 17, "avversario": 0},
+      "precisione_tiri": {"milan": 94, "avversario": 0},
+      "punizioni": {"milan": 1, "avversario": 0},
+      "corner": {"milan": 5, "avversario": 5},
+      "occasioni_da_cross": {"milan": 6, "avversario": 0},
+      "parate": {"milan": null, "avversario": null}
+    },
+    "passaggi": {
+      "precisione": {"milan": 94, "avversario": 40},
+      "combinazione": {"milan": 62, "avversario": 67},
+      "costruzione_equilibrata": {"milan": 38, "avversario": 22},
+      "palloni_lunghi": {"milan": 0, "avversario": 11},
+      "completati_per_zona": {"milan": {"zona_1": 100, "zona_2": 80}, "avversario": null}
+    },
+    "duelli": {
+      "vinti_totale": {"milan": 95, "avversario": 40},
+      "vinti_per_zona_milan": {"alta": 10, "centrale": 73, "bassa": 18},
+      "vinti_per_zona_avversario": {"alta": 27, "centrale": 60, "bassa": 13},
+      "dribbling_riusciti": {"milan": 82, "avversario": 75},
+      "dribbling": {"milan": 9, "avversario": 3},
+      "falli": {"milan": 7, "avversario": 11},
+      "intercetti": {"milan": null, "avversario": null}
+    },
+    "incerti": [
+      "parate tagliate sul bordo inferiore: si intuisce 0 per il Milan e un valore a due cifre (12 o 13) per l'avversario, non leggibile con certezza",
+      "intercetti tagliati sul bordo inferiore dello screenshot DUELLI",
+      "l'avversario non ha assegnato un mentore (schermata: 'NESSUN MENTORE ASSEGNATO')"
+    ]
+  },
+  {
+    "file_sorgente": [
+      "Screenshot 2026-08-19 130106.png",
+      "Screenshot 2026-08-19 130111.png",
+      "Screenshot 2026-08-19 130117.png",
+      "Screenshot 2026-08-19 130122.png",
+      "Screenshot 2026-08-19 130127.png"
+    ],
+    "orario_cluster": "13:01",
+    "avversario": "BITLIS TATVAN",
+    "casa_trasferta": null,
+    "risultato": {"milan": 4, "avversario": 2},
+    "mentore_milan": {"nome": "Cesc Fabregas", "livello": 8},
+    "mentore_avversario": {"nome": "Jonas Braun", "livello": 6},
+    "gol_milan": [
+      {"marcatore": "S. Sacchetti", "minuto": 32, "assist": "J. Bone"},
+      {"marcatore": "D. Romero", "minuto": 38, "assist": null},
+      {"marcatore": "D. Romero", "minuto": 58, "assist": "S. Sacchetti"}
+    ],
+    "gol_avversario": [
+      {"marcatore": "M. Olsson", "minuto": 54, "assist": "M. Dogan"},
+      {"marcatore": "M. Olsson", "minuto": 77, "assist": null}
+    ],
+    "uomo_partita": {"nome": "S. Sacchetti", "ruolo": "AMC/ST", "gen": 147, "squadra": "milan", "valutazione": 9.03, "note": "2 gol, 75% duelli vinti"},
+    "generale": {
+      "possesso": {"milan": 53, "avversario": 47},
+      "zone_attacco_milan": {"alta": 7, "centrale": 75, "bassa": 18},
+      "zone_attacco_avversario": {"alta": 24, "centrale": 41, "bassa": 35},
+      "contatori_milan": {"bandierine": 6, "infortuni": 1, "sostituzioni": 1, "rossi": 0, "gialli": 0},
+      "contatori_avversario": {"bandierine": 1, "infortuni": 0, "sostituzioni": 0, "rossi": 0, "gialli": 0}
+    },
+    "occasioni": {
+      "tiri_totali": {"milan": 8, "avversario": 11},
+      "tiri_in_porta": {"milan": 8, "avversario": 6},
+      "precisione_tiri": {"milan": 100, "avversario": 55},
+      "punizioni": {"milan": 0, "avversario": 0},
+      "corner": {"milan": 9, "avversario": 5},
+      "occasioni_da_cross": {"milan": 0, "avversario": 2},
+      "parate": {"milan": null, "avversario": null}
+    },
+    "passaggi": {
+      "precisione": {"milan": 85, "avversario": 65},
+      "combinazione": {"milan": 83, "avversario": 0},
+      "costruzione_equilibrata": {"milan": 17, "avversario": 50},
+      "palloni_lunghi": {"milan": 0, "avversario": 50},
+      "completati_per_zona": {"milan": {"zona_1": 70, "zona_2": 86}, "avversario": null}
+    },
+    "duelli": {
+      "vinti_totale": {"milan": 83, "avversario": 65},
+      "vinti_per_zona_milan": {"alta": 7, "centrale": 77, "bassa": 17},
+      "vinti_per_zona_avversario": {"alta": 22, "centrale": 52, "bassa": 26},
+      "dribbling_riusciti": {"milan": 100, "avversario": 75},
+      "dribbling": {"milan": 2, "avversario": 3},
+      "falli": {"milan": 7, "avversario": 7},
+      "intercetti": {"milan": 11, "avversario": 9}
+    },
+    "incerti": [
+      "elenco marcatori incompleto: visibili 3 gol Milan su 4 (lista scrollata)",
+      "parate non visibili nello screenshot OCCASIONI (tagliate in basso)",
+      "G. Sadin infortunato al 76' e sostituito al 77' da M. Willis (Milan)"
+    ]
+  },
+  {
+    "file_sorgente": [
+      "Screenshot 2026-08-19 130147.png",
+      "Screenshot 2026-08-19 130153.png",
+      "Screenshot 2026-08-19 130158.png",
+      "Screenshot 2026-08-19 130204.png",
+      "Screenshot 2026-08-19 130209.png"
+    ],
+    "orario_cluster": "13:01",
+    "avversario": "SV Steinbach",
+    "casa_trasferta": null,
+    "risultato": {"milan": 1, "avversario": 0},
+    "mentore_milan": {"nome": "Lewis Green", "livello": 1},
+    "mentore_avversario": {"nome": "Alan Shearer", "livello": 6},
+    "gol_milan": [
+      {"marcatore": "R. Garcia", "minuto": 5, "assist": "D. McLoughlin"}
+    ],
+    "gol_avversario": [],
+    "uomo_partita": {"nome": "D. McLoughlin", "ruolo": "AMC/AML", "gen": 93, "squadra": "milan", "valutazione": 8.64, "note": null},
+    "generale": {
+      "possesso": {"milan": 56, "avversario": 44},
+      "zone_attacco_milan": {"alta": 25, "centrale": 35, "bassa": 40},
+      "zone_attacco_avversario": {"alta": 38, "centrale": 38, "bassa": 25},
+      "contatori_milan": {"bandierine": 5, "infortuni": 0, "sostituzioni": 0, "rossi": 0, "gialli": 0},
+      "contatori_avversario": {"bandierine": 1, "infortuni": 0, "sostituzioni": 0, "rossi": 0, "gialli": 0}
+    },
+    "occasioni": {
+      "tiri_totali": {"milan": 9, "avversario": 5},
+      "tiri_in_porta": {"milan": 3, "avversario": 3},
+      "precisione_tiri": {"milan": 33, "avversario": 60},
+      "punizioni": {"milan": 0, "avversario": 0},
+      "corner": {"milan": 4, "avversario": 6},
+      "occasioni_da_cross": {"milan": 0, "avversario": 3},
+      "parate": {"milan": 3, "avversario": 2}
+    },
+    "passaggi": {
+      "precisione": {"milan": 72, "avversario": 42},
+      "combinazione": {"milan": 33, "avversario": 0},
+      "costruzione_equilibrata": {"milan": 67, "avversario": 87},
+      "palloni_lunghi": {"milan": 0, "avversario": 13},
+      "completati_per_zona": {"milan": null, "avversario": {"zona_1": 80, "zona_2": 25}}
+    },
+    "duelli": {
+      "vinti_totale": {"milan": 64, "avversario": 52},
+      "vinti_per_zona_milan": {"alta": 21, "centrale": 33, "bassa": 45},
+      "vinti_per_zona_avversario": {"alta": 38, "centrale": 57, "bassa": 5},
+      "dribbling_riusciti": {"milan": 88, "avversario": 75},
+      "dribbling": {"milan": 7, "avversario": 6},
+      "falli": {"milan": 10, "avversario": 11},
+      "intercetti": {"milan": 9, "avversario": 13}
+    },
+    "incerti": [
+      "nome dell'uomo partita parzialmente fuori inquadratura ('...Loughlin'): ricostruito come D. McLoughlin dalla riga dell'assist",
+      "statistiche dell'uomo partita non visibili (schermata tagliata in basso)",
+      "intercetti letti sul bordo inferiore dello screenshot DUELLI (cifre parzialmente tagliate)",
+      "% passaggi completati per zona: 80% e 25% mostrati con il logo SV Steinbach; semantica non certa"
+    ]
+  },
+  {
+    "file_sorgente": [
+      "Screenshot 2026-08-19 130222.png",
+      "Screenshot 2026-08-19 130228.png",
+      "Screenshot 2026-08-19 130233.png",
+      "Screenshot 2026-08-19 130238.png",
+      "Screenshot 2026-08-19 130243.png"
+    ],
+    "orario_cluster": "13:02",
+    "avversario": "Ivana FC",
+    "casa_trasferta": null,
+    "risultato": {"milan": 3, "avversario": 2},
+    "mentore_milan": {"nome": "Lewis Green", "livello": 1},
+    "mentore_avversario": {"nome": "Nemanja Vidic", "livello": 6},
+    "gol_milan": [
+      {"marcatore": "D. Romero", "minuto": 47, "assist": "J. Bone"},
+      {"marcatore": "S. Sacchetti", "minuto": 54, "assist": "M. Gomez ..."},
+      {"marcatore": "R. Garcia", "minuto": 59, "assist": "O. Gabay"}
+    ],
+    "gol_avversario": [
+      {"marcatore": "M. Casalino", "minuto": 4, "assist": "M. Pieprzyk"},
+      {"marcatore": "M. Casalino", "minuto": 30, "assist": "J. Campos"}
+    ],
+    "uomo_partita": {"nome": "J. Bone", "ruolo": "MR/AMR/AMC", "gen": 133, "squadra": "milan", "valutazione": 7.91, "note": "16 passaggi, 83% duelli vinti"},
+    "generale": {
+      "possesso": {"milan": 60, "avversario": 40},
+      "zone_attacco_milan": {"alta": 14, "centrale": 62, "bassa": 24},
+      "zone_attacco_avversario": {"alta": 24, "centrale": 62, "bassa": 14},
+      "contatori_milan": {"bandierine": 6, "infortuni": 0, "sostituzioni": 0, "rossi": 0, "gialli": 1},
+      "contatori_avversario": {"bandierine": 3, "infortuni": 0, "sostituzioni": 0, "rossi": 0, "gialli": 0}
+    },
+    "occasioni": {
+      "tiri_totali": {"milan": 10, "avversario": 9},
+      "tiri_in_porta": {"milan": 6, "avversario": 5},
+      "precisione_tiri": {"milan": 60, "avversario": 56},
+      "punizioni": {"milan": 0, "avversario": 1},
+      "corner": {"milan": 8, "avversario": 3},
+      "occasioni_da_cross": {"milan": 0, "avversario": 0},
+      "parate": {"milan": 3, "avversario": 3}
+    },
+    "passaggi": {
+      "precisione": {"milan": 65, "avversario": 67},
+      "combinazione": {"milan": 43, "avversario": 29},
+      "costruzione_equilibrata": {"milan": 57, "avversario": 14},
+      "palloni_lunghi": {"milan": 0, "avversario": 57},
+      "completati_per_zona": {"milan": null, "avversario": {"zona_1": 88, "zona_2": 43}}
+    },
+    "duelli": {
+      "vinti_totale": {"milan": 68, "avversario": 67},
+      "vinti_per_zona_milan": {"alta": 11, "centrale": 63, "bassa": 26},
+      "vinti_per_zona_avversario": {"alta": 19, "centrale": 71, "bassa": 10},
+      "dribbling_riusciti": {"milan": 75, "avversario": 50},
+      "dribbling": {"milan": 12, "avversario": 1},
+      "falli": {"milan": 8, "avversario": 17},
+      "intercetti": {"milan": null, "avversario": null}
+    },
+    "incerti": [
+      "assist del gol al 54' troncato: 'M. Gomez ...' (probabile M. Gomez Vara, non confermato)",
+      "intercetti tagliati sul bordo inferiore dello screenshot DUELLI",
+      "% passaggi completati per zona: 88% e 43% mostrati con il logo Ivana FC; semantica non certa",
+      "cartellino giallo al 50' a O. Gabay (Milan)"
+    ]
+  },
+  {
+    "file_sorgente": [
+      "Screenshot 2026-08-19 130255.png",
+      "Screenshot 2026-08-19 130301.png",
+      "Screenshot 2026-08-19 130306.png",
+      "Screenshot 2026-08-19 130311.png",
+      "Screenshot 2026-08-19 130316.png"
+    ],
+    "orario_cluster": "13:02",
+    "avversario": "FV L.A.",
+    "casa_trasferta": null,
+    "risultato": {"milan": 1, "avversario": 2},
+    "mentore_milan": {"nome": "Cesc Fabregas", "livello": 8},
+    "mentore_avversario": {"nome": "Jonas Braun", "livello": 7},
+    "gol_milan": [
+      {"marcatore": "S. Sacchetti", "minuto": 14, "assist": "N. Michos"}
+    ],
+    "gol_avversario": [
+      {"marcatore": "V. Skarmoutsos", "minuto": 28, "assist": "A. Vasil..."},
+      {"marcatore": "A. Vasiljev", "minuto": 48, "assist": null}
+    ],
+    "uomo_partita": {"nome": "V. Skarmoutsos", "ruolo": "DMC/DC/DR", "gen": 117, "squadra": "avversario", "valutazione": 7.75, "note": "2 intercetti, 64% duelli vinti"},
+    "generale": {
+      "possesso": {"milan": 50, "avversario": 50},
+      "zone_attacco_milan": {"alta": 30, "centrale": 60, "bassa": 10},
+      "zone_attacco_avversario": {"alta": 0, "centrale": 100, "bassa": 0},
+      "contatori_milan": {"bandierine": 2, "infortuni": 0, "sostituzioni": 0, "rossi": 0, "gialli": 0},
+      "contatori_avversario": {"bandierine": 3, "infortuni": 0, "sostituzioni": 0, "rossi": 0, "gialli": 0}
+    },
+    "occasioni": {
+      "tiri_totali": {"milan": 5, "avversario": 9},
+      "tiri_in_porta": {"milan": 3, "avversario": 6},
+      "precisione_tiri": {"milan": 60, "avversario": 67},
+      "punizioni": {"milan": 0, "avversario": 1},
+      "corner": {"milan": 5, "avversario": 8},
+      "occasioni_da_cross": {"milan": 0, "avversario": 0},
+      "parate": {"milan": 4, "avversario": 2}
+    },
+    "passaggi": {
+      "precisione": {"milan": 69, "avversario": 65},
+      "combinazione": {"milan": 55, "avversario": 13},
+      "costruzione_equilibrata": {"milan": 36, "avversario": 49},
+      "palloni_lunghi": {"milan": 9, "avversario": 38},
+      "completati_per_zona": {"milan": {"zona_1": 71, "zona_2": 40}, "avversario": null}
+    },
+    "duelli": {
+      "vinti_totale": {"milan": 65, "avversario": 64},
+      "vinti_per_zona_milan": {"alta": 26, "centrale": 61, "bassa": 13},
+      "vinti_per_zona_avversario": {"alta": 0, "centrale": 100, "bassa": 0},
+      "dribbling_riusciti": {"milan": 70, "avversario": 67},
+      "dribbling": {"milan": 7, "avversario": 6},
+      "falli": {"milan": 7, "avversario": 12},
+      "intercetti": {"milan": 13, "avversario": 14}
+    },
+    "incerti": [
+      "assist del gol al 28' troncato: 'A. Vasil...' (probabile A. Vasiljev, non confermato)",
+      "intercetti letti sul bordo inferiore dello screenshot DUELLI (cifre parzialmente tagliate)",
+      "parate lette sul bordo inferiore dello screenshot OCCASIONI"
+    ]
+  },
+  {
+    "file_sorgente": [
+      "Screenshot 2026-08-19 130331.png",
+      "Screenshot 2026-08-19 130338.png",
+      "Screenshot 2026-08-19 130343.png",
+      "Screenshot 2026-08-19 130347.png",
+      "Screenshot 2026-08-19 130351.png"
+    ],
+    "orario_cluster": "13:03",
+    "avversario": "Napoli FC",
+    "casa_trasferta": null,
+    "risultato": {"milan": 5, "avversario": 1},
+    "mentore_milan": {"nome": "Cesc Fabregas", "livello": 8},
+    "mentore_avversario": {"nome": "Nemanja Vidic", "livello": 6},
+    "gol_milan": [
+      {"marcatore": "R. Garcia", "minuto": 51, "assist": "J. Bone"},
+      {"marcatore": "S. Sacchetti", "minuto": 67, "assist": "J. Bone"},
+      {"marcatore": "S. Sacchetti", "minuto": 80, "assist": "N. Michos"}
+    ],
+    "gol_avversario": [
+      {"marcatore": "M. Bartolucci", "minuto": 21, "assist": "F. Bertazzo"}
+    ],
+    "uomo_partita": {"nome": "N. Michos", "ruolo": "MC/DMC", "gen": 132, "squadra": "milan", "valutazione": 9.76, "note": "17 passaggi, 77% duelli vinti"},
+    "generale": {
+      "possesso": {"milan": 54, "avversario": 46},
+      "zone_attacco_milan": {"alta": 12, "centrale": 76, "bassa": 12},
+      "zone_attacco_avversario": {"alta": 18, "centrale": 59, "bassa": 24},
+      "contatori_milan": {"bandierine": 6, "infortuni": 0, "sostituzioni": 0, "rossi": 0, "gialli": 1},
+      "contatori_avversario": {"bandierine": 1, "infortuni": 1, "sostituzioni": 1, "rossi": 0, "gialli": 0}
+    },
+    "occasioni": {
+      "tiri_totali": {"milan": 12, "avversario": 5},
+      "tiri_in_porta": {"milan": 8, "avversario": 4},
+      "precisione_tiri": {"milan": 67, "avversario": 80},
+      "punizioni": {"milan": 0, "avversario": 1},
+      "corner": {"milan": 7, "avversario": 6},
+      "occasioni_da_cross": {"milan": 0, "avversario": 8},
+      "parate": {"milan": null, "avversario": null}
+    },
+    "passaggi": {
+      "precisione": {"milan": 69, "avversario": 67},
+      "combinazione": {"milan": 38, "avversario": 0},
+      "costruzione_equilibrata": {"milan": 62, "avversario": 82},
+      "palloni_lunghi": {"milan": 0, "avversario": 18},
+      "completati_per_zona": {"milan": {"zona_1": 43, "zona_2": 67}, "avversario": null}
+    },
+    "duelli": {
+      "vinti_totale": {"milan": 71, "avversario": 56},
+      "vinti_per_zona_milan": {"alta": 11, "centrale": 74, "bassa": 14},
+      "vinti_per_zona_avversario": {"alta": 19, "centrale": 56, "bassa": 25},
+      "dribbling_riusciti": {"milan": 88, "avversario": 58},
+      "dribbling": {"milan": 14, "avversario": 7},
+      "falli": {"milan": 9, "avversario": 14},
+      "intercetti": {"milan": 11, "avversario": 15}
+    },
+    "incerti": [
+      "elenco marcatori incompleto: visibili 3 gol Milan su 5 (lista scrollata)",
+      "parate tagliate sul bordo inferiore dello screenshot OCCASIONI",
+      "intercetti letti sul bordo inferiore dello screenshot DUELLI (cifre parzialmente tagliate)",
+      "cartellino giallo all'86' a G. Sadin (Milan); infortunio di M. Bartolucci all'86' e sostituzione con K. Munoz all'87' (Napoli)"
+    ]
+  }
+]

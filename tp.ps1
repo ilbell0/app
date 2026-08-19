@@ -138,6 +138,13 @@ function Cmd-Ota($messaggio) {
 function Cmd-Codex($istruzioni) {
     if (-not $istruzioni) { Ko 'serve un prompt: .\tp.ps1 codex "cosa deve fare"'; exit 1 }
     $vincoli = @'
+PRIMA DI TUTTO: leggi AGENTS.md nella radice del progetto. Se la richiesta
+riguarda tattiche, avversari o la squadra, leggi anche dossier/ANALISI.md e
+dossier/rosa.json: contengono la rosa reale, 8 referti partita e gli aggregati
+verificati. Senza quelli rispondi alla cieca.
+Ricorda che le tattiche 2027 hanno 11 parametri su tre fasi: lo schema vecchio
+("Attacco: sulle fasce", "Contropiede: attivo") non esiste piu'.
+
 VINCOLI (un'altra sessione lavora sul layer dati in parallelo):
 - Modifica SOLO file dentro frontend/app/ e frontend/src/components/.
 - NON toccare backend/server.py, NON toccare tools/, NON modificare a mano

@@ -1,0 +1,82 @@
+{
+ "_nota": "Aggregati ricalcolati dai referti persistiti in questa cartella. Base: 8 partite. La sconfitta 0-5 con lo Skogens IF NON e' inclusa: analizzata dagli screenshot ma mai trascritta in referti.json.",
+ "partite_analizzate": 8,
+ "correlazione_attacco_centrale": {
+  "descrizione": "Percentuale di attacchi del Milan incanalati al centro, confrontata con gol fatti e subiti.",
+  "centro_alto": {
+   "soglia": ">=60%",
+   "partite": 5,
+   "gol_fatti_media": 3.4,
+   "gol_subiti_media": 1.4,
+   "dettaglio": [
+    {
+     "avversario": "SI Benfica",
+     "centro_pct": 68,
+     "fatti": 4,
+     "subiti": 0
+    },
+    {
+     "avversario": "BITLIS TATVAN",
+     "centro_pct": 75,
+     "fatti": 4,
+     "subiti": 2
+    },
+    {
+     "avversario": "Ivana FC",
+     "centro_pct": 62,
+     "fatti": 3,
+     "subiti": 2
+    },
+    {
+     "avversario": "FV L.A.",
+     "centro_pct": 60,
+     "fatti": 1,
+     "subiti": 2
+    },
+    {
+     "avversario": "Napoli FC",
+     "centro_pct": 76,
+     "fatti": 5,
+     "subiti": 1
+    }
+   ]
+  },
+  "centro_basso": {
+   "soglia": "<60%",
+   "partite": 3,
+   "gol_fatti_media": 2.0,
+   "gol_subiti_media": 3.67,
+   "dettaglio": [
+    {
+     "avversario": "ManchesterUnited",
+     "centro_pct": 0,
+     "fatti": 0,
+     "subiti": 7
+    },
+    {
+     "avversario": "FC Soyyigit",
+     "centro_pct": 39,
+     "fatti": 5,
+     "subiti": 4
+    },
+    {
+     "avversario": "SV Steinbach",
+     "centro_pct": 35,
+     "fatti": 1,
+     "subiti": 0
+    }
+   ]
+  }
+ },
+ "dove_ci_attaccano": {
+  "descrizione": "Distribuzione media degli attacchi avversari, normalizzata sulle fasce del Milan (casa: riga alta = sinistra; trasferta: riga alta = destra). Le tre voci sommano a 100.",
+  "sinistra": 22.0,
+  "centro": 52.0,
+  "destra": 26.2
+ },
+ "avvertenze": [
+  "I diagrammi a zone sono DISTRIBUZIONI: le tre corsie sommano a 100, non sono percentuali di successo.",
+  "Il referto FV L.A. riporta 0/100/0 sugli attacchi avversari: lettura degenere, da riverificare.",
+  "Nessuna corsia risulta strutturalmente sfondata: il centro assorbe circa meta' degli attacchi in ogni partita."
+ ]
+}

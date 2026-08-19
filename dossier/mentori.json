@@ -1,0 +1,253 @@
+[
+  {
+    "file": "Screenshot 2026-08-19 132344.png",
+    "nome": "RUBÉN HERRERA",
+    "soprannome": "IL SABOTATORE",
+    "livello": 5,
+    "livello_max_visibile": null,
+    "specializzazione": null,
+    "abilita": [
+      {
+        "slot": "Potenziamento Tattico",
+        "titolo": "POTENZ. TATTICO",
+        "testo": "Aumenta l'efficacia dei contropiedi di un 30%",
+        "valore_attuale": "30%",
+        "valore_successivo": null,
+        "stato": "sbloccata",
+        "livello_richiesto": 1
+      },
+      {
+        "slot": "Potenziamento Attributo",
+        "titolo": "POTENZ. ATTRIBUTO",
+        "testo": "Tutti i giocatori ricevono un potenziamento di +10 (successivo +15) creatività e passaggi durante la partita",
+        "valore_attuale": "+10",
+        "valore_successivo": "+15",
+        "stato": "sbloccata",
+        "livello_richiesto": 5
+      },
+      {
+        "slot": "Cavallo di Battaglia",
+        "titolo": "CAVALLO DI BATTAGLIA",
+        "testo": "Durante un contropiede, la difesa avversaria perde tutta l'organizzazione, rendendo i suoi attributi marcatura, posizionamento e velocità un 30% meno efficaci",
+        "valore_attuale": "30%",
+        "valore_successivo": null,
+        "stato": "bloccata",
+        "livello_richiesto": 10
+      }
+    ],
+    "altro_testo_visibile": "SERIE 1; Il contratto terminerà tra 73g; barra XP 0/100 PE; freccia livello successivo 6; pulsanti ASSEGNA e PESCA PACCHETTI PE; riquadro Reclutam. Mentori OFFERTE",
+    "incerti": [
+      "Il Cavallo di Battaglia ha icona lucchetto (livello 10 non raggiunto) ma il testo è comunque leggibile: trascritto integralmente invece di null"
+    ]
+  },
+  {
+    "file": "Screenshot 2026-08-19 132353.png",
+    "nome": "LEWIS GREEN",
+    "soprannome": "IL GENERALE DELLE FASCE",
+    "livello": 2,
+    "livello_max_visibile": null,
+    "specializzazione": null,
+    "abilita": [
+      {
+        "slot": "Potenziamento Tattico",
+        "titolo": "POTENZ. TATTICO",
+        "testo": "Aumenta l'efficacia degli attacchi sulle fasce di un 20% (successivo 25%)",
+        "valore_attuale": "20%",
+        "valore_successivo": "25%",
+        "stato": "sbloccata",
+        "livello_richiesto": 1
+      },
+      {
+        "slot": "Potenziamento Attributo",
+        "titolo": "POTENZ. ATTRIBUTO",
+        "testo": "Tutti i giocatori ricevono un potenziamento di cross e colpo di testa +6 durante la partita",
+        "valore_attuale": "+6",
+        "valore_successivo": null,
+        "stato": "bloccata",
+        "livello_richiesto": 5
+      },
+      {
+        "slot": "Cavallo di Battaglia",
+        "titolo": "CAVALLO DI BATTAGLIA",
+        "testo": "I cross diventano estremamente precisi, rendendo l'attributo Colpo di testa del difensore un 80% meno efficace nei duelli aerei",
+        "valore_attuale": "80%",
+        "valore_successivo": null,
+        "stato": "bloccata",
+        "livello_richiesto": 10
+      }
+    ],
+    "altro_testo_visibile": "SERIE 1; Il contratto terminerà tra 73g; barra XP 10/30 PE; freccia livello successivo 3; pulsanti ASSEGNA e PESCA PACCHETTI PE; riquadro Reclutam. Mentori OFFERTE",
+    "incerti": [
+      "Potenz. Attributo e Cavallo di Battaglia hanno icona lucchetto (non sbloccati) ma i testi sono leggibili: trascritti integralmente invece di null"
+    ]
+  },
+  {
+    "file": "Screenshot 2026-08-19 132403.png",
+    "nome": "JONAS BRAUN",
+    "soprannome": "L'ANALISTA",
+    "livello": null,
+    "livello_max_visibile": null,
+    "specializzazione": null,
+    "abilita": [
+      {
+        "slot": "Potenziamento Tattico",
+        "titolo": "POTENZ. TATTICO",
+        "testo": "Aumenta l'efficacia dei passaggi lunghi di un 15%",
+        "valore_attuale": null,
+        "valore_successivo": null,
+        "stato": "bloccata",
+        "livello_richiesto": 1
+      },
+      {
+        "slot": "Potenziamento Attributo",
+        "titolo": "POTENZ. ATTRIBUTO",
+        "testo": "Tutti i giocatori ricevono un potenziamento di forza e posizionamento +5 mentre il Mentore è assegnato durante la partita",
+        "valore_attuale": null,
+        "valore_successivo": null,
+        "stato": "bloccata",
+        "livello_richiesto": 5
+      },
+      {
+        "slot": "Cavallo di Battaglia",
+        "titolo": "CAVALLO DI BATTAGLIA",
+        "testo": "All'intervallo il Mentore individua la zona difensiva più debole dell'avversario e assegna un potenziamento Tutti gli attributi +20 ai giocatori che attaccano attraverso la zona nel resto della partita",
+        "valore_attuale": null,
+        "valore_successivo": null,
+        "stato": "bloccata",
+        "livello_richiesto": 10
+      }
+    ],
+    "altro_testo_visibile": "SERIE 1; mentore NON posseduto: al posto del badge livello c'è un'icona lucchetto, nessuna barra PE, nessuna riga contratto, pulsante giallo OTT. MENTORE al posto di ASSEGNA; riquadro Reclutam. Mentori OFFERTE",
+    "incerti": [
+      "livello: assente, badge sostituito da lucchetto (mentore non ancora ottenuto)",
+      "Nessun valore numerico nelle barre delle tre abilità (badge percentuale/punti non mostrati perché il mentore non è posseduto); i valori compaiono solo dentro il testo descrittivo",
+      "Cognome: letto 'BRAUN' (non 'Brown')"
+    ]
+  },
+  {
+    "file": "Screenshot 2026-08-19 132414.png",
+    "nome": "ALAN SHEARER",
+    "soprannome": "IL FINALIZZATORE",
+    "livello": 1,
+    "livello_max_visibile": null,
+    "specializzazione": null,
+    "abilita": [
+      {
+        "slot": "Potenziamento Tattico",
+        "titolo": "POTENZ. TATTICO",
+        "testo": "Aumenta l'efficacia delle azioni di dribbling di un 15% (successivo 20%)",
+        "valore_attuale": "15%",
+        "valore_successivo": "20%",
+        "stato": "sbloccata",
+        "livello_richiesto": 1
+      },
+      {
+        "slot": "Potenziamento Attributo",
+        "titolo": "POTENZ. ATTRIBUTO",
+        "testo": "Tutti i giocatori ricevono un potenziamento di forza e tiro +5 mentre il Mentore è assegnato durante la partita",
+        "valore_attuale": "+5",
+        "valore_successivo": null,
+        "stato": "bloccata",
+        "livello_richiesto": 5
+      },
+      {
+        "slot": "Cavallo di Battaglia",
+        "titolo": "CAVALLO DI BATTAGLIA",
+        "testo": "Calci d'angolo, calci di punizione e rigori sono un 25% più efficaci. Se sbagli, gli attaccanti avversari subiscono una penalità di un -10% al loro attacco successivo.",
+        "valore_attuale": "25%",
+        "valore_successivo": null,
+        "stato": "bloccata",
+        "livello_richiesto": 10
+      }
+    ],
+    "altro_testo_visibile": "SERIE 1; Il contratto terminerà tra 73g; barra XP 0/30 PE; freccia livello successivo 2; pulsanti ASSEGNA e PESCA PACCHETTI PE; riquadro Reclutam. Mentori OFFERTE",
+    "incerti": [
+      "Potenz. Attributo e Cavallo di Battaglia hanno icona lucchetto ma i testi sono leggibili: trascritti integralmente invece di null"
+    ]
+  },
+  {
+    "file": "Screenshot 2026-08-19 132426.png",
+    "nome": "NEMANJA VIDIĆ",
+    "soprannome": "LA SENTINELLA D'ACCIAIO",
+    "livello": 1,
+    "livello_max_visibile": null,
+    "specializzazione": null,
+    "abilita": [
+      {
+        "slot": "Potenziamento Tattico",
+        "titolo": "POTENZ. TATTICO",
+        "testo": "Le azioni difensive sono 15% (successivo 20%) più efficaci",
+        "valore_attuale": "15%",
+        "valore_successivo": "20%",
+        "stato": "sbloccata",
+        "livello_richiesto": 1
+      },
+      {
+        "slot": "Potenziamento Attributo",
+        "titolo": "POTENZ. ATTRIBUTO",
+        "testo": "Tutti i giocatori ricevono un potenziamento di contrasto e coraggio +10 mentre il Mentore è assegnato durante la partita",
+        "valore_attuale": "+10",
+        "valore_successivo": null,
+        "stato": "bloccata",
+        "livello_richiesto": 5
+      },
+      {
+        "slot": "Cavallo di Battaglia",
+        "titolo": "CAVALLO DI BATTAGLIA",
+        "testo": "Ogni intervento difensivo riuscito riduce la condizione dell'attaccante avversario di un 2%, ma il rischio di ricevere un cartellino aumenta di un 10%",
+        "valore_attuale": "2%",
+        "valore_successivo": null,
+        "stato": "bloccata",
+        "livello_richiesto": 10
+      }
+    ],
+    "altro_testo_visibile": "SERIE 1; Il contratto terminerà tra 73g; barra XP 0/30 PE; freccia livello successivo 2; pulsanti ASSEGNA e PESCA PACCHETTI PE; riquadro Reclutam. Mentori OFFERTE",
+    "incerti": [
+      "Potenz. Attributo e Cavallo di Battaglia hanno icona lucchetto ma i testi sono leggibili: trascritti integralmente invece di null",
+      "Cavallo di Battaglia: il badge mostra 2% (riduzione condizione); il 10% del rischio cartellino compare solo nel testo"
+    ]
+  },
+  {
+    "file": "Screenshot 2026-08-19 132441.png",
+    "nome": "CLAUDE MAKÉLÉLÉ",
+    "soprannome": "IL DOMINATORE",
+    "livello": 5,
+    "livello_max_visibile": null,
+    "specializzazione": null,
+    "abilita": [
+      {
+        "slot": "Potenziamento Tattico",
+        "titolo": "POTENZ. TATTICO",
+        "testo": "Le azioni difensive sono 25% più efficaci contro i passaggi corti",
+        "valore_attuale": "25%",
+        "valore_successivo": null,
+        "stato": "sbloccata",
+        "livello_richiesto": 1
+      },
+      {
+        "slot": "Potenziamento Attributo",
+        "titolo": "POTENZ. ATTRIBUTO",
+        "testo": "Tutti i giocatori ricevono un potenziamento di +10 (successivo +15) coraggio e posizionamento durante la partita",
+        "valore_attuale": "+10",
+        "valore_successivo": "+15",
+        "stato": "sbloccata",
+        "livello_richiesto": 5
+      },
+      {
+        "slot": "Cavallo di Battaglia",
+        "titolo": "CAVALLO DI BATTAGLIA",
+        "testo": "Quando sei in vantaggio, i tuoi difensori ottengono un bonus di +15 a tutti gli attributi difensivi, ma gli attributi offensivi della tua squadra subiscono una penalità di -10.",
+        "valore_attuale": "15%",
+        "valore_successivo": null,
+        "stato": "bloccata",
+        "livello_richiesto": 10
+      }
+    ],
+    "altro_testo_visibile": "SERIE 1; Il contratto terminerà tra 73g; barra XP 0/100 PE; freccia livello successivo 6; pulsanti ASSEGNA e PESCA PACCHETTI PE; riquadro Reclutam. Mentori OFFERTE",
+    "incerti": [
+      "Nome scritto a schermo con accenti acuti: MAKÉLÉLÉ (non Makèlèlè)",
+      "Cavallo di Battaglia: il badge indica 15% mentre il testo parla di bonus +15 e penalità -10 (punti attributo, non percentuali) — discrepanza riportata come letta",
+      "Il Cavallo di Battaglia ha icona lucchetto ma il testo è leggibile: trascritto integralmente invece di null"
+    ]
+  }
+]
