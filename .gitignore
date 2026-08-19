@@ -89,3 +89,5 @@ android-sdk/
 
 # Lockfile canonico: yarn.lock (niente npm)
 frontend/package-lock.json 
+# stato locale del punto di comando tp.ps1
+/.tp-ultimo-head

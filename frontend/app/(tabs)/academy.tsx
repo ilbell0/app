@@ -13,7 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, POSITION_GUIDE, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, GAME_GUIDE, FORMATION_LAB, REAL_TACTICS, REAL_TEAMS, FORMATIONS } from '@/src/data';
+import { PLAYER_ROLES, POSITION_GUIDE, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, GAME_GUIDE, FORMATION_LAB, REAL_TACTICS, REAL_TEAMS, MENTORS, FORMATIONS } from '@/src/data';
 import PitchDiagram from '@/src/components/PitchDiagram';
 
 // lookup nome modulo -> posizioni, per disegnare il mini-campo nella sezione Meta
@@ -45,9 +45,10 @@ const LOCAL_DATA: Record<string, any[]> = {
   lab: FORMATION_LAB,
   realtactics: REAL_TACTICS,
   teams: REAL_TEAMS,
+  mentors: MENTORS,
 };
 
-type SectionId = 'roles' | 'positions' | 'meta' | 'skills' | 'training' | 'faq' | 'abbr' | 'paths' | 'mystyle' | 'setpiece' | 'battles' | 'guide' | 'lab' | 'realtactics' | 'teams';
+type SectionId = 'roles' | 'positions' | 'meta' | 'skills' | 'training' | 'faq' | 'abbr' | 'paths' | 'mystyle' | 'setpiece' | 'battles' | 'guide' | 'lab' | 'realtactics' | 'teams' | 'mentors';
 
 interface SectionDef {
   id: SectionId;
@@ -73,6 +74,7 @@ const SECTIONS: SectionDef[] = [
   { id: 'lab', endpoint: '/api/formation-lab', label_en: 'Formation Lab', label_it: 'Lab Moduli', icon: 'flask-outline' },
   { id: 'realtactics', endpoint: '/api/real-tactics', label_en: 'Real Football', label_it: 'Calcio Reale', icon: 'earth-outline' },
   { id: 'teams', endpoint: '/api/real-teams', label_en: 'Team Models', label_it: 'Squadre modello', icon: 'shirt-outline' },
+  { id: 'mentors', endpoint: '/api/mentors', label_en: 'Mentors', label_it: 'Mentori', icon: 'school-outline' },
 ];
 
 const TIER_COLORS: Record<string, string> = {
@@ -89,10 +91,10 @@ export default function AcademyScreen() {
   const [section, setSection] = useState<SectionId>('meta');
   const [search, setSearch] = useState('');
   const [data, setData] = useState<Record<SectionId, any[]>>({
-    roles: [], positions: [], meta: [], skills: [], training: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [], guide: [], lab: [], realtactics: [], teams: [],
+    roles: [], positions: [], meta: [], skills: [], training: [], faq: [], abbr: [], paths: [], mystyle: [], setpiece: [], battles: [], guide: [], lab: [], realtactics: [], teams: [], mentors: [],
   });
   const [loaded, setLoaded] = useState<Record<SectionId, boolean>>({
-    roles: false, positions: false, meta: false, skills: false, training: false, faq: false, abbr: false, paths: false, mystyle: false, setpiece: false, battles: false, guide: false, lab: false, realtactics: false, teams: false,
+    roles: false, positions: false, meta: false, skills: false, training: false, faq: false, abbr: false, paths: false, mystyle: false, setpiece: false, battles: false, guide: false, lab: false, realtactics: false, teams: false, mentors: false,
   });
   const [selected, setSelected] = useState<any | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
@@ -138,6 +140,7 @@ export default function AcademyScreen() {
       case 'lab': return item.formation;
       case 'realtactics': return `${item.team}  ·  ${item.main_formation}`;
       case 'teams': return `${item.team}  ·  ${item.te_formation}`;
+      case 'mentors': return item.name;
       default: return '';
     }
   };
@@ -158,9 +161,13 @@ export default function AcademyScreen() {
       case 'lab': return isIt ? item.style_it : item.style_en;
       case 'realtactics': return `${item.league} ${item.season} · ${item.record}`;
       case 'teams': return `${item.manager} · ${item.mentality}`;
+      case 'mentors': return isIt ? item.nickname_it : item.nickname_en;
       default: return '';
     }
   };
+  const cardSummary = (item: any): string => section === 'mentors'
+    ? (isIt ? item.specialty_it : item.specialty_en)
+    : '';
 
   const allItems = data[section];
   const q = search.trim().toLowerCase();
@@ -266,6 +273,15 @@ export default function AcademyScreen() {
             <View style={styles.cardContent}>
               <Text style={styles.cardTitle}>{cardTitle(item)}</Text>
               <Text style={styles.cardSubtitle} numberOfLines={1}>{cardSubtitle(item)}</Text>
+              {section === 'mentors' && (
+                <>
+                  <Text style={styles.cardSummary} numberOfLines={2}>{cardSummary(item)}</Text>
+                  <View style={styles.badgeRow}>
+                    {item.owned_confirmed === false && <View style={styles.statusBadge}><Text style={styles.statusBadgeText}>{isIt ? 'Non posseduto' : 'Not owned'}</Text></View>}
+                    {item.verified === false && <View style={styles.statusBadge}><Text style={styles.statusBadgeText}>{isIt ? 'Da verificare' : 'Unverified'}</Text></View>}
+                  </View>
+                </>
+              )}
             </View>
             <Ionicons name="chevron-forward" size={18} color={NothingTheme.colors.textTertiary} />
           </TouchableOpacity>
@@ -459,6 +475,22 @@ export default function AcademyScreen() {
                   ))}
                 </>
               )}
+              {selected && section === 'mentors' && (
+                <>
+                  <DetailBlock label={isIt ? 'SPECIALITÀ' : 'SPECIALTY'} value={isIt ? selected.specialty_it : selected.specialty_en} />
+                  <DetailBlock label={isIt ? 'POTENZIAMENTO TATTICO' : 'TACTIC BOOST'} value={isIt ? selected.tactic_boost_it : selected.tactic_boost_en} />
+                  <DetailBlock label={isIt ? 'POTENZIAMENTO ATTRIBUTO' : 'ATTRIBUTE BOOST'} value={isIt ? selected.attribute_boost_it : selected.attribute_boost_en} />
+                  <DetailBlock label={isIt ? 'CAVALLO DI BATTAGLIA' : 'SIGNATURE MOVE'} value={isIt ? selected.signature_move_it : selected.signature_move_en} />
+                  <DetailBlock label={isIt ? 'SI ABBINA A' : 'PAIRS WITH'} value={isIt ? selected.pairs_with_it : selected.pairs_with_en} />
+                  {/* niente cornice se l'avvertenza manca: un mentore puo' non averla */}
+                  {!!(isIt ? selected.warning_it : selected.warning_en) && (
+                    <View style={styles.warningBlock}>
+                      <Text style={styles.warningLabel}>{isIt ? 'AVVERTENZA' : 'WARNING'}</Text>
+                      <Text style={styles.warningValue}>{isIt ? selected.warning_it : selected.warning_en}</Text>
+                    </View>
+                  )}
+                </>
+              )}
               {selected && section === 'lab' && (
                 <>
                   <View style={styles.pitchBlock}>
@@ -580,6 +612,10 @@ const styles = StyleSheet.create({
   cardContent: { flex: 1, marginRight: 12 },
   cardTitle: { color: NothingTheme.colors.textPrimary, fontSize: 14, fontWeight: '600', marginBottom: 4 },
   cardSubtitle: { color: NothingTheme.colors.textTertiary, fontSize: 12 },
+  cardSummary: { color: NothingTheme.colors.textSecondary, fontSize: 12, lineHeight: 18, marginTop: 6 },
+  badgeRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: 8 },
+  statusBadge: { backgroundColor: NothingTheme.colors.accentMuted, borderWidth: 1, borderColor: NothingTheme.colors.accent, borderRadius: 4, paddingHorizontal: 8, paddingVertical: 4 },
+  statusBadgeText: { color: NothingTheme.colors.accent, fontSize: 10, fontWeight: '700' },
   emptyState: { alignItems: 'center', paddingVertical: 60 },
   emptyText: { color: NothingTheme.colors.textTertiary, fontSize: 14 },
   // Modal
@@ -606,6 +642,9 @@ const styles = StyleSheet.create({
   pitchBlock: { marginBottom: 24, marginTop: 4 },
   detailLabel: { color: NothingTheme.colors.textTertiary, fontSize: 10, fontWeight: '700', letterSpacing: 2, marginBottom: 8 },
   detailValue: { color: NothingTheme.colors.textSecondary, fontSize: 15, lineHeight: 24 },
+  warningBlock: { marginBottom: 24, padding: 14, backgroundColor: NothingTheme.colors.surface, borderWidth: 1, borderColor: NothingTheme.colors.accent, borderRadius: 8 },
+  warningLabel: { color: NothingTheme.colors.accent, fontSize: 10, fontWeight: '700', letterSpacing: 2, marginBottom: 8 },
+  warningValue: { color: NothingTheme.colors.textSecondary, fontSize: 14, lineHeight: 22 },
   chipRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   chip: {
     backgroundColor: NothingTheme.colors.surface, borderWidth: 1, borderColor: NothingTheme.colors.border,

@@ -898,7 +898,8 @@
       "PASSING: passing accuracy plus the split between combination play, balanced build-up and long balls. Accuracy under 70% while playing mostly combinations means the style is beyond what your squad can execute",
       "DUELS: duels won overall and per zone, dribble success, fouls, interceptions. The per-zone map is the most actionable number in the whole report",
       "The decisive cross-check: put your weakest duel zone next to their most used attack zone. If they overlap, you have found the cause of the goals conceded",
-      "A big interceptions gap against you means they are reading your passes: simplify the passing style instead of forcing more combinations"
+      "A big interceptions gap against you means they are reading your passes: simplify the passing style instead of forcing more combinations",
+      "Orientation trap: the top row of the diagram is not always the same flank. At home you attack rightwards and the top row is your LEFT; away it flips and becomes your RIGHT. Comparing several matches without normalising means adding up opposite flanks"
     ],
     "bullets_it": [
       "Il report ha quattro schede: GENERALE, OCCASIONI, PASSAGGI, DUELLI. Ognuna risponde a una domanda diversa, e tutte e quattro sono consultabili durante la partita, non solo alla fine",
@@ -907,7 +908,8 @@
       "PASSAGGI: precisione passaggi più la ripartizione tra giocate di combinazione, costruzione equilibrata e palloni lunghi. Precisione sotto il 70% giocando soprattutto combinazioni vuol dire che lo stile è oltre quello che la rosa riesce a eseguire",
       "DUELLI: duelli vinti totali e per zona, dribbling riusciti, falli, intercetti. La mappa per zona è il dato più azionabile di tutto il report",
       "Il confronto decisivo: metti la tua zona debole nei duelli accanto alla loro zona d'attacco più usata. Se coincidono, hai trovato la causa dei gol subiti",
-      "Un forte divario negli intercetti a tuo sfavore significa che leggono i tuoi passaggi: semplifica lo stile invece di insistere con le combinazioni"
+      "Un forte divario negli intercetti a tuo sfavore significa che leggono i tuoi passaggi: semplifica lo stile invece di insistere con le combinazioni",
+      "Trappola dell'orientamento: la riga in alto del diagramma non è sempre la stessa fascia. In casa attacchi verso destra e la riga alta è la tua SINISTRA; in trasferta si ribalta e diventa la tua DESTRA. Confrontare più partite senza normalizzare significa sommare fasce opposte"
     ],
     "source_en": "Metrics observed directly in the in-game report, 2027 season (live tabs at 12', 42' and full time)",
     "source_it": "Metriche rilevate direttamente dal report di gioco, stagione 2027 (schede live al 12', al 42' e a fine partita)"
@@ -1045,15 +1047,21 @@
       "Spend on the bottleneck of your starting eleven, not on your best player",
       "A backup keeper is always the worst possible target",
       "Check the grade of your best players: a Rare on 130 may deserve the earlier jump more than an Elite on 147",
-      "Read the projected overall gain in the upgrade screen before confirming: the game shows it per player"
+      "Read the projected overall gain in the upgrade screen before confirming: the game shows it per player",
+      "Ignore the overall rating and read the role block: a full-back with DEFENCE 149 and ATTACK 87 shows 118 overall, but as a defender he is a 149. The average is dragged down by attributes his role never uses",
+      "Same for keepers: the Goalkeeping block is the real number, Physical drags it down for no reason",
+      "Look at the lowest sub-attributes inside the right block, not just the total: a keeper weak in Punching and Jumping is weak against crosses, and that matters if they attack your flanks"
     ],
     "bullets_it": [
       "Élite dà +30 sugli attributi chiave, Stellare +50: il salto vale +20 fissi",
-      "Lo stesso salto produce un aumento di GEN diverso: i giocatori di fascia media guadagnano di più(+18) dei migliori (+13)",
+      "Lo stesso salto produce un aumento di GEN diverso: i giocatori di fascia media guadagnano di più (+18) dei migliori (+13)",
       "Spendi sul collo di bottiglia dei titolari, non sul giocatore più forte",
       "Un portiere di riserva è sempre il bersaglio peggiore",
       "Controlla il grado dei tuoi migliori: un Raro da 130 può meritare il salto precedente più di un Élite da 147",
-      "Leggi l'aumento di GEN previsto nella schermata di upgrade prima di confermare: il gioco lo mostra per ogni giocatore"
+      "Leggi l'aumento di GEN previsto nella schermata di upgrade prima di confermare: il gioco lo mostra per ogni giocatore",
+      "Ignora il GEN complessivo e guarda il blocco del ruolo: un terzino con DIFESA 149 e ATTACCO 87 mostra GEN 118, ma come difensore vale 149. La media è zavorrata da attributi che nel suo ruolo non contano",
+      "Vale anche per i portieri: il blocco Difesa della porta è il numero vero, il FISICO lo trascina giù senza motivo",
+      "Guarda i sotto-attributi più bassi del blocco giusto, non solo il totale: un portiere debole in Pugni ed Elevazione è debole sui cross, e conta se ti attaccano sulle fasce"
     ],
     "table_en": [
       {
@@ -1133,6 +1141,7 @@
     "summary_it": "Prima di studiare loro, studia te. Ma la mappa dei duelli è una distribuzione, non un tasso: vale solo incrociata con le zone d'attacco avversarie.",
     "bullets_en": [
       "Open your own last reports, DUELS tab, per-zone map, before you look at the opponent at all",
+      "Before comparing several matches, normalise the orientation: the top row of the diagram is your LEFT at home and your RIGHT away. To settle it, open the line-up and find a one-sided role (DL, DR, ML, MR): if the DL is at the top, top means left. One-sided players only, because the labels are playable roles, not the slot actually occupied",
       "Mind what that map says: the three zones add up to 100, so it is the distribution of the duels you won, not the share you win in that zone. A low value on its own accuses nobody",
       "The correct read is a cross-check: put YOUR won-duel distribution next to THEIR attack-zone distribution. If they attack a lane more than you win duels there, that gap is your deficit",
       "Do it over three matches, not one: a lane in deficit once is noise, the same lane in deficit three times is a structural hole",
@@ -1142,6 +1151,7 @@
     ],
     "bullets_it": [
       "Apri i TUOI ultimi referti, scheda DUELLI, mappa per zona, prima ancora di guardare l'avversario",
+      "Prima di confrontare più partite, normalizza l'orientamento: la riga alta del diagramma è la tua SINISTRA in casa e la tua DESTRA in trasferta. Per stabilirlo apri la formazione e cerca un ruolo monolaterale (DL, DR, ML, MR): se il DL sta in alto, in alto è sinistra. Solo giocatori monolaterali, perché le sigle sono i ruoli giocabili e non lo slot occupato",
       "Attenzione a cosa dice quella mappa: le tre zone sommano a 100, quindi è la distribuzione dei duelli che hai vinto, non la percentuale che vinci in quella zona. Un valore basso da solo non accusa nessuno",
       "La lettura corretta è un incrocio: metti la TUA distribuzione dei duelli vinti accanto alla LORO distribuzione delle zone d'attacco. Se attaccano una corsia più di quanto tu ci vinca duelli, quel divario è il tuo deficit",
       "Fallo su tre partite, non su una: una corsia in deficit una volta sola è rumore, la stessa corsia in deficit tre volte è una falla strutturale",
@@ -1167,6 +1177,51 @@
       {
         "label": "Tempo richiesto",
         "value": "2 minuti"
+      }
+    ]
+  },
+  {
+    "id": "gg-flank-balance",
+    "order": 36,
+    "category_en": "The unbalanced lane",
+    "category_it": "La corsia sbilanciata",
+    "icon": "swap-horizontal-outline",
+    "summary_en": "When the full-back and the winger on the same side both push forward, that lane stops being a strength and becomes the lane every counter-attack uses.",
+    "summary_it": "Quando il terzino e l'esterno dello stesso lato spingono entrambi, quella corsia smette di essere un punto di forza e diventa la strada di ogni contropiede.",
+    "bullets_en": [
+      "Check both players on each flank, not one at a time: a full-back with high Crossing plus a winger with attacking roles means nobody stays home",
+      "The tell in the report: they attack that lane more than any other while you win fewest duels there. Two numbers from two different tabs, and they only mean something together",
+      "It is not a weak player. Both men can be good individually and the lane still leaks, because the problem is the shape, not the quality",
+      "Cheapest fix: arrow down on one of the two, and drop the one who contributes less going forward. It costs nothing and takes effect immediately",
+      "Against a counter-attacking opponent make it a pre-match choice, not a reaction: put your best pure tackler on that side even if his overall is lower",
+      "Aerial follow-on: an open flank means crosses, and crosses land on your keeper. Check his Punching and Jumping before blaming the defenders"
+    ],
+    "bullets_it": [
+      "Controlla i due giocatori di ogni fascia insieme, non uno alla volta: un terzino con Cross alto più un esterno con ruoli offensivi significa che dietro non resta nessuno",
+      "La spia nel referto: attaccano quella corsia più di ogni altra e lì tu vinci meno duelli. Sono due numeri di due schede diverse, e dicono qualcosa solo incrociati",
+      "Non è un giocatore scarso. Entrambi possono essere buoni presi singolarmente e la corsia perde lo stesso, perché il problema è la struttura, non la qualità",
+      "Rimedio più economico: freccia giù su uno dei due, e abbassa quello che rende meno in avanti. Costa zero e ha effetto immediato",
+      "Contro un avversario da contropiede rendilo una scelta pre-partita, non una reazione: su quel lato metti il tuo miglior contrastatore puro anche se ha il GEN più basso",
+      "Conseguenza aerea: una fascia aperta significa cross, e i cross finiscono sul tuo portiere. Controlla i suoi Pugni ed Elevazione prima di prendertela con i difensori"
+    ],
+    "table_en": [
+      {
+        "label": "How to spot it",
+        "value": "Their most attacked lane = your fewest won duels"
+      },
+      {
+        "label": "First fix",
+        "value": "Arrow down on one of the two, cost zero"
+      }
+    ],
+    "table_it": [
+      {
+        "label": "Come si riconosce",
+        "value": "La loro corsia più attaccata coincide con i tuoi duelli vinti più bassi"
+      },
+      {
+        "label": "Primo rimedio",
+        "value": "Freccia giù su uno dei due, costo zero"
       }
     ]
   }
