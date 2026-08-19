@@ -685,8 +685,8 @@ FORMATIONS = [
             'Richiede velocità sulle fasce',
             'Può essere troppo difensiva'
         ],
-        'tactic_type_en': '★ META 2026 / Counter-Attack',
-        'tactic_type_it': '★ META 2026 / Contropiede',
+        'tactic_type_en': '★ META 2027 / Counter-Attack',
+        'tactic_type_it': '★ META 2027 / Contropiede',
         'arrows': 'DMC↓ AML↑ AMR↑',
         'recommended_tactics': {
             'mentality': 'Defensive',
@@ -1993,8 +1993,8 @@ FORMATIONS = [
         ],
         'weaknesses_en': ['Lone striker problem', 'Can lack creativity', 'MC overworked'],
         'weaknesses_it': ['Problema attaccante solitario', 'Può mancare creatività', 'MC sovraccaricati'],
-        'tactic_type_en': 'META 2026 / Solid Defense',
-        'tactic_type_it': 'META 2026 / Difesa Solida',
+        'tactic_type_en': 'META 2027 / Solid Defense',
+        'tactic_type_it': 'META 2027 / Difesa Solida',
         'arrows': 'DMC↓',
         'recommended_tactics': {
             'mentality': 'Normal',
@@ -3806,8 +3806,8 @@ FORMATIONS = [
             'Fasce possono essere esposte',
             'Richiede DMC di qualità'
         ],
-        'tactic_type_en': '★ META 2026 / Counter-Attack',
-        'tactic_type_it': '★ META 2026 / Contropiede',
+        'tactic_type_en': '★ META 2027 / Counter-Attack',
+        'tactic_type_it': '★ META 2027 / Contropiede',
         'arrows': 'DMC↓ AMC↑',
         'recommended_tactics': {
             'mentality': 'Normal',
@@ -3946,8 +3946,8 @@ FORMATIONS = [
             'Si basa solo sui contropiedi',
             'Può essere noiosa da giocare'
         ],
-        'tactic_type_en': 'META 2026 / Ultra Defensive',
-        'tactic_type_it': 'META 2026 / Ultra Difensiva',
+        'tactic_type_en': 'META 2027 / Ultra Defensive',
+        'tactic_type_it': 'META 2027 / Ultra Difensiva',
         'arrows': 'DMC↓ MC↓',
         'recommended_tactics': {
             'mentality': 'Defensive',
@@ -4090,8 +4090,8 @@ FORMATIONS = [
             'Nessun vero attaccante',
             'Complessa da padroneggiare'
         ],
-        'tactic_type_en': '★ NEW META 2026 / False Nine',
-        'tactic_type_it': '★ NUOVO META 2026 / Falso Nove',
+        'tactic_type_en': '★ NEW META 2027 / False Nine',
+        'tactic_type_it': '★ NUOVO META 2027 / Falso Nove',
         'arrows': 'AMC↓ (as False Nine) AML↑ AMR↑',
         'recommended_tactics': {
             'mentality': 'Attacking',
@@ -31410,32 +31410,50 @@ GAME_GUIDE = [
         'category_it': 'Protocollo rimonta (sei sotto)',
         'icon': 'trending-up-outline',
         'summary_en': 'Being stronger is not enough: matches turn on formation, mentality and possession. When trailing, escalate one step at a time instead of throwing everyone forward.',
-        'summary_it': "Essere più forti non basta: le partite girano su modulo, atteggiamento e possesso. Quando sei sotto, alza di un gradino alla volta invece di buttare tutti in avanti.",
+        'summary_it': 'Essere più forti non basta: le partite girano su modulo, atteggiamento e possesso. Quando sei sotto, alza di un gradino alla volta invece di buttare tutti in avanti.',
         'bullets_en': [
-            'Behind before 60\': raise mentality one notch (to Normal/Attacking), never all-out attack, which unbalances you and invites counters',
+            "Behind before 60': raise mentality one notch (to Normal/Attacking), never all-out attack, which unbalances you and invites counters",
             'Switch to the WEAKER-scenario setup of your counter (COUNTER tab): a more offensive module already prepared, not improvised',
             'High pressing only from the second half, when you need the ball back: earlier it just burns condition',
-            'Force Counter-attack ON only when you must gamble in the final minutes (from ~75\'): more chances but you lose more balls',
-            'Substitutions around 60\'-70\': fresh attacker for starters whose condition is dropping',
+            "Force Counter-attack ON only when you must gamble in the final minutes (from ~75'): more chances but you lose more balls",
+            "Substitutions around 60'-70': fresh attacker for starters whose condition is dropping",
             'Got an overpowered player who unbalances the XI? Use him as an impact sub in the second half to swing the momentum'
         ],
         'bullets_it': [
             "Sotto prima del 60': alza la mentalità di un gradino (a Normale/Offensiva), mai attacco totale, che ti sbilancia e concede contropiedi",
-            "Passa al setup dello scenario PIÙ DEBOLE del tuo counter (tab COUNTER): modulo più offensivo già pronto, non improvvisato",
-            "Pressing alto solo dal secondo tempo, quando devi recuperare palla: prima brucia solo condizione",
+            'Passa al setup dello scenario PIÙ DEBOLE del tuo counter (tab COUNTER): modulo più offensivo già pronto, non improvvisato',
+            'Pressing alto solo dal secondo tempo, quando devi recuperare palla: prima brucia solo condizione',
             "Contropiede ON solo se devi rischiare nel finale (dal 75' circa): più occasioni ma perdi più palloni",
             "Cambi verso il 60'-70': attaccante fresco per i titolari con condizione in calo",
             "Hai un fuoriclasse che sbilancia la squadra se titolare? Usalo come impact sub nella ripresa per cambiare l'inerzia"
         ],
         'table_en': [
-            {'label': '0\'-60\' behind', 'value': 'Normal->Attacking one step, weaker-scenario counter'},
-            {'label': '60\'-75\'', 'value': 'Fresh subs, high pressing'},
-            {'label': '75\'-90\'', 'value': 'Force Counter-attack ON, calculated risk'}
+            {
+                'label': "0'-60' behind",
+                'value': 'Normal->Attacking one step, weaker-scenario counter'
+            },
+            {
+                'label': "60'-75'",
+                'value': 'Fresh subs, high pressing'
+            },
+            {
+                'label': "75'-90'",
+                'value': 'Force Counter-attack ON, calculated risk'
+            }
         ],
         'table_it': [
-            {'label': "0'-60' sotto", 'value': 'Normale->Offensiva di un gradino, counter scenario debole'},
-            {'label': "60'-75'", 'value': 'Cambi freschi, pressing alto'},
-            {'label': "75'-90'", 'value': 'Contropiede ON, rischio calcolato'}
+            {
+                'label': "0'-60' sotto",
+                'value': 'Normale->Offensiva di un gradino, counter scenario debole'
+            },
+            {
+                'label': "60'-75'",
+                'value': 'Cambi freschi, pressing alto'
+            },
+            {
+                'label': "75'-90'",
+                'value': 'Contropiede ON, rischio calcolato'
+            }
         ],
         'source_en': 'NotebookLM notebook Top Eleven 2026 (7b0eba98) + BlueStacks tactics guide + Top Eleven Help Center',
         'source_it': 'Notebook NotebookLM Top Eleven 2026 (7b0eba98) + guida tattica BlueStacks + Centro assistenza Top Eleven'
@@ -31449,7 +31467,7 @@ GAME_GUIDE = [
         'summary_en': 'Protecting a lead is not sitting still: shift down one gear and hit the space the chasing opponent leaves behind.',
         'summary_it': "Difendere il vantaggio non è restare fermi: scendi di un gradino e colpisci lo spazio che lascia l'avversario che spinge.",
         'bullets_en': [
-            'Leading from 75\'-80\': drop mentality one notch to Defensive, not fully passive (too passive invites a siege)',
+            "Leading from 75'-80': drop mentality one notch to Defensive, not fully passive (too passive invites a siege)",
             'Force Counter-attack ON: with a deep line, break into the space the pushing opponent leaves',
             'Low pressing and zonal marking: save condition and keep the lines compact',
             'Short passing to keep the ball and run down the clock',
@@ -31460,21 +31478,39 @@ GAME_GUIDE = [
         'bullets_it': [
             "In vantaggio dal 75'-80': scendi di un gradino a Difensiva, non del tutto passivo (troppo passivo invita l'assedio)",
             "Contropiede ON: con la linea bassa, riparti sullo spazio lasciato dall'avversario che spinge",
-            "Pressing basso e marcatura a zona: risparmi condizione e tieni le linee compatte",
-            "Passaggi corti per tenere il pallone e far scorrere il tempo",
-            "Cambi difensivi: centrocampista/difensore fresco al posto di un attaccante",
-            "Frecce: terzini e ali indietro per chiudere le fasce",
-            "Blocco totale nel finale: moduli park-the-bus come 5-4-1 Flat o 5-3-2 per chiudere ogni varco centrale"
+            'Pressing basso e marcatura a zona: risparmi condizione e tieni le linee compatte',
+            'Passaggi corti per tenere il pallone e far scorrere il tempo',
+            'Cambi difensivi: centrocampista/difensore fresco al posto di un attaccante',
+            'Frecce: terzini e ali indietro per chiudere le fasce',
+            'Blocco totale nel finale: moduli park-the-bus come 5-4-1 Flat o 5-3-2 per chiudere ogni varco centrale'
         ],
         'table_en': [
-            {'label': '75\'+ leading', 'value': 'Defensive, Counter-attack ON, low pressing'},
-            {'label': 'Bus module', 'value': '5-4-1 Flat or 5-3-2 in the final minutes'},
-            {'label': 'Subs', 'value': 'Defender/midfielder for attacker'}
+            {
+                'label': "75'+ leading",
+                'value': 'Defensive, Counter-attack ON, low pressing'
+            },
+            {
+                'label': 'Bus module',
+                'value': '5-4-1 Flat or 5-3-2 in the final minutes'
+            },
+            {
+                'label': 'Subs',
+                'value': 'Defender/midfielder for attacker'
+            }
         ],
         'table_it': [
-            {'label': "75'+ in vantaggio", 'value': 'Difensiva, Contropiede ON, pressing basso'},
-            {'label': 'Modulo bus', 'value': '5-4-1 Flat o 5-3-2 nel finale'},
-            {'label': 'Cambi', 'value': 'Difensore/centrocampista per attaccante'}
+            {
+                'label': "75'+ in vantaggio",
+                'value': 'Difensiva, Contropiede ON, pressing basso'
+            },
+            {
+                'label': 'Modulo bus',
+                'value': '5-4-1 Flat o 5-3-2 nel finale'
+            },
+            {
+                'label': 'Cambi',
+                'value': 'Difensore/centrocampista per attaccante'
+            }
         ],
         'source_en': 'NotebookLM notebook Top Eleven 2026 (7b0eba98) + BlueStacks tactics guide (park-the-bus 5-4-1/5-3-2, defensive + counter-attack)',
         'source_it': 'Notebook NotebookLM Top Eleven 2026 (7b0eba98) + guida tattica BlueStacks (park-the-bus 5-4-1/5-3-2, difensiva + contropiede)'
@@ -31486,7 +31522,7 @@ GAME_GUIDE = [
         'category_it': 'Riprendere il controllo del pallone',
         'icon': 'sync-outline',
         'summary_en': 'Losing possession too often is fixable live: the forced long ball is usually the culprit. Toggle it and rebuild from the back.',
-        'summary_it': "Perdere troppo il possesso si aggiusta in corsa: quasi sempre la colpa è il lancio lungo forzato. Fai il toggle e ricostruisci dal basso.",
+        'summary_it': 'Perdere troppo il possesso si aggiusta in corsa: quasi sempre la colpa è il lancio lungo forzato. Fai il toggle e ricostruisci dal basso.',
         'bullets_en': [
             'Losing too many balls? Turn Force Counter-attack OFF: forced long balls give away possession',
             'Switch to Short passing and Normal mentality: lower the risk and rebuild play',
@@ -31496,12 +31532,12 @@ GAME_GUIDE = [
             'Under high pressing? Widen play to the flanks to escape the pressure'
         ],
         'bullets_it': [
-            "Perdi troppi palloni? Spegni il Contropiede: i lanci lunghi forzati regalano possesso",
-            "Passa a passaggi Corti e mentalità Normale: abbassi il rischio e ricostruisci il gioco",
-            "Se il possesso non torna, riprova ad accendere il Contropiede più tardi: toggle in base al flusso",
+            'Perdi troppi palloni? Spegni il Contropiede: i lanci lunghi forzati regalano possesso',
+            'Passa a passaggi Corti e mentalità Normale: abbassi il rischio e ricostruisci il gioco',
+            'Se il possesso non torna, riprova ad accendere il Contropiede più tardi: toggle in base al flusso',
             "Focus passaggi sulla zona debole dell'avversario, non 'Misto' generico, quando domini una fascia",
-            "Marcatura a uomo per tenere i giocatori attivi su tutto il campo e contendere il pallone",
-            "Sotto pressing alto? Allarga il gioco sulle fasce per uscire dalla pressione"
+            'Marcatura a uomo per tenere i giocatori attivi su tutto il campo e contendere il pallone',
+            'Sotto pressing alto? Allarga il gioco sulle fasce per uscire dalla pressione'
         ],
         'source_en': 'BlueStacks Top Eleven tactics guide + Top Eleven community forums (force counter-attack toggle when losing possession)',
         'source_it': 'Guida tattica BlueStacks Top Eleven + forum community Top Eleven (toggle contropiede quando perdi possesso)'
@@ -31522,10 +31558,10 @@ GAME_GUIDE = [
             '5. Open the opponent in the COUNTER tab: your read tells you which scenario (stronger/equal/weaker) to pick'
         ],
         'bullets_it': [
-            "1. Conta la linea difensiva (3/4/5): è la prima lettura, decide se attaccare le fasce o avere pazienza",
-            "2. Ampiezza: ha ali/terzini offensivi (fasce coperte) o è stretto (fasce libere da attaccare)?",
-            "3. Schermo: un DMC davanti alla difesa chiude il centro -> gioca largo e cambia gioco",
-            "4. Linea alta o pressing alto? -> spazio dietro per lanci filtranti e attaccanti rapidi",
+            '1. Conta la linea difensiva (3/4/5): è la prima lettura, decide se attaccare le fasce o avere pazienza',
+            '2. Ampiezza: ha ali/terzini offensivi (fasce coperte) o è stretto (fasce libere da attaccare)?',
+            '3. Schermo: un DMC davanti alla difesa chiude il centro -> gioca largo e cambia gioco',
+            '4. Linea alta o pressing alto? -> spazio dietro per lanci filtranti e attaccanti rapidi',
             "5. Apri l'avversario nel tab COUNTER: la lettura ti dice quale scenario (forte/pari/debole) scegliere"
         ],
         'source_en': 'NotebookLM notebook Top Eleven 2026 (7b0eba98) + GamingOnPhone counter guide + BlueStacks tactics guide + app COUNTER_ENGINE',
@@ -31538,30 +31574,60 @@ GAME_GUIDE = [
         'category_it': 'Difesa a 3/4/5: riconoscerla e batterla',
         'icon': 'grid-outline',
         'summary_en': 'The opponent defensive line is the strongest reading cue: it radically changes how you attack it.',
-        'summary_it': "La linea difensiva avversaria è la chiave di lettura più forte: cambia radicalmente come attaccarla.",
+        'summary_it': 'La linea difensiva avversaria è la chiave di lettura più forte: cambia radicalmente come attaccarla.',
         'bullets_en': [
             '3-defence: flanks exposed (no full-backs), the classic weak point',
             '5-defence (park the bus): no space behind, you must open it from the sides',
             'A high line trades compactness for depth: punish it in behind, not in front'
         ],
         'bullets_it': [
-            "Difesa a 3: fasce scoperte (niente terzini), il punto debole classico",
-            "Difesa a 5 (autobus): nessuno spazio dietro, va aperta dai lati",
-            "La linea alta baratta compattezza con profondità: puniscila alle spalle, non davanti"
+            'Difesa a 3: fasce scoperte (niente terzini), il punto debole classico',
+            'Difesa a 5 (autobus): nessuno spazio dietro, va aperta dai lati',
+            'La linea alta baratta compattezza con profondità: puniscila alle spalle, non davanti'
         ],
         'table_en': [
-            {'label': '3-defence', 'value': 'Flanks open: wingers AML/AMR + flank passing; 4-4-2 Classic or 4-5-1 V-Style'},
-            {'label': '4-defence', 'value': 'Balanced: overload midfield; 4-5-1 V-Style or 4-1-4-1 to dominate possession'},
-            {'label': '5-defence', 'value': 'Bus: offensive mentality + flank passing; 4-4-2 Classic is the universal counter'},
-            {'label': 'High line', 'value': 'Space behind: long through balls to release the strikers'},
-            {'label': 'DMC screen', 'value': 'Centre shut: go wide if he has no ML/MR; if no DMC, force the centre'}
+            {
+                'label': '3-defence',
+                'value': 'Flanks open: wingers AML/AMR + flank passing; 4-4-2 Classic or 4-5-1 V-Style'
+            },
+            {
+                'label': '4-defence',
+                'value': 'Balanced: overload midfield; 4-5-1 V-Style or 4-1-4-1 to dominate possession'
+            },
+            {
+                'label': '5-defence',
+                'value': 'Bus: offensive mentality + flank passing; 4-4-2 Classic is the universal counter'
+            },
+            {
+                'label': 'High line',
+                'value': 'Space behind: long through balls to release the strikers'
+            },
+            {
+                'label': 'DMC screen',
+                'value': 'Centre shut: go wide if he has no ML/MR; if no DMC, force the centre'
+            }
         ],
         'table_it': [
-            {'label': 'Difesa a 3', 'value': 'Fasce scoperte: ali AML/AMR + passaggi sulle fasce; 4-4-2 Classic o 4-5-1 V-Style'},
-            {'label': 'Difesa a 4', 'value': 'Bilanciata: sovraccarica il centrocampo; 4-5-1 V-Style o 4-1-4-1 per dominare il possesso'},
-            {'label': 'Difesa a 5', 'value': 'Autobus: mentalità offensiva + passaggi sulle fasce; 4-4-2 Classic è il counter universale'},
-            {'label': 'Linea alta', 'value': 'Spazio dietro: passaggi filtranti lunghi per innescare le punte'},
-            {'label': 'Schermo DMC', 'value': 'Centro chiuso: gioca largo se non ha ML/MR; se manca il DMC, forza il centro'}
+            {
+                'label': 'Difesa a 3',
+                'value': 'Fasce scoperte: ali AML/AMR + passaggi sulle fasce; 4-4-2 Classic o 4-5-1 V-Style'
+            },
+            {
+                'label': 'Difesa a 4',
+                'value': 'Bilanciata: sovraccarica il centrocampo; 4-5-1 V-Style o 4-1-4-1 per dominare il possesso'
+            },
+            {
+                'label': 'Difesa a 5',
+                'value': 'Autobus: mentalità offensiva + passaggi sulle fasce; 4-4-2 Classic è il counter universale'
+            },
+            {
+                'label': 'Linea alta',
+                'value': 'Spazio dietro: passaggi filtranti lunghi per innescare le punte'
+            },
+            {
+                'label': 'Schermo DMC',
+                'value': 'Centro chiuso: gioca largo se non ha ML/MR; se manca il DMC, forza il centro'
+            }
         ],
         'source_en': 'NotebookLM notebook Top Eleven 2026 (7b0eba98) + GamingOnPhone counter guide + app COUNTER_ENGINE notes',
         'source_it': "Notebook NotebookLM Top Eleven 2026 (7b0eba98) + guida counter GamingOnPhone + note COUNTER_ENGINE dell'app"
@@ -31572,12 +31638,12 @@ GAME_GUIDE = [
         'category_en': 'Player Tiers & OVR',
         'category_it': 'Player Tiers e OVR',
         'icon': 'ribbon-outline',
-        'summary_en': "Since late 2025, every player has an OVR made of two layers: stars (base quality, can drop on league promotion) plus a Tier (permanent bonus that never decays). The Tier is the one number worth protecting.",
-        'summary_it': "Da fine 2025 ogni giocatore ha un OVR composto da due livelli: le stelle (qualità base, possono scendere con la promozione di lega) più un Tier (bonus permanente che non si deteriora mai). Il Tier è il numero che vale davvero la pena proteggere.",
+        'summary_en': 'Since late 2025, every player has an OVR made of two layers: stars (base quality, can drop on league promotion) plus a Tier (permanent bonus that never decays). The Tier is the one number worth protecting.',
+        'summary_it': 'Da fine 2025 ogni giocatore ha un OVR composto da due livelli: le stelle (qualità base, possono scendere con la promozione di lega) più un Tier (bonus permanente che non si deteriora mai). Il Tier è il numero che vale davvero la pena proteggere.',
         'bullets_en': [
             '6 Tiers in sequence, each unlocked only after the previous one: Rare (+10% to every key attribute), Elite (+30%), Stellar (+50%), Master (+80%), Epic (+120%), Legendary (+160%)',
-            "Without Tiers, classic training/Academy/reward caps are hard limits: 400% on a single attribute, 180% OVR (10 stars). Tiers are the ONLY way past those ceilings",
-            "At Epic, the confirmed absolute ceiling is 520% on a single attribute (400% base + 120%) and 292% OVR (180% base + 112%, with all 14 key attributes) — Legendary should push further but no official number is confirmed yet for it",
+            'Without Tiers, classic training/Academy/reward caps are hard limits: 400% on a single attribute, 180% OVR (10 stars). Tiers are the ONLY way past those ceilings',
+            'At Epic, the confirmed absolute ceiling is 520% on a single attribute (400% base + 120%) and 292% OVR (180% base + 112%, with all 14 key attributes) — Legendary should push further but no official number is confirmed yet for it',
             'Tiers are earned with Tier Points, collected mostly via seasonal events and the Tier Drop Ball',
             'Stars can fall when you get promoted to a tougher league; the Tier bonus never does — it is your permanent floor',
             "Players who already exceeded the caps before Tiers launched got compressed: anything over 400% on an attribute was clamped to 400%, and OVR over 180% was spread down evenly across all attributes until OVR hit 180% — the amount removed became that player's starting Tier",
@@ -31585,31 +31651,61 @@ GAME_GUIDE = [
             "Don't chase Tiers on backups before your starters: the permanent bonus is wasted on a bench player"
         ],
         'bullets_it': [
-            'I 6 Tier vanno sbloccati in sequenza, uno dopo l\'altro: Rare (+10% su ogni attributo chiave), Elite (+30%), Stellar (+50%), Master (+80%), Epic (+120%), Legendary (+160%)',
+            "I 6 Tier vanno sbloccati in sequenza, uno dopo l'altro: Rare (+10% su ogni attributo chiave), Elite (+30%), Stellar (+50%), Master (+80%), Epic (+120%), Legendary (+160%)",
             "Senza Tier, i tetti di allenamento classico/Accademia/ricompense sono invalicabili: 400% su un singolo attributo, 180% di OVR (10 stelle). I Tier sono l'UNICO modo per superarli",
             "Al Tier Epic il tetto assoluto confermato è 520% su un singolo attributo (400% base + 120%) e 292% di OVR (180% base + 112%, con tutti e 14 gli attributi chiave) — Legendary dovrebbe spingersi oltre ma non c'è ancora un numero ufficiale confermato per quel livello",
             'Si ottengono con i Tier Points, raccolti soprattutto con eventi stagionali e il Tier Drop Ball',
             'Le stelle possono scendere quando sali di lega; il bonus Tier no — è il tuo pavimento permanente',
-            "Chi aveva già giocatori sopra i tetti prima dell'arrivo dei Tier li ha visti \"compressi\": gli attributi oltre 400% sono stati bloccati a 400%, e l'OVR oltre 180% è stato ridistribuito su tutti gli attributi fino a toccare 180% — la quantità tolta è diventata il Tier di partenza di quel giocatore",
+            'Chi aveva già giocatori sopra i tetti prima dell\'arrivo dei Tier li ha visti "compressi": gli attributi oltre 400% sono stati bloccati a 400%, e l\'OVR oltre 180% è stato ridistribuito su tutti gli attributi fino a toccare 180% — la quantità tolta è diventata il Tier di partenza di quel giocatore',
             "Il Lineup OVR (qualità media stelle+Tier degli 11 titolari) alimenta il Lineup Balance: punta i Tier sui 5 ruoli chiave (GK-DC-DMC-AMC-ST) per alzare il pavimento senza rompere l'equilibrio",
-            "Non sprecare Tier sulle riserve prima dei titolari: il bonus permanente su un giocatore in panchina è tempo perso"
+            'Non sprecare Tier sulle riserve prima dei titolari: il bonus permanente su un giocatore in panchina è tempo perso'
         ],
         'table_en': [
-            {'label': 'Rare -> Legendary', 'value': '+10% / +30% / +50% / +80% / +120% / +160% to key attributes, cumulative and permanent'},
-            {'label': 'Cap without Tiers', 'value': '400% per attribute, 180% OVR (10 stars) — hard limit from classic training/Academy'},
-            {'label': 'Cap at Epic (confirmed)', 'value': '520% per attribute, 292% OVR (with 14 key attributes)'},
-            {'label': 'How to unlock', 'value': 'Tier Points from seasonal events + Tier Drop Ball; sequential, no skipping'},
-            {'label': 'Replaces stars?', 'value': 'No — it stacks on top of stars, does not replace them'},
+            {
+                'label': 'Rare -> Legendary',
+                'value': '+10% / +30% / +50% / +80% / +120% / +160% to key attributes, cumulative and permanent'
+            },
+            {
+                'label': 'Cap without Tiers',
+                'value': '400% per attribute, 180% OVR (10 stars) — hard limit from classic training/Academy'
+            },
+            {
+                'label': 'Cap at Epic (confirmed)',
+                'value': '520% per attribute, 292% OVR (with 14 key attributes)'
+            },
+            {
+                'label': 'How to unlock',
+                'value': 'Tier Points from seasonal events + Tier Drop Ball; sequential, no skipping'
+            },
+            {
+                'label': 'Replaces stars?',
+                'value': 'No — it stacks on top of stars, does not replace them'
+            }
         ],
         'table_it': [
-            {'label': 'Rare -> Legendary', 'value': '+10% / +30% / +50% / +80% / +120% / +160% agli attributi chiave, cumulativo e permanente'},
-            {'label': 'Tetto senza Tier', 'value': '400% per attributo, 180% OVR (10 stelle) — limite invalicabile da allenamento classico/Accademia'},
-            {'label': 'Tetto a Epic (confermato)', 'value': '520% per attributo, 292% OVR (con 14 attributi chiave)'},
-            {'label': 'Come si sblocca', 'value': 'Tier Points da eventi stagionali + Tier Drop Ball; in sequenza, senza saltare livelli'},
-            {'label': 'Sostituisce le stelle?', 'value': 'No — si somma alle stelle, non le sostituisce'},
+            {
+                'label': 'Rare -> Legendary',
+                'value': '+10% / +30% / +50% / +80% / +120% / +160% agli attributi chiave, cumulativo e permanente'
+            },
+            {
+                'label': 'Tetto senza Tier',
+                'value': '400% per attributo, 180% OVR (10 stelle) — limite invalicabile da allenamento classico/Accademia'
+            },
+            {
+                'label': 'Tetto a Epic (confermato)',
+                'value': '520% per attributo, 292% OVR (con 14 attributi chiave)'
+            },
+            {
+                'label': 'Come si sblocca',
+                'value': 'Tier Points da eventi stagionali + Tier Drop Ball; in sequenza, senza saltare livelli'
+            },
+            {
+                'label': 'Sostituisce le stelle?',
+                'value': 'No — si somma alle stelle, non le sostituisce'
+            }
         ],
-        'source_en': "Nordeus Help Center — 'OVR explained' and 'Player Tiers explained' (official FAQ, nordeus.helpshift.com); official announcement \"Player Progression & Tiers\", topeleven.org",
-        'source_it': "Nordeus Help Center — 'OVR explained' e 'Player Tiers explained' (FAQ ufficiale, nordeus.helpshift.com); annuncio ufficiale \"Player Progression & Tiers\", topeleven.org"
+        'source_en': 'Nordeus Help Center — \'OVR explained\' and \'Player Tiers explained\' (official FAQ, nordeus.helpshift.com); official announcement "Player Progression & Tiers", topeleven.org',
+        'source_it': 'Nordeus Help Center — \'OVR explained\' e \'Player Tiers explained\' (FAQ ufficiale, nordeus.helpshift.com); annuncio ufficiale "Player Progression & Tiers", topeleven.org'
     },
     {
         'id': 'gg-fan-loyalty',
@@ -31631,7 +31727,7 @@ GAME_GUIDE = [
             'La personalizzazione stadio fa parte del Campus: uno stadio sovradimensionato per il tuo bacino di tifosi penalizza comunque gli incassi (vedi il consiglio sulla misura giusta dello stadio)',
             'Risultati competitivi costanti sono il modo più economico per tenere alta la Fan Loyalty — meglio di qualsiasi acquisto singolo'
         ],
-        'source_en': "Nordeus/Zynga press releases on the 2025 club-building update (zynga.com/corporate, nordeus.com/press-releases)",
+        'source_en': 'Nordeus/Zynga press releases on the 2025 club-building update (zynga.com/corporate, nordeus.com/press-releases)',
         'source_it': "Comunicati Nordeus/Zynga sull'aggiornamento gestione club 2025 (zynga.com/corporate, nordeus.com/press-releases)"
     },
     {
@@ -31640,13 +31736,13 @@ GAME_GUIDE = [
         'category_en': 'Mentors: build tactics around them',
         'category_it': 'Mentori: costruisci la tattica intorno a loro',
         'icon': 'person-circle-outline',
-        'summary_en': "Top Eleven 2027 added real ex-players as Mentors. Each one boosts a specific playstyle — pick your tactics to match your Mentor, not the other way around.",
-        'summary_it': "Top Eleven 2027 ha introdotto i Mentori, ex calciatori reali. Ognuno potenzia uno stile di gioco specifico: scegli la tattica in funzione del Mentore che usi, non il contrario.",
+        'summary_en': 'Top Eleven 2027 added real ex-players as Mentors. Each one boosts a specific playstyle — pick your tactics to match your Mentor, not the other way around.',
+        'summary_it': 'Top Eleven 2027 ha introdotto i Mentori, ex calciatori reali. Ognuno potenzia uno stile di gioco specifico: scegli la tattica in funzione del Mentore che usi, non il contrario.',
         'bullets_en': [
             'Recruiting costs a Mentor Badge per attempt: earned occasionally through other game features, or bought for 10 tokens each',
             'Progression per Mentor: Lv.1-5 unlocks the Tactic Boost, Lv.5-10 unlocks the Attribute Boost, Lv.10 unlocks the Signature Move; beyond Lv.10 there are 3 Prestige levels that keep upgrading the Signature Move using Signature Seals',
-            'Mentor XP is earned by fielding him in official matches (friendlies don\'t count): a win gives the most XP, a draw a medium amount, a loss less — every Mentor you rotate through your games earns XP, so alternating several at once lets them all progress',
-            'Mentor contracts are temporary — he leaves the club after a while, so don\'t sit on a recruited Mentor unused: play him in official matches to bank levels before he\'s gone',
+            "Mentor XP is earned by fielding him in official matches (friendlies don't count): a win gives the most XP, a draw a medium amount, a loss less — every Mentor you rotate through your games earns XP, so alternating several at once lets them all progress",
+            "Mentor contracts are temporary — he leaves the club after a while, so don't sit on a recruited Mentor unused: play him in official matches to bank levels before he's gone",
             'You can swap Mentor at half-time to react to how the match is going (e.g. start possession-oriented, switch to a defensive Mentor to protect a lead) — see the spotlight entries below for what each one actually does',
             "Also scout the opponent's Mentor before kickoff: it tells you what their tactics are likely built around"
         ],
@@ -31654,11 +31750,11 @@ GAME_GUIDE = [
             'Il reclutamento costa un Distintivo Mentore a tentativo: si ottiene di tanto in tanto da altre funzionalità di gioco, oppure si compra a 10 token ciascuno',
             'Progressione per Mentore: Lv.1-5 sblocca il Potenziamento Tattico, Lv.5-10 sblocca il Potenziamento Attributo, Lv.10 sblocca la Mossa Speciale; oltre il Lv.10 ci sono 3 livelli Prestigio che continuano a potenziare la Mossa Speciale usando i Sigilli Speciali',
             'I PE Mentore si guadagnano facendolo giocare in partite ufficiali (le amichevoli non contano): vittoria = tanti PE, pareggio = PE medi, sconfitta = meno PE — ogni Mentore che ruoti nelle partite guadagna PE, quindi alternarne più di uno li fa progredire tutti insieme',
-            'I contratti dei Mentori sono temporanei — se ne vanno dal club dopo un po\', quindi non tenerne uno reclutato inutilizzato: fallo giocare in partite ufficiali per accumulare livelli prima che scada',
-            'Puoi sostituire il Mentore all\'intervallo per reagire a come si sta sviluppando il match (es. partire orientato al possesso, passare a un Mentore difensivo per blindare un vantaggio) — vedi le schede dedicate sotto per cosa fa davvero ciascuno',
+            "I contratti dei Mentori sono temporanei — se ne vanno dal club dopo un po', quindi non tenerne uno reclutato inutilizzato: fallo giocare in partite ufficiali per accumulare livelli prima che scada",
+            "Puoi sostituire il Mentore all'intervallo per reagire a come si sta sviluppando il match (es. partire orientato al possesso, passare a un Mentore difensivo per blindare un vantaggio) — vedi le schede dedicate sotto per cosa fa davvero ciascuno",
             "Controlla anche il Mentore dell'avversario prima del match: ti dice su cosa è probabilmente costruita la sua tattica"
         ],
-        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026, days after the v27.0 update)",
+        'source_en': 'Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026, days after the v27.0 update)',
         'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026, giorni dopo l'update v27.0)"
     },
     {
@@ -31667,8 +31763,8 @@ GAME_GUIDE = [
         'category_en': "Mentor spotlight: Cesc Fàbregas 'The Architect'",
         'category_it': "Mentore in dettaglio: Cesc Fàbregas 'The Architect'",
         'icon': 'person-outline',
-        'summary_en': "For control-and-possession managers built around short passing. Pair him with a possession tactic, not a direct/long-ball one.",
-        'summary_it': "Per chi gioca a controllo e possesso basato sui passaggi corti. Abbinalo a una tattica di possesso, non a una diretta/palla lunga.",
+        'summary_en': 'For control-and-possession managers built around short passing. Pair him with a possession tactic, not a direct/long-ball one.',
+        'summary_it': 'Per chi gioca a controllo e possesso basato sui passaggi corti. Abbinalo a una tattica di possesso, non a una diretta/palla lunga.',
         'bullets_en': [
             'Tactic Boost (Lv.1-5): improves short-passing effectiveness',
             'Attribute Boost (Lv.5): +5 Dribbling and +5 Shooting to the assigned player',
@@ -31677,35 +31773,35 @@ GAME_GUIDE = [
             'Not a fit for a counterattacking or long-ball setup — for that see Ruben Herrera or Jonas Brown instead'
         ],
         'bullets_it': [
-            'Potenziamento Tattico (Lv.1-5): migliora l\'efficacia dei passaggi corti',
+            "Potenziamento Tattico (Lv.1-5): migliora l'efficacia dei passaggi corti",
             'Potenziamento Attributo (Lv.5): +5 Dribbling e +5 Tiro al giocatore assegnato',
-            'Mossa Speciale (Lv.10): ogni passaggio riuscito rende il successivo più difficile da intercettare per l\'avversario — più lunga la sequenza di passaggi, più pericolosa diventa la manovra',
+            "Mossa Speciale (Lv.10): ogni passaggio riuscito rende il successivo più difficile da intercettare per l'avversario — più lunga la sequenza di passaggi, più pericolosa diventa la manovra",
             'Abbinamento tattico consigliato: In Possesso — passaggio corto; In Transizione — costruzione manovra quando si recupera palla, non contropiede',
-            'Non adatto a un\'impostazione da contropiede o palla lunga — per quello vedi Ruben Herrera o Jonas Brown'
+            "Non adatto a un'impostazione da contropiede o palla lunga — per quello vedi Ruben Herrera o Jonas Brown"
         ],
-        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)",
-        'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)"
+        'source_en': 'Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)',
+        'source_it': 'Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)'
     },
     {
         'id': 'gg-mentor-jonasbrown',
         'order': 23,
-        'category_en': "Mentor spotlight: Jonas Brown 'The Analyst'",
-        'category_it': "Mentore in dettaglio: Jonas Brown 'The Analyst'",
+        'category_en': "Mentor spotlight: Jonas Braun 'The Analyst'",
+        'category_it': "Mentore in dettaglio: Jonas Braun 'L'Analista'",
         'icon': 'person-outline',
         'summary_en': "For long-ball, vertical managers. Instead of a flat squad buff, he reads the opponent's shape and targets its specific weakness.",
-        'summary_it': "Per chi gioca verticale a palla lunga. Invece di un bonus generico alla squadra, legge lo schieramento avversario e colpisce il suo punto debole specifico.",
+        'summary_it': 'Per chi gioca verticale a palla lunga. Invece di un bonus generico alla squadra, legge lo schieramento avversario e colpisce il suo punto debole specifico.',
         'bullets_en': [
-            'Different from the other Mentors: no flat tactic/attribute numbers — he adapts to whatever weakness the current opponent\'s defensive structure has',
+            "He does have flat numbers like the others (+15% long passes, +5 strength and positioning), but the level-10 Signature Move is adaptive: at half-time it finds the opponent's weakest defensive zone and gives +20 to all attributes to whoever attacks through it",
             'Fits a vertical, long-ball playstyle rather than a possession-based one',
-            'Best paired with tactics you\'d already use to exploit a specific opponent (see the COUNTER tab reading tips) — he sharpens whatever plan you already have against that formation'
+            "Best paired with tactics you'd already use to exploit a specific opponent (see the COUNTER tab reading tips) — he sharpens whatever plan you already have against that formation"
         ],
         'bullets_it': [
-            'Diverso dagli altri Mentori: nessun numero fisso di tattica/attributo — si adatta al punto debole specifico della struttura difensiva dell\'avversario del momento',
+            "Ha numeri fissi come gli altri (passaggi lunghi +15%, forza e posizionamento +5), ma il Cavallo di Battaglia al livello 10 è adattivo: all'intervallo individua la zona difensiva più debole dell'avversario e dà +20 a tutti gli attributi a chi attacca da lì",
             'Si adatta a uno stile verticale e di palla lunga più che al possesso',
             'Va abbinato alle tattiche che useresti già per colpire quello specifico avversario (vedi i consigli di lettura nel tab COUNTER) — rende più efficace il piano che hai già contro quella formazione'
         ],
-        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)",
-        'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)"
+        'source_en': 'Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)',
+        'source_it': 'Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)'
     },
     {
         'id': 'gg-mentor-herrera',
@@ -31713,20 +31809,20 @@ GAME_GUIDE = [
         'category_en': "Mentor spotlight: Ruben Herrera 'The Saboteur'",
         'category_it': "Mentore in dettaglio: Ruben Herrera 'The Saboteur'",
         'icon': 'person-outline',
-        'summary_en': "Built entirely around counterattacking: sit back, win the ball, hit the space immediately. Strong pick against bigger opponents.",
-        'summary_it': "Costruito interamente sul contropiede: difendi, recupera palla, colpisci subito lo spazio. Ottima scelta contro avversari più forti.",
+        'summary_en': 'Built entirely around counterattacking: sit back, win the ball, hit the space immediately. Strong pick against bigger opponents.',
+        'summary_it': 'Costruito interamente sul contropiede: difendi, recupera palla, colpisci subito lo spazio. Ottima scelta contro avversari più forti.',
         'bullets_en': [
-            'Identity is 100% counterattacking — for managers who don\'t want to dominate possession but defend, win the ball, and immediately attack the space the opponent leaves open',
+            "Identity is 100% counterattacking — for managers who don't want to dominate possession but defend, win the ball, and immediately attack the space the opponent leaves open",
             'A smart choice specifically when facing bigger/stronger opponents',
             'Not a fit for a possession-based setup (e.g. 3-1-4-1-1 or 3-1-5-1 style tactics) — use Fàbregas for those instead'
         ],
         'bullets_it': [
-            'Identità al 100% da contropiede — per chi non vuole dominare il possesso ma difendere, recuperare palla e attaccare subito lo spazio lasciato dall\'avversario',
+            "Identità al 100% da contropiede — per chi non vuole dominare il possesso ma difendere, recuperare palla e attaccare subito lo spazio lasciato dall'avversario",
             'Scelta intelligente in particolare contro avversari più forti',
-            'Non adatto a un\'impostazione da possesso (es. tattiche stile 3-1-4-1-1 o 3-1-5-1) — per quelle usa Fàbregas'
+            "Non adatto a un'impostazione da possesso (es. tattiche stile 3-1-4-1-1 o 3-1-5-1) — per quelle usa Fàbregas"
         ],
-        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)",
-        'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)"
+        'source_en': 'Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)',
+        'source_it': 'Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)'
     },
     {
         'id': 'gg-mentor-green',
@@ -31734,24 +31830,24 @@ GAME_GUIDE = [
         'category_en': "Mentor spotlight: Louis Green 'The Wing Commander'",
         'category_it': "Mentore in dettaglio: Louis Green 'The Wing Commander'",
         'icon': 'person-outline',
-        'summary_en': "For flank-based attacking with wingers or wide midfielders (ML/MR/AML/AMR) — everything here is about crossing and aerial threat.",
+        'summary_en': 'For flank-based attacking with wingers or wide midfielders (ML/MR/AML/AMR) — everything here is about crossing and aerial threat.',
         'summary_it': "Per l'attacco sulle fasce con ali o centrocampisti esterni (ML/MR/AML/AMR) — tutto qui ruota attorno a cross e gioco aereo.",
         'bullets_en': [
             'Tactic Boost: +15% effectiveness on flank attacks',
             'Attribute Boost (Lv.5): +6 Crossing and +6 Heading to the whole squad',
-            'Signature Move (Lv.10): crosses become far more accurate, and opposing defenders\' aerial-duel effectiveness drops significantly',
+            "Signature Move (Lv.10): crosses become far more accurate, and opposing defenders' aerial-duel effectiveness drops significantly",
             'Only worth it if your XI actually has real wide players (ML/MR/AML/AMR) or attacking full-backs to deliver the crosses',
             'Good half-time swap when the opponent sits deep and you need to stretch the pitch and attack from wide'
         ],
         'bullets_it': [
             'Potenziamento Tattico: +15% efficacia sugli attacchi in fascia',
             'Potenziamento Attributo (Lv.5): +6 Cross e +6 Colpo di Testa a tutta la rosa',
-            'Mossa Speciale (Lv.10): i cross diventano molto più precisi e l\'efficacia dei difensori avversari nei duelli aerei scende parecchio',
-            'Ha senso solo se l\'undici titolare ha davvero giocatori larghi (ML/MR/AML/AMR) o terzini offensivi che possano crossare',
-            'Buon cambio all\'intervallo quando l\'avversario si chiude basso e serve allargare il gioco per attaccare dalle fasce'
+            "Mossa Speciale (Lv.10): i cross diventano molto più precisi e l'efficacia dei difensori avversari nei duelli aerei scende parecchio",
+            "Ha senso solo se l'undici titolare ha davvero giocatori larghi (ML/MR/AML/AMR) o terzini offensivi che possano crossare",
+            "Buon cambio all'intervallo quando l'avversario si chiude basso e serve allargare il gioco per attaccare dalle fasce"
         ],
-        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)",
-        'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)"
+        'source_en': 'Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)',
+        'source_it': 'Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)'
     },
     {
         'id': 'gg-mentor-shearer',
@@ -31765,16 +31861,16 @@ GAME_GUIDE = [
             'Tactic Boost: +15% dribbling effectiveness',
             'Attribute Boost: +5 Strength and +5 Shooting to the whole squad while assigned',
             'Signature Move (Lv.10): corners, free kicks and penalties become +25% more effective; if a set piece is missed, the opposing attacker gets a -10% penalty on their next attacking action',
-            'Bring him on at half-time specifically when you\'re winning a lot of fouls/corners but not converting them'
+            "Bring him on at half-time specifically when you're winning a lot of fouls/corners but not converting them"
         ],
         'bullets_it': [
             'Potenziamento Tattico: +15% efficacia del dribbling',
             'Potenziamento Attributo: +5 Forza e +5 Tiro a tutta la rosa mentre è assegnato',
-            'Mossa Speciale (Lv.10): angoli, punizioni e rigori diventano +25% più efficaci; se un calcio piazzato viene sbagliato, l\'attaccante avversario subisce un -10% sulla sua azione d\'attacco successiva',
-            'Fallo entrare all\'intervallo in particolare quando stai conquistando molti falli/corner ma non li stai sfruttando'
+            "Mossa Speciale (Lv.10): angoli, punizioni e rigori diventano +25% più efficaci; se un calcio piazzato viene sbagliato, l'attaccante avversario subisce un -10% sulla sua azione d'attacco successiva",
+            "Fallo entrare all'intervallo in particolare quando stai conquistando molti falli/corner ma non li stai sfruttando"
         ],
-        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)",
-        'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)"
+        'source_en': 'Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)',
+        'source_it': 'Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)'
     },
     {
         'id': 'gg-mentor-vidic',
@@ -31783,7 +31879,7 @@ GAME_GUIDE = [
         'category_it': "Mentore in dettaglio: Nemanja Vidić 'The Iron Guard'",
         'icon': 'person-outline',
         'summary_en': "A pure, high-intensity defensive Mentor — for parking the bus against opponents you can't otherwise beat.",
-        'summary_it': "Mentore puramente difensivo e ad alta intensità — per fare catenaccio contro avversari altrimenti imbattibili.",
+        'summary_it': 'Mentore puramente difensivo e ad alta intensità — per fare catenaccio contro avversari altrimenti imbattibili.',
         'bullets_en': [
             'Tactic Boost: +15% overall effectiveness on defensive actions',
             'Attribute Boost: +10 Tackling and +10 Bravery to the whole squad while assigned',
@@ -31793,11 +31889,11 @@ GAME_GUIDE = [
         'bullets_it': [
             'Potenziamento Tattico: +15% efficacia complessiva sulle azioni difensive',
             'Potenziamento Attributo: +10 Contrasti e +10 Coraggio a tutta la rosa mentre è assegnato',
-            'Mossa Speciale (Lv.10): ogni intervento difensivo riuscito sottrae il 2% di condizione all\'attaccante avversario — ma l\'alta aggressività aumenta anche il rischio cartellini del +10%',
+            "Mossa Speciale (Lv.10): ogni intervento difensivo riuscito sottrae il 2% di condizione all'attaccante avversario — ma l'alta aggressività aumenta anche il rischio cartellini del +10%",
             'Compromesso da tenere a mente: più cartellini significa pensarci due volte prima di abbinarlo a contrasti già impostati su aggressivo'
         ],
-        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)",
-        'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)"
+        'source_en': 'Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)',
+        'source_it': 'Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)'
     },
     {
         'id': 'gg-mentor-makelele',
@@ -31805,78 +31901,311 @@ GAME_GUIDE = [
         'category_en': "Mentor spotlight: Claude Makélélé 'The Enforcer'",
         'category_it': "Mentore in dettaglio: Claude Makélélé 'The Enforcer'",
         'icon': 'person-outline',
-        'summary_en': "Specialized in shutting down short-passing, possession-based opponents. His Signature Move is the ultimate lead-protection tool.",
-        'summary_it': "Specializzato nel neutralizzare avversari da possesso e passaggio corto. La sua Mossa Speciale è lo strumento definitivo per blindare un vantaggio.",
+        'summary_en': 'Specialized in shutting down short-passing, possession-based opponents. His Signature Move is the ultimate lead-protection tool.',
+        'summary_it': 'Specializzato nel neutralizzare avversari da possesso e passaggio corto. La sua Mossa Speciale è lo strumento definitivo per blindare un vantaggio.',
         'bullets_en': [
             'Tactic Boost: +15% defensive effectiveness specifically against short-passing opponents',
             'Attribute Boost (Lv.5): +10 Bravery and +10 Positioning to the whole squad',
             'Signature Move (Lv.10): while your team is leading, defenders get +15 to all defensive attributes — but the whole team takes -10 to offensive attributes',
             'The clearest "protect the result" Mentor: swap him in when you\'re ahead late and want to sacrifice attack for a clean park-the-bus lockdown',
-            'Great counter-pick when the opponent\'s Mentor or tactics are built around short passing (e.g. against Fàbregas)'
+            "Great counter-pick when the opponent's Mentor or tactics are built around short passing (e.g. against Fàbregas)"
         ],
         'bullets_it': [
             'Potenziamento Tattico: +15% efficacia difensiva specificamente contro avversari che giocano a passaggio corto',
             'Potenziamento Attributo (Lv.5): +10 Coraggio e +10 Posizionamento a tutta la rosa',
             'Mossa Speciale (Lv.10): mentre la tua squadra è in vantaggio, i difensori ottengono +15 a tutti gli attributi difensivi — ma tutta la squadra subisce -10 agli attributi offensivi',
             'Il Mentore più chiaro per "blindare il risultato": fallo entrare quando sei in vantaggio nel finale e vuoi sacrificare l\'attacco per un catenaccio pulito',
-            'Ottima contromossa quando il Mentore o la tattica dell\'avversario sono basati sul passaggio corto (es. contro Fàbregas)'
+            "Ottima contromossa quando il Mentore o la tattica dell'avversario sono basati sul passaggio corto (es. contro Fàbregas)"
         ],
-        'source_en': "Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)",
-        'source_it': "Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)"
+        'source_en': 'Top Eleven 2027 Mentors guide, YouTube channel Mamun Prefer Gaming (published ~Aug 2026)',
+        'source_it': 'Guida Mentori Top Eleven 2027, canale YouTube Mamun Prefer Gaming (pubblicata ~ago 2026)'
     },
     {
         'id': 'gg-match-report',
         'order': 29,
-        'category_en': "Reading the 2027 Match Report",
-        'category_it': "Leggere il Match Report 2027",
+        'category_en': 'Reading the 2027 Match Report',
+        'category_it': 'Leggere il Match Report 2027',
         'icon': 'stats-chart-outline',
-        'summary_en': "The 2027 update deepened the post-match report and live in-match feedback. Reading it well tells you what actually went wrong, instead of guessing from the final score alone.",
-        'summary_it': "L'aggiornamento 2027 ha ampliato il report post-partita e il feedback durante la partita live. Saperlo leggere ti dice cosa è andato storto davvero, invece di indovinare dal solo risultato.",
+        'summary_en': 'Four tabs, four different questions. The report is available live during the match too, so you can fix things while they still matter.',
+        'summary_it': 'Quattro schede, quattro domande diverse. Il report è consultabile anche durante la partita, quindi puoi correggere mentre serve ancora.',
         'bullets_en': [
-            'The post-match report now gives a deeper breakdown of squad performance, not just the final scoreline',
-            "New during live matches: a pitch-side indicator shows in real time who's winning each individual 1v1 duel against their direct opponent, not just after the fact",
-            "Use that live duel indicator to react immediately — tactic tweak or substitution — instead of waiting for half-time or full time to notice a player getting beaten repeatedly",
-            'Use the post-match report to tell a formation problem (e.g. goals conceded repeatedly down one side) apart from an individual problem (e.g. one slow CB beaten for pace)',
-            "Nordeus hasn't published the exact new report metrics yet: this entry will get concrete detail once official numbers are confirmed"
+            'The report has four tabs: GENERAL, CHANCES, PASSING, DUELS. Each answers a different question, and all four are available live in-match, not only at full time',
+            'GENERAL: attack zones (three lanes per side) and possession. If one of their lanes is above 50%, that lane is your leak',
+            'CHANCES: total shots, shots on target, shooting accuracy, corners, chances created from crosses, saves. Equal shots but a lopsided score means finishing or their keeper, not tactics',
+            'PASSING: passing accuracy plus the split between combination play, balanced build-up and long balls. Accuracy under 70% while playing mostly combinations means the style is beyond what your squad can execute',
+            'DUELS: duels won overall and per zone, dribble success, fouls, interceptions. The per-zone map is the most actionable number in the whole report',
+            'The decisive cross-check: put your weakest duel zone next to their most used attack zone. If they overlap, you have found the cause of the goals conceded',
+            'A big interceptions gap against you means they are reading your passes: simplify the passing style instead of forcing more combinations'
         ],
         'bullets_it': [
-            'Il report post-partita offre ora una scomposizione più dettagliata delle prestazioni della rosa, non solo il tabellino finale',
-            "Novità nella partita live: un indicatore a bordocampo mostra in tempo reale chi sta vincendo ogni duello individuale 1 contro 1 contro l'avversario diretto, non solo a cose fatte",
-            "Usa questo segnale live per reagire subito — ritocco tattico o sostituzione — invece di scoprire a fine tempo che un giocatore veniva superato ripetutamente",
-            'Usa il report post-partita per distinguere un problema di modulo (es. gol subiti ripetutamente dallo stesso lato) da un problema di singolo giocatore (es. un DC lento superato in velocità)',
-            'Nordeus non ha ancora pubblicato le metriche esatte del nuovo report: questa scheda verrà aggiornata con dettagli concreti appena saranno confermati ufficialmente'
+            'Il report ha quattro schede: GENERALE, OCCASIONI, PASSAGGI, DUELLI. Ognuna risponde a una domanda diversa, e tutte e quattro sono consultabili durante la partita, non solo alla fine',
+            "GENERALE: percentuale zone d'attacco (tre corsie per squadra) e possesso. Se una loro corsia supera il 50%, quella corsia è la tua falla",
+            "OCCASIONI: tiri totali, tiri in porta, precisione tiri, calci d'angolo, occasioni create da cross, parate. Tiri pari ma risultato sbilanciato significa finalizzazione o portiere avversario in giornata, non problema tattico",
+            'PASSAGGI: precisione passaggi più la ripartizione tra giocate di combinazione, costruzione equilibrata e palloni lunghi. Precisione sotto il 70% giocando soprattutto combinazioni vuol dire che lo stile è oltre quello che la rosa riesce a eseguire',
+            'DUELLI: duelli vinti totali e per zona, dribbling riusciti, falli, intercetti. La mappa per zona è il dato più azionabile di tutto il report',
+            "Il confronto decisivo: metti la tua zona debole nei duelli accanto alla loro zona d'attacco più usata. Se coincidono, hai trovato la causa dei gol subiti",
+            'Un forte divario negli intercetti a tuo sfavore significa che leggono i tuoi passaggi: semplifica lo stile invece di insistere con le combinazioni'
         ],
-        'source_en': "Official \"NEW ERA OF TACTICS | TOP ELEVEN 2027\" trailer, plus Pocket Gamer and GamingOnPhone coverage of the launch (Aug 2026)",
-        'source_it': "Trailer ufficiale \"NEW ERA OF TACTICS | TOP ELEVEN 2027\", oltre a copertura Pocket Gamer e GamingOnPhone del lancio (ago 2026)"
+        'source_en': "Metrics observed directly in the in-game report, 2027 season (live tabs at 12', 42' and full time)",
+        'source_it': "Metriche rilevate direttamente dal report di gioco, stagione 2027 (schede live al 12', al 42' e a fine partita)"
     },
     {
         'id': 'gg-teamplay-form',
         'order': 30,
-        'category_en': "Teamplay Form: the full training system",
-        'category_it': "Teamplay Form: il sistema di allenamento per intero",
+        'category_en': 'Teamplay Form: the full training system',
+        'category_it': 'Teamplay Form: il sistema di allenamento per intero',
         'icon': 'barbell-outline',
         'summary_en': "Teamplay Form is the game's team-wide training bonus system (introduced Nov 2023, still current) — not new in 2027, just not documented in the app until now.",
         'summary_it': "La Teamplay Form è il sistema di bonus di squadra dell'allenamento (introdotto a novembre 2023, ancora attuale) — non è una novità del 2027, semplicemente non era ancora documentata in app.",
         'bullets_en': [
-            "The old Team Bonuses were renamed and reworked into Teamplay Form, split into 4 categories: Attack, Defense, Possession, Condition",
-            "Possession Drills join Attack, Defense and Physical/Mental as a 4th macro-category of regular training drills; the max Training Level was raised to 111",
+            'The old Team Bonuses were renamed and reworked into Teamplay Form, split into 4 categories: Attack, Defense, Possession, Condition',
+            'Possession Drills join Attack, Defense and Physical/Mental as a 4th macro-category of regular training drills; the max Training Level was raised to 111',
             "Teamplay Drills are a new consumable category (Starter / Expert / Ultimate tiers): they don't raise individual player attributes, but generate large Teamplay Form gains in fewer sessions — Ultimate-tier drills can carry extra unique effects",
             "Any training session needs at least 4 players to generate Teamplay Form and Sharpness — a session with 1-2 players won't move the team bonus at all",
-            "Each Teamplay Form category is capped at 10 by default. Points earned beyond the cap fill an \"Excel bar\"; completing it grants an Advancement Point, spendable to raise one category's cap by +2 — up to 5 times per season, pushing that category from 10 up to 20",
+            'Each Teamplay Form category is capped at 10 by default. Points earned beyond the cap fill an "Excel bar"; completing it grants an Advancement Point, spendable to raise one category\'s cap by +2 — up to 5 times per season, pushing that category from 10 up to 20',
             "Everything (Advancement Points and raised caps) resets at the end of the season, so spend what you've earned before the season closes instead of hoarding it",
             "The training screen's info bar shows expected gains, condition loss and a Session Score in real time — maximize it by fielding players in the roles the drill actually targets and varying drill intensity, not by repeating the same drill on everyone"
         ],
         'bullets_it': [
-            "I vecchi Bonus di Squadra sono stati rinominati e rilavorati in Teamplay Form, divisa in 4 categorie: Attacco, Difesa, Possesso, Condizione",
-            "Gli Esercizi di Possesso si aggiungono ad Attacco, Difesa e Fisico/Mentale come 4ª macro-categoria degli esercizi regolari; il Livello di Allenamento massimo è stato elevato a 111",
-            "I Teamplay Drills sono una nuova categoria di esercizi consumabili (livelli Starter / Expert / Ultimate): non alzano gli attributi dei singoli giocatori, ma generano grandi quantità di Teamplay Form in meno sessioni — gli esercizi Ultimate possono avere anche effetti unici extra",
-            "Ogni sessione di allenamento richiede almeno 4 giocatori per generare Teamplay Form e Sharpness — una sessione con 1-2 giocatori non muove per niente il bonus di squadra",
-            "Ogni categoria di Teamplay Form ha un tetto di 10 di base. I punti guadagnati oltre il tetto riempiono una \"Excel bar\"; completarla dà un Punto Avanzamento, spendibile per alzare il tetto di una categoria di +2 — fino a 5 volte a stagione, portando quella categoria da 10 fino a 20",
-            "Tutto (Punti Avanzamento e tetti alzati) si azzera a fine stagione: spendi quello che hai guadagnato prima della chiusura, invece di accumularlo inutilmente",
+            'I vecchi Bonus di Squadra sono stati rinominati e rilavorati in Teamplay Form, divisa in 4 categorie: Attacco, Difesa, Possesso, Condizione',
+            'Gli Esercizi di Possesso si aggiungono ad Attacco, Difesa e Fisico/Mentale come 4ª macro-categoria degli esercizi regolari; il Livello di Allenamento massimo è stato elevato a 111',
+            'I Teamplay Drills sono una nuova categoria di esercizi consumabili (livelli Starter / Expert / Ultimate): non alzano gli attributi dei singoli giocatori, ma generano grandi quantità di Teamplay Form in meno sessioni — gli esercizi Ultimate possono avere anche effetti unici extra',
+            'Ogni sessione di allenamento richiede almeno 4 giocatori per generare Teamplay Form e Sharpness — una sessione con 1-2 giocatori non muove per niente il bonus di squadra',
+            'Ogni categoria di Teamplay Form ha un tetto di 10 di base. I punti guadagnati oltre il tetto riempiono una "Excel bar"; completarla dà un Punto Avanzamento, spendibile per alzare il tetto di una categoria di +2 — fino a 5 volte a stagione, portando quella categoria da 10 fino a 20',
+            'Tutto (Punti Avanzamento e tetti alzati) si azzera a fine stagione: spendi quello che hai guadagnato prima della chiusura, invece di accumularlo inutilmente',
             "La barra informativa della schermata di allenamento mostra in tempo reale i guadagni previsti, la perdita di condizione e il Session Score — per massimizzarlo usa giocatori nei ruoli che l'esercizio richiede davvero e varia l'intensità, non ripetere lo stesso esercizio su tutti"
         ],
-        'source_en': "\"New Era of Top Eleven Training\" official page, topeleven.com (dated Nov 5, 2023 — still the current system as of the 2027 season)",
-        'source_it': "Pagina ufficiale \"New Era of Top Eleven Training\", topeleven.com (datata 5 novembre 2023 — sistema ancora attuale nella stagione 2027)"
+        'source_en': '"New Era of Top Eleven Training" official page, topeleven.com (dated Nov 5, 2023 — still the current system as of the 2027 season)',
+        'source_it': 'Pagina ufficiale "New Era of Top Eleven Training", topeleven.com (datata 5 novembre 2023 — sistema ancora attuale nella stagione 2027)'
+    },
+    {
+        'id': 'gg-play-styles',
+        'order': 31,
+        'category_en': 'Play styles: the role trap',
+        'category_it': 'Stili di gioco: la trappola del ruolo',
+        'icon': 'flash-outline',
+        'summary_en': 'A play style only fires in the roles printed on the player card. Wrong slot, style off, and nothing warns you.',
+        'summary_it': 'Uno stile di gioco si attiva solo nei ruoli scritti sulla scheda del giocatore. Casella sbagliata, stile spento, e nessuno ti avvisa.',
+        'bullets_en': [
+            'Open the player, tab Play style: it lists ROLES and LEVEL (Standard x1, Intermediate x2, up to Master x4)',
+            'Box to Box fires on MC only: as DMC it is dead weight',
+            'Playmaker fires on MC and DMC',
+            'Two midfielders with different styles may have to swap slots: put the wider-role style deeper',
+            'The multiplier matters more than a single attribute bonus: a x4 style beats +25 on one stat',
+            'Season events that boost a role (for example +25 Dribbling for AMC) only pay out if the player is in that exact slot'
+        ],
+        'bullets_it': [
+            'Apri il giocatore, scheda Stile di gioco: mostra RUOLI e LIVELLO (Standard x1, Intermedio x2, fino a Maestro x4)',
+            'Da area ad area si attiva solo su MC: da DMC è peso morto',
+            'Regista si attiva su MC e DMC',
+            'Due centrocampisti con stili diversi vanno spesso invertiti: metti più arretrato quello con il ruolo più ampio',
+            'Il moltiplicatore conta più di un bonus su un singolo attributo: uno stile x4 batte un +25 su una statistica',
+            'Gli eventi stagionali che potenziano un ruolo (per esempio +25 Dribbling per AMC) pagano solo se il giocatore è in quella casella esatta'
+        ],
+        'table_en': [
+            {
+                'label': 'When',
+                'value': 'Every time you change formation or move a player'
+            },
+            {
+                'label': 'Cost of getting it wrong',
+                'value': 'A silent starter for the whole match'
+            }
+        ],
+        'table_it': [
+            {
+                'label': 'Quando',
+                'value': 'Ogni volta che cambi modulo o sposti un giocatore'
+            },
+            {
+                'label': 'Costo di sbagliare',
+                'value': 'Un titolare muto per tutta la partita'
+            }
+        ]
+    },
+    {
+        'id': 'gg-duels',
+        'order': 32,
+        'category_en': 'Reading positional duels',
+        'category_it': 'Leggere i duelli posizionali',
+        'icon': 'git-compare-outline',
+        'summary_en': 'Overlay the two line-ups and work out who faces whom. Overall rating hides the attribute that decides the duel.',
+        'summary_it': "Sovrapponi le due formazioni e ricava chi affronta chi. Il GEN nasconde l'attributo che decide il duello.",
+        'bullets_en': [
+            'In the match preview, overlay their shape on yours: the app shows both line-ups on the same pitch',
+            'Find their best player and see which of your men sits in front of him',
+            'Their AMR attacks your left, their AML attacks your right: never the same side as the label suggests',
+            'Pick the marker on Tackling and Marking, not on overall: a 98 with Tackling 180 beats a 117 with Tackling 130',
+            'Check whether your deep playmaker is left unmarked: if their DMC sits high, build from there',
+            'Compare their two central midfielders and put your best one on the stronger side to neutralise him'
+        ],
+        'bullets_it': [
+            "Nell'anteprima partita sovrapponi il loro modulo al tuo: l'app mostra entrambe le formazioni sullo stesso campo",
+            'Individua il loro giocatore migliore e guarda quale dei tuoi uomini gli sta davanti',
+            'Il loro AMR attacca la tua sinistra, il loro AML attacca la tua destra: mai il lato che suggerisce la sigla',
+            'Scegli il marcatore su Contrasto e Marcatura, non sul GEN: un 98 con Contrasto 180 batte un 117 con Contrasto 130',
+            'Controlla se il tuo regista arretrato resta libero: se il loro DMC è alto, costruisci da lì',
+            'Confronta i loro due centrocampisti centrali e metti il tuo migliore sul lato del loro migliore per neutralizzarlo'
+        ],
+        'table_en': [
+            {
+                'label': 'When',
+                'value': 'Before every match against a top-half side'
+            },
+            {
+                'label': 'Time needed',
+                'value': '3 minutes'
+            }
+        ],
+        'table_it': [
+            {
+                'label': 'Quando',
+                'value': 'Prima di ogni partita contro una squadra di alta classifica'
+            },
+            {
+                'label': 'Tempo richiesto',
+                'value': '3 minuti'
+            }
+        ]
+    },
+    {
+        'id': 'gg-grade-points',
+        'order': 33,
+        'category_en': 'Spending grade points',
+        'category_it': 'Spendere i punti grado',
+        'icon': 'trending-up-outline',
+        'summary_en': 'The grade bonus is a flat amount on key attributes, so it lifts mid-tier players more than your stars.',
+        'summary_it': 'Il bonus di grado è una quantità fissa sugli attributi chiave, quindi solleva i giocatori di fascia media più delle tue stelle.',
+        'bullets_en': [
+            'Elite gives +30 on key attributes, Stellar +50: the jump is worth +20 flat',
+            'The same jump produces a different overall gain: mid-tier players gain more (+18) than top players (+13)',
+            'Spend on the bottleneck of your starting eleven, not on your best player',
+            'A backup keeper is always the worst possible target',
+            'Check the grade of your best players: a Rare on 130 may deserve the earlier jump more than an Elite on 147',
+            'Read the projected overall gain in the upgrade screen before confirming: the game shows it per player'
+        ],
+        'bullets_it': [
+            'Élite dà +30 sugli attributi chiave, Stellare +50: il salto vale +20 fissi',
+            'Lo stesso salto produce un aumento di GEN diverso: i giocatori di fascia media guadagnano di più(+18) dei migliori (+13)',
+            'Spendi sul collo di bottiglia dei titolari, non sul giocatore più forte',
+            'Un portiere di riserva è sempre il bersaglio peggiore',
+            'Controlla il grado dei tuoi migliori: un Raro da 130 può meritare il salto precedente più di un Élite da 147',
+            "Leggi l'aumento di GEN previsto nella schermata di upgrade prima di confermare: il gioco lo mostra per ogni giocatore"
+        ],
+        'table_en': [
+            {
+                'label': 'When',
+                'value': 'Whenever you have enough stellar grade points'
+            },
+            {
+                'label': 'Rule of thumb',
+                'value': 'Highest projected gain among the starters'
+            }
+        ],
+        'table_it': [
+            {
+                'label': 'Quando',
+                'value': 'Ogni volta che hai abbastanza punti grado stellari'
+            },
+            {
+                'label': 'Regola pratica',
+                'value': 'Aumento previsto più alto tra i titolari'
+            }
+        ]
+    },
+    {
+        'id': 'gg-scout-dossier',
+        'order': 34,
+        'category_en': 'Opponent dossier: what to record',
+        'category_it': 'Dossier avversario: cosa annotare',
+        'icon': 'folder-open-outline',
+        'summary_en': 'Reading an opponent once is a guess. Reading the same opponent three times is a scouting report. Six things are worth writing down.',
+        'summary_it': "Leggere un avversario una volta è un'ipotesi. Leggerlo tre volte è uno scouting report. Sei cose vale la pena annotarle.",
+        'bullets_en': [
+            '1. Goalscorers from their recent matches. Who scores is not who has the highest overall: the scoresheet beats the squad list',
+            '2. Assist providers: the supply line. Cut the supplier and the finisher often goes quiet too',
+            '3. Preferred attacking flank, read from the GENERAL tab of their past reports. Teams repeat the same lanes',
+            '4. Their goalkeeper overall. A weak keeper changes your plan: shoot more, and shoot from distance',
+            '5. Which mentor they use. It is only visible once the match has started, so it is worth recording for next time',
+            '6. The formation and defensive line they actually fielded, not the one you expected',
+            'Rule of thumb: after three meetings with the same side you stop guessing and start predicting'
+        ],
+        'bullets_it': [
+            '1. Marcatori delle loro ultime partite. Chi segna non è chi ha il GEN più alto: il tabellino vale più della rosa',
+            '2. Assistman: è la linea di rifornimento. Se togli il fornitore, spesso spegni anche il finalizzatore',
+            "3. Fascia d'attacco preferita, letta dalla scheda GENERALE dei loro referti passati. Le squadre ripetono le stesse corsie",
+            '4. GEN del loro portiere. Un portiere debole cambia il piano: tira di più, e tira da fuori',
+            '5. Quale mentore usano. È visibile solo a partita iniziata, quindi va annotato per la volta successiva',
+            '6. Modulo e linea difensiva effettivamente schierati, non quelli che ti aspettavi',
+            'Regola pratica: dopo tre incontri con la stessa squadra smetti di indovinare e inizi a prevedere'
+        ],
+        'table_en': [
+            {
+                'label': 'When',
+                'value': 'Right after every match, while the report is still open'
+            },
+            {
+                'label': 'Time needed',
+                'value': '2 minutes'
+            }
+        ],
+        'table_it': [
+            {
+                'label': 'Quando',
+                'value': 'Subito dopo ogni partita, con il report ancora aperto'
+            },
+            {
+                'label': 'Tempo richiesto',
+                'value': '2 minuti'
+            }
+        ]
+    },
+    {
+        'id': 'gg-self-scouting',
+        'order': 35,
+        'category_en': 'Self-scouting: find your own weak zone',
+        'category_it': 'Auto-scouting: trova la tua zona debole',
+        'icon': 'search-outline',
+        'summary_en': 'Before studying them, study yourself. But the duel map is a distribution, not a rate: it only means something crossed with their attack zones.',
+        'summary_it': "Prima di studiare loro, studia te. Ma la mappa dei duelli è una distribuzione, non un tasso: vale solo incrociata con le zone d'attacco avversarie.",
+        'bullets_en': [
+            'Open your own last reports, DUELS tab, per-zone map, before you look at the opponent at all',
+            'Mind what that map says: the three zones add up to 100, so it is the distribution of the duels you won, not the share you win in that zone. A low value on its own accuses nobody',
+            'The correct read is a cross-check: put YOUR won-duel distribution next to THEIR attack-zone distribution. If they attack a lane more than you win duels there, that gap is your deficit',
+            'Do it over three matches, not one: a lane in deficit once is noise, the same lane in deficit three times is a structural hole',
+            'Once you have the lane, look at who plays there and at his Tackling and Marking. The problem is almost always one man, not the formation',
+            'Live intervention threshold: if by midway through the first half they concentrate over 50% of their attacks on one lane and fewer than a quarter of your won duels happen there, that is a substitution, not a setting',
+            'Arrows, marking and defensive line mitigate a gap; they do not close it. With 40+ points of difference in the deciding attribute you need a different man or a double-up'
+        ],
+        'bullets_it': [
+            "Apri i TUOI ultimi referti, scheda DUELLI, mappa per zona, prima ancora di guardare l'avversario",
+            'Attenzione a cosa dice quella mappa: le tre zone sommano a 100, quindi è la distribuzione dei duelli che hai vinto, non la percentuale che vinci in quella zona. Un valore basso da solo non accusa nessuno',
+            "La lettura corretta è un incrocio: metti la TUA distribuzione dei duelli vinti accanto alla LORO distribuzione delle zone d'attacco. Se attaccano una corsia più di quanto tu ci vinca duelli, quel divario è il tuo deficit",
+            'Fallo su tre partite, non su una: una corsia in deficit una volta sola è rumore, la stessa corsia in deficit tre volte è una falla strutturale',
+            'Trovata la corsia, guarda chi ci gioca e con quale Contrasto e Marcatura. Il problema è quasi sempre un uomo, non il modulo',
+            "Soglia d'intervento live: se a metà primo tempo loro concentrano oltre il 50% degli attacchi su una corsia e lì passa meno di un quarto dei tuoi duelli vinti, quello è un cambio, non un'impostazione",
+            "Frecce, marcatura e linea difensiva mitigano un divario, non lo colmano. Con 40+ punti di scarto nell'attributo che decide il duello serve un altro uomo o un raddoppio"
+        ],
+        'table_en': [
+            {
+                'label': 'When',
+                'value': 'Before the pre-match checklist, and again at the 25th minute'
+            },
+            {
+                'label': 'Time needed',
+                'value': '2 minutes'
+            }
+        ],
+        'table_it': [
+            {
+                'label': 'Quando',
+                'value': 'Prima della checklist pre-partita, e di nuovo al 25esimo minuto'
+            },
+            {
+                'label': 'Tempo richiesto',
+                'value': '2 minuti'
+            }
+        ]
     }
 ]
 
@@ -34034,11 +34363,11 @@ SPECIAL_ABILITIES = [
         'id': 'playmaker',
         'name_en': 'Playmaker',
         'name_it': 'Regista',
-        'best_role': 'MC, AMC, DMC',
+        'best_role': 'MC, DMC',
         'effect_en': 'Improves vision and the accuracy of decisive passes.',
         'effect_it': 'Migliora la visione di gioco e la precisione dei passaggi decisivi.',
-        'when_to_use_en': 'Key to dominating possession and providing assists between the lines.',
-        'when_to_use_it': 'Fondamentale per dominare il possesso palla e servire assist tra le linee.'
+        'when_to_use_en': 'Key to dominating possession and providing assists between the lines. Active on MC and DMC: check the roles listed on the player card.',
+        'when_to_use_it': 'Fondamentale per dominare il possesso palla e servire assist tra le linee. Attivo su MC e DMC: controlla i ruoli scritti nella scheda del giocatore.'
     },
     {
         'id': 'dual-position',
@@ -34229,10 +34558,170 @@ SPECIAL_ABILITIES = [
         'effect_it': 'Tiri letali da fuori area, scardinano difese compatte e basse.',
         'when_to_use_en': "Against teams that 'park the bus' (5-4-1 Flat, 4-5-1 V-Style defensive).",
         'when_to_use_it': "Contro squadre che 'parcheggiano l'autobus' (5-4-1 Flat, 4-5-1 V difensivo)."
+    },
+    {
+        'id': 'box-to-box',
+        'name_en': 'Box to Box',
+        'name_it': 'Da area ad area',
+        'best_role': 'MC',
+        'effect_en': 'The midfielder shows up wherever he is needed, doubling up in defence and joining attacking moves.',
+        'effect_it': "Il centrocampista appare ovunque sia necessario, andando a raddoppiare in difesa ma anche partecipando alle manovre d'attacco.",
+        'when_to_use_en': 'Only active on MC. Playing him as DMC switches the style off entirely.',
+        'when_to_use_it': 'Attivo solo su MC. Schierarlo da DMC spegne completamente lo stile.'
     }
 ]
 
 # ==================== TRAINING GUIDE DATA ====================
+
+MENTORS = [
+    {
+        'id': 'fabregas',
+        'name': 'Cesc Fàbregas',
+        'nickname_en': 'The Architect',
+        'nickname_it': "L'Architetto",
+        'series': 1,
+        'owned_confirmed': True,
+        'specialty_en': 'Midfield playmaking and tempo control.',
+        'specialty_it': 'Regia e controllo del ritmo a centrocampo.',
+        'tactic_boost_en': 'Raises short-passing effectiveness by up to 30% (value read at level 7).',
+        'tactic_boost_it': "Aumenta l'efficacia dei passaggi corti fino al 30% (valore letto al livello 7).",
+        'attribute_boost_en': 'Every player on the pitch gets +15 Dribbling and +15 Shooting (+20 at the next step).',
+        'attribute_boost_it': 'Tutti i giocatori in campo ricevono +15 Dribbling e +15 Tiro (+20 al passo successivo).',
+        'signature_move_en': 'Each completed pass makes the next 15% harder to intercept, but your midfielders burn 8% more stamina per attack.',
+        'signature_move_it': 'Ogni passaggio riuscito rende il successivo 15% più difficile da intercettare, ma i tuoi centrocampisti consumano un 8% di resistenza in più per ogni attacco.',
+        'pairs_with_en': 'Short passing + Through the middle. Pointless if you play long balls or pure counter-attack.',
+        'pairs_with_it': 'Palla corta + Per il centro. Inutile se giochi lanci lunghi o contropiede puro.',
+        'warning_en': 'The signature move costs stamina: risky in formations with only two central midfielders.',
+        'warning_it': 'La mossa distintiva costa resistenza: rischiosa nei moduli con soli due centrocampisti centrali.',
+        'verified': True
+    },
+    {
+        'id': 'makelele',
+        'name': 'Claude Makélélé',
+        'nickname_en': 'The Enforcer',
+        'nickname_it': 'Il Dominatore',
+        'series': 1,
+        'owned_confirmed': True,
+        'specialty_en': 'Ball-winning and possession retention.',
+        'specialty_it': 'Recupero palla e mantenimento del possesso.',
+        'tactic_boost_en': 'Defensive actions are 25% more effective against short passing (value read at level 5).',
+        'tactic_boost_it': 'Le azioni difensive sono il 25% più efficaci contro i passaggi corti (valore letto al livello 5).',
+        'attribute_boost_en': 'All players get +10 bravery and positioning during the match (+15 at the next step).',
+        'attribute_boost_it': 'Tutti i giocatori ricevono +10 coraggio e posizionamento durante la partita (+15 al passo successivo).',
+        'signature_move_en': "While you are ahead your defenders get +15 to all defensive attributes, but the team's attack takes -10. Unlocks at level 10. Note: the badge shows 15% while the text describes attribute points; the game's own discrepancy, reported as read.",
+        'signature_move_it': "Quando sei in vantaggio i difensori ottengono +15 a tutti gli attributi difensivi, ma l'attacco della squadra subisce -10. Si sblocca al livello 10. Nota: il badge indica 15% mentre il testo parla di punti attributo, discrepanza del gioco riportata come letta.",
+        'pairs_with_en': 'Defensive mentality, medium-low pressing, to protect a lead against possession sides.',
+        'pairs_with_it': 'Mentalità difensiva, pressing medio-basso, per blindare un vantaggio contro squadre di possesso.',
+        'warning_en': 'Our inference from the effect: he is the natural counter-mentor to short-passing sides. If an opponent fields him your central passing game loses bite; the same works in reverse when you field him.',
+        'warning_it': "Inferenza nostra ricavata dall'effetto, non scritta sulla scheda: è il contro-mentore naturale di chi gioca palla corta. Se un avversario lo schiera, il tuo palleggio centrale perde efficacia; vale anche al contrario quando lo usi tu.",
+        'verified': True
+    },
+    {
+        'id': 'herrera',
+        'name': 'Rubén Herrera',
+        'nickname_en': 'The Saboteur',
+        'nickname_it': 'Il Sabotatore',
+        'series': 1,
+        'owned_confirmed': True,
+        'specialty_en': 'Original in-game mentor, not a real-world player. No public guide covers him.',
+        'specialty_it': 'Mentore originale del gioco, non un calciatore reale. Nessuna guida pubblica lo documenta.',
+        'tactic_boost_en': 'Increases counter-attack effectiveness by 30% (value read at level 5).',
+        'tactic_boost_it': "Aumenta l'efficacia dei contropiedi del 30% (valore letto al livello 5).",
+        'attribute_boost_en': 'All players get +10 creativity and passing during the match (+15 at the next step).',
+        'attribute_boost_it': 'Tutti i giocatori ricevono +10 creatività e passaggi durante la partita (+15 al passo successivo).',
+        'signature_move_en': 'During a counter-attack the opposing defence loses all organisation: marking, positioning and pace become 30% less effective. Unlocks at level 10.',
+        'signature_move_it': 'Durante un contropiede la difesa avversaria perde ogni organizzazione: marcatura, posizionamento e velocità diventano il 30% meno efficaci. Si sblocca al livello 10.',
+        'pairs_with_en': 'Possession won set to Counter-attack, defensive or normal mentality, medium-low defensive line. He lives on transitions: a positional possession game wastes him.',
+        'pairs_with_it': 'Possesso ottenuto su Contropiede, mentalità difensiva o normale, linea difensiva medio-bassa. Vive di ripartenze: con un gioco posizionale di possesso non lo sfrutti.',
+        'warning_en': 'Our inference from the effect, not written on the card: against an opponent running Herrera, avoid losing the ball high up and set Possession lost to Regroup rather than Reaggression.',
+        'warning_it': "Inferenza nostra ricavata dall'effetto, non scritta sulla scheda: contro un avversario che schiera Herrera evita di perdere palla in zona avanzata e metti Possesso perso su Raggruppamento invece di Riaggressione.",
+        'verified': True
+    },
+    {
+        'id': 'green',
+        'name': 'Lewis Green',
+        'nickname_en': 'The Flank General',
+        'nickname_it': 'Il Generale delle Fasce',
+        'series': 1,
+        'owned_confirmed': True,
+        'specialty_en': 'Original in-game mentor. The nickname points at wing play: a natural fit for 3-4-1-2, 3-5-2 and any shape with wing-backs.',
+        'specialty_it': 'Mentore originale del gioco. Il soprannome indica il gioco sulle fasce: adatto a 3-4-1-2, 3-5-2 e a ogni modulo con esterni a tutta fascia.',
+        'tactic_boost_en': 'Increases flank attack effectiveness by 20% (25% at the next step; value read at level 2).',
+        'tactic_boost_it': "Aumenta l'efficacia degli attacchi sulle fasce del 20% (25% al passo successivo; valore letto al livello 2).",
+        'attribute_boost_en': 'All players get +6 crossing and heading during the match. Unlocks at level 5.',
+        'attribute_boost_it': 'Tutti i giocatori ricevono +6 cross e colpo di testa durante la partita. Si sblocca al livello 5.',
+        'signature_move_en': "Crosses become extremely accurate: the defender's Heading is 80% less effective in aerial duels. Unlocks at level 10.",
+        'signature_move_it': "I cross diventano estremamente precisi: il Colpo di testa del difensore avversario risulta l'80% meno efficace nei duelli aerei. Si sblocca al livello 10.",
+        'pairs_with_en': 'Passing type Down the flanks or Down both flanks, high crossing tendency, wingers and attacking full-backs with arrows up.',
+        'pairs_with_it': 'Tipo di passaggi Sulle fasce o Per entrambe le fasce, tendenza cross alta, ali e terzini offensivi con freccia in su.',
+        'warning_en': 'Our inference from the effect: he is the plan B when the centre is shut. In that scenario he beats a short-passing mentor, which needs the central channel to exist.',
+        'warning_it': "Inferenza nostra ricavata dall'effetto, non scritta sulla scheda: è il piano B quando ti chiudono il centro. In quello scenario rende più di un mentore da palleggio, che ha bisogno del corridoio centrale per esistere.",
+        'verified': True
+    },
+    {
+        'id': 'shearer',
+        'name': 'Alan Shearer',
+        'nickname_en': 'The Finisher',
+        'nickname_it': 'Il Finalizzatore',
+        'series': 1,
+        'owned_confirmed': True,
+        'specialty_en': 'Striker finishing. Announced by the press, not yet recorded in game.',
+        'specialty_it': 'Finalizzazione degli attaccanti. Annunciato dalla stampa, non ancora rilevato nel gioco.',
+        'tactic_boost_en': 'Increases dribbling action effectiveness by 15% (20% at the next step; value read at level 1).',
+        'tactic_boost_it': "Aumenta l'efficacia delle azioni di dribbling del 15% (20% al passo successivo; valore letto al livello 1).",
+        'attribute_boost_en': 'All players get +5 strength and shooting while the Mentor is assigned. Unlocks at level 5.',
+        'attribute_boost_it': 'Tutti i giocatori ricevono +5 forza e tiro mentre il Mentore è assegnato. Si sblocca al livello 5.',
+        'signature_move_en': 'Corners, free kicks and penalties are 25% more effective; if you miss, the opposing forwards take -10% on their next attacking action. Unlocks at level 10.',
+        'signature_move_it': "Calci d'angolo, punizioni e rigori sono il 25% più efficaci; se sbagli, gli attaccanti avversari subiscono -10% nell'azione offensiva successiva. Si sblocca al livello 10.",
+        'pairs_with_en': 'High shooting tendency and individual attacking play. Pays off in matches where you win a lot of set pieces.',
+        'pairs_with_it': 'Tendenza tiro alta e gioco individuale in attacco. Rende nelle partite in cui generi molti calci piazzati.',
+        'warning_en': 'At level 1 he only gives the dribbling bonus: the two skills that actually make him a finisher arrive at level 5 and level 10.',
+        'warning_it': 'Al livello 1 dà solo il bonus al dribbling: le due abilità che lo rendono davvero un finalizzatore arrivano al livello 5 e al livello 10.',
+        'verified': True
+    },
+    {
+        'id': 'vidic',
+        'name': 'Nemanja Vidić',
+        'nickname_en': 'The Steel Sentinel',
+        'nickname_it': "La Sentinella d'Acciaio",
+        'series': 1,
+        'owned_confirmed': True,
+        'specialty_en': 'Back-line anchoring. Announced by the press, not yet recorded in game.',
+        'specialty_it': 'Tenuta della linea difensiva. Annunciato dalla stampa, non ancora rilevato nel gioco.',
+        'tactic_boost_en': 'Defensive actions are 15% more effective (20% at the next step; value read at level 1).',
+        'tactic_boost_it': 'Le azioni difensive sono il 15% più efficaci (20% al passo successivo; valore letto al livello 1).',
+        'attribute_boost_en': 'All players get +10 tackling and bravery while the Mentor is assigned. Unlocks at level 5.',
+        'attribute_boost_it': 'Tutti i giocatori ricevono +10 contrasto e coraggio mentre il Mentore è assegnato. Si sblocca al livello 5.',
+        'signature_move_en': "Every successful defensive action cuts the opposing forward's condition by 2%, but the risk of picking up a card rises by 10%. Unlocks at level 10.",
+        'signature_move_it': "Ogni intervento difensivo riuscito riduce del 2% la condizione dell'attaccante avversario, ma il rischio di ricevere un cartellino aumenta del 10%. Si sblocca al livello 10.",
+        'pairs_with_en': 'Hard tackling, man-to-man marking, defensive mentality. Bring him on when you need to protect a result.',
+        'pairs_with_it': 'Stile contrasti duro, marcatura a uomo, mentalità difensiva. Da schierare quando devi blindare un risultato.',
+        'warning_en': 'The Signature Move raises card risk by 10%: with players already booked or one card from a ban it can cost you a sending-off.',
+        'warning_it': "Il Cavallo di Battaglia alza del 10% il rischio disciplinare: con giocatori già ammoniti o in diffida può costare un'espulsione.",
+        'verified': True
+    },
+    {
+        'id': 'jonasbraun',
+        'name': 'Jonas Braun',
+        'nickname_en': 'The Analyst',
+        'nickname_it': "L'Analista",
+        'series': 1,
+        'owned_confirmed': False,
+        'specialty_en': 'Long-ball, vertical play. Read from the card while still locked.',
+        'specialty_it': 'Gioco verticale a palla lunga. Letto dalla scheda mentre è ancora bloccato.',
+        'tactic_boost_en': 'Increases long-pass effectiveness by 15%.',
+        'tactic_boost_it': "Aumenta l'efficacia dei passaggi lunghi del 15%.",
+        'attribute_boost_en': 'All players get +5 strength and positioning while the Mentor is assigned. Unlocks at level 5.',
+        'attribute_boost_it': 'Tutti i giocatori ricevono +5 forza e posizionamento mentre il Mentore è assegnato. Si sblocca al livello 5.',
+        'signature_move_en': "At half-time he identifies the opponent's weakest defensive zone and grants +20 to all attributes to players attacking through it for the rest of the match. Unlocks at level 10.",
+        'signature_move_it': "All'intervallo individua la zona difensiva più debole dell'avversario e assegna +20 a tutti gli attributi ai giocatori che attaccano attraverso quella zona per il resto della partita. Si sblocca al livello 10.",
+        'pairs_with_en': 'Long passing style, vertical play, physically strong forwards.',
+        'pairs_with_it': 'Stile passaggi Palla lunga, gioco verticale, attaccanti forti fisicamente.',
+        'warning_en': 'Not owned: the card shows the lock and the acquire button, so the numeric badges are not visible and the values here come from the descriptive text.',
+        'warning_it': 'Non posseduto: la scheda mostra il lucchetto e il pulsante per ottenerlo, quindi i badge numerici non sono visibili e i valori qui riportati provengono dal testo descrittivo.',
+        'verified': True
+    }
+]
 
 TRAINING_GUIDE = [
     {
@@ -35494,6 +35983,19 @@ async def clear_chat_history(request: Request):
 @api_router.get("/")
 async def root():
     return {"message": "Top Eleven Tactics API", "version": "1.0.0"}
+
+@api_router.get("/mentors")
+async def get_mentors():
+    return MENTORS
+
+
+@api_router.get("/mentors/{mentor_id}")
+async def get_mentor(mentor_id: str):
+    for m in MENTORS:
+        if m["id"] == mentor_id:
+            return m
+    raise HTTPException(status_code=404, detail="Mentor not found")
+
 
 @api_router.get("/health")
 async def health():

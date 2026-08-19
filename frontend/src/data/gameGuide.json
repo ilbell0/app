@@ -748,18 +748,18 @@
   {
     "id": "gg-mentor-jonasbrown",
     "order": 23,
-    "category_en": "Mentor spotlight: Jonas Brown 'The Analyst'",
-    "category_it": "Mentore in dettaglio: Jonas Brown 'The Analyst'",
+    "category_en": "Mentor spotlight: Jonas Braun 'The Analyst'",
+    "category_it": "Mentore in dettaglio: Jonas Braun 'L'Analista'",
     "icon": "person-outline",
     "summary_en": "For long-ball, vertical managers. Instead of a flat squad buff, he reads the opponent's shape and targets its specific weakness.",
     "summary_it": "Per chi gioca verticale a palla lunga. Invece di un bonus generico alla squadra, legge lo schieramento avversario e colpisce il suo punto debole specifico.",
     "bullets_en": [
-      "Different from the other Mentors: no flat tactic/attribute numbers — he adapts to whatever weakness the current opponent's defensive structure has",
+      "He does have flat numbers like the others (+15% long passes, +5 strength and positioning), but the level-10 Signature Move is adaptive: at half-time it finds the opponent's weakest defensive zone and gives +20 to all attributes to whoever attacks through it",
       "Fits a vertical, long-ball playstyle rather than a possession-based one",
       "Best paired with tactics you'd already use to exploit a specific opponent (see the COUNTER tab reading tips) — he sharpens whatever plan you already have against that formation"
     ],
     "bullets_it": [
-      "Diverso dagli altri Mentori: nessun numero fisso di tattica/attributo — si adatta al punto debole specifico della struttura difensiva dell'avversario del momento",
+      "Ha numeri fissi come gli altri (passaggi lunghi +15%, forza e posizionamento +5), ma il Cavallo di Battaglia al livello 10 è adattivo: all'intervallo individua la zona difensiva più debole dell'avversario e dà +20 a tutti gli attributi a chi attacca da lì",
       "Si adatta a uno stile verticale e di palla lunga più che al possesso",
       "Va abbinato alle tattiche che useresti già per colpire quello specifico avversario (vedi i consigli di lettura nel tab COUNTER) — rende più efficace il piano che hai già contro quella formazione"
     ],
@@ -889,24 +889,28 @@
     "category_en": "Reading the 2027 Match Report",
     "category_it": "Leggere il Match Report 2027",
     "icon": "stats-chart-outline",
-    "summary_en": "The 2027 update deepened the post-match report and live in-match feedback. Reading it well tells you what actually went wrong, instead of guessing from the final score alone.",
-    "summary_it": "L'aggiornamento 2027 ha ampliato il report post-partita e il feedback durante la partita live. Saperlo leggere ti dice cosa è andato storto davvero, invece di indovinare dal solo risultato.",
+    "summary_en": "Four tabs, four different questions. The report is available live during the match too, so you can fix things while they still matter.",
+    "summary_it": "Quattro schede, quattro domande diverse. Il report è consultabile anche durante la partita, quindi puoi correggere mentre serve ancora.",
     "bullets_en": [
-      "The post-match report now gives a deeper breakdown of squad performance, not just the final scoreline",
-      "New during live matches: a pitch-side indicator shows in real time who's winning each individual 1v1 duel against their direct opponent, not just after the fact",
-      "Use that live duel indicator to react immediately — tactic tweak or substitution — instead of waiting for half-time or full time to notice a player getting beaten repeatedly",
-      "Use the post-match report to tell a formation problem (e.g. goals conceded repeatedly down one side) apart from an individual problem (e.g. one slow CB beaten for pace)",
-      "Nordeus hasn't published the exact new report metrics yet: this entry will get concrete detail once official numbers are confirmed"
+      "The report has four tabs: GENERAL, CHANCES, PASSING, DUELS. Each answers a different question, and all four are available live in-match, not only at full time",
+      "GENERAL: attack zones (three lanes per side) and possession. If one of their lanes is above 50%, that lane is your leak",
+      "CHANCES: total shots, shots on target, shooting accuracy, corners, chances created from crosses, saves. Equal shots but a lopsided score means finishing or their keeper, not tactics",
+      "PASSING: passing accuracy plus the split between combination play, balanced build-up and long balls. Accuracy under 70% while playing mostly combinations means the style is beyond what your squad can execute",
+      "DUELS: duels won overall and per zone, dribble success, fouls, interceptions. The per-zone map is the most actionable number in the whole report",
+      "The decisive cross-check: put your weakest duel zone next to their most used attack zone. If they overlap, you have found the cause of the goals conceded",
+      "A big interceptions gap against you means they are reading your passes: simplify the passing style instead of forcing more combinations"
     ],
     "bullets_it": [
-      "Il report post-partita offre ora una scomposizione più dettagliata delle prestazioni della rosa, non solo il tabellino finale",
-      "Novità nella partita live: un indicatore a bordocampo mostra in tempo reale chi sta vincendo ogni duello individuale 1 contro 1 contro l'avversario diretto, non solo a cose fatte",
-      "Usa questo segnale live per reagire subito — ritocco tattico o sostituzione — invece di scoprire a fine tempo che un giocatore veniva superato ripetutamente",
-      "Usa il report post-partita per distinguere un problema di modulo (es. gol subiti ripetutamente dallo stesso lato) da un problema di singolo giocatore (es. un DC lento superato in velocità)",
-      "Nordeus non ha ancora pubblicato le metriche esatte del nuovo report: questa scheda verrà aggiornata con dettagli concreti appena saranno confermati ufficialmente"
+      "Il report ha quattro schede: GENERALE, OCCASIONI, PASSAGGI, DUELLI. Ognuna risponde a una domanda diversa, e tutte e quattro sono consultabili durante la partita, non solo alla fine",
+      "GENERALE: percentuale zone d'attacco (tre corsie per squadra) e possesso. Se una loro corsia supera il 50%, quella corsia è la tua falla",
+      "OCCASIONI: tiri totali, tiri in porta, precisione tiri, calci d'angolo, occasioni create da cross, parate. Tiri pari ma risultato sbilanciato significa finalizzazione o portiere avversario in giornata, non problema tattico",
+      "PASSAGGI: precisione passaggi più la ripartizione tra giocate di combinazione, costruzione equilibrata e palloni lunghi. Precisione sotto il 70% giocando soprattutto combinazioni vuol dire che lo stile è oltre quello che la rosa riesce a eseguire",
+      "DUELLI: duelli vinti totali e per zona, dribbling riusciti, falli, intercetti. La mappa per zona è il dato più azionabile di tutto il report",
+      "Il confronto decisivo: metti la tua zona debole nei duelli accanto alla loro zona d'attacco più usata. Se coincidono, hai trovato la causa dei gol subiti",
+      "Un forte divario negli intercetti a tuo sfavore significa che leggono i tuoi passaggi: semplifica lo stile invece di insistere con le combinazioni"
     ],
-    "source_en": "Official \"NEW ERA OF TACTICS | TOP ELEVEN 2027\" trailer, plus Pocket Gamer and GamingOnPhone coverage of the launch (Aug 2026)",
-    "source_it": "Trailer ufficiale \"NEW ERA OF TACTICS | TOP ELEVEN 2027\", oltre a copertura Pocket Gamer e GamingOnPhone del lancio (ago 2026)"
+    "source_en": "Metrics observed directly in the in-game report, 2027 season (live tabs at 12', 42' and full time)",
+    "source_it": "Metriche rilevate direttamente dal report di gioco, stagione 2027 (schede live al 12', al 42' e a fine partita)"
   },
   {
     "id": "gg-teamplay-form",
@@ -936,5 +940,234 @@
     ],
     "source_en": "\"New Era of Top Eleven Training\" official page, topeleven.com (dated Nov 5, 2023 — still the current system as of the 2027 season)",
     "source_it": "Pagina ufficiale \"New Era of Top Eleven Training\", topeleven.com (datata 5 novembre 2023 — sistema ancora attuale nella stagione 2027)"
+  },
+  {
+    "id": "gg-play-styles",
+    "order": 31,
+    "category_en": "Play styles: the role trap",
+    "category_it": "Stili di gioco: la trappola del ruolo",
+    "icon": "flash-outline",
+    "summary_en": "A play style only fires in the roles printed on the player card. Wrong slot, style off, and nothing warns you.",
+    "summary_it": "Uno stile di gioco si attiva solo nei ruoli scritti sulla scheda del giocatore. Casella sbagliata, stile spento, e nessuno ti avvisa.",
+    "bullets_en": [
+      "Open the player, tab Play style: it lists ROLES and LEVEL (Standard x1, Intermediate x2, up to Master x4)",
+      "Box to Box fires on MC only: as DMC it is dead weight",
+      "Playmaker fires on MC and DMC",
+      "Two midfielders with different styles may have to swap slots: put the wider-role style deeper",
+      "The multiplier matters more than a single attribute bonus: a x4 style beats +25 on one stat",
+      "Season events that boost a role (for example +25 Dribbling for AMC) only pay out if the player is in that exact slot"
+    ],
+    "bullets_it": [
+      "Apri il giocatore, scheda Stile di gioco: mostra RUOLI e LIVELLO (Standard x1, Intermedio x2, fino a Maestro x4)",
+      "Da area ad area si attiva solo su MC: da DMC è peso morto",
+      "Regista si attiva su MC e DMC",
+      "Due centrocampisti con stili diversi vanno spesso invertiti: metti più arretrato quello con il ruolo più ampio",
+      "Il moltiplicatore conta più di un bonus su un singolo attributo: uno stile x4 batte un +25 su una statistica",
+      "Gli eventi stagionali che potenziano un ruolo (per esempio +25 Dribbling per AMC) pagano solo se il giocatore è in quella casella esatta"
+    ],
+    "table_en": [
+      {
+        "label": "When",
+        "value": "Every time you change formation or move a player"
+      },
+      {
+        "label": "Cost of getting it wrong",
+        "value": "A silent starter for the whole match"
+      }
+    ],
+    "table_it": [
+      {
+        "label": "Quando",
+        "value": "Ogni volta che cambi modulo o sposti un giocatore"
+      },
+      {
+        "label": "Costo di sbagliare",
+        "value": "Un titolare muto per tutta la partita"
+      }
+    ]
+  },
+  {
+    "id": "gg-duels",
+    "order": 32,
+    "category_en": "Reading positional duels",
+    "category_it": "Leggere i duelli posizionali",
+    "icon": "git-compare-outline",
+    "summary_en": "Overlay the two line-ups and work out who faces whom. Overall rating hides the attribute that decides the duel.",
+    "summary_it": "Sovrapponi le due formazioni e ricava chi affronta chi. Il GEN nasconde l'attributo che decide il duello.",
+    "bullets_en": [
+      "In the match preview, overlay their shape on yours: the app shows both line-ups on the same pitch",
+      "Find their best player and see which of your men sits in front of him",
+      "Their AMR attacks your left, their AML attacks your right: never the same side as the label suggests",
+      "Pick the marker on Tackling and Marking, not on overall: a 98 with Tackling 180 beats a 117 with Tackling 130",
+      "Check whether your deep playmaker is left unmarked: if their DMC sits high, build from there",
+      "Compare their two central midfielders and put your best one on the stronger side to neutralise him"
+    ],
+    "bullets_it": [
+      "Nell'anteprima partita sovrapponi il loro modulo al tuo: l'app mostra entrambe le formazioni sullo stesso campo",
+      "Individua il loro giocatore migliore e guarda quale dei tuoi uomini gli sta davanti",
+      "Il loro AMR attacca la tua sinistra, il loro AML attacca la tua destra: mai il lato che suggerisce la sigla",
+      "Scegli il marcatore su Contrasto e Marcatura, non sul GEN: un 98 con Contrasto 180 batte un 117 con Contrasto 130",
+      "Controlla se il tuo regista arretrato resta libero: se il loro DMC è alto, costruisci da lì",
+      "Confronta i loro due centrocampisti centrali e metti il tuo migliore sul lato del loro migliore per neutralizzarlo"
+    ],
+    "table_en": [
+      {
+        "label": "When",
+        "value": "Before every match against a top-half side"
+      },
+      {
+        "label": "Time needed",
+        "value": "3 minutes"
+      }
+    ],
+    "table_it": [
+      {
+        "label": "Quando",
+        "value": "Prima di ogni partita contro una squadra di alta classifica"
+      },
+      {
+        "label": "Tempo richiesto",
+        "value": "3 minuti"
+      }
+    ]
+  },
+  {
+    "id": "gg-grade-points",
+    "order": 33,
+    "category_en": "Spending grade points",
+    "category_it": "Spendere i punti grado",
+    "icon": "trending-up-outline",
+    "summary_en": "The grade bonus is a flat amount on key attributes, so it lifts mid-tier players more than your stars.",
+    "summary_it": "Il bonus di grado è una quantità fissa sugli attributi chiave, quindi solleva i giocatori di fascia media più delle tue stelle.",
+    "bullets_en": [
+      "Elite gives +30 on key attributes, Stellar +50: the jump is worth +20 flat",
+      "The same jump produces a different overall gain: mid-tier players gain more (+18) than top players (+13)",
+      "Spend on the bottleneck of your starting eleven, not on your best player",
+      "A backup keeper is always the worst possible target",
+      "Check the grade of your best players: a Rare on 130 may deserve the earlier jump more than an Elite on 147",
+      "Read the projected overall gain in the upgrade screen before confirming: the game shows it per player"
+    ],
+    "bullets_it": [
+      "Élite dà +30 sugli attributi chiave, Stellare +50: il salto vale +20 fissi",
+      "Lo stesso salto produce un aumento di GEN diverso: i giocatori di fascia media guadagnano di più(+18) dei migliori (+13)",
+      "Spendi sul collo di bottiglia dei titolari, non sul giocatore più forte",
+      "Un portiere di riserva è sempre il bersaglio peggiore",
+      "Controlla il grado dei tuoi migliori: un Raro da 130 può meritare il salto precedente più di un Élite da 147",
+      "Leggi l'aumento di GEN previsto nella schermata di upgrade prima di confermare: il gioco lo mostra per ogni giocatore"
+    ],
+    "table_en": [
+      {
+        "label": "When",
+        "value": "Whenever you have enough stellar grade points"
+      },
+      {
+        "label": "Rule of thumb",
+        "value": "Highest projected gain among the starters"
+      }
+    ],
+    "table_it": [
+      {
+        "label": "Quando",
+        "value": "Ogni volta che hai abbastanza punti grado stellari"
+      },
+      {
+        "label": "Regola pratica",
+        "value": "Aumento previsto più alto tra i titolari"
+      }
+    ]
+  },
+  {
+    "id": "gg-scout-dossier",
+    "order": 34,
+    "category_en": "Opponent dossier: what to record",
+    "category_it": "Dossier avversario: cosa annotare",
+    "icon": "folder-open-outline",
+    "summary_en": "Reading an opponent once is a guess. Reading the same opponent three times is a scouting report. Six things are worth writing down.",
+    "summary_it": "Leggere un avversario una volta è un'ipotesi. Leggerlo tre volte è uno scouting report. Sei cose vale la pena annotarle.",
+    "bullets_en": [
+      "1. Goalscorers from their recent matches. Who scores is not who has the highest overall: the scoresheet beats the squad list",
+      "2. Assist providers: the supply line. Cut the supplier and the finisher often goes quiet too",
+      "3. Preferred attacking flank, read from the GENERAL tab of their past reports. Teams repeat the same lanes",
+      "4. Their goalkeeper overall. A weak keeper changes your plan: shoot more, and shoot from distance",
+      "5. Which mentor they use. It is only visible once the match has started, so it is worth recording for next time",
+      "6. The formation and defensive line they actually fielded, not the one you expected",
+      "Rule of thumb: after three meetings with the same side you stop guessing and start predicting"
+    ],
+    "bullets_it": [
+      "1. Marcatori delle loro ultime partite. Chi segna non è chi ha il GEN più alto: il tabellino vale più della rosa",
+      "2. Assistman: è la linea di rifornimento. Se togli il fornitore, spesso spegni anche il finalizzatore",
+      "3. Fascia d'attacco preferita, letta dalla scheda GENERALE dei loro referti passati. Le squadre ripetono le stesse corsie",
+      "4. GEN del loro portiere. Un portiere debole cambia il piano: tira di più, e tira da fuori",
+      "5. Quale mentore usano. È visibile solo a partita iniziata, quindi va annotato per la volta successiva",
+      "6. Modulo e linea difensiva effettivamente schierati, non quelli che ti aspettavi",
+      "Regola pratica: dopo tre incontri con la stessa squadra smetti di indovinare e inizi a prevedere"
+    ],
+    "table_en": [
+      {
+        "label": "When",
+        "value": "Right after every match, while the report is still open"
+      },
+      {
+        "label": "Time needed",
+        "value": "2 minutes"
+      }
+    ],
+    "table_it": [
+      {
+        "label": "Quando",
+        "value": "Subito dopo ogni partita, con il report ancora aperto"
+      },
+      {
+        "label": "Tempo richiesto",
+        "value": "2 minuti"
+      }
+    ]
+  },
+  {
+    "id": "gg-self-scouting",
+    "order": 35,
+    "category_en": "Self-scouting: find your own weak zone",
+    "category_it": "Auto-scouting: trova la tua zona debole",
+    "icon": "search-outline",
+    "summary_en": "Before studying them, study yourself. But the duel map is a distribution, not a rate: it only means something crossed with their attack zones.",
+    "summary_it": "Prima di studiare loro, studia te. Ma la mappa dei duelli è una distribuzione, non un tasso: vale solo incrociata con le zone d'attacco avversarie.",
+    "bullets_en": [
+      "Open your own last reports, DUELS tab, per-zone map, before you look at the opponent at all",
+      "Mind what that map says: the three zones add up to 100, so it is the distribution of the duels you won, not the share you win in that zone. A low value on its own accuses nobody",
+      "The correct read is a cross-check: put YOUR won-duel distribution next to THEIR attack-zone distribution. If they attack a lane more than you win duels there, that gap is your deficit",
+      "Do it over three matches, not one: a lane in deficit once is noise, the same lane in deficit three times is a structural hole",
+      "Once you have the lane, look at who plays there and at his Tackling and Marking. The problem is almost always one man, not the formation",
+      "Live intervention threshold: if by midway through the first half they concentrate over 50% of their attacks on one lane and fewer than a quarter of your won duels happen there, that is a substitution, not a setting",
+      "Arrows, marking and defensive line mitigate a gap; they do not close it. With 40+ points of difference in the deciding attribute you need a different man or a double-up"
+    ],
+    "bullets_it": [
+      "Apri i TUOI ultimi referti, scheda DUELLI, mappa per zona, prima ancora di guardare l'avversario",
+      "Attenzione a cosa dice quella mappa: le tre zone sommano a 100, quindi è la distribuzione dei duelli che hai vinto, non la percentuale che vinci in quella zona. Un valore basso da solo non accusa nessuno",
+      "La lettura corretta è un incrocio: metti la TUA distribuzione dei duelli vinti accanto alla LORO distribuzione delle zone d'attacco. Se attaccano una corsia più di quanto tu ci vinca duelli, quel divario è il tuo deficit",
+      "Fallo su tre partite, non su una: una corsia in deficit una volta sola è rumore, la stessa corsia in deficit tre volte è una falla strutturale",
+      "Trovata la corsia, guarda chi ci gioca e con quale Contrasto e Marcatura. Il problema è quasi sempre un uomo, non il modulo",
+      "Soglia d'intervento live: se a metà primo tempo loro concentrano oltre il 50% degli attacchi su una corsia e lì passa meno di un quarto dei tuoi duelli vinti, quello è un cambio, non un'impostazione",
+      "Frecce, marcatura e linea difensiva mitigano un divario, non lo colmano. Con 40+ punti di scarto nell'attributo che decide il duello serve un altro uomo o un raddoppio"
+    ],
+    "table_en": [
+      {
+        "label": "When",
+        "value": "Before the pre-match checklist, and again at the 25th minute"
+      },
+      {
+        "label": "Time needed",
+        "value": "2 minutes"
+      }
+    ],
+    "table_it": [
+      {
+        "label": "Quando",
+        "value": "Prima della checklist pre-partita, e di nuovo al 25esimo minuto"
+      },
+      {
+        "label": "Tempo richiesto",
+        "value": "2 minuti"
+      }
+    ]
   }
 ]

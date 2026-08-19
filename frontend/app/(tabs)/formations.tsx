@@ -39,26 +39,76 @@ interface Variant {
   tip_it: string;
 }
 
+// Sistema tattico Top Eleven 2027: 11 parametri divisi in tre fasi.
 interface OpponentSettings {
-  mentality: string;
-  mentality_it: string;
-  focus_passing: string;
-  focus_passing_it: string;
+  // In possesso
+  shooting_tendency: string;
+  shooting_tendency_it: string;
   passing_style: string;
   passing_style_it: string;
-  counter_attack: boolean;
-  pressing: string;
-  pressing_it: string;
-  tackling: string;
-  tackling_it: string;
+  passing_type: string;
+  passing_type_it: string;
+  crossing_tendency: string;
+  crossing_tendency_it: string;
+  // In transizione
+  lost_possession: string;
+  lost_possession_it: string;
+  won_possession: string;
+  won_possession_it: string;
+  mentality: string;
+  mentality_it: string;
+  // Non in possesso
   marking: string;
   marking_it: string;
-  offside_trap: boolean;
+  pressing: string;
+  pressing_it: string;
+  defensive_line: string;
+  defensive_line_it: string;
+  tackling: string;
+  tackling_it: string;
   tip_en: string;
   tip_it: string;
   arrows?: Record<string, string>;
   variant?: string;
 }
+
+type PhaseField = { key: keyof OpponentSettings; label_it: string; label_en: string };
+
+// Ordine e raggruppamento identici ai tre pannelli tattici del gioco.
+const TACTIC_PHASES: { key: string; label_it: string; label_en: string; fields: PhaseField[] }[] = [
+  {
+    key: 'possession',
+    label_it: 'IN POSSESSO',
+    label_en: 'IN POSSESSION',
+    fields: [
+      { key: 'shooting_tendency', label_it: 'Tendenza tiro', label_en: 'Shooting tendency' },
+      { key: 'passing_style', label_it: 'Stile passaggi', label_en: 'Passing style' },
+      { key: 'passing_type', label_it: 'Tipo di passaggi', label_en: 'Passing type' },
+      { key: 'crossing_tendency', label_it: 'Tendenza cross', label_en: 'Crossing tendency' },
+    ],
+  },
+  {
+    key: 'transition',
+    label_it: 'IN TRANSIZIONE',
+    label_en: 'IN TRANSITION',
+    fields: [
+      { key: 'lost_possession', label_it: 'Possesso perso', label_en: 'Possession lost' },
+      { key: 'won_possession', label_it: 'Possesso ottenuto', label_en: 'Possession won' },
+      { key: 'mentality', label_it: 'Mentalità', label_en: 'Mentality' },
+    ],
+  },
+  {
+    key: 'defence',
+    label_it: 'NON IN POSSESSO',
+    label_en: 'OUT OF POSSESSION',
+    fields: [
+      { key: 'marking', label_it: 'Stile marcatura', label_en: 'Marking style' },
+      { key: 'pressing', label_it: 'Pressing', label_en: 'Pressing' },
+      { key: 'defensive_line', label_it: 'Linea difensiva', label_en: 'Defensive line' },
+      { key: 'tackling', label_it: 'Stile contrasti', label_en: 'Tackling style' },
+    ],
+  },
+];
 
 interface Formation {
   id: string;
@@ -406,102 +456,36 @@ export default function FormationsScreen() {
                 </View>
               )}
 
-              {/* Tactical Settings */}
-              {currentSettings && (
-                <View style={styles.tacticsSection}>
-                  <Text style={styles.sectionLabel}>
-                    {language === 'it' ? 'IMPOSTAZIONI' : 'SETTINGS'}
-                  </Text>
-                  <View style={styles.tacticsGrid}>
-                    <View style={styles.tacticRow}>
-                      <Text style={styles.tacticLabel}>
-                        {language === 'it' ? 'Mentalità' : 'Mentality'}
-                      </Text>
-                      <Text style={styles.tacticValue}>
-                        {language === 'it' ? currentSettings.mentality_it : currentSettings.mentality}
-                      </Text>
-                    </View>
-                    <View style={styles.tacticRow}>
-                      <Text style={styles.tacticLabel}>
-                        {language === 'it' ? 'Passaggi' : 'Passing'}
-                      </Text>
-                      <Text style={styles.tacticValue}>
-                        {language === 'it' ? currentSettings.focus_passing_it : currentSettings.focus_passing}
-                      </Text>
-                    </View>
-                    <View style={styles.tacticRow}>
-                      <Text style={styles.tacticLabel}>
-                        {language === 'it' ? 'Stile' : 'Style'}
-                      </Text>
-                      <Text style={styles.tacticValue}>
-                        {language === 'it' ? currentSettings.passing_style_it : currentSettings.passing_style}
-                      </Text>
-                    </View>
-                    <View style={styles.tacticRow}>
-                      <Text style={styles.tacticLabel}>Pressing</Text>
-                      <Text style={styles.tacticValue}>
-                        {language === 'it' ? currentSettings.pressing_it : currentSettings.pressing}
-                      </Text>
-                    </View>
-                    <View style={styles.tacticRow}>
-                      <Text style={styles.tacticLabel}>
-                        {language === 'it' ? 'Marcatura' : 'Marking'}
-                      </Text>
-                      <Text style={styles.tacticValue}>
-                        {language === 'it' ? currentSettings.marking_it : currentSettings.marking}
-                      </Text>
-                    </View>
-                    <View style={styles.tacticRow}>
-                      <Text style={styles.tacticLabel}>
-                        {language === 'it' ? 'Contrasti' : 'Tackling'}
-                      </Text>
-                      <Text style={styles.tacticValue}>
-                        {language === 'it' ? currentSettings.tackling_it : currentSettings.tackling}
-                      </Text>
+              {/* Impostazioni tattiche 2027: una sezione per ciascuna delle tre fasi */}
+              {currentSettings && TACTIC_PHASES.map((phase) => {
+                const rows = phase.fields
+                  .map((f) => ({
+                    field: f,
+                    value: (language === 'it'
+                      ? currentSettings[`${f.key}_it` as keyof OpponentSettings]
+                      : currentSettings[f.key]) as string | undefined,
+                  }))
+                  // un parametro assente non deve rendere una riga vuota
+                  .filter((r) => !!r.value);
+                if (rows.length === 0) return null;
+                return (
+                  <View key={phase.key} style={styles.tacticsSection}>
+                    <Text style={styles.sectionLabel}>
+                      {language === 'it' ? phase.label_it : phase.label_en}
+                    </Text>
+                    <View style={styles.tacticsGrid}>
+                      {rows.map((r) => (
+                        <View key={r.field.key} style={styles.tacticRow}>
+                          <Text style={styles.tacticLabel}>
+                            {language === 'it' ? r.field.label_it : r.field.label_en}
+                          </Text>
+                          <Text style={styles.tacticValue}>{r.value}</Text>
+                        </View>
+                      ))}
                     </View>
                   </View>
-                </View>
-              )}
-
-              {/* Toggles */}
-              {currentSettings && (
-                <View style={styles.togglesSection}>
-                  <View style={[
-                    styles.toggleBadge,
-                    currentSettings.counter_attack && styles.toggleBadgeActive,
-                  ]}>
-                    <Text style={[
-                      styles.toggleText,
-                      currentSettings.counter_attack && styles.toggleTextActive,
-                    ]}>
-                      {language === 'it' ? 'CONTROPIEDE' : 'COUNTER'}
-                    </Text>
-                    <Text style={[
-                      styles.toggleValue,
-                      currentSettings.counter_attack && styles.toggleValueActive,
-                    ]}>
-                      {currentSettings.counter_attack ? 'ON' : 'OFF'}
-                    </Text>
-                  </View>
-                  <View style={[
-                    styles.toggleBadge,
-                    currentSettings.offside_trap && styles.toggleBadgeActive,
-                  ]}>
-                    <Text style={[
-                      styles.toggleText,
-                      currentSettings.offside_trap && styles.toggleTextActive,
-                    ]}>
-                      {language === 'it' ? 'FUORIGIOCO' : 'OFFSIDE'}
-                    </Text>
-                    <Text style={[
-                      styles.toggleValue,
-                      currentSettings.offside_trap && styles.toggleValueActive,
-                    ]}>
-                      {currentSettings.offside_trap ? 'ON' : 'OFF'}
-                    </Text>
-                  </View>
-                </View>
-              )}
+                );
+              })}
 
               {/* Per-scenario Arrows */}
               {currentSettings?.arrows && Object.keys(currentSettings.arrows).length > 0 && (

@@ -13,11 +13,11 @@
     "id": "playmaker",
     "name_en": "Playmaker",
     "name_it": "Regista",
-    "best_role": "MC, AMC, DMC",
+    "best_role": "MC, DMC",
     "effect_en": "Improves vision and the accuracy of decisive passes.",
     "effect_it": "Migliora la visione di gioco e la precisione dei passaggi decisivi.",
-    "when_to_use_en": "Key to dominating possession and providing assists between the lines.",
-    "when_to_use_it": "Fondamentale per dominare il possesso palla e servire assist tra le linee."
+    "when_to_use_en": "Key to dominating possession and providing assists between the lines. Active on MC and DMC: check the roles listed on the player card.",
+    "when_to_use_it": "Fondamentale per dominare il possesso palla e servire assist tra le linee. Attivo su MC e DMC: controlla i ruoli scritti nella scheda del giocatore."
   },
   {
     "id": "dual-position",
@@ -208,5 +208,15 @@
     "effect_it": "Tiri letali da fuori area, scardinano difese compatte e basse.",
     "when_to_use_en": "Against teams that 'park the bus' (5-4-1 Flat, 4-5-1 V-Style defensive).",
     "when_to_use_it": "Contro squadre che 'parcheggiano l'autobus' (5-4-1 Flat, 4-5-1 V difensivo)."
+  },
+  {
+    "id": "box-to-box",
+    "name_en": "Box to Box",
+    "name_it": "Da area ad area",
+    "best_role": "MC",
+    "effect_en": "The midfielder shows up wherever he is needed, doubling up in defence and joining attacking moves.",
+    "effect_it": "Il centrocampista appare ovunque sia necessario, andando a raddoppiare in difesa ma anche partecipando alle manovre d'attacco.",
+    "when_to_use_en": "Only active on MC. Playing him as DMC switches the style off entirely.",
+    "when_to_use_it": "Attivo solo su MC. Schierarlo da DMC spegne completamente lo stile."
   }
 ]

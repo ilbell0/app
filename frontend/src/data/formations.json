@@ -559,8 +559,8 @@
       "Richiede velocità sulle fasce",
       "Può essere troppo difensiva"
     ],
-    "tactic_type_en": "★ META 2026 / Counter-Attack",
-    "tactic_type_it": "★ META 2026 / Contropiede",
+    "tactic_type_en": "★ META 2027 / Counter-Attack",
+    "tactic_type_it": "★ META 2027 / Contropiede",
     "arrows": "DMC↓ AML↑ AMR↑",
     "recommended_tactics": {
       "mentality": "Defensive",
@@ -2202,8 +2202,8 @@
       "Può mancare creatività",
       "MC sovraccaricati"
     ],
-    "tactic_type_en": "META 2026 / Solid Defense",
-    "tactic_type_it": "META 2026 / Difesa Solida",
+    "tactic_type_en": "META 2027 / Solid Defense",
+    "tactic_type_it": "META 2027 / Difesa Solida",
     "arrows": "DMC↓",
     "recommended_tactics": {
       "mentality": "Normal",
@@ -4415,8 +4415,8 @@
       "Fasce possono essere esposte",
       "Richiede DMC di qualità"
     ],
-    "tactic_type_en": "★ META 2026 / Counter-Attack",
-    "tactic_type_it": "★ META 2026 / Contropiede",
+    "tactic_type_en": "★ META 2027 / Counter-Attack",
+    "tactic_type_it": "★ META 2027 / Contropiede",
     "arrows": "DMC↓ AMC↑",
     "recommended_tactics": {
       "mentality": "Normal",
@@ -4577,8 +4577,8 @@
       "Si basa solo sui contropiedi",
       "Può essere noiosa da giocare"
     ],
-    "tactic_type_en": "META 2026 / Ultra Defensive",
-    "tactic_type_it": "META 2026 / Ultra Difensiva",
+    "tactic_type_en": "META 2027 / Ultra Defensive",
+    "tactic_type_it": "META 2027 / Ultra Difensiva",
     "arrows": "DMC↓ MC↓",
     "recommended_tactics": {
       "mentality": "Defensive",
@@ -4741,8 +4741,8 @@
       "Nessun vero attaccante",
       "Complessa da padroneggiare"
     ],
-    "tactic_type_en": "★ NEW META 2026 / False Nine",
-    "tactic_type_it": "★ NUOVO META 2026 / Falso Nove",
+    "tactic_type_en": "★ NEW META 2027 / False Nine",
+    "tactic_type_it": "★ NUOVO META 2027 / Falso Nove",
     "arrows": "AMC↓ (as False Nine) AML↑ AMR↑",
     "recommended_tactics": {
       "mentality": "Attacking",
