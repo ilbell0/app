@@ -338,19 +338,50 @@ fra i due centrali in costruzione. Passaggio 178 e Contrasto 173 nello stesso
 uomo. È il ruolo di Busquets, ed è l'unico modo per far uscire la palla senza
 passare dai piedi dei difensori.
 
+### Il modulo: `False Nine + Wingers`
+
+Fra i 126 moduli del dataset ce ne sono due candidati. Uno si chiama letteralmente
+`3-1-3-2-1 (Tiki-taka)`. Quello giusto è l'altro.
+
+```
+4-3-3                  GK DL DC DC DR MC MC MC AML  ST  AMR
+False Nine + Wingers   GK DL DC DC DR MC MC MC AML AMR  AMC
+```
+
+**È il 4-3-3 con un solo cambiamento**: la punta centrale arretra di una linea, da
+`ST` ad `AMC`. Difesa identica, centrocampo identico, ali identiche. Non è un
+modulo nuovo da imparare: è quello che ha prodotto 18 vittorie su 21, con il nueve
+che diventa falso.
+
+**Perché la rosa lo chiede.** Il motivo non è tattico, è di organico: non ci sono
+attaccanti. L'unico ST puro è **Onisei, GEN 45**. Sacchetti è AMC/ST e García è
+AMR/ST/AML — punte prestate, non punte. Ogni modulo con `ST` costringe qualcuno
+in un ruolo che non è il suo migliore; questo manda in campo **undici giocatori
+nel ruolo naturale**.
+
+E la prova c'è già: **Sacchetti ha segnato 43 gol da AMC**. Il falso nueve in
+questa squadra non è una scommessa, è quello che succede da mesi senza che il
+modulo lo dichiari.
+
 ### L'undici
 
 ```
-                 Sacchetti  (AMC/ST)
-      García                         Bone
-      (AML)                          (AMR)
-              Gómez Vara     Romero
-                    Michos (DMC)
-   Gabay    Portillo    Bassini    Reynisson
+                    Sacchetti (AMC)
+       García                      Bone
+       (AML)                       (AMR)
+        Michos ↓   Romero   Gómez Vara
+     Gabay  Portillo  Bassini  Reynisson
                   Micheltorena
 ```
 
-Due scelte che meritano una spiegazione.
+**Le frecce recuperano il DMC che il modulo non ha.** Freccia **↓ su Michos**: da
+MC diventa il perno basso che scende fra i due centrali in costruzione. È così che
+giocava Busquets — nominalmente un centrocampista in linea, di fatto il terzo
+difensore quando la palla deve uscire. Senza quella freccia, la prima uscita torna
+nei piedi di difensori da Passaggio 53-87 e il sistema si inceppa dove si è sempre
+inceppato.
+
+Due scelte di uomini che meritano una spiegazione.
 
 **Bassini centrale, non Sadin.** Sadin ha Contrasto 182 contro i 126 di Bassini
 ed è tentante. Ma ha **Passaggio 53 e Creatività 12**: metterlo nella linea che
@@ -367,6 +398,53 @@ Toglierlo per Boncompagni vale +27 di velocità e **−62 di difesa**.
 
 Se vuoi comunque la versione spinta: Romero fuori, **Boncompagni** dentro
 (Velocità 117, Contrasto 128). Più rischio, e va dichiarato prima della partita.
+
+### L'obiezione, e viene dal motore dell'app
+
+`frontend/src/data/formations.json` dice:
+
+> `False Nine + Wingers` → `vulnerable_to: ['4-1-3-1-1', '4-3-3', '5-4-1 F (Flat)']`
+
+E il 4-3-3 compare come assetto avversario in almeno tre delle nove partite del
+dossier, fra cui Manchester United e Skogens.
+
+**Due avvertenze su questo numero.** Primo: l'ho ricostruito dai *ruoli nativi*
+dei giocatori, non letto, perché il campo `modulo` è `null` in tutte e 18 le
+formazioni registrate — è un'inferenza. Secondo: la tabella `vulnerable_to` è una
+matrice di counter generica, non deriva dalle partite di questa squadra.
+
+Resta il fatto: il modulo più fedele al progetto è quello che il motore segnala
+come vulnerabile all'avversario più comune. Non è risolto. È la prima cosa da
+verificare.
+
+### Perché non il modulo che si chiama "Tiki-taka"
+
+`3-1-3-2-1 (Tiki-taka)` → `GK DC DC DC DMC MC MC MC AML AMR ST`
+
+Ha il DMC nativo e un nome che sembra scritto apposta. Ma chiede **una difesa a
+tre**, e i centrali hanno Passaggio 53-87. Una linea a tre che non sa impostare,
+più `Trapp. fuorig.` e `Pressing Alto`, è il copione dello Skogens con un
+difensore in meno a coprire. In più butteresti Gabay e Portillo, che sono terzini
+utilizzabili.
+
+Il nome descrive il possesso, non questa rosa.
+
+### L'esperimento da fare per primo
+
+I due moduli differiscono di **una casella**. È la variabile singola più pulita
+che questo dossier abbia mai avuto:
+
+1. Due avversari di forza simile, entrambi in regime B.
+2. Partita 1: `4-3-3`, Sacchetti ST. Partita 2: `False Nine + Wingers`,
+   Sacchetti AMC. **Tutto il resto identico** — stessi dieci compagni, stessi
+   undici parametri, stesso mentore, stesse frecce.
+3. Regime e modulo dichiarati **prima** del calcio d'inizio, come da
+   `PROTOCOLLO-CATTURA.md`.
+4. Confronta tiri in porta, occasioni create, possesso e gol.
+
+Se il modulo non produce differenze misurabili, la risposta è che in questo gioco
+la posizione nominale conta meno dei ruoli dei giocatori — e sarebbe comunque una
+cosa che vale la pena sapere.
 
 ### Il rischio, e una contraddizione da verificare
 
@@ -406,6 +484,7 @@ resto identico. Vedi `PROTOCOLLO-CATTURA.md`.
 | Pressing | `Alto` | `Alto` | `Basso` |
 | Linea difensiva | `Trapp. fuorig.` | `Trapp. fuorig.` | `Tracc. avvers.` |
 | Tendenza tiro | `Strategia in area` | `Strategia in area` | `Strategia in area` |
+| modulo | `False Nine + Wingers` | `False Nine + Wingers` | **`4-1-4-1`** |
 | difensore centrale | Bassini | Bassini | **Sadin** |
 
 Dopo la correzione su `Tendenza tiro`, classico e verticale si distinguono per
