@@ -6,10 +6,13 @@ Esce con codice 1 se trova errori. Codifica le regole emerse dagli audit:
 ogni regressione futura (frecce orfane, contraddizioni, vocabolari sporchi,
 matrice disallineata) viene intercettata qui invece che dall'utente in app.
 """
+import io
+import json
+import os
 import re
 import sys
 
-from datasets import DATASETS, extract_assignments, load_json
+from datasets import DATASETS, ROOT, extract_assignments, load_json
 
 ERRORS = []
 WARNINGS = []
@@ -251,6 +254,77 @@ def check_accents(data):
         walk(d, False, var)
 
 
+# --- dossier: protocollo di cattura (vedi dossier/PROTOCOLLO-CATTURA.md) ---
+# Forcing function della fermata 1: un referto raccolto col protocollo non entra
+# nel dossier senza i dati pre-partita. Senza questi campi l'analisi resta
+# descrittiva, perche' registra dove il gioco e' finito e non cosa era stato
+# impostato al fischio d'inizio.
+COMPETIZIONI = {"campionato", "elite", "coppa", "amichevole"}
+CAMPO = {"casa", "trasferta"}
+REGIMI = {"A", "B", "C"}
+IMPOSTAZIONI_ATTESE = {
+    "tend_tiro": SHOOTING_IT,
+    "stile_pass": PASSING_STYLE_IT,
+    "tipo_pass": PASSING_TYPE_IT,
+    "tend_cross": None,          # slider graduato: valore libero
+    "poss_perso": LOST_POSS_IT,
+    "poss_ottenuto": WON_POSS_IT,
+    "men": MENTALITY_IT,
+    "marc": MARKING_IT,
+    "press": PRESSING_IT,
+    "linea_dif": DEF_LINE_IT,
+    "cont": TACKLING_IT,
+}
+
+
+def check_dossier():
+    """Valida dossier/referti.json contro il protocollo di cattura."""
+    path = os.path.join(ROOT, "dossier", "referti.json")
+    if not os.path.exists(path):
+        return 0
+    with io.open(path, encoding="utf-8") as f:
+        referti = json.load(f)
+    for i, r in enumerate(referti):
+        eti = "REFERTI[%d] %s" % (i, r.get("avversario") or "?")
+        proto = r.get("protocollo")
+        if proto is None:
+            err("%s: campo 'protocollo' mancante. Metti 1 per i referti storici, "
+                "2 per quelli raccolti col protocollo di cattura." % eti)
+            continue
+        if proto not in (1, 2):
+            err("%s: protocollo=%r fuori dai valori ammessi (1, 2)" % (eti, proto))
+            continue
+        if proto == 1:
+            continue  # referti storici: esentati, non sono ricostruibili
+
+        # fermata 1 - i sei killer item
+        if r.get("competizione") not in COMPETIZIONI:
+            err("%s: competizione=%r, attesa una di %s"
+                % (eti, r.get("competizione"), sorted(COMPETIZIONI)))
+        if r.get("casa_trasferta") not in CAMPO:
+            err("%s: casa_trasferta=%r. Senza, il diagramma a zone non e' orientabile."
+                % (eti, r.get("casa_trasferta")))
+        if r.get("regime_dichiarato") not in REGIMI:
+            err("%s: regime_dichiarato=%r, atteso A, B o C, scritto prima del risultato."
+                % (eti, r.get("regime_dichiarato")))
+        for campo in ("gen_milan", "gen_avversario", "equilibrio_formazione"):
+            if not isinstance(r.get(campo), (int, float)):
+                err("%s: %s mancante o non numerico" % (eti, campo))
+        imp = r.get("impostazioni")
+        if not isinstance(imp, dict):
+            err("%s: blocco 'impostazioni' mancante (gli 11 parametri al calcio d'inizio)" % eti)
+        else:
+            for k, vocab in IMPOSTAZIONI_ATTESE.items():
+                if k not in imp:
+                    err("%s/impostazioni: parametro %s mancante" % (eti, k))
+                elif vocab is not None and imp[k] not in vocab:
+                    err("%s/impostazioni: %s=%r fuori vocabolario" % (eti, k, imp[k]))
+        if not r.get("frecce"):
+            warn("%s: frecce non annotate. Si vedono solo prima del fischio d'inizio; "
+                 "quelle nella schermata FORMAZIONI sono le sostituzioni." % eti)
+    return len(referti)
+
+
 def main():
     # 1. server.py deve restare la fonte di verità: parse + confronto col bundle
     try:
@@ -273,12 +347,13 @@ def main():
     check_matrix_quick(data["COUNTER_ENGINE"], data["MATCHUP_MATRIX"], data["COUNTER_QUICK"], avs)
     check_arrow_tactics(data["ARROW_TACTICS"], F)
     check_accents(data)
+    n_referti = check_dossier()
 
     for w in WARNINGS:
         print(f"AVVISO : {w}")
     for e in ERRORS:
         print(f"ERRORE : {e}")
-    print(f"\n{len(ERRORS)} errori, {len(WARNINGS)} avvisi su {sum(len(v) for v in data.values())} voci in {len(data)} dataset.")
+    print(f"\n{len(ERRORS)} errori, {len(WARNINGS)} avvisi su {sum(len(v) for v in data.values())} voci in {len(data)} dataset + {n_referti} referti.")
     return 1 if ERRORS else 0
 
 

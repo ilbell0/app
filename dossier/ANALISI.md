@@ -1,5 +1,44 @@
 # Dossier AC Milan — analisi verificata
 
+> ## Avvertenza sul campione — leggere prima di tutto il resto
+>
+> **Questo dossier non e' un campione rappresentativo della stagione.**
+>
+> La schermata "Statistiche stagionali" del club dice: 21 partite, 18 vittorie,
+> 0 pareggi, 3 sconfitte, **130 gol fatti e 23 subiti** (6,2 e 1,1 a partita).
+> I 10 referti qui dentro fanno 29 gol fatti e 24 subiti (2,9 e 2,4).
+>
+> | | dossier (10) | stagione (21) |
+> |---|---|---|
+> | gol fatti a partita | 2,9 | **6,2** |
+> | gol subiti a partita | 2,4 | **1,1** |
+> | quota sconfitte | **30%** | 14% |
+> | sconfitte catturate | **3 su 3 = 100%** | |
+> | vittorie catturate | 7 su 18 = 39% | |
+>
+> Il campione contiene **quasi il 100% degli eventi negativi e il 22% di quelli
+> positivi**: il negativo e' sovrarappresentato di circa **4,7 volte**. Il GEN
+> medio degli avversari qui dentro e' 118,1 contro 116,6 del Milan: sono quasi
+> solo partite alla pari o in svantaggio, mentre la stagione e' fatta in
+> maggioranza di avversari nettamente inferiori.
+>
+> **Cosa ne consegue.** Ogni confronto "vittorie contro sconfitte" costruito su
+> questi dati e' in parte **tautologico**: avendo catturato tutte le sconfitte
+> della stagione, qualunque metrica che distingue le partite perse da quelle
+> vinte apparira' come una scoperta. Le medie per partita sottostimano l'attacco
+> di oltre il 50% e sovrastimano i gol subiti di 2,2 volte.
+>
+> Non e' nemmeno chiuso **se questi 10 referti appartengano alla stagione delle
+> 21 partite**: i 24 gol subiti qui superano i 23 dell'intera stagione, e nessuna
+> esclusione di una o tre partite riconcilia i 130 gol fatti. Serve l'etichetta
+> di competizione su ciascun referto.
+>
+> Resta valido, perche' e' geometria e non statistica: la **regola di
+> orientamento** del diagramma. E restano ritirate, a maggior ragione, le
+> ipotesi gia' segnate come ritirate.
+
+
+
 Dati della squadra del proprietario del progetto (Top Eleven 2027, UI italiana).
 Questa cartella è la **memoria fra sessioni**.
 
@@ -16,6 +55,7 @@ Ogni numero qui sotto è **ricalcolato dai file JSON di questa cartella**, su
 | `rosa.json` | rosa derivata: ruoli, presenze, voto medio, corsia prevalente |
 | `analisi.json` | gli aggregati qui sotto, in forma leggibile da un programma |
 | `PROMPT-AVVERSARIO.txt` | prompt pronto da incollare con lo screenshot di un avversario |
+| `PROTOCOLLO-CATTURA.md` | checklist a due fermate per registrare le partite nuove |
 
 ## Il risultato più solido: incanalare il gioco al centro
 
@@ -31,6 +71,18 @@ United 0% (0-7).
 
 Il caso estremo conferma la direzione: **93% centrale contro l'Efthymis FC, 6-1**,
 con 17 tiri a 1.
+
+> **Attenzione: questo confronto e' in gran parte tautologico.** Il gruppo "sotto
+> il 60%" e' composto per tre quarti dalle sconfitte, e il dossier contiene
+> **tutte e tre** le sconfitte della stagione insieme a meno di meta' delle
+> vittorie. Stai in buona parte confrontando le partite perse con quelle vinte e
+> chiamando "centro" la differenza. Non e' solo un dubbio di causalita': e' un
+> problema di **selezione del campione**.
+>
+> L'identita' centrale resta sostenuta da argomenti **indipendenti da questa
+> tabella**: zero occasioni da cross in 7 partite su 9, il capocannoniere che
+> segna 39 gol da AMC, e la quota di assist del rifinitore destro identica fra
+> campione e stagione (20,8% contro 22,3%). Usa quelli, non i numeri qui sopra.
 
 **Resta un dubbio di causalità.** Il dato registra dove il gioco è *finito*, non
 cosa era stato impostato al fischio d'inizio. Con il Manchester United (GEN −18,3)

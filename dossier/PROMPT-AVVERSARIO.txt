@@ -6,9 +6,9 @@ C:\Users\habet\progetti\app-emergent\dossier\rosa.json
 
 Le tattiche 2027 hanno 11 parametri su tre fasi. Dammeli TUTTI, usando SOLO
 questi valori:
-- In possesso: Tendenza tiro (Normale) | Stile passaggi (Palla corta/Misto/
+- In possesso: Tendenza tiro (Tiro a vista/Strategia in area/Normale) | Stile passaggi (Palla corta/Misto/
   Palla lunga) | Tipo di passaggi (Per il centro/Per entrambe le fasce/
-  Fascia destra/Misto) | Tendenza cross (Normale)
+  Fascia destra/Misto) | Tendenza cross (cursore graduato, non elenco)
 - In transizione: Possesso perso (Raggruppamento/Riaggressione) | Possesso
   ottenuto (Contropiede/Concentr. azioni) | Mentalita (Molto Difensiva/
   Difensiva/Normale/Offensiva/Molto Offensiva)

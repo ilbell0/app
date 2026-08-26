@@ -1,9 +1,51 @@
 [
   {
+    "file": "screenshot 26/08/2026 (schermata MENTORI)",
+    "nome": "CESC FÀBREGAS",
+    "soprannome": "L'ARCHITETTO",
+    "livello": 8,
+    "livello_max_visibile": null,
+    "specializzazione": null,
+    "abilita": [
+      {
+        "slot": "Potenziamento Tattico",
+        "titolo": "POTENZ. TATTICO",
+        "testo": "Aumenta l'efficacia dei passaggi corti di un 30%",
+        "valore_attuale": "30%",
+        "valore_successivo": null,
+        "stato": "sbloccata",
+        "livello_richiesto": 1
+      },
+      {
+        "slot": "Potenziamento Attributo",
+        "titolo": "POTENZ. ATTRIBUTO",
+        "testo": "Tutti i giocatori ricevono un potenziamento di +20 (successivo +25) dribbling e tiro durante la partita",
+        "valore_attuale": "+20",
+        "valore_successivo": "+25",
+        "stato": "sbloccata",
+        "livello_richiesto": 5
+      },
+      {
+        "slot": "Cavallo di Battaglia",
+        "titolo": "CAVALLO DI BATTAGLIA",
+        "testo": "Ogni passaggio riuscito rende il successivo 15% piu' difficile da intercettare, ma i tuoi centrocampisti consumano un 8% di resistenza in piu' per ogni attacco",
+        "valore_attuale": "15%",
+        "valore_successivo": null,
+        "stato": "bloccata",
+        "livello_richiesto": 10
+      }
+    ],
+    "altro_testo_visibile": "SERIE 1; contratto 66g; barra 420/800 PE; freccia livello successivo 9; assegnato (spunta verde nella lista)",
+    "incerti": [
+      "Cavallo di Battaglia mostra il lucchetto (livello 10 non raggiunto): il testo e' leggibile ma l'effetto, malus di resistenza compreso, NON e' attivo",
+      "livello_richiesto del Cavallo dedotto per analogia con gli altri mentori, non letto"
+    ]
+  },
+  {
     "file": "Screenshot 2026-08-19 132344.png",
     "nome": "RUBÉN HERRERA",
     "soprannome": "IL SABOTATORE",
-    "livello": 5,
+    "livello": 6,
     "livello_max_visibile": null,
     "specializzazione": null,
     "abilita": [
@@ -37,7 +79,8 @@
     ],
     "altro_testo_visibile": "SERIE 1; Il contratto terminerà tra 73g; barra XP 0/100 PE; freccia livello successivo 6; pulsanti ASSEGNA e PESCA PACCHETTI PE; riquadro Reclutam. Mentori OFFERTE",
     "incerti": [
-      "Il Cavallo di Battaglia ha icona lucchetto (livello 10 non raggiunto) ma il testo è comunque leggibile: trascritto integralmente invece di null"
+      "Il Cavallo di Battaglia ha icona lucchetto (livello 10 non raggiunto) ma il testo è comunque leggibile: trascritto integralmente invece di null",
+      "livello aggiornato dallo screenshot del 26/08/2026"
     ]
   },
   {
@@ -169,7 +212,7 @@
     "file": "Screenshot 2026-08-19 132426.png",
     "nome": "NEMANJA VIDIĆ",
     "soprannome": "LA SENTINELLA D'ACCIAIO",
-    "livello": 1,
+    "livello": 5,
     "livello_max_visibile": null,
     "specializzazione": null,
     "abilita": [
@@ -204,14 +247,15 @@
     "altro_testo_visibile": "SERIE 1; Il contratto terminerà tra 73g; barra XP 0/30 PE; freccia livello successivo 2; pulsanti ASSEGNA e PESCA PACCHETTI PE; riquadro Reclutam. Mentori OFFERTE",
     "incerti": [
       "Potenz. Attributo e Cavallo di Battaglia hanno icona lucchetto ma i testi sono leggibili: trascritti integralmente invece di null",
-      "Cavallo di Battaglia: il badge mostra 2% (riduzione condizione); il 10% del rischio cartellino compare solo nel testo"
+      "Cavallo di Battaglia: il badge mostra 2% (riduzione condizione); il 10% del rischio cartellino compare solo nel testo",
+      "livello aggiornato dallo screenshot del 26/08/2026"
     ]
   },
   {
     "file": "Screenshot 2026-08-19 132441.png",
     "nome": "CLAUDE MAKÉLÉLÉ",
     "soprannome": "IL DOMINATORE",
-    "livello": 5,
+    "livello": 7,
     "livello_max_visibile": null,
     "specializzazione": null,
     "abilita": [
@@ -247,7 +291,8 @@
     "incerti": [
       "Nome scritto a schermo con accenti acuti: MAKÉLÉLÉ (non Makèlèlè)",
       "Cavallo di Battaglia: il badge indica 15% mentre il testo parla di bonus +15 e penalità -10 (punti attributo, non percentuali) — discrepanza riportata come letta",
-      "Il Cavallo di Battaglia ha icona lucchetto ma il testo è leggibile: trascritto integralmente invece di null"
+      "Il Cavallo di Battaglia ha icona lucchetto ma il testo è leggibile: trascritto integralmente invece di null",
+      "livello aggiornato dallo screenshot del 26/08/2026"
     ]
   }
 ]
