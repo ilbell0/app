@@ -1,0 +1,113 @@
+{
+  "_meta": {
+    "scritto_il": "2026-08-26",
+    "nota": "Due assetti definiti dopo l'esplorazione completa dell'app e il confronto con un collaboratore esterno (le cui proposte su Bone ML, Garcia MR, contrasti Duro e pressing basso + trappola sono state scartate perche' violano i ruoli reali o sono gia' state smentite dai dati)."
+  },
+  "vincoli_stili": {
+    "Michos": "MC o DMC",
+    "Romero": "MC soltanto",
+    "Bone": "ML o MR",
+    "Sacchetti": "ST o AMC",
+    "Micheltorena": "GK"
+  },
+  "tattica_1_controllo": {
+    "slot": 2,
+    "quando": "default, la maggior parte delle partite (regime A e B)",
+    "modulo": "4-1-2-3 con Bone arretrato a MR",
+    "undici": {
+      "GK": "Micheltorena",
+      "DL": "Gabay",
+      "DC": "Portillo",
+      "DC2": "Bassini",
+      "DR": "Reynisson",
+      "DMC": "Michos",
+      "MC": "Romero",
+      "MC2": "Gomez Vara",
+      "AML": "Garcia",
+      "AMC": "Sacchetti",
+      "MR": "Bone"
+    },
+    "stili_attivi": 5,
+    "parametri": {
+      "tend_tiro": "Strategia in area",
+      "stile_pass": "Palla corta",
+      "tipo_pass": "Al centro",
+      "tend_cross": "Normale (2/3)",
+      "poss_perso": "Riaggressione",
+      "poss_ottenuto": "Concent. azioni",
+      "men": "Offensiva",
+      "marc": "A zona",
+      "press": "Alto (3/3)",
+      "linea_dif": "Trapp. fuorig.",
+      "cont": "Normale"
+    },
+    "unico_cambio_dal_precedente": "poss_ottenuto da Contropiede a Concent. azioni: ripartire senza costruire regala palla, e oltre Bone la squadra non ha velocita'"
+  },
+  "tattica_2_blocco": {
+    "slot": 3,
+    "quando": "avversario piu' forte (Skogens) o che ti pressa alto in uscita",
+    "modulo": "stesso 4-1-2-3, ma Sadin al posto di Bassini",
+    "cambio_uomini": "Sadin DC (Contrasto 182) al posto di Bassini: in blocco basso non devi costruire, quindi il suo Passaggio 53 non pesa",
+    "parametri": {
+      "tend_tiro": "Strategia in area",
+      "stile_pass": "Palla corta",
+      "tipo_pass": "Entrambe fasce",
+      "tend_cross": "Normale (2/3)",
+      "poss_perso": "Raggruppamento",
+      "poss_ottenuto": "Contropiede",
+      "men": "Difensiva",
+      "marc": "A zona",
+      "press": "Basso (1/3)",
+      "linea_dif": "Tracc. avvers.",
+      "cont": "Normale"
+    },
+    "sei_cambi": [
+      "tipo_pass -> Entrambe fasce",
+      "poss_perso -> Raggruppamento",
+      "poss_ottenuto -> Contropiede",
+      "men -> Difensiva",
+      "press -> Basso",
+      "linea_dif -> Tracc. avvers."
+    ],
+    "regola_ferrea": "MAI Trapp. fuorig. con pressing basso: e' la combinazione che il validatore segnala come contraddittoria"
+  },
+  "gia_fatto": [
+    "capitano da Sadin a Michos",
+    "slot 1 = baseline 4-1-2-3 originale",
+    "slot 2 = Bone a MR, Falsa Ala x3 ACCESA",
+    "slot 3 = Bone MR + Sacchetti ST"
+  ],
+  "da_fare": [
+    "applicare i parametri e risalvare gli slot 2 e 3 (in carico all utente, sua scelta)",
+    "provare il 3-2-4-1 con i titolari e verificare le etichette delle quattro caselle avanzate"
+  ],
+  "tattica_3_guardiola": {
+    "slot": 4,
+    "nome": "3-2-4-1",
+    "origine": "struttura del Manchester City di Guardiola 2022-23, in possesso diventa 3-2-5",
+    "quando": "da testare con i TITOLARI, non con le riserve. E l unico assetto che affronta il problema strutturale della prima uscita invece di aggirarlo.",
+    "perche_funziona": "il rettangolo 3-2 mette cinque uomini in costruzione contro i 2-3 attaccanti che pressano: superiorita numerica per geometria, non per qualita dei difensori. Cura diretta dei 4 intercetti contro 18 subiti dallo Skogens.",
+    "uomini": {
+      "pivot": "Michos + Romero (Rodri e Gundogan: Passaggio 178 e Posizionamento 184, entrambi con stile attivo su MC)",
+      "difesa_a_3": "il centrale deve saper impostare: Gabay ha Passaggio 107, il migliore. Sadin (53) braccetto, mai regista arretrato.",
+      "quattro_avanti": "ampiezza con Bone a destra e Garcia a sinistra, Sacchetti e Gomez Vara negli half-space",
+      "punta": "buco noto: nessun ST vero. Sacchetti punta e Montaroup dietro, oppure Sacchetti trequartista."
+    },
+    "parametri": {
+      "tend_tiro": "Strategia in area",
+      "stile_pass": "Palla corta",
+      "tipo_pass": "Entrambe fasce",
+      "tend_cross": "Normale (2/3)",
+      "poss_perso": "Riaggressione",
+      "poss_ottenuto": "Concent. azioni",
+      "men": "Offensiva",
+      "marc": "A zona",
+      "press": "Alto (3/3)",
+      "linea_dif": "Tracc. avvers.",
+      "cont": "Normale"
+    },
+    "regola_critica": "Con TRE difensori mai Trapp. fuorig.: basta un uomo fuori tempo e sei scoperto. Con quattro puoi permettertela, con tre no.",
+    "riaggressione_obbligatoria": "e il rest defense: perdendo palla con cinque uomini avanti, i tre dietro non bastano.",
+    "da_verificare": "se le quattro caselle avanzate sono ML-MC-MC-MR oppure AML-AMC-AMC-AMR. Cambia tutto per Bone: la Falsa Ala x3 richiede ML o MR, con AML/AMR resta spenta. Si legge dai badge quando ce lo metti: icona dello stile colorata = attiva, grigia col triangolo = spenta."
+  }
+}

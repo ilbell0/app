@@ -91,3 +91,6 @@ android-sdk/
 frontend/package-lock.json 
 # stato locale del punto di comando tp.ps1
 /.tp-ultimo-head
+
+# catture BlueStacks: grandi e rigenerabili
+dossier/catture/

@@ -1,0 +1,86 @@
+{
+  "_meta": {
+    "letto_il": "2026-08-26",
+    "fonte": "schermata ROSA > TATTICHE, catturata via ADB da BlueStacks (2560x1440)",
+    "catture": [
+      "tattiche.png",
+      "transizione.png",
+      "nonpossesso.png"
+    ],
+    "nota": "Etichette trascritte ESATTAMENTE come le mostra il gioco. Dove differiscono da formations.json, ha ragione questo file."
+  },
+  "consumo_condizione": {
+    "valore": "Normale",
+    "barra": "circa 2/3 riempita"
+  },
+  "mentore": {
+    "nome": "Cesc Fabregas",
+    "livello": 8,
+    "abilita_sbloccate": 2,
+    "cavallo_di_battaglia": "bloccato (icona lucchetto)"
+  },
+  "modulo_in_campo": "4-1-2-3 OFFENSIVA (letto in MODULI DELLA ROSA, slot 1)",
+  "gen": 124.4,
+  "equilibrio": 9.9,
+  "impostazioni": {
+    "tend_tiro": "Strategia in area",
+    "stile_pass": "Palla corta",
+    "tipo_pass": "Al centro",
+    "tend_cross": "Normale (slider, 2 tacche su 3)",
+    "poss_perso": "Riaggressione",
+    "poss_ottenuto": "Contropiede",
+    "men": "Offensiva",
+    "marc": "A zona",
+    "press": "Pressing alto (slider, 3 tacche su 3)",
+    "linea_dif": "Trapp. fuorig.",
+    "cont": "Normale"
+  },
+  "discrepanze_col_dataset_app": [
+    "gioco \"Al centro\"  <->  formations.json \"Per il centro\"",
+    "gioco \"A zona\"/\"A uomo\"  <->  formations.json \"Zonale\"/\"Uomo a Uomo\"",
+    "gioco \"Concent. azioni\"  <->  dossier \"Concentr. azioni\" (una erre in piu)",
+    "Pressing e Tendenza cross sono SLIDER a tacche, non menu a tendina"
+  ],
+  "undici_in_campo": [
+    "Micheltorena (GK)",
+    "Gabay",
+    "Portillo",
+    "Bassini",
+    "Reynisson",
+    "Michos",
+    "Romero",
+    "Gomez Vara",
+    "Garcia",
+    "Sacchetti",
+    "Bone"
+  ],
+  "slot_moduli": {
+    "totale": 4,
+    "slot_1": "4-1-2-3 Offensiva = rosa attuale",
+    "slot_2_3_4": "liberi",
+    "uso": "CARICA e SALVA per giorno. Quattro configurazioni salvabili: e il modo pulito per tenere due assetti a confronto senza rifare la formazione ogni volta."
+  },
+  "posizioni": {
+    "GK": "Micheltorena",
+    "DL": "Gabay",
+    "DC": "Portillo",
+    "DC2": "Bassini",
+    "DR": "Reynisson",
+    "DMC": "Michos",
+    "MC": "Gomez Vara",
+    "MC2": "Romero",
+    "AML": "Garcia",
+    "ST/AMC": "Sacchetti",
+    "AMR": "Bone"
+  },
+  "frecce": {
+    "stato": "NON TROVATE",
+    "nota": "I quattro toggle della barra destra sono viste, non impostazioni: ruoli, condizione e morale, e due sovrapposizioni. Nessun comando freccia individuato in FORMAZIONE. Non e detto che non esistano: potrebbero stare altrove (trascinamento, o un menu non aperto). Il dataset ARROW_TACTICS dell app le prevede."
+  },
+  "viste_barra_destra": [
+    "frecce sinistra/destra",
+    "RUOLI <-> CONDIZIONE E MORALE",
+    "sovrapposizione avversario",
+    "maglie/scarpe"
+  ]
+}

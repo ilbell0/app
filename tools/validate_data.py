@@ -262,18 +262,26 @@ def check_accents(data):
 COMPETIZIONI = {"campionato", "elite", "coppa", "amichevole"}
 CAMPO = {"casa", "trasferta"}
 REGIMI = {"A", "B", "C"}
-IMPOSTAZIONI_ATTESE = {
-    "tend_tiro": SHOOTING_IT,
-    "stile_pass": PASSING_STYLE_IT,
-    "tipo_pass": PASSING_TYPE_IT,
-    "tend_cross": None,          # slider graduato: valore libero
-    "poss_perso": LOST_POSS_IT,
-    "poss_ottenuto": WON_POSS_IT,
-    "men": MENTALITY_IT,
-    "marc": MARKING_IT,
-    "press": PRESSING_IT,
-    "linea_dif": DEF_LINE_IT,
-    "cont": TACKLING_IT,
+# Etichette LETTE DALLO SCHERMO del gioco il 26/08/2026 (schermata TATTICHE).
+# Non coincidono con quelle dei dataset dell'app: il gioco dice "Al centro" dove
+# formations.json dice "Per il centro", "A zona" dove dice "Zonale", e
+# "Concent. azioni" con una erre sola. Qui valgono quelle del gioco: sono le
+# uniche che l'utente puo' davvero leggere e trascrivere.
+# Pressing e Tendenza cross sono SLIDER a tacche, non menu: valore libero.
+IMPOSTAZIONI_REALI = {
+    'tend_tiro': {'Strategia in area', 'Tiro a vista', 'Normale'},
+    'stile_pass': {'Palla corta', 'Palla lunga', 'Misto'},
+    # menu aperto e letto il 26/08: cinque voci, 'Normale' e non 'Misto'
+    'tipo_pass': {'Al centro', 'Entrambe fasce', 'Fascia destra',
+                  'Fascia sinistra', 'Normale'},
+    'tend_cross': None,
+    'poss_perso': {'Riaggressione', 'Raggruppamento'},
+    'poss_ottenuto': {'Concent. azioni', 'Contropiede'},
+    'men': {'Molto Difensiva', 'Difensiva', 'Normale', 'Offensiva', 'Molto Offensiva'},
+    'marc': {'A uomo', 'A zona'},
+    'press': None,
+    'linea_dif': {'Tracc. avvers.', 'Trapp. fuorig.'},
+    'cont': {'Facile', 'Normale', 'Duro'},
 }
 
 
@@ -314,7 +322,7 @@ def check_dossier():
         if not isinstance(imp, dict):
             err("%s: blocco 'impostazioni' mancante (gli 11 parametri al calcio d'inizio)" % eti)
         else:
-            for k, vocab in IMPOSTAZIONI_ATTESE.items():
+            for k, vocab in IMPOSTAZIONI_REALI.items():
                 if k not in imp:
                     err("%s/impostazioni: parametro %s mancante" % (eti, k))
                 elif vocab is not None and imp[k] not in vocab:

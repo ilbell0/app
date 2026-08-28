@@ -1,0 +1,105 @@
+{
+  "_meta": {
+    "letto_il": "2026-08-26",
+    "fonte": "scheda giocatore > Stile di gioco, catture ADB",
+    "punti_stile_disponibili": 97,
+    "nota": "Categoria di dati mai registrata prima. Lo stile e ATTIVO solo se il giocatore e schierato in uno dei ruoli richiesti; altrimenti icona grigia con avviso e nessun effetto.",
+    "completo": "tutti e 11 i titolari letti il 26/08/2026",
+    "icone": {
+      "colorata": "stile attivo",
+      "grigia con avviso rosso": "stile presente ma SPENTO (ruolo sbagliato)",
+      "grigia con X": "nessuno stile assegnato"
+    }
+  },
+  "stili": [
+    {
+      "giocatore": "Simone Sacchetti",
+      "gen": 151,
+      "stile": "FALSO NUEVE",
+      "categoria": "Attaccante",
+      "livello": "Maestro",
+      "effetto": "x4",
+      "ruoli_richiesti": [
+        "ST",
+        "AMC"
+      ],
+      "ruolo_attuale": "ST",
+      "attivo": true,
+      "descrizione": "Riceve palla in profondita e semina il panico nei pressi dell area avversaria, facendo saltare le marcature dei DC."
+    },
+    {
+      "giocatore": "Johan Bone",
+      "gen": 138,
+      "stile": "FALSA ALA",
+      "categoria": "Centrocampista",
+      "livello": "Avanzato",
+      "effetto": "x3",
+      "ruoli_richiesti": [
+        "ML",
+        "MR"
+      ],
+      "ruolo_attuale": "AMR",
+      "attivo": false,
+      "progresso": "69/6500 verso Maestro x4",
+      "descrizione": "Schierate sulle fasce, le false ali tendono ad accentrarsi per creare superiorita numerica in mezzo al campo."
+    },
+    {
+      "giocatore": "Nikos Michos",
+      "gen": 152,
+      "stile": "REGISTA",
+      "categoria": "Centrocampista",
+      "livello": "Intermedio",
+      "effetto": "x2",
+      "ruoli_richiesti": [
+        "MC",
+        "DMC"
+      ],
+      "ruolo_attuale": "DMC",
+      "attivo": true,
+      "progresso": "2039/3600 verso Avanzato x3",
+      "descrizione": "Con pochi tocchi precisi ed efficaci, riceve palla nella sua meta campo e imposta la manovra d attacco."
+    },
+    {
+      "giocatore": "Demetrio Romero",
+      "stile": "DA AREA AD AREA",
+      "categoria": "Centrocampista",
+      "livello": "Intermedio",
+      "effetto": "x2",
+      "ruoli_richiesti": [
+        "MC"
+      ],
+      "ruolo_attuale": "MC",
+      "attivo": true,
+      "descrizione": "Appare ovunque sia necessario, raddoppiando in difesa ma partecipando anche alle manovre d attacco.",
+      "nota": "richiede MC soltanto, NON DMC: vincolo forte sul modulo"
+    },
+    {
+      "giocatore": "Carlos Micheltorena",
+      "stile": "COMANDANTE D AREA",
+      "categoria": "Difensore",
+      "livello": "Intermedio",
+      "effetto": "x2",
+      "ruoli_richiesti": [
+        "GK"
+      ],
+      "ruolo_attuale": "GK",
+      "attivo": true,
+      "descrizione": "Domina la sua zona di competenza; la presenza fisica e mentale intimidisce gli attaccanti."
+    }
+  ],
+  "senza_stile": [
+    "Orel Gabay",
+    "Jorge Portillo",
+    "Marcos Bassini",
+    "Thorgils Reynisson",
+    "Marcos Gomez Vara",
+    "Ronald Fray Garcia"
+  ],
+  "vincoli_sul_modulo": {
+    "Michos": "MC o DMC",
+    "Romero": "MC (solo)",
+    "Bone": "ML o MR",
+    "Sacchetti": "ST o AMC",
+    "Micheltorena": "GK"
+  }
+}

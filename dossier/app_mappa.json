@@ -1,0 +1,374 @@
+{
+  "_meta": {
+    "esplorato_il": "2026-08-26",
+    "metodo": "navigazione via mouse Windows + cattura ADB",
+    "stato": "esplorazione completa delle 13 sezioni di menu piu sottosezioni"
+  },
+  "menu_principale": [
+    "Home",
+    "Rosa",
+    "Allenamento",
+    "Trasferimenti",
+    "Vivaio",
+    "Campus",
+    "Calendario",
+    "Campionato",
+    "Campionato Elite",
+    "Coppa",
+    "Eventi",
+    "(voce tagliata)",
+    "Negozio"
+  ],
+  "identita": {
+    "manager": "Ringhio",
+    "club": "AC Milan",
+    "ovr": 124.4
+  },
+  "carriera_campionato_classificato": {
+    "partite": 226,
+    "percentuale_vittorie": 38,
+    "gol": 578,
+    "divisione_piu_alta_ultima_stagione": "Dilettante 2",
+    "moltiplicatore_vittorie": "x4",
+    "nota": "DATO CHIAVE: 38% di vittorie su 226 partite contro avversari di pari livello, contro il 18-su-21 (86%) del campionato stagionale. Conferma che il campionato stagionale contiene molti avversari deboli e che il dossier va letto tenendo separate le due popolazioni."
+  },
+  "allenamento": {
+    "livello": 111,
+    "indicatore_squadra": "38/48",
+    "sessioni_disponibili": 7,
+    "sottosezioni": [
+      "Giocatori",
+      "Esercizi",
+      "Inizia sessione",
+      "Centro fisioterapico",
+      "Allen. rapido",
+      "Rapporti",
+      "Gradi giocatore",
+      "Vivaio giocatori (ha notifica)"
+    ]
+  },
+  "gradi_giocatore": {
+    "descrizione": "Incremento PERMANENTE degli attributi chiave, alza la GEN",
+    "valuta": "token specifici per grado, non una valuta unica",
+    "scala": [
+      {
+        "grado": "Raro",
+        "token": 290,
+        "incremento": "+10",
+        "giocatori_idonei": 1
+      },
+      {
+        "grado": "Elite",
+        "token": 47,
+        "incremento": "+30",
+        "giocatori_idonei": 8
+      },
+      {
+        "grado": "Stellare",
+        "token": 6,
+        "incremento": "+50",
+        "giocatori_idonei": 7
+      },
+      {
+        "grado": "Maestro",
+        "token": 19,
+        "incremento": "+80",
+        "giocatori_idonei": 3
+      },
+      {
+        "grado": "Epico",
+        "token": 14,
+        "incremento": "+120",
+        "giocatori_idonei": 0
+      }
+    ],
+    "da_chiarire": "se il numero e i token posseduti o il costo per upgrade"
+  },
+  "risorse": {
+    "token_T": 44,
+    "verde": 41,
+    "energia": 59,
+    "kit_medici": 2188,
+    "denaro": "54.7B",
+    "gettoni_rossi": 6
+  },
+  "da_esplorare": [
+    "Calendario",
+    "Trasferimenti",
+    "Vivaio",
+    "Campus",
+    "Home",
+    "Eventi",
+    "Negozio",
+    "Rapporti allenamento",
+    "Centro fisioterapico"
+  ],
+  "campus": {
+    "capitolo": 2,
+    "produzione": "110/h",
+    "strutture": {
+      "Strutture vivaio": 17,
+      "Stadio": 15,
+      "Parcheggio": 12,
+      "Reparto terapie": 11,
+      "Area ristoro": 11,
+      "Lab. esercizi": 8
+    },
+    "in_corso": "Centro allenamenti, 7h 54m",
+    "nota": "Lab. esercizi e la struttura piu arretrata (8)"
+  },
+  "trasferimenti": {
+    "tab": [
+      "Aste",
+      "Osservazione",
+      "Assistente"
+    ],
+    "offerta_assistente": {
+      "cede": "Montaroup AMC GEN 101",
+      "prende": "Luis Henriquez AMC GEN 112, 23 anni",
+      "costo": "759M + 77 token",
+      "scadenza": "18h",
+      "fattibile": false,
+      "motivo": "servono 77 token, ne hai 44"
+    }
+  },
+  "anteprima_partita": {
+    "tab": [
+      "Panoramica",
+      "Preparazione",
+      "Avversario"
+    ],
+    "contiene": "GEN e reparti a confronto, moduli di entrambe, forma ultime 5, XI avversario completo con qualita, checklist di preparazione del gioco, meteo",
+    "nota": "IMPORTANTE: il gioco espone XI e modulo avversario PRIMA del calcio d inizio. Il PROMPT-AVVERSARIO del dossier chiedeva dati che sono gia disponibili qui."
+  },
+  "calendario": {
+    "nota": "mostra risultati recenti e prossime partite con orario, icona 2 sagome = amichevole",
+    "ultime": [
+      "25/8 AC Milan 6-0 Mohammed Fc",
+      "25/8 AC Milan 1-3 Villagers FC",
+      "26/8 FC Hooligan 5-0 AC Milan"
+    ],
+    "prossime": [
+      "26/8 14:11 oussama Fc vs AC Milan (campionato, trasferta)",
+      "26/8 21:52 AC Milan vs Werder 96 (amichevole)"
+    ]
+  },
+  "home": {
+    "prossima_partita_con_countdown": true,
+    "meteo": "esposto (Freddo)",
+    "pronostico": "FAVORITE",
+    "evento_in_corso": "Scatto del Mentore 0/12, termina tra 10g 12h"
+  },
+  "classifica_campionato": {
+    "posizione": 2,
+    "giocate": 15,
+    "V": 14,
+    "P": 0,
+    "S": 1,
+    "diff_reti": "+100",
+    "punti": 42,
+    "capolista": {
+      "nome": "Skogens IF",
+      "giocate": 15,
+      "V": 15,
+      "S": 0,
+      "diff_reti": "+99",
+      "punti": 45,
+      "nota": "imbattuto"
+    },
+    "terza": "spqr FC 39 punti",
+    "chiave": "La sola sconfitta di campionato e contro lo Skogens (0-5). La miglior differenza reti del torneo e la nostra (+100 contro +99). Le sconfitte 1-3 e 0-5 del 25-26/8 NON sono di campionato: appartengono ad altre competizioni."
+  },
+  "vivaio": {
+    "giovani": [
+      {
+        "nome": "N. Zampa",
+        "eta": 17,
+        "ruolo": "GK",
+        "stelle": 4.5,
+        "allenatori": 1
+      },
+      {
+        "nome": "F. Corvi",
+        "eta": 17,
+        "ruolo": "ML",
+        "stelle": 3.5,
+        "allenatori": 2
+      }
+    ],
+    "slot_liberi": 2,
+    "centro_giovani_talenti": {
+      "scade": "1g 13h",
+      "disponibili": [
+        {
+          "nome": "F. Costantini",
+          "ruolo": "ST",
+          "stelle": 5.5,
+          "ingaggio_token": 59
+        },
+        {
+          "nome": "A. Ruglioni",
+          "ruolo": "AMC",
+          "stelle": 5.0,
+          "ingaggio_token": 99
+        }
+      ],
+      "nota": "Costantini e un ST da 5,5 stelle e in rosa NON esistono attaccanti (solo Onisei GEN 45). Servono 59 token, ne hai 44: mancano 15."
+    }
+  },
+  "eventi": [
+    {
+      "nome": "Scatto del Mentore",
+      "progresso": "0/12",
+      "scade": "10g 12h"
+    },
+    {
+      "nome": "Laboratorio dei potenziamenti",
+      "stato": "nuove ricompense",
+      "scade": "11 giorni"
+    },
+    {
+      "nome": "Pesca pazza",
+      "tipo": "pacchetti"
+    }
+  ],
+  "negozio": {
+    "tab": [
+      "Offerte",
+      "Risorse",
+      "Art. club",
+      "Gratis",
+      "Aiuto"
+    ],
+    "gratis": "incarichi pubblicitari TyrAds; monete 12, servono 500 per Sponsor premium. Nessuna fonte rapida di token.",
+    "offerte_a_pagamento": [
+      "Pacch. Scatena Potenz. 5,99 EUR (stile di gioco)",
+      "Tocchi di Classe 5,99 EUR (punti stile)"
+    ],
+    "conclusione": "I 15 token mancanti per Costantini non sono ottenibili gratis entro la scadenza."
+  },
+  "confronto_club": {
+    "manager": "Ringhio",
+    "livello_club": 123,
+    "eta_media": 24.8,
+    "associazione": "Sporting de fieston",
+    "schede": [
+      "Panoramica",
+      "Rosa",
+      "Classifica",
+      "Storia del club"
+    ]
+  },
+  "frecce_mentalita": {
+    "trovate": true,
+    "dove": "ROSA > FORMAZIONE > primo dei quattro quadratini neri della barra destra",
+    "tooltip": "Tocca un giocatore per impostare la sua mentalita",
+    "come": "toccare un giocatore cicla fra tre stati: nessuna -> offensiva (verde, verso la porta avversaria) -> difensiva (rossa, verso la propria) -> nessuna. Tre tocchi tornano al punto di partenza.",
+    "stato_letto_26_08": {
+      "Sacchetti": "offensiva",
+      "altri_dieci": "nessuna"
+    },
+    "nota": "Sono le frecce che il protocollo chiedeva di annotare. Vanno lette da questa vista, non da quella dei ruoli."
+  },
+  "menu_tattiche_verificati": {
+    "letto_il": "2026-08-26, menu aperti uno per uno",
+    "tend_tiro": [
+      "Tiro a vista",
+      "Strategia in area",
+      "Normale"
+    ],
+    "stile_pass": [
+      "Palla corta",
+      "Palla lunga",
+      "Misto"
+    ],
+    "tipo_pass": [
+      "Fascia sinistra",
+      "Fascia destra",
+      "Entrambe fasce",
+      "Al centro",
+      "Normale"
+    ],
+    "correzioni": [
+      "formations.json dice \"Per entrambe le fasce\", il gioco dice \"Entrambe fasce\"",
+      "formations.json dice \"Per il centro\", il gioco dice \"Al centro\"",
+      "per tipo_pass la quinta voce e \"Normale\", non \"Misto\" (che invece esiste in stile_pass)"
+    ]
+  },
+  "slot_moduli_cosa_salvano": [
+    "Formazione",
+    "Modulo",
+    "Mentalita dei giocatori",
+    "Tiratori calci piazzati",
+    "Tattiche"
+  ],
+  "bonus_tifo": "Il +2% di possesso viene dal tifare per una squadra in partite altrui (pannello SCEGLI PER CHI TIFARE). Non e un bonus passivo.",
+  "calci_piazzati_e_capitano": {
+    "dove": "ROSA > FORMAZIONE > quarto quadratino della barra destra, meta SCARPA (in alto a sinistra nella diagonale)",
+    "coordinate_click": "android (2390, 1180) su schermo 2560x1440",
+    "incarichi_letti_26_08": {
+      "Angolo D": "Bone",
+      "Angolo S": "Bone",
+      "Punizione D": "Sacchetti",
+      "Punizione S": "Sacchetti",
+      "Rigore": "Sacchetti",
+      "Capitano": "Sadin"
+    },
+    "valutazione": {
+      "rigori_punizioni": "corretto: Sacchetti ha Tiro 240 e Finalizzazione 234, il migliore in rosa",
+      "angoli": "corretto: Bone ha Cross 180, il migliore fra chi e in campo",
+      "capitano": "DA CAMBIARE: Sadin (GEN 99) NON e titolare. Il capitano designato e in panchina."
+    }
+  },
+  "barra_destra_calibrata": {
+    "x_centro": 2439,
+    "quadratini": [
+      {
+        "n": 1,
+        "y": 630,
+        "funzione": "mentalita dei giocatori (frecce)",
+        "diviso": false
+      },
+      {
+        "n": 2,
+        "y": 850,
+        "funzione": "ruoli <-> condizione e morale",
+        "meta_sinistra": "(2395,820) ruoli",
+        "meta_destra": "(2485,880) condizione"
+      },
+      {
+        "n": 3,
+        "y": 1040,
+        "funzione": "sovrapposizione avversario",
+        "meta_sinistra": "(2395,1000)",
+        "meta_destra": "(2485,1075)"
+      },
+      {
+        "n": 4,
+        "y": 1225,
+        "funzione": "calci piazzati e capitano <-> maglie",
+        "meta_scarpa": "(2390,1180)",
+        "meta_maglie": "(2485,1265)"
+      }
+    ]
+  },
+  "slot_moduli_contenuto": {
+    "letto_il": "2026-08-26",
+    "slot_1": "4-1-2-3 Offensiva (= rosa attuale)",
+    "slot_2": "3-4-2-1 Offensiva",
+    "slot_3": "4-1-2-3 Offensiva (duplicato del modulo in uso)",
+    "slot_4": "4-2-3-1 Offensiva",
+    "liberi": 0,
+    "nota": "Nessuno slot libero. Per provare un modulo nuovo bisogna sovrascriverne uno: il candidato naturale e il 3, che duplica il modulo gia in uso nello slot 1.",
+    "coordinate": {
+      "apri": "(64,1248)",
+      "slot1": "(419,375)",
+      "slot2": "(419,576)",
+      "slot3": "(419,777)",
+      "slot4": "(419,980)",
+      "CARICA": "(1977,1094)",
+      "SALVA": "(1977,1229)"
+    }
+  },
+  "cambio_modulo": "Si cambia trascinando i giocatori dentro il campo in FORMAZIONE; il gioco riconosce il modulo risultante. Confermato dall utente, non ancora eseguito."
+}

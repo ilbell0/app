@@ -1760,5 +1760,127 @@
       "Scheda OCCASIONI non fotografata: tiri, corner e precisione restano ignoti.",
       "Il gol del 76' e' attribuito a D. Wahzrii ma l'icona differisce dalle altre."
     ]
+  },
+  {
+    "protocollo": 2,
+    "avversario": "oussamaFc",
+    "data_ora": "2026-08-26 14:11",
+    "competizione": "campionato",
+    "casa_trasferta": "trasferta",
+    "regime_dichiarato": "A",
+    "gen_milan": 124.4,
+    "gen_avversario": 64.9,
+    "equilibrio_formazione": 9.9,
+    "modulo": "4-1-2-3",
+    "modulo_avversario": "4-4-2",
+    "mentore_milan": {
+      "nome": "Cesc Fabregas",
+      "livello": 8
+    },
+    "frecce": {
+      "Sacchetti": "offensiva",
+      "altri_dieci": "nessuna",
+      "nota": "Michos era stato messo su difensiva per errore durante l esplorazione ed e stato riportato a neutro prima della partita."
+    },
+    "impostazioni": {
+      "tend_tiro": "Strategia in area",
+      "stile_pass": "Palla corta",
+      "tipo_pass": "Al centro",
+      "tend_cross": "Normale (2/3)",
+      "poss_perso": "Riaggressione",
+      "poss_ottenuto": "Contropiede",
+      "men": "Offensiva",
+      "marc": "A zona",
+      "press": "Pressing alto (3/3)",
+      "linea_dif": "Trapp. fuorig.",
+      "cont": "Normale"
+    },
+    "undici": [
+      {
+        "pos": "GK",
+        "nome": "Micheltorena",
+        "q": 119
+      },
+      {
+        "pos": "DL",
+        "nome": "Gabay",
+        "q": 102
+      },
+      {
+        "pos": "DC",
+        "nome": "Bassini",
+        "q": 107
+      },
+      {
+        "pos": "DC",
+        "nome": "Portillo",
+        "q": 111
+      },
+      {
+        "pos": "DR",
+        "nome": "Reynisson",
+        "q": 121
+      },
+      {
+        "pos": "DMC",
+        "nome": "Michos",
+        "q": 152
+      },
+      {
+        "pos": "MC",
+        "nome": "Romero",
+        "q": 132
+      },
+      {
+        "pos": "MC",
+        "nome": "Gomez Vara",
+        "q": 119
+      },
+      {
+        "pos": "AML",
+        "nome": "Garcia",
+        "q": 110
+      },
+      {
+        "pos": "AMC",
+        "nome": "Sacchetti",
+        "q": 151
+      },
+      {
+        "pos": "AMR",
+        "nome": "Bone",
+        "q": 138
+      }
+    ],
+    "avversario_dettagli": {
+      "manager_livello": 123,
+      "gol_fatti_media": 0.1,
+      "gol_subiti_media": 4.1,
+      "forma": "P S S S S",
+      "miglior_giocatore": "GK W. Aboubakari",
+      "miglior_voto": "C. Stallard 6,8",
+      "undici_medio": 63,
+      "migliore_in_campo": 72
+    },
+    "preparazione": {
+      "livello": "Ottimo",
+      "ammoniti_titolari": 3,
+      "infortunati": 0,
+      "titolari_riposati": false,
+      "morale": "migliorabile",
+      "affiatamento": "38/48",
+      "bonus": "+2% tifo di Mourinho"
+    },
+    "risultato": null,
+    "nota": "PRE-PARTITA registrato prima del calcio d inizio, secondo PROTOCOLLO-CATTURA.md. Il risultato va aggiunto dopo.",
+    "meteo": "Freddo",
+    "pronostico_gioco": "AC Milan FAVORITE",
+    "forma_milan": "V V V V S",
+    "calci_piazzati": {
+      "angoli": "Bone",
+      "punizioni": "Sacchetti",
+      "rigori": "Sacchetti",
+      "capitano": "Sadin (non titolare)"
+    }
   }
 ]
