@@ -370,5 +370,46 @@
       "SALVA": "(1977,1229)"
     }
   },
-  "cambio_modulo": "Si cambia trascinando i giocatori dentro il campo in FORMAZIONE; il gioco riconosce il modulo risultante. Confermato dall utente, non ancora eseguito."
+  "cambio_modulo": "Si cambia trascinando i giocatori dentro il campo in FORMAZIONE; il gioco riconosce il modulo risultante. Confermato dall utente, non ancora eseguito.",
+  "griglia_campo": {
+    "letto_il": "2026-08-26, screenshot con le etichette in filigrana",
+    "struttura": "3 righe x 4 colonne. Le etichette compaiono in filigrana quando trascini un giocatore; il riquadro tratteggiato evidenzia le caselle ammesse per quel giocatore.",
+    "righe": {
+      "alto": "fascia SINISTRA (quando attacchi verso destra)",
+      "centro": "corsia centrale",
+      "basso": "fascia DESTRA"
+    },
+    "colonne": [
+      "difesa",
+      "mediana bassa",
+      "mediana",
+      "avanzata"
+    ],
+    "caselle": {
+      "alto": [
+        "DL",
+        "ML",
+        null,
+        "AML"
+      ],
+      "centro": [
+        "DC",
+        "DMC",
+        "MC",
+        "AMC"
+      ],
+      "basso": [
+        "DR",
+        "MR",
+        null,
+        "AMR"
+      ]
+    },
+    "conseguenze": [
+      "ML e MR ESISTONO ma stanno nella colonna MEDIANA, non in quella avanzata.",
+      "Bone (Falsa Ala, richiede ML o MR) si accende solo arretrando di una colonna: da AMR a MR. Spostarlo lateralmente non serve.",
+      "Romero (Da area ad area, richiede MC) si accende solo in colonna mediana riga centro: da DMC a MC.",
+      "Il 3-2-4-1 usa AML/AMC/AMC/AMR nella linea dei quattro e DMC/DMC nel doppio pivot: per questo spegne sia Bone sia Romero."
+    ]
+  }
 }

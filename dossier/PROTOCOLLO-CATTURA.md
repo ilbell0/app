@@ -30,14 +30,19 @@ su un risultato già noto.
 
 ## FERMATA 2 — a fine partita, prima di chiudere
 
-Cinque voci, ~30 secondi.
+Sei voci, ~40 secondi.
 
 1. **Referto** — risultato e marcatori.
 2. **Scheda STATISTICHE** — possesso, tiri, duelli, passaggi, falli, intercetti.
-3. **Scheda OCCASIONI** — è quella dimenticata contro lo Skogens: la peggiore
+3. **Origine di ogni gol** - azione, corner, punizione o rigore. Nei dieci
+   referti storici non c e: sappiamo chi ha segnato e quando, non da dove. Con
+   130 gol stagionali, se il 15% nascesse da palla inattiva sarebbero venti gol
+   invisibili; e se i piazzati non producono nulla, ottimizzare i battitori e
+   tempo perso. Bastano tre o quattro partite per saperlo.
+4. **Scheda OCCASIONI** — è quella dimenticata contro lo Skogens: la peggiore
    sconfitta del campione ha i tiri e i corner ignoti per sempre.
-4. **Diagramma a zone di entrambe le squadre** — non solo del Milan.
-5. **Mentore avversario** — visibile soltanto dopo il calcio d'inizio.
+5. **Diagramma a zone di entrambe le squadre** — non solo del Milan.
+6. **Mentore avversario** — visibile soltanto dopo il calcio d'inizio.
 
 ---
 
