@@ -48,8 +48,9 @@ interface OpponentSettings {
   passing_style_it: string;
   passing_type: string;
   passing_type_it: string;
-  crossing_tendency: string;
-  crossing_tendency_it: string;
+  // slider a tacche 1-3 dall'aggiornamento 2027 (non piu' un'etichetta testuale)
+  crossing_tendency: number;
+  crossing_tendency_it: number;
   // In transizione
   lost_possession: string;
   lost_possession_it: string;
@@ -463,10 +464,10 @@ export default function FormationsScreen() {
                     field: f,
                     value: (language === 'it'
                       ? currentSettings[`${f.key}_it` as keyof OpponentSettings]
-                      : currentSettings[f.key]) as string | undefined,
+                      : currentSettings[f.key]) as string | number | undefined,
                   }))
                   // un parametro assente non deve rendere una riga vuota
-                  .filter((r) => !!r.value);
+                  .filter((r) => r.value !== undefined && r.value !== '');
                 if (rows.length === 0) return null;
                 return (
                   <View key={phase.key} style={styles.tacticsSection}>
@@ -479,7 +480,12 @@ export default function FormationsScreen() {
                           <Text style={styles.tacticLabel}>
                             {language === 'it' ? r.field.label_it : r.field.label_en}
                           </Text>
-                          <Text style={styles.tacticValue}>{r.value}</Text>
+                          <Text style={styles.tacticValue}>
+                            {/* barra a tacche 1-3 in game; 2 = "Normale" confermato a schermo */}
+                            {typeof r.value === 'number'
+                              ? (r.value === 2 ? 'Normale' : `${r.value}/3`)
+                              : r.value}
+                          </Text>
                         </View>
                       ))}
                     </View>

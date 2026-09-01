@@ -101,5 +101,32 @@
     "Bone": "ML o MR",
     "Sacchetti": "ST o AMC",
     "Micheltorena": "GK"
+  },
+  "potenziali_non_sbloccati": [
+    {
+      "giocatore": "Georges Siani",
+      "gen": 105,
+      "eta": 21,
+      "tipo": "RARO",
+      "stile": "ENGANCHE",
+      "categoria": "Attaccante",
+      "livello": "BLOCCATO",
+      "ruoli_richiesti": [
+        "AMC"
+      ],
+      "progresso": "2/300 verso Standard",
+      "descrizione": "giocatore tecnico e rapido che collega centrocampo e attacco muovendo la palla velocemente in avanti; piedi buoni e ottime capacita di assist",
+      "letto_il": "2026-08-31",
+      "nota": "il ruolo richiesto AMC coincide con la casella in cui l analisi quantitativa lo colloca per attributi"
+    }
+  ],
+  "soglie_punti_stile": {
+    "Bloccato_a_Standard": 300,
+    "Standard_a_Intermedio": "ignoto",
+    "Intermedio_a_Avanzato": 3600,
+    "Avanzato_a_Maestro": 6500,
+    "fonte": "lette dalle schermate dei giocatori: Siani 2/300, Michos 2039/3600, Bone 69/6500. Nessuna fonte pubblica documenta queste soglie.",
+    "punti_disponibili_31_08": 97,
+    "nota": "i 97 punti sono gli stessi del 26/08: nessun accumulo in cinque giorni. I punti arrivano da allenamenti e da partite in Lega, Coppa, Elite, Ultimate Cup, Gold League e amichevoli IN CASA."
   }
 }

@@ -164,5 +164,222 @@
       "nota": "il libero non esiste come casella. E i lanci lunghi diagonali vanno contro Fabregas (+30% passaggi corti) e contro difensori con Passaggio 53-107."
     },
     "lezione": "Qwen ragiona bene sulle forme e male sui vincoli perche non li ha. Per rilanciarlo servono la griglia a 10 caselle e i cinque stili con i ruoli richiesti."
+  },
+  "fonte_pinuccio": {
+    "url": "https://fmmvibe.com/files/file/1489-tactics-by-pinuccio-update-0331/",
+    "letta_il": "2026-08-30",
+    "come": "scrapling 0.4.15, Fetcher con impersonate=chrome (WebFetch dava 403)",
+    "gioco": "Football Manager Mobile 2026 - NON Top Eleven: ruoli/doveri e istruzioni squadra non esistono in TE",
+    "verificato_alla_lettera": {
+      "identita": "tattica El Loco, stile Bielsa: contropiede, difesa organizzata, densita, ripartenza negli spazi",
+      "anti_possesso": "nel topic FMM24 l autore scrive: IF YOU LOVE TIKI TAKA AND BALL POSSESSION THIS IS NOT A TACTIC FOR YOU",
+      "modulo": "4-1-4-1 che in possesso diventa 3-3-3-1 (parole dell autore nei commenti)",
+      "zona_14": "punto di forza dichiarato: due giocatori, a volte tre, occupano COSTANTEMENTE la zona 14 (area subito fuori dall area di rigore)",
+      "pressing": "a uomo: each player presses an individual opponent",
+      "aggressivita": "ha ABBASSATO overload -> attacking perche overload rompeva la tattica",
+      "passaggi_corti": "introdotti al posto dei diretti, ma per un difetto del motore FM che gestisce male i passaggi diretti - non e un principio calcistico",
+      "serve_rosa_forte": "a un utente con l Andorra risponde che i giocatori sono troppo scarsi per una tattica che chiede tanto movimento, pressing e gioco diretto",
+      "trappola_fuorigioco": "un tester col Leeds: the pace at the back is weak so despite the offside trap we were getting burnt"
+    },
+    "non_estratto": "gli slider numerici non sono nel testo: stanno nel file scaricabile e negli screenshot",
+    "convergenza": "l assetto_definitivo, ottenuto ottimizzando gli stili, e gia un 3-3-3-1 con due uomini fissi in zona 14 (AMC): stessa struttura e stesso principio, per via indipendente"
+  },
+  "mentori_disponibili": {
+    "letti_il": "2026-08-26",
+    "elenco": [
+      {
+        "nome": "Cesc Fabregas",
+        "lv": 8,
+        "sopr": "L ARCHITETTO",
+        "sbloccate": "passaggi corti +30%; dribbling e tiro +20",
+        "uso": "default, sistema di possesso"
+      },
+      {
+        "nome": "Claude Makelele",
+        "lv": 7,
+        "sopr": "IL DOMINATORE",
+        "sbloccate": "azioni difensive +25% CONTRO I PASSAGGI CORTI; coraggio e posizionamento +10",
+        "uso": "contro avversari che giocano corto - il piu forte dopo Fabregas, finora mai considerato"
+      },
+      {
+        "nome": "Ruben Herrera",
+        "lv": 6,
+        "sopr": "IL SABOTATORE",
+        "sbloccate": "contropiedi +30%; creativita e passaggi +10",
+        "uso": "profilo contropiede"
+      },
+      {
+        "nome": "Nemanja Vidic",
+        "lv": 5,
+        "sopr": "LA SENTINELLA D ACCIAIO",
+        "sbloccate": "azioni difensive +15%",
+        "uso": "difendere un vantaggio"
+      },
+      {
+        "nome": "Lewis Green",
+        "lv": 2,
+        "sopr": "IL GENERALE DELLE FASCE",
+        "sbloccate": null,
+        "uso": "livello troppo basso"
+      },
+      {
+        "nome": "Alan Shearer",
+        "lv": 1,
+        "sopr": "IL FINALIZZATORE",
+        "sbloccate": "dribbling +15%",
+        "uso": "lv1, due abilita su tre bloccate: non competitivo"
+      },
+      {
+        "nome": "Jonas Braun",
+        "lv": null,
+        "sopr": "L ANALISTA",
+        "sbloccate": null,
+        "uso": "livello non letto"
+      }
+    ],
+    "nota_slot": "gli slot modulo NON salvano il mentore: va cambiato a mano prima della partita"
+  },
+  "conversione_fm_to_te": {
+    "scritto_il": "2026-08-30",
+    "fonte": "5 tattiche della sezione Football Manager 2026 Mobile di fmmvibe.com, lette con scrapling il 30/08/2026",
+    "file_letti": {
+      "1489": "TACTICS BY PINUCCIO update 03/31 - la piu scaricata della sezione",
+      "1482": "4-1-4-1 - contiene la descrizione tattica piu completa",
+      "1483": "TACTICAL EMULATIONS - emulazioni di Conte, Guardiola, Bielsa, Inzaghi, Simeone, Spalletti",
+      "1502": "FMM26 3-3-4 ASYMMETRIC - solo commenti, nessun contenuto tattico",
+      "1485": "TACTIC 4-4-4 - solo commenti"
+    },
+    "citazioni_chiave": {
+      "trasformazione": "a defensive phase in 4-1-4-1, an organised transition into 4-3-3, and, above all, an in-possession shape that becomes a 3-2-5, constantly creating superiority in zone 14",
+      "filosofia": "attack with 8 and defend with 9",
+      "difensori_centrali": "They are not asked to create, but to dominate defensive readings, maintain positional order and ensure clean progression from the back",
+      "esterni": "They do not need to dribble or isolate their marker; they must preserve compactness, participate in short combinations and help create triangular patterns inside the pitch",
+      "dmc": "the defensive midfielder acts as the system compass: covering, screening or recycling possession",
+      "terzini": "the left-back remains locked, providing stability, while the right-back offers controlled support",
+      "onesta_della_fonte": "The goal isn t to create CPU-destroying tactics - sono emulazioni di allenatori reali, non exploit del motore"
+    },
+    "convertibile": [
+      "occupare la zona 14 (casella AMC) con due o tre uomini",
+      "forma 3-2-5 in possesso, ottenuta con le frecce",
+      "terzini asimmetrici: freccia offensiva a uno solo dei due",
+      "esterni che combinano invece di dribblare = stile Falsa Ala di Bone",
+      "DMC bussola del sistema = Michos col Regista",
+      "difensori centrali che non costruiscono",
+      "passaggi corti"
+    ],
+    "non_convertibile": [
+      "la trasformazione automatica fra le tre fasi: in TE la formazione e statica",
+      "i ruoli individuali (CCQ, mezzala, support winger, ball-playing defender)",
+      "le istruzioni per singolo giocatore",
+      "la distribuzione del portiere"
+    ],
+    "ribaltamento": "i difensori che passano male (Bassini 87, Portillo 83) non sono una falla: nel sistema di Pinuccio i centrali NON devono costruire, il costruttore e il mediano davanti a loro. Con Michos a 178 in DMC la prima uscita passa da lui per disegno. Resta il rischio circoscritto contro un pressing alto avversario."
+  },
+  "frecce_assetto": {
+    "principio": "le frecce sono l unico meccanismo di Top Eleven che imita la trasformazione di modulo fra le fasi che in FM avviene da sola",
+    "senza_palla": "3-3-3-1: Portillo Bassini Reynisson / Michos Romero Bone / Garcia Montaroup Gomez Vara / Sacchetti",
+    "in_possesso_con_freccia_su_Bone": "3-2-5: Portillo Bassini Reynisson / Michos Romero / Bone Garcia Montaroup Gomez Vara Sacchetti",
+    "assegnazione": {
+      "offensiva": [
+        "Bone",
+        "Garcia"
+      ],
+      "nessuna": [
+        "Michos",
+        "Romero",
+        "Portillo",
+        "Bassini",
+        "Reynisson",
+        "Montaroup",
+        "Gomez Vara",
+        "Sacchetti"
+      ],
+      "difensiva": []
+    },
+    "unico_cambio_da_fare": "freccia offensiva a Bone: e la modifica che porta l assetto sulla forma 3-2-5 dichiarata da Pinuccio",
+    "convergenza": "il 3-2-5 era gia nel dossier come struttura di Guardiola (tattica_3_guardiola): terza volta che strade indipendenti arrivano allo stesso punto"
+  },
+  "parametri_effetti_reali": {
+    "fonte": "NotebookLM, notebook 'Guida Tattica Completa a Top Eleven 2027' e 'Top Eleven 2027 - Mentori e Tattiche' (fonti Nordeus ufficiali + video community, raccolte 11-15/08/2026)",
+    "letto_il": "2026-08-31",
+    "nota": "Sono gli effetti del sistema post-redesign 11/08/2026. Nessuna guida web indicizzata li documenta.",
+    "possesso_perso": {
+      "Riaggressione": "aggredire l avversario nel secondo esatto in cui si perde palla. Richiede altissima Forma fisica; PROSCIUGA la condizione rapidamente.",
+      "Raggruppamento": "ripiegare subito mantenendo la struttura. Ideale per controllo o blocco basso; NON logora la condizione."
+    },
+    "possesso_ottenuto": {
+      "Concent. azioni": "consolidare il possesso e costruire con ordine. Richiede centrocampisti con Passaggi e Creativita alti.",
+      "Contropiede": "attaccare subito mentre l avversario e sbilanciato. Richiede ali e attaccanti con Velocita e Creativita alte."
+    },
+    "marcatura": {
+      "A uomo": "seguire l avversario diretto. Richiede Marcatura, Contrasti e soprattutto Forma fisica straordinaria; FATICOSISSIMA.",
+      "A zona": "coprire aree. Consuma molta meno energia, e lo stile piu bilanciato per tenere fresca la squadra."
+    },
+    "pressing": {
+      "Blocco basso": "difendere vicino alla propria porta",
+      "Medio": "compromesso equilibrato",
+      "Alto": "pressare nella meta campo avversaria. COSTO ATLETICO MASSICCIO, richiede altissima Forma fisica."
+    },
+    "linea_difensiva": {
+      "Tracc. avvers.": "i difensori seguono e accorciano sugli attaccanti. Richiede Posizionamento e Marcatura ottimi; senza Velocita espone spazi letali alle spalle.",
+      "Trapp. fuorig.": "i difensori salgono in sincronia. Richiede difensori rapidi e intesa. NOTA: con piu di 3-4 difensori in linea ha alta probabilita di fallire."
+    },
+    "contrasti": {
+      "Facile": "riduce drasticamente cartellini e falli",
+      "Normale": "bilanciato",
+      "Duro": "recupero forzato; richiede Contrasti e Coraggio alti; alto rischio di punizioni pericolose e cartellini"
+    },
+    "combinazioni_sconsigliate": [
+      "Riaggressione + Marcatura a uomo + Pressing alto: combinazione MICIDIALE per i propri giocatori, li lascia esausti prima della fine",
+      "Tipo passaggi Al centro + cross alto senza giocatori forti di testa",
+      "Tiro a vista senza attaccanti con Tiro eccellente",
+      "Tracc. avvers. con difensori privi di Posizionamento/Marcatura/Velocita adeguati"
+    ],
+    "vincolo_nascosto": "La CONDIZIONE FISICA e il vero limite del nuovo sistema: Riaggressione, Marcatura a uomo e Pressing alto la consumano tutte e tre. Vanno dosate, non sommate."
+  },
+  "mentori_meccanica": {
+    "fonte": "NotebookLM su FAQ ufficiali Nordeus (How to earn Mentor XP, Leveling up Mentors), letto il 31/08/2026",
+    "mossa_signature": "si sblocca al LIVELLO 10. Fabregas e a 8: non ce l ha ancora. Per Fabregas fa si che ogni passaggio riuscito renda piu difficile intercettare il successivo.",
+    "cambio_all_intervallo": "si puo cambiare mentore all intervallo di una partita dal vivo, per adattarsi all avversario",
+    "legame_col_modulo": "NON esiste un vincolo rigido mentore-modulo ne mentore-stili dei giocatori. Esiste sinergia strategica: la tattica va costruita attorno ai punti di forza del mentore.",
+    "mentore_avversario": "va studiato prima e si puo rispondere cambiando il proprio all intervallo",
+    "non_documentato": "le fonti non descrivono i boost specifici di Shearer, Vidic e Makelele, ne l interazione esatta fra Mossa Signature e gli stili di gioco dei singoli giocatori",
+    "boost_crescono_col_livello": {
+      "scoperta": "confronto incrociato fra i valori base dichiarati in un video community post-update e i valori letti dalle TUE schermate: i boost crescono col livello del mentore",
+      "prove": {
+        "Fabregas": "base +20% passaggi corti (+5 dribbling/tiro) -> al TUO lv8: +30% e +20 dribbling/tiro",
+        "Makelele": "base +15% difesa contro passaggi corti -> al TUO lv7: +25%",
+        "Vidic": "base +15% azioni difensive -> al TUO lv5: ancora +15%",
+        "Shearer": "base +15% dribbling, +5 forza/tiro -> al TUO lv1: identico al base"
+      },
+      "conferme_incrociate": "le Mosse Signature di Makelele e Vidic descritte nel video coincidono parola per parola con quelle lette dalle tue schermate: la fonte community e attendibile"
+    },
+    "abbinamenti_situazione": {
+      "fonte": "video community post-update, opinione di un singolo creator - non una tabella ufficiale",
+      "possesso_e_gioco_posizionale": "Fabregas",
+      "contropiede_contro_piu_forti": "Herrera",
+      "formazioni_sulle_fasce_ML_AMR": "Green",
+      "proteggere_un_vantaggio_a_fine_partita": "Makelele",
+      "molte_palle_inattive": "Shearer",
+      "avversario_imbattibile_bisogna_chiudersi": "Vidic",
+      "principio": "non esiste il mentore migliore in assoluto: esiste quello giusto per la tua tattica, il tuo avversario e la situazione di gioco",
+      "correzione": "avevo assegnato Makelele allo slot Regge perche difende contro il passaggio corto. L uso indicato dalla fonte e un altro: proteggere un vantaggio nel finale, sfruttando la Signature (+15 difensivi, -10 offensivi quando sei avanti). Ma quella Signature si sblocca al livello 10 e Makelele e a 7: NON e ancora attiva."
+    },
+    "strategia_due_tempi": "poiche il mentore si cambia all intervallo: Fabregas nel primo tempo per costruire, e se si e in vantaggio passare a un profilo difensivo nel secondo. Leva mai considerata finora."
+  },
+  "verifica_ottimalita": {
+    "fatta_il": "2026-08-31",
+    "metodo": "tools/analizza_assetto.py rilanciato con coefficienti di bonus stile crescenti, oltre i tre previsti dallo script",
+    "difetto_trovato": "i tre scenari dello script (0.25 / 1.5 / 3.0) prezzano il bonus stile a un massimo di 9 punti su ~640: nessuno di essi verifica davvero l ipotesi che gli stili contino. Non e un bug di codice ma una taratura troppo timida.",
+    "risultato": {
+      "coef 0.25 e 1.5": "modulo 3-2-4-1, 3 stili accesi su 5",
+      "coef 3.0": "torna al 3-3-3-1 attuale, 4 stili",
+      "coef 8, 15, 30": "3-3-3-1 attuale con Michos DMC, Romero MC, Bone MR, Sacchetti ST, Micheltorena GK: 5 stili su 5"
+    },
+    "conclusione": "da coefficiente 8 in su - cioe appena uno stile x2 vale piu dell 1,2% del punteggio - l ottimo matematico coincide ESATTAMENTE con l assetto attuale. Il modulo e le cinque caselle degli stili non si toccano.",
+    "cambi_suggeriti_dal_modello": {
+      "Sadin al posto di Bassini in DC": "SOLIDO. Contrasto 182 vs 126, Marcatura 149 vs 111, Posizionamento 153 vs 114, Velocita 117 vs 87. Perde su Passaggio (53 vs 87) e Forza (80 vs 115). Converge con tre scoperte indipendenti: i centrali non devono costruire, la linea difensiva richiede velocita, Bassini era l anello lento. Il modello lo SOTTOSTIMA perche i pesi del DC non includono nemmeno la velocita.",
+      "McLoughlin al posto di Montaroup in AMC": "DUBBIO. Vince su passaggio (127 vs 109) e creativita (113 vs 96), perde su velocita (126 vs 110) e finalizzazione (126 vs 123). Margine sottile. Contro: McLoughlin e l unico ricambio AML di Garcia, spostarlo titolare riapre quel buco."
+    }
   }
 }

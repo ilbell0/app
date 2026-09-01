@@ -13,12 +13,14 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/src/context/LanguageContext';
 import { NothingTheme } from '@/src/theme/NothingTheme';
-import { PLAYER_ROLES, POSITION_GUIDE, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, GAME_GUIDE, FORMATION_LAB, REAL_TACTICS, REAL_TEAMS, MENTORS, FORMATIONS } from '@/src/data';
+import { PLAYER_ROLES, POSITION_GUIDE, META_TACTICS, SPECIAL_ABILITIES, TRAINING_GUIDE, FAQ, ABBREVIATIONS, CAREER_PATHS, MY_PLAYBOOK, SET_PIECE, BATTLE_CARDS, GAME_GUIDE, FORMATION_LAB, REAL_TACTICS, REAL_TEAMS, MENTORS, MENTOR_TACTICS, FORMATIONS } from '@/src/data';
 import PitchDiagram from '@/src/components/PitchDiagram';
 
 // lookup nome modulo -> posizioni, per disegnare il mini-campo nella sezione Meta
 const BY_NAME: Record<string, string[]> = {};
 (FORMATIONS as any[]).forEach((f) => { BY_NAME[f.name] = f.positions; });
+const MENTOR_TACTICS_BY_ID: Record<string, any> = {};
+(MENTOR_TACTICS as any[]).forEach((item) => { MENTOR_TACTICS_BY_ID[item.mentor_id] = item; });
 const digitsOf = (s: string) => (s || '').replace(/\D/g, '');
 function findPositions(name?: string): string[] | null {
   if (!name) return null;
@@ -170,6 +172,9 @@ export default function AcademyScreen() {
     : '';
 
   const allItems = data[section];
+  const selectedMentorTactic = selected && section === 'mentors'
+    ? MENTOR_TACTICS_BY_ID[selected.id]
+    : null;
   const q = search.trim().toLowerCase();
   const items = q
     ? allItems.filter((item) => `${cardTitle(item)} ${cardSubtitle(item)}`.toLowerCase().includes(q))
@@ -488,6 +493,21 @@ export default function AcademyScreen() {
                       <Text style={styles.warningLabel}>{isIt ? 'AVVERTENZA' : 'WARNING'}</Text>
                       <Text style={styles.warningValue}>{isIt ? selected.warning_it : selected.warning_en}</Text>
                     </View>
+                  )}
+                  {selectedMentorTactic && (
+                    <>
+                      <DetailChips label={isIt ? 'MODULI CONSIGLIATI' : 'RECOMMENDED FORMATIONS'} values={isIt ? selectedMentorTactic.formations_it : selectedMentorTactic.formations_en} />
+                      <DetailBlock label={isIt ? 'QUANDO USARLO' : 'WHEN TO USE'} value={isIt ? selectedMentorTactic.when_it : selectedMentorTactic.when_en} />
+                      <DetailChips label={isIt ? 'IMPOSTAZIONI COMPATIBILI' : 'COMPATIBLE SETTINGS'} values={isIt ? selectedMentorTactic.compatible_settings_it : selectedMentorTactic.compatible_settings_en} />
+                      <View style={styles.warningBlock}>
+                        <Text style={styles.warningLabel}>{isIt ? 'CONTRO-MOSSA' : 'COUNTER-MOVE'}</Text>
+                        <Text style={styles.warningValue}>{isIt ? selectedMentorTactic.counter_move_it : selectedMentorTactic.counter_move_en}</Text>
+                        <DetailBlock label={isIt ? 'MODULO CONTRO' : 'COUNTER FORMATION'} value={isIt ? selectedMentorTactic.counter_formation_it : selectedMentorTactic.counter_formation_en} />
+                        <DetailBlock label={isIt ? 'MENTORE CONTRO' : 'COUNTER MENTOR'} value={isIt ? selectedMentorTactic.counter_mentor_it : selectedMentorTactic.counter_mentor_en} />
+                        <DetailBlock label={isIt ? 'AFFIDABILITÀ' : 'CONFIDENCE'} value={isIt ? selectedMentorTactic.confidence_it : selectedMentorTactic.confidence_en} />
+                      </View>
+                      <DetailBlock label={isIt ? 'FONTE' : 'SOURCE'} value={isIt ? selectedMentorTactic.source_it : selectedMentorTactic.source_en} />
+                    </>
                   )}
                 </>
               )}

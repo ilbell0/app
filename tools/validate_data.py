@@ -11,6 +11,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 
 from datasets import DATASETS, ROOT, extract_assignments, load_json
 
@@ -34,28 +35,33 @@ PASSING_TYPE_EN = {"Down Both Flanks", "Through the Middle", "Mixed", "Right Fla
 PASSING_TYPE_IT = {"Per entrambe le fasce", "Entrambe fasce", "Per il centro", "Misto", "Fascia destra", "Fascia sinistra", "Fasce", "Centro"}
 SHOOTING_EN = {"Normal", "Shoot on Sight", "Work into Box"}
 SHOOTING_IT = {"Normale", "Tiro a vista", "Strategia in area"}
-CROSSING_EN = {"Normal"}
-CROSSING_IT = {"Normale"}
 LOST_POSS_EN = {"Reaggression", "Regroup"}
 LOST_POSS_IT = {"Riaggressione", "Raggruppamento"}
 WON_POSS_EN = {"Counter-attack", "Concentrate Actions"}
 WON_POSS_IT = {"Contropiede", "Concentr. azioni"}
 DEF_LINE_EN = {"Offside Trap", "Track Opponent"}
 DEF_LINE_IT = {"Trapp. fuorig.", "Tracc. avvers."}
-TACKLING_EN = {"Easy", "Normal", "Hard"}
-TACKLING_IT = {"Facile", "Normale", "Duro"}
+# etichette verificate a schermo (dropdown Stile contrasti, TATTICHE): Ai
+# piedi / Normale / Aggressivo, non piu' Facile / Normale / Duro
+TACKLING_EN = {"Stay on Feet", "Normal", "Aggressive"}
+TACKLING_IT = {"Ai piedi", "Normale", "Aggressivo"}
 MARKING_EN = {"Zonal", "Man-to-Man"}
 MARKING_IT = {"Zonale", "Uomo a Uomo"}
+# etichetta di marc (ENGINE) verificata sullo schermo del gioco il 26/08/2026
+# (schermata TATTICHE) — diversa da MARKING_IT, che vale per FORMATIONS.marking_it.
+MARKING_REAL_IT = {"A zona", "A uomo"}
+# tend_cross (tendenza cross) e' uno SLIDER a tacche 1-2-3 dall'aggiornamento
+# 2027, non piu' un menu chiuso: validato a parte in check_engine, non qui.
+CROSSING_LEVELS = {1, 2, 3}
 
 ENG_VOCAB = {
     "tend_tiro": SHOOTING_IT,
     "stile_pass": PASSING_STYLE_IT,
     "tipo_pass": PASSING_TYPE_IT,
-    "tend_cross": CROSSING_IT,
     "poss_perso": LOST_POSS_IT,
     "poss_ottenuto": WON_POSS_IT,
     "men": MENTALITY_IT,
-    "marc": {"Zona", "Uomo"},
+    "marc": MARKING_REAL_IT,
     "press": PRESSING_IT,
     "linea_dif": DEF_LINE_IT,
     "cont": TACKLING_IT,
@@ -111,13 +117,16 @@ def check_formations(F):
                 ("marking", MARKING_EN), ("marking_it", MARKING_IT),
                 ("passing_type", PASSING_TYPE_EN), ("passing_type_it", PASSING_TYPE_IT),
                 ("shooting_tendency", SHOOTING_EN), ("shooting_tendency_it", SHOOTING_IT),
-                ("crossing_tendency", CROSSING_EN), ("crossing_tendency_it", CROSSING_IT),
                 ("lost_possession", LOST_POSS_EN), ("lost_possession_it", LOST_POSS_IT),
                 ("won_possession", WON_POSS_EN), ("won_possession_it", WON_POSS_IT),
                 ("defensive_line", DEF_LINE_EN), ("defensive_line_it", DEF_LINE_IT),
             ]:
                 if field in s and s[field] not in vocab:
                     err(f"FORMATIONS {n}/{sc}: {field}={s[field]!r} fuori vocabolario")
+            # tend_cross e' uno slider a tacche 1-2-3 (aggiornamento 2027), non un menu chiuso
+            for field in ("crossing_tendency", "crossing_tendency_it"):
+                if field in s and s[field] not in CROSSING_LEVELS:
+                    err(f"FORMATIONS {n}/{sc}: {field}={s[field]!r} fuori scala 1-3")
             if (s.get("defensive_line") == "Offside Trap" or s.get("offside_trap") is True) and s.get("pressing") == "Low":
                 err(f"FORMATIONS {n}/{sc}: fuorigioco ON con pressing basso")
             if (s.get("won_possession") == "Counter-attack" or s.get("counter_attack") is True) and s.get("mentality") in ("Attacking", "Hard Attacking"):
@@ -184,6 +193,9 @@ def check_engine(E, names, byname):
             for field, vocab in ENG_VOCAB.items():
                 if s.get(field) not in vocab:
                     err(f"ENGINE {av}/{sc}: {field}={s.get(field)!r} fuori vocabolario")
+            # tend_cross e' uno slider a tacche 1-2-3 (aggiornamento 2027), non un menu chiuso
+            if s.get("tend_cross") not in CROSSING_LEVELS:
+                err(f"ENGINE {av}/{sc}: tend_cross={s.get('tend_cross')!r} fuori scala 1-3")
             if s.get("linea_dif") == "Trapp. fuorig." and s.get("press") == "Basso":
                 err(f"ENGINE {av}/{sc}: fuorigioco SI con pressing basso")
             if s.get("poss_ottenuto") == "Contropiede" and s.get("men") in ("Offensiva", "Molto Offensiva"):
@@ -254,6 +266,72 @@ def check_accents(data):
         walk(d, False, var)
 
 
+RUOLI_NOTI = {
+    "gk", "dl", "dc", "dr", "dmc", "mc", "ml", "mr",
+    "aml", "amc", "amr", "st",
+}
+
+
+def _normalizza_testo(value):
+    testo = unicodedata.normalize("NFKD", str(value))
+    return "".join(c for c in testo if not unicodedata.combining(c)).casefold().strip()
+
+
+def _corrisponde_giocatore(nome_completo, valore_disposizione):
+    nome = _normalizza_testo(nome_completo)
+    cognome = nome.rsplit(" ", 1)[-1]
+    valore = _normalizza_testo(valore_disposizione)
+    ultima_parola = valore.rsplit(" ", 1)[-1]
+    return valore in (nome, cognome) or ultima_parola in (nome, cognome)
+
+
+def check_stili(stili=None, disposizione=None):
+    """Verifica che ogni stile sia acceso dall'assetto definitivo."""
+    if stili is None:
+        stili_path = os.path.join(ROOT, "dossier", "stili_gioco.json")
+        if not os.path.exists(stili_path):
+            return
+        with io.open(stili_path, encoding="utf-8") as f:
+            stili = json.load(f).get("stili", [])
+    if disposizione is None:
+        tattiche_path = os.path.join(ROOT, "dossier", "TATTICHE.json")
+        if not os.path.exists(tattiche_path):
+            return
+        with io.open(tattiche_path, encoding="utf-8") as f:
+            disposizione = json.load(f).get("assetto_definitivo", {}).get("disposizione", {})
+
+    attivi = 0
+    for stile in stili:
+        giocatore = stile.get("giocatore", "?")
+        nome_stile = stile.get("stile", "?")
+        effetto = stile.get("effetto", "?")
+        ruoli_richiesti = stile.get("ruoli_richiesti") or []
+        caselle = [
+            (casella, _normalizza_testo(casella), giocatore_disposto)
+            for casella, giocatore_disposto in disposizione.items()
+            if _corrisponde_giocatore(giocatore, giocatore_disposto)
+        ]
+        if not caselle:
+            warn(f"STILI: {giocatore} ({nome_stile}, {effetto}) è in panchina")
+            continue
+
+        ruolo_richiesto = {_normalizza_testo(ruolo) for ruolo in ruoli_richiesti}
+        ruolo_casella = {"punta": "st"}.get(caselle[0][1], caselle[0][1])
+        if ruolo_casella in RUOLI_NOTI and ruolo_casella in ruolo_richiesto:
+            attivi += 1
+            continue
+
+        casella, ruolo, _ = caselle[0]
+        if ruolo not in RUOLI_NOTI and ruolo != "punta":
+            warn(f"STILI: {giocatore} ({nome_stile}, {effetto}) è nella casella {casella}, non interpretabile")
+            continue
+        caselle_accensione = ", ".join(ruoli_richiesti)
+        err(f"STILI: {giocatore} ({nome_stile}, {effetto}) è in {casella}; "
+            f"lo stile richiede una casella tra {caselle_accensione}")
+
+    print(f"stili attivi: {attivi}/{len(stili)}")
+
+
 # --- dossier: protocollo di cattura (vedi dossier/PROTOCOLLO-CATTURA.md) ---
 # Forcing function della fermata 1: un referto raccolto col protocollo non entra
 # nel dossier senza i dati pre-partita. Senza questi campi l'analisi resta
@@ -278,10 +356,10 @@ IMPOSTAZIONI_REALI = {
     'poss_perso': {'Riaggressione', 'Raggruppamento'},
     'poss_ottenuto': {'Concent. azioni', 'Contropiede'},
     'men': {'Molto Difensiva', 'Difensiva', 'Normale', 'Offensiva', 'Molto Offensiva'},
-    'marc': {'A uomo', 'A zona'},
+    'marc': MARKING_REAL_IT,
     'press': None,
     'linea_dif': {'Tracc. avvers.', 'Trapp. fuorig.'},
-    'cont': {'Facile', 'Normale', 'Duro'},
+    'cont': TACKLING_IT,
 }
 
 
@@ -355,6 +433,7 @@ def main():
     check_matrix_quick(data["COUNTER_ENGINE"], data["MATCHUP_MATRIX"], data["COUNTER_QUICK"], avs)
     check_arrow_tactics(data["ARROW_TACTICS"], F)
     check_accents(data)
+    check_stili()
     n_referti = check_dossier()
 
     for w in WARNINGS:

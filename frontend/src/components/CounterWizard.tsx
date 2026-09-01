@@ -157,7 +157,7 @@ export default function CounterWizard({ visible, onClose, onOpenCounter }: Props
                   [isIt ? 'Tendenza tiro' : 'Shooting', scenario.tend_tiro || 'Normale'],
                   [isIt ? 'Stile passaggi' : 'Passing style', scenario.stile_pass || scenario.stile],
                   [isIt ? 'Tipo di passaggi' : 'Passing type', scenario.tipo_pass || scenario.pass],
-                  [isIt ? 'Tendenza cross' : 'Crossing', scenario.tend_cross || 'Normale'],
+                  [isIt ? 'Tendenza cross' : 'Crossing', scenario.tend_cross === 2 ? 'Normale' : scenario.tend_cross != null ? `${scenario.tend_cross}/3` : '—'],
                 ].map(([k, v]) => (
                   <View key={k} style={styles.gridRow}>
                     <Text style={styles.gridK}>{k}</Text>

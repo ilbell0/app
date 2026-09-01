@@ -39,7 +39,8 @@ interface CounterScenario {
   tend_tiro?: string;
   stile_pass?: string;
   tipo_pass?: string;
-  tend_cross?: string;
+  // slider a tacche 1-3 dall'aggiornamento 2027 (non piu' un'etichetta testuale)
+  tend_cross?: number;
   poss_perso?: string;
   poss_ottenuto?: string;
   linea_dif?: string;
@@ -140,6 +141,13 @@ export default function CountersScreen() {
     setModalVisible(true);
   };
 
+  const closeModal = () => {
+    // Azzera la chiave del deep-link: riaprendo lo stesso avversario/livello
+    // dalla Home la scheda deve poter riaprirsi di nuovo.
+    handledCounter.current = null;
+    setModalVisible(false);
+  };
+
   useEffect(() => {
     if (!counterAv || !counterLevel || loading) return;
     const key = `${counterAv}:${counterLevel}`;
@@ -159,9 +167,6 @@ export default function CountersScreen() {
     { label: language === 'it' ? 'PRINCIPALE' : 'MAIN', mod: currentScenario.mod, arrows: currentScenario.fr },
     ...(hasAlt ? [{ label: language === 'it' ? 'ALTERNATIVA' : 'ALTERNATIVE', mod: currentScenario.alt, arrows: currentScenario.alt_fr || currentScenario.fr }] : []),
   ] : [];
-  const activeMod = variants[0]?.mod || '';
-  const activeFr = variants[0]?.arrows || {};
-
   if (loading) {
     return (
       <View style={[styles.container, styles.centered]}>
@@ -268,7 +273,7 @@ export default function CountersScreen() {
         animationType="slide"
         transparent={true}
         visible={modalVisible}
-        onRequestClose={() => setModalVisible(false)}
+        onRequestClose={closeModal}
       >
         <Animated.View style={[styles.modalOverlay, { opacity: fadeAnim }]}>
           <View style={[styles.modalContent, { paddingTop: insets.top + 10 }]}>
@@ -276,7 +281,7 @@ export default function CountersScreen() {
             <View style={styles.modalHeader}>
               <TouchableOpacity
                 style={styles.closeButton}
-                onPress={() => setModalVisible(false)}
+                onPress={closeModal}
               >
                 <Ionicons name="close" size={24} color={NothingTheme.colors.textPrimary} />
               </TouchableOpacity>
@@ -430,7 +435,10 @@ export default function CountersScreen() {
                           <Text style={styles.tacticLabel}>
                             {language === 'it' ? 'Tendenza cross' : 'Crossing'}
                           </Text>
-                          <Text style={styles.tacticValue}>{currentScenario.tend_cross || 'Normale'}</Text>
+                          <Text style={styles.tacticValue}>
+                            {/* barra a tacche 1-3 in game; 2 = "Normale" confermato a schermo */}
+                            {currentScenario.tend_cross === 2 ? 'Normale' : currentScenario.tend_cross != null ? `${currentScenario.tend_cross}/3` : '—'}
+                          </Text>
                         </View>
                       </View>
                     </View>
@@ -491,23 +499,6 @@ export default function CountersScreen() {
                           <Text style={styles.tacticValue}>{currentScenario.cont}</Text>
                         </View>
                       </View>
-                    </View>
-                  </View>
-
-                  {/* Position Arrows (del modulo attivo) */}
-                  <View style={styles.arrowsSection}>
-                    <Text style={styles.sectionLabel}>
-                      {language === 'it' ? `FRECCE · ${activeMod}` : `ARROWS · ${activeMod}`}
-                    </Text>
-                    <View style={styles.arrowsGrid}>
-                      {Object.entries(activeFr).map(([position, arrow]) => (
-                        <View key={position} style={styles.arrowItem}>
-                          <Text style={styles.positionLabel}>{position}</Text>
-                          <Text style={[styles.arrowIcon, { color: getArrowColor(arrow) }]}>
-                            {arrow}
-                          </Text>
-                        </View>
-                      ))}
                     </View>
                   </View>
 
@@ -997,23 +988,6 @@ const styles = StyleSheet.create({
   },
   toggleValueActive: {
     color: NothingTheme.colors.accent,
-  },
-  arrowsSection: {
-    marginBottom: 24,
-  },
-  arrowsGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 8,
-  },
-  arrowItem: {
-    alignItems: 'center',
-    backgroundColor: NothingTheme.colors.surface,
-    borderRadius: 8,
-    padding: 12,
-    minWidth: 56,
-    borderWidth: 1,
-    borderColor: NothingTheme.colors.border,
   },
   positionLabel: {
     color: NothingTheme.colors.textTertiary,

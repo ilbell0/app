@@ -72,7 +72,7 @@ def zona(op):
         zones.append("centrocampo in inferiorità numerica")
     # fonte: contro il bus non pressare alto (consuma condizione) — aggirare
     if op["dif"] >= 5 and op["am"] + op["st"] <= 2:
-        zones.append("muro centrale: aggiralo con passaggi sulle fasce e mentalità offensiva, senza pressing alto prolungato")
+        zones.append("muro centrale: aggiralo con passaggi sulle fasce e mentalità su Offensiva, senza pressing alto prolungato")
     if op["dif"] == 4 and op["dc"] == 2 and op["st"] == 0:
         zones.append("area piccola difendibile: nessuna punta da marcare")
     if not zones:
@@ -123,9 +123,9 @@ def piano_b(e):
     if alt and alt != e["pari"]["mod"]:
         steps.append(f"se il {e['pari']['mod']} non morde, passa al {alt}")
     if dif_mod != e["pari"]["mod"]:
-        steps.append(f"in vantaggio all'80': chiudi col {dif_mod} e contropiede ON")
+        steps.append(f"in vantaggio all'80': chiudi col {dif_mod} e imposta Contropiede")
     if off_mod != e["pari"]["mod"]:
-        steps.append(f"sotto di un gol: {off_mod}, mentalità offensiva e pressing alto")
+        steps.append(f"sotto di un gol: {off_mod}, mentalità su Offensiva e pressing alto")
     return steps[:2]
 
 

@@ -24,6 +24,7 @@ DATASETS = {
     "META_TACTICS": "metaTactics",
     "SPECIAL_ABILITIES": "specialAbilities",
     "MENTORS": "mentors",
+    "MENTOR_TACTICS": "mentorTactics",
     "TRAINING_GUIDE": "trainingGuide",
     "ARROW_TACTICS": "arrowTactics",
     "REAL_TEAMS": "realTeams",

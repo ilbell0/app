@@ -1,0 +1,268 @@
+[
+  {
+    "mentor_id": "fabregas",
+    "formations_it": [
+      "4-3-3",
+      "3-1-4-1-1",
+      "3-2-4-1"
+    ],
+    "formations_en": [
+      "4-3-3",
+      "3-1-4-1-1",
+      "3-2-4-1"
+    ],
+    "when_it": "Squadra tecnica che vuole consolidare il possesso e accelerare con passaggi corti tra le linee.",
+    "when_en": "Technical team that wants to consolidate possession and accelerate with short passes between the lines.",
+    "compatible_settings_it": [
+      "Stile passaggi: Palla corta",
+      "Tipo di passaggi: Per il centro",
+      "Mentalità: Offensiva",
+      "Possesso perso: Riaggressione"
+    ],
+    "compatible_settings_en": [
+      "Passing style: Short passes",
+      "Passing type: Through the middle",
+      "Mentality: Attacking",
+      "Possession lost: Counter-press"
+    ],
+    "counter_move_it": "Chiudi il corridoio centrale e forza il primo passaggio verso l esterno; dopo la perdita, Raggruppamento limita la riaggressione avversaria.",
+    "counter_move_en": "Close the central corridor and force the first pass wide; after losing the ball, Regrouping limits the opponent counter-press.",
+    "counter_formation_it": "4-5-1 V-Style",
+    "counter_formation_en": "4-5-1 V-Style",
+    "counter_mentor_it": "Claude Makélélé",
+    "counter_mentor_en": "Claude Makélélé",
+    "confidence_it": "Abbinamento tattico dedotto dall effetto del mentore; non è una regola ufficiale del gioco.",
+    "confidence_en": "Tactical pairing inferred from the mentor effect; it is not an official game rule.",
+    "source_it": "Scheda Fàbregas verificata; impostazioni e contro-mossa sono una deduzione dal database.",
+    "source_en": "Verified Fàbregas card; settings and counter-move are an inference from the database.",
+    "verified": true
+  },
+  {
+    "mentor_id": "makelele",
+    "formations_it": [
+      "4-1-4-1",
+      "4-5-1 V-Style",
+      "5-4-1 F (Flat)"
+    ],
+    "formations_en": [
+      "4-1-4-1",
+      "4-5-1 V-Style",
+      "5-4-1 F (Flat)"
+    ],
+    "when_it": "Partita da controllare, vantaggio da proteggere o avversario che attacca centralmente.",
+    "when_en": "Match to control, lead to protect, or opponent attacking through the middle.",
+    "compatible_settings_it": [
+      "Possesso perso: Raggruppamento",
+      "Mentalità: Normale",
+      "Stile marcatura: Zonale",
+      "Pressing: cursore medio"
+    ],
+    "compatible_settings_en": [
+      "Possession lost: Regrouping",
+      "Mentality: Normal",
+      "Marking style: Zonal",
+      "Pressing: medium slider"
+    ],
+    "counter_move_it": "Allarga il possesso e attacca i lati prima che il blocco possa chiudersi; evita di insistere con passaggi corti nel traffico centrale.",
+    "counter_move_en": "Stretch possession and attack the flanks before the block closes; avoid insisting on short passes in central traffic.",
+    "counter_formation_it": "3-4-3",
+    "counter_formation_en": "3-4-3",
+    "counter_mentor_it": "Lewis Green",
+    "counter_mentor_en": "Lewis Green",
+    "confidence_it": "Abbinamento dedotto: il mentore aiuta il controllo centrale, mentre la risposta cerca ampiezza.",
+    "confidence_en": "Inferred pairing: the mentor supports central control, while the response seeks width.",
+    "source_it": "Scheda Makélélé verificata; contro-mossa dedotta dai moduli e dai dati di zona.",
+    "source_en": "Verified Makélélé card; counter-move inferred from formations and zone data.",
+    "verified": true
+  },
+  {
+    "mentor_id": "herrera",
+    "formations_it": [
+      "4-5-1 V-Style",
+      "4-1-4-1",
+      "3-1-4-1-1"
+    ],
+    "formations_en": [
+      "4-5-1 V-Style",
+      "4-1-4-1",
+      "3-1-4-1-1"
+    ],
+    "when_it": "Avversario pericoloso in transizione: recupera ordine e riparti rapidamente senza scoprirti.",
+    "when_en": "Opponent dangerous in transition: regain shape and break quickly without exposing yourself.",
+    "compatible_settings_it": [
+      "Possesso ottenuto: Contropiede",
+      "Possesso perso: Raggruppamento",
+      "Mentalità: Normale",
+      "Pressing: cursore medio"
+    ],
+    "compatible_settings_en": [
+      "Possession won: Counterattack",
+      "Possession lost: Regrouping",
+      "Mentality: Normal",
+      "Pressing: medium slider"
+    ],
+    "counter_move_it": "Non regalare transizioni: Raggruppamento dopo la perdita, linea prudente e un mediano davanti alla difesa.",
+    "counter_move_en": "Do not give away transitions: Regroup after losing the ball, use a cautious line and a midfielder in front of the defence.",
+    "counter_formation_it": "4-1-4-1",
+    "counter_formation_en": "4-1-4-1",
+    "counter_mentor_it": "Nemanja Vidić",
+    "counter_mentor_en": "Nemanja Vidić",
+    "confidence_it": "Il bonus del mentore è verificato; l abbinamento alla contro-mossa è una deduzione.",
+    "confidence_en": "The mentor bonus is verified; the pairing with the counter-move is an inference.",
+    "source_it": "Scheda Herrera verificata e referto Skogens; risposta tattica dedotta.",
+    "source_en": "Verified Herrera card and Skogens report; tactical response inferred.",
+    "verified": true
+  },
+  {
+    "mentor_id": "green",
+    "formations_it": [
+      "3-4-1-2",
+      "3-5-2",
+      "4-4-2 C (Classic)"
+    ],
+    "formations_en": [
+      "3-4-1-2",
+      "3-5-2",
+      "4-4-2 C (Classic)"
+    ],
+    "when_it": "Quando vuoi creare superiorità sulle fasce e alimentare gli attaccanti con cross e cambi di gioco.",
+    "when_en": "When you want wide overloads and service to the forwards through crosses and switches of play.",
+    "compatible_settings_it": [
+      "Tipo di passaggi: Per entrambe le fasce",
+      "Tendenza cross: cursore alto",
+      "Mentalità: Offensiva",
+      "Pressing: cursore medio"
+    ],
+    "compatible_settings_en": [
+      "Passing type: Both flanks",
+      "Crossing tendency: high slider",
+      "Mentality: Attacking",
+      "Pressing: medium slider"
+    ],
+    "counter_move_it": "Proteggi entrambe le fasce, conserva densità al centro e non concedere ricezioni pulite ai crossatori.",
+    "counter_move_en": "Protect both flanks, keep central density and do not allow clean receptions to the crossers.",
+    "counter_formation_it": "4-1-4-1",
+    "counter_formation_en": "4-1-4-1",
+    "counter_mentor_it": "Cesc Fàbregas",
+    "counter_mentor_en": "Cesc Fàbregas",
+    "confidence_it": "Abbinamento dedotto dall effetto sulle fasce e dalla vulnerabilità ai cambi di gioco.",
+    "confidence_en": "Pairing inferred from the wide effect and vulnerability to switches of play.",
+    "source_it": "Scheda Green verificata; contro-mossa dedotta dai dati di zona e dalla matrice dei moduli.",
+    "source_en": "Verified Green card; counter-move inferred from zone data and formation matrix.",
+    "verified": true
+  },
+  {
+    "mentor_id": "shearer",
+    "formations_it": [
+      "4-3-3",
+      "3-1-4-1-1",
+      "4-5-1 V-Style"
+    ],
+    "formations_en": [
+      "4-3-3",
+      "3-1-4-1-1",
+      "4-5-1 V-Style"
+    ],
+    "when_it": "Per aumentare la qualità dell uno contro uno e portare il finalizzatore in zona di tiro.",
+    "when_en": "To improve one-on-one quality and bring the finisher into shooting areas.",
+    "compatible_settings_it": [
+      "Tendenza tiro: Strategia in area",
+      "Tendenza cross: cursore medio-alto",
+      "Mentalità: Offensiva",
+      "Possesso ottenuto: Concentr. azioni"
+    ],
+    "compatible_settings_en": [
+      "Shooting tendency: Into the box",
+      "Crossing tendency: medium-high slider",
+      "Mentality: Attacking",
+      "Possession won: Focus actions"
+    ],
+    "counter_move_it": "Nega il servizio alla punta, difendi compatto davanti all area e non concedere duelli isolati in campo aperto.",
+    "counter_move_en": "Deny service to the striker, defend compactly in front of the box and do not allow isolated open-field duels.",
+    "counter_formation_it": "4-1-4-1",
+    "counter_formation_en": "4-1-4-1",
+    "counter_mentor_it": "Nemanja Vidić",
+    "counter_mentor_en": "Nemanja Vidić",
+    "confidence_it": "La scheda conferma il bonus al dribbling; modulo e risposta sono dedotti.",
+    "confidence_en": "The card confirms the dribbling bonus; formation and response are inferred.",
+    "source_it": "Scheda Shearer verificata; contro-mossa dedotta.",
+    "source_en": "Verified Shearer card; counter-move inferred.",
+    "verified": true
+  },
+  {
+    "mentor_id": "vidic",
+    "formations_it": [
+      "4-1-4-1",
+      "5-4-1 F (Flat)",
+      "4-5-1 V-Style"
+    ],
+    "formations_en": [
+      "4-1-4-1",
+      "5-4-1 F (Flat)",
+      "4-5-1 V-Style"
+    ],
+    "when_it": "Contro un avversario superiore o quando devi proteggere il risultato senza rinunciare alla ripartenza.",
+    "when_en": "Against a stronger opponent or when protecting a result without giving up the counterattack.",
+    "compatible_settings_it": [
+      "Mentalità: Difensiva",
+      "Pressing: cursore basso",
+      "Linea difensiva: Tracc. avvers.",
+      "Stile contrasti: Normale"
+    ],
+    "compatible_settings_en": [
+      "Mentality: Defensive",
+      "Pressing: low slider",
+      "Defensive line: Track opponents",
+      "Tackling style: Normal"
+    ],
+    "counter_move_it": "Fai circolare la palla lateralmente e attacca prima che il blocco si sistemi; evita di forzare il passaggio centrale.",
+    "counter_move_en": "Move the ball laterally and attack before the block settles; avoid forcing the central pass.",
+    "counter_formation_it": "3-1-4-1-1",
+    "counter_formation_en": "3-1-4-1-1",
+    "counter_mentor_it": "Cesc Fàbregas",
+    "counter_mentor_en": "Cesc Fàbregas",
+    "confidence_it": "La risposta è una deduzione: il mentore difensivo non viene trattato come una debolezza automatica.",
+    "confidence_en": "The response is an inference: the defensive mentor is not treated as an automatic weakness.",
+    "source_it": "Scheda Vidić verificata e risultati del dossier; abbinamento dedotto.",
+    "source_en": "Verified Vidić card and dossier results; pairing inferred.",
+    "verified": true
+  },
+  {
+    "mentor_id": "jonasbraun",
+    "formations_it": [
+      "3-1-4-2",
+      "4-5-1 V-Style",
+      "4-1-4-1"
+    ],
+    "formations_en": [
+      "3-1-4-2",
+      "4-5-1 V-Style",
+      "4-1-4-1"
+    ],
+    "when_it": "Quando il piano dell avversario cerca di superare il centrocampo con palloni diretti e seconde palle.",
+    "when_en": "When the opponent plan tries to bypass midfield with direct balls and second balls.",
+    "compatible_settings_it": [
+      "Stile passaggi: Palla lunga",
+      "Possesso ottenuto: Contropiede",
+      "Mentalità: Normale",
+      "Pressing: cursore medio"
+    ],
+    "compatible_settings_en": [
+      "Passing style: Long balls",
+      "Possession won: Counterattack",
+      "Mentality: Normal",
+      "Pressing: medium slider"
+    ],
+    "counter_move_it": "Pressa il primo ricevitore, accorcia le distanze tra difesa e mediana e non lasciare spazio alle seconde palle.",
+    "counter_move_en": "Press the first receiver, shorten the distance between defence and midfield, and do not leave space for second balls.",
+    "counter_formation_it": "4-1-4-1",
+    "counter_formation_en": "4-1-4-1",
+    "counter_mentor_it": "Nemanja Vidić",
+    "counter_mentor_en": "Nemanja Vidić",
+    "confidence_it": "Il testo della scheda è verificato; l applicazione al piano avversario è una deduzione.",
+    "confidence_en": "The card text is verified; application to the opponent plan is an inference.",
+    "source_it": "Scheda Braun verificata; referti e contro-mossa dedotta.",
+    "source_en": "Verified Braun card; reports and counter-move inferred.",
+    "verified": true
+  }
+]
